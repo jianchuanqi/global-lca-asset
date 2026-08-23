@@ -1,0 +1,9 @@
+- insert:
+    - id: global-lca-asset
+      name: '@global-lca/dsh-lca-plugin'
+      config:
+        apiBaseUrl: !!js process.env.GLOBAL_LCA_API_URL ?? 'http://127.0.0.1:8000'
+        apiToken: !!js process.env.GLOBAL_LCA_API_TOKEN
+        enableCypher: !!js process.env.GLOBAL_LCA_ENABLE_CYPHER === 'true'
+        timeoutMs: 30000
+        maxResultChars: 40000

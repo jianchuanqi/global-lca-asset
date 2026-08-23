@@ -1,0 +1,10 @@
+.git
+.venv
+node_modules
+packages/dsh-lca-plugin/node_modules
+**/__pycache__
+**/.pytest_cache
+**/.ruff_cache
+data/raw
+data/canonical
+*.log

@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {"alias": "d", "label": "Database"},
+    {"alias": "f", "label": "Schema"}
+  ],
+  "relationships": [
+    {"source": "d", "target": "f", "type": "USES_FORMAT", "direction": "out"}
+  ],
+  "filters": [
+    {"alias": "d", "property": "open_data_status", "operator": "contains", "value": "open"}
+  ],
+  "return_aliases": ["d", "f"],
+  "order_by": [
+    {"alias": "d", "property": "name", "direction": "asc"}
+  ],
+  "distinct": true,
+  "limit": 50
+}

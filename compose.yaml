@@ -1,0 +1,61 @@
+name: global-lca-asset
+
+services:
+  neo4j:
+    image: ${NEO4J_IMAGE:-neo4j:5.26-community}
+    environment:
+      NEO4J_AUTH: neo4j/${LCA_NEO4J_PASSWORD:-global-lca-local}
+      NEO4J_server_memory_heap_initial__size: 512m
+      NEO4J_server_memory_heap_max__size: 1G
+      NEO4J_server_memory_pagecache_size: 512m
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:7474 || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  api:
+    build: .
+    environment:
+      LCA_GRAPH_BACKEND: neo4j
+      LCA_NEO4J_URI: bolt://neo4j:7687
+      LCA_NEO4J_USER: neo4j
+      LCA_NEO4J_PASSWORD: ${LCA_NEO4J_PASSWORD:-global-lca-local}
+      LCA_NEO4J_DATABASE: neo4j
+      LCA_API_TOKEN: ${LCA_API_TOKEN:-}
+      LCA_ENABLE_EXPERT_CYPHER: ${LCA_ENABLE_EXPERT_CYPHER:-false}
+      LCA_CORS_ORIGINS: http://127.0.0.1:3080,http://localhost:3080
+      LCA_SEED_PATH: /app/data/seed/inventory-v2.public.json
+    ports:
+      - "8000:8000"
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health')\""]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  seed:
+    build: .
+    command: ["global-lca", "import", "--wait", "60"]
+    environment:
+      LCA_GRAPH_BACKEND: neo4j
+      LCA_NEO4J_URI: bolt://neo4j:7687
+      LCA_NEO4J_USER: neo4j
+      LCA_NEO4J_PASSWORD: ${LCA_NEO4J_PASSWORD:-global-lca-local}
+      LCA_NEO4J_DATABASE: neo4j
+      LCA_SEED_PATH: /app/data/seed/inventory-v2.public.json
+    depends_on:
+      neo4j:
+        condition: service_healthy
+    restart: "no"
+
+volumes:
+  neo4j_data:
