@@ -2,7 +2,7 @@
 
 ## 1. 当前实现
 
-系统采用一个 Git 仓库、一个图数据库和一个 AI 原生入口。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
+本仓库是知识图谱、公共数据和查询服务的权威项目。官方参考 Skill 将作为独立 Git 项目维护；用户也可以完全不用官方 Skill，直接通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
 
 ```mermaid
 flowchart LR
@@ -11,11 +11,12 @@ flowchart LR
     S --> I[Deterministic graph builder]
     I --> N[(Neo4j)]
     N --> A[FastAPI read/query service]
-    A --> D[DSH query tools]
-    D --> H[DeepSeek Harness]
-    A --> V[DSH graph result view]
-    V --> H
+    A --> M[Anonymous read-only MCP]
+    M --> H[Codex / Claude Code / OpenClaw / WorkBuddy / TRAE]
+    A --> D[DSH query tools and graph view]
+    D --> H2[DeepSeek Harness]
     H --> U[Researcher]
+    H2 --> U
 ```
 
 各层的责任明确分开：
@@ -24,13 +25,14 @@ flowchart LR
 - Python 图谱构建器把宽表转换为 Asset、Release、Distribution、MappingArtifact、Assertion、Evidence 等对象。
 - Neo4j 是关系查询的事实库，所有节点和关系使用稳定 UID，导入使用幂等 `MERGE`。
 - FastAPI 统一提供筛选、路径、时间线、证据、结构化查询计划和可选专家 Cypher。
+- MCP 复用同一个只读 repository，只暴露有输入上限的公共工具；不提供任意 Cypher。
 - DSH 插件把 API 暴露为模型工具，并向模型注入 LCA 口径、证据和不确定性规则。
 - 图谱结果界面读取同一次工具调用保存的结构化结果，呈现关系图、数据表和证据；浏览器不直接连接 Neo4j。
 - 用户直接在 DSH 的对话界面提问；不再维护一套传统的业务前端。
 
-## 2. 为什么是一个仓库
+## 2. Git 项目边界
 
-图谱模型、导入规则、查询 API、DSH 工具说明和测试共享同一套术语。把它们放在一个仓库可以让一次 schema 变更同时更新数据、查询和 AI 工具，避免两个仓库出现版本漂移。DSH 本身仍是独立依赖，因此既没有污染上游，也保留了以后更换 Harness 的能力。
+本仓库保留图谱模型、数据审核、导入、Neo4j、MCP、REST API、公共快照和接口契约。可选的官方 Skill、不同 Agent 的安装说明和跨平台提示词放入独立的 `global-lca-asset-skill` 项目。两者通过 MCP contract、ontology version 和 data snapshot 版本衔接。现有 DSH 适配器暂时留在本仓库，稳定后再决定是否迁移。
 
 ## 3. 数据路径
 
@@ -63,31 +65,25 @@ flowchart TD
 
 ## 4. 自然语言查询
 
-自然语言理解由 DSH 中的模型完成，但模型不能直接访问数据库。典型过程如下：
+自然语言理解由用户选择的 Agent 完成，但模型不能直接访问数据库。通用过程如下：
 
 ```mermaid
 sequenceDiagram
     participant U as Researcher
-    participant H as DeepSeek Harness
-    participant P as LCA plugin
-    participant A as FastAPI
+    participant H as Any MCP-capable Agent
+    participant M as Public LCA MCP
     participant N as Neo4j
 
     U->>H: 哪些开放数据库使用 ILCD，可由什么软件打开？
-    H->>P: lca_schema
-    P->>A: GET /api/schema
-    A-->>H: allowlisted vocabulary
-    H->>P: lca_query_graph(GraphQueryPlan)
-    P->>A: POST /api/query/plan
-    A->>A: validate and compile parameterized Cypher
-    A->>N: EXPLAIN, then read query
-    N-->>A: records + nodes + relationships
-    A-->>H: Cypher + data + graph
-    H->>P: lca_get_evidence as needed
+    H->>M: get_graph_schema / search_assets
+    M->>N: parameterized read query
+    N-->>M: records + nodes + relationships
+    M-->>H: stable data + graph envelope
+    H->>M: get_evidence as needed
     H-->>U: answer + relationships + source URLs + caveats
 ```
 
-`GraphQueryPlan` 只能使用公开 schema 中允许的 label、relationship、property 和 operator。Cypher 由确定性编译器生成，所有用户值都作为参数传递。这个设计使中文、英文和混合语言都可以使用同一图谱查询接口。
+MCP 的普通查询全部使用服务器预定义、参数化的 Cypher。REST API 仍保留 `GraphQueryPlan`：它只能使用公开 schema 中允许的 label、relationship、property 和 operator，用户值不会插入查询字符串。这个设计使中文、英文和混合语言都可以使用同一图谱查询接口。
 
 ## 5. 专家 Cypher
 
@@ -122,7 +118,13 @@ sequenceDiagram
 
 构建时，图谱伴随界面被编译进查询 bundle 的 browser client；使用者只安装一个包。查询完成时，工具把 `nodes`、`relationships`、`records` 作为稳定的展示元数据随会话保存。图谱伴随界面只接管五类带关系子图的结果；其他工具仍使用 DSH 原有显示。因而旧会话可以重放图谱，模型文字回答与图形也来自同一份结果。
 
-## 7. API
+## 7. 公共 MCP
+
+公共 `/mcp` 使用 Streamable HTTP、JSON 响应和无状态模式。所有结果统一包含 `schema_version`、`scope`、`data`、`graph` 和 `warnings`。工具输入限制搜索数量、图谱深度、路径长度和返回规模；Neo4j 查询还带有服务器端超时。
+
+公共工具包括搜索、详情、关系扩展、最短路径、比较、时间线、证据、统计、schema 和服务状态。MCP 不注册 Cypher、写入、导入或数据库管理工具。
+
+## 8. API
 
 | Endpoint | 作用 |
 |---|---|
@@ -141,11 +143,11 @@ sequenceDiagram
 
 所有图查询统一返回 `nodes`、`relationships` 和 `records`，DSH 可以据此解释具体关系，而不是只读取一段预先生成的文字。
 
-## 8. 部署
+## 9. 部署
 
-本地使用 Docker Compose：Neo4j、API 和一次性 seed importer。生产环境保持相同组件，但应增加 TLS、反向代理、只读数据库身份、备份、日志和 API 访问控制。当前系统不需要微服务、消息队列、独立向量数据库或另一个传统前端。
+本地使用 Docker Compose：Neo4j、API/MCP 和一次性 seed importer。Vercel 只运行无状态 FastAPI/MCP，Neo4j 使用外部托管实例和专用 reader 身份。正式环境还需要 TLS、备份、日志和 Vercel Firewall 限流；具体变量和检查见 `docs/vercel-deployment.md`。当前系统不需要消息队列、独立向量数据库或另一个传统前端。
 
-## 9. 已知边界
+## 10. 已知边界
 
 - 199 是本次公开证据 review 的资产数，不是经过证明的全球终值。
 - 公开来源不能确认的版本、许可、schema 修订或软件测试仍保留原始“不确认”状态。

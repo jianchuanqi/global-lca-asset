@@ -14,6 +14,8 @@
 | 关系 API | 完成 | 邻域、最短路径、图结构返回 |
 | 结构化 AI 查询 | 完成 | allowlist、参数化 compiler、`EXPLAIN` |
 | 专家 Cypher | 完成 | 默认关闭；只读语法门控和结果上限 |
+| 公共 MCP | 完成 | 匿名、无状态；10 个预设只读工具，无 Cypher 和写入 |
+| Vercel 运行入口 | 完成 | 根 ASGI 入口、Fluid compute、部署变量和协议检查 |
 | DSH 插件 | 完成 | 可加载、可打包；10 个默认工具和 1 个可选工具 |
 | 交互式图谱结果 | 完成 | Graph/Data/Evidence；筛选、布局、详情、全屏和四种导出 |
 | 容器运行 | 完成 | Neo4j、API、一次性 seed importer |
@@ -32,6 +34,7 @@
 - 模型没有数据库账号，也不能通过结构化计划表达写入。
 - 公开 seed 中不存在联系人字段、姓名/邮箱映射或内部 reviewer notes。
 - Docker Compose 可以从空图数据库完成导入并提供健康 API。
+- 任意兼容 Streamable HTTP 的 MCP 客户端都可以匿名发现并调用公共读工具。
 
 ## 3. 自动检查
 
@@ -52,6 +55,7 @@ pnpm smoke
 - ecoinvent 到 ecoSpold2 返回一条 `USES_FORMAT` 最短路径。
 - 结构化计划生成参数化 Cypher 并返回记录。
 - 插件可直接调用 API；专家工具关闭和开启两种注册状态均经过测试。
+- MCP 工具清单、只读 annotation、参数边界、无状态 HTTP 和 Host 防护均有自动测试。
 - 图谱 client plugin 已在真实 DSH 启动清单和浏览器中完成加载验证。
 
 ## 4. 尚未声称完成的事项
@@ -61,7 +65,7 @@ pnpm smoke
 - 继续扩充所有公开 LCA asset，特别是本地语言和区域网络中的遗漏。
 - 对下载包进行 release-level 导入、schema validation 和 round-trip 测试。
 - 建立人工专家纠错、版本发布和内容审核流程。
-- 生产环境的域名、TLS、备份、监控、API 认证和正式 Neo4j reader/writer 权限。
+- 实际 Vercel 项目、正式域名、托管 Neo4j、备份、监控和 reader/writer 账号配置。
 - 用真实研究人员问题建立大规模中英文自然语言评测集。
 
 ## 5. 建议的下一阶段
@@ -83,7 +87,7 @@ pnpm smoke
 ### 生产发布
 
 1. Neo4j 导入账号和查询 reader 分离。
-2. API 只暴露在 TLS 和访问控制后。
+2. 公共 MCP 通过 TLS 匿名开放；REST API 根据需要用独立 token 保护。
 3. 对自然语言问题、生成计划、Cypher、耗时和结果规模做审计记录，但不记录凭据。
 4. 验证备份、恢复和上一版图谱回滚。
 

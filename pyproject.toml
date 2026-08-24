@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "global-lca-asset"
-version = "0.1.0"
+version = "0.2.0"
 description = "Evidence-backed Global LCA Asset Knowledge Graph API and importer"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -12,6 +12,7 @@ license = { text = "Apache-2.0" }
 authors = [{ name = "Global LCA Asset Review" }]
 dependencies = [
   "fastapi>=0.116,<1",
+  "mcp>=2,<3",
   "neo4j>=5.28,<7",
   "pydantic-settings>=2.10,<3",
   "uvicorn[standard]>=0.35,<1",

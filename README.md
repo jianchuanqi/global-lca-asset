@@ -1,12 +1,14 @@
 # Global LCA Asset Knowledge Graph
 
-这是一个已经可以运行的、证据可追溯的全球 LCA 资产知识图谱。它把数据库、数据集、软件、schema、格式、名录、机构、国家、行业、版本、分发包及 mapping 项目组织成关系网络，并通过 DeepSeek Harness 直接提供自然语言查询。
+这是一个已经可以运行的、证据可追溯的全球 LCA 资产知识图谱。它把数据库、数据集、软件、schema、格式、名录、机构、国家、行业、版本、分发包及 mapping 项目组织成关系网络，并通过匿名只读 MCP 向 Codex、Claude Code、OpenClaw、腾讯 WorkBuddy、TRAE 等客户端开放。现有 DeepSeek Harness 插件继续作为示范客户端。
 
 首个公开数据基线截止到 2026-08-22，包括 199 个资产家族、205 条公开证据、290 个版本或里程碑、128 个分发包、18 个 mapping artifact 和 233 条关系断言。导入后形成 1,663 个节点和 2,282 条关系。这个数量是公开证据下限，不表示已经证明“全球只有这些资产”。
 
 ## 已实现的能力
 
 - 按名称、资产类型、国家、行业和开放状态检索。
+- 通过 `/mcp` 提供无需 token 的 Streamable HTTP MCP；服务端无会话状态，适合 Vercel。
+- MCP 只暴露 10 个有规模限制的公共读工具，不提供任意 Cypher、写入或管理工具。
 - 查看资产详情、一跳或多跳关系、最短路径、证据和版本时间线。
 - 用经过校验的结构化查询计划生成参数化 Cypher；执行前先 `EXPLAIN`。
 - 为专家提供可选的直接只读 Cypher；默认关闭并拒绝写入、procedure 和多语句。
@@ -27,6 +29,7 @@ docker compose up -d --build
 启动后：
 
 - API 和交互式接口文档：<http://127.0.0.1:8000/docs>
+- 匿名只读 MCP：<http://127.0.0.1:8000/mcp>
 - Neo4j Browser：<http://127.0.0.1:7474>
 - 健康检查：<http://127.0.0.1:8000/health>
 
@@ -65,10 +68,22 @@ dsh plugin --profile global-lca add /absolute/path/to/global-lca-dsh-lca-plugin-
 
 查询 bundle 已内置图谱结果界面，所以只需安装一个包。插件默认注册 10 个公开只读工具。只有同时设置 API 的 `LCA_ENABLE_EXPERT_CYPHER=true` 和插件的 `GLOBAL_LCA_ENABLE_CYPHER=true`，才会出现直接 Cypher 工具；生产环境还应使用数据库 reader 身份。
 
+## 发布公共 MCP
+
+Vercel 只部署 FastAPI/MCP 查询层，Neo4j 应放在 AuraDB 或其他可安全访问的托管环境中。仓库根目录的 `app.py` 是 Vercel ASGI 入口，`vercel.json` 已启用 Fluid compute 和 30 秒请求上限。
+
+上线所需环境变量、匿名访问边界和协议检查见[《Vercel 部署》](docs/vercel-deployment.md)。正式 MCP 地址为：
+
+```text
+https://<domain>/mcp
+```
+
+REST API 可以通过 `LCA_API_TOKEN` 单独保护；这个设置不会要求公共 MCP 登录。
+
 ## 主要目录
 
 ```text
-src/global_lca_asset/            图谱转换、Neo4j、API、查询编译器和 CLI
+src/global_lca_asset/            图谱转换、Neo4j、API、MCP、查询编译器和 CLI
 packages/dsh-lca-plugin/         可独立安装的 DeepSeek Harness 插件
 packages/dsh-lca-graph-ui/       查询结果的交互式图谱伴随界面
 data/seed/                       经过隐私筛选的公开数据基线
@@ -85,4 +100,5 @@ docs/                            架构、数据模型、使用和维护说明
 - [DeepSeek Harness 使用](docs/deepseek-harness.md)
 - [图谱结果界面设计](docs/graph-visualization.md)
 - [查询指南](docs/query-guide.md)
+- [Vercel 部署](docs/vercel-deployment.md)
 - [开发与验收状态](docs/development-plan.md)

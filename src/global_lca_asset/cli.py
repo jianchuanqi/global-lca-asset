@@ -20,6 +20,9 @@ def _repository(settings: Settings) -> Neo4jGraphRepository:
         settings.neo4j_user,
         settings.neo4j_password,
         settings.neo4j_database,
+        connection_timeout_seconds=settings.neo4j_connection_timeout_seconds,
+        query_timeout_seconds=settings.neo4j_query_timeout_seconds,
+        max_connection_pool_size=settings.neo4j_max_connection_pool_size,
     )
 
 

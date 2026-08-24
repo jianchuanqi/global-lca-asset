@@ -195,7 +195,17 @@ class InMemoryGraphRepository:
 
     async def get_evidence(self, evidence_id: str) -> dict[str, Any] | None:
         node = self.nodes.get(evidence_id)
-        return node_document(node) if node and "Evidence" in node.labels else None
+        if node is None or "Evidence" not in node.labels:
+            return None
+        supported_assets = []
+        for rel in self.incoming.get(evidence_id, []):
+            asset = self.nodes.get(rel.start_uid)
+            if rel.type == "SUPPORTED_BY" and asset is not None and "Asset" in asset.labels:
+                supported_assets.append({"uid": asset.uid, "name": asset.name})
+        return {
+            "evidence": node_document(node),
+            "supported_assets": sorted(supported_assets, key=lambda item: item["name"].casefold()),
+        }
 
     async def compare(self, asset_ids: list[str]) -> list[dict[str, Any]]:
         return [

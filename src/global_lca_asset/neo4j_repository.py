@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections import defaultdict
 from typing import Any
 
-from neo4j import READ_ACCESS, AsyncGraphDatabase
+from neo4j import READ_ACCESS, AsyncGraphDatabase, Query
 from neo4j.graph import Node, Path, Relationship
 
 from .models import GraphNode, GraphPayload, GraphRelationship, GraphSnapshot
@@ -60,9 +60,29 @@ def _portable_relationship(rel: Relationship) -> GraphRelationship:
 class Neo4jGraphRepository:
     """Async Neo4j repository with a read-only query surface and batch importer."""
 
-    def __init__(self, uri: str, user: str, password: str, database: str) -> None:
-        self.driver = AsyncGraphDatabase.driver(uri, auth=(user, password))
+    def __init__(
+        self,
+        uri: str,
+        user: str,
+        password: str,
+        database: str,
+        *,
+        connection_timeout_seconds: float = 5.0,
+        query_timeout_seconds: float = 10.0,
+        max_connection_pool_size: int = 10,
+    ) -> None:
+        self.driver = AsyncGraphDatabase.driver(
+            uri,
+            auth=(user, password),
+            connection_timeout=connection_timeout_seconds,
+            max_connection_pool_size=max_connection_pool_size,
+        )
         self.database = database
+        self.query_timeout_seconds = query_timeout_seconds
+
+    def _read_query(self, cypher: str) -> Query:
+        """Apply the public query deadline at the Neo4j transaction boundary."""
+        return Query(cypher, timeout=self.query_timeout_seconds)
 
     async def health(self) -> dict[str, Any]:
         info = await self.driver.get_server_info()
@@ -73,7 +93,7 @@ class Neo4jGraphRepository:
 
     async def _records(self, cypher: str, parameters: dict[str, Any] | None = None) -> list[dict[str, Any]]:
         async with self.driver.session(database=self.database, default_access_mode=READ_ACCESS) as session:
-            result = await session.run(cypher, parameters or {})
+            result = await session.run(self._read_query(cypher), parameters or {})
             return [_json_value(dict(record)) async for record in result]
 
     async def search_assets(
@@ -190,11 +210,11 @@ class Neo4jGraphRepository:
             """
             UNWIND $asset_ids AS requested
             OPTIONAL MATCH (a:Asset {uid: requested})
-            RETURN requested, CASE WHEN a IS NULL THEN null ELSE a{.*, labels: labels(a)} END AS asset
+            RETURN CASE WHEN a IS NULL THEN null ELSE a{.*, labels: labels(a)} END AS asset
             """,
             {"asset_ids": asset_ids},
         )
-        return records
+        return [record["asset"] for record in records if record["asset"] is not None]
 
     async def statistics(self) -> dict[str, Any]:
         records = await self._records(
@@ -229,7 +249,7 @@ class Neo4jGraphRepository:
 
     async def execute(self, cypher: str, parameters: dict[str, Any], limit: int) -> dict[str, Any]:
         async with self.driver.session(database=self.database, default_access_mode=READ_ACCESS) as session:
-            result = await session.run(cypher, parameters)
+            result = await session.run(self._read_query(cypher), parameters)
             records: list[dict[str, Any]] = []
             raw_records: list[dict[str, Any]] = []
             truncated = False
@@ -245,7 +265,7 @@ class Neo4jGraphRepository:
 
     async def explain(self, cypher: str, parameters: dict[str, Any]) -> None:
         async with self.driver.session(database=self.database, default_access_mode=READ_ACCESS) as session:
-            result = await session.run(f"EXPLAIN\n{cypher}", parameters)
+            result = await session.run(self._read_query(f"EXPLAIN\n{cypher}"), parameters)
             await result.consume()
 
     async def initialize_schema(self) -> None:

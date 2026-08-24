@@ -9,7 +9,10 @@ from typing import Annotated, Any
 from fastapi import Depends, FastAPI, HTTPException, Query, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from mcp.server.transport_security import TransportSecuritySettings
 
+from . import __version__
+from .mcp_server import create_mcp_server
 from .models import CompareRequest, CypherRequest, GraphQueryPlan, QueryResponse
 from .neo4j_repository import Neo4jGraphRepository
 from .query import QueryPlanError, compile_plan, public_schema, validate_readonly_cypher
@@ -35,6 +38,9 @@ def _create_repository(settings: Settings) -> GraphRepository:
             settings.neo4j_user,
             settings.neo4j_password,
             settings.neo4j_database,
+            connection_timeout_seconds=settings.neo4j_connection_timeout_seconds,
+            query_timeout_seconds=settings.neo4j_query_timeout_seconds,
+            max_connection_pool_size=settings.neo4j_max_connection_pool_size,
         )
     raise ValueError(f"unsupported graph backend: {settings.graph_backend}")
 
@@ -46,17 +52,38 @@ def create_app(
     """Create an application, optionally injecting a repository for tests."""
     resolved_settings = settings or Settings()
     resolved_repository = repository or _create_repository(resolved_settings)
+    mcp = create_mcp_server(resolved_repository) if resolved_settings.mcp_enabled else None
+    mcp_http_app = None
+    if mcp is not None:
+        mcp_security = TransportSecuritySettings(
+            enable_dns_rebinding_protection=not resolved_settings.mcp_trust_proxy,
+            allowed_hosts=resolved_settings.mcp_allowed_hosts,
+            allowed_origins=(resolved_settings.mcp_allowed_origins or resolved_settings.cors_origins),
+        )
+        mcp_http_app = mcp.streamable_http_app(
+            json_response=True,
+            stateless_http=True,
+            max_request_body_size=resolved_settings.mcp_max_request_body_bytes,
+            transport_security=mcp_security,
+        )
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         app.state.settings = resolved_settings
         app.state.repository = resolved_repository
-        yield
-        await resolved_repository.close()
+        app.state.mcp = mcp
+        try:
+            if mcp is None:
+                yield
+            else:
+                async with mcp.session_manager.run():
+                    yield
+        finally:
+            await resolved_repository.close()
 
     app = FastAPI(
         title="Global LCA Asset Knowledge Graph",
-        version="0.1.0",
+        version=__version__,
         description=(
             "Public-evidence graph API for LCA databases, software, schemas, mappings, "
             "releases, and provenance."
@@ -67,8 +94,15 @@ def create_app(
         CORSMiddleware,
         allow_origins=resolved_settings.cors_origins,
         allow_credentials=False,
-        allow_methods=["GET", "POST", "OPTIONS"],
-        allow_headers=["Content-Type", "Authorization"],
+        allow_methods=["GET", "POST", "DELETE", "OPTIONS"],
+        allow_headers=[
+            "Content-Type",
+            "Authorization",
+            "Mcp-Protocol-Version",
+            "Mcp-Session-Id",
+            "Last-Event-ID",
+        ],
+        expose_headers=["Mcp-Session-Id"],
     )
 
     @app.middleware("http")
@@ -88,8 +122,9 @@ def create_app(
     async def root() -> dict[str, Any]:
         return {
             "name": "Global LCA Asset Knowledge Graph",
-            "version": "0.1.0",
+            "version": __version__,
             "api_docs": "/docs",
+            "mcp": "/mcp" if mcp is not None else None,
             "schema": "/api/schema",
             "scope_note": (
                 "Public-evidence lower bound; not a claim that every LCA asset worldwide has been found."
@@ -212,5 +247,9 @@ def create_app(
             graph=result["graph"],
             truncated=result["truncated"],
         )
+
+    # Add this last: Mount("/") must not shadow the API and documentation routes above.
+    if mcp_http_app is not None:
+        app.mount("/", mcp_http_app, name="mcp")
 
     return app

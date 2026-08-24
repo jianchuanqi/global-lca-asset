@@ -1,6 +1,34 @@
 # 查询指南
 
-## 1. 快速检索
+## 1. 通过公共 MCP 查询
+
+Agent 应优先连接：
+
+```text
+http://127.0.0.1:8000/mcp
+```
+
+正式部署后替换为 `https://<domain>/mcp`。连接不需要 token。客户端可以先调用
+`get_graph_schema` 理解词汇，再按问题使用 `search_assets`、`get_asset`、`expand_graph`、
+`find_path`、`compare_assets`、`get_timeline`、`get_evidence` 或
+`get_inventory_statistics`。
+
+每个工具都返回同一种结构：
+
+```json
+{
+  "schema_version": "1.0",
+  "scope": {"access": "anonymous_public", "read_only": true},
+  "data": {},
+  "graph": {"nodes": [], "relationships": [], "records": []},
+  "warnings": []
+}
+```
+
+Skill 可以用 `data` 生成文字和表格，用 `graph` 生成关系图。`scope.completeness` 是所有数量
+回答都必须保留的研究边界。
+
+## 2. 通过 REST API 快速检索
 
 ```bash
 curl 'http://127.0.0.1:8000/api/assets?q=ecoinvent&limit=10'
@@ -10,7 +38,7 @@ curl 'http://127.0.0.1:8000/api/assets?sector=energy&open_only=true'
 
 `open_only=true` 是宽松的公开元数据筛选，不等同于“明确开放许可”。正式回答开放数据库问题时应读取 `open_data_status`、`licence_identifier_terms`、`redistribution_rights`、`registration` 和 `fee`。
 
-## 2. 资产、时间线、关系和证据
+## 3. 资产、时间线、关系和证据
 
 ```bash
 curl http://127.0.0.1:8000/api/assets/LCA-DB-0001
@@ -30,7 +58,7 @@ curl http://127.0.0.1:8000/api/evidence/E-0001
 }
 ```
 
-## 3. 结构化查询计划
+## 4. 结构化查询计划
 
 AI 和普通应用推荐使用 `/api/query/plan`。先读取 `/api/schema` 获取允许词汇。
 
@@ -61,7 +89,7 @@ curl -X POST http://127.0.0.1:8000/api/query/plan \
 
 允许的 operator：`eq`、`neq`、`contains`、`starts_with`、`in`、`exists`、`gte`、`lte`。用户提供的 value 永远进入 Cypher parameters，不会插入查询字符串。
 
-## 4. 专家 Cypher
+## 5. 专家 Cypher
 
 当 API 显式开启时：
 
@@ -77,7 +105,7 @@ curl -X POST http://127.0.0.1:8000/api/query/cypher \
 
 返回结果仍包含实际 Cypher、parameters、records 和 graph。写入、procedure 和多语句会得到 422；未开启会得到 403。
 
-## 5. 六个 review 问题
+## 6. 六个 review 问题
 
 `graph/queries/six-review-questions.cypher` 保存六组可复核查询。它们分别回答：
 
