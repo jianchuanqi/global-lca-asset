@@ -1,6 +1,6 @@
 {
-  "package_version": "2026-08-25.1",
-  "generated_at": "2026-08-25T01:55:00.000Z",
+  "package_version": "2026-08-25.7",
+  "generated_at": "2026-08-25T12:00:00.000Z",
   "answerability": [
     {
       "question_id": "Q1",
@@ -131,13 +131,16 @@
   ],
   "data_dictionary": [
     {"concept": "Asset", "definition": "A normalized family-level LCA database, dataset, software, format, schema, platform, method, project, organization, or related resource.", "counting_rule": "One stable Asset ID per reviewed family; releases and distributions are separate records."},
-    {"concept": "Core database family", "definition": "A record classified as a current database or dataset within the narrow working count.", "counting_rule": "Database Scope.Working count status equals Core working count."},
-    {"concept": "Extended data-bearing asset", "definition": "A database, repository, platform, or other reviewed asset that bears or distributes LCA data.", "counting_rule": "Database Scope.Extended data-bearing count equals Yes."},
+    {"concept": "Core database family", "definition": "A database or dataset family counted in the narrow answer to how many LCA databases have been publicly identified.", "counting_rule": "Database Scope.Working count status equals Core working count; a portal, repository or platform is not counted again as a database family merely because it distributes data."},
+    {"concept": "Extended data-bearing asset", "definition": "The core database families plus reviewed repositories, platforms and libraries that bear or distribute LCA data but are not themselves counted as additional database families.", "counting_rule": "Database Scope.Extended data-bearing count equals Yes; use this scope to describe the data-access ecosystem, not as a synonym for the database-family count."},
     {"concept": "Evidence", "definition": "A publicly accessed source supporting one or more fields or relationships.", "counting_rule": "One Evidence ID per registered source record; not a unique-URL count."},
     {"concept": "Release", "definition": "A verified public version or lifecycle milestone for an asset.", "counting_rule": "Milestone record; intervening releases may exist."},
     {"concept": "Distribution", "definition": "A specific data package or access route connecting a database release, schema/profile, and consuming software.", "counting_rule": "One Distribution ID per reviewed package/route statement."},
+    {"concept": "Aligned schema/profile", "definition": "A reviewed canonical label and broader family assigned to equivalent public schema, profile, package, or software-native exchange labels.", "counting_rule": "Merge only curated synonyms; preserve every source label in schema_profile_original and keep compound or version-specific profiles distinct."},
     {"concept": "Relationship assertion", "definition": "A directed, evidence-bearing claim between a source and target asset.", "counting_rule": "Retain direction, status, constraints, and validation question."},
     {"concept": "Mapping artifact", "definition": "An implemented or studied mapping/conversion between named source and target formats or schemas.", "counting_rule": "Must identify source, target, direction, project/tool, and claimed or tested status."},
+    {"concept": "Mapping endpoint", "definition": "The specific schema, exchange format, software importer, software-internal model, workflow or reference list at one end of a mapping artifact.", "counting_rule": "Align synonyms within the same endpoint kind, retain the original label, and never merge a software product with its schema merely because they share a brand name."},
+    {"concept": "Version audit", "definition": "A dated recheck of every database-scope canonical route and its current-version evidence.", "counting_rule": "Separate explicit public updates, retained evidence-linked values, exact versions that remain unconfirmed, and routes whose automated check was unresolved."},
     {"concept": "Open data", "definition": "Data whose public licence permits reuse under stated conditions.", "counting_rule": "Do not infer from zero price or public download alone."},
     {"concept": "Open-source software", "definition": "Software whose source code is released under an open-source licence.", "counting_rule": "Assess separately from data-access rights."},
     {"concept": "Compatibility claim", "definition": "A statement that a tool can import, export, or otherwise use a format or package.", "counting_rule": "Record direction, versions, evidence, and claimed/tested status."},

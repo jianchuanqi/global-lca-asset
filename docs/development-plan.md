@@ -7,7 +7,7 @@
 | 模块 | 状态 | 验收结果 |
 |---|---|---|
 | 公开数据基线 | 完成 | 8 张来源表，联系人和内部字段已排除 |
-| 图谱构建 | 完成 | 1,663 节点、2,282 关系，无悬空关系 |
+| 图谱构建 | 完成 | 1,903 节点、2,721 关系，无悬空关系 |
 | Neo4j schema | 完成 | UID 约束、属性索引、全文索引 |
 | 幂等导入 | 完成 | 批量 `MERGE`；重复导入计数不增加 |
 | 资产和证据 API | 完成 | 检索、详情、时间线、证据、比较 |
@@ -26,7 +26,7 @@
 
 首版满足以下研究和使用条件：
 
-- review 的 199 个主资产、205 条证据、290 个版本、128 个分发包、18 个 mapping 和 233 条关系断言均可查询。
+- review 的 214 个主资产、252 条证据、310 个版本、170 个分发包、25 个 mapping 和 310 条关系断言均可查询；openLCA Nexus 的 37 个公开 DATA 目录项均已逐项对齐。
 - Asset family、Release、Distribution、MappingArtifact、Assertion 和 Evidence 是不同对象。
 - 任一结构化查询都会返回实际 Cypher、参数、记录和关系子图。
 - DSH 可以把自然语言问题转成图谱工具调用，并根据实际结果与证据 URL 回答。
@@ -50,8 +50,8 @@ pnpm smoke
 端到端验证还包括：
 
 - Neo4j 5.26 Community 启动并健康。
-- seed 容器以 0 退出并导入 1,663/2,282。
-- `/api/statistics` 返回 199 个 Asset 和 205 个 Evidence。
+- seed 容器以 0 退出并导入 1,903/2,721。
+- `/api/statistics` 返回 214 个 Asset 和 252 个 Evidence。
 - ecoinvent 到 ecoSpold2 返回一条 `USES_FORMAT` 最短路径。
 - 结构化计划生成参数化 Cypher 并返回记录。
 - 插件可直接调用 API；专家工具关闭和开启两种注册状态均经过测试。
@@ -95,10 +95,10 @@ pnpm smoke
 
 | 风险 | 当前控制 |
 |---|---|
-| 把当前 68 个数据库说成全球终值 | DSH prompt、schema note 和 metadata 都标记 lower bound |
+| 把当前 80 个核心数据库家族说成全球终值 | DSH prompt、schema note 和 metadata 都标记 lower bound |
 | 把免费说成开放许可 | 保存多字段访问模型，基准查询区分许可、费用和注册 |
 | 把 mapping 说成无损转换 | MappingArtifact 和 Assertion 保留 test scope 与 known loss |
 | AI 生成危险查询 | GraphQueryPlan allowlist；专家入口默认关闭且拒绝写入/procedure |
-| 关系端点尚未解析导致丢失 | 创建 ExternalReference 并保留全部 233 个 Assertion |
+| 关系端点尚未解析导致丢失 | 创建 ExternalReference 并保留全部 310 个 Assertion |
 | 个人信息进入公开图谱 | 公开字段白名单、隐私测试和 seed 字符串扫描 |
 | DSH 升级导致插件耦合 | 仓外 bundle、原始 ToolDefinition 接口、独立插件测试，不修改 core |

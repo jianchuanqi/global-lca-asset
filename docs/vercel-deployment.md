@@ -1,4 +1,34 @@
-# 在 Vercel 发布公共只读 MCP
+# 在 Vercel 发布 Global LCA Asset
+
+本仓库包含两个部署边界，建议从同一个 Git 仓库建立两个 Vercel Project：
+
+1. 静态数据集界面：`packages/global-lca-asset-web`
+2. 公共只读 MCP/API：仓库根目录
+
+## 静态数据集界面
+
+这一部分已经可以直接部署，不需要数据库或环境变量。新建 Vercel Project 时设置：
+
+```text
+Root Directory: packages/global-lca-asset-web
+Framework Preset: Vite
+Build Command: pnpm build
+Output Directory: dist
+```
+
+包内的 `vercel.json` 已保存相同配置。`src/data/dataset.json` 和 `public/downloads/` 都由公开种子生成并随 Git 版本发布，因此这个目录是自包含的；五个查询视图在浏览器本地筛选，不依赖后端。
+
+部署前应运行：
+
+```bash
+pnpm data:build
+pnpm data:verify
+pnpm --filter @global-lca/global-lca-asset-web build
+```
+
+确认生成数据、下载文件和界面改动已经提交并推送到远程 Git 后，再让 Vercel 从该提交构建。
+
+## 公共只读 MCP/API
 
 Vercel 只运行 FastAPI/MCP 查询服务，不运行 Neo4j。Neo4j 必须部署在 AuraDB 或其他能够从
 Vercel 安全访问的托管环境中，并使用加密连接。

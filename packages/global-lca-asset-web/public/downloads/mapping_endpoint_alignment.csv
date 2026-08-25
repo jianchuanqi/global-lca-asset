@@ -1,0 +1,27 @@
+endpoint_alignment_id,endpoint_original,mapping_endpoint,endpoint_kind,alignment_method,mapping_count
+MEA-0001,Brightway internal data model,Brightway internal data model,Software internal model,Curated canonical endpoint,2
+MEA-0002,Catena-X PCF data model / CX-0136,Catena-X PCF data model (CX-0136),Data model / schema,Curated synonym alignment,1
+MEA-0003,ecoinvent 3.7; IDEA 2.3; EF 3.0 elementary-flow lists,ecoinvent 3.7 + IDEA 2.3 + EF 3.0 elementary-flow lists,Reference-list set,Curated synonym alignment,1
+MEA-0004,EcoSpold 1 XML,EcoSpold 1,Schema / exchange format,Curated synonym alignment,1
+MEA-0005,EcoSpold02,ecoSpold2,Schema / exchange format,Curated synonym alignment,1
+MEA-0006,ecoSpold2,ecoSpold2,Schema / exchange format,Curated canonical endpoint,6
+MEA-0007,epd.world workflow,epd.world workflow,Platform workflow,Curated canonical endpoint,1
+MEA-0008,Federal Elementary Flow List (FEDEFL),Federal Elementary Flow List (FEDEFL),Reference list,Curated canonical endpoint,1
+MEA-0009,eILCD XML,ILCD / eILCD,Schema / exchange format,Curated synonym alignment,2
+MEA-0010,ILCD,ILCD / eILCD,Schema / exchange format,Curated synonym alignment,5
+MEA-0011,ILCD+EPD,ILCD+EPD,Schema / profile,Curated canonical endpoint,1
+MEA-0012,ILCD+EPD JSON,ILCD+EPD,Schema / profile,Curated synonym alignment,1
+MEA-0013,LCA as Code internal model,LCA as Code internal model,Software internal model,Curated canonical endpoint,1
+MEA-0014,LCAx,LCAx,Schema / exchange format,Curated canonical endpoint,1
+MEA-0015,openEPD,openEPD,Schema / exchange format,Curated canonical endpoint,3
+MEA-0016,openLCA JSON-LD,openLCA JSON-LD,Schema / exchange format,Curated canonical endpoint,1
+MEA-0017,openLCA schema / JSON-LD,openLCA JSON-LD,Schema / exchange format,Curated synonym alignment,3
+MEA-0018,openLCA process XLSX,openLCA process XLSX,Software exchange format,Curated canonical endpoint,1
+MEA-0019,openLCA,openLCA software,Software importer,Curated synonym alignment,1
+MEA-0020,SimaPro CSV,SimaPro CSV,Software exchange format,Curated canonical endpoint,3
+MEA-0021,TfS PCF Data Model,TfS PCF Data Model,Data model / schema,Curated canonical endpoint,1
+MEA-0022,Theta LCA Software,Theta LCA Software,Software importer,Curated canonical endpoint,1
+MEA-0023,TIDAS JSON,TIDAS,Schema / exchange format,Curated synonym alignment,7
+MEA-0024,USLCI JSON-LD,USLCI JSON-LD distribution,Database distribution,Curated synonym alignment,1
+MEA-0025,VoLCA internal model,VoLCA internal model,Software internal model,Curated canonical endpoint,1
+MEA-0026,WBCSD PACT Technical Specifications,WBCSD PACT Technical Specifications,Data model / specification,Curated canonical endpoint,2

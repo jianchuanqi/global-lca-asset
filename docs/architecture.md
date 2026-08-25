@@ -2,14 +2,14 @@
 
 ## 1. 当前实现
 
-本仓库是公共数据、数据包、知识图谱、查询服务、Asset Atlas 和项目 Skill 的权威 Git 项目。用户可以通过 Atlas 浏览完整 review，也可以用 Skill 直接分析 CSV/JSONL/SQLite，或通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
+本仓库是公共数据、数据包、知识图谱、查询服务、Global LCA Asset 数据界面和项目 Skill 的权威 Git 项目。用户可以按六个发布视图查询数据集，也可以用 Skill 直接分析 CSV/JSONL/SQLite，或通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
 
 ```mermaid
 flowchart LR
     W[Public review workbook] --> P[Public-field extraction]
     P --> S[Versioned public seed]
     S --> K[Versioned CSV / JSONL / SQLite]
-    K --> T[Asset Atlas and project Skill]
+    K --> T[Global LCA Asset web and project Skill]
     S --> I[Deterministic graph builder]
     I --> N[(Neo4j)]
     N --> A[FastAPI read/query service]
@@ -26,7 +26,7 @@ flowchart LR
 
 - `data/seed/inventory-v2.public.json` 保存经过隐私筛选的公共来源表，不包含联系人和内部映射。
 - 数据包生成器从同一公开种子建立 CSV、JSONL、SQLite、汇总和验证报告；不另设人工维护的第二份清单。
-- Asset Atlas 读取生成的数据，负责全局浏览、比较、时间线、互操作性和专家审阅；项目 Skill 从相同数据包回答问题或生成新的分析界面。
+- Global LCA Asset 数据界面读取生成的数据，按六个研究视图提供筛选、比较和 mapping 查询，并提供一个跨问题的按需关系图；关系图先获取资产搜索索引，再逐资产获取一跳邻域，不依赖 Neo4j。时间里程碑保留在完整证据包中，不作为发布界面；项目 Skill 从相同数据包回答问题或生成新的分析界面。
 - Python 图谱构建器把宽表转换为 Asset、Release、Distribution、MappingArtifact、Assertion、Evidence 等对象。
 - Neo4j 是关系查询的事实库，所有节点和关系使用稳定 UID，导入使用幂等 `MERGE`。
 - FastAPI 统一提供筛选、路径、时间线、证据、结构化查询计划和可选专家 Cypher。
@@ -37,7 +37,7 @@ flowchart LR
 
 ## 2. Git 项目边界
 
-本仓库统一保留公开种子、审阅口径、版本化数据包、图谱模型、导入、Neo4j、MCP、REST API、完整 Asset Atlas、项目 Skill 和 DSH 适配器。Codex 的本机 Skill 发现目录只建立指向本仓库 `skills/global-lca-asset-review` 的链接，因此 Skill 的真实版本也由这个 Git 项目管理。个人姓名、邮箱、问卷映射和内部审阅备注不进入公开种子或生成的数据包。
+本仓库统一保留公开种子、审阅口径、版本化数据包、图谱模型、导入、Neo4j、MCP、REST API、Global LCA Asset 数据界面、项目 Skill 和 DSH 适配器。Codex 的本机 Skill 发现目录只建立指向本仓库 `skills/global-lca-asset-review` 的链接，因此 Skill 的真实版本也由这个 Git 项目管理。个人姓名、邮箱、问卷映射和内部审阅备注不进入公开种子或生成的数据包。
 
 ## 3. 数据路径
 
@@ -57,16 +57,16 @@ flowchart TD
 
 | 对象 | 数量 |
 |---|---:|
-| Asset family | 199 |
-| Evidence | 205 |
-| Release / milestone | 290 |
-| Distribution | 128 |
-| MappingArtifact | 18 |
-| Assertion | 233 |
-| 全部节点 | 1,663 |
-| 全部关系 | 2,282 |
+| Asset family | 214 |
+| Evidence | 252 |
+| Release / milestone | 310 |
+| Distribution | 170 |
+| MappingArtifact | 25 |
+| Assertion | 310 |
+| 全部节点 | 1,903 |
+| 全部关系 | 2,721 |
 
-`Assertion` 数量和源表 233 条关系逐条对账。源或目标不是主资产的关系会连接到 `ExternalReference`，不会因为尚未完成实体归并而丢失。
+`Assertion` 数量和源表 310 条关系逐条对账。源或目标不是主资产的关系会连接到 `ExternalReference`，不会因为尚未完成实体归并而丢失。
 
 ## 4. 自然语言查询
 
@@ -150,11 +150,11 @@ MCP 的普通查询全部使用服务器预定义、参数化的 Cypher。REST A
 
 ## 9. 部署
 
-本地使用 Docker Compose：Neo4j、API/MCP 和一次性 seed importer。Vercel 只运行无状态 FastAPI/MCP，Neo4j 使用外部托管实例和专用 reader 身份。Asset Atlas 是静态前端，可独立构建和托管，但除非项目方明确授权，本工作只保留本地版本。正式环境还需要 TLS、备份、日志和限流；具体变量和检查见 `docs/vercel-deployment.md`。当前系统不需要消息队列或独立向量数据库。
+本地使用 Docker Compose：Neo4j、API/MCP 和一次性 seed importer。Vercel 只运行无状态 FastAPI/MCP，Neo4j 使用外部托管实例和专用 reader 身份。Global LCA Asset 是静态前端，可作为同一 monorepo 中的独立 Vercel 项目构建和托管。正式环境还需要 TLS、备份、日志和限流；具体变量和检查见 `docs/vercel-deployment.md`。当前系统不需要消息队列或独立向量数据库。
 
 ## 10. 已知边界
 
-- 199 是本次公开证据 review 的资产数，不是经过证明的全球终值。
+- 214 是本次公开证据 review 的资产数，80 个核心数据库家族也只是当前规则下的公开证据下限，不是经过证明的全球终值。
 - 公开来源不能确认的版本、许可、schema 修订或软件测试仍保留原始“不确认”状态。
 - `MAPPED_TO` 可以表示 alignment 或 mapping 声明，必须结合 MappingArtifact、Assertion、`claimed_tested` 和 `known_loss_exception` 判断，不能自动理解为无损转换。
-- 图谱卡展示的是当前查询返回的子图，不试图一次加载 1,663 个节点；超过 500 个节点或 1,500 条关系时会明确标记受限视图。
+- 图谱卡展示的是当前查询返回的子图，不试图一次加载 1,903 个节点；超过 500 个节点或 1,500 条关系时会明确标记受限视图。

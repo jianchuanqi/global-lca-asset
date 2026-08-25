@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only queries for the Global LCA Asset Review data package."""
+"""Read-only queries for the Global LCA Asset data package."""
 
 from __future__ import annotations
 
@@ -78,14 +78,21 @@ def main() -> None:
         asset_id = args.asset
         payload = {
             "asset": rows(connection.execute("SELECT * FROM assets WHERE asset_id = ?", (asset_id,)), 1),
-            "evidence": rows(connection.execute("SELECT * FROM evidence WHERE asset_id = ?", (asset_id,)), args.limit),
+            "evidence": rows(
+                connection.execute("SELECT * FROM evidence WHERE asset_id = ?", (asset_id,)), args.limit
+            ),
             "relations": rows(connection.execute(
                 "SELECT * FROM relations WHERE source_asset_id = ? OR target_asset_id = ?",
                 (asset_id, asset_id),
             ), args.limit),
-            "releases": rows(connection.execute("SELECT * FROM releases WHERE asset_id = ?", (asset_id,)), args.limit),
+            "releases": rows(
+                connection.execute("SELECT * FROM releases WHERE asset_id = ?", (asset_id,)), args.limit
+            ),
             "distributions": rows(connection.execute(
                 "SELECT * FROM distributions WHERE database_asset_id = ?", (asset_id,)
+            ), args.limit),
+            "version_audit": rows(connection.execute(
+                "SELECT * FROM version_audit WHERE asset_id = ?", (asset_id,)
             ), args.limit),
             "mappings": rows(connection.execute(
                 "SELECT * FROM mapping_artifacts WHERE source_asset_id = ? OR target_asset_id = ?",

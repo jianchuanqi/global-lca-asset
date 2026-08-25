@@ -4,21 +4,21 @@
 
 ## Source and integrity
 
-- Evidence cutoff: 2026-08-22
+- Evidence cutoff: 2026-08-25
 - Source workbook SHA-256: `3f2388768b506d44fd6e50d5e3fa844cc5d45a5b41e043b9e422126903df7fe5`
-- Public JSON SHA-256: `5cde381832481b8c52693dd270b0ce3c51eb69ab2311a6e679b68f19d1ac5265`
+- Public JSON SHA-256: `f5a89cc057b80b0cfea90678ec054bad03cb71b7d144e4ba395b73fcc115b330`
 
 Included tables:
 
 | Table | Rows |
 |---|---:|
-| Master Asset Inventory | 199 |
-| Source Evidence | 205 |
-| Database Scope | 77 |
-| Asset Releases | 290 |
-| Distributions | 128 |
-| Mapping Artifacts | 18 |
-| Relationship Index | 233 |
+| Master Asset Inventory | 214 |
+| Source Evidence | 252 |
+| Database Scope | 88 |
+| Asset Releases | 310 |
+| Distributions | 170 |
+| Mapping Artifacts | 25 |
+| Relationship Index | 310 |
 | Search Coverage | 18 |
 
 The extraction excluded `Contact information`, questionnaire/person mapping tables, organization lead contacts, and internal `Reviewer notes`. The graph builder and tests additionally verify that public node properties do not contain the excluded field names or common personal-email patterns.

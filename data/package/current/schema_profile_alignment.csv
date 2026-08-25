@@ -1,0 +1,79 @@
+alignment_id,schema_profile_original,schema_profile,schema_profile_class,alignment_method,distribution_count
+SPA-0001,Athena proprietary embedded model,Athena embedded model,Athena,Curated synonym alignment,3
+SPA-0002,Brightway data package,Brightway data package,Brightway,Curated canonical label,1
+SPA-0003,CLCD native model; current public provider page does not state the schema revision,CLCD native model,CLCD,Curated synonym alignment,1
+SPA-0004,CSV,CSV,Tabular / matrix,Original label retained; curated class assigned,5
+SPA-0005,CSV / XLSX,CSV + Excel workbook,Tabular / matrix,Curated synonym alignment,1
+SPA-0006,XLS / CSV,CSV + Excel workbook,Tabular / matrix,Curated synonym alignment,1
+SPA-0007,EcoSpold 1 XML,ecoSpold 1,ecoSpold family,Curated synonym alignment,1
+SPA-0008,EcoSpold v1 XML,ecoSpold 1,ecoSpold family,Curated synonym alignment,2
+SPA-0009,ecoinvent / ecoSpold2 data model,ecoSpold2,ecoSpold family,Curated synonym alignment,1
+SPA-0010,ecoSpold2 data model,ecoSpold2,ecoSpold family,Curated synonym alignment,1
+SPA-0011,ecoSpold2 XML,ecoSpold2,ecoSpold family,Curated synonym alignment,1
+SPA-0012,ecoSpold2 and ILCD,ecoSpold2 and ILCD,ILCD family,Original label retained; curated class assigned,1
+SPA-0013,EIME proprietary database model,EIME database model,EIME,Curated synonym alignment,1
+SPA-0014,ILCD XML in ZIP; EF profile,Environmental Footprint ILCD profile,Environmental Footprint,Curated synonym alignment,1
+SPA-0015,XLSX,Excel workbook (XLSX),Tabular / matrix,Curated synonym alignment,6
+SPA-0016,XLSX tabular workbook,Excel workbook (XLSX),Tabular / matrix,Curated synonym alignment,2
+SPA-0017,Format on request,Format on request,Unconfirmed,Original label retained; curated class assigned,1
+SPA-0018,GaBi-modelled inventory; no public exchange schema stated,GaBi-modelled inventory; no public exchange schema stated,Sphera / GaBi family,Original label retained; curated class assigned,1
+SPA-0019,Native GEMIS relational/process-chain model,GEMIS native model,GEMIS,Curated synonym alignment,1
+SPA-0020,HESTIA API / JSON-LD,HESTIA JSON-LD,HESTIA,Curated synonym alignment,1
+SPA-0021,JSON-LD / HESTIA schema,HESTIA JSON-LD,HESTIA,Curated synonym alignment,1
+SPA-0022,Host-database-specific,Host-database-specific,Software-native / proprietary,Original label retained; curated class assigned,1
+SPA-0023,IA98,IA98,IA98,Curated canonical label,1
+SPA-0024,Member portal; linked JLCA–IDEA model,IDEA member-portal model,IDEA,Curated synonym alignment,1
+SPA-0025,ILCD,ILCD,ILCD family,Curated canonical label,3
+SPA-0026,ILCD data model,ILCD,ILCD family,Curated synonym alignment,4
+SPA-0027,ILCD XML,ILCD,ILCD family,Curated synonym alignment,1
+SPA-0028,ILCD XML in ZIP,ILCD,ILCD family,Curated synonym alignment,1
+SPA-0029,ILCD XML in ZIP package,ILCD,ILCD family,Curated synonym alignment,1
+SPA-0030,ILCD / eILCD node package,ILCD / eILCD,ILCD family,Curated synonym alignment,1
+SPA-0031,ILCD / eILCD-compatible XML,ILCD / eILCD,ILCD family,Curated synonym alignment,1
+SPA-0032,ILCD-style node/package,ILCD / soda4LCA package,ILCD family,Curated synonym alignment,1
+SPA-0033,soda4LCA / ILCD-style XML package,ILCD / soda4LCA package,ILCD family,Curated synonym alignment,1
+SPA-0034,ILCD network service,ILCD network service,ILCD family,Original label retained; curated class assigned,1
+SPA-0035,ILCD-aligned provider data model; export format not public,ILCD-aligned provider data model; export format not public,ILCD family,Original label retained; curated class assigned,1
+SPA-0036,ILCD+EPD XML,ILCD+EPD,ILCD+EPD,Curated synonym alignment,1
+SPA-0037,INIES predefined digital webservice; XML/CSV exchanges are documented,INIES digital exchange,INIES,Curated synonym alignment,1
+SPA-0038,ISO/TS 14048-compatible / ILCD,ISO/TS 14048-compatible / ILCD,ILCD family,Original label retained; curated class assigned,1
+SPA-0039,LCADesign-specific package,LCADesign package,LCADesign,Curated synonym alignment,1
+SPA-0040,Not publicly confirmed,Not publicly confirmed,Unconfirmed,Curated canonical label,16
+SPA-0041,openEPD,openEPD,openEPD,Curated canonical label,1
+SPA-0042,openLCA database package,openLCA database package,openLCA family,Curated canonical label,46
+SPA-0043,ZOLCA,openLCA database package,openLCA family,Curated synonym alignment,1
+SPA-0044,openLCA JSON-LD,openLCA JSON-LD,openLCA family,Original label retained; curated class assigned,4
+SPA-0045,openLCA schema / JSON-LD,openLCA JSON-LD,openLCA family,Curated synonym alignment,3
+SPA-0046,openLCA/Federal LCA Commons data model,openLCA JSON-LD,openLCA family,Curated synonym alignment,1
+SPA-0047,PDF,PDF,Document / repository package,Original label retained; curated class assigned,2
+SPA-0048,PDF and embedded tables,PDF and embedded tables,Tabular / matrix,Original label retained; curated class assigned,1
+SPA-0049,PEF-methodology inventory; exact exchange schema not stated publicly,PEF inventory profile,Environmental Footprint,Curated synonym alignment,1
+SPA-0050,Provider JSON,Provider JSON,JSON / API / web,Original label retained; curated class assigned,1
+SPA-0051,Provider spreadsheet inventory and GaBi-based modelling; no public standard exchange schema stated,Provider spreadsheet inventory and GaBi-based modelling; no public standard exchange schema stated,Sphera / GaBi family,Original label retained; curated class assigned,1
+SPA-0052,Provider web application / LCIA tables,Provider web application / LCIA tables,Tabular / matrix,Original label retained; curated class assigned,1
+SPA-0053,Python model objects / tabular matrices,Python model objects / tabular matrices,Tabular / matrix,Original label retained; curated class assigned,1
+SPA-0054,R model objects / tabular matrices,R model objects / tabular matrices,Tabular / matrix,Original label retained; curated class assigned,1
+SPA-0055,Report plus datasets in several provider formats,Report plus datasets in several provider formats,Document / repository package,Original label retained; curated class assigned,1
+SPA-0056,SimaPro CSV,SimaPro CSV,SimaPro family,Original label retained; curated class assigned,3
+SPA-0057,SimaPro CSV; JSON may be requested,SimaPro CSV; JSON may be requested,SimaPro family,Original label retained; curated class assigned,1
+SPA-0058,SimaPro distribution,SimaPro library / exchange,SimaPro family,Curated synonym alignment,2
+SPA-0059,SimaPro exchange,SimaPro library / exchange,SimaPro family,Curated synonym alignment,1
+SPA-0060,SimaPro exchange output,SimaPro library / exchange,SimaPro family,Curated synonym alignment,1
+SPA-0061,SimaPro library/exchange,SimaPro library / exchange,SimaPro family,Curated synonym alignment,2
+SPA-0062,SimaPro proprietary library/exchange,SimaPro library / exchange,SimaPro family,Curated synonym alignment,4
+SPA-0063,SimaPro/GaBi proprietary libraries; some ecoinvent processes,SimaPro/GaBi proprietary libraries; some ecoinvent processes,ecoSpold family,Original label retained; curated class assigned,1
+SPA-0064,Software-specific proprietary package,Software-specific proprietary package,Software-native / proprietary,Original label retained; curated class assigned,1
+SPA-0065,GaBi proprietary database format,Sphera / GaBi proprietary model,Sphera / GaBi family,Curated synonym alignment,1
+SPA-0066,Sphera/GaBi proprietary database model,Sphera / GaBi proprietary model,Sphera / GaBi family,Curated synonym alignment,1
+SPA-0067,SPINE,SPINE,SPINE,Curated canonical label,1
+SPA-0068,Spreadsheet/PDF educational resource; machine-readable tab removed,Spreadsheet/PDF educational resource; machine-readable tab removed,Tabular / matrix,Original label retained; curated class assigned,1
+SPA-0069,ZIP of tabular .txt matrices,Tabular matrices (ZIP),Tabular / matrix,Curated synonym alignment,2
+SPA-0070,ZIP of tabular matrices,Tabular matrices (ZIP),Tabular / matrix,Curated synonym alignment,1
+SPA-0071,TIDAS JSON / JSON Schema,TIDAS JSON,TIDAS,Curated synonym alignment,1
+SPA-0072,USEEIO API representation,USEEIO API,USEEIO,Curated synonym alignment,1
+SPA-0073,Provider web application,Web application,JSON / API / web,Curated synonym alignment,1
+SPA-0074,Web application,Web application,JSON / API / web,Curated canonical label,1
+SPA-0075,Web records and PDF declarations,Web records and PDF declarations,JSON / API / web,Original label retained; curated class assigned,1
+SPA-0076,XYCLE proprietary internal model,XYCLE internal model,XYCLE,Curated synonym alignment,1
+SPA-0077,Zenodo dataset package,Zenodo dataset package,Document / repository package,Original label retained; curated class assigned,1
+SPA-0078,Zenodo repository package; internal schema not confirmed,Zenodo repository package; internal schema not confirmed,Unconfirmed,Original label retained; curated class assigned,1

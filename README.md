@@ -1,44 +1,182 @@
-# Global LCA Asset Knowledge Graph
+# Global LCA Asset
 
-这是一个已经可以运行的、证据可追溯的全球 LCA 资产知识图谱。它把数据库、数据集、软件、schema、格式、名录、机构、国家、行业、版本、分发包及 mapping 项目组织成关系网络，并通过匿名只读 MCP 向 Codex、Claude Code、OpenClaw、腾讯 WorkBuddy、TRAE 等客户端开放。现有 DeepSeek Harness 插件继续作为示范客户端。
+**English** | [简体中文](README.zh-CN.md)
 
-首个公开数据基线截止到 2026-08-22，包括 199 个资产家族、205 条公开证据、290 个版本或里程碑、128 个分发包、18 个 mapping artifact 和 233 条关系断言。导入后形成 1,663 个节点和 2,282 条关系。这个数量是公开证据下限，不表示已经证明“全球只有这些资产”。
+Global LCA Asset is a versioned public-evidence dataset and access system for life cycle assessment resources worldwide. It brings databases, datasets, software, schemas, formats, nomenclatures, organizations, releases, distributions, and mapping projects into one reviewed structure.
 
-## 已实现的能力
+The dataset is the shared foundation. The website, downloadable files, knowledge graph, MCP, client plugin, and project Skill are complementary ways to explore and use the same evidence—not separate inventories.
 
-- 按名称、资产类型、国家、行业和开放状态检索。
-- 通过 `/mcp` 提供无需 token 的 Streamable HTTP MCP；服务端无会话状态，适合 Vercel。
-- MCP 只暴露 10 个有规模限制的公共读工具，不提供任意 Cypher、写入或管理工具。
-- 查看资产详情、一跳或多跳关系、最短路径、证据和版本时间线。
-- 用经过校验的结构化查询计划生成参数化 Cypher；执行前先 `EXPLAIN`。
-- 为专家提供可选的直接只读 Cypher；默认关闭并拒绝写入、procedure 和多语句。
-- 通过 DeepSeek Harness 插件进行中文或英文自然语言查询，模型不接触 Neo4j 凭据。
-- 查询结果可直接展开为交互式关系图，并可切换数据表和证据视图。
-- 图中支持搜索、类型筛选、四种布局、节点/关系详情、全屏和 PNG、SVG、JSON、Cypher 导出。
-- 提供独立的 Asset Atlas：把概览、资产检索与比较、互操作关系、版本时间线、审阅问题和数据下载组织在一个研究界面中。
-- 从同一公开种子生成版本化 CSV、JSONL 和 SQLite 数据包，供研究人员、AI 和临时分析直接使用。
-- 仓库内置项目 Skill，用统一口径查询数据包、解释证据、更新分析并即时生成新的表格或 HTML 视图。
-- 区分 Asset、Release、Distribution、MappingArtifact、Assertion 和 Evidence。
-- 公开种子中不包含联系人字段、姓名/邮箱映射和内部审阅备注。
+## Current dataset
 
-## 一键运行
+Release `2026-08-25.7` has an evidence cut-off of 25 August 2026.
 
-需要 Docker Desktop：
+| Published object | Count |
+|---|---:|
+| Asset families | 214 |
+| Core database families | 80 |
+| Extended data-bearing assets | 88 |
+| Public evidence records | 252 |
+| Releases or milestones | 310 |
+| Distributions | 170 |
+| Mapping artifacts | 25 |
+| Relationship assertions | 310 |
+
+The imported graph snapshot contains 1,903 nodes and 2,721 relationships. All counts are reproducible lower bounds under the published inclusion rules and evidence cut-off; they are not claims of a final worldwide total.
+
+## Project architecture
+
+```mermaid
+flowchart LR
+    A[Public sources and review inputs] --> B[Privacy-screened public seed]
+    B --> C[Versioned package builder]
+    C --> D[CSV / JSONL / SQLite]
+    D --> E[Dataset website]
+    D --> F[Project Skill and direct AI analysis]
+    B --> G[Deterministic graph builder]
+    G --> H[(Neo4j)]
+    H --> I[FastAPI read service]
+    I --> J[Anonymous read-only MCP]
+    J --> K[MCP-capable agents]
+    I --> L[DeepSeek Harness plugin]
+    L --> M[Interactive query-result graph]
+```
+
+| Component | Primary purpose | Main location | Neo4j required? |
+|---|---|---|---:|
+| Dataset package | Reproducible research data for spreadsheets, AI, and exact queries | `data/package/current/` | No |
+| Dataset website | Public exploration, comparison, sources, and downloads | `packages/global-lca-asset-web/` | No |
+| Knowledge graph | Relationship, neighborhood, path, evidence, and timeline queries | `src/global_lca_asset/` | Yes |
+| REST API and MCP | Safe machine access to the graph | `/api/*` and `/mcp` | Yes |
+| DeepSeek Harness plugin | Natural-language graph tools and interactive result cards | `packages/dsh-lca-plugin/` | Through the API |
+| Project Skill | Consistent local analysis of CSV, JSONL, and SQLite | `skills/global-lca-asset-review/` | No |
+
+## 1. Public dataset and data package
+
+The privacy-screened public seed at `data/seed/inventory-v2.public.json` is the canonical input. A deterministic build creates the versioned package in `data/package/current/`, including:
+
+- CSV for spreadsheet review and exchange;
+- JSONL for direct AI-assisted analysis;
+- SQLite for precise relational queries;
+- the manifest, validation report, summary, controlled vocabularies, and analysis rules;
+- alignment tables for schema/profile synonyms and mapping endpoints.
+
+The package distinguishes Asset, Release, Distribution, MappingArtifact, Assertion, Evidence, Organization, and their relationships. Original labels are preserved alongside aligned values where normalization is applied.
+
+Questionnaire contacts, personal name/email mappings, and internal reviewer notes are excluded from the public seed and generated package.
+
+## 2. Dataset website
+
+The standalone Global LCA Asset website publishes the dataset for researchers. It provides:
+
+- dataset-level counts and asset-category coverage;
+- focused views for database scope, access conditions, formats and software, providers and sectors, and mappings;
+- cross-asset search, source links, comparison, and data downloads;
+- an on-demand relationship view that loads a lightweight asset index and selected one-hop neighborhoods.
+
+The website reads generated static files and does not require Neo4j. It can therefore be built and deployed as an independent Vercel project. The on-demand website graph is a public exploration view; it is separate from the server-side Neo4j query service.
+
+## 3. Knowledge graph
+
+The graph builder converts the public seed into stable graph objects such as Asset, Release, Distribution, MappingArtifact, Assertion, Evidence, and ExternalReference. Stable UIDs and idempotent `MERGE` operations allow the same release to be imported repeatedly without duplication.
+
+Neo4j supports relationship expansion, multi-hop paths, evidence tracing, comparisons, and timelines. A documented compatibility or mapping relationship must still be interpreted with its direction, version pair, test status, evidence, and known conversion losses; a relationship does not automatically imply a lossless conversion.
+
+Two visual graph experiences serve different purposes:
+
+- the dataset website progressively loads selected public one-hop neighborhoods without Neo4j;
+- the DeepSeek Harness companion displays the evidence subgraph returned by an individual query, with Graph, Data, and Evidence views.
+
+## 4. REST API and public MCP
+
+FastAPI provides the controlled read/query layer over Neo4j. It supports asset search and detail, neighborhoods, shortest paths, comparisons, timelines, evidence, statistics, schema inspection, and validated structured query plans.
+
+The public `/mcp` endpoint uses stateless Streamable HTTP and requires no token. It exposes 10 size-limited public read tools for MCP-capable clients such as Codex, Claude Code, OpenClaw, Tencent WorkBuddy, and TRAE. It does not expose writes, imports, database administration, or arbitrary Cypher.
+
+An expert read-only Cypher endpoint is available but disabled by default. When enabled, it rejects writes, procedures, and multiple statements, runs `EXPLAIN` first, and should use a Neo4j reader identity in production.
+
+See the [query guide](docs/query-guide.md) for tool selection, REST examples, and research caveats.
+
+## 5. DeepSeek Harness plugin
+
+The out-of-tree DeepSeek Harness plugin is a reference client for natural-language graph analysis. It translates model tool calls into requests to the Global LCA Asset API without exposing Neo4j credentials to the model.
+
+The installable bundle combines:
+
+- `packages/dsh-lca-plugin/` for tools, domain guidance, and API calls;
+- `packages/dsh-lca-graph-ui/` for interactive Graph, Data, and Evidence result views.
+
+DeepSeek Harness remains an independent upstream project; this repository does not modify, copy, or fork it. Other AI clients can use the public MCP directly and do not need this plugin.
+
+## 6. Project Skill
+
+The repository includes the `global-lca-asset-review` Skill for querying and interpreting the versioned evidence package directly. It is intended for questions about databases, access conditions, formats, schemas, software compatibility, organizations, sectors, releases, mappings, and evidence quality.
+
+The Skill uses the same CSV, JSONL, and SQLite release as the website. It can answer ad hoc questions or generate new tables and HTML views without requiring a running graph database.
+
+## Choosing an access route
+
+| Need | Recommended route |
+|---|---|
+| Browse and filter the published dataset | Dataset website |
+| Download or cite a versioned release | CSV, JSONL, SQLite, and manifest |
+| Ask an AI to analyze the complete small dataset directly | Project Skill with JSONL or SQLite |
+| Explore multi-hop relationships or shortest paths | Public MCP or REST API |
+| Use natural-language graph tools in DeepSeek Harness | DSH plugin bundle |
+| Reproduce or extend the graph service | Neo4j, FastAPI, and the graph builder |
+
+## Run locally
+
+### Dataset website only
+
+```bash
+pnpm install
+pnpm data:build
+pnpm web:dev
+```
+
+Open <http://127.0.0.1:5173/>.
+
+### Complete graph, API, and MCP stack
+
+Docker Desktop is required:
 
 ```bash
 docker compose up -d --build
 ```
 
-启动后：
+After startup:
 
-- API 和交互式接口文档：<http://127.0.0.1:8000/docs>
-- 匿名只读 MCP：<http://127.0.0.1:8000/mcp>
-- Neo4j Browser：<http://127.0.0.1:7474>
-- 健康检查：<http://127.0.0.1:8000/health>
+- API and interactive documentation: <http://127.0.0.1:8000/docs>
+- Anonymous read-only MCP: <http://127.0.0.1:8000/mcp>
+- Neo4j Browser: <http://127.0.0.1:7474>
+- Health check: <http://127.0.0.1:8000/health>
 
-`seed` 是一次性导入容器；正常结束码为 0。重复导入使用稳定 UID 和 `MERGE`，不会产生重复节点。
+`seed` is a one-time import container; exit code 0 is expected.
 
-运行全部本地检查：
+### DeepSeek Harness reference client
+
+```bash
+pnpm build
+GLOBAL_LCA_API_URL=http://127.0.0.1:8000 pnpm dsh:web
+```
+
+To build an installable bundle:
+
+```bash
+pnpm pack:plugin
+dsh plugin --profile global-lca add /absolute/path/to/global-lca-dsh-lca-plugin-0.2.0.tgz
+```
+
+## Deployment
+
+The two public deployment targets are independent:
+
+- the static dataset website can be deployed directly from `packages/global-lca-asset-web/` as a standalone Vercel project;
+- the repository-root `app.py` deploys the stateless FastAPI/MCP layer to Vercel, while Neo4j runs in AuraDB or another securely accessible managed environment.
+
+Configuration, access boundaries, and production checks are documented in [Vercel deployment](docs/vercel-deployment.md).
+
+## Verification
 
 ```bash
 uv sync --extra dev
@@ -53,71 +191,39 @@ pnpm build
 pnpm smoke
 ```
 
-只查看完整 review 界面：
-
-```bash
-pnpm data:build
-pnpm atlas:dev
-```
-
-浏览器打开 <http://127.0.0.1:5173/>。这里的 Atlas 是全局研究入口；AI 查询结果中的局部关系图仍由原有图谱伴随界面提供。
-
-## 接入 DeepSeek Harness
-
-本仓库只提供仓外插件，不修改 DeepSeek Harness。当前工作区的本地加载方式：
-
-```bash
-pnpm build
-GLOBAL_LCA_API_URL=http://127.0.0.1:8000 pnpm dsh:web
-```
-
-这个命令在本仓库的隔离 profile 中运行已经附加的 DSH checkout；不会写入 DSH 源码。
-
-也可以打包为可安装 bundle：
-
-```bash
-pnpm pack:plugin
-dsh plugin --profile global-lca add /absolute/path/to/global-lca-dsh-lca-plugin-0.2.0.tgz
-```
-
-查询 bundle 已内置图谱结果界面，所以只需安装一个包。插件默认注册 10 个公开只读工具。只有同时设置 API 的 `LCA_ENABLE_EXPERT_CYPHER=true` 和插件的 `GLOBAL_LCA_ENABLE_CYPHER=true`，才会出现直接 Cypher 工具；生产环境还应使用数据库 reader 身份。
-
-## 发布公共 MCP
-
-Vercel 只部署 FastAPI/MCP 查询层，Neo4j 应放在 AuraDB 或其他可安全访问的托管环境中。仓库根目录的 `app.py` 是 Vercel ASGI 入口，`vercel.json` 已启用 Fluid compute 和 30 秒请求上限。
-
-上线所需环境变量、匿名访问边界和协议检查见[《Vercel 部署》](docs/vercel-deployment.md)。正式 MCP 地址为：
+## Repository map
 
 ```text
-https://<domain>/mcp
+data/seed/                        Canonical privacy-screened public seed
+data/curated/                     Review context, alignment, and data definitions
+data/package/current/             Versioned CSV, JSONL, SQLite, and validation files
+packages/global-lca-asset-web/    Standalone dataset publication website
+src/global_lca_asset/             Graph builder, Neo4j repository, API, MCP, and CLI
+packages/dsh-lca-plugin/          DeepSeek Harness query plugin
+packages/dsh-lca-graph-ui/        Interactive graph companion for query results
+skills/global-lca-asset-review/   Project query, analysis, update, and visualization Skill
+graph/queries/                    Reference queries for the six review questions
+config/                           Local read-only client configuration
+tests/                            Data, API, and secure-query tests
+docs/                             Architecture, data model, use, and maintenance guides
 ```
 
-REST API 可以通过 `LCA_API_TOKEN` 单独保护；这个设置不会要求公共 MCP 登录。
+## Project ownership and feedback
 
-## 主要目录
+- Project owner: UNEP Global LCA Platform Working Group 2
+- Jianchuan Qi, Tsinghua University
+- Natasha Das, AECOM
+- António Martins
+- Comment and feedback: [submit corrections, missing assets, source updates, comments, or suggestions](https://uzmhiopsjv.feishu.cn/share/base/form/shrcnLwAU43hwAwb5bsDNMoaohc)
+- Git project: [github.com/jianchuanqi/global-lca-asset](https://github.com/jianchuanqi/global-lca-asset)
 
-```text
-src/global_lca_asset/            图谱转换、Neo4j、API、MCP、查询编译器和 CLI
-packages/dsh-lca-plugin/         可独立安装的 DeepSeek Harness 插件
-packages/dsh-lca-graph-ui/       查询结果的交互式图谱伴随界面
-packages/asset-atlas/            完整 review 的独立交互界面
-data/seed/                       经过隐私筛选的公开数据基线
-data/curated/                    六个问题、审阅议题和数据定义
-data/package/current/            同源 CSV、JSONL、SQLite 数据包
-graph/queries/                   六个 review 问题的基准 Cypher
-config/                          DSH 本地只读加载配置
-skills/global-lca-asset-review/  项目查询、分析、更新和可视化 Skill
-tests/                           数据、API 和安全查询测试
-docs/                            架构、数据模型、使用和维护说明
-```
+## Documentation
 
-## 文档
-
-- [系统架构](docs/architecture.md)
-- [图谱数据模型](docs/graph-model.md)
-- [DeepSeek Harness 使用](docs/deepseek-harness.md)
-- [图谱结果界面设计](docs/graph-visualization.md)
-- [Asset Atlas 与数据包](packages/asset-atlas/README.md)
-- [查询指南](docs/query-guide.md)
-- [Vercel 部署](docs/vercel-deployment.md)
-- [开发与验收状态](docs/development-plan.md)
+- [System architecture](docs/architecture.md)
+- [Graph data model](docs/graph-model.md)
+- [Query guide](docs/query-guide.md)
+- [DeepSeek Harness usage](docs/deepseek-harness.md)
+- [Graph-results interface design](docs/graph-visualization.md)
+- [Dataset website](packages/global-lca-asset-web/README.md)
+- [Vercel deployment](docs/vercel-deployment.md)
+- [Development and acceptance status](docs/development-plan.md)

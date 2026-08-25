@@ -18,7 +18,7 @@ def test_public_api_answers_core_asset_and_relationship_queries(
         neighborhood = client.get("/api/graph/neighborhood", params={"uid": "LCA-DB-0001", "depth": 1})
 
     assert health.json()["status"] == "ok"
-    assert statistics.json()["metadata"]["asset_count"] == 199
+    assert statistics.json()["metadata"]["asset_count"] == 214
     assert search.json()["total"] >= 1
     assert any(item["uid"] == "LCA-DB-0001" for item in search.json()["items"])
     assert asset.status_code == 200

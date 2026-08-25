@@ -1,0 +1,30 @@
+{
+  "alignment_version": "2026-08-25.2",
+  "fields": ["mapping_artifacts.source_schema_format", "mapping_artifacts.target_schema_format"],
+  "method": "Mapping endpoints are aligned by the thing that is actually transformed or consumed. Software products, software-internal models, schemas, exchange formats, database distributions, workflows and reference lists remain different endpoint kinds. Original labels are retained.",
+  "groups": [
+    {"canonical": "ecoSpold2", "kind": "Schema / exchange format", "aliases": ["ecoSpold2", "EcoSpold02"]},
+    {"canonical": "EcoSpold 1", "kind": "Schema / exchange format", "aliases": ["EcoSpold 1 XML"]},
+    {"canonical": "ILCD / eILCD", "kind": "Schema / exchange format", "aliases": ["ILCD", "eILCD XML"]},
+    {"canonical": "TIDAS", "kind": "Schema / exchange format", "aliases": ["TIDAS JSON"]},
+    {"canonical": "openLCA JSON-LD", "kind": "Schema / exchange format", "aliases": ["openLCA schema / JSON-LD", "openLCA JSON-LD"]},
+    {"canonical": "openLCA process XLSX", "kind": "Software exchange format", "aliases": ["openLCA process XLSX"]},
+    {"canonical": "SimaPro CSV", "kind": "Software exchange format", "aliases": ["SimaPro CSV"]},
+    {"canonical": "Brightway internal data model", "kind": "Software internal model", "aliases": ["Brightway internal data model"]},
+    {"canonical": "ILCD+EPD", "kind": "Schema / profile", "aliases": ["ILCD+EPD JSON", "ILCD+EPD"]},
+    {"canonical": "LCAx", "kind": "Schema / exchange format", "aliases": ["LCAx"]},
+    {"canonical": "openEPD", "kind": "Schema / exchange format", "aliases": ["openEPD"]},
+    {"canonical": "LCA as Code internal model", "kind": "Software internal model", "aliases": ["LCA as Code internal model"]},
+    {"canonical": "VoLCA internal model", "kind": "Software internal model", "aliases": ["VoLCA internal model"]},
+    {"canonical": "USLCI JSON-LD distribution", "kind": "Database distribution", "aliases": ["USLCI JSON-LD"]},
+    {"canonical": "openLCA software", "kind": "Software importer", "aliases": ["openLCA"]},
+    {"canonical": "Theta LCA Software", "kind": "Software importer", "aliases": ["Theta LCA Software"]},
+    {"canonical": "epd.world workflow", "kind": "Platform workflow", "aliases": ["epd.world workflow"]},
+    {"canonical": "TfS PCF Data Model", "kind": "Data model / schema", "aliases": ["TfS PCF Data Model"]},
+    {"canonical": "WBCSD PACT Technical Specifications", "kind": "Data model / specification", "aliases": ["WBCSD PACT Technical Specifications"]},
+    {"canonical": "Catena-X PCF data model (CX-0136)", "kind": "Data model / schema", "aliases": ["Catena-X PCF data model / CX-0136"]},
+    {"canonical": "ecoinvent 3.7 + IDEA 2.3 + EF 3.0 elementary-flow lists", "kind": "Reference-list set", "aliases": ["ecoinvent 3.7; IDEA 2.3; EF 3.0 elementary-flow lists"]},
+    {"canonical": "Federal Elementary Flow List (FEDEFL)", "kind": "Reference list", "aliases": ["Federal Elementary Flow List (FEDEFL)"]}
+  ],
+  "default_kind": "Other mapping endpoint"
+}

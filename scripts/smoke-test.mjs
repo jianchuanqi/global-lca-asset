@@ -22,7 +22,7 @@ const run = async (name, args) => {
 }
 
 const statistics = await run('lca_graph_statistics', {})
-if (statistics.assets !== 199 || statistics.evidence !== 205) {
+if (statistics.assets !== 214 || statistics.evidence !== 252) {
   throw new Error(`unexpected graph counts: ${JSON.stringify(statistics)}`)
 }
 

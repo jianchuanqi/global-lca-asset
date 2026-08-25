@@ -4,21 +4,21 @@ from global_lca_asset.models import GraphSnapshot
 
 
 def test_seed_builds_complete_public_graph(snapshot: GraphSnapshot) -> None:
-    assert snapshot.metadata["asset_count"] == 199
-    assert snapshot.metadata["evidence_count"] == 205
-    assert snapshot.metadata["release_count"] == 290
-    assert snapshot.metadata["distribution_count"] == 128
-    assert snapshot.metadata["mapping_count"] == 18
-    assert snapshot.metadata["relationship_assertion_count"] == 233
-    assert len(snapshot.nodes) == 1663
-    assert len(snapshot.relationships) == 2282
+    assert snapshot.metadata["asset_count"] == 214
+    assert snapshot.metadata["evidence_count"] == 252
+    assert snapshot.metadata["release_count"] == 310
+    assert snapshot.metadata["distribution_count"] == 170
+    assert snapshot.metadata["mapping_count"] == 25
+    assert snapshot.metadata["relationship_assertion_count"] == 310
+    assert len(snapshot.nodes) == 1903
+    assert len(snapshot.relationships) == 2721
 
     labels = Counter(label for node in snapshot.nodes for label in node.labels)
-    assert labels["Asset"] == 199
-    assert labels["Database"] == 68
-    assert labels["Software"] == 42
+    assert labels["Asset"] == 214
+    assert labels["Database"] == 79
+    assert labels["Software"] == 43
     assert labels["Schema"] == 14
-    assert labels["Assertion"] == 233
+    assert labels["Assertion"] == 310
 
 
 def test_snapshot_has_no_dangling_relationships(snapshot: GraphSnapshot) -> None:
@@ -52,8 +52,8 @@ def test_six_review_question_baselines(snapshot: GraphSnapshot) -> None:
         and "Asset" in nodes[rel.end_uid].labels
     ]
 
-    assert len(databases) == 68
-    assert len(explicitly_open) == 8
-    assert len(database_format_links) == 6
-    assert sum("Release" in node.labels for node in snapshot.nodes) == 290
-    assert sum("MappingArtifact" in node.labels for node in snapshot.nodes) == 18
+    assert len(databases) == 79
+    assert len(explicitly_open) == 9
+    assert len(database_format_links) == 37
+    assert sum("Release" in node.labels for node in snapshot.nodes) == 310
+    assert sum("MappingArtifact" in node.labels for node in snapshot.nodes) == 25

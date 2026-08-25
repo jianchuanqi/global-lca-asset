@@ -23,16 +23,16 @@ flowchart LR
 
 ### 主资产
 
-所有 199 个主资产都有 `Asset` 标签，并按 review 的七类资产增加一个标签：
+所有 214 个主资产都有 `Asset` 标签，并按 review 的七类资产增加一个标签：
 
 | Review 类型 | 图标签 | 当前数量 |
 |---|---|---:|
-| Database / dataset | `Database` | 68 |
+| Database / dataset | `Database` | 79 |
 | Data schema / exchange format | `Schema` | 14 |
-| Software / API / tool | `Software` | 42 |
+| Software / API / tool | `Software` | 43 |
 | Platform / repository / network | `Platform` | 30 |
 | Nomenclature / classification | `Nomenclature` | 12 |
-| Method / guidance (incl. LCIA) | `Method` | 27 |
+| Method / guidance (incl. LCIA) | `Method` | 30 |
 | QA / validation system | `QualitySystem` | 6 |
 
 主资产保留公开字段，例如 `asset_type`、`official_url`、`owner`、`current_version`、`open_data_status`、`schema_data_model`、`format_s`、`software_compatibility`、国家和行业字段。联系人和内部审阅字段不进入公开节点。
@@ -41,16 +41,16 @@ flowchart LR
 
 | Label | 含义 | 当前数量 |
 |---|---|---:|
-| `Release` | 版本、发布或历史里程碑 | 290 |
-| `Distribution` | 下载包、API、服务或公开获取路线 | 128 |
-| `Evidence` | 官方网页、项目文档、论文或公开仓库证据 | 205 |
-| `Assertion` | Relationship Index 的一条有状态关系声明 | 233 |
-| `MappingArtifact` | mapping、转换或 alignment 项目/文件 | 18 |
-| `Organization` | owner 或 maintainer | 315 个规范化名称节点 |
-| `Geography` | owner、developer 或数据覆盖地域 | 138 个规范化名称节点 |
-| `Sector` | Database Scope 的行业范围 | 77 个来源表述节点 |
+| `Release` | 版本、发布或历史里程碑 | 310 |
+| `Distribution` | 下载包、API、服务或公开获取路线 | 170 |
+| `Evidence` | 官方网页、项目文档、论文或公开仓库证据 | 252 |
+| `Assertion` | Relationship Index 的一条有状态关系声明 | 310 |
+| `MappingArtifact` | mapping、转换或 alignment 项目/文件 | 25 |
+| `Organization` | owner 或 maintainer | 326 个规范化名称节点 |
+| `Geography` | owner、developer 或数据覆盖地域 | 149 个规范化名称节点 |
+| `Sector` | Database Scope 的行业范围 | 88 个来源表述节点 |
 | `SearchStream` | 搜索覆盖和负面证据流 | 18 |
-| `ExternalReference` | 尚未归并为主资产的关系端点 | 42 |
+| `ExternalReference` | 尚未归并为主资产的关系端点 | 41 |
 
 `ExternalReference` 是刻意保留的对象：关系端点没有主资产 ID 时仍保留其名称和 Assertion，避免“只导入已经解决的关系”造成证据丢失。
 
@@ -124,7 +124,7 @@ ON EACH [n.name, n.alternative_name_acronym, n.short_description];
 
 ## 7. 时间和证据边界
 
-当前快照的 `evidence_cutoff` 是 2026-08-22。回答数量、当前版本或开放状态时必须返回这个截止日期。版本时间线只表示公开来源中已确认的里程碑，不能把相邻两个里程碑之间没有记录理解为“没有发布过其他版本”。
+当前快照的 `evidence_cutoff` 是 2026-08-25。回答数量、当前版本或开放状态时必须返回这个截止日期。版本时间线只表示公开来源中已确认的里程碑，不能把相邻两个里程碑之间没有记录理解为“没有发布过其他版本”。
 
 ## 8. 典型 Cypher
 

@@ -9,7 +9,8 @@
   },
   "scripts": {
     "build": "pnpm data:build && pnpm -r --filter '@global-lca/*' build",
-    "atlas:dev": "pnpm data:build && pnpm --filter @global-lca/asset-atlas dev",
+    "web:dev": "pnpm data:build && pnpm --filter @global-lca/global-lca-asset-web dev",
+    "data:apply-version-review": "node scripts/apply-public-version-review.mjs",
     "data:build": "node scripts/build-data-package.mjs",
     "data:verify": "node scripts/verify-data-package.mjs",
     "dsh:web": "node scripts/run-dsh-web.mjs",
