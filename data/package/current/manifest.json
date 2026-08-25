@@ -1,0 +1,155 @@
+{
+  "package_name": "Global LCA Asset Review public evidence package",
+  "package_version": "2026-08-25.1",
+  "evidence_cutoff": "2026-08-22",
+  "generated_at": "2026-08-25T01:55:00.000Z",
+  "canonical_input": "data/seed/inventory-v2.public.json",
+  "canonical_input_sha256": "5cde381832481b8c52693dd270b0ce3c51eb69ab2311a6e679b68f19d1ac5265",
+  "privacy": "Public evidence only. Contact information, questionnaire/person mappings, and internal reviewer notes are excluded.",
+  "validation_status": "passed",
+  "table_counts": {
+    "assets": 199,
+    "evidence": 205,
+    "database_scope": 77,
+    "releases": 290,
+    "distributions": 128,
+    "mapping_artifacts": 18,
+    "relations": 233,
+    "search_coverage": 18,
+    "answerability": 6,
+    "review_issues": 8,
+    "data_dictionary": 14,
+    "organizations": 315,
+    "asset_organizations": 398
+  },
+  "files": [
+    {
+      "name": "analysis_rules.md",
+      "sha256": "927a59d915d134475111fc63b14d5c3688eb47f362c670c74379dd7293449b48"
+    },
+    {
+      "name": "answerability.csv",
+      "sha256": "7ef8db073b193bbd3d129fd59fca0a98ee9b29e639c052ed85088604c5e1b10e"
+    },
+    {
+      "name": "answerability.jsonl",
+      "sha256": "b46fc99a5f071a35b5b49abf1bc4c58f5ca7320db3489ff94a5d1b99c77e215a"
+    },
+    {
+      "name": "asset_organizations.csv",
+      "sha256": "8edc333f5b3dbd9b806fe146d3de8291e1408396ad3cfbad899ba1b1406e5e03"
+    },
+    {
+      "name": "asset_organizations.jsonl",
+      "sha256": "b55536ba7b864536e070618b8e006448698032d02298d76f6246430397b4d48e"
+    },
+    {
+      "name": "assets.csv",
+      "sha256": "93e486de54129ce88d37653251c462a295c48a5dfcb9ee41b071ba39c7140559"
+    },
+    {
+      "name": "assets.jsonl",
+      "sha256": "85bba27e0d414ea4f6110c0c0262f4bbb5772718e4ac8416e97065508db7ea03"
+    },
+    {
+      "name": "controlled_vocabularies.json",
+      "sha256": "93de4c0cdc725c2953f70b2f01c98eac2f2851d16227c438b63212f526054db8"
+    },
+    {
+      "name": "data_dictionary.csv",
+      "sha256": "5d4d56194b8773edb489a7ea52d1a11b0ed74b21417a9747512d2a20f2c6ccae"
+    },
+    {
+      "name": "data_dictionary.json",
+      "sha256": "e99f2213c589a973e71431dfd0d400d499939fe5956de7a68b2507f78c3b4a77"
+    },
+    {
+      "name": "data_dictionary.jsonl",
+      "sha256": "534ae9a4d5d80a2d81de1ef1adced38f3a2696290def82d47bef6b76cf809cba"
+    },
+    {
+      "name": "database_scope.csv",
+      "sha256": "fb344a0ba9e9fa6c7593753a0d2fb71abb3786ee491a35b5183b4d288e1477d6"
+    },
+    {
+      "name": "database_scope.jsonl",
+      "sha256": "baa8f75aa27fbf8d922010191ffea0ae7fbd22091bb1d22d23e80c26fe0faab4"
+    },
+    {
+      "name": "distributions.csv",
+      "sha256": "92b2b3beda5d78fdfcc5b3273d1febabf2aeab6fef4c71d313e0c2d7dd0e5c15"
+    },
+    {
+      "name": "distributions.jsonl",
+      "sha256": "ca56c73a947a2099149ed62aa58eedeb862343babb72889ee5d569be139286a2"
+    },
+    {
+      "name": "evidence.csv",
+      "sha256": "49521ad02d09f8f35b57c24f4775f3348771228161f7eb1a0841eebdbe9a1f5b"
+    },
+    {
+      "name": "evidence.jsonl",
+      "sha256": "d4b8755faa33ee246547fb4a4747b8e6fff6c085e12fddfefca2b1aca04a7e80"
+    },
+    {
+      "name": "global_lca_assets.sqlite",
+      "sha256": "df2379130a49368db096a9d1b6d63810f0474e8ca576416ee08180028b0f7bb3"
+    },
+    {
+      "name": "mapping_artifacts.csv",
+      "sha256": "71897c3836e5ef5bf761f44bdfd3a51a8b8d2c88c24bb30a29c172abf22ef42d"
+    },
+    {
+      "name": "mapping_artifacts.jsonl",
+      "sha256": "73ad84467ea945fbf1c095dd14567208815cfd98105e04b04eef9ec0dc784e86"
+    },
+    {
+      "name": "organizations.csv",
+      "sha256": "913dbac6b55a498ab484ea4317254253c84290e72fca2dab2be928eabbeca5c8"
+    },
+    {
+      "name": "organizations.jsonl",
+      "sha256": "303ea415e9c46551f8d40c4219f352ce6df13b4b242b48d865e5ce120a7330b9"
+    },
+    {
+      "name": "relations.csv",
+      "sha256": "3a4b8d83faebc63743c56dd1e076f5ae5bd3127b59a29c1d0c808132adbb495b"
+    },
+    {
+      "name": "relations.jsonl",
+      "sha256": "907b943f509defd01a015c747bef2fe5718bc7f6bd61608b7714937dfa42ea8d"
+    },
+    {
+      "name": "releases.csv",
+      "sha256": "42fd1576da691b082e6557daca6f61caed0b9d7fb3a1576381f7ec8a5ca30b75"
+    },
+    {
+      "name": "releases.jsonl",
+      "sha256": "775b4a57c8c062d5b50832e6a23083dac6ac42ee6633d63af86fbe776ceef5df"
+    },
+    {
+      "name": "review_issues.csv",
+      "sha256": "644872c0b4641efa9bcbdd7b6f16d90974d25c6707a0e072f7f01ea4eb88c1a9"
+    },
+    {
+      "name": "review_issues.jsonl",
+      "sha256": "b63a181c95f60c9399d59538fc03c2100a978282a86e0e934b8c969aa8030ce8"
+    },
+    {
+      "name": "search_coverage.csv",
+      "sha256": "202c82590395b185f268627a99c78aa732ba5fc477967296f2a5e2154754e279"
+    },
+    {
+      "name": "search_coverage.jsonl",
+      "sha256": "be4b46e5dd7604e10efffbac3c05916d70161ed77a8b9dea8ce39dd666c0e884"
+    },
+    {
+      "name": "summary.json",
+      "sha256": "91bf59fe9fb3799592e893f62a6bb589dfdf6584f967224f63d839c300987d2c"
+    },
+    {
+      "name": "validation_report.json",
+      "sha256": "65f143292b793407c375ee99335775c07f159e8dca8dbe04f6a16d024da59f7d"
+    }
+  ]
+}

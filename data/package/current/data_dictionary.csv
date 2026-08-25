@@ -1,0 +1,15 @@
+dictionary_id,concept,definition,counting_rule
+DD-0001,Asset,"A normalized family-level LCA database, dataset, software, format, schema, platform, method, project, organization, or related resource.",One stable Asset ID per reviewed family; releases and distributions are separate records.
+DD-0002,Core database family,A record classified as a current database or dataset within the narrow working count.,Database Scope.Working count status equals Core working count.
+DD-0003,Extended data-bearing asset,"A database, repository, platform, or other reviewed asset that bears or distributes LCA data.",Database Scope.Extended data-bearing count equals Yes.
+DD-0004,Evidence,A publicly accessed source supporting one or more fields or relationships.,One Evidence ID per registered source record; not a unique-URL count.
+DD-0005,Release,A verified public version or lifecycle milestone for an asset.,Milestone record; intervening releases may exist.
+DD-0006,Distribution,"A specific data package or access route connecting a database release, schema/profile, and consuming software.",One Distribution ID per reviewed package/route statement.
+DD-0007,Relationship assertion,"A directed, evidence-bearing claim between a source and target asset.","Retain direction, status, constraints, and validation question."
+DD-0008,Mapping artifact,An implemented or studied mapping/conversion between named source and target formats or schemas.,"Must identify source, target, direction, project/tool, and claimed or tested status."
+DD-0009,Open data,Data whose public licence permits reuse under stated conditions.,Do not infer from zero price or public download alone.
+DD-0010,Open-source software,Software whose source code is released under an open-source licence.,Assess separately from data-access rights.
+DD-0011,Compatibility claim,"A statement that a tool can import, export, or otherwise use a format or package.","Record direction, versions, evidence, and claimed/tested status."
+DD-0012,Evidence cutoff,The latest date included in a versioned review package.,All counts and conclusions must display the cutoff.
+DD-0013,Confidence level,An assessment of public evidence strength for a reviewed asset record.,It does not rate the quality of the asset itself.
+DD-0014,Lead,"A questionnaire, stakeholder-list, or search result that may point to an asset but is not yet a verified asset record.",Leads are not included in verified asset counts until publicly substantiated and deduplicated.

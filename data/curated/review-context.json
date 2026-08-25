@@ -1,0 +1,148 @@
+{
+  "package_version": "2026-08-25.1",
+  "generated_at": "2026-08-25T01:55:00.000Z",
+  "answerability": [
+    {
+      "question_id": "Q1",
+      "question": "How many LCA databases currently exist worldwide?",
+      "current_answer_form": "A dated, reproducible lower bound using two explicitly defined scopes",
+      "readiness": "Answerable with caveat",
+      "evidence_basis": "Database Scope records, public evidence, and documented search coverage",
+      "main_gap": "No authoritative global registry exists; discovery remains open-ended",
+      "completion_condition": "Publish the cutoff date, inclusion rule, deduplication rule, core count, extended count, and unresolved leads",
+      "warning": "Do not present the observed count as the true world total"
+    },
+    {
+      "question_id": "Q2",
+      "question": "Which databases are open source or open data, and where can they be obtained?",
+      "current_answer_form": "Filterable access and rights matrix with canonical access URLs",
+      "readiness": "Answerable with caveat",
+      "evidence_basis": "Database Scope access, licence, registration, fee, redistribution, and download fields",
+      "main_gap": "Some public pages do not state redistribution rights or exact licence identifiers",
+      "completion_condition": "Separate open data, free access, public metadata, registration, fees, and open-source software",
+      "warning": "Free access is not the same as open data"
+    },
+    {
+      "question_id": "Q3",
+      "question": "Which formats and schemas do the databases support, and which software can open them?",
+      "current_answer_form": "Version-aware database–distribution–schema–software compatibility matrix",
+      "readiness": "Partially answerable",
+      "evidence_basis": "Database Scope, Distributions, Asset records, and relationship assertions",
+      "main_gap": "Many compatibility claims lack a tested software-version and schema-version pair",
+      "completion_condition": "Record direction, exact versions, claimed/tested status, evidence, and known constraints",
+      "warning": "A stated import option does not demonstrate complete or lossless support"
+    },
+    {
+      "question_id": "Q4",
+      "question": "Who developed each database or software, in which country, and for which industries?",
+      "current_answer_form": "Asset profile and organization links with separate owner, developer, geography, and sector fields",
+      "readiness": "Answerable with caveat",
+      "evidence_basis": "Master Asset Inventory and normalized Database Scope records",
+      "main_gap": "Organization labels and country attributions still need entity normalization for some records",
+      "completion_condition": "Retain provenance for owner, operator, developer country, data geography, and sector scope",
+      "warning": "Developer country is not the same as geographic data coverage"
+    },
+    {
+      "question_id": "Q5",
+      "question": "When were databases, software, and schemas developed, and when did their versions change?",
+      "current_answer_form": "Evidence-linked timeline of verified public release milestones",
+      "readiness": "Partially answerable",
+      "evidence_basis": "Asset Releases and current-version fields",
+      "main_gap": "The release table is milestone-based and does not claim exhaustive patch history",
+      "completion_condition": "Link each release date and version to public evidence and flag incomplete series",
+      "warning": "Current version fields must not be interpreted as full version history"
+    },
+    {
+      "question_id": "Q6",
+      "question": "Do mappings exist between software and schemas, and through which projects or studies?",
+      "current_answer_form": "Mapping-artifact register connected to source and target assets, projects, tests, and known losses",
+      "readiness": "Partially answerable",
+      "evidence_basis": "Mapping Artifacts and relationship assertions",
+      "main_gap": "Coverage is incomplete and several records need exact schema/reference-list versions or reproducible tests",
+      "completion_condition": "Distinguish compatibility claims, implemented converters, alignments, test studies, and loss reports",
+      "warning": "Compatibility, mapping, and lossless conversion are different claims"
+    }
+  ],
+  "review_issues": [
+    {
+      "issue_id": "ISS-0001",
+      "priority": "High",
+      "area": "Coverage",
+      "issue": "The inventory is a dated public-evidence lower bound, not a closed global census.",
+      "recommended_action": "Continue multilingual and regional discovery and record each search route and cutoff.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0002",
+      "priority": "High",
+      "area": "Access rights",
+      "issue": "Free, public, registered, commercial, open-data, and open-source labels are not interchangeable.",
+      "recommended_action": "Complete licence identifiers and redistribution-right fields from public primary sources.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0003",
+      "priority": "High",
+      "area": "Compatibility",
+      "issue": "Many software-format statements are provider claims rather than reproducible import/export tests.",
+      "recommended_action": "Create a version-paired test matrix and retain test files, outcomes, and losses where legally possible.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0004",
+      "priority": "High",
+      "area": "Mappings",
+      "issue": "Mapping projects are recorded, but exact source/target versions and known losses are uneven.",
+      "recommended_action": "Verify artifact repositories, licences, version pairs, test scopes, and loss reports.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0005",
+      "priority": "Medium",
+      "area": "Organizations",
+      "issue": "Owner and maintainer strings are not yet fully normalized to organization entities.",
+      "recommended_action": "Resolve composite labels and aliases while retaining the original public wording.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0006",
+      "priority": "Medium",
+      "area": "Geography",
+      "issue": "Organization location, developer country, and data coverage can be confused in summaries.",
+      "recommended_action": "Keep the dimensions separate in analysis and visual displays.",
+      "status": "Guardrail implemented"
+    },
+    {
+      "issue_id": "ISS-0007",
+      "priority": "Medium",
+      "area": "Version history",
+      "issue": "The timeline contains verified milestones rather than exhaustive release histories.",
+      "recommended_action": "Mark incomplete series and expand only from public release archives.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0008",
+      "priority": "Medium",
+      "area": "Evidence maintenance",
+      "issue": "Public URLs, access terms, and current versions change over time.",
+      "recommended_action": "Run periodic link, version, and licence checks and issue a new dated package.",
+      "status": "Open"
+    }
+  ],
+  "data_dictionary": [
+    {"concept": "Asset", "definition": "A normalized family-level LCA database, dataset, software, format, schema, platform, method, project, organization, or related resource.", "counting_rule": "One stable Asset ID per reviewed family; releases and distributions are separate records."},
+    {"concept": "Core database family", "definition": "A record classified as a current database or dataset within the narrow working count.", "counting_rule": "Database Scope.Working count status equals Core working count."},
+    {"concept": "Extended data-bearing asset", "definition": "A database, repository, platform, or other reviewed asset that bears or distributes LCA data.", "counting_rule": "Database Scope.Extended data-bearing count equals Yes."},
+    {"concept": "Evidence", "definition": "A publicly accessed source supporting one or more fields or relationships.", "counting_rule": "One Evidence ID per registered source record; not a unique-URL count."},
+    {"concept": "Release", "definition": "A verified public version or lifecycle milestone for an asset.", "counting_rule": "Milestone record; intervening releases may exist."},
+    {"concept": "Distribution", "definition": "A specific data package or access route connecting a database release, schema/profile, and consuming software.", "counting_rule": "One Distribution ID per reviewed package/route statement."},
+    {"concept": "Relationship assertion", "definition": "A directed, evidence-bearing claim between a source and target asset.", "counting_rule": "Retain direction, status, constraints, and validation question."},
+    {"concept": "Mapping artifact", "definition": "An implemented or studied mapping/conversion between named source and target formats or schemas.", "counting_rule": "Must identify source, target, direction, project/tool, and claimed or tested status."},
+    {"concept": "Open data", "definition": "Data whose public licence permits reuse under stated conditions.", "counting_rule": "Do not infer from zero price or public download alone."},
+    {"concept": "Open-source software", "definition": "Software whose source code is released under an open-source licence.", "counting_rule": "Assess separately from data-access rights."},
+    {"concept": "Compatibility claim", "definition": "A statement that a tool can import, export, or otherwise use a format or package.", "counting_rule": "Record direction, versions, evidence, and claimed/tested status."},
+    {"concept": "Evidence cutoff", "definition": "The latest date included in a versioned review package.", "counting_rule": "All counts and conclusions must display the cutoff."},
+    {"concept": "Confidence level", "definition": "An assessment of public evidence strength for a reviewed asset record.", "counting_rule": "It does not rate the quality of the asset itself."},
+    {"concept": "Lead", "definition": "A questionnaire, stakeholder-list, or search result that may point to an asset but is not yet a verified asset record.", "counting_rule": "Leads are not included in verified asset counts until publicly substantiated and deduplicated."}
+  ]
+}

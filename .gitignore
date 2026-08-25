@@ -9,6 +9,7 @@ dist/
 build/
 .coverage
 htmlcov/
+packages/asset-atlas/public/downloads/
 
 .venv/
 __pycache__/

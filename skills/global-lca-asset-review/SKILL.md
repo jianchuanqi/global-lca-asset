@@ -1,0 +1,71 @@
+---
+name: global-lca-asset-review
+description: Query, analyze, validate, update, and visualize the UNEP Global LCA Asset Review using its versioned CSV/JSONL/SQLite evidence package. Use for questions about LCA databases, software, schemas, formats, releases, mappings, access conditions, sector/geographic coverage, expert review, or regenerating the Global LCA Asset Atlas.
+---
+
+# Global LCA Asset Review
+
+Use the reviewed data package as the factual base and preserve its definitions, evidence cut-off, and uncertainty.
+
+## Local project
+
+- Project root: `/Users/jianchuan/Dev/global-lca-asset`
+- Current package: `data/package/current`
+- Atlas project: `packages/asset-atlas`
+- Canonical public input: `data/seed/inventory-v2.public.json`
+
+The canonical input is already screened to exclude personal information and internal reviewer mappings. If these paths move, locate `global_lca_assets.sqlite` beside a `manifest.json` whose `package_name` begins “Global LCA Asset Review”. Do not silently substitute older inventory workbooks or the legacy 183-asset report artifact.
+
+## Choose the mode
+
+### Answer or analyze
+
+1. Read `manifest.json` and `analysis_rules.md` before interpreting counts.
+2. Query only the needed tables, preferably through `scripts/lca_query.py`.
+3. Read [references/schema.md](references/schema.md) when the question needs joins, entity granularity, compatibility, mappings, releases, or access classification.
+4. Support factual conclusions with evidence IDs and public URLs from `evidence`, `database_scope`, `distributions`, `releases`, or `mapping_artifacts`.
+5. State the evidence cut-off and distinguish verified findings from inference, gaps, and future validation.
+6. Generate a fresh CSV, JSON, table, figure, report, or HTML view when that makes the answer clearer.
+
+Do not browse by default for a question explicitly bounded to the current package. Browse when the user asks for current verification, new discovery, or an update; use public sources only.
+
+### Refresh or extend the Atlas
+
+Preserve the existing Overview, Asset Explorer, Comparison, Interoperability, Timeline, Review & gaps, and Data package functions.
+
+- Do not hand-edit generated `packages/asset-atlas/src/data/atlas.json`, downloadable exports, or SQLite tables.
+- After an authorized change to the public seed or curated review context, run `pnpm data:build`, `pnpm data:verify`, and `pnpm --filter @global-lca/asset-atlas build` from the project root.
+- Confirm `validation_report.json` is `passed` and reconcile its counts before presenting the refreshed Atlas.
+- Keep the site local unless the user explicitly authorizes publishing or sharing.
+
+### Update research
+
+Use only publicly accessible information. Do not register, log in, request an API key, submit a form, purchase content, or infer restricted information.
+
+1. Treat questionnaire rows, stakeholder organizations, and web results as leads.
+2. Add a new finding to the candidate queue before treating it as a verified asset.
+3. Resolve duplicates, families, distributions, profiles, versions, and successor/predecessor relations.
+4. Attach public evidence for every promoted claim and record the access date.
+5. Route ambiguous or high-impact claims to expert review.
+6. Create a new package version and retain the previous evidence cut-off; never overwrite the meaning of an earlier reported count.
+
+Personal names, email addresses, source questionnaire row IDs, and internal reviewer notes stay outside public outputs. Public outputs may use organization labels and public evidence IDs.
+
+### Prepare expert review
+
+Make a specific claim or relationship the review unit, not an entire asset record. Include the current claim, evidence, exact question, decision impact, priority, reviewer response, correction, supporting source, adjudication, and release impact.
+
+## Non-negotiable interpretation rules
+
+- Say **“at least 69 core database families under the stated rule”**, not “there are 69 databases in the world”.
+- The extended data-bearing count is 77 and includes repositories/platforms beyond the core count.
+- Free access, public browsing, explicit open licence, registration, fee, redistribution, and source-code openness are separate properties.
+- Compatibility, import/export support, nomenclature mapping, schema conversion, and lossless round-trip are different claims.
+- Release records are verified public milestones, not necessarily complete patch histories.
+- Owner/steward country, developer country, hosting location, and geographic data coverage are different fields.
+- Preserve direction and exact versions for every mapping or conversion claim.
+- English is the default for structured outputs; internal methods and review notes may be bilingual.
+
+## Answer style
+
+Lead with the answer. Then give the relevant count or comparison, definition, evidence, and limitation. Avoid technical implementation detail unless asked.

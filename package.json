@@ -8,11 +8,14 @@
     "node": "^22.19.0 || >=24"
   },
   "scripts": {
-    "build": "pnpm -r --filter '@global-lca/*' build",
+    "build": "pnpm data:build && pnpm -r --filter '@global-lca/*' build",
+    "atlas:dev": "pnpm data:build && pnpm --filter @global-lca/asset-atlas dev",
+    "data:build": "node scripts/build-data-package.mjs",
+    "data:verify": "node scripts/verify-data-package.mjs",
     "dsh:web": "node scripts/run-dsh-web.mjs",
     "pack:plugin": "pnpm build && mkdir -p dist && npm pack ./packages/dsh-lca-plugin --pack-destination ./dist",
     "smoke": "node scripts/smoke-test.mjs",
     "typecheck": "pnpm -r --filter '@global-lca/*' typecheck",
-    "test": "pnpm -r --filter '@global-lca/*' test"
+    "test": "pnpm data:verify && pnpm -r --filter '@global-lca/*' test"
   }
 }

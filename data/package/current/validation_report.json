@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "package_version": "2026-08-25.1",
+  "evidence_cutoff": "2026-08-22",
+  "checked_at": "2026-08-25T01:55:00.000Z",
+  "checks": {
+    "expected_table_counts": true,
+    "stable_ids_unique": true,
+    "primary_asset_references_resolved": true,
+    "public_privacy_boundary": true
+  },
+  "errors": [],
+  "warnings": [
+    "mapping_artifacts: external source External",
+    "Organization names are derived from exact public owner/maintainer labels; composite labels require expert entity resolution."
+  ]
+}

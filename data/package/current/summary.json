@@ -1,0 +1,317 @@
+{
+  "package_version": "2026-08-25.1",
+  "evidence_cutoff": "2026-08-22",
+  "counts": {
+    "assets": 199,
+    "evidence": 205,
+    "database_scope": 77,
+    "releases": 290,
+    "distributions": 128,
+    "mapping_artifacts": 18,
+    "relations": 233,
+    "search_coverage": 18,
+    "answerability": 6,
+    "review_issues": 8,
+    "data_dictionary": 14,
+    "organizations": 315,
+    "asset_organizations": 398
+  },
+  "scope_counts": {
+    "core_database_families": 69,
+    "extended_data_bearing_assets": 77
+  },
+  "asset_types": [
+    {
+      "label": "Database / dataset",
+      "count": 68
+    },
+    {
+      "label": "Software / API / tool",
+      "count": 42
+    },
+    {
+      "label": "Platform / repository / network",
+      "count": 30
+    },
+    {
+      "label": "Method / guidance (incl. LCIA)",
+      "count": 27
+    },
+    {
+      "label": "Data schema / exchange format",
+      "count": 14
+    },
+    {
+      "label": "Nomenclature / classification",
+      "count": 12
+    },
+    {
+      "label": "QA / validation system",
+      "count": 6
+    }
+  ],
+  "confidence_levels": [
+    {
+      "label": "High",
+      "count": 166
+    },
+    {
+      "label": "Medium",
+      "count": 32
+    },
+    {
+      "label": "Low",
+      "count": 1
+    }
+  ],
+  "relationship_statuses": [
+    {
+      "label": "Confirmed",
+      "count": 131
+    },
+    {
+      "label": "Confirmed by provider",
+      "count": 22
+    },
+    {
+      "label": "Provider-stated",
+      "count": 8
+    },
+    {
+      "label": "Documented",
+      "count": 7
+    },
+    {
+      "label": "Comparative",
+      "count": 6
+    },
+    {
+      "label": "Related",
+      "count": 6
+    },
+    {
+      "label": "Confirmed project plan",
+      "count": 5
+    },
+    {
+      "label": "Potential",
+      "count": 5
+    },
+    {
+      "label": "Confirmed at programme level",
+      "count": 4
+    },
+    {
+      "label": "Claimed/documented",
+      "count": 3
+    },
+    {
+      "label": "Confirmed at platform level",
+      "count": 3
+    },
+    {
+      "label": "Proposed in source publication",
+      "count": 2
+    },
+    {
+      "label": "Applicable/documented",
+      "count": 1
+    },
+    {
+      "label": "Confirmed at family level",
+      "count": 1
+    },
+    {
+      "label": "Confirmed at interface level",
+      "count": 1
+    },
+    {
+      "label": "Confirmed at provider level",
+      "count": 1
+    },
+    {
+      "label": "Confirmed at standards-family level",
+      "count": 1
+    },
+    {
+      "label": "Confirmed at standards-programme level",
+      "count": 1
+    },
+    {
+      "label": "Confirmed by TfS",
+      "count": 1
+    },
+    {
+      "label": "Confirmed for current Footprint version",
+      "count": 1
+    },
+    {
+      "label": "Confirmed for current release family",
+      "count": 1
+    },
+    {
+      "label": "Confirmed for documented conversion",
+      "count": 1
+    },
+    {
+      "label": "Confirmed for selected variants",
+      "count": 1
+    },
+    {
+      "label": "Confirmed for the published implementation",
+      "count": 1
+    },
+    {
+      "label": "Confirmed for version 2.1",
+      "count": 1
+    },
+    {
+      "label": "Confirmed historically",
+      "count": 1
+    },
+    {
+      "label": "Confirmed in 2026 project communication",
+      "count": 1
+    },
+    {
+      "label": "Confirmed in peer-reviewed documentation",
+      "count": 1
+    },
+    {
+      "label": "Confirmed project basis",
+      "count": 1
+    },
+    {
+      "label": "Confirmed where applicable",
+      "count": 1
+    },
+    {
+      "label": "Current standards relationship",
+      "count": 1
+    },
+    {
+      "label": "Demonstrated, source-level details pending",
+      "count": 1
+    },
+    {
+      "label": "Documented ecosystem use",
+      "count": 1
+    },
+    {
+      "label": "Documented for v3.0",
+      "count": 1
+    },
+    {
+      "label": "Documented institutional relationship",
+      "count": 1
+    },
+    {
+      "label": "Documented project context",
+      "count": 1
+    },
+    {
+      "label": "Documented relationship; detailed mapping needed",
+      "count": 1
+    },
+    {
+      "label": "Experimental but documented",
+      "count": 1
+    },
+    {
+      "label": "Generally applicable",
+      "count": 1
+    },
+    {
+      "label": "Planned/confirmed objective",
+      "count": 1
+    },
+    {
+      "label": "Potential / requires verification",
+      "count": 1
+    },
+    {
+      "label": "Provider-stated; needs confirmation",
+      "count": 1
+    },
+    {
+      "label": "Related, not conformance",
+      "count": 1
+    }
+  ],
+  "database_access_classes": [
+    {
+      "label": "Public/free access; licence or redistribution unclear or mixed",
+      "count": 30
+    },
+    {
+      "label": "Commercial/proprietary",
+      "count": 18
+    },
+    {
+      "label": "Free access with registration, use restrictions, or third-party dependency",
+      "count": 13
+    },
+    {
+      "label": "Open licence confirmed for at least one official distribution",
+      "count": 9
+    },
+    {
+      "label": "Request/membership-mediated",
+      "count": 6
+    },
+    {
+      "label": "Not yet publicly released / under development",
+      "count": 1
+    }
+  ],
+  "field_information_gaps": [
+    {
+      "field": "citation_mechanism",
+      "label": "Citation mechanism",
+      "count": 198,
+      "rate": 0.995
+    },
+    {
+      "field": "review_procedure",
+      "label": "Review procedure",
+      "count": 192,
+      "rate": 0.965
+    },
+    {
+      "field": "nomenclature_classification",
+      "label": "Nomenclature / classification",
+      "count": 189,
+      "rate": 0.95
+    },
+    {
+      "field": "temporal_coverage",
+      "label": "Temporal coverage",
+      "count": 171,
+      "rate": 0.859
+    },
+    {
+      "field": "data_model_or_schema",
+      "label": "Schema / data model",
+      "count": 156,
+      "rate": 0.784
+    },
+    {
+      "field": "api_or_machine_readable_interface",
+      "label": "API / machine-readable interface",
+      "count": 113,
+      "rate": 0.568
+    },
+    {
+      "field": "exchange_format",
+      "label": "Exchange format",
+      "count": 73,
+      "rate": 0.367
+    },
+    {
+      "field": "licence_or_usage_rights",
+      "label": "Licence / usage rights",
+      "count": 21,
+      "rate": 0.106
+    }
+  ]
+}

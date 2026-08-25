@@ -15,6 +15,9 @@
 - 通过 DeepSeek Harness 插件进行中文或英文自然语言查询，模型不接触 Neo4j 凭据。
 - 查询结果可直接展开为交互式关系图，并可切换数据表和证据视图。
 - 图中支持搜索、类型筛选、四种布局、节点/关系详情、全屏和 PNG、SVG、JSON、Cypher 导出。
+- 提供独立的 Asset Atlas：把概览、资产检索与比较、互操作关系、版本时间线、审阅问题和数据下载组织在一个研究界面中。
+- 从同一公开种子生成版本化 CSV、JSONL 和 SQLite 数据包，供研究人员、AI 和临时分析直接使用。
+- 仓库内置项目 Skill，用统一口径查询数据包、解释证据、更新分析并即时生成新的表格或 HTML 视图。
 - 区分 Asset、Release、Distribution、MappingArtifact、Assertion 和 Evidence。
 - 公开种子中不包含联系人字段、姓名/邮箱映射和内部审阅备注。
 
@@ -42,11 +45,22 @@ uv sync --extra dev
 uv run pytest
 uv run ruff check src tests
 pnpm install
+pnpm data:build
+pnpm data:verify
 pnpm typecheck
 pnpm test
 pnpm build
 pnpm smoke
 ```
+
+只查看完整 review 界面：
+
+```bash
+pnpm data:build
+pnpm atlas:dev
+```
+
+浏览器打开 <http://127.0.0.1:5173/>。这里的 Atlas 是全局研究入口；AI 查询结果中的局部关系图仍由原有图谱伴随界面提供。
 
 ## 接入 DeepSeek Harness
 
@@ -86,9 +100,13 @@ REST API 可以通过 `LCA_API_TOKEN` 单独保护；这个设置不会要求公
 src/global_lca_asset/            图谱转换、Neo4j、API、MCP、查询编译器和 CLI
 packages/dsh-lca-plugin/         可独立安装的 DeepSeek Harness 插件
 packages/dsh-lca-graph-ui/       查询结果的交互式图谱伴随界面
+packages/asset-atlas/            完整 review 的独立交互界面
 data/seed/                       经过隐私筛选的公开数据基线
+data/curated/                    六个问题、审阅议题和数据定义
+data/package/current/            同源 CSV、JSONL、SQLite 数据包
 graph/queries/                   六个 review 问题的基准 Cypher
 config/                          DSH 本地只读加载配置
+skills/global-lca-asset-review/  项目查询、分析、更新和可视化 Skill
 tests/                           数据、API 和安全查询测试
 docs/                            架构、数据模型、使用和维护说明
 ```
@@ -99,6 +117,7 @@ docs/                            架构、数据模型、使用和维护说明
 - [图谱数据模型](docs/graph-model.md)
 - [DeepSeek Harness 使用](docs/deepseek-harness.md)
 - [图谱结果界面设计](docs/graph-visualization.md)
+- [Asset Atlas 与数据包](packages/asset-atlas/README.md)
 - [查询指南](docs/query-guide.md)
 - [Vercel 部署](docs/vercel-deployment.md)
 - [开发与验收状态](docs/development-plan.md)

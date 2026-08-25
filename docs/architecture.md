@@ -2,12 +2,14 @@
 
 ## 1. 当前实现
 
-本仓库是知识图谱、公共数据和查询服务的权威项目。官方参考 Skill 将作为独立 Git 项目维护；用户也可以完全不用官方 Skill，直接通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
+本仓库是公共数据、数据包、知识图谱、查询服务、Asset Atlas 和项目 Skill 的权威 Git 项目。用户可以通过 Atlas 浏览完整 review，也可以用 Skill 直接分析 CSV/JSONL/SQLite，或通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
 
 ```mermaid
 flowchart LR
     W[Public review workbook] --> P[Public-field extraction]
     P --> S[Versioned public seed]
+    S --> K[Versioned CSV / JSONL / SQLite]
+    K --> T[Asset Atlas and project Skill]
     S --> I[Deterministic graph builder]
     I --> N[(Neo4j)]
     N --> A[FastAPI read/query service]
@@ -15,6 +17,7 @@ flowchart LR
     M --> H[Codex / Claude Code / OpenClaw / WorkBuddy / TRAE]
     A --> D[DSH query tools and graph view]
     D --> H2[DeepSeek Harness]
+    T --> U[Researcher]
     H --> U[Researcher]
     H2 --> U
 ```
@@ -22,6 +25,8 @@ flowchart LR
 各层的责任明确分开：
 
 - `data/seed/inventory-v2.public.json` 保存经过隐私筛选的公共来源表，不包含联系人和内部映射。
+- 数据包生成器从同一公开种子建立 CSV、JSONL、SQLite、汇总和验证报告；不另设人工维护的第二份清单。
+- Asset Atlas 读取生成的数据，负责全局浏览、比较、时间线、互操作性和专家审阅；项目 Skill 从相同数据包回答问题或生成新的分析界面。
 - Python 图谱构建器把宽表转换为 Asset、Release、Distribution、MappingArtifact、Assertion、Evidence 等对象。
 - Neo4j 是关系查询的事实库，所有节点和关系使用稳定 UID，导入使用幂等 `MERGE`。
 - FastAPI 统一提供筛选、路径、时间线、证据、结构化查询计划和可选专家 Cypher。
@@ -32,7 +37,7 @@ flowchart LR
 
 ## 2. Git 项目边界
 
-本仓库保留图谱模型、数据审核、导入、Neo4j、MCP、REST API、公共快照和接口契约。可选的官方 Skill、不同 Agent 的安装说明和跨平台提示词放入独立的 `global-lca-asset-skill` 项目。两者通过 MCP contract、ontology version 和 data snapshot 版本衔接。现有 DSH 适配器暂时留在本仓库，稳定后再决定是否迁移。
+本仓库统一保留公开种子、审阅口径、版本化数据包、图谱模型、导入、Neo4j、MCP、REST API、完整 Asset Atlas、项目 Skill 和 DSH 适配器。Codex 的本机 Skill 发现目录只建立指向本仓库 `skills/global-lca-asset-review` 的链接，因此 Skill 的真实版本也由这个 Git 项目管理。个人姓名、邮箱、问卷映射和内部审阅备注不进入公开种子或生成的数据包。
 
 ## 3. 数据路径
 
@@ -145,7 +150,7 @@ MCP 的普通查询全部使用服务器预定义、参数化的 Cypher。REST A
 
 ## 9. 部署
 
-本地使用 Docker Compose：Neo4j、API/MCP 和一次性 seed importer。Vercel 只运行无状态 FastAPI/MCP，Neo4j 使用外部托管实例和专用 reader 身份。正式环境还需要 TLS、备份、日志和 Vercel Firewall 限流；具体变量和检查见 `docs/vercel-deployment.md`。当前系统不需要消息队列、独立向量数据库或另一个传统前端。
+本地使用 Docker Compose：Neo4j、API/MCP 和一次性 seed importer。Vercel 只运行无状态 FastAPI/MCP，Neo4j 使用外部托管实例和专用 reader 身份。Asset Atlas 是静态前端，可独立构建和托管，但除非项目方明确授权，本工作只保留本地版本。正式环境还需要 TLS、备份、日志和限流；具体变量和检查见 `docs/vercel-deployment.md`。当前系统不需要消息队列或独立向量数据库。
 
 ## 10. 已知边界
 

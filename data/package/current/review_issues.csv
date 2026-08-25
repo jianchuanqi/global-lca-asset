@@ -1,0 +1,9 @@
+issue_id,priority,area,issue,recommended_action,status
+ISS-0001,High,Coverage,"The inventory is a dated public-evidence lower bound, not a closed global census.",Continue multilingual and regional discovery and record each search route and cutoff.,Open
+ISS-0002,High,Access rights,"Free, public, registered, commercial, open-data, and open-source labels are not interchangeable.",Complete licence identifiers and redistribution-right fields from public primary sources.,Open
+ISS-0003,High,Compatibility,Many software-format statements are provider claims rather than reproducible import/export tests.,"Create a version-paired test matrix and retain test files, outcomes, and losses where legally possible.",Open
+ISS-0004,High,Mappings,"Mapping projects are recorded, but exact source/target versions and known losses are uneven.","Verify artifact repositories, licences, version pairs, test scopes, and loss reports.",Open
+ISS-0005,Medium,Organizations,Owner and maintainer strings are not yet fully normalized to organization entities.,Resolve composite labels and aliases while retaining the original public wording.,Open
+ISS-0006,Medium,Geography,"Organization location, developer country, and data coverage can be confused in summaries.",Keep the dimensions separate in analysis and visual displays.,Guardrail implemented
+ISS-0007,Medium,Version history,The timeline contains verified milestones rather than exhaustive release histories.,Mark incomplete series and expand only from public release archives.,Open
+ISS-0008,Medium,Evidence maintenance,"Public URLs, access terms, and current versions change over time.","Run periodic link, version, and licence checks and issue a new dated package.",Open
