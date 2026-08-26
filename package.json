@@ -12,7 +12,7 @@
     "web:dev": "pnpm data:build && pnpm --filter @global-lca/global-lca-asset-web dev",
     "data:apply-version-review": "node scripts/apply-public-version-review.mjs",
     "data:build": "node scripts/build-data-package.mjs",
-    "data:verify": "node scripts/verify-data-package.mjs",
+    "data:verify": "node scripts/verify-data-package.mjs && python3 skills/global-lca-asset-review/scripts/candidate_queue.py validate",
     "dsh:web": "node scripts/run-dsh-web.mjs",
     "pack:plugin": "pnpm build && mkdir -p dist && npm pack ./packages/dsh-lca-plugin --pack-destination ./dist",
     "smoke": "node scripts/smoke-test.mjs",

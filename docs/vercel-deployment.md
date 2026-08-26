@@ -16,7 +16,7 @@ Build Command: pnpm build
 Output Directory: dist
 ```
 
-包内的 `vercel.json` 已保存相同配置。`src/data/dataset.json` 和 `public/downloads/` 都由公开种子生成并随 Git 版本发布，因此这个目录是自包含的；五个查询视图在浏览器本地筛选，不依赖后端。
+包内的 `vercel.json` 已保存相同配置。`src/data/dataset.json` 和 `public/downloads/` 都由公开种子生成并随 Git 版本发布；Vite 把前者输出为带内容 hash 的独立 JSON asset，页面启动后加载并校验，避免把约 2 MB 数据编译进主 JavaScript chunk。因此这个目录仍是自包含的，五个查询视图在浏览器本地筛选，不依赖后端。
 
 部署前应运行：
 

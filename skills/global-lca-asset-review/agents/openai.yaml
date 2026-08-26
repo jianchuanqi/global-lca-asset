@@ -1,5 +1,5 @@
 interface:
   display_name: "Global LCA Asset"
-  short_description: "Query and visualize the reviewed LCA asset evidence base"
+  short_description: "Review, edit, validate, and contribute LCA asset evidence"
   brand_color: "#276C55"
-  default_prompt: "Use $global-lca-asset-review to answer this question from the current evidence package with definitions, sources, and limitations."
+  default_prompt: "Use $global-lca-asset-review to review this LCA asset question or contribution with public evidence, validation, and clear limitations."

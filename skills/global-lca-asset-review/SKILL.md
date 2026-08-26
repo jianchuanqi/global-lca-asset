@@ -1,15 +1,16 @@
 ---
 name: global-lca-asset-review
-description: Query, analyze, validate, update, and visualize Global LCA Asset using its versioned CSV/JSONL/SQLite evidence package. Use for questions about LCA databases, software, schemas, formats, releases, mappings, access conditions, sector/geographic coverage, expert review, or regenerating the Global LCA Asset web dataset.
+description: Query and review Global LCA Asset evidence, and when explicitly requested edit its Git-tracked source data, validate a new package, and prepare or submit a pull request. Use for LCA databases, software, schemas, formats, releases, mappings, access, coverage, evidence quality, expert review, or dataset contributions.
 ---
 
 # Global LCA Asset
 
 Use the reviewed data package as the factual base and preserve its definitions, evidence cut-off, and uncertainty.
 
-## Local project
+## Locate the project
 
-- Project root: `/Users/jianchuan/Dev/global-lca-asset`
+- Use the cloned Git repository as the single source of truth. The repository installer links this Skill into Codex and/or Claude Code.
+- Locate the project from `GLOBAL_LCA_ASSET_ROOT`, the installed `.global-lca-asset-root` marker, the Skill's resolved link target, or the current working directory.
 - Current package: `data/package/current`
 - Web dataset project: `packages/global-lca-asset-web`
 - Canonical public input: `data/seed/inventory-v2.public.json`
@@ -44,17 +45,25 @@ Preserve the existing Overview; database, access, format/software, provider/sect
 Use only publicly accessible information. Do not register, log in, request an API key, submit a form, purchase content, or infer restricted information.
 
 1. Treat questionnaire rows, stakeholder organizations, and web results as leads.
-2. Add a new finding to the candidate queue before treating it as a verified asset.
+2. Add a new finding under `data/candidates/` and validate it with `scripts/candidate_queue.py`; candidates are review leads and do not change published counts.
 3. Resolve duplicates, families, distributions, profiles, versions, and successor/predecessor relations.
 4. Attach public evidence for every promoted claim and record the access date.
 5. Route ambiguous or high-impact claims to expert review.
-6. Create a new package version and retain the previous evidence cut-off; never overwrite the meaning of an earlier reported count.
+6. Create a new package version, advance its evidence cut-off to the reviewed date when appropriate, and preserve the historical meaning of every earlier package, cut-off, and reported count.
 
-Personal names, email addresses, source questionnaire row IDs, and internal reviewer notes stay outside public research records. The explicitly authorized publication owners are Jianchuan Qi (Tsinghua University), Natasha Das (AECOM), and António Martins (Researcher at LEPABE). The feedback contact is Jianchuan Qi, `jcqi@tsinghua.edu.cn`. Keep all publication ownership/contact information separate from the research dataset.
+Personal names, email addresses, source questionnaire row IDs, and internal reviewer notes stay outside public research records. The explicitly authorized publication owners are Jianchuan Qi (Tsinghua University), Natasha Das (AECOM), and António Martins (Portuguese Catholic University). The feedback contact is Jianchuan Qi, `jcqi@tsinghua.edu.cn`. Keep all publication ownership/contact information separate from the research dataset.
 
 ### Prepare expert review
 
 Make a specific claim or relationship the review unit, not an entire asset record. Include the current claim, evidence, exact question, decision impact, priority, reviewer response, correction, supporting source, adjudication, and release impact.
+
+### Modify reviewed data
+
+Read [references/data-editing.md](references/data-editing.md). Treat review-only requests as read-only. Make scoped local source-data changes only when the user asks to correct, add, update, or implement them. Preserve unrelated working-tree changes, attach public evidence, regenerate derived outputs, and run the full validation sequence.
+
+### Contribute through Git
+
+Read [references/git-contribution.md](references/git-contribution.md) when the user wants a branch, commit, push, or pull request. A request to edit data authorizes local changes, not external GitHub writes. Push and open a PR only after the user explicitly asks for that action; never merge, force-push, or include unrelated edits.
 
 ## Non-negotiable interpretation rules
 

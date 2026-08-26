@@ -13,7 +13,16 @@ const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const validation = JSON.parse(readFileSync(join(packageDir, 'validation_report.json'), 'utf8'));
 const failures = [];
 
+function verifyHash(relativePath, expected, label) {
+  const path = join(projectRoot, relativePath);
+  if (!existsSync(path)) { failures.push(`missing ${label}: ${relativePath}`); return; }
+  const actual = createHash('sha256').update(readFileSync(path)).digest('hex');
+  if (actual !== expected) failures.push(`${label} hash mismatch: ${relativePath}`);
+}
+
 if (validation.status !== 'passed') failures.push(`validation status is ${validation.status}`);
+verifyHash(manifest.canonical_input, manifest.canonical_input_sha256, 'canonical input');
+for (const input of manifest.curated_inputs ?? []) verifyHash(input.name, input.sha256, 'curated input');
 for (const file of manifest.files) {
   const path = join(packageDir, file.name);
   if (!existsSync(path)) { failures.push(`missing file: ${file.name}`); continue; }

@@ -109,9 +109,19 @@ DeepSeek Harness 仍是独立的上游项目；本仓库不修改、不复制也
 
 ## 6. 项目 Skill
 
-仓库内置 `global-lca-asset-review` Skill，用于直接查询和解释版本化证据数据包。它适合回答数据库、获取条件、格式、schema、软件兼容性、机构、行业、版本、mapping 和证据质量等问题。
+仓库内置 `global-lca-asset-review` Skill，用于直接查询和解释版本化证据数据包。它适合回答数据库、获取条件、格式、schema、软件兼容性、机构、行业、版本、mapping 和证据质量等问题。修改请求只授权 scoped local edits、数据包重建、验证和 PR-ready contribution；commit、push 和创建 Pull Request 是独立操作，只有用户另行明确要求时 Skill 才会执行。
 
 Skill 与网页使用同一份 CSV、JSONL 和 SQLite 数据，可以回答临时问题或即时生成新的表格和 HTML 视图，不要求运行图数据库。
+
+先 clone 仓库，再为 Codex、Claude Code 或两者安装仓库内的 Skill。默认使用链接模式，因此两个 Agent 修改的都是同一个 Git 工作树：
+
+```bash
+git clone https://github.com/jianchuanqi/global-lca-asset.git
+cd global-lca-asset
+python3 scripts/install-skill.py --target all
+```
+
+只安装一个客户端时使用 `--target codex` 或 `--target claude`。不支持目录链接的系统可使用 `--mode copy`。安装器不会覆盖已有的同名 Skill。Fork、review、验证和 Pull Request 工作流见[《Skill 安装与贡献》](docs/skill-installation-and-contribution.md)；完整操作示例见[《更新已有资产 review 数据》](docs/data-update-example.md)。
 
 ## 如何选择使用方式
 
@@ -120,6 +130,8 @@ Skill 与网页使用同一份 CSV、JSONL 和 SQLite 数据，可以回答临�
 | 浏览和筛选已发布数据集 | 数据集网页 |
 | 下载或引用一个固定版本 | CSV、JSONL、SQLite 和 manifest |
 | 让 AI 直接分析完整的小型数据集 | 项目 Skill 配合 JSONL 或 SQLite |
+| Review、修正或新增公开证据记录 | 在 clone 的 Git 仓库中使用项目 Skill |
+| 验证贡献并创建 Pull Request | 项目 Skill 配合 Git 和 GitHub CLI |
 | 探索多跳关系或最短路径 | 公共 MCP 或 REST API |
 | 在 DeepSeek Harness 中使用自然语言图谱工具 | DSH Plugin bundle |
 | 复现或扩展图谱服务 | Neo4j、FastAPI 和图谱生成器 |
@@ -178,6 +190,8 @@ dsh plugin --profile global-lca add /absolute/path/to/global-lca-dsh-lca-plugin-
 
 ## 验证
 
+离线 contribution gate 不需要 Neo4j 或 Docker：
+
 ```bash
 uv sync --extra dev
 uv run pytest
@@ -188,8 +202,17 @@ pnpm data:verify
 pnpm typecheck
 pnpm test
 pnpm build
+```
+
+`pnpm smoke` 是 Neo4j → API → 客户端 Plugin 的在线集成 gate。应先启动完整 stack；`seed` 应以状态码 0 结束，`neo4j` 和 `api` 应进入 healthy：
+
+```bash
+docker compose up -d --build
+docker compose ps -a
 pnpm smoke
 ```
+
+smoke 会先快速检查 `/health`；API 不可用时会直接给出启动和日志命令。测试受保护的远程部署时，应先设置 `GLOBAL_LCA_API_URL` 和 `GLOBAL_LCA_API_TOKEN`。
 
 ## 项目目录
 
@@ -213,7 +236,7 @@ docs/                             架构、数据模型、使用和维护说明
 - Project owner: UNEP Global LCA Platform Working Group 2
 - Jianchuan Qi, Tsinghua University
 - Natasha Das, AECOM
-- António Martins
+- António Martins, Portuguese Catholic University
 - Comment & feedback: [提交错误更正、遗漏资产、来源更新、评论和建议](https://uzmhiopsjv.feishu.cn/share/base/form/shrcnLwAU43hwAwb5bsDNMoaohc)
 - Git project: [github.com/jianchuanqi/global-lca-asset](https://github.com/jianchuanqi/global-lca-asset)
 

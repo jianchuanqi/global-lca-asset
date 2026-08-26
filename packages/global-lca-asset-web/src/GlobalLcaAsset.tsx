@@ -1,12 +1,12 @@
-import { lazy, Suspense, useMemo, useState, type ReactNode } from 'react';
-import datasetJson from './data/dataset.json';
+import { createContext, lazy, Suspense, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import datasetUrl from './data/dataset.json?url';
 
 type Row = Record<string, string | number | null>;
 type Tab = 'overview' | 'databases' | 'access' | 'formats' | 'providers' | 'mappings' | 'network' | 'assets' | 'data';
 
 const RelationshipGraph = lazy(() => import('./RelationshipGraph'));
 
-const data = datasetJson as unknown as {
+export type Dataset = {
   meta: Record<string, string>;
   summaries: {
     overview: Record<string, number>;
@@ -32,6 +32,52 @@ const data = datasetJson as unknown as {
   mappingEndpointAlignment: Row[];
 };
 
+type DatasetFetcher = (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>;
+
+const DatasetContext = createContext<Dataset | null>(null);
+
+function useDataset() {
+  const dataset = useContext(DatasetContext);
+  if (dataset === null) throw new Error('Global LCA dataset context is unavailable.');
+  return dataset;
+}
+
+function useAssetIndex() {
+  const { assets } = useDataset();
+  return useMemo(() => new Map(assets.map((asset) => [String(asset.asset_id), asset])), [assets]);
+}
+
+function isDataset(value: unknown): value is Dataset {
+  if (value === null || typeof value !== 'object') return false;
+  const candidate = value as Record<string, unknown>;
+  if (candidate.meta === null || typeof candidate.meta !== 'object') return false;
+  if (candidate.summaries === null || typeof candidate.summaries !== 'object') return false;
+  const meta = candidate.meta as Record<string, unknown>;
+  const summaries = candidate.summaries as Record<string, unknown>;
+  return typeof meta.packageVersion === 'string'
+    && typeof meta.cutoff === 'string'
+    && summaries.overview !== null
+    && typeof summaries.overview === 'object'
+    && ['asset_types', 'confidence_levels', 'database_access_classes', 'schema_profile_classes', 'field_information_gaps']
+      .every((field) => Array.isArray(summaries[field]))
+    && [
+      'assets', 'evidence', 'relations', 'distributions', 'mappings', 'databaseScope',
+      'databaseAccessScope', 'searchCoverage', 'reviewIssues', 'answerability', 'versionAudit',
+      'mappingEndpointAlignment',
+    ].every((field) => Array.isArray(candidate[field]));
+}
+
+export async function loadDataset(
+  fetcher: DatasetFetcher = globalThis.fetch,
+  signal?: AbortSignal,
+): Promise<Dataset> {
+  const response = await fetcher(datasetUrl, { signal, headers: { Accept: 'application/json' } });
+  if (!response.ok) throw new Error(`Dataset request failed with HTTP ${response.status}.`);
+  const payload: unknown = await response.json();
+  if (!isDataset(payload)) throw new Error('Dataset response does not match the expected public package shape.');
+  return payload;
+}
+
 const projectOwner = 'UNEP Global LCA Platform Working Group 2';
 const contactName = 'Jianchuan Qi';
 const contactAffiliation = 'Tsinghua University';
@@ -41,7 +87,7 @@ const feedbackUrl = 'https://uzmhiopsjv.feishu.cn/share/base/form/shrcnLwAU43hwA
 const projectMembers: Array<{ name: string; affiliation?: string }> = [
   { name: 'Jianchuan Qi', affiliation: 'Tsinghua University' },
   { name: 'Natasha Das', affiliation: 'AECOM' },
-  { name: 'António Martins' },
+  { name: 'António Martins', affiliation: 'Portuguese Catholic University' },
 ];
 
 const tabs: Array<[Tab, string]> = [
@@ -55,8 +101,6 @@ const tabs: Array<[Tab, string]> = [
   ['assets', 'All assets'],
   ['data', 'Download data'],
 ];
-
-const assetById = new Map(data.assets.map((asset) => [String(asset.asset_id), asset]));
 
 function text(value: unknown, fallback = 'Not publicly confirmed') {
   if (value === null || value === undefined || value === '') return fallback;
@@ -135,17 +179,17 @@ function SectionHeading({ eyebrow, title, note }: { eyebrow?: string; title: Rea
   );
 }
 
-const queryEntrypoints: Array<{ tab: Tab; number: string; title: string; description: string; count: string }> = [
-  { tab: 'databases', number: '01', title: 'Database landscape', description: 'Browse the core count and the extended data-bearing scope.', count: '80 core · 88 extended' },
-  { tab: 'access', number: '02', title: 'Open and accessible data', description: 'Filter licences, fees, registration and canonical access routes.', count: '88 scoped records' },
-  { tab: 'formats', number: '03', title: 'Formats and software', description: 'Trace distributions from database releases to schemas and software.', count: `${data.distributions.length} distributions` },
-  { tab: 'providers', number: '04', title: 'Providers and sector coverage', description: 'Search owners, maintainers, countries, geographies and industries.', count: `${data.assets.length} asset profiles` },
-  { tab: 'mappings', number: '05', title: 'Mappings and conversions', description: 'Inspect projects, version pairs, tests and known conversion losses.', count: `${data.mappings.length} mapping records` },
-  { tab: 'assets', number: '06', title: 'Cross-asset search', description: 'Search and compare normalized records across every asset category.', count: `${data.assets.length} asset families` },
-];
-
 function Overview({ openTab }: { openTab: (tab: Tab) => void }) {
+  const data = useDataset();
   const o = data.summaries.overview;
+  const queryEntrypoints: Array<{ tab: Tab; number: string; title: string; description: string; count: string }> = [
+    { tab: 'databases', number: '01', title: 'Database landscape', description: 'Browse the core count and the extended data-bearing scope.', count: '80 core · 88 extended' },
+    { tab: 'access', number: '02', title: 'Open and accessible data', description: 'Filter licences, fees, registration and canonical access routes.', count: '88 scoped records' },
+    { tab: 'formats', number: '03', title: 'Formats and software', description: 'Trace distributions from database releases to schemas and software.', count: `${data.distributions.length} distributions` },
+    { tab: 'providers', number: '04', title: 'Providers and sector coverage', description: 'Search owners, maintainers, countries, geographies and industries.', count: `${data.assets.length} asset profiles` },
+    { tab: 'mappings', number: '05', title: 'Mappings and conversions', description: 'Inspect projects, version pairs, tests and known conversion losses.', count: `${data.mappings.length} mapping records` },
+    { tab: 'assets', number: '06', title: 'Cross-asset search', description: 'Search and compare normalized records across every asset category.', count: `${data.assets.length} asset families` },
+  ];
   return (
     <div className="page-stack">
       <section className="publication-hero">
@@ -234,6 +278,7 @@ function Overview({ openTab }: { openTab: (tab: Tab) => void }) {
 }
 
 function DatabaseLandscape() {
+  const data = useDataset();
   const [query, setQuery] = useState('');
   const [scope, setScope] = useState('All scope classes');
   const [access, setAccess] = useState('All access classes');
@@ -246,7 +291,7 @@ function DatabaseLandscape() {
       if (access !== 'All access classes' && row.open_data_status !== access) return false;
       return matches(row, needle, ['asset_id', 'official_name', 'owner', 'owner_country_countries', 'developer_country_countries', 'geographic_data_coverage', 'sector_scope']);
     });
-  }, [query, scope, access]);
+  }, [query, scope, access, data.databaseScope]);
 
   return (
     <div className="page-stack">
@@ -272,6 +317,7 @@ function DatabaseLandscape() {
 }
 
 function AccessExplorer() {
+  const data = useDataset();
   const [query, setQuery] = useState('');
   const [access, setAccess] = useState('All access classes');
   const accessClasses = data.summaries.database_access_classes.map((row) => row.label);
@@ -281,7 +327,7 @@ function AccessExplorer() {
       if (access !== 'All access classes' && row.open_data_status !== access) return false;
       return matches(row, needle, ['official_name', 'open_data_status', 'data_access', 'metadata_access', 'licence_identifier_terms', 'registration', 'fee']);
     });
-  }, [query, access]);
+  }, [query, access, data.databaseScope]);
   return (
     <div className="page-stack">
       <SectionHeading eyebrow="Research view 02" title="Access, licences and download routes" note="Free access, open data, public metadata, registration, fees and redistribution rights remain separate fields." />
@@ -302,6 +348,7 @@ function AccessExplorer() {
 }
 
 function FormatsAndSoftware() {
+  const data = useDataset();
   const [query, setQuery] = useState('');
   const [schemaClass, setSchemaClass] = useState('All format / schema families');
   const [status, setStatus] = useState('All evidence statuses');
@@ -314,7 +361,7 @@ function FormatsAndSoftware() {
       if (status !== 'All evidence statuses' && row.claimed_tested_status !== status) return false;
       return matches(row, needle, ['database_name', 'database_release', 'distribution_package', 'schema_profile', 'schema_profile_original', 'schema_profile_class', 'schema_version', 'compatible_software', 'software_version']);
     });
-  }, [query, schemaClass, status]);
+  }, [query, schemaClass, status, data.distributions]);
   return (
     <div className="page-stack">
       <SectionHeading eyebrow="Research view 03" title="Database formats and software compatibility" note="Schema and profile synonyms are aligned for filtering, while the exact source wording remains visible in every record." />
@@ -336,6 +383,7 @@ function FormatsAndSoftware() {
 }
 
 function ProvidersAndSectors() {
+  const data = useDataset();
   const [query, setQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('All asset types');
   const types = data.summaries.asset_types.map((row) => row.label);
@@ -345,7 +393,7 @@ function ProvidersAndSectors() {
       if (typeFilter !== 'All asset types' && row.asset_type !== typeFilter) return false;
       return matches(row, needle, ['official_name', 'asset_type', 'owner', 'operator_maintainer', 'geographic_coverage', 'sector_product_process_coverage']);
     });
-  }, [query, typeFilter]);
+  }, [query, typeFilter, data.assets]);
   return (
     <div className="page-stack">
       <SectionHeading eyebrow="Research view 04" title="Providers, countries and sector coverage" note="Owner, operator, developer country and geographic data coverage are different concepts and are shown separately where available." />
@@ -362,6 +410,8 @@ function ProvidersAndSectors() {
 }
 
 function AssetDetail({ asset, onClose, onCompare }: { asset: Row; onClose: () => void; onCompare: (id: string) => void }) {
+  const data = useDataset();
+  const assetById = useAssetIndex();
   const id = text(asset.asset_id, '');
   const evidence = data.evidence.filter((row) => row.asset_id === id);
   const relations = data.relations.filter((row) => row.source_asset_id === id || row.target_asset_id === id);
@@ -424,6 +474,7 @@ function AssetDetail({ asset, onClose, onCompare }: { asset: Row; onClose: () =>
 }
 
 function Comparison({ ids, onRemove, onClear }: { ids: string[]; onRemove: (id: string) => void; onClear: () => void }) {
+  const assetById = useAssetIndex();
   const assets = ids.map((id) => assetById.get(id)).filter(Boolean) as Row[];
   if (!assets.length) return null;
   const fields: Array<[string, string]> = [
@@ -442,6 +493,8 @@ function Comparison({ ids, onRemove, onClear }: { ids: string[]; onRemove: (id: 
 }
 
 function AssetExplorer() {
+  const data = useDataset();
+  const assetById = useAssetIndex();
   const [query, setQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('All asset types');
   const [confidence, setConfidence] = useState('All confidence levels');
@@ -459,7 +512,7 @@ function AssetExplorer() {
       return ['asset_id', 'official_name', 'alternative_name_acronym', 'asset_type', 'owner', 'operator_maintainer', 'geographic_coverage', 'sector_product_process_coverage', 'data_model_or_schema', 'exchange_format', 'related_assets']
         .some((field) => text(asset[field], '').toLowerCase().includes(needle));
     });
-  }, [query, typeFilter, confidence]);
+  }, [query, typeFilter, confidence, data.assets]);
 
   function toggleCompare(id: string) {
     setCompareIds((current) => current.includes(id) ? current.filter((item) => item !== id) : current.length < 3 ? [...current, id] : current);
@@ -496,6 +549,7 @@ function AssetExplorer() {
 }
 
 function MappingsAndConversions() {
+  const data = useDataset();
   const endpointOptions = useMemo(() => {
     const options = new Map<string, { endpoint: string; kind: string }>();
     for (const row of data.mappings) {
@@ -506,7 +560,7 @@ function MappingsAndConversions() {
       }
     }
     return [...options.entries()].map(([key, value]) => ({ key, ...value })).sort((a, b) => a.kind.localeCompare(b.kind) || a.endpoint.localeCompare(b.endpoint));
-  }, []);
+  }, [data.mappings]);
   const [query, setQuery] = useState('');
   const [focusKey, setFocusKey] = useState(endpointOptions[0]?.key ?? '');
   const needle = query.toLowerCase();
@@ -553,6 +607,7 @@ function MappingsAndConversions() {
 }
 
 function DataPackage() {
+  const data = useDataset();
   const downloads = [
     ['Manifest', 'manifest.json'], ['Validation report', 'validation_report.json'], ['Analysis rules', 'analysis_rules.md'],
     ['Assets · CSV', 'assets.csv'], ['Assets · JSONL', 'assets.jsonl'], ['Evidence · CSV', 'evidence.csv'],
@@ -580,7 +635,8 @@ function DataPackage() {
   );
 }
 
-export default function GlobalLcaAsset() {
+function DatasetApplication() {
+  const data = useDataset();
   const [tab, setTab] = useState<Tab>('overview');
   return (
     <main className="dataset-shell full-dataset">
@@ -610,4 +666,55 @@ export default function GlobalLcaAsset() {
       </footer>
     </main>
   );
+}
+
+type DatasetLoadState =
+  | { status: 'loading' }
+  | { status: 'ready'; dataset: Dataset }
+  | { status: 'error'; message: string };
+
+function DatasetLoadScreen({ error, onRetry }: { error?: string; onRetry?: () => void }) {
+  return (
+    <main className="dataset-shell full-dataset">
+      <div className="dataset-content">
+        <div className="page-stack">
+          <section className="content-card" role={error ? 'alert' : 'status'}>
+            <p className="eyebrow">Global LCA Asset</p>
+            <h2>{error ? 'The reviewed dataset could not be loaded' : 'Loading the reviewed dataset…'}</h2>
+            {error && <p>{error}</p>}
+            {onRetry && <button className="primary-button" onClick={onRetry}>Retry loading</button>}
+          </section>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+export default function GlobalLcaAsset() {
+  const [attempt, setAttempt] = useState(0);
+  const [state, setState] = useState<DatasetLoadState>({ status: 'loading' });
+
+  useEffect(() => {
+    const controller = new AbortController();
+    let active = true;
+    setState({ status: 'loading' });
+    loadDataset(globalThis.fetch, controller.signal).then(
+      (dataset) => { if (active) setState({ status: 'ready', dataset }); },
+      (error: unknown) => {
+        if (!active) return;
+        const message = error instanceof Error ? error.message : 'Unknown dataset loading error.';
+        setState({ status: 'error', message });
+      },
+    );
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, [attempt]);
+
+  if (state.status === 'loading') return <DatasetLoadScreen />;
+  if (state.status === 'error') {
+    return <DatasetLoadScreen error={state.message} onRetry={() => setAttempt((current) => current + 1)} />;
+  }
+  return <DatasetContext.Provider value={state.dataset}><DatasetApplication /></DatasetContext.Provider>;
 }

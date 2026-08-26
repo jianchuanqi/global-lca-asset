@@ -36,6 +36,8 @@ services:
     depends_on:
       neo4j:
         condition: service_healthy
+      seed:
+        condition: service_completed_successfully
     healthcheck:
       test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/health')\""]
       interval: 5s
@@ -44,7 +46,7 @@ services:
 
   seed:
     build: .
-    command: ["global-lca", "import", "--wait", "60"]
+    command: ["global-lca", "import", "--replace", "--wait", "60"]
     environment:
       LCA_GRAPH_BACKEND: neo4j
       LCA_NEO4J_URI: bolt://neo4j:7687

@@ -109,9 +109,19 @@ DeepSeek Harness remains an independent upstream project; this repository does n
 
 ## 6. Project Skill
 
-The repository includes the `global-lca-asset-review` Skill for querying and interpreting the versioned evidence package directly. It is intended for questions about databases, access conditions, formats, schemas, software compatibility, organizations, sectors, releases, mappings, and evidence quality.
+The repository includes the `global-lca-asset-review` Skill for querying and interpreting the versioned evidence package directly. It is intended for questions about databases, access conditions, formats, schemas, software compatibility, organizations, sectors, releases, mappings, and evidence quality. A change request authorizes scoped local edits, package regeneration, validation, and a PR-ready contribution. Commit, push, and pull-request creation remain separate actions; the Skill performs them only when the user explicitly requests them.
 
 The Skill uses the same CSV, JSONL, and SQLite release as the website. It can answer ad hoc questions or generate new tables and HTML views without requiring a running graph database.
+
+Clone the repository, then install the repository-owned Skill for Codex, Claude Code, or both. Link mode is the default so both agents edit this same Git working tree:
+
+```bash
+git clone https://github.com/jianchuanqi/global-lca-asset.git
+cd global-lca-asset
+python3 scripts/install-skill.py --target all
+```
+
+Use `--target codex` or `--target claude` to install for one client. `--mode copy` is available when directory links are not supported. Existing destination Skills are never overwritten. See [Skill installation and contribution](docs/skill-installation-and-contribution.md) for fork, review, validation, and pull-request workflows, and [Updating an existing reviewed asset](docs/data-update-example.md) for a complete worked example.
 
 ## Choosing an access route
 
@@ -120,6 +130,8 @@ The Skill uses the same CSV, JSONL, and SQLite release as the website. It can an
 | Browse and filter the published dataset | Dataset website |
 | Download or cite a versioned release | CSV, JSONL, SQLite, and manifest |
 | Ask an AI to analyze the complete small dataset directly | Project Skill with JSONL or SQLite |
+| Review, correct, or add public-evidence records | Project Skill in the cloned Git repository |
+| Validate a contribution and open a pull request | Project Skill plus Git and GitHub CLI |
 | Explore multi-hop relationships or shortest paths | Public MCP or REST API |
 | Use natural-language graph tools in DeepSeek Harness | DSH plugin bundle |
 | Reproduce or extend the graph service | Neo4j, FastAPI, and the graph builder |
@@ -178,6 +190,8 @@ Configuration, access boundaries, and production checks are documented in [Verce
 
 ## Verification
 
+The offline contribution gate does not require Neo4j or Docker:
+
 ```bash
 uv sync --extra dev
 uv run pytest
@@ -188,8 +202,17 @@ pnpm data:verify
 pnpm typecheck
 pnpm test
 pnpm build
+```
+
+`pnpm smoke` is the live Neo4j → API → client-plugin integration gate. Start the stack first; `seed` should finish with exit code 0 and both `neo4j` and `api` should become healthy:
+
+```bash
+docker compose up -d --build
+docker compose ps -a
 pnpm smoke
 ```
+
+The smoke command now performs a fast `/health` preflight and prints startup/log commands when the API is unavailable. For a protected remote deployment, set `GLOBAL_LCA_API_URL` and `GLOBAL_LCA_API_TOKEN` before running it.
 
 ## Repository map
 
@@ -213,7 +236,7 @@ docs/                             Architecture, data model, use, and maintenance
 - Project owner: UNEP Global LCA Platform Working Group 2
 - Jianchuan Qi, Tsinghua University
 - Natasha Das, AECOM
-- António Martins
+- António Martins, Portuguese Catholic University
 - Comment and feedback: [submit corrections, missing assets, source updates, comments, or suggestions](https://uzmhiopsjv.feishu.cn/share/base/form/shrcnLwAU43hwAwb5bsDNMoaohc)
 - Git project: [github.com/jianchuanqi/global-lca-asset](https://github.com/jianchuanqi/global-lca-asset)
 
