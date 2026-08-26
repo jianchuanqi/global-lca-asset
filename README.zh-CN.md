@@ -121,7 +121,7 @@ cd global-lca-asset
 python3 scripts/install-skill.py --target all
 ```
 
-只安装一个客户端时使用 `--target codex` 或 `--target claude`。不支持目录链接的系统可使用 `--mode copy`。安装器不会覆盖已有的同名 Skill。Fork、review、验证和 Pull Request 工作流见[《Skill 安装与贡献》](docs/skill-installation-and-contribution.md)；完整操作示例见[《更新已有资产 review 数据》](docs/data-update-example.md)。
+只安装一个客户端时使用 `--target codex` 或 `--target claude`。不支持目录链接的系统可使用 `--mode copy`。安装器不会覆盖已有的同名 Skill。Fork、review、验证和 Pull Request 工作流见[《Skill 安装与贡献》](docs/skill-installation-and-contribution.md)；完整操作示例见[《更新已有资产 review 数据》](docs/data-update-example.zh-CN.md)。
 
 ## 如何选择使用方式
 

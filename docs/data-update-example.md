@@ -1,22 +1,24 @@
-# Updating an existing reviewed asset / 更新已有资产 review 数据
+# Updating Existing Asset Review Data
 
-本例展示一条完整、可复制的贡献路径：clone 或 fork 仓库，安装 `global-lca-asset-review` Skill，只读核查已有记录，授权 Agent 修改 canonical 数据，重建并验证数据包，最后准备或创建 Pull Request。
+English | [Chinese](data-update-example.zh-CN.md)
+
+This example presents a complete, reproducible contribution path: clone or fork the repository, install the `global-lca-asset-review` Skill, review an existing record without modifying it, authorize the Agent to edit canonical data, rebuild and verify the data package, and finally prepare or create a Pull Request.
 
 > [!IMPORTANT]
-> 本例使用仓库中现有的 openLCA 资产 `LCA-SW-0003` 来说明数据结构，但假设的 `<NEW_VERSION>`、`<RELEASE_DATE>`、`<OFFICIAL_RELEASE_URL>` 和 `<ACCESS_DATE>` 都是占位符，不是对 openLCA 当前版本的事实声明。执行真实更新前，必须让 Agent 重新访问公开的一手来源并替换全部占位符。
+> This example uses the existing openLCA asset `LCA-SW-0003` in the repository to illustrate the data structure. The hypothetical values `<NEW_VERSION>`, `<RELEASE_DATE>`, `<OFFICIAL_RELEASE_URL>`, and `<ACCESS_DATE>` are placeholders, not factual claims about the current openLCA version. Before performing a real update, the Agent must revisit public primary sources and replace every placeholder.
 
-文中的 `EVD-0253`、`RLS-0311`、`252 → 253` 和 `310 → 311` 以编写本例时的 `2026-08-25.7` 数据包为基线。仓库更新后，应先重新检查 ID 和计数，不能直接复制。
+The values `EVD-0253`, `RLS-0311`, `252 → 253`, and `310 → 311` use the `2026-08-25.7` data package that existed when this example was written as their baseline. After the repository changes, check the IDs and counts again before using them; do not copy them directly.
 
-## 1. Fork、clone 并安装 Skill
+## 1. Fork, clone, and install the Skill
 
-有上游仓库写权限时，可以直接 clone：
+If you have write access to the upstream repository, you can clone it directly:
 
 ```bash
 git clone https://github.com/jianchuanqi/global-lca-asset.git
 cd global-lca-asset
 ```
 
-外部贡献者应先在 GitHub fork，再 clone 自己可写的 fork，并把原仓库保留为 `upstream`：
+External contributors should first fork the repository on GitHub, then clone their writable fork and retain the original repository as `upstream`:
 
 ```bash
 GLOBAL_LCA_GITHUB_ACCOUNT=replace-with-your-github-account
@@ -25,17 +27,17 @@ cd global-lca-asset
 git remote add upstream https://github.com/jianchuanqi/global-lca-asset.git
 ```
 
-为 Codex 和 Claude Code 同时安装仓库内的 Skill：
+Install the repository's Skill for both Codex and Claude Code:
 
 ```bash
 python3 scripts/install-skill.py --target all
 ```
 
-只安装一个客户端时使用 `--target codex` 或 `--target claude`。默认的 link 模式会让两个 Agent 直接使用 clone 中的同一份 Skill 和数据；目标目录已存在时，安装器会停止而不会覆盖。可以先用 `--dry-run` 查看目标路径。
+Use `--target codex` or `--target claude` to install it for only one client. The default link mode lets both Agents use the same Skill and data directly from the clone. If a target directory already exists, the installer stops without overwriting it. You can use `--dry-run` first to inspect the target paths.
 
-如果新安装的 Skill 没有立即出现在客户端中，开始一个新的 Codex turn/session，或重启 Claude Code。
+If the newly installed Skill does not appear immediately in the client, start a new Codex turn/session or restart Claude Code.
 
-完整 review 和验证还需要仓库在 `package.json` 中声明的 Node.js `^22.19.0 || >=24`、pnpm `11.19.0`，以及 Python 3.11+ 和 `uv`。本例中的检查命令还使用 `jq` 和 ripgrep（`rg`）；只有提交 PR 时才需要 GitHub CLI（`gh`）及其登录状态。先确认这些命令可用，再为 fresh clone 安装锁定的依赖：
+A complete review and validation also require the Node.js version declared in `package.json` (`^22.19.0 || >=24`), pnpm `11.19.0`, Python 3.11+, and `uv`. The inspection commands in this example also use `jq` and ripgrep (`rg`). GitHub CLI (`gh`) and an authenticated session are required only when submitting a PR. Confirm that these commands are available, then install the locked dependencies in a fresh clone:
 
 ```bash
 node --version
@@ -48,11 +50,11 @@ pnpm install --frozen-lockfile
 uv sync --extra dev
 ```
 
-如果某个命令不存在，先用所在操作系统的标准包管理方式安装，再继续。安装 Skill 本身只使用 Python 标准库，不要求先安装 Node 依赖。
+If a command is unavailable, install it using the operating system's standard package-management method before continuing. Installing the Skill itself uses only the Python standard library and does not require Node dependencies to be installed first.
 
-## 2. 建立独立 review 分支
+## 2. Create a dedicated review branch
 
-先确认当前分支、远程仓库和工作树。不要隐藏或覆盖已有修改：
+First inspect the current branch, remotes, and working tree. Do not hide or overwrite existing changes:
 
 ```bash
 git status --short
@@ -60,64 +62,68 @@ git branch --show-current
 git remote -v
 ```
 
-`git status --short` 应为空；如果不是，先辨认并保留已有工作，不要 stash、覆盖或带入本次贡献。Fork 用户从最新 `upstream/main` 建立只包含本次 review 的分支。下面用本文编写日期作为示例；真实贡献应换成实际 review 日期和主题：
+`git status --short` should produce no output. If it does, identify and preserve the existing work first; do not stash or overwrite it, and do not include it in this contribution. Fork users should create a branch containing only this review from the latest `upstream/main`. The following command uses the date on which this document was written as an example; for a real contribution, replace it with the actual review date and subject:
 
 ```bash
 git fetch upstream
 git switch -c review/2026-08-26-openlca-version upstream/main
 ```
 
-直接 clone 上游且有写权限的维护者，把上面的 `upstream` 换成 `origin`。
+Maintainers who cloned upstream directly and have write access should replace `upstream` above with `origin`.
 
-## 3. 先做只读 review
+## 3. Begin with a read-only review
 
-直接查看当前数据包中的资产、证据和 release：
+Inspect the asset, evidence, and releases in the current data package:
 
 ```bash
 skills/global-lca-asset-review/scripts/lca_query.py --asset LCA-SW-0003
 ```
 
-在 Codex 中可以这样提问：
+In Codex, you can use this request:
 
 ```text
-使用 $global-lca-asset-review，只读 review LCA-SW-0003 的当前版本、发布日期、
-已有 Source Evidence 和 Asset Releases。再从公开的一手来源核对当前版本，列出准确 URL、
-访问日期、支持的字段、仍不确定的内容和预计受影响的表。不要修改文件。
+Use $global-lca-asset-review to perform a read-only review of the current version,
+release date, existing Source Evidence, and Asset Releases for LCA-SW-0003. Then
+verify the current version against public primary sources. List the exact URLs,
+access dates, supported fields, remaining uncertainties, and tables expected to
+be affected. Do not modify any files.
 ```
 
-在 Claude Code 中使用同样的请求，把调用写为 `/global-lca-asset-review`。
+Use the same request in Claude Code, but write the invocation as `/global-lca-asset-review`.
 
-Agent 应在这一阶段确认：
+At this stage, the Agent should confirm that:
 
-- 这是同一 openLCA 软件家族的新 release，而不是新的资产家族；
-- 来源无需登录、注册、付费或提交表单，并且优先使用维护者的 release page、changelog 或公开仓库；
-- 来源明确支持 `<NEW_VERSION>` 和 `<RELEASE_DATE>`，而不仅是搜索摘要或第三方转述；
-- 新证据是否改变格式、API、schema 或数据库兼容性等其他 claim；
-- 哪些内容仍然只能保留为“未确认”。
+- this is a new release in the same openLCA software family, not a new asset family;
+- the source requires no login, registration, payment, or form submission, and priority is given to the maintainer's release page, changelog, or public repository;
+- the source explicitly supports `<NEW_VERSION>` and `<RELEASE_DATE>`, rather than merely appearing in a search snippet or third-party account;
+- the new evidence changes any other claim about formats, APIs, schemas, database compatibility, or similar matters;
+- any information that remains uncertain is kept as “unconfirmed.”
 
-如果只有搜索结果或不明确的页面，不应把占位符提升为已验证事实。
+If only search results or ambiguous pages are available, the placeholders must not be promoted to verified facts.
 
-## 4. 明确授权本地修改
+## 4. Explicitly authorize local edits
 
-只读 review 完成后，再给出边界清楚的修改请求：
+After the read-only review is complete, give a clearly bounded editing request:
 
 ```text
-使用 $global-lca-asset-review，根据刚才核验的公开来源更新 LCA-SW-0003：
-更新主记录的当前版本和发布日期，新增一条 Source Evidence，把旧的 current release
-改为 historical release，再新增当前 release。同步证据截止日期、package version、计数基线
-和所有受影响的公开说明；重建数据包并运行完整验证。只做本地修改并显示 diff，
-现在不要 commit、push 或创建 PR。
+Use $global-lca-asset-review to update LCA-SW-0003 from the public sources just
+verified: update the current version and release date in the master record, add
+one Source Evidence record, change the previous current release to a historical
+release, and add the new current release. Synchronize the evidence cutoff date,
+package version, count baselines, and every affected public description; rebuild
+the data package and run the complete validation suite. Make local changes only
+and show the diff. Do not commit, push, or create a PR yet.
 ```
 
-这个请求授权 scoped local edits 和验证，不授权 GitHub 写入。Agent 必须保留工作树中与本次 review 无关的修改。
+This request authorizes scoped local edits and validation. It does not authorize writes to GitHub. The Agent must preserve any working-tree changes unrelated to this review.
 
-## 5. 预期的 canonical 数据修改
+## 5. Expected canonical data changes
 
-Agent 应编辑源输入，而不是手工修改 SQLite、manifest、网页下载文件或 graph chunks。
+The Agent should edit source inputs, not manually edit SQLite, the manifest, web download files, or graph chunks.
 
-### 5.1 主资产记录
+### 5.1 Master asset record
 
-在 `data/seed/inventory-v2.public.json` 的 `Master Asset Inventory` 中定位 `LCA-SW-0003`，至少审查这些字段：
+Locate `LCA-SW-0003` in `Master Asset Inventory` within `data/seed/inventory-v2.public.json`, and review at least these fields:
 
 ```json
 {
@@ -131,11 +137,11 @@ Agent 应编辑源输入，而不是手工修改 SQLite、manifest、网页下�
 }
 ```
 
-不要因为确认了版本号，就顺便把没有证据支持的兼容性、schema version 或 licence claim 标为已验证。
+Confirming the version number does not justify marking unsupported compatibility, schema version, or licence claims as verified.
 
-### 5.2 新增公开证据
+### 5.2 Add public evidence
 
-在 `Source Evidence` 中分配一个未使用的 ID。以本例基线为例，下一个 ID 是 `EVD-0253`：
+Allocate an unused ID in `Source Evidence`. With the baseline used by this example, the next ID is `EVD-0253`:
 
 ```json
 {
@@ -155,11 +161,11 @@ Agent 应编辑源输入，而不是手工修改 SQLite、manifest、网页下�
 }
 ```
 
-`Evidence excerpt` 应简短转述证据支持的 claim，不要复制长段网页内容，也不要加入个人联系方式或内部 reviewer notes。
+`Evidence excerpt` should briefly paraphrase the claim supported by the evidence. Do not copy long passages from a web page or add personal contact details or internal reviewer notes.
 
-### 5.3 维护 release 链
+### 5.3 Maintain the release chain
 
-把现有 `RLS-0157` 从 current release 改成 historical release，并把它的 successor 指向与新 release 完全一致的完整标签。新 successor claim 来自新证据，因此也要重新审查旧记录的 evidence URL 和 evidence date：
+Change the existing `RLS-0157` from the current release to a historical release, and point its successor to the full label that exactly matches the new release. Because the new successor claim comes from the new evidence, also review the old record's evidence URL and evidence date:
 
 ```json
 {
@@ -172,7 +178,7 @@ Agent 应编辑源输入，而不是手工修改 SQLite、manifest、网页下�
 }
 ```
 
-然后在 `Asset Releases` 中新增一条 release；以本例基线为例：
+Then add a release to `Asset Releases`; with the baseline used by this example:
 
 ```json
 {
@@ -194,7 +200,7 @@ Agent 应编辑源输入，而不是手工修改 SQLite、manifest、网页下�
 }
 ```
 
-先做精确 collision check。以下两条命令在 ID 未使用时应没有输出：
+Perform an exact collision check first. These two commands should produce no output when the IDs are unused:
 
 ```bash
 jq -r '.tables["Source Evidence"][] | select(."Evidence ID" == "EVD-0253") | ."Evidence ID"' \
@@ -203,36 +209,36 @@ jq -r '.tables["Asset Releases"][] | select(."Release record ID" == "RLS-0311") 
   data/seed/inventory-v2.public.json
 ```
 
-如果对应 release 已存在，就更新并补强那条记录，不要为了示例再创建重复 milestone。
+If the corresponding release already exists, update and strengthen that record instead of creating a duplicate milestone for the sake of following this example.
 
-### 5.4 只在证据支持时更新其他表
+### 5.4 Update other tables only when supported by evidence
 
-这次假设只确认软件 release，因此资产家族数、80 个 core database family、88 个 extended data-bearing asset、distribution、mapping 和 relationship 数都不应改变。
+This example assumes that only the software release is confirmed, so the number of asset families, 80 core database families, 88 extended data-bearing assets, distributions, mappings, and relationships should remain unchanged.
 
-只有公开来源明确给出精确版本对时，才同步修改 `Distributions`、`Mapping Artifacts` 或 `Relationship Index`。例如“支持 JSON-LD”不能自动证明某个 `<NEW_VERSION>` 与某个 schema release 的 lossless round trip。
+Modify `Distributions`, `Mapping Artifacts`, or `Relationship Index` only when a public source explicitly provides an exact version pairing. For example, “supports JSON-LD” does not automatically prove a lossless round trip between a particular `<NEW_VERSION>` and a particular schema release.
 
-### 5.5 更新 package 元数据
+### 5.5 Update package metadata
 
-更新：
+Update:
 
-- `data/seed/inventory-v2.public.json` 中的 `metadata.evidence_cutoff` 和 `metadata.generated_at`；
-- `data/curated/review-context.json` 中的 `package_version` 和 `generated_at`。
+- `metadata.evidence_cutoff` and `metadata.generated_at` in `data/seed/inventory-v2.public.json`;
+- `package_version` and `generated_at` in `data/curated/review-context.json`.
 
-版本应创建新的 dated package，例如 `<YYYY-MM-DD.N>`，而不是改变旧 package version 的含义。时间戳使用带时区的 ISO 8601 值。
+The version should create a new dated package, such as `<YYYY-MM-DD.N>`, rather than changing the meaning of an old package version. Use ISO 8601 timestamps with a time-zone offset.
 
-## 6. 对账计数，而不是机械替换数字
+## 6. Reconcile counts instead of mechanically replacing numbers
 
-按本例假设，将新增一条 evidence 和一条 release：
+This example assumes that one evidence record and one release are added:
 
-| 对象 | 修改前 | 修改后 | 原因 |
+| Object | Before | After | Reason |
 |---|---:|---:|---|
-| Asset families | 214 | 214 | 同一软件家族的新 release |
-| Public evidence records | 252 | 253 | 新增一条一手来源 |
-| Releases or milestones | 310 | 311 | 新增一个 verified milestone |
-| Core database families | 80 | 80 | 软件 release 不改变数据库家族范围 |
-| Extended data-bearing assets | 88 | 88 | 不新增数据库或数据承载资产 |
+| Asset families | 214 | 214 | New release in the same software family |
+| Public evidence records | 252 | 253 | One new primary source |
+| Releases or milestones | 310 | 311 | One new verified milestone |
+| Core database families | 80 | 80 | A software release does not change the scope of database families |
+| Extended data-bearing assets | 88 | 88 | No new database or data-bearing asset |
 
-至少要审查 `scripts/build-data-package.mjs` 的 `requiredCounts`、snapshot/web/smoke tests、两份 README、`data/seed/README.md` 和包含发布统计的 docs。可以先定位所有旧值：
+At a minimum, review `requiredCounts` in `scripts/build-data-package.mjs`, snapshot/web/smoke tests, both README files, `data/seed/README.md`, and any documentation containing release statistics. First locate every old value:
 
 ```bash
 rg -n '252|310|2026-08-25\.7' \
@@ -241,11 +247,11 @@ rg -n '252|310|2026-08-25\.7' \
   tests packages/global-lca-asset-web/src
 ```
 
-逐条判断数字的含义。当前 `310` 同时用于 releases 和 relationship assertions；本例只把 release count 改为 `311`，不能把关系数也批量替换。
+Evaluate what each number means. The current value `310` is used for both releases and relationship assertions. In this example, only the release count changes to `311`; the relationship count must not be replaced in bulk.
 
-## 7. 重建并通过 data-review gate
+## 7. Rebuild and pass the data-review gate
 
-从仓库根目录运行：
+Run these commands from the repository root:
 
 ```bash
 pnpm data:build
@@ -256,7 +262,7 @@ pnpm test
 git diff --check
 ```
 
-如果本次还修改了 Skill、helper、tests 或 workspace 代码，再运行全仓静态检查和 build：
+If this update also changes the Skill, a helper, tests, or workspace code, run the repository-wide static checks and build as well:
 
 ```bash
 uv run --extra dev ruff check src tests scripts/install-skill.py skills/global-lca-asset-review/scripts
@@ -264,9 +270,9 @@ pnpm typecheck
 pnpm build
 ```
 
-`pnpm smoke` 是依赖已运行 Neo4j/API 服务的集成测试，不是普通数据 review 的离线 gate；只有本地完整 stack 已启动时再运行。它会先检查 `/health`，服务不可用时给出 `docker compose` 启动、状态和日志命令，而不会把缺少服务当作测试通过。
+`pnpm smoke` is an integration test that requires running Neo4j/API services, not an offline gate for a routine data review. Run it only when the complete local stack is running. It checks `/health` first and, when the services are unavailable, reports `docker compose` commands for startup, status inspection, and logs; it does not treat missing services as a passing test.
 
-然后检查验证报告、manifest 和 diff：
+Then inspect the validation report, manifest, and diff:
 
 ```bash
 jq '.status, .errors, .warnings' data/package/current/validation_report.json
@@ -277,20 +283,20 @@ git diff --stat
 git diff -- data/seed/inventory-v2.public.json data/curated/review-context.json
 ```
 
-完成条件是：
+The completion criteria are:
 
-- `validation_report.json` 的 `status` 为 `passed`；
-- manifest 的 `assets=214`、`evidence=253`、`releases=311`，其他计数只发生有证据解释的变化；
-- 所有生成文件都来自 `pnpm data:build`，没有手改派生输出；
-- 测试和网页 production build 全部通过；
-- canonical 数据和 PR 内容中没有未替换的占位符，也没有个人数据、受限来源内容或无关修改；本说明文档中明确标记的教学占位符应保留；
-- PR 中仍明确写出未解决的不确定性。
+- `validation_report.json` has a `status` of `passed`;
+- the manifest reports `assets=214`, `evidence=253`, and `releases=311`, while other counts change only when evidence explains the change;
+- every generated file comes from `pnpm data:build`; no derived output was manually edited;
+- all tests and the web production build pass;
+- the canonical data and PR content contain no unreplaced placeholders, personal data, restricted-source content, or unrelated changes; the explicitly marked instructional placeholders in this document should remain;
+- the PR still states unresolved uncertainties explicitly.
 
-如果真实变更与本例假设不同，应以实际 manifest 和证据影响为准，而不是强行得到上述数字。
+If the real change differs from this example's assumptions, follow the actual manifest and evidence impact rather than forcing the counts above.
 
-## 8. Commit、预览并创建 PR
+## 8. Commit, preview, and create the PR
 
-只有用户明确要求 commit 或 PR 时，才执行外部贡献步骤。先交互式选择本次 review 的 hunk，并检查 staged diff，避免把已有的无关修改带入提交：
+Perform external contribution steps only when the user explicitly requests a commit or PR. First select the hunks for this review interactively and inspect the staged diff, so that pre-existing unrelated changes are not included in the commit:
 
 ```bash
 git add --patch
@@ -299,22 +305,22 @@ git diff --cached --stat
 git commit -m "data: review openLCA release evidence"
 ```
 
-把模板复制到仓库外再填写，避免未跟踪的 PR body 让 clean-tree 检查失败：
+Copy the template outside the repository before filling it in, so that an untracked PR body does not cause the clean-tree check to fail:
 
 ```bash
 cp skills/global-lca-asset-review/assets/review-pr-body.md /tmp/global-lca-review-pr-body.md
 ```
 
-PR body 应包括：
+The PR body should include:
 
-- `LCA-SW-0003`、新增 evidence ID 和 release ID；
-- 改变的准确 claim、公开 URL 与 access date；
-- 为什么这是同一资产家族，而不是新增资产；
-- evidence/release count 的变化以及不受影响的 database counts；
-- package version、evidence cutoff、验证命令与结果；
-- 没有独立测试的 compatibility claim 和其他 unresolved questions。
+- `LCA-SW-0003`, the new evidence ID, and the new release ID;
+- the exact claims changed, public URLs, and access dates;
+- why this is the same asset family rather than a new asset;
+- changes to the evidence and release counts, and the unaffected database counts;
+- the package version, evidence cutoff, validation commands, and results;
+- compatibility claims that were not independently tested and any other unresolved questions.
 
-先让 helper 只预览，不写 GitHub：
+First use the helper only to preview the PR, without writing to GitHub:
 
 ```bash
 skills/global-lca-asset-review/scripts/review_pr.py \
@@ -322,7 +328,7 @@ skills/global-lca-asset-review/scripts/review_pr.py \
   --body-file /tmp/global-lca-review-pr-body.md
 ```
 
-只有在用户明确说“创建/提交 PR”后才加 `--submit`：
+Add `--submit` only after the user explicitly says to “create/submit the PR”:
 
 ```bash
 skills/global-lca-asset-review/scripts/review_pr.py \
@@ -331,4 +337,4 @@ skills/global-lca-asset-review/scripts/review_pr.py \
   --submit
 ```
 
-helper 在预览和提交模式都会拒绝 `main`、detached HEAD、dirty working tree 和非 GitHub `origin`。只有 `--submit` 模式才要求已安装并登录 GitHub CLI；提交时只做非 force push 和 `gh pr create`，不会 merge PR。
+In both preview and submission mode, the helper rejects `main`, detached HEAD, a dirty working tree, and a non-GitHub `origin`. Only `--submit` mode requires GitHub CLI to be installed and authenticated. During submission, the helper performs only a non-force push and `gh pr create`; it does not merge the PR.

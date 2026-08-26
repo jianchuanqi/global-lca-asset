@@ -84,6 +84,7 @@ const contactAffiliation = 'Tsinghua University';
 const contactEmail = 'jcqi@tsinghua.edu.cn';
 const projectRepository = 'https://github.com/jianchuanqi/global-lca-asset';
 const feedbackUrl = 'https://uzmhiopsjv.feishu.cn/share/base/form/shrcnLwAU43hwAwb5bsDNMoaohc';
+export const dataContributionGuideUrl = `${projectRepository}/blob/main/docs/data-update-example.md`;
 const projectMembers: Array<{ name: string; affiliation?: string }> = [
   { name: 'Jianchuan Qi', affiliation: 'Tsinghua University' },
   { name: 'Natasha Das', affiliation: 'AECOM' },
@@ -264,16 +265,23 @@ function Overview({ openTab }: { openTab: (tab: Tab) => void }) {
             {projectMembers.map((member) => <div key={member.name}><dd><strong>{member.name}</strong>{member.affiliation && <span>{member.affiliation}</span>}</dd></div>)}
           </dl>
         </article>
-        <article className="content-card feedback-card" id="comment-feedback">
-          <SectionHeading eyebrow="Participate" title="Comment & feedback" note="We welcome corrections, missing assets, source updates, comments and suggestions for future releases." />
-          <p className="feedback-contact">Contact: <strong>{contactName}</strong>, {contactAffiliation}<br /><a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
-          <div className="feedback-actions">
-            <a className="primary-button" href={feedbackUrl} target="_blank" rel="noreferrer">Send comment or feedback</a>
-            <a className="github-project-link" href={projectRepository} target="_blank" rel="noreferrer"><GitHubIcon /><span>View Git project</span></a>
-          </div>
-        </article>
+        <FeedbackCard />
       </section>
     </div>
+  );
+}
+
+export function FeedbackCard() {
+  return (
+    <article className="content-card feedback-card" id="comment-feedback">
+      <SectionHeading eyebrow="Participate" title="Comment & feedback" note="We welcome corrections, missing assets, source updates, comments and suggestions for future releases." />
+      <p className="feedback-contact">Contact: <strong>{contactName}</strong>, {contactAffiliation}<br /><a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
+      <div className="feedback-actions">
+        <a className="primary-button" href={feedbackUrl} target="_blank" rel="noreferrer">Send comment or feedback</a>
+        <a className="github-project-link" href={dataContributionGuideUrl} target="_blank" rel="noreferrer"><GitHubIcon /><span>Contribute data via GitHub PR</span></a>
+        <a className="github-project-link" href={projectRepository} target="_blank" rel="noreferrer"><GitHubIcon /><span>View Git project</span></a>
+      </div>
+    </article>
   );
 }
 

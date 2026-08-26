@@ -192,18 +192,29 @@ def test_candidate_queue_rejects_personal_email(candidate_tool: ModuleType) -> N
     assert "candidate records must not contain email addresses" in candidate_tool.validate_candidate(payload)
 
 
-def test_data_update_example_is_linked_from_both_readmes() -> None:
-    example = PROJECT_ROOT / "docs" / "data-update-example.md"
-    assert example.is_file()
-    assert "<NEW_VERSION>" in example.read_text(encoding="utf-8")
-    for name in ("README.md", "README.zh-CN.md"):
-        readme = (PROJECT_ROOT / name).read_text(encoding="utf-8")
-        assert "(docs/data-update-example.md)" in readme
+def test_data_update_examples_are_linked_by_readme_language() -> None:
+    english_example = PROJECT_ROOT / "docs" / "data-update-example.md"
+    chinese_example = PROJECT_ROOT / "docs" / "data-update-example.zh-CN.md"
+    assert english_example.is_file()
+    assert chinese_example.is_file()
+    assert "<NEW_VERSION>" in english_example.read_text(encoding="utf-8")
+    assert "<NEW_VERSION>" in chinese_example.read_text(encoding="utf-8")
+
+    english_readme = (PROJECT_ROOT / "README.md").read_text(encoding="utf-8")
+    chinese_readme = (PROJECT_ROOT / "README.zh-CN.md").read_text(encoding="utf-8")
+    assert "(docs/data-update-example.md)" in english_readme
+    assert "(docs/data-update-example.zh-CN.md)" not in english_readme
+    assert "(docs/data-update-example.zh-CN.md)" in chinese_readme
+    assert "(docs/data-update-example.md)" not in chinese_readme
 
 
 @pytest.mark.parametrize(
     "relative_path",
-    ["docs/data-update-example.md", "docs/skill-installation-and-contribution.md"],
+    [
+        "docs/data-update-example.md",
+        "docs/data-update-example.zh-CN.md",
+        "docs/skill-installation-and-contribution.md",
+    ],
 )
 def test_skill_documentation_shell_examples_are_parseable(relative_path: str) -> None:
     content = (PROJECT_ROOT / relative_path).read_text(encoding="utf-8")
