@@ -1,23 +1,27 @@
 {
-  "package_version": "2026-08-25.7",
-  "evidence_cutoff": "2026-08-25",
+  "package_version": "2026-09-01.2",
+  "evidence_cutoff": "2026-09-01",
   "counts": {
-    "assets": 214,
-    "evidence": 252,
+    "assets": 301,
+    "evidence": 339,
     "database_scope": 88,
     "releases": 310,
     "distributions": 170,
     "mapping_artifacts": 25,
-    "relations": 310,
-    "search_coverage": 18,
-    "answerability": 6,
-    "review_issues": 8,
-    "data_dictionary": 17,
+    "relations": 397,
+    "search_coverage": 23,
+    "answerability": 7,
+    "review_issues": 10,
+    "data_dictionary": 24,
+    "software_candidate_review": 104,
     "version_audit": 88,
     "schema_profile_alignment": 78,
     "mapping_endpoint_alignment": 26,
-    "organizations": 326,
-    "asset_organizations": 428
+    "software_role_gaps": 39,
+    "software_scope": 130,
+    "organizations": 385,
+    "software_company_roles": 179,
+    "asset_organizations": 521
   },
   "scope_counts": {
     "core_database_families": 80,
@@ -25,12 +29,12 @@
   },
   "asset_types": [
     {
-      "label": "Database / dataset",
-      "count": 79
+      "label": "Software / API / tool",
+      "count": 130
     },
     {
-      "label": "Software / API / tool",
-      "count": 43
+      "label": "Database / dataset",
+      "count": 79
     },
     {
       "label": "Method / guidance (incl. LCIA)",
@@ -56,7 +60,7 @@
   "confidence_levels": [
     {
       "label": "High",
-      "count": 169
+      "count": 256
     },
     {
       "label": "Medium",
@@ -75,6 +79,10 @@
     {
       "label": "Confirmed",
       "count": 131
+    },
+    {
+      "label": "Confirmed public statement or directory listing",
+      "count": 87
     },
     {
       "label": "Listed in the public openLCA Nexus catalog as of 2026-08-25",
@@ -647,54 +655,182 @@
       "count": 1
     }
   ],
-  "field_information_gaps": [
+  "software_primary_functions": [
     {
-      "field": "citation_mechanism",
-      "label": "Citation mechanism",
-      "count": 212,
-      "rate": 0.991
+      "label": "LCA/PCF modelling and calculation",
+      "count": 119
     },
+    {
+      "label": "PCF data exchange and interoperability",
+      "count": 7
+    },
+    {
+      "label": "Data and systems integration",
+      "count": 3
+    },
+    {
+      "label": "EPD and environmental reporting workflow",
+      "count": 1
+    }
+  ],
+  "software_product_types": [
+    {
+      "label": "Software application or platform",
+      "count": 82
+    },
+    {
+      "label": "Sector-specific workflow application",
+      "count": 36
+    },
+    {
+      "label": "Data exchange or interoperability service",
+      "count": 7
+    },
+    {
+      "label": "API, library, or calculation model",
+      "count": 5
+    }
+  ],
+  "software_capabilities": [
+    {
+      "label": "Life cycle assessment modelling",
+      "count": 85
+    },
+    {
+      "label": "Product carbon footprint calculation",
+      "count": 74
+    },
+    {
+      "label": "PCF data exchange and interoperability",
+      "count": 40
+    },
+    {
+      "label": "Corporate carbon accounting",
+      "count": 39
+    },
+    {
+      "label": "Environmental data and calculation models",
+      "count": 34
+    },
+    {
+      "label": "Supplier and product data management",
+      "count": 18
+    },
+    {
+      "label": "Eco-design and scenario analysis",
+      "count": 15
+    },
+    {
+      "label": "API and enterprise integration",
+      "count": 13
+    },
+    {
+      "label": "EPD and environmental reporting",
+      "count": 13
+    },
+    {
+      "label": "Design and planning workflow",
+      "count": 2
+    }
+  ],
+  "software_actor_entity_types": [
+    {
+      "label": "Company",
+      "count": 128
+    },
+    {
+      "label": "Nonprofit / industry organization",
+      "count": 22
+    },
+    {
+      "label": "University / research institution",
+      "count": 18
+    },
+    {
+      "label": "Individual",
+      "count": 4
+    },
+    {
+      "label": "Public consortium / community",
+      "count": 4
+    },
+    {
+      "label": "Public body",
+      "count": 3
+    }
+  ],
+  "software_market_scope_statuses": [
+    {
+      "label": "Qualifying PCF/LCA product or interoperability solution",
+      "count": 97
+    },
+    {
+      "label": "Existing broader LCA/PCF software, API, model, or workflow asset",
+      "count": 33
+    }
+  ],
+  "software_candidate_decisions": [
+    {
+      "label": "Promoted as new asset",
+      "count": 87
+    },
+    {
+      "label": "Matched existing asset",
+      "count": 14
+    },
+    {
+      "label": "Excluded from verified software count",
+      "count": 3
+    }
+  ],
+  "field_information_gaps": [
     {
       "field": "review_procedure",
       "label": "Review procedure",
-      "count": 206,
-      "rate": 0.963
+      "count": 293,
+      "rate": 0.973
     },
     {
       "field": "nomenclature_classification",
       "label": "Nomenclature / classification",
-      "count": 189,
-      "rate": 0.883
+      "count": 276,
+      "rate": 0.917
     },
     {
       "field": "temporal_coverage",
       "label": "Temporal coverage",
-      "count": 176,
-      "rate": 0.822
+      "count": 263,
+      "rate": 0.874
+    },
+    {
+      "field": "citation_mechanism",
+      "label": "Citation mechanism",
+      "count": 212,
+      "rate": 0.704
+    },
+    {
+      "field": "api_or_machine_readable_interface",
+      "label": "API / machine-readable interface",
+      "count": 173,
+      "rate": 0.575
     },
     {
       "field": "data_model_or_schema",
       "label": "Schema / data model",
       "count": 156,
-      "rate": 0.729
-    },
-    {
-      "field": "api_or_machine_readable_interface",
-      "label": "API / machine-readable interface",
-      "count": 113,
-      "rate": 0.528
+      "rate": 0.518
     },
     {
       "field": "exchange_format",
       "label": "Exchange format",
-      "count": 71,
-      "rate": 0.332
+      "count": 109,
+      "rate": 0.362
     },
     {
       "field": "licence_or_usage_rights",
       "label": "Licence / usage rights",
-      "count": 21,
-      "rate": 0.098
+      "count": 108,
+      "rate": 0.359
     }
   ]
 }

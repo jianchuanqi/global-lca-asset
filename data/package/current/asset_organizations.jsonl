@@ -1,428 +1,521 @@
-{"asset_organization_id":"AO-00001","asset_id":"LCA-DB-0001","organization_id":"ORG-0077","relationship_type":"owner","original_public_label":"ecoinvent Association"}
-{"asset_organization_id":"AO-00002","asset_id":"LCA-DB-0001","organization_id":"ORG-0077","relationship_type":"operator/maintainer","original_public_label":"ecoinvent Association"}
-{"asset_organization_id":"AO-00003","asset_id":"LCA-FMT-0001","organization_id":"ORG-0077","relationship_type":"owner","original_public_label":"ecoinvent Association"}
-{"asset_organization_id":"AO-00004","asset_id":"LCA-FMT-0001","organization_id":"ORG-0077","relationship_type":"operator/maintainer","original_public_label":"ecoinvent Association"}
-{"asset_organization_id":"AO-00005","asset_id":"LCA-SW-0001","organization_id":"ORG-0232","relationship_type":"owner","original_public_label":"One Click LCA group"}
-{"asset_organization_id":"AO-00006","asset_id":"LCA-SW-0001","organization_id":"ORG-0268","relationship_type":"operator/maintainer","original_public_label":"SimaPro"}
-{"asset_organization_id":"AO-00007","asset_id":"LCA-SW-0002","organization_id":"ORG-0025","relationship_type":"owner","original_public_label":"Brightway developer community"}
-{"asset_organization_id":"AO-00008","asset_id":"LCA-SW-0002","organization_id":"ORG-0026","relationship_type":"operator/maintainer","original_public_label":"Brightway developers"}
-{"asset_organization_id":"AO-00009","asset_id":"LCA-SW-0003","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00010","asset_id":"LCA-SW-0003","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00011","asset_id":"LCA-REP-0001","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00012","asset_id":"LCA-REP-0001","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00013","asset_id":"LCA-NET-0001","organization_id":"ORG-0214","relationship_type":"owner","original_public_label":"Life Cycle Initiative hosted at UNEP"}
-{"asset_organization_id":"AO-00014","asset_id":"LCA-NET-0001","organization_id":"ORG-0212","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative / participating nodes"}
-{"asset_organization_id":"AO-00015","asset_id":"LCA-NET-0002","organization_id":"ORG-0097","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
-{"asset_organization_id":"AO-00016","asset_id":"LCA-NET-0002","organization_id":"ORG-0106","relationship_type":"operator/maintainer","original_public_label":"European Platform on Life Cycle Assessment / EC-JRC"}
-{"asset_organization_id":"AO-00017","asset_id":"LCA-FMT-0002","organization_id":"ORG-0097","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
-{"asset_organization_id":"AO-00018","asset_id":"LCA-FMT-0002","organization_id":"ORG-0070","relationship_type":"operator/maintainer","original_public_label":"EC-JRC / European Platform on LCA"}
-{"asset_organization_id":"AO-00019","asset_id":"LCA-REP-0002","organization_id":"ORG-0297","relationship_type":"owner","original_public_label":"U.S. Federal LCA Commons agencies"}
-{"asset_organization_id":"AO-00020","asset_id":"LCA-REP-0002","organization_id":"ORG-0312","relationship_type":"operator/maintainer","original_public_label":"USDA National Agricultural Library with collaborating federal agencies"}
-{"asset_organization_id":"AO-00021","asset_id":"LCA-DB-0002","organization_id":"ORG-0296","relationship_type":"owner","original_public_label":"U.S. Department of Energy / National Laboratory of the Rockies"}
-{"asset_organization_id":"AO-00022","asset_id":"LCA-DB-0002","organization_id":"ORG-0226","relationship_type":"operator/maintainer","original_public_label":"National Laboratory of the Rockies on Federal LCA Commons"}
-{"asset_organization_id":"AO-00023","asset_id":"LCA-NOM-0001","organization_id":"ORG-0298","relationship_type":"owner","original_public_label":"U.S. Federal LCA Commons partners"}
-{"asset_organization_id":"AO-00024","asset_id":"LCA-NOM-0001","organization_id":"ORG-0113","relationship_type":"operator/maintainer","original_public_label":"FLCAC administrators; development resources hosted publicly"}
-{"asset_organization_id":"AO-00025","asset_id":"LCA-MTH-0001","organization_id":"ORG-0214","relationship_type":"owner","original_public_label":"Life Cycle Initiative hosted at UNEP"}
-{"asset_organization_id":"AO-00026","asset_id":"LCA-MTH-0001","organization_id":"ORG-0216","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative with scientific partners"}
-{"asset_organization_id":"AO-00027","asset_id":"LCA-STD-0001","organization_id":"ORG-0181","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
-{"asset_organization_id":"AO-00028","asset_id":"LCA-STD-0001","organization_id":"ORG-0189","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
-{"asset_organization_id":"AO-00029","asset_id":"LCA-DB-0003","organization_id":"ORG-0219","relationship_type":"owner","original_public_label":"Mérieux NutriSciences | Blonk"}
-{"asset_organization_id":"AO-00030","asset_id":"LCA-DB-0003","organization_id":"ORG-0219","relationship_type":"operator/maintainer","original_public_label":"Mérieux NutriSciences | Blonk"}
-{"asset_organization_id":"AO-00031","asset_id":"LCA-DB-0004","organization_id":"ORG-0004","relationship_type":"owner","original_public_label":"ADEME"}
-{"asset_organization_id":"AO-00032","asset_id":"LCA-DB-0004","organization_id":"ORG-0005","relationship_type":"operator/maintainer","original_public_label":"ADEME and programme partners"}
-{"asset_organization_id":"AO-00033","asset_id":"LCA-DB-0005","organization_id":"ORG-0277","relationship_type":"owner","original_public_label":"Swiss Federal Office for the Environment (FOEN/BAFU)"}
-{"asset_organization_id":"AO-00034","asset_id":"LCA-DB-0005","organization_id":"ORG-0115","relationship_type":"operator/maintainer","original_public_label":"FOEN/BAFU and commissioned technical partners"}
-{"asset_organization_id":"AO-00035","asset_id":"LCA-DB-0006","organization_id":"ORG-0029","relationship_type":"owner","original_public_label":"Carbon Minds"}
-{"asset_organization_id":"AO-00036","asset_id":"LCA-DB-0006","organization_id":"ORG-0029","relationship_type":"operator/maintainer","original_public_label":"Carbon Minds"}
-{"asset_organization_id":"AO-00037","asset_id":"LCA-DB-0007","organization_id":"ORG-0109","relationship_type":"owner","original_public_label":"EXIOBASE consortium"}
-{"asset_organization_id":"AO-00038","asset_id":"LCA-DB-0007","organization_id":"ORG-0110","relationship_type":"operator/maintainer","original_public_label":"EXIOBASE research consortium; current releases distributed on Zenodo"}
-{"asset_organization_id":"AO-00039","asset_id":"LCA-DB-0008","organization_id":"ORG-0225","relationship_type":"owner","original_public_label":"National Institute of Advanced Industrial Science and Technology (AIST)"}
-{"asset_organization_id":"AO-00040","asset_id":"LCA-DB-0008","organization_id":"ORG-0008","relationship_type":"operator/maintainer","original_public_label":"AIST-IDEA programme and AIST Solutions licensing service"}
-{"asset_organization_id":"AO-00041","asset_id":"LCA-DB-0009","organization_id":"ORG-0079","relationship_type":"owner","original_public_label":"ENEA"}
-{"asset_organization_id":"AO-00042","asset_id":"LCA-DB-0009","organization_id":"ORG-0080","relationship_type":"operator/maintainer","original_public_label":"ENEA; ARCADIA and successor MASE–ENEA programme"}
-{"asset_organization_id":"AO-00043","asset_id":"LCA-DB-0010","organization_id":"ORG-0307","relationship_type":"owner","original_public_label":"US Environmental Protection Agency"}
-{"asset_organization_id":"AO-00044","asset_id":"LCA-DB-0010","organization_id":"ORG-0310","relationship_type":"operator/maintainer","original_public_label":"US EPA research team"}
-{"asset_organization_id":"AO-00045","asset_id":"LCA-STD-0002","organization_id":"ORG-0181","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
-{"asset_organization_id":"AO-00046","asset_id":"LCA-STD-0002","organization_id":"ORG-0189","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
-{"asset_organization_id":"AO-00047","asset_id":"LCA-STD-0003","organization_id":"ORG-0181","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
-{"asset_organization_id":"AO-00048","asset_id":"LCA-STD-0003","organization_id":"ORG-0190","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 7"}
-{"asset_organization_id":"AO-00049","asset_id":"LCA-SW-0004","organization_id":"ORG-0233","relationship_type":"owner","original_public_label":"One Click LCA Ltd / One Click LCA group"}
-{"asset_organization_id":"AO-00050","asset_id":"LCA-SW-0004","organization_id":"ORG-0231","relationship_type":"operator/maintainer","original_public_label":"One Click LCA"}
-{"asset_organization_id":"AO-00051","asset_id":"LCA-MTH-0002","organization_id":"ORG-0066","relationship_type":"owner","original_public_label":"Dutch National Institute for Public Health and the Environment (RIVM) and method authors"}
-{"asset_organization_id":"AO-00052","asset_id":"LCA-MTH-0002","organization_id":"ORG-0262","relationship_type":"operator/maintainer","original_public_label":"RIVM public distribution"}
-{"asset_organization_id":"AO-00053","asset_id":"LCA-MTH-0003","organization_id":"ORG-0096","relationship_type":"owner","original_public_label":"European Commission"}
-{"asset_organization_id":"AO-00054","asset_id":"LCA-MTH-0003","organization_id":"ORG-0063","relationship_type":"operator/maintainer","original_public_label":"Directorate-General for Environment and Joint Research Centre"}
-{"asset_organization_id":"AO-00055","asset_id":"LCA-MTH-0004","organization_id":"ORG-0096","relationship_type":"owner","original_public_label":"European Commission"}
-{"asset_organization_id":"AO-00056","asset_id":"LCA-MTH-0004","organization_id":"ORG-0064","relationship_type":"operator/maintainer","original_public_label":"Directorate-General for Research and Innovation and Joint Research Centre"}
-{"asset_organization_id":"AO-00057","asset_id":"LCA-SW-0005","organization_id":"ORG-0274","relationship_type":"owner","original_public_label":"Sphera"}
-{"asset_organization_id":"AO-00058","asset_id":"LCA-SW-0005","organization_id":"ORG-0274","relationship_type":"operator/maintainer","original_public_label":"Sphera"}
-{"asset_organization_id":"AO-00059","asset_id":"LCA-DB-0011","organization_id":"ORG-0274","relationship_type":"owner","original_public_label":"Sphera"}
-{"asset_organization_id":"AO-00060","asset_id":"LCA-DB-0011","organization_id":"ORG-0274","relationship_type":"operator/maintainer","original_public_label":"Sphera"}
-{"asset_organization_id":"AO-00061","asset_id":"LCA-DB-0012","organization_id":"ORG-0287","relationship_type":"owner","original_public_label":"TianGong community"}
-{"asset_organization_id":"AO-00062","asset_id":"LCA-DB-0012","organization_id":"ORG-0289","relationship_type":"operator/maintainer","original_public_label":"TianGong LCA Data Working Group and platform community"}
-{"asset_organization_id":"AO-00063","asset_id":"LCA-PLT-0001","organization_id":"ORG-0287","relationship_type":"owner","original_public_label":"TianGong community"}
-{"asset_organization_id":"AO-00064","asset_id":"LCA-PLT-0001","organization_id":"ORG-0290","relationship_type":"operator/maintainer","original_public_label":"TianGong platform developers"}
-{"asset_organization_id":"AO-00065","asset_id":"LCA-SYS-0001","organization_id":"ORG-0291","relationship_type":"owner","original_public_label":"TianGong project / Carbon Footprint Industry Alliance ecosystem"}
-{"asset_organization_id":"AO-00066","asset_id":"LCA-SYS-0001","organization_id":"ORG-0292","relationship_type":"operator/maintainer","original_public_label":"TIDAS development community"}
-{"asset_organization_id":"AO-00067","asset_id":"LCA-NOM-0002","organization_id":"ORG-0020","relationship_type":"owner","original_public_label":"BONSAI community"}
-{"asset_organization_id":"AO-00068","asset_id":"LCA-NOM-0002","organization_id":"ORG-0022","relationship_type":"operator/maintainer","original_public_label":"BONSAI network/contributors"}
-{"asset_organization_id":"AO-00069","asset_id":"LCA-NOM-0003","organization_id":"ORG-0254","relationship_type":"owner","original_public_label":"Project author/community repository"}
-{"asset_organization_id":"AO-00070","asset_id":"LCA-NOM-0003","organization_id":"ORG-0294","relationship_type":"operator/maintainer","original_public_label":"tishchungoora/lca-ontology repository maintainer"}
-{"asset_organization_id":"AO-00071","asset_id":"LCA-NOM-0004","organization_id":"ORG-0204","relationship_type":"owner","original_public_label":"LCA to BIM Workflow research project"}
-{"asset_organization_id":"AO-00072","asset_id":"LCA-NOM-0004","organization_id":"ORG-0265","relationship_type":"operator/maintainer","original_public_label":"RWTH design-computation project contributors"}
-{"asset_organization_id":"AO-00073","asset_id":"LCA-DB-0013","organization_id":"ORG-0004","relationship_type":"owner","original_public_label":"ADEME"}
-{"asset_organization_id":"AO-00074","asset_id":"LCA-DB-0013","organization_id":"ORG-0004","relationship_type":"operator/maintainer","original_public_label":"ADEME"}
-{"asset_organization_id":"AO-00075","asset_id":"LCA-NOM-0005","organization_id":"ORG-0116","relationship_type":"owner","original_public_label":"Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions"}
-{"asset_organization_id":"AO-00076","asset_id":"LCA-NOM-0005","organization_id":"ORG-0111","relationship_type":"operator/maintainer","original_public_label":"FAO-coordinated expert and institutional community"}
-{"asset_organization_id":"AO-00077","asset_id":"LCA-MTH-0005","organization_id":"ORG-0326","relationship_type":"owner","original_public_label":"WULCA working group / UNEP-SETAC Life Cycle Initiative community"}
-{"asset_organization_id":"AO-00078","asset_id":"LCA-MTH-0005","organization_id":"ORG-0325","relationship_type":"operator/maintainer","original_public_label":"WULCA"}
-{"asset_organization_id":"AO-00079","asset_id":"LCA-DB-0014","organization_id":"ORG-0013","relationship_type":"owner","original_public_label":"Australian Life Cycle Assessment Society (ALCAS)"}
-{"asset_organization_id":"AO-00080","asset_id":"LCA-DB-0014","organization_id":"ORG-0012","relationship_type":"operator/maintainer","original_public_label":"AusLCI Database Committee and sector partners"}
-{"asset_organization_id":"AO-00081","asset_id":"LCA-DB-0015","organization_id":"ORG-0130","relationship_type":"owner","original_public_label":"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)"}
-{"asset_organization_id":"AO-00082","asset_id":"LCA-DB-0015","organization_id":"ORG-0016","relationship_type":"operator/maintainer","original_public_label":"BBSR and commissioned technical operators"}
-{"asset_organization_id":"AO-00083","asset_id":"LCA-NET-0003","organization_id":"ORG-0071","relationship_type":"owner","original_public_label":"ECO Platform AISBL"}
-{"asset_organization_id":"AO-00084","asset_id":"LCA-NET-0003","organization_id":"ORG-0073","relationship_type":"operator/maintainer","original_public_label":"ECO Platform members and secretariat"}
-{"asset_organization_id":"AO-00085","asset_id":"LCA-REP-0003","organization_id":"ORG-0071","relationship_type":"owner","original_public_label":"ECO Platform AISBL"}
-{"asset_organization_id":"AO-00086","asset_id":"LCA-REP-0003","organization_id":"ORG-0072","relationship_type":"operator/maintainer","original_public_label":"ECO Platform and connected EPD programme-operator nodes"}
-{"asset_organization_id":"AO-00087","asset_id":"LCA-FMT-0003","organization_id":"ORG-0019","relationship_type":"owner","original_public_label":"BMWSB/BBSR and InData/ECO Platform technical community"}
-{"asset_organization_id":"AO-00088","asset_id":"LCA-FMT-0003","organization_id":"ORG-0017","relationship_type":"operator/maintainer","original_public_label":"BBSR-linked technical maintainers and data-network implementers"}
-{"asset_organization_id":"AO-00089","asset_id":"LCA-DB-0016","organization_id":"ORG-0097","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
-{"asset_organization_id":"AO-00090","asset_id":"LCA-DB-0016","organization_id":"ORG-0105","relationship_type":"operator/maintainer","original_public_label":"European Platform on Life Cycle Assessment"}
-{"asset_organization_id":"AO-00091","asset_id":"LCA-MTH-0006","organization_id":"ORG-0097","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
-{"asset_organization_id":"AO-00092","asset_id":"LCA-MTH-0006","organization_id":"ORG-0107","relationship_type":"operator/maintainer","original_public_label":"European Platform on Life Cycle Assessment / JRC"}
-{"asset_organization_id":"AO-00093","asset_id":"LCA-STD-0004","organization_id":"ORG-0101","relationship_type":"owner","original_public_label":"European Committee for Standardization (CEN)"}
-{"asset_organization_id":"AO-00094","asset_id":"LCA-STD-0004","organization_id":"ORG-0036","relationship_type":"operator/maintainer","original_public_label":"CEN/TC 350 and national standards bodies"}
-{"asset_organization_id":"AO-00095","asset_id":"LCA-FMT-0004","organization_id":"ORG-0142","relationship_type":"owner","original_public_label":"GreenDelta"}
-{"asset_organization_id":"AO-00096","asset_id":"LCA-FMT-0004","organization_id":"ORG-0145","relationship_type":"operator/maintainer","original_public_label":"GreenDelta openLCA development team"}
-{"asset_organization_id":"AO-00097","asset_id":"LCA-STD-0005","organization_id":"ORG-0182","relationship_type":"owner","original_public_label":"International Organization for Standardization (ISO)"}
-{"asset_organization_id":"AO-00098","asset_id":"LCA-STD-0005","organization_id":"ORG-0188","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 3"}
-{"asset_organization_id":"AO-00099","asset_id":"LCA-STD-0006","organization_id":"ORG-0182","relationship_type":"owner","original_public_label":"International Organization for Standardization (ISO)"}
-{"asset_organization_id":"AO-00100","asset_id":"LCA-STD-0006","organization_id":"ORG-0189","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
-{"asset_organization_id":"AO-00101","asset_id":"LCA-MTH-0007","organization_id":"ORG-0302","relationship_type":"owner","original_public_label":"United States Environmental Protection Agency"}
-{"asset_organization_id":"AO-00102","asset_id":"LCA-MTH-0007","organization_id":"ORG-0309","relationship_type":"operator/maintainer","original_public_label":"US EPA research programme"}
-{"asset_organization_id":"AO-00103","asset_id":"LCA-SW-0007","organization_id":"ORG-0301","relationship_type":"owner","original_public_label":"United States Department of Energy"}
-{"asset_organization_id":"AO-00104","asset_id":"LCA-SW-0007","organization_id":"ORG-0010","relationship_type":"operator/maintainer","original_public_label":"Argonne National Laboratory"}
-{"asset_organization_id":"AO-00105","asset_id":"LCA-DB-0017","organization_id":"ORG-0138","relationship_type":"owner","original_public_label":"Global Feed LCA Institute"}
-{"asset_organization_id":"AO-00106","asset_id":"LCA-DB-0017","organization_id":"ORG-0131","relationship_type":"operator/maintainer","original_public_label":"GFLI Secretariat and data-project partners"}
-{"asset_organization_id":"AO-00107","asset_id":"LCA-MTH-0008","organization_id":"ORG-0138","relationship_type":"owner","original_public_label":"Global Feed LCA Institute"}
-{"asset_organization_id":"AO-00108","asset_id":"LCA-MTH-0008","organization_id":"ORG-0132","relationship_type":"operator/maintainer","original_public_label":"GFLI technical and methodology groups"}
-{"asset_organization_id":"AO-00109","asset_id":"LCA-PLT-0002","organization_id":"ORG-0305","relationship_type":"owner","original_public_label":"University of Oxford / HESTIA project"}
-{"asset_organization_id":"AO-00110","asset_id":"LCA-PLT-0002","organization_id":"ORG-0151","relationship_type":"operator/maintainer","original_public_label":"HESTIA team and contributor community"}
-{"asset_organization_id":"AO-00111","asset_id":"LCA-FMT-0005","organization_id":"ORG-0150","relationship_type":"owner","original_public_label":"HESTIA project / University of Oxford"}
-{"asset_organization_id":"AO-00112","asset_id":"LCA-FMT-0005","organization_id":"ORG-0152","relationship_type":"operator/maintainer","original_public_label":"HESTIA technical team"}
-{"asset_organization_id":"AO-00113","asset_id":"LCA-SW-0008","organization_id":"ORG-0150","relationship_type":"owner","original_public_label":"HESTIA project / University of Oxford"}
-{"asset_organization_id":"AO-00114","asset_id":"LCA-SW-0008","organization_id":"ORG-0149","relationship_type":"operator/maintainer","original_public_label":"HESTIA modelling team and contributors"}
-{"asset_organization_id":"AO-00115","asset_id":"LCA-NOM-0006","organization_id":"ORG-0117","relationship_type":"owner","original_public_label":"FoodOn open inter-agency community"}
-{"asset_organization_id":"AO-00116","asset_id":"LCA-NOM-0006","organization_id":"ORG-0118","relationship_type":"operator/maintainer","original_public_label":"FoodOntology contributors / OBO Foundry"}
-{"asset_organization_id":"AO-00117","asset_id":"LCA-NET-0004","organization_id":"ORG-0321","relationship_type":"owner","original_public_label":"World Resources Institute and World Business Council for Sustainable Development"}
-{"asset_organization_id":"AO-00118","asset_id":"LCA-NET-0004","organization_id":"ORG-0134","relationship_type":"operator/maintainer","original_public_label":"GHG Protocol secretariat and multi-stakeholder governance bodies"}
-{"asset_organization_id":"AO-00119","asset_id":"LCA-MTH-0009","organization_id":"ORG-0321","relationship_type":"owner","original_public_label":"World Resources Institute and World Business Council for Sustainable Development"}
-{"asset_organization_id":"AO-00120","asset_id":"LCA-MTH-0009","organization_id":"ORG-0133","relationship_type":"operator/maintainer","original_public_label":"GHG Protocol"}
-{"asset_organization_id":"AO-00121","asset_id":"LCA-MTH-0010","organization_id":"ORG-0163","relationship_type":"owner","original_public_label":"IMPACT World+ scientific consortium"}
-{"asset_organization_id":"AO-00122","asset_id":"LCA-MTH-0010","organization_id":"ORG-0162","relationship_type":"operator/maintainer","original_public_label":"IMPACT World+ method development team"}
-{"asset_organization_id":"AO-00123","asset_id":"LCA-SW-0009","organization_id":"ORG-0075","relationship_type":"owner","original_public_label":"Ecochain Technologies"}
-{"asset_organization_id":"AO-00124","asset_id":"LCA-SW-0009","organization_id":"ORG-0075","relationship_type":"operator/maintainer","original_public_label":"Ecochain Technologies"}
-{"asset_organization_id":"AO-00125","asset_id":"LCA-QA-0001","organization_id":"ORG-0077","relationship_type":"owner","original_public_label":"ecoinvent Association"}
-{"asset_organization_id":"AO-00126","asset_id":"LCA-QA-0001","organization_id":"ORG-0077","relationship_type":"operator/maintainer","original_public_label":"ecoinvent Association"}
-{"asset_organization_id":"AO-00127","asset_id":"LCA-FMT-0006","organization_id":"ORG-0076","relationship_type":"owner","original_public_label":"ecoinvent / former EcoSpold development community"}
-{"asset_organization_id":"AO-00128","asset_id":"LCA-FMT-0006","organization_id":"ORG-0154","relationship_type":"operator/maintainer","original_public_label":"Historical format; no active maintenance identified"}
-{"asset_organization_id":"AO-00129","asset_id":"LCA-DB-0018","organization_id":"ORG-0257","relationship_type":"owner","original_public_label":"Quantis"}
-{"asset_organization_id":"AO-00130","asset_id":"LCA-DB-0018","organization_id":"ORG-0258","relationship_type":"operator/maintainer","original_public_label":"Quantis and WFLDB partners"}
-{"asset_organization_id":"AO-00131","asset_id":"LCA-DB-0019","organization_id":"ORG-0224","relationship_type":"owner","original_public_label":"National Institute for Public Health and the Environment (RIVM)"}
-{"asset_organization_id":"AO-00132","asset_id":"LCA-DB-0019","organization_id":"ORG-0263","relationship_type":"operator/maintainer","original_public_label":"RIVM; LCI update performed by Mérieux NutriSciences | Blonk"}
-{"asset_organization_id":"AO-00133","asset_id":"LCA-DB-0020","organization_id":"ORG-0129","relationship_type":"owner","original_public_label":"German Environment Agency (Umweltbundesamt, UBA)"}
-{"asset_organization_id":"AO-00134","asset_id":"LCA-DB-0020","organization_id":"ORG-0128","relationship_type":"operator/maintainer","original_public_label":"German Environment Agency"}
-{"asset_organization_id":"AO-00135","asset_id":"LCA-DB-0021","organization_id":"ORG-0167","relationship_type":"owner","original_public_label":"INIES governance partners under French public convention"}
-{"asset_organization_id":"AO-00136","asset_id":"LCA-DB-0021","organization_id":"ORG-0009","relationship_type":"operator/maintainer","original_public_label":"Alliance HQE-GBC and INIES governance bodies"}
-{"asset_organization_id":"AO-00137","asset_id":"LCA-DB-0022","organization_id":"ORG-0247","relationship_type":"owner","original_public_label":"Plastics Europe"}
-{"asset_organization_id":"AO-00138","asset_id":"LCA-DB-0022","organization_id":"ORG-0248","relationship_type":"operator/maintainer","original_public_label":"Plastics Europe and relevant sector groups"}
-{"asset_organization_id":"AO-00139","asset_id":"LCA-DB-0023","organization_id":"ORG-0322","relationship_type":"owner","original_public_label":"World Steel Association"}
-{"asset_organization_id":"AO-00140","asset_id":"LCA-DB-0023","organization_id":"ORG-0323","relationship_type":"operator/maintainer","original_public_label":"worldsteel"}
-{"asset_organization_id":"AO-00141","asset_id":"LCA-FMT-0007","organization_id":"ORG-0237","relationship_type":"owner","original_public_label":"openEPD Forum / Building Transparency ecosystem"}
-{"asset_organization_id":"AO-00142","asset_id":"LCA-FMT-0007","organization_id":"ORG-0236","relationship_type":"operator/maintainer","original_public_label":"openEPD contributors and reference implementers"}
-{"asset_organization_id":"AO-00143","asset_id":"LCA-FMT-0008","organization_id":"ORG-0320","relationship_type":"owner","original_public_label":"World Business Council for Sustainable Development"}
-{"asset_organization_id":"AO-00144","asset_id":"LCA-FMT-0008","organization_id":"ORG-0239","relationship_type":"operator/maintainer","original_public_label":"Partnership for Carbon Transparency (PACT)"}
-{"asset_organization_id":"AO-00145","asset_id":"LCA-STD-0007","organization_id":"ORG-0181","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
-{"asset_organization_id":"AO-00146","asset_id":"LCA-STD-0007","organization_id":"ORG-0189","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
-{"asset_organization_id":"AO-00147","asset_id":"LCA-MTH-0011","organization_id":"ORG-0210","relationship_type":"owner","original_public_label":"Leiden University, Institute of Environmental Sciences (CML)"}
-{"asset_organization_id":"AO-00148","asset_id":"LCA-MTH-0011","organization_id":"ORG-0051","relationship_type":"operator/maintainer","original_public_label":"CML-IE; public resources are now largely archival"}
-{"asset_organization_id":"AO-00149","asset_id":"LCA-MTH-0012","organization_id":"ORG-0299","relationship_type":"owner","original_public_label":"UNEP-hosted Life Cycle Initiative"}
-{"asset_organization_id":"AO-00150","asset_id":"LCA-MTH-0012","organization_id":"ORG-0213","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative GLAM stewardship community"}
-{"asset_organization_id":"AO-00151","asset_id":"LCA-QA-0002","organization_id":"ORG-0302","relationship_type":"owner","original_public_label":"United States Environmental Protection Agency"}
-{"asset_organization_id":"AO-00152","asset_id":"LCA-QA-0002","organization_id":"ORG-0308","relationship_type":"operator/maintainer","original_public_label":"US EPA Office of Research and Development"}
-{"asset_organization_id":"AO-00153","asset_id":"LCA-QA-0003","organization_id":"ORG-0096","relationship_type":"owner","original_public_label":"European Commission"}
-{"asset_organization_id":"AO-00154","asset_id":"LCA-QA-0003","organization_id":"ORG-0099","relationship_type":"operator/maintainer","original_public_label":"European Commission Joint Research Centre and Environmental Footprint governance"}
-{"asset_organization_id":"AO-00155","asset_id":"LCA-NET-0005","organization_id":"ORG-0300","relationship_type":"owner","original_public_label":"United Nations Environment Programme"}
-{"asset_organization_id":"AO-00156","asset_id":"LCA-NET-0005","organization_id":"ORG-0215","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative secretariat and steering governance"}
-{"asset_organization_id":"AO-00157","asset_id":"LCA-SW-0010","organization_id":"ORG-0199","relationship_type":"owner","original_public_label":"LCA as Code project/provider"}
-{"asset_organization_id":"AO-00158","asset_id":"LCA-SW-0010","organization_id":"ORG-0200","relationship_type":"operator/maintainer","original_public_label":"LCA as Code team"}
-{"asset_organization_id":"AO-00159","asset_id":"LCA-FMT-0009","organization_id":"ORG-0206","relationship_type":"owner","original_public_label":"LCAx open-source project / OCNI-DTU contributors"}
-{"asset_organization_id":"AO-00160","asset_id":"LCA-FMT-0009","organization_id":"ORG-0205","relationship_type":"operator/maintainer","original_public_label":"LCAx contributors"}
-{"asset_organization_id":"AO-00161","asset_id":"LCA-SW-0011","organization_id":"ORG-0206","relationship_type":"owner","original_public_label":"LCAx open-source project / OCNI-DTU contributors"}
-{"asset_organization_id":"AO-00162","asset_id":"LCA-SW-0011","organization_id":"ORG-0205","relationship_type":"operator/maintainer","original_public_label":"LCAx contributors"}
-{"asset_organization_id":"AO-00163","asset_id":"LCA-SW-0012","organization_id":"ORG-0303","relationship_type":"owner","original_public_label":"United States Environmental Protection Agency / Federal LCA Commons ecosystem"}
-{"asset_organization_id":"AO-00164","asset_id":"LCA-SW-0012","organization_id":"ORG-0114","relationship_type":"operator/maintainer","original_public_label":"FLCAC-admin repository contributors"}
-{"asset_organization_id":"AO-00165","asset_id":"LCA-SW-0013","organization_id":"ORG-0273","relationship_type":"owner","original_public_label":"soda4LCA open-source project"}
-{"asset_organization_id":"AO-00166","asset_id":"LCA-SW-0013","organization_id":"ORG-0272","relationship_type":"operator/maintainer","original_public_label":"soda4LCA maintainers / OKWorx"}
-{"asset_organization_id":"AO-00167","asset_id":"LCA-SW-0014","organization_id":"ORG-0250","relationship_type":"owner","original_public_label":"premise open-source project / polca contributors"}
-{"asset_organization_id":"AO-00168","asset_id":"LCA-SW-0014","organization_id":"ORG-0249","relationship_type":"operator/maintainer","original_public_label":"premise contributors"}
-{"asset_organization_id":"AO-00169","asset_id":"LCA-DB-0024","organization_id":"ORG-0041","relationship_type":"owner","original_public_label":"CIRAIG / project contributors"}
-{"asset_organization_id":"AO-00170","asset_id":"LCA-DB-0024","organization_id":"ORG-0042","relationship_type":"operator/maintainer","original_public_label":"CIRAIG OpenIO-Canada contributors"}
-{"asset_organization_id":"AO-00171","asset_id":"LCA-DB-0025","organization_id":"ORG-0142","relationship_type":"owner","original_public_label":"GreenDelta"}
-{"asset_organization_id":"AO-00172","asset_id":"LCA-DB-0025","organization_id":"ORG-0142","relationship_type":"operator/maintainer","original_public_label":"GreenDelta"}
-{"asset_organization_id":"AO-00173","asset_id":"LCA-DB-0026","organization_id":"ORG-0228","relationship_type":"owner","original_public_label":"New Earth / Social Hotspots Database provider"}
-{"asset_organization_id":"AO-00174","asset_id":"LCA-DB-0026","organization_id":"ORG-0271","relationship_type":"operator/maintainer","original_public_label":"Social Hotspots Database team"}
-{"asset_organization_id":"AO-00175","asset_id":"LCA-MTH-0013","organization_id":"ORG-0320","relationship_type":"owner","original_public_label":"World Business Council for Sustainable Development"}
-{"asset_organization_id":"AO-00176","asset_id":"LCA-MTH-0013","organization_id":"ORG-0238","relationship_type":"operator/maintainer","original_public_label":"Partnership for Carbon Transparency"}
-{"asset_organization_id":"AO-00177","asset_id":"LCA-PLT-0003","organization_id":"ORG-0023","relationship_type":"owner","original_public_label":"BONSAI not-for-profit association"}
-{"asset_organization_id":"AO-00178","asset_id":"LCA-PLT-0003","organization_id":"ORG-0024","relationship_type":"operator/maintainer","original_public_label":"BONSAI secretariat, board and contributor network"}
-{"asset_organization_id":"AO-00179","asset_id":"LCA-DB-0027","organization_id":"ORG-0023","relationship_type":"owner","original_public_label":"BONSAI not-for-profit association"}
-{"asset_organization_id":"AO-00180","asset_id":"LCA-DB-0027","organization_id":"ORG-0021","relationship_type":"operator/maintainer","original_public_label":"BONSAI data contributors and projects"}
-{"asset_organization_id":"AO-00181","asset_id":"LCA-MTH-0014","organization_id":"ORG-0033","relationship_type":"owner","original_public_label":"Catena-X Automotive Network e.V."}
-{"asset_organization_id":"AO-00182","asset_id":"LCA-MTH-0014","organization_id":"ORG-0034","relationship_type":"operator/maintainer","original_public_label":"Catena-X PCF working groups"}
-{"asset_organization_id":"AO-00183","asset_id":"LCA-QA-0004","organization_id":"ORG-0033","relationship_type":"owner","original_public_label":"Catena-X Automotive Network e.V."}
-{"asset_organization_id":"AO-00184","asset_id":"LCA-QA-0004","organization_id":"ORG-0034","relationship_type":"operator/maintainer","original_public_label":"Catena-X PCF working groups"}
-{"asset_organization_id":"AO-00185","asset_id":"LCA-FMT-0010","organization_id":"ORG-0033","relationship_type":"owner","original_public_label":"Catena-X Automotive Network e.V."}
-{"asset_organization_id":"AO-00186","asset_id":"LCA-FMT-0010","organization_id":"ORG-0035","relationship_type":"operator/maintainer","original_public_label":"Catena-X PCF/data-model working groups"}
-{"asset_organization_id":"AO-00187","asset_id":"LCA-MTH-0015","organization_id":"ORG-0295","relationship_type":"owner","original_public_label":"Together for Sustainability"}
-{"asset_organization_id":"AO-00188","asset_id":"LCA-MTH-0015","organization_id":"ORG-0282","relationship_type":"operator/maintainer","original_public_label":"TfS Scope 3 GHG programme"}
-{"asset_organization_id":"AO-00189","asset_id":"LCA-FMT-0011","organization_id":"ORG-0295","relationship_type":"owner","original_public_label":"Together for Sustainability"}
-{"asset_organization_id":"AO-00190","asset_id":"LCA-FMT-0011","organization_id":"ORG-0282","relationship_type":"operator/maintainer","original_public_label":"TfS Scope 3 GHG programme"}
-{"asset_organization_id":"AO-00191","asset_id":"LCA-QA-0005","organization_id":"ORG-0295","relationship_type":"owner","original_public_label":"Together for Sustainability"}
-{"asset_organization_id":"AO-00192","asset_id":"LCA-QA-0005","organization_id":"ORG-0282","relationship_type":"operator/maintainer","original_public_label":"TfS Scope 3 GHG programme"}
-{"asset_organization_id":"AO-00193","asset_id":"LCA-NET-0006","organization_id":"ORG-0246","relationship_type":"owner","original_public_label":"Plastic Footprint Network convened by EA – Earth Action"}
-{"asset_organization_id":"AO-00194","asset_id":"LCA-NET-0006","organization_id":"ORG-0242","relationship_type":"operator/maintainer","original_public_label":"PFN secretariat and member/collaborator community"}
-{"asset_organization_id":"AO-00195","asset_id":"LCA-MTH-0016","organization_id":"ORG-0245","relationship_type":"owner","original_public_label":"Plastic Footprint Network"}
-{"asset_organization_id":"AO-00196","asset_id":"LCA-MTH-0016","organization_id":"ORG-0243","relationship_type":"operator/maintainer","original_public_label":"PFN technical community convened by EA – Earth Action"}
-{"asset_organization_id":"AO-00197","asset_id":"LCA-MTH-0017","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"Intergovernmental Panel on Climate Change"}
-{"asset_organization_id":"AO-00198","asset_id":"LCA-MTH-0017","organization_id":"ORG-0185","relationship_type":"operator/maintainer","original_public_label":"IPCC Working Group I assessment process"}
-{"asset_organization_id":"AO-00199","asset_id":"LCA-SW-0006","organization_id":"ORG-0196","relationship_type":"owner","original_public_label":"Lavoisier open-source project developed at GYRO/UTFPR with IBICT support"}
-{"asset_organization_id":"AO-00200","asset_id":"LCA-SW-0006","organization_id":"ORG-0197","relationship_type":"operator/maintainer","original_public_label":"Lavoisier project maintainers"}
-{"asset_organization_id":"AO-00201","asset_id":"LCA-DB-0028","organization_id":"ORG-0096","relationship_type":"owner","original_public_label":"European Commission"}
-{"asset_organization_id":"AO-00202","asset_id":"LCA-DB-0028","organization_id":"ORG-0098","relationship_type":"operator/maintainer","original_public_label":"European Commission Joint Research Centre and Directorate-General for Environment"}
-{"asset_organization_id":"AO-00203","asset_id":"LCA-REP-0004","organization_id":"ORG-0083","relationship_type":"owner","original_public_label":"EPD International AB"}
-{"asset_organization_id":"AO-00204","asset_id":"LCA-REP-0004","organization_id":"ORG-0179","relationship_type":"operator/maintainer","original_public_label":"International EPD System"}
-{"asset_organization_id":"AO-00205","asset_id":"LCA-DB-0029","organization_id":"ORG-0045","relationship_type":"owner","original_public_label":"Circular Ecology"}
-{"asset_organization_id":"AO-00206","asset_id":"LCA-DB-0029","organization_id":"ORG-0045","relationship_type":"operator/maintainer","original_public_label":"Circular Ecology"}
-{"asset_organization_id":"AO-00207","asset_id":"LCA-DB-0030","organization_id":"ORG-0089","relationship_type":"owner","original_public_label":"ESU-services Ltd."}
-{"asset_organization_id":"AO-00208","asset_id":"LCA-DB-0030","organization_id":"ORG-0089","relationship_type":"operator/maintainer","original_public_label":"ESU-services Ltd."}
-{"asset_organization_id":"AO-00209","asset_id":"LCA-DB-0031","organization_id":"ORG-0192","relationship_type":"owner","original_public_label":"Kanso, Inc. / Carbonfact"}
-{"asset_organization_id":"AO-00210","asset_id":"LCA-DB-0031","organization_id":"ORG-0030","relationship_type":"operator/maintainer","original_public_label":"Carbonfact science team"}
-{"asset_organization_id":"AO-00211","asset_id":"LCA-DB-0032","organization_id":"ORG-0103","relationship_type":"owner","original_public_label":"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)"}
-{"asset_organization_id":"AO-00212","asset_id":"LCA-DB-0032","organization_id":"ORG-0037","relationship_type":"operator/maintainer","original_public_label":"CEPE LCI project"}
-{"asset_organization_id":"AO-00213","asset_id":"LCA-DB-0033","organization_id":"ORG-0319","relationship_type":"owner","original_public_label":"Watershed Technology"}
-{"asset_organization_id":"AO-00214","asset_id":"LCA-DB-0033","organization_id":"ORG-0319","relationship_type":"operator/maintainer","original_public_label":"Watershed Technology"}
-{"asset_organization_id":"AO-00215","asset_id":"LCA-DB-0034","organization_id":"ORG-0100","relationship_type":"owner","original_public_label":"European Commission-funded NEEDS project consortium"}
-{"asset_organization_id":"AO-00216","asset_id":"LCA-DB-0034","organization_id":"ORG-0208","relationship_type":"operator/maintainer","original_public_label":"Legacy project data; openLCA conversion maintained historically by GreenDelta"}
-{"asset_organization_id":"AO-00217","asset_id":"LCA-REP-0005","organization_id":"ORG-0280","relationship_type":"owner","original_public_label":"Textile Exchange"}
-{"asset_organization_id":"AO-00218","asset_id":"LCA-REP-0005","organization_id":"ORG-0281","relationship_type":"operator/maintainer","original_public_label":"Textile Exchange in partnership with SCS Global Services"}
-{"asset_organization_id":"AO-00219","asset_id":"LCA-SW-0015","organization_id":"ORG-0001","relationship_type":"owner","original_public_label":"2050 Materials"}
-{"asset_organization_id":"AO-00220","asset_id":"LCA-SW-0015","organization_id":"ORG-0001","relationship_type":"operator/maintainer","original_public_label":"2050 Materials"}
-{"asset_organization_id":"AO-00221","asset_id":"LCA-SW-0016","organization_id":"ORG-0050","relationship_type":"owner","original_public_label":"Climatiq"}
-{"asset_organization_id":"AO-00222","asset_id":"LCA-SW-0016","organization_id":"ORG-0050","relationship_type":"operator/maintainer","original_public_label":"Climatiq"}
-{"asset_organization_id":"AO-00223","asset_id":"LCA-SW-0017","organization_id":"ORG-0031","relationship_type":"owner","original_public_label":"Cascale"}
-{"asset_organization_id":"AO-00224","asset_id":"LCA-SW-0017","organization_id":"ORG-0032","relationship_type":"operator/maintainer","original_public_label":"Cascale; exclusively delivered on Worldly"}
-{"asset_organization_id":"AO-00225","asset_id":"LCA-SW-0018","organization_id":"ORG-0217","relationship_type":"owner","original_public_label":"Makersite GmbH"}
-{"asset_organization_id":"AO-00226","asset_id":"LCA-SW-0018","organization_id":"ORG-0217","relationship_type":"operator/maintainer","original_public_label":"Makersite GmbH"}
-{"asset_organization_id":"AO-00227","asset_id":"LCA-SW-0019","organization_id":"ORG-0068","relationship_type":"owner","original_public_label":"Eaternity"}
-{"asset_organization_id":"AO-00228","asset_id":"LCA-SW-0019","organization_id":"ORG-0068","relationship_type":"operator/maintainer","original_public_label":"Eaternity"}
-{"asset_organization_id":"AO-00229","asset_id":"LCA-SW-0020","organization_id":"ORG-0067","relationship_type":"owner","original_public_label":"EarthShift Global"}
-{"asset_organization_id":"AO-00230","asset_id":"LCA-SW-0020","organization_id":"ORG-0067","relationship_type":"operator/maintainer","original_public_label":"EarthShift Global"}
-{"asset_organization_id":"AO-00231","asset_id":"LCA-SW-0021","organization_id":"ORG-0067","relationship_type":"owner","original_public_label":"EarthShift Global"}
-{"asset_organization_id":"AO-00232","asset_id":"LCA-SW-0021","organization_id":"ORG-0067","relationship_type":"operator/maintainer","original_public_label":"EarthShift Global"}
-{"asset_organization_id":"AO-00233","asset_id":"LCA-SW-0022","organization_id":"ORG-0286","relationship_type":"owner","original_public_label":"The PIQET Consortium / Lifecycles and partners"}
-{"asset_organization_id":"AO-00234","asset_id":"LCA-SW-0022","organization_id":"ORG-0244","relationship_type":"operator/maintainer","original_public_label":"PIQET service team"}
-{"asset_organization_id":"AO-00235","asset_id":"LCA-SW-0023","organization_id":"ORG-0259","relationship_type":"owner","original_public_label":"Real-Time LCA"}
-{"asset_organization_id":"AO-00236","asset_id":"LCA-SW-0023","organization_id":"ORG-0259","relationship_type":"operator/maintainer","original_public_label":"Real-Time LCA"}
-{"asset_organization_id":"AO-00237","asset_id":"LCA-SW-0024","organization_id":"ORG-0315","relationship_type":"owner","original_public_label":"VoLCA project"}
-{"asset_organization_id":"AO-00238","asset_id":"LCA-SW-0024","organization_id":"ORG-0314","relationship_type":"operator/maintainer","original_public_label":"VoLCA maintainers"}
-{"asset_organization_id":"AO-00239","asset_id":"LCA-SW-0025","organization_id":"ORG-0147","relationship_type":"owner","original_public_label":"Hangzhou Qinglvlan Environmental Digital Technology"}
-{"asset_organization_id":"AO-00240","asset_id":"LCA-SW-0025","organization_id":"ORG-0028","relationship_type":"operator/maintainer","original_public_label":"Capillar"}
-{"asset_organization_id":"AO-00241","asset_id":"LCA-SW-0026","organization_id":"ORG-0194","relationship_type":"owner","original_public_label":"Kimel Tech SpA"}
-{"asset_organization_id":"AO-00242","asset_id":"LCA-SW-0026","organization_id":"ORG-0078","relationship_type":"operator/maintainer","original_public_label":"EcoSemantic"}
-{"asset_organization_id":"AO-00243","asset_id":"LCA-SW-0027","organization_id":"ORG-0201","relationship_type":"owner","original_public_label":"LCA CARE project consortium"}
-{"asset_organization_id":"AO-00244","asset_id":"LCA-SW-0027","organization_id":"ORG-0090","relationship_type":"operator/maintainer","original_public_label":"EU project 101139959 consortium"}
-{"asset_organization_id":"AO-00245","asset_id":"LCA-FMT-0012","organization_id":"ORG-0166","relationship_type":"owner","original_public_label":"Industrial Digital Twin Association"}
-{"asset_organization_id":"AO-00246","asset_id":"LCA-FMT-0012","organization_id":"ORG-0158","relationship_type":"operator/maintainer","original_public_label":"IDTA office and admin-shell-io repository"}
-{"asset_organization_id":"AO-00247","asset_id":"LCA-PLT-0004","organization_id":"ORG-0046","relationship_type":"owner","original_public_label":"CIRPASS-2 and partner initiatives"}
-{"asset_organization_id":"AO-00248","asset_id":"LCA-PLT-0004","organization_id":"ORG-0313","relationship_type":"operator/maintainer","original_public_label":"Vocabulary Hub / Semantic Treehouse maintainers"}
-{"asset_organization_id":"AO-00249","asset_id":"LCA-NOM-0008","organization_id":"ORG-0047","relationship_type":"owner","original_public_label":"CIRPASS-2 European project"}
-{"asset_organization_id":"AO-00250","asset_id":"LCA-NOM-0008","organization_id":"ORG-0091","relationship_type":"operator/maintainer","original_public_label":"EUDPP ontology contributors via DPP Vocabulary Hub"}
-{"asset_organization_id":"AO-00251","asset_id":"LCA-PLT-0005","organization_id":"ORG-0136","relationship_type":"owner","original_public_label":"Global Building Data Initiative under GLOBE"}
-{"asset_organization_id":"AO-00252","asset_id":"LCA-PLT-0005","organization_id":"ORG-0126","relationship_type":"operator/maintainer","original_public_label":"GBDI consortium"}
-{"asset_organization_id":"AO-00253","asset_id":"LCA-FMT-0013","organization_id":"ORG-0135","relationship_type":"owner","original_public_label":"Global Building Data Initiative"}
-{"asset_organization_id":"AO-00254","asset_id":"LCA-FMT-0013","organization_id":"ORG-0127","relationship_type":"operator/maintainer","original_public_label":"GBDI technical community"}
-{"asset_organization_id":"AO-00255","asset_id":"LCA-DB-0035","organization_id":"ORG-0014","relationship_type":"owner","original_public_label":"BATTERS"}
-{"asset_organization_id":"AO-00256","asset_id":"LCA-DB-0035","organization_id":"ORG-0015","relationship_type":"operator/maintainer","original_public_label":"BATTERS / WELOOP experts"}
-{"asset_organization_id":"AO-00257","asset_id":"LCA-DB-0036","organization_id":"ORG-0018","relationship_type":"owner","original_public_label":"BioEnergieDat project consortium"}
-{"asset_organization_id":"AO-00258","asset_id":"LCA-DB-0036","organization_id":"ORG-0209","relationship_type":"operator/maintainer","original_public_label":"Legacy project portal; dataset owners include KIT and partners"}
-{"asset_organization_id":"AO-00259","asset_id":"LCA-DB-0037","organization_id":"ORG-0276","relationship_type":"owner","original_public_label":"Swedish Life Cycle Center"}
-{"asset_organization_id":"AO-00260","asset_id":"LCA-DB-0037","organization_id":"ORG-0039","relationship_type":"operator/maintainer","original_public_label":"Chalmers University of Technology, Environmental Systems Analysis"}
-{"asset_organization_id":"AO-00261","asset_id":"LCA-DB-0038","organization_id":"ORG-0085","relationship_type":"owner","original_public_label":"ERASM"}
-{"asset_organization_id":"AO-00262","asset_id":"LCA-DB-0038","organization_id":"ORG-0086","relationship_type":"operator/maintainer","original_public_label":"ERASM member-company collaboration"}
-{"asset_organization_id":"AO-00263","asset_id":"LCA-DB-0039","organization_id":"ORG-0207","relationship_type":"owner","original_public_label":"LCIE Bureau Veritas"}
-{"asset_organization_id":"AO-00264","asset_id":"LCA-DB-0039","organization_id":"ORG-0027","relationship_type":"operator/maintainer","original_public_label":"Bureau Veritas CODDE"}
-{"asset_organization_id":"AO-00265","asset_id":"LCA-DB-0040","organization_id":"ORG-0275","relationship_type":"owner","original_public_label":"Sustainable Impact Metrics Foundation / Delft University of Technology lineage"}
-{"asset_organization_id":"AO-00266","asset_id":"LCA-DB-0040","organization_id":"ORG-0074","relationship_type":"operator/maintainer","original_public_label":"eco-costs/value maintainers"}
-{"asset_organization_id":"AO-00267","asset_id":"LCA-DB-0041","organization_id":"ORG-0043","relationship_type":"owner","original_public_label":"CIRAIG Sustainable Consumption Chair"}
-{"asset_organization_id":"AO-00268","asset_id":"LCA-DB-0041","organization_id":"ORG-0040","relationship_type":"operator/maintainer","original_public_label":"CIRAIG / POLARIIS+ collaboration"}
-{"asset_organization_id":"AO-00269","asset_id":"LCA-DB-0042","organization_id":"ORG-0285","relationship_type":"owner","original_public_label":"The Evah Institute / Ecquate Pty Ltd"}
-{"asset_organization_id":"AO-00270","asset_id":"LCA-DB-0042","organization_id":"ORG-0108","relationship_type":"operator/maintainer","original_public_label":"Evah Associates"}
-{"asset_organization_id":"AO-00271","asset_id":"LCA-DB-0043","organization_id":"ORG-0092","relationship_type":"owner","original_public_label":"EuGeos / Chris Foster"}
-{"asset_organization_id":"AO-00272","asset_id":"LCA-DB-0043","organization_id":"ORG-0065","relationship_type":"operator/maintainer","original_public_label":"Distributed historically through openLCA Nexus"}
-{"asset_organization_id":"AO-00273","asset_id":"LCA-NOM-0007","organization_id":"ORG-0191","relationship_type":"owner","original_public_label":"IUPAC and InChI Trust"}
-{"asset_organization_id":"AO-00274","asset_id":"LCA-NOM-0007","organization_id":"ORG-0164","relationship_type":"operator/maintainer","original_public_label":"InChI Trust"}
-{"asset_organization_id":"AO-00275","asset_id":"LCA-NOM-0009","organization_id":"ORG-0311","relationship_type":"owner","original_public_label":"US National Library of Medicine / National Center for Biotechnology Information"}
-{"asset_organization_id":"AO-00276","asset_id":"LCA-NOM-0009","organization_id":"ORG-0256","relationship_type":"operator/maintainer","original_public_label":"PubChem"}
-{"asset_organization_id":"AO-00277","asset_id":"LCA-NOM-0010","organization_id":"ORG-0056","relationship_type":"owner","original_public_label":"Daylight Chemical Information Systems (original specification); multiple later dialects"}
-{"asset_organization_id":"AO-00278","asset_id":"LCA-NOM-0010","organization_id":"ORG-0057","relationship_type":"operator/maintainer","original_public_label":"Daylight for original specification; distributed implementer community"}
-{"asset_organization_id":"AO-00279","asset_id":"LCA-SW-0028","organization_id":"ORG-0068","relationship_type":"owner","original_public_label":"Eaternity"}
-{"asset_organization_id":"AO-00280","asset_id":"LCA-SW-0028","organization_id":"ORG-0069","relationship_type":"operator/maintainer","original_public_label":"Eaternity open-source team"}
-{"asset_organization_id":"AO-00281","asset_id":"LCA-SW-0029","organization_id":"ORG-0306","relationship_type":"owner","original_public_label":"University of Sheffield and AMRC project team"}
-{"asset_organization_id":"AO-00282","asset_id":"LCA-SW-0029","organization_id":"ORG-0007","relationship_type":"operator/maintainer","original_public_label":"Agent Net Zero team"}
-{"asset_organization_id":"AO-00283","asset_id":"LCA-NET-0007","organization_id":"ORG-0049","relationship_type":"owner","original_public_label":"Climate Farm Demo consortium"}
-{"asset_organization_id":"AO-00284","asset_id":"LCA-NET-0007","organization_id":"ORG-0155","relationship_type":"operator/maintainer","original_public_label":"Horizon Europe consortium"}
-{"asset_organization_id":"AO-00285","asset_id":"LCA-REP-0006","organization_id":"ORG-0053","relationship_type":"owner","original_public_label":"Cornerstone Sustainability Data Initiative"}
-{"asset_organization_id":"AO-00286","asset_id":"LCA-REP-0006","organization_id":"ORG-0087","relationship_type":"operator/maintainer","original_public_label":"ERG, Stanford and Watershed-supported initiative"}
-{"asset_organization_id":"AO-00287","asset_id":"LCA-SW-0030","organization_id":"ORG-0316","relationship_type":"owner","original_public_label":"Walloon Agricultural Research Centre (CRA-W)"}
-{"asset_organization_id":"AO-00288","asset_id":"LCA-SW-0030","organization_id":"ORG-0055","relationship_type":"operator/maintainer","original_public_label":"CRA-W"}
-{"asset_organization_id":"AO-00289","asset_id":"LCA-DB-0044","organization_id":"ORG-0038","relationship_type":"owner","original_public_label":"Chalmers University of Technology-led DeDuCE team"}
-{"asset_organization_id":"AO-00290","asset_id":"LCA-DB-0044","organization_id":"ORG-0060","relationship_type":"operator/maintainer","original_public_label":"DeDuCE research team and partners"}
-{"asset_organization_id":"AO-00291","asset_id":"LCA-NET-0008","organization_id":"ORG-0062","relationship_type":"owner","original_public_label":"Départ de Sentier association"}
-{"asset_organization_id":"AO-00292","asset_id":"LCA-NET-0008","organization_id":"ORG-0058","relationship_type":"operator/maintainer","original_public_label":"DdS board and staff"}
-{"asset_organization_id":"AO-00293","asset_id":"LCA-PLT-0006","organization_id":"ORG-0061","relationship_type":"owner","original_public_label":"Départ de Sentier"}
-{"asset_organization_id":"AO-00294","asset_id":"LCA-PLT-0006","organization_id":"ORG-0059","relationship_type":"operator/maintainer","original_public_label":"DdS platform and data engineering team"}
-{"asset_organization_id":"AO-00295","asset_id":"LCA-DB-0045","organization_id":"ORG-0119","relationship_type":"owner","original_public_label":"FOODTURE Horizon Europe consortium"}
-{"asset_organization_id":"AO-00296","asset_id":"LCA-DB-0045","organization_id":"ORG-0324","relationship_type":"operator/maintainer","original_public_label":"WP1 led by ADEME within the FOODTURE consortium"}
-{"asset_organization_id":"AO-00297","asset_id":"LCA-NET-0009","organization_id":"ORG-0121","relationship_type":"owner","original_public_label":"Forum for Sustainability through Life Cycle Innovation e.V."}
-{"asset_organization_id":"AO-00298","asset_id":"LCA-NET-0009","organization_id":"ORG-0123","relationship_type":"operator/maintainer","original_public_label":"FSLCI secretariat and member community"}
-{"asset_organization_id":"AO-00299","asset_id":"LCA-REP-0007","organization_id":"ORG-0177","relationship_type":"owner","original_public_label":"International CCU Assessment Harmonization Group"}
-{"asset_organization_id":"AO-00300","asset_id":"LCA-REP-0007","organization_id":"ORG-0137","relationship_type":"operator/maintainer","original_public_label":"Global CO2 Initiative, University of Michigan"}
-{"asset_organization_id":"AO-00301","asset_id":"LCA-SW-0031","organization_id":"ORG-0264","relationship_type":"owner","original_public_label":"RWTH Aachen University and collaborators"}
-{"asset_organization_id":"AO-00302","asset_id":"LCA-SW-0031","organization_id":"ORG-0170","relationship_type":"operator/maintainer","original_public_label":"Institute of Technical Thermodynamics at RWTH Aachen University and collaborators"}
-{"asset_organization_id":"AO-00303","asset_id":"LCA-MTH-0018","organization_id":"ORG-0122","relationship_type":"owner","original_public_label":"Framework authors"}
-{"asset_organization_id":"AO-00304","asset_id":"LCA-MTH-0018","organization_id":"ORG-0266","relationship_type":"operator/maintainer","original_public_label":"Scientific publication and author community"}
-{"asset_organization_id":"AO-00305","asset_id":"LCA-SW-0032","organization_id":"ORG-0140","relationship_type":"owner","original_public_label":"Green Gold Label Foundation"}
-{"asset_organization_id":"AO-00306","asset_id":"LCA-SW-0032","organization_id":"ORG-0141","relationship_type":"operator/maintainer","original_public_label":"Green Gold Label Foundation with studio Gear Up"}
-{"asset_organization_id":"AO-00307","asset_id":"LCA-NET-0010","organization_id":"ORG-0146","relationship_type":"owner","original_public_label":"GreenGrocer consortium"}
-{"asset_organization_id":"AO-00308","asset_id":"LCA-NET-0010","organization_id":"ORG-0002","relationship_type":"operator/maintainer","original_public_label":"22-partner consortium"}
-{"asset_organization_id":"AO-00309","asset_id":"LCA-MTH-0019","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"Intergovernmental Panel on Climate Change"}
-{"asset_organization_id":"AO-00310","asset_id":"LCA-MTH-0019","organization_id":"ORG-0184","relationship_type":"operator/maintainer","original_public_label":"IPCC Task Force on National Greenhouse Gas Inventories"}
-{"asset_organization_id":"AO-00311","asset_id":"LCA-NET-0011","organization_id":"ORG-0104","relationship_type":"owner","original_public_label":"European LIFE programme consortium"}
-{"asset_organization_id":"AO-00312","asset_id":"LCA-NET-0011","organization_id":"ORG-0006","relationship_type":"operator/maintainer","original_public_label":"ADEME-led nine-partner consortium"}
-{"asset_organization_id":"AO-00313","asset_id":"LCA-SW-0033","organization_id":"ORG-0211","relationship_type":"owner","original_public_label":"Leonardo Ferhati"}
-{"asset_organization_id":"AO-00314","asset_id":"LCA-SW-0033","organization_id":"ORG-0165","relationship_type":"operator/maintainer","original_public_label":"Independent research initiative"}
-{"asset_organization_id":"AO-00315","asset_id":"LCA-MTH-0020","organization_id":"ORG-0304","relationship_type":"owner","original_public_label":"University of Kassel authors / BBSR-funded project"}
-{"asset_organization_id":"AO-00316","asset_id":"LCA-MTH-0020","organization_id":"ORG-0193","relationship_type":"operator/maintainer","original_public_label":"Kassel Institute for Sustainability data repository"}
-{"asset_organization_id":"AO-00317","asset_id":"LCA-SW-0034","organization_id":"ORG-0218","relationship_type":"owner","original_public_label":"MATILDA research team"}
-{"asset_organization_id":"AO-00318","asset_id":"LCA-SW-0034","organization_id":"ORG-0003","relationship_type":"operator/maintainer","original_public_label":"Academic author team"}
-{"asset_organization_id":"AO-00319","asset_id":"LCA-NOM-0011","organization_id":"ORG-0234","relationship_type":"owner","original_public_label":"Ontology-pattern authors"}
-{"asset_organization_id":"AO-00320","asset_id":"LCA-NOM-0011","organization_id":"ORG-0230","relationship_type":"operator/maintainer","original_public_label":"No current maintainer publicly confirmed"}
-{"asset_organization_id":"AO-00321","asset_id":"LCA-REP-0008","organization_id":"ORG-0235","relationship_type":"owner","original_public_label":"Open Sustainable Technology community"}
-{"asset_organization_id":"AO-00322","asset_id":"LCA-REP-0008","organization_id":"ORG-0255","relationship_type":"operator/maintainer","original_public_label":"protontypes/open-sustainable-technology maintainers and contributors"}
-{"asset_organization_id":"AO-00323","asset_id":"LCA-NOM-0012","organization_id":"ORG-0168","relationship_type":"owner","original_public_label":"INRAE"}
-{"asset_organization_id":"AO-00324","asset_id":"LCA-NOM-0012","organization_id":"ORG-0169","relationship_type":"operator/maintainer","original_public_label":"INRAE ontology team and Recherche Data Gouv/AgroPortal"}
-{"asset_organization_id":"AO-00325","asset_id":"LCA-REP-0009","organization_id":"ORG-0252","relationship_type":"owner","original_public_label":"product impact team"}
-{"asset_organization_id":"AO-00326","asset_id":"LCA-REP-0009","organization_id":"ORG-0253","relationship_type":"operator/maintainer","original_public_label":"productimpact.info"}
-{"asset_organization_id":"AO-00327","asset_id":"LCA-DB-0046","organization_id":"ORG-0267","relationship_type":"owner","original_public_label":"Shanghai HiQ Smart Data Co., Ltd."}
-{"asset_organization_id":"AO-00328","asset_id":"LCA-DB-0046","organization_id":"ORG-0153","relationship_type":"operator/maintainer","original_public_label":"HiQ Data"}
-{"asset_organization_id":"AO-00329","asset_id":"LCA-SW-0035","organization_id":"ORG-0223","relationship_type":"owner","original_public_label":"Minviro Ltd"}
-{"asset_organization_id":"AO-00330","asset_id":"LCA-SW-0035","organization_id":"ORG-0222","relationship_type":"operator/maintainer","original_public_label":"Minviro"}
-{"asset_organization_id":"AO-00331","asset_id":"LCA-DB-0047","organization_id":"ORG-0223","relationship_type":"owner","original_public_label":"Minviro Ltd"}
-{"asset_organization_id":"AO-00332","asset_id":"LCA-DB-0047","organization_id":"ORG-0222","relationship_type":"operator/maintainer","original_public_label":"Minviro"}
-{"asset_organization_id":"AO-00333","asset_id":"LCA-SW-0036","organization_id":"ORG-0318","relationship_type":"owner","original_public_label":"WAP Sustainability, LLC"}
-{"asset_organization_id":"AO-00334","asset_id":"LCA-SW-0036","organization_id":"ORG-0317","relationship_type":"operator/maintainer","original_public_label":"WAP Sustainability"}
-{"asset_organization_id":"AO-00335","asset_id":"LCA-SW-0037","organization_id":"ORG-0318","relationship_type":"owner","original_public_label":"WAP Sustainability, LLC"}
-{"asset_organization_id":"AO-00336","asset_id":"LCA-SW-0037","organization_id":"ORG-0317","relationship_type":"operator/maintainer","original_public_label":"WAP Sustainability"}
-{"asset_organization_id":"AO-00337","asset_id":"LCA-DB-0048","organization_id":"ORG-0318","relationship_type":"owner","original_public_label":"WAP Sustainability, LLC"}
-{"asset_organization_id":"AO-00338","asset_id":"LCA-DB-0048","organization_id":"ORG-0317","relationship_type":"operator/maintainer","original_public_label":"WAP Sustainability"}
-{"asset_organization_id":"AO-00339","asset_id":"LCA-SW-0038","organization_id":"ORG-0187","relationship_type":"owner","original_public_label":"iPoint-systems gmbh / Assent group"}
-{"asset_organization_id":"AO-00340","asset_id":"LCA-SW-0038","organization_id":"ORG-0186","relationship_type":"operator/maintainer","original_public_label":"iPoint"}
-{"asset_organization_id":"AO-00341","asset_id":"LCA-REP-0010","organization_id":"ORG-0082","relationship_type":"owner","original_public_label":"EPD Australasia Ltd"}
-{"asset_organization_id":"AO-00342","asset_id":"LCA-REP-0010","organization_id":"ORG-0081","relationship_type":"operator/maintainer","original_public_label":"EPD Australasia"}
-{"asset_organization_id":"AO-00343","asset_id":"LCA-SW-0039","organization_id":"ORG-0011","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00344","asset_id":"LCA-SW-0039","organization_id":"ORG-0011","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00345","asset_id":"LCA-SW-0040","organization_id":"ORG-0011","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00346","asset_id":"LCA-SW-0040","organization_id":"ORG-0011","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00347","asset_id":"LCA-SW-0041","organization_id":"ORG-0011","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00348","asset_id":"LCA-SW-0041","organization_id":"ORG-0011","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00349","asset_id":"LCA-DB-0049","organization_id":"ORG-0011","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00350","asset_id":"LCA-DB-0049","organization_id":"ORG-0011","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
-{"asset_organization_id":"AO-00351","asset_id":"LCA-DB-0050","organization_id":"ORG-0095","relationship_type":"owner","original_public_label":"European Aluminium"}
-{"asset_organization_id":"AO-00352","asset_id":"LCA-DB-0050","organization_id":"ORG-0095","relationship_type":"operator/maintainer","original_public_label":"European Aluminium"}
-{"asset_organization_id":"AO-00353","asset_id":"LCA-SW-0042","organization_id":"ORG-0176","relationship_type":"owner","original_public_label":"International Aluminium Institute and European Aluminium"}
-{"asset_organization_id":"AO-00354","asset_id":"LCA-SW-0042","organization_id":"ORG-0175","relationship_type":"operator/maintainer","original_public_label":"International Aluminium Institute / European Aluminium"}
-{"asset_organization_id":"AO-00355","asset_id":"LCA-SW-0043","organization_id":"ORG-0288","relationship_type":"owner","original_public_label":"TianGong LCA / TIDAS open-source project"}
-{"asset_organization_id":"AO-00356","asset_id":"LCA-SW-0043","organization_id":"ORG-0293","relationship_type":"operator/maintainer","original_public_label":"TIDAS Tools maintainers and public contributors"}
-{"asset_organization_id":"AO-00357","asset_id":"LCA-DB-0051","organization_id":"ORG-0203","relationship_type":"owner","original_public_label":"LCA Society of Japan / LCA Japan Forum"}
-{"asset_organization_id":"AO-00358","asset_id":"LCA-DB-0051","organization_id":"ORG-0202","relationship_type":"operator/maintainer","original_public_label":"LCA Japan Forum"}
-{"asset_organization_id":"AO-00359","asset_id":"LCA-DB-0052","organization_id":"ORG-0220","relationship_type":"owner","original_public_label":"MexiLCA initiative"}
-{"asset_organization_id":"AO-00360","asset_id":"LCA-DB-0052","organization_id":"ORG-0172","relationship_type":"operator/maintainer","original_public_label":"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators"}
-{"asset_organization_id":"AO-00361","asset_id":"LCA-REP-0011","organization_id":"ORG-0157","relationship_type":"owner","original_public_label":"ICMQ S.p.A. Società Benefit / EPDItaly"}
-{"asset_organization_id":"AO-00362","asset_id":"LCA-REP-0011","organization_id":"ORG-0084","relationship_type":"operator/maintainer","original_public_label":"EPDItaly"}
-{"asset_organization_id":"AO-00363","asset_id":"LCA-QA-0006","organization_id":"ORG-0084","relationship_type":"owner","original_public_label":"EPDItaly"}
-{"asset_organization_id":"AO-00364","asset_id":"LCA-QA-0006","organization_id":"ORG-0084","relationship_type":"operator/maintainer","original_public_label":"EPDItaly"}
-{"asset_organization_id":"AO-00365","asset_id":"LCA-DB-0053","organization_id":"ORG-0283","relationship_type":"owner","original_public_label":"The European Steel Association (EUROFER)"}
-{"asset_organization_id":"AO-00366","asset_id":"LCA-DB-0053","organization_id":"ORG-0094","relationship_type":"operator/maintainer","original_public_label":"EUROFER Stainless"}
-{"asset_organization_id":"AO-00367","asset_id":"LCA-NET-0012","organization_id":"ORG-0260","relationship_type":"owner","original_public_label":"Red Iberoamericana de Ciclo de Vida"}
-{"asset_organization_id":"AO-00368","asset_id":"LCA-NET-0012","organization_id":"ORG-0261","relationship_type":"operator/maintainer","original_public_label":"RICV board and member networks"}
-{"asset_organization_id":"AO-00369","asset_id":"LCA-DB-0054","organization_id":"ORG-0171","relationship_type":"owner","original_public_label":"Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)"}
-{"asset_organization_id":"AO-00370","asset_id":"LCA-DB-0054","organization_id":"ORG-0156","relationship_type":"operator/maintainer","original_public_label":"Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos"}
-{"asset_organization_id":"AO-00371","asset_id":"LCA-DB-0055","organization_id":"ORG-0160","relationship_type":"owner","original_public_label":"IKE Environmental Technology / Sichuan University lineage"}
-{"asset_organization_id":"AO-00372","asset_id":"LCA-DB-0055","organization_id":"ORG-0161","relationship_type":"operator/maintainer","original_public_label":"IKE Environmental Technology Co., Ltd."}
-{"asset_organization_id":"AO-00373","asset_id":"LCA-DB-0056","organization_id":"ORG-0221","relationship_type":"owner","original_public_label":"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute"}
-{"asset_organization_id":"AO-00374","asset_id":"LCA-DB-0056","organization_id":"ORG-0195","relationship_type":"operator/maintainer","original_public_label":"Korea Environmental Industry & Technology Institute (KEITI)"}
-{"asset_organization_id":"AO-00375","asset_id":"LCA-DB-0057","organization_id":"ORG-0227","relationship_type":"owner","original_public_label":"National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners"}
-{"asset_organization_id":"AO-00376","asset_id":"LCA-DB-0057","organization_id":"ORG-0279","relationship_type":"operator/maintainer","original_public_label":"Technology and Informatics Institute for Sustainability (TIIS), NSTDA"}
-{"asset_organization_id":"AO-00377","asset_id":"LCA-DB-0058","organization_id":"ORG-0269","relationship_type":"owner","original_public_label":"SIRIM Berhad"}
-{"asset_organization_id":"AO-00378","asset_id":"LCA-DB-0058","organization_id":"ORG-0270","relationship_type":"operator/maintainer","original_public_label":"SIRIM Energy & Environment Centre"}
-{"asset_organization_id":"AO-00379","asset_id":"LCA-DB-0059","organization_id":"ORG-0241","relationship_type":"owner","original_public_label":"Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners"}
-{"asset_organization_id":"AO-00380","asset_id":"LCA-DB-0059","organization_id":"ORG-0240","relationship_type":"operator/maintainer","original_public_label":"Peruvian Life Cycle Network (PELCAN)"}
-{"asset_organization_id":"AO-00381","asset_id":"LCA-DB-0060","organization_id":"ORG-0124","relationship_type":"owner","original_public_label":"Fundación InnovaCiclos"}
-{"asset_organization_id":"AO-00382","asset_id":"LCA-DB-0060","organization_id":"ORG-0125","relationship_type":"operator/maintainer","original_public_label":"Fundación InnovaCiclos / EcoEd"}
-{"asset_organization_id":"AO-00383","asset_id":"LCA-DB-0061","organization_id":"ORG-0139","relationship_type":"owner","original_public_label":"Government of Quebec / CIRAIG"}
-{"asset_organization_id":"AO-00384","asset_id":"LCA-DB-0061","organization_id":"ORG-0044","relationship_type":"operator/maintainer","original_public_label":"CIRAIG with ecoinvent"}
-{"asset_organization_id":"AO-00385","asset_id":"LCA-DB-0062","organization_id":"ORG-0174","relationship_type":"owner","original_public_label":"International Aluminium Institute"}
-{"asset_organization_id":"AO-00386","asset_id":"LCA-DB-0062","organization_id":"ORG-0174","relationship_type":"operator/maintainer","original_public_label":"International Aluminium Institute"}
-{"asset_organization_id":"AO-00387","asset_id":"LCA-DB-0063","organization_id":"ORG-0229","relationship_type":"owner","original_public_label":"Nickel Institute"}
-{"asset_organization_id":"AO-00388","asset_id":"LCA-DB-0063","organization_id":"ORG-0229","relationship_type":"operator/maintainer","original_public_label":"Nickel Institute"}
-{"asset_organization_id":"AO-00389","asset_id":"LCA-DB-0064","organization_id":"ORG-0183","relationship_type":"owner","original_public_label":"International Zinc Association"}
-{"asset_organization_id":"AO-00390","asset_id":"LCA-DB-0064","organization_id":"ORG-0183","relationship_type":"operator/maintainer","original_public_label":"International Zinc Association"}
-{"asset_organization_id":"AO-00391","asset_id":"LCA-DB-0065","organization_id":"ORG-0102","relationship_type":"owner","original_public_label":"European Container Glass Federation (FEVE)"}
-{"asset_organization_id":"AO-00392","asset_id":"LCA-DB-0065","organization_id":"ORG-0112","relationship_type":"operator/maintainer","original_public_label":"FEVE"}
-{"asset_organization_id":"AO-00393","asset_id":"LCA-DB-0066","organization_id":"ORG-0093","relationship_type":"owner","original_public_label":"Eurobitume"}
-{"asset_organization_id":"AO-00394","asset_id":"LCA-DB-0066","organization_id":"ORG-0093","relationship_type":"operator/maintainer","original_public_label":"Eurobitume"}
-{"asset_organization_id":"AO-00395","asset_id":"LCA-DB-0067","organization_id":"ORG-0052","relationship_type":"owner","original_public_label":"Consortium for Research on Renewable Industrial Materials (CORRIM)"}
-{"asset_organization_id":"AO-00396","asset_id":"LCA-DB-0067","organization_id":"ORG-0054","relationship_type":"operator/maintainer","original_public_label":"CORRIM and Federal LCA Commons"}
-{"asset_organization_id":"AO-00397","asset_id":"LCA-DB-0068","organization_id":"ORG-0178","relationship_type":"owner","original_public_label":"International Copper Association"}
-{"asset_organization_id":"AO-00398","asset_id":"LCA-DB-0068","organization_id":"ORG-0178","relationship_type":"operator/maintainer","original_public_label":"International Copper Association"}
-{"asset_organization_id":"AO-00399","asset_id":"LCA-DB-0069","organization_id":"ORG-0180","relationship_type":"owner","original_public_label":"International Institute for Sustainability Analysis and Strategy (IINAS)"}
-{"asset_organization_id":"AO-00400","asset_id":"LCA-DB-0069","organization_id":"ORG-0159","relationship_type":"operator/maintainer","original_public_label":"IINAS"}
-{"asset_organization_id":"AO-00401","asset_id":"LCA-DB-0070","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00402","asset_id":"LCA-DB-0070","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00403","asset_id":"LCA-DB-0071","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00404","asset_id":"LCA-DB-0071","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00405","asset_id":"LCA-DB-0072","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00406","asset_id":"LCA-DB-0072","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00407","asset_id":"LCA-DB-0073","organization_id":"ORG-0278","relationship_type":"owner","original_public_label":"Swiss Federal Offices"}
-{"asset_organization_id":"AO-00408","asset_id":"LCA-DB-0073","organization_id":"ORG-0278","relationship_type":"operator/maintainer","original_public_label":"Swiss Federal Offices"}
-{"asset_organization_id":"AO-00409","asset_id":"LCA-DB-0074","organization_id":"ORG-0048","relationship_type":"owner","original_public_label":"CLIC Innovation / ARVI research programme"}
-{"asset_organization_id":"AO-00410","asset_id":"LCA-DB-0074","organization_id":"ORG-0048","relationship_type":"operator/maintainer","original_public_label":"CLIC Innovation / ARVI research programme"}
-{"asset_organization_id":"AO-00411","asset_id":"LCA-DB-0075","organization_id":"ORG-0284","relationship_type":"owner","original_public_label":"The Evah Institute"}
-{"asset_organization_id":"AO-00412","asset_id":"LCA-DB-0075","organization_id":"ORG-0284","relationship_type":"operator/maintainer","original_public_label":"The Evah Institute"}
-{"asset_organization_id":"AO-00413","asset_id":"LCA-DB-0076","organization_id":"ORG-0144","relationship_type":"owner","original_public_label":"GreenDelta GmbH / TRIPLELINK"}
-{"asset_organization_id":"AO-00414","asset_id":"LCA-DB-0076","organization_id":"ORG-0144","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH / TRIPLELINK"}
-{"asset_organization_id":"AO-00415","asset_id":"LCA-DB-0077","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00416","asset_id":"LCA-DB-0077","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00417","asset_id":"LCA-DB-0078","organization_id":"ORG-0251","relationship_type":"owner","original_public_label":"PRIMUS project / Plastics Recyclers Europe"}
-{"asset_organization_id":"AO-00418","asset_id":"LCA-DB-0078","organization_id":"ORG-0251","relationship_type":"operator/maintainer","original_public_label":"PRIMUS project / Plastics Recyclers Europe"}
-{"asset_organization_id":"AO-00419","asset_id":"LCA-DB-0079","organization_id":"ORG-0088","relationship_type":"owner","original_public_label":"ESU-services and contributing authors"}
-{"asset_organization_id":"AO-00420","asset_id":"LCA-DB-0079","organization_id":"ORG-0088","relationship_type":"operator/maintainer","original_public_label":"ESU-services and contributing authors"}
-{"asset_organization_id":"AO-00421","asset_id":"LCA-DB-0080","organization_id":"ORG-0120","relationship_type":"owner","original_public_label":"Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)"}
-{"asset_organization_id":"AO-00422","asset_id":"LCA-DB-0080","organization_id":"ORG-0120","relationship_type":"operator/maintainer","original_public_label":"Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)"}
-{"asset_organization_id":"AO-00423","asset_id":"LCA-MTH-0021","organization_id":"ORG-0148","relationship_type":"owner","original_public_label":"Helmholtz Centre for Environmental Research (UFZ)"}
-{"asset_organization_id":"AO-00424","asset_id":"LCA-MTH-0021","organization_id":"ORG-0148","relationship_type":"operator/maintainer","original_public_label":"Helmholtz Centre for Environmental Research (UFZ)"}
-{"asset_organization_id":"AO-00425","asset_id":"LCA-MTH-0022","organization_id":"ORG-0198","relationship_type":"owner","original_public_label":"LC-IMPACT project; openLCA adaptation by GreenDelta GmbH"}
-{"asset_organization_id":"AO-00426","asset_id":"LCA-MTH-0022","organization_id":"ORG-0198","relationship_type":"operator/maintainer","original_public_label":"LC-IMPACT project; openLCA adaptation by GreenDelta GmbH"}
-{"asset_organization_id":"AO-00427","asset_id":"LCA-MTH-0023","organization_id":"ORG-0143","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
-{"asset_organization_id":"AO-00428","asset_id":"LCA-MTH-0023","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00001","asset_id":"LCA-DB-0001","organization_id":"ORG-0098","relationship_type":"owner","original_public_label":"ecoinvent Association"}
+{"asset_organization_id":"AO-00002","asset_id":"LCA-DB-0001","organization_id":"ORG-0098","relationship_type":"operator/maintainer","original_public_label":"ecoinvent Association"}
+{"asset_organization_id":"AO-00003","asset_id":"LCA-FMT-0001","organization_id":"ORG-0098","relationship_type":"owner","original_public_label":"ecoinvent Association"}
+{"asset_organization_id":"AO-00004","asset_id":"LCA-FMT-0001","organization_id":"ORG-0098","relationship_type":"operator/maintainer","original_public_label":"ecoinvent Association"}
+{"asset_organization_id":"AO-00005","asset_id":"LCA-REP-0001","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00006","asset_id":"LCA-REP-0001","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00007","asset_id":"LCA-NET-0001","organization_id":"ORG-0245","relationship_type":"owner","original_public_label":"Life Cycle Initiative hosted at UNEP"}
+{"asset_organization_id":"AO-00008","asset_id":"LCA-NET-0001","organization_id":"ORG-0243","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative / participating nodes"}
+{"asset_organization_id":"AO-00009","asset_id":"LCA-NET-0002","organization_id":"ORG-0120","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
+{"asset_organization_id":"AO-00010","asset_id":"LCA-NET-0002","organization_id":"ORG-0129","relationship_type":"operator/maintainer","original_public_label":"European Platform on Life Cycle Assessment / EC-JRC"}
+{"asset_organization_id":"AO-00011","asset_id":"LCA-FMT-0002","organization_id":"ORG-0120","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
+{"asset_organization_id":"AO-00012","asset_id":"LCA-FMT-0002","organization_id":"ORG-0089","relationship_type":"operator/maintainer","original_public_label":"EC-JRC / European Platform on LCA"}
+{"asset_organization_id":"AO-00013","asset_id":"LCA-REP-0002","organization_id":"ORG-0352","relationship_type":"owner","original_public_label":"U.S. Federal LCA Commons agencies"}
+{"asset_organization_id":"AO-00014","asset_id":"LCA-REP-0002","organization_id":"ORG-0367","relationship_type":"operator/maintainer","original_public_label":"USDA National Agricultural Library with collaborating federal agencies"}
+{"asset_organization_id":"AO-00015","asset_id":"LCA-DB-0002","organization_id":"ORG-0350","relationship_type":"owner","original_public_label":"U.S. Department of Energy / National Laboratory of the Rockies"}
+{"asset_organization_id":"AO-00016","asset_id":"LCA-DB-0002","organization_id":"ORG-0259","relationship_type":"operator/maintainer","original_public_label":"National Laboratory of the Rockies on Federal LCA Commons"}
+{"asset_organization_id":"AO-00017","asset_id":"LCA-NOM-0001","organization_id":"ORG-0353","relationship_type":"owner","original_public_label":"U.S. Federal LCA Commons partners"}
+{"asset_organization_id":"AO-00018","asset_id":"LCA-NOM-0001","organization_id":"ORG-0142","relationship_type":"operator/maintainer","original_public_label":"FLCAC administrators; development resources hosted publicly"}
+{"asset_organization_id":"AO-00019","asset_id":"LCA-MTH-0001","organization_id":"ORG-0245","relationship_type":"owner","original_public_label":"Life Cycle Initiative hosted at UNEP"}
+{"asset_organization_id":"AO-00020","asset_id":"LCA-MTH-0001","organization_id":"ORG-0247","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative with scientific partners"}
+{"asset_organization_id":"AO-00021","asset_id":"LCA-STD-0001","organization_id":"ORG-0211","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
+{"asset_organization_id":"AO-00022","asset_id":"LCA-STD-0001","organization_id":"ORG-0218","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
+{"asset_organization_id":"AO-00023","asset_id":"LCA-DB-0003","organization_id":"ORG-0250","relationship_type":"owner","original_public_label":"Mérieux NutriSciences | Blonk"}
+{"asset_organization_id":"AO-00024","asset_id":"LCA-DB-0003","organization_id":"ORG-0250","relationship_type":"operator/maintainer","original_public_label":"Mérieux NutriSciences | Blonk"}
+{"asset_organization_id":"AO-00025","asset_id":"LCA-DB-0004","organization_id":"ORG-0003","relationship_type":"owner","original_public_label":"ADEME"}
+{"asset_organization_id":"AO-00026","asset_id":"LCA-DB-0004","organization_id":"ORG-0004","relationship_type":"operator/maintainer","original_public_label":"ADEME and programme partners"}
+{"asset_organization_id":"AO-00027","asset_id":"LCA-DB-0005","organization_id":"ORG-0325","relationship_type":"owner","original_public_label":"Swiss Federal Office for the Environment (FOEN/BAFU)"}
+{"asset_organization_id":"AO-00028","asset_id":"LCA-DB-0005","organization_id":"ORG-0143","relationship_type":"operator/maintainer","original_public_label":"FOEN/BAFU and commissioned technical partners"}
+{"asset_organization_id":"AO-00029","asset_id":"LCA-DB-0006","organization_id":"ORG-0037","relationship_type":"owner","original_public_label":"Carbon Minds"}
+{"asset_organization_id":"AO-00030","asset_id":"LCA-DB-0006","organization_id":"ORG-0037","relationship_type":"operator/maintainer","original_public_label":"Carbon Minds"}
+{"asset_organization_id":"AO-00031","asset_id":"LCA-DB-0007","organization_id":"ORG-0134","relationship_type":"owner","original_public_label":"EXIOBASE consortium"}
+{"asset_organization_id":"AO-00032","asset_id":"LCA-DB-0007","organization_id":"ORG-0135","relationship_type":"operator/maintainer","original_public_label":"EXIOBASE research consortium; current releases distributed on Zenodo"}
+{"asset_organization_id":"AO-00033","asset_id":"LCA-DB-0008","organization_id":"ORG-0258","relationship_type":"owner","original_public_label":"National Institute of Advanced Industrial Science and Technology (AIST)"}
+{"asset_organization_id":"AO-00034","asset_id":"LCA-DB-0008","organization_id":"ORG-0007","relationship_type":"operator/maintainer","original_public_label":"AIST-IDEA programme and AIST Solutions licensing service"}
+{"asset_organization_id":"AO-00035","asset_id":"LCA-DB-0009","organization_id":"ORG-0100","relationship_type":"owner","original_public_label":"ENEA"}
+{"asset_organization_id":"AO-00036","asset_id":"LCA-DB-0009","organization_id":"ORG-0101","relationship_type":"operator/maintainer","original_public_label":"ENEA; ARCADIA and successor MASE–ENEA programme"}
+{"asset_organization_id":"AO-00037","asset_id":"LCA-DB-0010","organization_id":"ORG-0362","relationship_type":"owner","original_public_label":"US Environmental Protection Agency"}
+{"asset_organization_id":"AO-00038","asset_id":"LCA-DB-0010","organization_id":"ORG-0365","relationship_type":"operator/maintainer","original_public_label":"US EPA research team"}
+{"asset_organization_id":"AO-00039","asset_id":"LCA-STD-0002","organization_id":"ORG-0211","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
+{"asset_organization_id":"AO-00040","asset_id":"LCA-STD-0002","organization_id":"ORG-0218","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
+{"asset_organization_id":"AO-00041","asset_id":"LCA-STD-0003","organization_id":"ORG-0211","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
+{"asset_organization_id":"AO-00042","asset_id":"LCA-STD-0003","organization_id":"ORG-0219","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 7"}
+{"asset_organization_id":"AO-00043","asset_id":"LCA-MTH-0002","organization_id":"ORG-0086","relationship_type":"owner","original_public_label":"Dutch National Institute for Public Health and the Environment (RIVM) and method authors"}
+{"asset_organization_id":"AO-00044","asset_id":"LCA-MTH-0002","organization_id":"ORG-0300","relationship_type":"operator/maintainer","original_public_label":"RIVM public distribution"}
+{"asset_organization_id":"AO-00045","asset_id":"LCA-MTH-0003","organization_id":"ORG-0119","relationship_type":"owner","original_public_label":"European Commission"}
+{"asset_organization_id":"AO-00046","asset_id":"LCA-MTH-0003","organization_id":"ORG-0083","relationship_type":"operator/maintainer","original_public_label":"Directorate-General for Environment and Joint Research Centre"}
+{"asset_organization_id":"AO-00047","asset_id":"LCA-MTH-0004","organization_id":"ORG-0119","relationship_type":"owner","original_public_label":"European Commission"}
+{"asset_organization_id":"AO-00048","asset_id":"LCA-MTH-0004","organization_id":"ORG-0084","relationship_type":"operator/maintainer","original_public_label":"Directorate-General for Research and Innovation and Joint Research Centre"}
+{"asset_organization_id":"AO-00049","asset_id":"LCA-DB-0011","organization_id":"ORG-0317","relationship_type":"owner","original_public_label":"Sphera"}
+{"asset_organization_id":"AO-00050","asset_id":"LCA-DB-0011","organization_id":"ORG-0317","relationship_type":"operator/maintainer","original_public_label":"Sphera"}
+{"asset_organization_id":"AO-00051","asset_id":"LCA-DB-0012","organization_id":"ORG-0338","relationship_type":"owner","original_public_label":"TianGong community"}
+{"asset_organization_id":"AO-00052","asset_id":"LCA-DB-0012","organization_id":"ORG-0339","relationship_type":"operator/maintainer","original_public_label":"TianGong LCA Data Working Group and platform community"}
+{"asset_organization_id":"AO-00053","asset_id":"LCA-PLT-0001","organization_id":"ORG-0338","relationship_type":"owner","original_public_label":"TianGong community"}
+{"asset_organization_id":"AO-00054","asset_id":"LCA-PLT-0001","organization_id":"ORG-0341","relationship_type":"operator/maintainer","original_public_label":"TianGong platform developers"}
+{"asset_organization_id":"AO-00055","asset_id":"LCA-SYS-0001","organization_id":"ORG-0342","relationship_type":"owner","original_public_label":"TianGong project / Carbon Footprint Industry Alliance ecosystem"}
+{"asset_organization_id":"AO-00056","asset_id":"LCA-SYS-0001","organization_id":"ORG-0343","relationship_type":"operator/maintainer","original_public_label":"TIDAS development community"}
+{"asset_organization_id":"AO-00057","asset_id":"LCA-NOM-0002","organization_id":"ORG-0025","relationship_type":"owner","original_public_label":"BONSAI community"}
+{"asset_organization_id":"AO-00058","asset_id":"LCA-NOM-0002","organization_id":"ORG-0027","relationship_type":"operator/maintainer","original_public_label":"BONSAI network/contributors"}
+{"asset_organization_id":"AO-00059","asset_id":"LCA-NOM-0003","organization_id":"ORG-0290","relationship_type":"owner","original_public_label":"Project author/community repository"}
+{"asset_organization_id":"AO-00060","asset_id":"LCA-NOM-0003","organization_id":"ORG-0344","relationship_type":"operator/maintainer","original_public_label":"tishchungoora/lca-ontology repository maintainer"}
+{"asset_organization_id":"AO-00061","asset_id":"LCA-NOM-0004","organization_id":"ORG-0234","relationship_type":"owner","original_public_label":"LCA to BIM Workflow research project"}
+{"asset_organization_id":"AO-00062","asset_id":"LCA-NOM-0004","organization_id":"ORG-0303","relationship_type":"operator/maintainer","original_public_label":"RWTH design-computation project contributors"}
+{"asset_organization_id":"AO-00063","asset_id":"LCA-DB-0013","organization_id":"ORG-0003","relationship_type":"owner","original_public_label":"ADEME"}
+{"asset_organization_id":"AO-00064","asset_id":"LCA-DB-0013","organization_id":"ORG-0003","relationship_type":"operator/maintainer","original_public_label":"ADEME"}
+{"asset_organization_id":"AO-00065","asset_id":"LCA-NOM-0005","organization_id":"ORG-0144","relationship_type":"owner","original_public_label":"Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions"}
+{"asset_organization_id":"AO-00066","asset_id":"LCA-NOM-0005","organization_id":"ORG-0137","relationship_type":"operator/maintainer","original_public_label":"FAO-coordinated expert and institutional community"}
+{"asset_organization_id":"AO-00067","asset_id":"LCA-MTH-0005","organization_id":"ORG-0383","relationship_type":"owner","original_public_label":"WULCA working group / UNEP-SETAC Life Cycle Initiative community"}
+{"asset_organization_id":"AO-00068","asset_id":"LCA-MTH-0005","organization_id":"ORG-0382","relationship_type":"operator/maintainer","original_public_label":"WULCA"}
+{"asset_organization_id":"AO-00069","asset_id":"LCA-DB-0014","organization_id":"ORG-0016","relationship_type":"owner","original_public_label":"Australian Life Cycle Assessment Society (ALCAS)"}
+{"asset_organization_id":"AO-00070","asset_id":"LCA-DB-0014","organization_id":"ORG-0015","relationship_type":"operator/maintainer","original_public_label":"AusLCI Database Committee and sector partners"}
+{"asset_organization_id":"AO-00071","asset_id":"LCA-DB-0015","organization_id":"ORG-0160","relationship_type":"owner","original_public_label":"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)"}
+{"asset_organization_id":"AO-00072","asset_id":"LCA-DB-0015","organization_id":"ORG-0021","relationship_type":"operator/maintainer","original_public_label":"BBSR and commissioned technical operators"}
+{"asset_organization_id":"AO-00073","asset_id":"LCA-NET-0003","organization_id":"ORG-0090","relationship_type":"owner","original_public_label":"ECO Platform AISBL"}
+{"asset_organization_id":"AO-00074","asset_id":"LCA-NET-0003","organization_id":"ORG-0092","relationship_type":"operator/maintainer","original_public_label":"ECO Platform members and secretariat"}
+{"asset_organization_id":"AO-00075","asset_id":"LCA-REP-0003","organization_id":"ORG-0090","relationship_type":"owner","original_public_label":"ECO Platform AISBL"}
+{"asset_organization_id":"AO-00076","asset_id":"LCA-REP-0003","organization_id":"ORG-0091","relationship_type":"operator/maintainer","original_public_label":"ECO Platform and connected EPD programme-operator nodes"}
+{"asset_organization_id":"AO-00077","asset_id":"LCA-FMT-0003","organization_id":"ORG-0024","relationship_type":"owner","original_public_label":"BMWSB/BBSR and InData/ECO Platform technical community"}
+{"asset_organization_id":"AO-00078","asset_id":"LCA-FMT-0003","organization_id":"ORG-0022","relationship_type":"operator/maintainer","original_public_label":"BBSR-linked technical maintainers and data-network implementers"}
+{"asset_organization_id":"AO-00079","asset_id":"LCA-DB-0016","organization_id":"ORG-0120","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
+{"asset_organization_id":"AO-00080","asset_id":"LCA-DB-0016","organization_id":"ORG-0128","relationship_type":"operator/maintainer","original_public_label":"European Platform on Life Cycle Assessment"}
+{"asset_organization_id":"AO-00081","asset_id":"LCA-MTH-0006","organization_id":"ORG-0120","relationship_type":"owner","original_public_label":"European Commission Joint Research Centre"}
+{"asset_organization_id":"AO-00082","asset_id":"LCA-MTH-0006","organization_id":"ORG-0130","relationship_type":"operator/maintainer","original_public_label":"European Platform on Life Cycle Assessment / JRC"}
+{"asset_organization_id":"AO-00083","asset_id":"LCA-STD-0004","organization_id":"ORG-0124","relationship_type":"owner","original_public_label":"European Committee for Standardization (CEN)"}
+{"asset_organization_id":"AO-00084","asset_id":"LCA-STD-0004","organization_id":"ORG-0047","relationship_type":"operator/maintainer","original_public_label":"CEN/TC 350 and national standards bodies"}
+{"asset_organization_id":"AO-00085","asset_id":"LCA-FMT-0004","organization_id":"ORG-0172","relationship_type":"owner","original_public_label":"GreenDelta"}
+{"asset_organization_id":"AO-00086","asset_id":"LCA-FMT-0004","organization_id":"ORG-0175","relationship_type":"operator/maintainer","original_public_label":"GreenDelta openLCA development team"}
+{"asset_organization_id":"AO-00087","asset_id":"LCA-STD-0005","organization_id":"ORG-0212","relationship_type":"owner","original_public_label":"International Organization for Standardization (ISO)"}
+{"asset_organization_id":"AO-00088","asset_id":"LCA-STD-0005","organization_id":"ORG-0217","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 3"}
+{"asset_organization_id":"AO-00089","asset_id":"LCA-STD-0006","organization_id":"ORG-0212","relationship_type":"owner","original_public_label":"International Organization for Standardization (ISO)"}
+{"asset_organization_id":"AO-00090","asset_id":"LCA-STD-0006","organization_id":"ORG-0218","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
+{"asset_organization_id":"AO-00091","asset_id":"LCA-MTH-0007","organization_id":"ORG-0357","relationship_type":"owner","original_public_label":"United States Environmental Protection Agency"}
+{"asset_organization_id":"AO-00092","asset_id":"LCA-MTH-0007","organization_id":"ORG-0364","relationship_type":"operator/maintainer","original_public_label":"US EPA research programme"}
+{"asset_organization_id":"AO-00093","asset_id":"LCA-DB-0017","organization_id":"ORG-0169","relationship_type":"owner","original_public_label":"Global Feed LCA Institute"}
+{"asset_organization_id":"AO-00094","asset_id":"LCA-DB-0017","organization_id":"ORG-0161","relationship_type":"operator/maintainer","original_public_label":"GFLI Secretariat and data-project partners"}
+{"asset_organization_id":"AO-00095","asset_id":"LCA-MTH-0008","organization_id":"ORG-0169","relationship_type":"owner","original_public_label":"Global Feed LCA Institute"}
+{"asset_organization_id":"AO-00096","asset_id":"LCA-MTH-0008","organization_id":"ORG-0162","relationship_type":"operator/maintainer","original_public_label":"GFLI technical and methodology groups"}
+{"asset_organization_id":"AO-00097","asset_id":"LCA-PLT-0002","organization_id":"ORG-0360","relationship_type":"owner","original_public_label":"University of Oxford / HESTIA project"}
+{"asset_organization_id":"AO-00098","asset_id":"LCA-PLT-0002","organization_id":"ORG-0181","relationship_type":"operator/maintainer","original_public_label":"HESTIA team and contributor community"}
+{"asset_organization_id":"AO-00099","asset_id":"LCA-FMT-0005","organization_id":"ORG-0180","relationship_type":"owner","original_public_label":"HESTIA project / University of Oxford"}
+{"asset_organization_id":"AO-00100","asset_id":"LCA-FMT-0005","organization_id":"ORG-0182","relationship_type":"operator/maintainer","original_public_label":"HESTIA technical team"}
+{"asset_organization_id":"AO-00101","asset_id":"LCA-NOM-0006","organization_id":"ORG-0145","relationship_type":"owner","original_public_label":"FoodOn open inter-agency community"}
+{"asset_organization_id":"AO-00102","asset_id":"LCA-NOM-0006","organization_id":"ORG-0146","relationship_type":"operator/maintainer","original_public_label":"FoodOntology contributors / OBO Foundry"}
+{"asset_organization_id":"AO-00103","asset_id":"LCA-NET-0004","organization_id":"ORG-0376","relationship_type":"owner","original_public_label":"World Resources Institute and World Business Council for Sustainable Development"}
+{"asset_organization_id":"AO-00104","asset_id":"LCA-NET-0004","organization_id":"ORG-0164","relationship_type":"operator/maintainer","original_public_label":"GHG Protocol secretariat and multi-stakeholder governance bodies"}
+{"asset_organization_id":"AO-00105","asset_id":"LCA-MTH-0009","organization_id":"ORG-0376","relationship_type":"owner","original_public_label":"World Resources Institute and World Business Council for Sustainable Development"}
+{"asset_organization_id":"AO-00106","asset_id":"LCA-MTH-0009","organization_id":"ORG-0163","relationship_type":"operator/maintainer","original_public_label":"GHG Protocol"}
+{"asset_organization_id":"AO-00107","asset_id":"LCA-MTH-0010","organization_id":"ORG-0195","relationship_type":"owner","original_public_label":"IMPACT World+ scientific consortium"}
+{"asset_organization_id":"AO-00108","asset_id":"LCA-MTH-0010","organization_id":"ORG-0194","relationship_type":"operator/maintainer","original_public_label":"IMPACT World+ method development team"}
+{"asset_organization_id":"AO-00109","asset_id":"LCA-QA-0001","organization_id":"ORG-0098","relationship_type":"owner","original_public_label":"ecoinvent Association"}
+{"asset_organization_id":"AO-00110","asset_id":"LCA-QA-0001","organization_id":"ORG-0098","relationship_type":"operator/maintainer","original_public_label":"ecoinvent Association"}
+{"asset_organization_id":"AO-00111","asset_id":"LCA-FMT-0006","organization_id":"ORG-0097","relationship_type":"owner","original_public_label":"ecoinvent / former EcoSpold development community"}
+{"asset_organization_id":"AO-00112","asset_id":"LCA-FMT-0006","organization_id":"ORG-0184","relationship_type":"operator/maintainer","original_public_label":"Historical format; no active maintenance identified"}
+{"asset_organization_id":"AO-00113","asset_id":"LCA-DB-0018","organization_id":"ORG-0294","relationship_type":"owner","original_public_label":"Quantis"}
+{"asset_organization_id":"AO-00114","asset_id":"LCA-DB-0018","organization_id":"ORG-0296","relationship_type":"operator/maintainer","original_public_label":"Quantis and WFLDB partners"}
+{"asset_organization_id":"AO-00115","asset_id":"LCA-DB-0019","organization_id":"ORG-0257","relationship_type":"owner","original_public_label":"National Institute for Public Health and the Environment (RIVM)"}
+{"asset_organization_id":"AO-00116","asset_id":"LCA-DB-0019","organization_id":"ORG-0301","relationship_type":"operator/maintainer","original_public_label":"RIVM; LCI update performed by Mérieux NutriSciences | Blonk"}
+{"asset_organization_id":"AO-00117","asset_id":"LCA-DB-0020","organization_id":"ORG-0159","relationship_type":"owner","original_public_label":"German Environment Agency (Umweltbundesamt, UBA)"}
+{"asset_organization_id":"AO-00118","asset_id":"LCA-DB-0020","organization_id":"ORG-0158","relationship_type":"operator/maintainer","original_public_label":"German Environment Agency"}
+{"asset_organization_id":"AO-00119","asset_id":"LCA-DB-0021","organization_id":"ORG-0198","relationship_type":"owner","original_public_label":"INIES governance partners under French public convention"}
+{"asset_organization_id":"AO-00120","asset_id":"LCA-DB-0021","organization_id":"ORG-0008","relationship_type":"operator/maintainer","original_public_label":"Alliance HQE-GBC and INIES governance bodies"}
+{"asset_organization_id":"AO-00121","asset_id":"LCA-DB-0022","organization_id":"ORG-0283","relationship_type":"owner","original_public_label":"Plastics Europe"}
+{"asset_organization_id":"AO-00122","asset_id":"LCA-DB-0022","organization_id":"ORG-0284","relationship_type":"operator/maintainer","original_public_label":"Plastics Europe and relevant sector groups"}
+{"asset_organization_id":"AO-00123","asset_id":"LCA-DB-0023","organization_id":"ORG-0377","relationship_type":"owner","original_public_label":"World Steel Association"}
+{"asset_organization_id":"AO-00124","asset_id":"LCA-DB-0023","organization_id":"ORG-0379","relationship_type":"operator/maintainer","original_public_label":"worldsteel"}
+{"asset_organization_id":"AO-00125","asset_id":"LCA-FMT-0007","organization_id":"ORG-0269","relationship_type":"owner","original_public_label":"openEPD Forum / Building Transparency ecosystem"}
+{"asset_organization_id":"AO-00126","asset_id":"LCA-FMT-0007","organization_id":"ORG-0268","relationship_type":"operator/maintainer","original_public_label":"openEPD contributors and reference implementers"}
+{"asset_organization_id":"AO-00127","asset_id":"LCA-FMT-0008","organization_id":"ORG-0375","relationship_type":"owner","original_public_label":"World Business Council for Sustainable Development"}
+{"asset_organization_id":"AO-00128","asset_id":"LCA-FMT-0008","organization_id":"ORG-0272","relationship_type":"operator/maintainer","original_public_label":"Partnership for Carbon Transparency (PACT)"}
+{"asset_organization_id":"AO-00129","asset_id":"LCA-STD-0007","organization_id":"ORG-0211","relationship_type":"owner","original_public_label":"International Organization for Standardization"}
+{"asset_organization_id":"AO-00130","asset_id":"LCA-STD-0007","organization_id":"ORG-0218","relationship_type":"operator/maintainer","original_public_label":"ISO/TC 207/SC 5"}
+{"asset_organization_id":"AO-00131","asset_id":"LCA-MTH-0011","organization_id":"ORG-0241","relationship_type":"owner","original_public_label":"Leiden University, Institute of Environmental Sciences (CML)"}
+{"asset_organization_id":"AO-00132","asset_id":"LCA-MTH-0011","organization_id":"ORG-0069","relationship_type":"operator/maintainer","original_public_label":"CML-IE; public resources are now largely archival"}
+{"asset_organization_id":"AO-00133","asset_id":"LCA-MTH-0012","organization_id":"ORG-0355","relationship_type":"owner","original_public_label":"UNEP-hosted Life Cycle Initiative"}
+{"asset_organization_id":"AO-00134","asset_id":"LCA-MTH-0012","organization_id":"ORG-0244","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative GLAM stewardship community"}
+{"asset_organization_id":"AO-00135","asset_id":"LCA-QA-0002","organization_id":"ORG-0357","relationship_type":"owner","original_public_label":"United States Environmental Protection Agency"}
+{"asset_organization_id":"AO-00136","asset_id":"LCA-QA-0002","organization_id":"ORG-0363","relationship_type":"operator/maintainer","original_public_label":"US EPA Office of Research and Development"}
+{"asset_organization_id":"AO-00137","asset_id":"LCA-QA-0003","organization_id":"ORG-0119","relationship_type":"owner","original_public_label":"European Commission"}
+{"asset_organization_id":"AO-00138","asset_id":"LCA-QA-0003","organization_id":"ORG-0122","relationship_type":"operator/maintainer","original_public_label":"European Commission Joint Research Centre and Environmental Footprint governance"}
+{"asset_organization_id":"AO-00139","asset_id":"LCA-NET-0005","organization_id":"ORG-0356","relationship_type":"owner","original_public_label":"United Nations Environment Programme"}
+{"asset_organization_id":"AO-00140","asset_id":"LCA-NET-0005","organization_id":"ORG-0246","relationship_type":"operator/maintainer","original_public_label":"Life Cycle Initiative secretariat and steering governance"}
+{"asset_organization_id":"AO-00141","asset_id":"LCA-FMT-0009","organization_id":"ORG-0237","relationship_type":"owner","original_public_label":"LCAx open-source project / OCNI-DTU contributors"}
+{"asset_organization_id":"AO-00142","asset_id":"LCA-FMT-0009","organization_id":"ORG-0236","relationship_type":"operator/maintainer","original_public_label":"LCAx contributors"}
+{"asset_organization_id":"AO-00143","asset_id":"LCA-DB-0024","organization_id":"ORG-0054","relationship_type":"owner","original_public_label":"CIRAIG / project contributors"}
+{"asset_organization_id":"AO-00144","asset_id":"LCA-DB-0024","organization_id":"ORG-0055","relationship_type":"operator/maintainer","original_public_label":"CIRAIG OpenIO-Canada contributors"}
+{"asset_organization_id":"AO-00145","asset_id":"LCA-DB-0025","organization_id":"ORG-0172","relationship_type":"owner","original_public_label":"GreenDelta"}
+{"asset_organization_id":"AO-00146","asset_id":"LCA-DB-0025","organization_id":"ORG-0172","relationship_type":"operator/maintainer","original_public_label":"GreenDelta"}
+{"asset_organization_id":"AO-00147","asset_id":"LCA-DB-0026","organization_id":"ORG-0261","relationship_type":"owner","original_public_label":"New Earth / Social Hotspots Database provider"}
+{"asset_organization_id":"AO-00148","asset_id":"LCA-DB-0026","organization_id":"ORG-0315","relationship_type":"operator/maintainer","original_public_label":"Social Hotspots Database team"}
+{"asset_organization_id":"AO-00149","asset_id":"LCA-MTH-0013","organization_id":"ORG-0375","relationship_type":"owner","original_public_label":"World Business Council for Sustainable Development"}
+{"asset_organization_id":"AO-00150","asset_id":"LCA-MTH-0013","organization_id":"ORG-0271","relationship_type":"operator/maintainer","original_public_label":"Partnership for Carbon Transparency"}
+{"asset_organization_id":"AO-00151","asset_id":"LCA-PLT-0003","organization_id":"ORG-0028","relationship_type":"owner","original_public_label":"BONSAI not-for-profit association"}
+{"asset_organization_id":"AO-00152","asset_id":"LCA-PLT-0003","organization_id":"ORG-0029","relationship_type":"operator/maintainer","original_public_label":"BONSAI secretariat, board and contributor network"}
+{"asset_organization_id":"AO-00153","asset_id":"LCA-DB-0027","organization_id":"ORG-0028","relationship_type":"owner","original_public_label":"BONSAI not-for-profit association"}
+{"asset_organization_id":"AO-00154","asset_id":"LCA-DB-0027","organization_id":"ORG-0026","relationship_type":"operator/maintainer","original_public_label":"BONSAI data contributors and projects"}
+{"asset_organization_id":"AO-00155","asset_id":"LCA-MTH-0014","organization_id":"ORG-0044","relationship_type":"owner","original_public_label":"Catena-X Automotive Network e.V."}
+{"asset_organization_id":"AO-00156","asset_id":"LCA-MTH-0014","organization_id":"ORG-0045","relationship_type":"operator/maintainer","original_public_label":"Catena-X PCF working groups"}
+{"asset_organization_id":"AO-00157","asset_id":"LCA-QA-0004","organization_id":"ORG-0044","relationship_type":"owner","original_public_label":"Catena-X Automotive Network e.V."}
+{"asset_organization_id":"AO-00158","asset_id":"LCA-QA-0004","organization_id":"ORG-0045","relationship_type":"operator/maintainer","original_public_label":"Catena-X PCF working groups"}
+{"asset_organization_id":"AO-00159","asset_id":"LCA-FMT-0010","organization_id":"ORG-0044","relationship_type":"owner","original_public_label":"Catena-X Automotive Network e.V."}
+{"asset_organization_id":"AO-00160","asset_id":"LCA-FMT-0010","organization_id":"ORG-0046","relationship_type":"operator/maintainer","original_public_label":"Catena-X PCF/data-model working groups"}
+{"asset_organization_id":"AO-00161","asset_id":"LCA-MTH-0015","organization_id":"ORG-0345","relationship_type":"owner","original_public_label":"Together for Sustainability"}
+{"asset_organization_id":"AO-00162","asset_id":"LCA-MTH-0015","organization_id":"ORG-0333","relationship_type":"operator/maintainer","original_public_label":"TfS Scope 3 GHG programme"}
+{"asset_organization_id":"AO-00163","asset_id":"LCA-FMT-0011","organization_id":"ORG-0345","relationship_type":"owner","original_public_label":"Together for Sustainability"}
+{"asset_organization_id":"AO-00164","asset_id":"LCA-FMT-0011","organization_id":"ORG-0333","relationship_type":"operator/maintainer","original_public_label":"TfS Scope 3 GHG programme"}
+{"asset_organization_id":"AO-00165","asset_id":"LCA-QA-0005","organization_id":"ORG-0345","relationship_type":"owner","original_public_label":"Together for Sustainability"}
+{"asset_organization_id":"AO-00166","asset_id":"LCA-QA-0005","organization_id":"ORG-0333","relationship_type":"operator/maintainer","original_public_label":"TfS Scope 3 GHG programme"}
+{"asset_organization_id":"AO-00167","asset_id":"LCA-NET-0006","organization_id":"ORG-0282","relationship_type":"owner","original_public_label":"Plastic Footprint Network convened by EA – Earth Action"}
+{"asset_organization_id":"AO-00168","asset_id":"LCA-NET-0006","organization_id":"ORG-0276","relationship_type":"operator/maintainer","original_public_label":"PFN secretariat and member/collaborator community"}
+{"asset_organization_id":"AO-00169","asset_id":"LCA-MTH-0016","organization_id":"ORG-0281","relationship_type":"owner","original_public_label":"Plastic Footprint Network"}
+{"asset_organization_id":"AO-00170","asset_id":"LCA-MTH-0016","organization_id":"ORG-0277","relationship_type":"operator/maintainer","original_public_label":"PFN technical community convened by EA – Earth Action"}
+{"asset_organization_id":"AO-00171","asset_id":"LCA-MTH-0017","organization_id":"ORG-0205","relationship_type":"owner","original_public_label":"Intergovernmental Panel on Climate Change"}
+{"asset_organization_id":"AO-00172","asset_id":"LCA-MTH-0017","organization_id":"ORG-0215","relationship_type":"operator/maintainer","original_public_label":"IPCC Working Group I assessment process"}
+{"asset_organization_id":"AO-00173","asset_id":"LCA-DB-0028","organization_id":"ORG-0119","relationship_type":"owner","original_public_label":"European Commission"}
+{"asset_organization_id":"AO-00174","asset_id":"LCA-DB-0028","organization_id":"ORG-0121","relationship_type":"operator/maintainer","original_public_label":"European Commission Joint Research Centre and Directorate-General for Environment"}
+{"asset_organization_id":"AO-00175","asset_id":"LCA-REP-0004","organization_id":"ORG-0104","relationship_type":"owner","original_public_label":"EPD International AB"}
+{"asset_organization_id":"AO-00176","asset_id":"LCA-REP-0004","organization_id":"ORG-0209","relationship_type":"operator/maintainer","original_public_label":"International EPD System"}
+{"asset_organization_id":"AO-00177","asset_id":"LCA-DB-0029","organization_id":"ORG-0058","relationship_type":"owner","original_public_label":"Circular Ecology"}
+{"asset_organization_id":"AO-00178","asset_id":"LCA-DB-0029","organization_id":"ORG-0058","relationship_type":"operator/maintainer","original_public_label":"Circular Ecology"}
+{"asset_organization_id":"AO-00179","asset_id":"LCA-DB-0030","organization_id":"ORG-0111","relationship_type":"owner","original_public_label":"ESU-services Ltd."}
+{"asset_organization_id":"AO-00180","asset_id":"LCA-DB-0030","organization_id":"ORG-0111","relationship_type":"operator/maintainer","original_public_label":"ESU-services Ltd."}
+{"asset_organization_id":"AO-00181","asset_id":"LCA-DB-0031","organization_id":"ORG-0223","relationship_type":"owner","original_public_label":"Kanso, Inc. / Carbonfact"}
+{"asset_organization_id":"AO-00182","asset_id":"LCA-DB-0031","organization_id":"ORG-0039","relationship_type":"operator/maintainer","original_public_label":"Carbonfact science team"}
+{"asset_organization_id":"AO-00183","asset_id":"LCA-DB-0032","organization_id":"ORG-0126","relationship_type":"owner","original_public_label":"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)"}
+{"asset_organization_id":"AO-00184","asset_id":"LCA-DB-0032","organization_id":"ORG-0048","relationship_type":"operator/maintainer","original_public_label":"CEPE LCI project"}
+{"asset_organization_id":"AO-00185","asset_id":"LCA-DB-0033","organization_id":"ORG-0373","relationship_type":"owner","original_public_label":"Watershed Technology"}
+{"asset_organization_id":"AO-00186","asset_id":"LCA-DB-0033","organization_id":"ORG-0373","relationship_type":"operator/maintainer","original_public_label":"Watershed Technology"}
+{"asset_organization_id":"AO-00187","asset_id":"LCA-DB-0034","organization_id":"ORG-0123","relationship_type":"owner","original_public_label":"European Commission-funded NEEDS project consortium"}
+{"asset_organization_id":"AO-00188","asset_id":"LCA-DB-0034","organization_id":"ORG-0239","relationship_type":"operator/maintainer","original_public_label":"Legacy project data; openLCA conversion maintained historically by GreenDelta"}
+{"asset_organization_id":"AO-00189","asset_id":"LCA-REP-0005","organization_id":"ORG-0331","relationship_type":"owner","original_public_label":"Textile Exchange"}
+{"asset_organization_id":"AO-00190","asset_id":"LCA-REP-0005","organization_id":"ORG-0332","relationship_type":"operator/maintainer","original_public_label":"Textile Exchange in partnership with SCS Global Services"}
+{"asset_organization_id":"AO-00191","asset_id":"LCA-FMT-0012","organization_id":"ORG-0197","relationship_type":"owner","original_public_label":"Industrial Digital Twin Association"}
+{"asset_organization_id":"AO-00192","asset_id":"LCA-FMT-0012","organization_id":"ORG-0189","relationship_type":"operator/maintainer","original_public_label":"IDTA office and admin-shell-io repository"}
+{"asset_organization_id":"AO-00193","asset_id":"LCA-PLT-0004","organization_id":"ORG-0060","relationship_type":"owner","original_public_label":"CIRPASS-2 and partner initiatives"}
+{"asset_organization_id":"AO-00194","asset_id":"LCA-PLT-0004","organization_id":"ORG-0369","relationship_type":"operator/maintainer","original_public_label":"Vocabulary Hub / Semantic Treehouse maintainers"}
+{"asset_organization_id":"AO-00195","asset_id":"LCA-NOM-0008","organization_id":"ORG-0061","relationship_type":"owner","original_public_label":"CIRPASS-2 European project"}
+{"asset_organization_id":"AO-00196","asset_id":"LCA-NOM-0008","organization_id":"ORG-0114","relationship_type":"operator/maintainer","original_public_label":"EUDPP ontology contributors via DPP Vocabulary Hub"}
+{"asset_organization_id":"AO-00197","asset_id":"LCA-PLT-0005","organization_id":"ORG-0166","relationship_type":"owner","original_public_label":"Global Building Data Initiative under GLOBE"}
+{"asset_organization_id":"AO-00198","asset_id":"LCA-PLT-0005","organization_id":"ORG-0156","relationship_type":"operator/maintainer","original_public_label":"GBDI consortium"}
+{"asset_organization_id":"AO-00199","asset_id":"LCA-FMT-0013","organization_id":"ORG-0165","relationship_type":"owner","original_public_label":"Global Building Data Initiative"}
+{"asset_organization_id":"AO-00200","asset_id":"LCA-FMT-0013","organization_id":"ORG-0157","relationship_type":"operator/maintainer","original_public_label":"GBDI technical community"}
+{"asset_organization_id":"AO-00201","asset_id":"LCA-DB-0035","organization_id":"ORG-0019","relationship_type":"owner","original_public_label":"BATTERS"}
+{"asset_organization_id":"AO-00202","asset_id":"LCA-DB-0035","organization_id":"ORG-0020","relationship_type":"operator/maintainer","original_public_label":"BATTERS / WELOOP experts"}
+{"asset_organization_id":"AO-00203","asset_id":"LCA-DB-0036","organization_id":"ORG-0023","relationship_type":"owner","original_public_label":"BioEnergieDat project consortium"}
+{"asset_organization_id":"AO-00204","asset_id":"LCA-DB-0036","organization_id":"ORG-0240","relationship_type":"operator/maintainer","original_public_label":"Legacy project portal; dataset owners include KIT and partners"}
+{"asset_organization_id":"AO-00205","asset_id":"LCA-DB-0037","organization_id":"ORG-0324","relationship_type":"owner","original_public_label":"Swedish Life Cycle Center"}
+{"asset_organization_id":"AO-00206","asset_id":"LCA-DB-0037","organization_id":"ORG-0050","relationship_type":"operator/maintainer","original_public_label":"Chalmers University of Technology, Environmental Systems Analysis"}
+{"asset_organization_id":"AO-00207","asset_id":"LCA-DB-0038","organization_id":"ORG-0106","relationship_type":"owner","original_public_label":"ERASM"}
+{"asset_organization_id":"AO-00208","asset_id":"LCA-DB-0038","organization_id":"ORG-0107","relationship_type":"operator/maintainer","original_public_label":"ERASM member-company collaboration"}
+{"asset_organization_id":"AO-00209","asset_id":"LCA-DB-0039","organization_id":"ORG-0238","relationship_type":"owner","original_public_label":"LCIE Bureau Veritas"}
+{"asset_organization_id":"AO-00210","asset_id":"LCA-DB-0039","organization_id":"ORG-0032","relationship_type":"operator/maintainer","original_public_label":"Bureau Veritas CODDE"}
+{"asset_organization_id":"AO-00211","asset_id":"LCA-DB-0040","organization_id":"ORG-0322","relationship_type":"owner","original_public_label":"Sustainable Impact Metrics Foundation / Delft University of Technology lineage"}
+{"asset_organization_id":"AO-00212","asset_id":"LCA-DB-0040","organization_id":"ORG-0094","relationship_type":"operator/maintainer","original_public_label":"eco-costs/value maintainers"}
+{"asset_organization_id":"AO-00213","asset_id":"LCA-DB-0041","organization_id":"ORG-0056","relationship_type":"owner","original_public_label":"CIRAIG Sustainable Consumption Chair"}
+{"asset_organization_id":"AO-00214","asset_id":"LCA-DB-0041","organization_id":"ORG-0053","relationship_type":"operator/maintainer","original_public_label":"CIRAIG / POLARIIS+ collaboration"}
+{"asset_organization_id":"AO-00215","asset_id":"LCA-DB-0042","organization_id":"ORG-0337","relationship_type":"owner","original_public_label":"The Evah Institute / Ecquate Pty Ltd"}
+{"asset_organization_id":"AO-00216","asset_id":"LCA-DB-0042","organization_id":"ORG-0131","relationship_type":"operator/maintainer","original_public_label":"Evah Associates"}
+{"asset_organization_id":"AO-00217","asset_id":"LCA-DB-0043","organization_id":"ORG-0115","relationship_type":"owner","original_public_label":"EuGeos / Chris Foster"}
+{"asset_organization_id":"AO-00218","asset_id":"LCA-DB-0043","organization_id":"ORG-0085","relationship_type":"operator/maintainer","original_public_label":"Distributed historically through openLCA Nexus"}
+{"asset_organization_id":"AO-00219","asset_id":"LCA-NOM-0007","organization_id":"ORG-0221","relationship_type":"owner","original_public_label":"IUPAC and InChI Trust"}
+{"asset_organization_id":"AO-00220","asset_id":"LCA-NOM-0007","organization_id":"ORG-0196","relationship_type":"operator/maintainer","original_public_label":"InChI Trust"}
+{"asset_organization_id":"AO-00221","asset_id":"LCA-NOM-0009","organization_id":"ORG-0366","relationship_type":"owner","original_public_label":"US National Library of Medicine / National Center for Biotechnology Information"}
+{"asset_organization_id":"AO-00222","asset_id":"LCA-NOM-0009","organization_id":"ORG-0292","relationship_type":"operator/maintainer","original_public_label":"PubChem"}
+{"asset_organization_id":"AO-00223","asset_id":"LCA-NOM-0010","organization_id":"ORG-0075","relationship_type":"owner","original_public_label":"Daylight Chemical Information Systems (original specification); multiple later dialects"}
+{"asset_organization_id":"AO-00224","asset_id":"LCA-NOM-0010","organization_id":"ORG-0076","relationship_type":"operator/maintainer","original_public_label":"Daylight for original specification; distributed implementer community"}
+{"asset_organization_id":"AO-00225","asset_id":"LCA-NET-0007","organization_id":"ORG-0064","relationship_type":"owner","original_public_label":"Climate Farm Demo consortium"}
+{"asset_organization_id":"AO-00226","asset_id":"LCA-NET-0007","organization_id":"ORG-0185","relationship_type":"operator/maintainer","original_public_label":"Horizon Europe consortium"}
+{"asset_organization_id":"AO-00227","asset_id":"LCA-REP-0006","organization_id":"ORG-0072","relationship_type":"owner","original_public_label":"Cornerstone Sustainability Data Initiative"}
+{"asset_organization_id":"AO-00228","asset_id":"LCA-REP-0006","organization_id":"ORG-0108","relationship_type":"operator/maintainer","original_public_label":"ERG, Stanford and Watershed-supported initiative"}
+{"asset_organization_id":"AO-00229","asset_id":"LCA-DB-0044","organization_id":"ORG-0049","relationship_type":"owner","original_public_label":"Chalmers University of Technology-led DeDuCE team"}
+{"asset_organization_id":"AO-00230","asset_id":"LCA-DB-0044","organization_id":"ORG-0079","relationship_type":"operator/maintainer","original_public_label":"DeDuCE research team and partners"}
+{"asset_organization_id":"AO-00231","asset_id":"LCA-NET-0008","organization_id":"ORG-0082","relationship_type":"owner","original_public_label":"Départ de Sentier association"}
+{"asset_organization_id":"AO-00232","asset_id":"LCA-NET-0008","organization_id":"ORG-0077","relationship_type":"operator/maintainer","original_public_label":"DdS board and staff"}
+{"asset_organization_id":"AO-00233","asset_id":"LCA-PLT-0006","organization_id":"ORG-0081","relationship_type":"owner","original_public_label":"Départ de Sentier"}
+{"asset_organization_id":"AO-00234","asset_id":"LCA-PLT-0006","organization_id":"ORG-0078","relationship_type":"operator/maintainer","original_public_label":"DdS platform and data engineering team"}
+{"asset_organization_id":"AO-00235","asset_id":"LCA-DB-0045","organization_id":"ORG-0147","relationship_type":"owner","original_public_label":"FOODTURE Horizon Europe consortium"}
+{"asset_organization_id":"AO-00236","asset_id":"LCA-DB-0045","organization_id":"ORG-0381","relationship_type":"operator/maintainer","original_public_label":"WP1 led by ADEME within the FOODTURE consortium"}
+{"asset_organization_id":"AO-00237","asset_id":"LCA-NET-0009","organization_id":"ORG-0149","relationship_type":"owner","original_public_label":"Forum for Sustainability through Life Cycle Innovation e.V."}
+{"asset_organization_id":"AO-00238","asset_id":"LCA-NET-0009","organization_id":"ORG-0152","relationship_type":"operator/maintainer","original_public_label":"FSLCI secretariat and member community"}
+{"asset_organization_id":"AO-00239","asset_id":"LCA-REP-0007","organization_id":"ORG-0207","relationship_type":"owner","original_public_label":"International CCU Assessment Harmonization Group"}
+{"asset_organization_id":"AO-00240","asset_id":"LCA-REP-0007","organization_id":"ORG-0168","relationship_type":"operator/maintainer","original_public_label":"Global CO2 Initiative, University of Michigan"}
+{"asset_organization_id":"AO-00241","asset_id":"LCA-MTH-0018","organization_id":"ORG-0150","relationship_type":"owner","original_public_label":"Framework authors"}
+{"asset_organization_id":"AO-00242","asset_id":"LCA-MTH-0018","organization_id":"ORG-0305","relationship_type":"operator/maintainer","original_public_label":"Scientific publication and author community"}
+{"asset_organization_id":"AO-00243","asset_id":"LCA-NET-0010","organization_id":"ORG-0176","relationship_type":"owner","original_public_label":"GreenGrocer consortium"}
+{"asset_organization_id":"AO-00244","asset_id":"LCA-NET-0010","organization_id":"ORG-0002","relationship_type":"operator/maintainer","original_public_label":"22-partner consortium"}
+{"asset_organization_id":"AO-00245","asset_id":"LCA-MTH-0019","organization_id":"ORG-0205","relationship_type":"owner","original_public_label":"Intergovernmental Panel on Climate Change"}
+{"asset_organization_id":"AO-00246","asset_id":"LCA-MTH-0019","organization_id":"ORG-0214","relationship_type":"operator/maintainer","original_public_label":"IPCC Task Force on National Greenhouse Gas Inventories"}
+{"asset_organization_id":"AO-00247","asset_id":"LCA-NET-0011","organization_id":"ORG-0127","relationship_type":"owner","original_public_label":"European LIFE programme consortium"}
+{"asset_organization_id":"AO-00248","asset_id":"LCA-NET-0011","organization_id":"ORG-0005","relationship_type":"operator/maintainer","original_public_label":"ADEME-led nine-partner consortium"}
+{"asset_organization_id":"AO-00249","asset_id":"LCA-MTH-0020","organization_id":"ORG-0358","relationship_type":"owner","original_public_label":"University of Kassel authors / BBSR-funded project"}
+{"asset_organization_id":"AO-00250","asset_id":"LCA-MTH-0020","organization_id":"ORG-0224","relationship_type":"operator/maintainer","original_public_label":"Kassel Institute for Sustainability data repository"}
+{"asset_organization_id":"AO-00251","asset_id":"LCA-NOM-0011","organization_id":"ORG-0266","relationship_type":"owner","original_public_label":"Ontology-pattern authors"}
+{"asset_organization_id":"AO-00252","asset_id":"LCA-NOM-0011","organization_id":"ORG-0263","relationship_type":"operator/maintainer","original_public_label":"No current maintainer publicly confirmed"}
+{"asset_organization_id":"AO-00253","asset_id":"LCA-REP-0008","organization_id":"ORG-0267","relationship_type":"owner","original_public_label":"Open Sustainable Technology community"}
+{"asset_organization_id":"AO-00254","asset_id":"LCA-REP-0008","organization_id":"ORG-0291","relationship_type":"operator/maintainer","original_public_label":"protontypes/open-sustainable-technology maintainers and contributors"}
+{"asset_organization_id":"AO-00255","asset_id":"LCA-NOM-0012","organization_id":"ORG-0200","relationship_type":"owner","original_public_label":"INRAE"}
+{"asset_organization_id":"AO-00256","asset_id":"LCA-NOM-0012","organization_id":"ORG-0201","relationship_type":"operator/maintainer","original_public_label":"INRAE ontology team and Recherche Data Gouv/AgroPortal"}
+{"asset_organization_id":"AO-00257","asset_id":"LCA-REP-0009","organization_id":"ORG-0288","relationship_type":"owner","original_public_label":"product impact team"}
+{"asset_organization_id":"AO-00258","asset_id":"LCA-REP-0009","organization_id":"ORG-0289","relationship_type":"operator/maintainer","original_public_label":"productimpact.info"}
+{"asset_organization_id":"AO-00259","asset_id":"LCA-DB-0046","organization_id":"ORG-0307","relationship_type":"owner","original_public_label":"Shanghai HiQ Smart Data Co., Ltd."}
+{"asset_organization_id":"AO-00260","asset_id":"LCA-DB-0046","organization_id":"ORG-0183","relationship_type":"operator/maintainer","original_public_label":"HiQ Data"}
+{"asset_organization_id":"AO-00261","asset_id":"LCA-DB-0047","organization_id":"ORG-0255","relationship_type":"owner","original_public_label":"Minviro Ltd"}
+{"asset_organization_id":"AO-00262","asset_id":"LCA-DB-0047","organization_id":"ORG-0254","relationship_type":"operator/maintainer","original_public_label":"Minviro"}
+{"asset_organization_id":"AO-00263","asset_id":"LCA-DB-0048","organization_id":"ORG-0372","relationship_type":"owner","original_public_label":"WAP Sustainability, LLC"}
+{"asset_organization_id":"AO-00264","asset_id":"LCA-DB-0048","organization_id":"ORG-0371","relationship_type":"operator/maintainer","original_public_label":"WAP Sustainability"}
+{"asset_organization_id":"AO-00265","asset_id":"LCA-REP-0010","organization_id":"ORG-0103","relationship_type":"owner","original_public_label":"EPD Australasia Ltd"}
+{"asset_organization_id":"AO-00266","asset_id":"LCA-REP-0010","organization_id":"ORG-0102","relationship_type":"operator/maintainer","original_public_label":"EPD Australasia"}
+{"asset_organization_id":"AO-00267","asset_id":"LCA-DB-0049","organization_id":"ORG-0014","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00268","asset_id":"LCA-DB-0049","organization_id":"ORG-0014","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00269","asset_id":"LCA-DB-0050","organization_id":"ORG-0118","relationship_type":"owner","original_public_label":"European Aluminium"}
+{"asset_organization_id":"AO-00270","asset_id":"LCA-DB-0050","organization_id":"ORG-0118","relationship_type":"operator/maintainer","original_public_label":"European Aluminium"}
+{"asset_organization_id":"AO-00271","asset_id":"LCA-DB-0051","organization_id":"ORG-0233","relationship_type":"owner","original_public_label":"LCA Society of Japan / LCA Japan Forum"}
+{"asset_organization_id":"AO-00272","asset_id":"LCA-DB-0051","organization_id":"ORG-0232","relationship_type":"operator/maintainer","original_public_label":"LCA Japan Forum"}
+{"asset_organization_id":"AO-00273","asset_id":"LCA-DB-0052","organization_id":"ORG-0251","relationship_type":"owner","original_public_label":"MexiLCA initiative"}
+{"asset_organization_id":"AO-00274","asset_id":"LCA-DB-0052","organization_id":"ORG-0204","relationship_type":"operator/maintainer","original_public_label":"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators"}
+{"asset_organization_id":"AO-00275","asset_id":"LCA-REP-0011","organization_id":"ORG-0188","relationship_type":"owner","original_public_label":"ICMQ S.p.A. Società Benefit / EPDItaly"}
+{"asset_organization_id":"AO-00276","asset_id":"LCA-REP-0011","organization_id":"ORG-0105","relationship_type":"operator/maintainer","original_public_label":"EPDItaly"}
+{"asset_organization_id":"AO-00277","asset_id":"LCA-QA-0006","organization_id":"ORG-0105","relationship_type":"owner","original_public_label":"EPDItaly"}
+{"asset_organization_id":"AO-00278","asset_id":"LCA-QA-0006","organization_id":"ORG-0105","relationship_type":"operator/maintainer","original_public_label":"EPDItaly"}
+{"asset_organization_id":"AO-00279","asset_id":"LCA-DB-0053","organization_id":"ORG-0335","relationship_type":"owner","original_public_label":"The European Steel Association (EUROFER)"}
+{"asset_organization_id":"AO-00280","asset_id":"LCA-DB-0053","organization_id":"ORG-0117","relationship_type":"operator/maintainer","original_public_label":"EUROFER Stainless"}
+{"asset_organization_id":"AO-00281","asset_id":"LCA-NET-0012","organization_id":"ORG-0297","relationship_type":"owner","original_public_label":"Red Iberoamericana de Ciclo de Vida"}
+{"asset_organization_id":"AO-00282","asset_id":"LCA-NET-0012","organization_id":"ORG-0298","relationship_type":"operator/maintainer","original_public_label":"RICV board and member networks"}
+{"asset_organization_id":"AO-00283","asset_id":"LCA-DB-0054","organization_id":"ORG-0203","relationship_type":"owner","original_public_label":"Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)"}
+{"asset_organization_id":"AO-00284","asset_id":"LCA-DB-0054","organization_id":"ORG-0187","relationship_type":"operator/maintainer","original_public_label":"Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos"}
+{"asset_organization_id":"AO-00285","asset_id":"LCA-DB-0055","organization_id":"ORG-0192","relationship_type":"owner","original_public_label":"IKE Environmental Technology / Sichuan University lineage"}
+{"asset_organization_id":"AO-00286","asset_id":"LCA-DB-0055","organization_id":"ORG-0193","relationship_type":"operator/maintainer","original_public_label":"IKE Environmental Technology Co., Ltd."}
+{"asset_organization_id":"AO-00287","asset_id":"LCA-DB-0056","organization_id":"ORG-0253","relationship_type":"owner","original_public_label":"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute"}
+{"asset_organization_id":"AO-00288","asset_id":"LCA-DB-0056","organization_id":"ORG-0229","relationship_type":"operator/maintainer","original_public_label":"Korea Environmental Industry & Technology Institute (KEITI)"}
+{"asset_organization_id":"AO-00289","asset_id":"LCA-DB-0057","organization_id":"ORG-0260","relationship_type":"owner","original_public_label":"National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners"}
+{"asset_organization_id":"AO-00290","asset_id":"LCA-DB-0057","organization_id":"ORG-0329","relationship_type":"operator/maintainer","original_public_label":"Technology and Informatics Institute for Sustainability (TIIS), NSTDA"}
+{"asset_organization_id":"AO-00291","asset_id":"LCA-DB-0058","organization_id":"ORG-0310","relationship_type":"owner","original_public_label":"SIRIM Berhad"}
+{"asset_organization_id":"AO-00292","asset_id":"LCA-DB-0058","organization_id":"ORG-0311","relationship_type":"operator/maintainer","original_public_label":"SIRIM Energy & Environment Centre"}
+{"asset_organization_id":"AO-00293","asset_id":"LCA-DB-0059","organization_id":"ORG-0275","relationship_type":"owner","original_public_label":"Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners"}
+{"asset_organization_id":"AO-00294","asset_id":"LCA-DB-0059","organization_id":"ORG-0274","relationship_type":"operator/maintainer","original_public_label":"Peruvian Life Cycle Network (PELCAN)"}
+{"asset_organization_id":"AO-00295","asset_id":"LCA-DB-0060","organization_id":"ORG-0154","relationship_type":"owner","original_public_label":"Fundación InnovaCiclos"}
+{"asset_organization_id":"AO-00296","asset_id":"LCA-DB-0060","organization_id":"ORG-0155","relationship_type":"operator/maintainer","original_public_label":"Fundación InnovaCiclos / EcoEd"}
+{"asset_organization_id":"AO-00297","asset_id":"LCA-DB-0061","organization_id":"ORG-0170","relationship_type":"owner","original_public_label":"Government of Quebec / CIRAIG"}
+{"asset_organization_id":"AO-00298","asset_id":"LCA-DB-0061","organization_id":"ORG-0057","relationship_type":"operator/maintainer","original_public_label":"CIRAIG with ecoinvent"}
+{"asset_organization_id":"AO-00299","asset_id":"LCA-DB-0062","organization_id":"ORG-0206","relationship_type":"owner","original_public_label":"International Aluminium Institute"}
+{"asset_organization_id":"AO-00300","asset_id":"LCA-DB-0062","organization_id":"ORG-0206","relationship_type":"operator/maintainer","original_public_label":"International Aluminium Institute"}
+{"asset_organization_id":"AO-00301","asset_id":"LCA-DB-0063","organization_id":"ORG-0262","relationship_type":"owner","original_public_label":"Nickel Institute"}
+{"asset_organization_id":"AO-00302","asset_id":"LCA-DB-0063","organization_id":"ORG-0262","relationship_type":"operator/maintainer","original_public_label":"Nickel Institute"}
+{"asset_organization_id":"AO-00303","asset_id":"LCA-DB-0064","organization_id":"ORG-0213","relationship_type":"owner","original_public_label":"International Zinc Association"}
+{"asset_organization_id":"AO-00304","asset_id":"LCA-DB-0064","organization_id":"ORG-0213","relationship_type":"operator/maintainer","original_public_label":"International Zinc Association"}
+{"asset_organization_id":"AO-00305","asset_id":"LCA-DB-0065","organization_id":"ORG-0125","relationship_type":"owner","original_public_label":"European Container Glass Federation (FEVE)"}
+{"asset_organization_id":"AO-00306","asset_id":"LCA-DB-0065","organization_id":"ORG-0140","relationship_type":"operator/maintainer","original_public_label":"FEVE"}
+{"asset_organization_id":"AO-00307","asset_id":"LCA-DB-0066","organization_id":"ORG-0116","relationship_type":"owner","original_public_label":"Eurobitume"}
+{"asset_organization_id":"AO-00308","asset_id":"LCA-DB-0066","organization_id":"ORG-0116","relationship_type":"operator/maintainer","original_public_label":"Eurobitume"}
+{"asset_organization_id":"AO-00309","asset_id":"LCA-DB-0067","organization_id":"ORG-0071","relationship_type":"owner","original_public_label":"Consortium for Research on Renewable Industrial Materials (CORRIM)"}
+{"asset_organization_id":"AO-00310","asset_id":"LCA-DB-0067","organization_id":"ORG-0073","relationship_type":"operator/maintainer","original_public_label":"CORRIM and Federal LCA Commons"}
+{"asset_organization_id":"AO-00311","asset_id":"LCA-DB-0068","organization_id":"ORG-0208","relationship_type":"owner","original_public_label":"International Copper Association"}
+{"asset_organization_id":"AO-00312","asset_id":"LCA-DB-0068","organization_id":"ORG-0208","relationship_type":"operator/maintainer","original_public_label":"International Copper Association"}
+{"asset_organization_id":"AO-00313","asset_id":"LCA-DB-0069","organization_id":"ORG-0210","relationship_type":"owner","original_public_label":"International Institute for Sustainability Analysis and Strategy (IINAS)"}
+{"asset_organization_id":"AO-00314","asset_id":"LCA-DB-0069","organization_id":"ORG-0190","relationship_type":"operator/maintainer","original_public_label":"IINAS"}
+{"asset_organization_id":"AO-00315","asset_id":"LCA-DB-0070","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00316","asset_id":"LCA-DB-0070","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00317","asset_id":"LCA-DB-0071","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00318","asset_id":"LCA-DB-0071","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00319","asset_id":"LCA-DB-0072","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00320","asset_id":"LCA-DB-0072","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00321","asset_id":"LCA-DB-0073","organization_id":"ORG-0326","relationship_type":"owner","original_public_label":"Swiss Federal Offices"}
+{"asset_organization_id":"AO-00322","asset_id":"LCA-DB-0073","organization_id":"ORG-0326","relationship_type":"operator/maintainer","original_public_label":"Swiss Federal Offices"}
+{"asset_organization_id":"AO-00323","asset_id":"LCA-DB-0074","organization_id":"ORG-0063","relationship_type":"owner","original_public_label":"CLIC Innovation / ARVI research programme"}
+{"asset_organization_id":"AO-00324","asset_id":"LCA-DB-0074","organization_id":"ORG-0063","relationship_type":"operator/maintainer","original_public_label":"CLIC Innovation / ARVI research programme"}
+{"asset_organization_id":"AO-00325","asset_id":"LCA-DB-0075","organization_id":"ORG-0336","relationship_type":"owner","original_public_label":"The Evah Institute"}
+{"asset_organization_id":"AO-00326","asset_id":"LCA-DB-0075","organization_id":"ORG-0336","relationship_type":"operator/maintainer","original_public_label":"The Evah Institute"}
+{"asset_organization_id":"AO-00327","asset_id":"LCA-DB-0076","organization_id":"ORG-0174","relationship_type":"owner","original_public_label":"GreenDelta GmbH / TRIPLELINK"}
+{"asset_organization_id":"AO-00328","asset_id":"LCA-DB-0076","organization_id":"ORG-0174","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH / TRIPLELINK"}
+{"asset_organization_id":"AO-00329","asset_id":"LCA-DB-0077","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00330","asset_id":"LCA-DB-0077","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00331","asset_id":"LCA-DB-0078","organization_id":"ORG-0287","relationship_type":"owner","original_public_label":"PRIMUS project / Plastics Recyclers Europe"}
+{"asset_organization_id":"AO-00332","asset_id":"LCA-DB-0078","organization_id":"ORG-0287","relationship_type":"operator/maintainer","original_public_label":"PRIMUS project / Plastics Recyclers Europe"}
+{"asset_organization_id":"AO-00333","asset_id":"LCA-DB-0079","organization_id":"ORG-0110","relationship_type":"owner","original_public_label":"ESU-services and contributing authors"}
+{"asset_organization_id":"AO-00334","asset_id":"LCA-DB-0079","organization_id":"ORG-0110","relationship_type":"operator/maintainer","original_public_label":"ESU-services and contributing authors"}
+{"asset_organization_id":"AO-00335","asset_id":"LCA-DB-0080","organization_id":"ORG-0148","relationship_type":"owner","original_public_label":"Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)"}
+{"asset_organization_id":"AO-00336","asset_id":"LCA-DB-0080","organization_id":"ORG-0148","relationship_type":"operator/maintainer","original_public_label":"Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)"}
+{"asset_organization_id":"AO-00337","asset_id":"LCA-MTH-0021","organization_id":"ORG-0179","relationship_type":"owner","original_public_label":"Helmholtz Centre for Environmental Research (UFZ)"}
+{"asset_organization_id":"AO-00338","asset_id":"LCA-MTH-0021","organization_id":"ORG-0179","relationship_type":"operator/maintainer","original_public_label":"Helmholtz Centre for Environmental Research (UFZ)"}
+{"asset_organization_id":"AO-00339","asset_id":"LCA-MTH-0022","organization_id":"ORG-0230","relationship_type":"owner","original_public_label":"LC-IMPACT project; openLCA adaptation by GreenDelta GmbH"}
+{"asset_organization_id":"AO-00340","asset_id":"LCA-MTH-0022","organization_id":"ORG-0230","relationship_type":"operator/maintainer","original_public_label":"LC-IMPACT project; openLCA adaptation by GreenDelta GmbH"}
+{"asset_organization_id":"AO-00341","asset_id":"LCA-MTH-0023","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00342","asset_id":"LCA-MTH-0023","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00343","asset_id":"LCA-SW-0001","organization_id":"ORG-0286","relationship_type":"developer","original_public_label":"PRé Sustainability B.V."}
+{"asset_organization_id":"AO-00344","asset_id":"LCA-SW-0001","organization_id":"ORG-0308","relationship_type":"operator/maintainer","original_public_label":"SimaPro"}
+{"asset_organization_id":"AO-00345","asset_id":"LCA-SW-0001","organization_id":"ORG-0265","relationship_type":"owner","original_public_label":"One Click LCA group"}
+{"asset_organization_id":"AO-00346","asset_id":"LCA-SW-0002","organization_id":"ORG-0051","relationship_type":"developer","original_public_label":"Chris Mutel"}
+{"asset_organization_id":"AO-00347","asset_id":"LCA-SW-0003","organization_id":"ORG-0173","relationship_type":"developer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00348","asset_id":"LCA-SW-0003","organization_id":"ORG-0173","relationship_type":"operator/maintainer","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00349","asset_id":"LCA-SW-0003","organization_id":"ORG-0173","relationship_type":"owner","original_public_label":"GreenDelta GmbH"}
+{"asset_organization_id":"AO-00350","asset_id":"LCA-SW-0004","organization_id":"ORG-0265","relationship_type":"developer","original_public_label":"One Click LCA Oy Ltd"}
+{"asset_organization_id":"AO-00351","asset_id":"LCA-SW-0004","organization_id":"ORG-0265","relationship_type":"operator/maintainer","original_public_label":"One Click LCA"}
+{"asset_organization_id":"AO-00352","asset_id":"LCA-SW-0004","organization_id":"ORG-0265","relationship_type":"owner","original_public_label":"One Click LCA Ltd / One Click LCA group"}
+{"asset_organization_id":"AO-00353","asset_id":"LCA-SW-0005","organization_id":"ORG-0318","relationship_type":"developer","original_public_label":"Sphera Solutions, Inc."}
+{"asset_organization_id":"AO-00354","asset_id":"LCA-SW-0005","organization_id":"ORG-0318","relationship_type":"operator/maintainer","original_public_label":"Sphera"}
+{"asset_organization_id":"AO-00355","asset_id":"LCA-SW-0005","organization_id":"ORG-0318","relationship_type":"owner","original_public_label":"Sphera"}
+{"asset_organization_id":"AO-00356","asset_id":"LCA-SW-0006","organization_id":"ORG-0139","relationship_type":"developer","original_public_label":"Federal University of Technology – Paraná (UTFPR)"}
+{"asset_organization_id":"AO-00357","asset_id":"LCA-SW-0007","organization_id":"ORG-0012","relationship_type":"developer","original_public_label":"Argonne National Laboratory"}
+{"asset_organization_id":"AO-00358","asset_id":"LCA-SW-0007","organization_id":"ORG-0012","relationship_type":"operator/maintainer","original_public_label":"Argonne National Laboratory"}
+{"asset_organization_id":"AO-00359","asset_id":"LCA-SW-0007","organization_id":"ORG-0349","relationship_type":"owner","original_public_label":"United States Department of Energy"}
+{"asset_organization_id":"AO-00360","asset_id":"LCA-SW-0008","organization_id":"ORG-0359","relationship_type":"developer","original_public_label":"University of Oxford"}
+{"asset_organization_id":"AO-00361","asset_id":"LCA-SW-0008","organization_id":"ORG-0359","relationship_type":"owner","original_public_label":"HESTIA project / University of Oxford"}
+{"asset_organization_id":"AO-00362","asset_id":"LCA-SW-0009","organization_id":"ORG-0095","relationship_type":"developer","original_public_label":"Ecochain Technologies B.V."}
+{"asset_organization_id":"AO-00363","asset_id":"LCA-SW-0009","organization_id":"ORG-0095","relationship_type":"operator/maintainer","original_public_label":"Ecochain Technologies"}
+{"asset_organization_id":"AO-00364","asset_id":"LCA-SW-0009","organization_id":"ORG-0095","relationship_type":"owner","original_public_label":"Ecochain Technologies"}
+{"asset_organization_id":"AO-00365","asset_id":"LCA-SW-0010","organization_id":"ORG-0228","relationship_type":"developer","original_public_label":"Kleis Technology"}
+{"asset_organization_id":"AO-00366","asset_id":"LCA-SW-0010","organization_id":"ORG-0228","relationship_type":"operator/maintainer","original_public_label":"LCA as Code team"}
+{"asset_organization_id":"AO-00367","asset_id":"LCA-SW-0011","organization_id":"ORG-0052","relationship_type":"developer","original_public_label":"Christian Kongsgaard"}
+{"asset_organization_id":"AO-00368","asset_id":"LCA-SW-0012","organization_id":"ORG-0351","relationship_type":"developer","original_public_label":"U.S. Environmental Protection Agency"}
+{"asset_organization_id":"AO-00369","asset_id":"LCA-SW-0012","organization_id":"ORG-0138","relationship_type":"operator/maintainer","original_public_label":"FLCAC-admin repository contributors"}
+{"asset_organization_id":"AO-00370","asset_id":"LCA-SW-0012","organization_id":"ORG-0351","relationship_type":"owner","original_public_label":"United States Environmental Protection Agency / Federal LCA Commons ecosystem"}
+{"asset_organization_id":"AO-00371","asset_id":"LCA-SW-0013","organization_id":"ORG-0264","relationship_type":"developer","original_public_label":"Oliver Kusche Research & Consulting (OKWorx)"}
+{"asset_organization_id":"AO-00372","asset_id":"LCA-SW-0013","organization_id":"ORG-0264","relationship_type":"operator/maintainer","original_public_label":"soda4LCA maintainers / OKWorx"}
+{"asset_organization_id":"AO-00373","asset_id":"LCA-SW-0014","organization_id":"ORG-0273","relationship_type":"developer","original_public_label":"Paul Scherrer Institute"}
+{"asset_organization_id":"AO-00374","asset_id":"LCA-SW-0014","organization_id":"ORG-0285","relationship_type":"developer","original_public_label":"Potsdam Institute for Climate Impact Research"}
+{"asset_organization_id":"AO-00375","asset_id":"LCA-SW-0014","organization_id":"ORG-0273","relationship_type":"operator/maintainer","original_public_label":"premise contributors"}
+{"asset_organization_id":"AO-00376","asset_id":"LCA-SW-0015","organization_id":"ORG-0001","relationship_type":"developer","original_public_label":"2050 Materials"}
+{"asset_organization_id":"AO-00377","asset_id":"LCA-SW-0016","organization_id":"ORG-0068","relationship_type":"developer","original_public_label":"Climatiq GmbH"}
+{"asset_organization_id":"AO-00378","asset_id":"LCA-SW-0017","organization_id":"ORG-0378","relationship_type":"operator/maintainer","original_public_label":"Cascale; exclusively delivered on Worldly"}
+{"asset_organization_id":"AO-00379","asset_id":"LCA-SW-0017","organization_id":"ORG-0043","relationship_type":"owner","original_public_label":"Cascale"}
+{"asset_organization_id":"AO-00380","asset_id":"LCA-SW-0018","organization_id":"ORG-0249","relationship_type":"developer","original_public_label":"Makersite GmbH"}
+{"asset_organization_id":"AO-00381","asset_id":"LCA-SW-0018","organization_id":"ORG-0249","relationship_type":"operator/maintainer","original_public_label":"Makersite GmbH"}
+{"asset_organization_id":"AO-00382","asset_id":"LCA-SW-0018","organization_id":"ORG-0249","relationship_type":"owner","original_public_label":"Makersite GmbH"}
+{"asset_organization_id":"AO-00383","asset_id":"LCA-SW-0019","organization_id":"ORG-0088","relationship_type":"developer","original_public_label":"Eaternity"}
+{"asset_organization_id":"AO-00384","asset_id":"LCA-SW-0019","organization_id":"ORG-0088","relationship_type":"operator/maintainer","original_public_label":"Eaternity"}
+{"asset_organization_id":"AO-00385","asset_id":"LCA-SW-0020","organization_id":"ORG-0087","relationship_type":"developer","original_public_label":"EarthShift Global"}
+{"asset_organization_id":"AO-00386","asset_id":"LCA-SW-0020","organization_id":"ORG-0087","relationship_type":"operator/maintainer","original_public_label":"EarthShift Global"}
+{"asset_organization_id":"AO-00387","asset_id":"LCA-SW-0021","organization_id":"ORG-0087","relationship_type":"developer","original_public_label":"EarthShift Global"}
+{"asset_organization_id":"AO-00388","asset_id":"LCA-SW-0021","organization_id":"ORG-0087","relationship_type":"operator/maintainer","original_public_label":"EarthShift Global"}
+{"asset_organization_id":"AO-00389","asset_id":"LCA-SW-0022","organization_id":"ORG-0248","relationship_type":"developer","original_public_label":"Lifecycles"}
+{"asset_organization_id":"AO-00390","asset_id":"LCA-SW-0022","organization_id":"ORG-0248","relationship_type":"operator/maintainer","original_public_label":"PIQET service team"}
+{"asset_organization_id":"AO-00391","asset_id":"LCA-SW-0022","organization_id":"ORG-0279","relationship_type":"owner","original_public_label":"The PIQET Consortium / Lifecycles and partners"}
+{"asset_organization_id":"AO-00392","asset_id":"LCA-SW-0025","organization_id":"ORG-0178","relationship_type":"developer","original_public_label":"Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd."}
+{"asset_organization_id":"AO-00393","asset_id":"LCA-SW-0025","organization_id":"ORG-0178","relationship_type":"owner","original_public_label":"Hangzhou Qinglvlan Environmental Digital Technology"}
+{"asset_organization_id":"AO-00394","asset_id":"LCA-SW-0026","organization_id":"ORG-0226","relationship_type":"developer","original_public_label":"Kimel Tech SpA"}
+{"asset_organization_id":"AO-00395","asset_id":"LCA-SW-0026","organization_id":"ORG-0226","relationship_type":"owner","original_public_label":"Kimel Tech SpA"}
+{"asset_organization_id":"AO-00396","asset_id":"LCA-SW-0027","organization_id":"ORG-0231","relationship_type":"developer","original_public_label":"LCA CARE project consortium"}
+{"asset_organization_id":"AO-00397","asset_id":"LCA-SW-0027","organization_id":"ORG-0231","relationship_type":"owner","original_public_label":"LCA CARE project consortium"}
+{"asset_organization_id":"AO-00398","asset_id":"LCA-SW-0028","organization_id":"ORG-0088","relationship_type":"developer","original_public_label":"Eaternity"}
+{"asset_organization_id":"AO-00399","asset_id":"LCA-SW-0028","organization_id":"ORG-0088","relationship_type":"operator/maintainer","original_public_label":"Eaternity open-source team"}
+{"asset_organization_id":"AO-00400","asset_id":"LCA-SW-0029","organization_id":"ORG-0006","relationship_type":"developer","original_public_label":"Advanced Manufacturing Research Centre (AMRC)"}
+{"asset_organization_id":"AO-00401","asset_id":"LCA-SW-0029","organization_id":"ORG-0361","relationship_type":"developer","original_public_label":"University of Sheffield"}
+{"asset_organization_id":"AO-00402","asset_id":"LCA-SW-0030","organization_id":"ORG-0370","relationship_type":"developer","original_public_label":"Walloon Agricultural Research Centre (CRA-W)"}
+{"asset_organization_id":"AO-00403","asset_id":"LCA-SW-0030","organization_id":"ORG-0370","relationship_type":"operator/maintainer","original_public_label":"CRA-W"}
+{"asset_organization_id":"AO-00404","asset_id":"LCA-SW-0031","organization_id":"ORG-0302","relationship_type":"developer","original_public_label":"RWTH Aachen University"}
+{"asset_organization_id":"AO-00405","asset_id":"LCA-SW-0032","organization_id":"ORG-0320","relationship_type":"developer","original_public_label":"Studio Gear Up"}
+{"asset_organization_id":"AO-00406","asset_id":"LCA-SW-0032","organization_id":"ORG-0171","relationship_type":"operator/maintainer","original_public_label":"Green Gold Label Foundation with studio Gear Up"}
+{"asset_organization_id":"AO-00407","asset_id":"LCA-SW-0032","organization_id":"ORG-0171","relationship_type":"owner","original_public_label":"Green Gold Label Foundation"}
+{"asset_organization_id":"AO-00408","asset_id":"LCA-SW-0033","organization_id":"ORG-0242","relationship_type":"developer","original_public_label":"Leonardo Ferhati"}
+{"asset_organization_id":"AO-00409","asset_id":"LCA-SW-0033","organization_id":"ORG-0242","relationship_type":"owner","original_public_label":"Leonardo Ferhati"}
+{"asset_organization_id":"AO-00410","asset_id":"LCA-SW-0035","organization_id":"ORG-0255","relationship_type":"developer","original_public_label":"Minviro Ltd"}
+{"asset_organization_id":"AO-00411","asset_id":"LCA-SW-0035","organization_id":"ORG-0255","relationship_type":"operator/maintainer","original_public_label":"Minviro"}
+{"asset_organization_id":"AO-00412","asset_id":"LCA-SW-0035","organization_id":"ORG-0255","relationship_type":"owner","original_public_label":"Minviro Ltd"}
+{"asset_organization_id":"AO-00413","asset_id":"LCA-SW-0036","organization_id":"ORG-0372","relationship_type":"developer","original_public_label":"WAP Sustainability, LLC"}
+{"asset_organization_id":"AO-00414","asset_id":"LCA-SW-0036","organization_id":"ORG-0372","relationship_type":"operator/maintainer","original_public_label":"WAP Sustainability"}
+{"asset_organization_id":"AO-00415","asset_id":"LCA-SW-0036","organization_id":"ORG-0372","relationship_type":"owner","original_public_label":"WAP Sustainability, LLC"}
+{"asset_organization_id":"AO-00416","asset_id":"LCA-SW-0037","organization_id":"ORG-0372","relationship_type":"developer","original_public_label":"WAP Sustainability, LLC"}
+{"asset_organization_id":"AO-00417","asset_id":"LCA-SW-0037","organization_id":"ORG-0372","relationship_type":"operator/maintainer","original_public_label":"WAP Sustainability"}
+{"asset_organization_id":"AO-00418","asset_id":"LCA-SW-0037","organization_id":"ORG-0372","relationship_type":"owner","original_public_label":"WAP Sustainability, LLC"}
+{"asset_organization_id":"AO-00419","asset_id":"LCA-SW-0038","organization_id":"ORG-0216","relationship_type":"developer","original_public_label":"iPoint-systems GmbH"}
+{"asset_organization_id":"AO-00420","asset_id":"LCA-SW-0038","organization_id":"ORG-0216","relationship_type":"operator/maintainer","original_public_label":"iPoint"}
+{"asset_organization_id":"AO-00421","asset_id":"LCA-SW-0039","organization_id":"ORG-0014","relationship_type":"developer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00422","asset_id":"LCA-SW-0039","organization_id":"ORG-0014","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00423","asset_id":"LCA-SW-0039","organization_id":"ORG-0014","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00424","asset_id":"LCA-SW-0040","organization_id":"ORG-0014","relationship_type":"developer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00425","asset_id":"LCA-SW-0040","organization_id":"ORG-0014","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00426","asset_id":"LCA-SW-0040","organization_id":"ORG-0014","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00427","asset_id":"LCA-SW-0041","organization_id":"ORG-0014","relationship_type":"developer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00428","asset_id":"LCA-SW-0041","organization_id":"ORG-0014","relationship_type":"operator/maintainer","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00429","asset_id":"LCA-SW-0041","organization_id":"ORG-0014","relationship_type":"owner","original_public_label":"Athena Sustainable Materials Institute"}
+{"asset_organization_id":"AO-00430","asset_id":"LCA-SW-0042","organization_id":"ORG-0118","relationship_type":"developer","original_public_label":"European Aluminium"}
+{"asset_organization_id":"AO-00431","asset_id":"LCA-SW-0042","organization_id":"ORG-0206","relationship_type":"developer","original_public_label":"International Aluminium Institute"}
+{"asset_organization_id":"AO-00432","asset_id":"LCA-SW-0042","organization_id":"ORG-0118","relationship_type":"owner","original_public_label":"International Aluminium Institute and European Aluminium"}
+{"asset_organization_id":"AO-00433","asset_id":"LCA-SW-0042","organization_id":"ORG-0206","relationship_type":"owner","original_public_label":"International Aluminium Institute and European Aluminium"}
+{"asset_organization_id":"AO-00434","asset_id":"LCA-SW-0043","organization_id":"ORG-0340","relationship_type":"developer","original_public_label":"TianGong LCA research team, Tsinghua University"}
+{"asset_organization_id":"AO-00435","asset_id":"LCA-SW-0043","organization_id":"ORG-0340","relationship_type":"operator/maintainer","original_public_label":"TIDAS Tools maintainers and public contributors"}
+{"asset_organization_id":"AO-00436","asset_id":"LCA-SW-0043","organization_id":"ORG-0348","relationship_type":"owner","original_public_label":"TianGong LCA / TIDAS open-source project"}
+{"asset_organization_id":"AO-00437","asset_id":"LCA-SW-0044","organization_id":"ORG-0074","relationship_type":"developer","original_public_label":"Dassault Systèmes"}
+{"asset_organization_id":"AO-00438","asset_id":"LCA-SW-0045","organization_id":"ORG-0136","relationship_type":"developer","original_public_label":"Altruistiq"}
+{"asset_organization_id":"AO-00439","asset_id":"LCA-SW-0046","organization_id":"ORG-0013","relationship_type":"developer","original_public_label":"ASUENE"}
+{"asset_organization_id":"AO-00440","asset_id":"LCA-SW-0047","organization_id":"ORG-0013","relationship_type":"developer","original_public_label":"ASUENE Inc."}
+{"asset_organization_id":"AO-00441","asset_id":"LCA-SW-0048","organization_id":"ORG-0327","relationship_type":"developer","original_public_label":"Taiwan Web Service Corporation"}
+{"asset_organization_id":"AO-00442","asset_id":"LCA-SW-0049","organization_id":"ORG-0017","relationship_type":"developer","original_public_label":"Atma.io"}
+{"asset_organization_id":"AO-00443","asset_id":"LCA-SW-0050","organization_id":"ORG-0018","relationship_type":"developer","original_public_label":"BACUTI"}
+{"asset_organization_id":"AO-00444","asset_id":"LCA-SW-0051","organization_id":"ORG-0030","relationship_type":"developer","original_public_label":"Booost, Inc."}
+{"asset_organization_id":"AO-00445","asset_id":"LCA-SW-0052","organization_id":"ORG-0034","relationship_type":"developer","original_public_label":"carbmee"}
+{"asset_organization_id":"AO-00446","asset_id":"LCA-SW-0053","organization_id":"ORG-0035","relationship_type":"developer","original_public_label":"Carboledger"}
+{"asset_organization_id":"AO-00447","asset_id":"LCA-SW-0054","organization_id":"ORG-0036","relationship_type":"developer","original_public_label":"Carbon Maps"}
+{"asset_organization_id":"AO-00448","asset_id":"LCA-SW-0055","organization_id":"ORG-0042","relationship_type":"developer","original_public_label":"Carbon Trail"}
+{"asset_organization_id":"AO-00449","asset_id":"LCA-SW-0056","organization_id":"ORG-0059","relationship_type":"developer","original_public_label":"CircularTree"}
+{"asset_organization_id":"AO-00450","asset_id":"LCA-SW-0057","organization_id":"ORG-0038","relationship_type":"developer","original_public_label":"CarbonBright AI"}
+{"asset_organization_id":"AO-00451","asset_id":"LCA-SW-0058","organization_id":"ORG-0323","relationship_type":"developer","original_public_label":"Sustech"}
+{"asset_organization_id":"AO-00452","asset_id":"LCA-SW-0059","organization_id":"ORG-0319","relationship_type":"developer","original_public_label":"Startrust"}
+{"asset_organization_id":"AO-00453","asset_id":"LCA-SW-0060","organization_id":"ORG-0065","relationship_type":"developer","original_public_label":"ClimateCamp"}
+{"asset_organization_id":"AO-00454","asset_id":"LCA-SW-0061","organization_id":"ORG-0067","relationship_type":"developer","original_public_label":"ClimatePoint"}
+{"asset_organization_id":"AO-00455","asset_id":"LCA-SW-0062","organization_id":"ORG-0252","relationship_type":"developer","original_public_label":"Microsoft"}
+{"asset_organization_id":"AO-00456","asset_id":"LCA-SW-0063","organization_id":"ORG-0070","relationship_type":"developer","original_public_label":"CO2 AI"}
+{"asset_organization_id":"AO-00457","asset_id":"LCA-SW-0064","organization_id":"ORG-0354","relationship_type":"developer","original_public_label":"Uhuru Corporation"}
+{"asset_organization_id":"AO-00458","asset_id":"LCA-SW-0065","organization_id":"ORG-0080","relationship_type":"developer","original_public_label":"Delta Electronics"}
+{"asset_organization_id":"AO-00459","asset_id":"LCA-SW-0066","organization_id":"ORG-0202","relationship_type":"developer","original_public_label":"Institute for Information Industry, Digital Transformation Research Institute"}
+{"asset_organization_id":"AO-00460","asset_id":"LCA-SW-0067","organization_id":"ORG-0299","relationship_type":"developer","original_public_label":"Riskoa Ltd"}
+{"asset_organization_id":"AO-00461","asset_id":"LCA-SW-0068","organization_id":"ORG-0109","relationship_type":"developer","original_public_label":"ESGpedia Pte Ltd"}
+{"asset_organization_id":"AO-00462","asset_id":"LCA-SW-0069","organization_id":"ORG-0132","relationship_type":"developer","original_public_label":"Evalue8 Sustainability"}
+{"asset_organization_id":"AO-00463","asset_id":"LCA-SW-0070","organization_id":"ORG-0141","relationship_type":"developer","original_public_label":"Fitsol"}
+{"asset_organization_id":"AO-00464","asset_id":"LCA-SW-0071","organization_id":"ORG-0374","relationship_type":"developer","original_public_label":"WeCarbon Technology Ltd"}
+{"asset_organization_id":"AO-00465","asset_id":"LCA-SW-0072","organization_id":"ORG-0153","relationship_type":"developer","original_public_label":"Fujitsu Limited"}
+{"asset_organization_id":"AO-00466","asset_id":"LCA-SW-0073","organization_id":"ORG-0380","relationship_type":"developer","original_public_label":"Wormhole Technologies Inc."}
+{"asset_organization_id":"AO-00467","asset_id":"LCA-SW-0074","organization_id":"ORG-0177","relationship_type":"developer","original_public_label":"GreenStitch Technologies PVT LTD"}
+{"asset_organization_id":"AO-00468","asset_id":"LCA-SW-0075","organization_id":"ORG-0186","relationship_type":"developer","original_public_label":"HowGood"}
+{"asset_organization_id":"AO-00469","asset_id":"LCA-SW-0076","organization_id":"ORG-0249","relationship_type":"developer","original_public_label":"Makersite GmbH"}
+{"asset_organization_id":"AO-00470","asset_id":"LCA-SW-0077","organization_id":"ORG-0256","relationship_type":"developer","original_public_label":"Muir AI"}
+{"asset_organization_id":"AO-00471","asset_id":"LCA-SW-0079","organization_id":"ORG-0270","relationship_type":"developer","original_public_label":"Optel Group"}
+{"asset_organization_id":"AO-00472","asset_id":"LCA-SW-0080","organization_id":"ORG-0280","relationship_type":"developer","original_public_label":"Planet FWD"}
+{"asset_organization_id":"AO-00473","asset_id":"LCA-SW-0081","organization_id":"ORG-0304","relationship_type":"developer","original_public_label":"SAP"}
+{"asset_organization_id":"AO-00474","asset_id":"LCA-SW-0082","organization_id":"ORG-0313","relationship_type":"developer","original_public_label":"Sluicebox"}
+{"asset_organization_id":"AO-00475","asset_id":"LCA-SW-0083","organization_id":"ORG-0314","relationship_type":"developer","original_public_label":"Smart Tradzt"}
+{"asset_organization_id":"AO-00476","asset_id":"LCA-SW-0085","organization_id":"ORG-0330","relationship_type":"developer","original_public_label":"Terrascope"}
+{"asset_organization_id":"AO-00477","asset_id":"LCA-SW-0086","organization_id":"ORG-0062","relationship_type":"developer","original_public_label":"Cirrus Nexus"}
+{"asset_organization_id":"AO-00478","asset_id":"LCA-SW-0087","organization_id":"ORG-0199","relationship_type":"developer","original_public_label":"InnoBlock Technology Ltd"}
+{"asset_organization_id":"AO-00479","asset_id":"LCA-SW-0089","organization_id":"ORG-0385","relationship_type":"developer","original_public_label":"YuzeData"}
+{"asset_organization_id":"AO-00480","asset_id":"LCA-SW-0091","organization_id":"ORG-0316","relationship_type":"developer","original_public_label":"Solid Forest"}
+{"asset_organization_id":"AO-00481","asset_id":"LCA-SW-0092","organization_id":"ORG-0316","relationship_type":"developer","original_public_label":"Solid Forest"}
+{"asset_organization_id":"AO-00482","asset_id":"LCA-SW-0093","organization_id":"ORG-0010","relationship_type":"developer","original_public_label":"Ansys"}
+{"asset_organization_id":"AO-00483","asset_id":"LCA-SW-0094","organization_id":"ORG-0011","relationship_type":"developer","original_public_label":"aPriori"}
+{"asset_organization_id":"AO-00484","asset_id":"LCA-SW-0095","organization_id":"ORG-0133","relationship_type":"developer","original_public_label":"EVEA"}
+{"asset_organization_id":"AO-00485","asset_id":"LCA-SW-0096","organization_id":"ORG-0220","relationship_type":"developer","original_public_label":"ITeC"}
+{"asset_organization_id":"AO-00486","asset_id":"LCA-SW-0097","organization_id":"ORG-0041","relationship_type":"developer","original_public_label":"Carbonstop"}
+{"asset_organization_id":"AO-00487","asset_id":"LCA-SW-0098","organization_id":"ORG-0087","relationship_type":"developer","original_public_label":"EarthShift Global"}
+{"asset_organization_id":"AO-00488","asset_id":"LCA-SW-0099","organization_id":"ORG-0191","relationship_type":"developer","original_public_label":"IKE Environmental Technology"}
+{"asset_organization_id":"AO-00489","asset_id":"LCA-SW-0100","organization_id":"ORG-0093","relationship_type":"developer","original_public_label":"Eco-Bat"}
+{"asset_organization_id":"AO-00490","asset_id":"LCA-SW-0101","organization_id":"ORG-0009","relationship_type":"developer","original_public_label":"Altermaker"}
+{"asset_organization_id":"AO-00491","asset_id":"LCA-SW-0102","organization_id":"ORG-0346","relationship_type":"developer","original_public_label":"Trace One"}
+{"asset_organization_id":"AO-00492","asset_id":"LCA-SW-0103","organization_id":"ORG-0347","relationship_type":"developer","original_public_label":"Trayak"}
+{"asset_organization_id":"AO-00493","asset_id":"LCA-SW-0104","organization_id":"ORG-0099","relationship_type":"developer","original_public_label":"ECOSPEED"}
+{"asset_organization_id":"AO-00494","asset_id":"LCA-SW-0105","organization_id":"ORG-0191","relationship_type":"developer","original_public_label":"IKE Environmental Technology"}
+{"asset_organization_id":"AO-00495","asset_id":"LCA-SW-0106","organization_id":"ORG-0295","relationship_type":"developer","original_public_label":"Quantis and Kleis Technology"}
+{"asset_organization_id":"AO-00496","asset_id":"LCA-SW-0107","organization_id":"ORG-0113","relationship_type":"developer","original_public_label":"eTool"}
+{"asset_organization_id":"AO-00497","asset_id":"LCA-SW-0108","organization_id":"ORG-0096","relationship_type":"developer","original_public_label":"Ecodigit"}
+{"asset_organization_id":"AO-00498","asset_id":"LCA-SW-0109","organization_id":"ORG-0112","relationship_type":"developer","original_public_label":"ETH Zurich, Chair of Ecological Systems Design"}
+{"asset_organization_id":"AO-00499","asset_id":"LCA-SW-0110","organization_id":"ORG-0235","relationship_type":"developer","original_public_label":"LCA.no"}
+{"asset_organization_id":"AO-00500","asset_id":"LCA-SW-0111","organization_id":"ORG-0278","relationship_type":"developer","original_public_label":"Pilario"}
+{"asset_organization_id":"AO-00501","asset_id":"LCA-SW-0112","organization_id":"ORG-0334","relationship_type":"developer","original_public_label":"The Circulate Initiative"}
+{"asset_organization_id":"AO-00502","asset_id":"LCA-SW-0113","organization_id":"ORG-0222","relationship_type":"developer","original_public_label":"IZUBA énergies"}
+{"asset_organization_id":"AO-00503","asset_id":"LCA-SW-0114","organization_id":"ORG-0309","relationship_type":"developer","original_public_label":"sinum"}
+{"asset_organization_id":"AO-00504","asset_id":"LCA-SW-0115","organization_id":"ORG-0304","relationship_type":"developer","original_public_label":"SAP"}
+{"asset_organization_id":"AO-00505","asset_id":"LCA-SW-0116","organization_id":"ORG-0306","relationship_type":"developer","original_public_label":"Semantum"}
+{"asset_organization_id":"AO-00506","asset_id":"LCA-SW-0117","organization_id":"ORG-0293","relationship_type":"developer","original_public_label":"PwC / Ecobilan"}
+{"asset_organization_id":"AO-00507","asset_id":"LCA-SW-0118","organization_id":"ORG-0066","relationship_type":"developer","original_public_label":"ClimatePartner"}
+{"asset_organization_id":"AO-00508","asset_id":"LCA-SW-0119","organization_id":"ORG-0167","relationship_type":"developer","original_public_label":"Global Climate Changer GmbH"}
+{"asset_organization_id":"AO-00509","asset_id":"LCA-SW-0120","organization_id":"ORG-0227","relationship_type":"developer","original_public_label":"Kiwa"}
+{"asset_organization_id":"AO-00510","asset_id":"LCA-SW-0121","organization_id":"ORG-0099","relationship_type":"developer","original_public_label":"ECOSPEED"}
+{"asset_organization_id":"AO-00511","asset_id":"LCA-SW-0122","organization_id":"ORG-0368","relationship_type":"developer","original_public_label":"VERSO GmbH"}
+{"asset_organization_id":"AO-00512","asset_id":"LCA-SW-0123","organization_id":"ORG-0321","relationship_type":"developer","original_public_label":"Substain"}
+{"asset_organization_id":"AO-00513","asset_id":"LCA-SW-0124","organization_id":"ORG-0040","relationship_type":"developer","original_public_label":"CarbonSmart"}
+{"asset_organization_id":"AO-00514","asset_id":"LCA-SW-0125","organization_id":"ORG-0384","relationship_type":"developer","original_public_label":"Yantai Haiyi Software Co., Ltd."}
+{"asset_organization_id":"AO-00515","asset_id":"LCA-SW-0126","organization_id":"ORG-0151","relationship_type":"developer","original_public_label":"FRED GmbH"}
+{"asset_organization_id":"AO-00516","asset_id":"LCA-SW-0127","organization_id":"ORG-0328","relationship_type":"developer","original_public_label":"Tanso Technologies GmbH"}
+{"asset_organization_id":"AO-00517","asset_id":"LCA-SW-0128","organization_id":"ORG-0312","relationship_type":"developer","original_public_label":"SKZ — Das Kunststoff-Zentrum"}
+{"asset_organization_id":"AO-00518","asset_id":"LCA-SW-0129","organization_id":"ORG-0031","relationship_type":"developer","original_public_label":"Building Transparency"}
+{"asset_organization_id":"AO-00519","asset_id":"LCA-SW-0130","organization_id":"ORG-0225","relationship_type":"developer","original_public_label":"KieranTimberlake"}
+{"asset_organization_id":"AO-00520","asset_id":"LCA-SW-0130","organization_id":"ORG-0033","relationship_type":"operator/maintainer","original_public_label":"C.Scale"}
+{"asset_organization_id":"AO-00521","asset_id":"LCA-SW-0130","organization_id":"ORG-0033","relationship_type":"owner","original_public_label":"C.Scale"}

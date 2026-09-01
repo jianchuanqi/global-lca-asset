@@ -8,20 +8,25 @@ The dataset is the shared foundation. The website, downloadable files, knowledge
 
 ## Current dataset
 
-Release `2026-08-25.7` has an evidence cut-off of 25 August 2026.
+Release `2026-09-01.2` has an evidence cut-off of 1 September 2026.
 
 | Published object | Count |
 |---|---:|
-| Asset families | 214 |
+| Asset families | 301 |
 | Core database families | 80 |
 | Extended data-bearing assets | 88 |
-| Public evidence records | 252 |
+| PCF/LCA software products, APIs, models, and workflows | 130 |
+| Qualifying PCF/LCA market records | 97 |
+| Software candidate appearances reviewed | 104 |
+| Evidence-linked software actor-role assertions | 179 |
+| Unresolved software role labels retained for review | 39 |
+| Public evidence records | 339 |
 | Releases or milestones | 310 |
 | Distributions | 170 |
 | Mapping artifacts | 25 |
-| Relationship assertions | 310 |
+| Relationship assertions | 397 |
 
-The imported graph snapshot contains 1,903 nodes and 2,721 relationships. All counts are reproducible lower bounds under the published inclusion rules and evidence cut-off; they are not claims of a final worldwide total.
+All counts are reproducible lower bounds under the published inclusion rules and evidence cut-off; they are not claims of a final worldwide total. The software market review distinguishes product type, aligned primary function, multi-valued capabilities, and standard/network associations. “PACT” refers to the WBCSD Partnership for Carbon Transparency and is retained as interoperability evidence, not as a software category or quality rating.
 
 ## Project architecture
 
@@ -52,24 +57,25 @@ flowchart LR
 
 ## 1. Public dataset and data package
 
-The privacy-screened public seed at `data/seed/inventory-v2.public.json` is the canonical input. A deterministic build creates the versioned package in `data/package/current/`, including:
+The privacy-screened public seed at `data/seed/inventory-v2.public.json` plus documented curated review layers are the canonical inputs. A deterministic build creates the versioned package in `data/package/current/`, including:
 
 - CSV for spreadsheet review and exchange;
 - JSONL for direct AI-assisted analysis;
 - SQLite for precise relational queries;
 - the manifest, validation report, summary, controlled vocabularies, and analysis rules;
-- alignment tables for schema/profile synonyms and mapping endpoints.
+- alignment tables for schema/profile synonyms and mapping endpoints;
+- software scope, evidence-linked software actor roles, unresolved role gaps, and software candidate-review tables.
 
 The package distinguishes Asset, Release, Distribution, MappingArtifact, Assertion, Evidence, Organization, and their relationships. Original labels are preserved alongside aligned values where normalization is applied.
 
-Questionnaire contacts, personal name/email mappings, and internal reviewer notes are excluded from the public seed and generated package.
+Questionnaire contacts, email mappings, private personal data, and internal reviewer notes are excluded from the public seed and generated package. A publicly credited professional individual may be retained only when an official source explicitly attributes a software role.
 
 ## 2. Dataset website
 
 The standalone Global LCA Asset website publishes the dataset for researchers. It provides:
 
 - dataset-level counts and asset-category coverage;
-- focused views for database scope, access conditions, formats and software, providers and sectors, and mappings;
+- focused views for database scope, access conditions, formats, PCF/LCA software and company roles, providers and sectors, and mappings;
 - cross-asset search, source links, comparison, and data downloads;
 - an on-demand relationship view that loads a lightweight asset index and selected one-hop neighborhoods.
 

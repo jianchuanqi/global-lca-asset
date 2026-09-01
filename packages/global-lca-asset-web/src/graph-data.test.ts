@@ -12,11 +12,11 @@ const index = JSON.parse(readFileSync(join(graphDir, 'index.json'), 'utf8')) as 
 
 describe('progressively loaded relationship graph data', () => {
   it('publishes a small asset index and one neighborhood per asset', () => {
-    expect(index.asset_count).toBe(214);
-    expect(index.relationship_count).toBe(310);
-    expect(index.expandable_relationship_count).toBe(304);
-    expect(index.assets).toHaveLength(214);
-    expect(readdirSync(join(graphDir, 'neighborhoods')).filter((name) => name.endsWith('.json'))).toHaveLength(214);
+    expect(index.asset_count).toBe(301);
+    expect(index.relationship_count).toBe(397);
+    expect(index.expandable_relationship_count).toBe(391);
+    expect(index.assets).toHaveLength(301);
+    expect(readdirSync(join(graphDir, 'neighborhoods')).filter((name) => name.endsWith('.json'))).toHaveLength(301);
   });
 
   it('keeps each neighborhood internally referentially complete', () => {

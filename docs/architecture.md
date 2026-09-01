@@ -2,7 +2,7 @@
 
 ## 1. 当前实现
 
-本仓库是公共数据、数据包、知识图谱、查询服务、Global LCA Asset 数据界面和项目 Skill 的权威 Git 项目。用户可以按六个发布视图查询数据集，也可以用 Skill 直接分析 CSV/JSONL/SQLite，或通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
+本仓库是公共数据、数据包、知识图谱、查询服务、Global LCA Asset 数据界面和项目 Skill 的权威 Git 项目。用户可以按数据库、获取方式、格式、PCF/LCA 软件、提供方、mapping 和跨资产检索等发布视图查询数据集，也可以用 Skill 直接分析 CSV/JSONL/SQLite，或通过公共 MCP 查询图谱。DeepSeek Harness 是独立上游项目，本仓库不修改、不复制也不 fork DSH。
 
 ```mermaid
 flowchart LR
@@ -25,8 +25,8 @@ flowchart LR
 各层的责任明确分开：
 
 - `data/seed/inventory-v2.public.json` 保存经过隐私筛选的公共来源表，不包含联系人和内部映射。
-- 数据包生成器从同一公开种子建立 CSV、JSONL、SQLite、汇总和验证报告；不另设人工维护的第二份清单。
-- Global LCA Asset 数据界面读取生成的数据，按六个研究视图提供筛选、比较和 mapping 查询，并提供一个跨问题的按需关系图；关系图先获取资产搜索索引，再逐资产获取一跳邻域，不依赖 Neo4j。时间里程碑保留在完整证据包中，不作为发布界面；项目 Skill 从相同数据包回答问题或生成新的分析界面。
+- 数据包生成器从公开种子和有记录的 curated 审查层建立 CSV、JSONL、SQLite、汇总和验证报告；每一层都进入 manifest，不另设无来源的人工清单。
+- Global LCA Asset 数据界面读取生成的数据，提供数据库、获取方式、格式、PCF/LCA 软件及公司角色、提供方、mapping 和跨资产检索等研究视图，并提供一个跨问题的按需关系图；关系图先获取资产搜索索引，再逐资产获取一跳邻域，不依赖 Neo4j。时间里程碑保留在完整证据包中，不作为发布界面；项目 Skill 从相同数据包回答问题或生成新的分析界面。
 - Python 图谱构建器把宽表转换为 Asset、Release、Distribution、MappingArtifact、Assertion、Evidence 等对象。
 - Neo4j 是关系查询的事实库，所有节点和关系使用稳定 UID，导入使用幂等 `MERGE`。
 - FastAPI 统一提供筛选、路径、时间线、证据、结构化查询计划和可选专家 Cypher。
@@ -53,7 +53,7 @@ flowchart TD
     H --> I[Count and path checks]
 ```
 
-当前公开基线转换结果为：
+下面是服务器端 Neo4j 服务仍使用的基础种子快照；静态数据包与网页的 `2026-09-01.2` 版本另行叠加了可追溯的软件市场审查与语义对齐层，不应把两组数字混作同一发布口径：
 
 | 对象 | 数量 |
 |---|---:|

@@ -1,429 +1,522 @@
 asset_organization_id,asset_id,organization_id,relationship_type,original_public_label
-AO-00001,LCA-DB-0001,ORG-0077,owner,ecoinvent Association
-AO-00002,LCA-DB-0001,ORG-0077,operator/maintainer,ecoinvent Association
-AO-00003,LCA-FMT-0001,ORG-0077,owner,ecoinvent Association
-AO-00004,LCA-FMT-0001,ORG-0077,operator/maintainer,ecoinvent Association
-AO-00005,LCA-SW-0001,ORG-0232,owner,One Click LCA group
-AO-00006,LCA-SW-0001,ORG-0268,operator/maintainer,SimaPro
-AO-00007,LCA-SW-0002,ORG-0025,owner,Brightway developer community
-AO-00008,LCA-SW-0002,ORG-0026,operator/maintainer,Brightway developers
-AO-00009,LCA-SW-0003,ORG-0143,owner,GreenDelta GmbH
-AO-00010,LCA-SW-0003,ORG-0143,operator/maintainer,GreenDelta GmbH
-AO-00011,LCA-REP-0001,ORG-0143,owner,GreenDelta GmbH
-AO-00012,LCA-REP-0001,ORG-0143,operator/maintainer,GreenDelta GmbH
-AO-00013,LCA-NET-0001,ORG-0214,owner,Life Cycle Initiative hosted at UNEP
-AO-00014,LCA-NET-0001,ORG-0212,operator/maintainer,Life Cycle Initiative / participating nodes
-AO-00015,LCA-NET-0002,ORG-0097,owner,European Commission Joint Research Centre
-AO-00016,LCA-NET-0002,ORG-0106,operator/maintainer,European Platform on Life Cycle Assessment / EC-JRC
-AO-00017,LCA-FMT-0002,ORG-0097,owner,European Commission Joint Research Centre
-AO-00018,LCA-FMT-0002,ORG-0070,operator/maintainer,EC-JRC / European Platform on LCA
-AO-00019,LCA-REP-0002,ORG-0297,owner,U.S. Federal LCA Commons agencies
-AO-00020,LCA-REP-0002,ORG-0312,operator/maintainer,USDA National Agricultural Library with collaborating federal agencies
-AO-00021,LCA-DB-0002,ORG-0296,owner,U.S. Department of Energy / National Laboratory of the Rockies
-AO-00022,LCA-DB-0002,ORG-0226,operator/maintainer,National Laboratory of the Rockies on Federal LCA Commons
-AO-00023,LCA-NOM-0001,ORG-0298,owner,U.S. Federal LCA Commons partners
-AO-00024,LCA-NOM-0001,ORG-0113,operator/maintainer,FLCAC administrators; development resources hosted publicly
-AO-00025,LCA-MTH-0001,ORG-0214,owner,Life Cycle Initiative hosted at UNEP
-AO-00026,LCA-MTH-0001,ORG-0216,operator/maintainer,Life Cycle Initiative with scientific partners
-AO-00027,LCA-STD-0001,ORG-0181,owner,International Organization for Standardization
-AO-00028,LCA-STD-0001,ORG-0189,operator/maintainer,ISO/TC 207/SC 5
-AO-00029,LCA-DB-0003,ORG-0219,owner,Mérieux NutriSciences | Blonk
-AO-00030,LCA-DB-0003,ORG-0219,operator/maintainer,Mérieux NutriSciences | Blonk
-AO-00031,LCA-DB-0004,ORG-0004,owner,ADEME
-AO-00032,LCA-DB-0004,ORG-0005,operator/maintainer,ADEME and programme partners
-AO-00033,LCA-DB-0005,ORG-0277,owner,Swiss Federal Office for the Environment (FOEN/BAFU)
-AO-00034,LCA-DB-0005,ORG-0115,operator/maintainer,FOEN/BAFU and commissioned technical partners
-AO-00035,LCA-DB-0006,ORG-0029,owner,Carbon Minds
-AO-00036,LCA-DB-0006,ORG-0029,operator/maintainer,Carbon Minds
-AO-00037,LCA-DB-0007,ORG-0109,owner,EXIOBASE consortium
-AO-00038,LCA-DB-0007,ORG-0110,operator/maintainer,EXIOBASE research consortium; current releases distributed on Zenodo
-AO-00039,LCA-DB-0008,ORG-0225,owner,National Institute of Advanced Industrial Science and Technology (AIST)
-AO-00040,LCA-DB-0008,ORG-0008,operator/maintainer,AIST-IDEA programme and AIST Solutions licensing service
-AO-00041,LCA-DB-0009,ORG-0079,owner,ENEA
-AO-00042,LCA-DB-0009,ORG-0080,operator/maintainer,ENEA; ARCADIA and successor MASE–ENEA programme
-AO-00043,LCA-DB-0010,ORG-0307,owner,US Environmental Protection Agency
-AO-00044,LCA-DB-0010,ORG-0310,operator/maintainer,US EPA research team
-AO-00045,LCA-STD-0002,ORG-0181,owner,International Organization for Standardization
-AO-00046,LCA-STD-0002,ORG-0189,operator/maintainer,ISO/TC 207/SC 5
-AO-00047,LCA-STD-0003,ORG-0181,owner,International Organization for Standardization
-AO-00048,LCA-STD-0003,ORG-0190,operator/maintainer,ISO/TC 207/SC 7
-AO-00049,LCA-SW-0004,ORG-0233,owner,One Click LCA Ltd / One Click LCA group
-AO-00050,LCA-SW-0004,ORG-0231,operator/maintainer,One Click LCA
-AO-00051,LCA-MTH-0002,ORG-0066,owner,Dutch National Institute for Public Health and the Environment (RIVM) and method authors
-AO-00052,LCA-MTH-0002,ORG-0262,operator/maintainer,RIVM public distribution
-AO-00053,LCA-MTH-0003,ORG-0096,owner,European Commission
-AO-00054,LCA-MTH-0003,ORG-0063,operator/maintainer,Directorate-General for Environment and Joint Research Centre
-AO-00055,LCA-MTH-0004,ORG-0096,owner,European Commission
-AO-00056,LCA-MTH-0004,ORG-0064,operator/maintainer,Directorate-General for Research and Innovation and Joint Research Centre
-AO-00057,LCA-SW-0005,ORG-0274,owner,Sphera
-AO-00058,LCA-SW-0005,ORG-0274,operator/maintainer,Sphera
-AO-00059,LCA-DB-0011,ORG-0274,owner,Sphera
-AO-00060,LCA-DB-0011,ORG-0274,operator/maintainer,Sphera
-AO-00061,LCA-DB-0012,ORG-0287,owner,TianGong community
-AO-00062,LCA-DB-0012,ORG-0289,operator/maintainer,TianGong LCA Data Working Group and platform community
-AO-00063,LCA-PLT-0001,ORG-0287,owner,TianGong community
-AO-00064,LCA-PLT-0001,ORG-0290,operator/maintainer,TianGong platform developers
-AO-00065,LCA-SYS-0001,ORG-0291,owner,TianGong project / Carbon Footprint Industry Alliance ecosystem
-AO-00066,LCA-SYS-0001,ORG-0292,operator/maintainer,TIDAS development community
-AO-00067,LCA-NOM-0002,ORG-0020,owner,BONSAI community
-AO-00068,LCA-NOM-0002,ORG-0022,operator/maintainer,BONSAI network/contributors
-AO-00069,LCA-NOM-0003,ORG-0254,owner,Project author/community repository
-AO-00070,LCA-NOM-0003,ORG-0294,operator/maintainer,tishchungoora/lca-ontology repository maintainer
-AO-00071,LCA-NOM-0004,ORG-0204,owner,LCA to BIM Workflow research project
-AO-00072,LCA-NOM-0004,ORG-0265,operator/maintainer,RWTH design-computation project contributors
-AO-00073,LCA-DB-0013,ORG-0004,owner,ADEME
-AO-00074,LCA-DB-0013,ORG-0004,operator/maintainer,ADEME
-AO-00075,LCA-NOM-0005,ORG-0116,owner,Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions
-AO-00076,LCA-NOM-0005,ORG-0111,operator/maintainer,FAO-coordinated expert and institutional community
-AO-00077,LCA-MTH-0005,ORG-0326,owner,WULCA working group / UNEP-SETAC Life Cycle Initiative community
-AO-00078,LCA-MTH-0005,ORG-0325,operator/maintainer,WULCA
-AO-00079,LCA-DB-0014,ORG-0013,owner,Australian Life Cycle Assessment Society (ALCAS)
-AO-00080,LCA-DB-0014,ORG-0012,operator/maintainer,AusLCI Database Committee and sector partners
-AO-00081,LCA-DB-0015,ORG-0130,owner,"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)"
-AO-00082,LCA-DB-0015,ORG-0016,operator/maintainer,BBSR and commissioned technical operators
-AO-00083,LCA-NET-0003,ORG-0071,owner,ECO Platform AISBL
-AO-00084,LCA-NET-0003,ORG-0073,operator/maintainer,ECO Platform members and secretariat
-AO-00085,LCA-REP-0003,ORG-0071,owner,ECO Platform AISBL
-AO-00086,LCA-REP-0003,ORG-0072,operator/maintainer,ECO Platform and connected EPD programme-operator nodes
-AO-00087,LCA-FMT-0003,ORG-0019,owner,BMWSB/BBSR and InData/ECO Platform technical community
-AO-00088,LCA-FMT-0003,ORG-0017,operator/maintainer,BBSR-linked technical maintainers and data-network implementers
-AO-00089,LCA-DB-0016,ORG-0097,owner,European Commission Joint Research Centre
-AO-00090,LCA-DB-0016,ORG-0105,operator/maintainer,European Platform on Life Cycle Assessment
-AO-00091,LCA-MTH-0006,ORG-0097,owner,European Commission Joint Research Centre
-AO-00092,LCA-MTH-0006,ORG-0107,operator/maintainer,European Platform on Life Cycle Assessment / JRC
-AO-00093,LCA-STD-0004,ORG-0101,owner,European Committee for Standardization (CEN)
-AO-00094,LCA-STD-0004,ORG-0036,operator/maintainer,CEN/TC 350 and national standards bodies
-AO-00095,LCA-FMT-0004,ORG-0142,owner,GreenDelta
-AO-00096,LCA-FMT-0004,ORG-0145,operator/maintainer,GreenDelta openLCA development team
-AO-00097,LCA-STD-0005,ORG-0182,owner,International Organization for Standardization (ISO)
-AO-00098,LCA-STD-0005,ORG-0188,operator/maintainer,ISO/TC 207/SC 3
-AO-00099,LCA-STD-0006,ORG-0182,owner,International Organization for Standardization (ISO)
-AO-00100,LCA-STD-0006,ORG-0189,operator/maintainer,ISO/TC 207/SC 5
-AO-00101,LCA-MTH-0007,ORG-0302,owner,United States Environmental Protection Agency
-AO-00102,LCA-MTH-0007,ORG-0309,operator/maintainer,US EPA research programme
-AO-00103,LCA-SW-0007,ORG-0301,owner,United States Department of Energy
-AO-00104,LCA-SW-0007,ORG-0010,operator/maintainer,Argonne National Laboratory
-AO-00105,LCA-DB-0017,ORG-0138,owner,Global Feed LCA Institute
-AO-00106,LCA-DB-0017,ORG-0131,operator/maintainer,GFLI Secretariat and data-project partners
-AO-00107,LCA-MTH-0008,ORG-0138,owner,Global Feed LCA Institute
-AO-00108,LCA-MTH-0008,ORG-0132,operator/maintainer,GFLI technical and methodology groups
-AO-00109,LCA-PLT-0002,ORG-0305,owner,University of Oxford / HESTIA project
-AO-00110,LCA-PLT-0002,ORG-0151,operator/maintainer,HESTIA team and contributor community
-AO-00111,LCA-FMT-0005,ORG-0150,owner,HESTIA project / University of Oxford
-AO-00112,LCA-FMT-0005,ORG-0152,operator/maintainer,HESTIA technical team
-AO-00113,LCA-SW-0008,ORG-0150,owner,HESTIA project / University of Oxford
-AO-00114,LCA-SW-0008,ORG-0149,operator/maintainer,HESTIA modelling team and contributors
-AO-00115,LCA-NOM-0006,ORG-0117,owner,FoodOn open inter-agency community
-AO-00116,LCA-NOM-0006,ORG-0118,operator/maintainer,FoodOntology contributors / OBO Foundry
-AO-00117,LCA-NET-0004,ORG-0321,owner,World Resources Institute and World Business Council for Sustainable Development
-AO-00118,LCA-NET-0004,ORG-0134,operator/maintainer,GHG Protocol secretariat and multi-stakeholder governance bodies
-AO-00119,LCA-MTH-0009,ORG-0321,owner,World Resources Institute and World Business Council for Sustainable Development
-AO-00120,LCA-MTH-0009,ORG-0133,operator/maintainer,GHG Protocol
-AO-00121,LCA-MTH-0010,ORG-0163,owner,IMPACT World+ scientific consortium
-AO-00122,LCA-MTH-0010,ORG-0162,operator/maintainer,IMPACT World+ method development team
-AO-00123,LCA-SW-0009,ORG-0075,owner,Ecochain Technologies
-AO-00124,LCA-SW-0009,ORG-0075,operator/maintainer,Ecochain Technologies
-AO-00125,LCA-QA-0001,ORG-0077,owner,ecoinvent Association
-AO-00126,LCA-QA-0001,ORG-0077,operator/maintainer,ecoinvent Association
-AO-00127,LCA-FMT-0006,ORG-0076,owner,ecoinvent / former EcoSpold development community
-AO-00128,LCA-FMT-0006,ORG-0154,operator/maintainer,Historical format; no active maintenance identified
-AO-00129,LCA-DB-0018,ORG-0257,owner,Quantis
-AO-00130,LCA-DB-0018,ORG-0258,operator/maintainer,Quantis and WFLDB partners
-AO-00131,LCA-DB-0019,ORG-0224,owner,National Institute for Public Health and the Environment (RIVM)
-AO-00132,LCA-DB-0019,ORG-0263,operator/maintainer,RIVM; LCI update performed by Mérieux NutriSciences | Blonk
-AO-00133,LCA-DB-0020,ORG-0129,owner,"German Environment Agency (Umweltbundesamt, UBA)"
-AO-00134,LCA-DB-0020,ORG-0128,operator/maintainer,German Environment Agency
-AO-00135,LCA-DB-0021,ORG-0167,owner,INIES governance partners under French public convention
-AO-00136,LCA-DB-0021,ORG-0009,operator/maintainer,Alliance HQE-GBC and INIES governance bodies
-AO-00137,LCA-DB-0022,ORG-0247,owner,Plastics Europe
-AO-00138,LCA-DB-0022,ORG-0248,operator/maintainer,Plastics Europe and relevant sector groups
-AO-00139,LCA-DB-0023,ORG-0322,owner,World Steel Association
-AO-00140,LCA-DB-0023,ORG-0323,operator/maintainer,worldsteel
-AO-00141,LCA-FMT-0007,ORG-0237,owner,openEPD Forum / Building Transparency ecosystem
-AO-00142,LCA-FMT-0007,ORG-0236,operator/maintainer,openEPD contributors and reference implementers
-AO-00143,LCA-FMT-0008,ORG-0320,owner,World Business Council for Sustainable Development
-AO-00144,LCA-FMT-0008,ORG-0239,operator/maintainer,Partnership for Carbon Transparency (PACT)
-AO-00145,LCA-STD-0007,ORG-0181,owner,International Organization for Standardization
-AO-00146,LCA-STD-0007,ORG-0189,operator/maintainer,ISO/TC 207/SC 5
-AO-00147,LCA-MTH-0011,ORG-0210,owner,"Leiden University, Institute of Environmental Sciences (CML)"
-AO-00148,LCA-MTH-0011,ORG-0051,operator/maintainer,CML-IE; public resources are now largely archival
-AO-00149,LCA-MTH-0012,ORG-0299,owner,UNEP-hosted Life Cycle Initiative
-AO-00150,LCA-MTH-0012,ORG-0213,operator/maintainer,Life Cycle Initiative GLAM stewardship community
-AO-00151,LCA-QA-0002,ORG-0302,owner,United States Environmental Protection Agency
-AO-00152,LCA-QA-0002,ORG-0308,operator/maintainer,US EPA Office of Research and Development
-AO-00153,LCA-QA-0003,ORG-0096,owner,European Commission
-AO-00154,LCA-QA-0003,ORG-0099,operator/maintainer,European Commission Joint Research Centre and Environmental Footprint governance
-AO-00155,LCA-NET-0005,ORG-0300,owner,United Nations Environment Programme
-AO-00156,LCA-NET-0005,ORG-0215,operator/maintainer,Life Cycle Initiative secretariat and steering governance
-AO-00157,LCA-SW-0010,ORG-0199,owner,LCA as Code project/provider
-AO-00158,LCA-SW-0010,ORG-0200,operator/maintainer,LCA as Code team
-AO-00159,LCA-FMT-0009,ORG-0206,owner,LCAx open-source project / OCNI-DTU contributors
-AO-00160,LCA-FMT-0009,ORG-0205,operator/maintainer,LCAx contributors
-AO-00161,LCA-SW-0011,ORG-0206,owner,LCAx open-source project / OCNI-DTU contributors
-AO-00162,LCA-SW-0011,ORG-0205,operator/maintainer,LCAx contributors
-AO-00163,LCA-SW-0012,ORG-0303,owner,United States Environmental Protection Agency / Federal LCA Commons ecosystem
-AO-00164,LCA-SW-0012,ORG-0114,operator/maintainer,FLCAC-admin repository contributors
-AO-00165,LCA-SW-0013,ORG-0273,owner,soda4LCA open-source project
-AO-00166,LCA-SW-0013,ORG-0272,operator/maintainer,soda4LCA maintainers / OKWorx
-AO-00167,LCA-SW-0014,ORG-0250,owner,premise open-source project / polca contributors
-AO-00168,LCA-SW-0014,ORG-0249,operator/maintainer,premise contributors
-AO-00169,LCA-DB-0024,ORG-0041,owner,CIRAIG / project contributors
-AO-00170,LCA-DB-0024,ORG-0042,operator/maintainer,CIRAIG OpenIO-Canada contributors
-AO-00171,LCA-DB-0025,ORG-0142,owner,GreenDelta
-AO-00172,LCA-DB-0025,ORG-0142,operator/maintainer,GreenDelta
-AO-00173,LCA-DB-0026,ORG-0228,owner,New Earth / Social Hotspots Database provider
-AO-00174,LCA-DB-0026,ORG-0271,operator/maintainer,Social Hotspots Database team
-AO-00175,LCA-MTH-0013,ORG-0320,owner,World Business Council for Sustainable Development
-AO-00176,LCA-MTH-0013,ORG-0238,operator/maintainer,Partnership for Carbon Transparency
-AO-00177,LCA-PLT-0003,ORG-0023,owner,BONSAI not-for-profit association
-AO-00178,LCA-PLT-0003,ORG-0024,operator/maintainer,"BONSAI secretariat, board and contributor network"
-AO-00179,LCA-DB-0027,ORG-0023,owner,BONSAI not-for-profit association
-AO-00180,LCA-DB-0027,ORG-0021,operator/maintainer,BONSAI data contributors and projects
-AO-00181,LCA-MTH-0014,ORG-0033,owner,Catena-X Automotive Network e.V.
-AO-00182,LCA-MTH-0014,ORG-0034,operator/maintainer,Catena-X PCF working groups
-AO-00183,LCA-QA-0004,ORG-0033,owner,Catena-X Automotive Network e.V.
-AO-00184,LCA-QA-0004,ORG-0034,operator/maintainer,Catena-X PCF working groups
-AO-00185,LCA-FMT-0010,ORG-0033,owner,Catena-X Automotive Network e.V.
-AO-00186,LCA-FMT-0010,ORG-0035,operator/maintainer,Catena-X PCF/data-model working groups
-AO-00187,LCA-MTH-0015,ORG-0295,owner,Together for Sustainability
-AO-00188,LCA-MTH-0015,ORG-0282,operator/maintainer,TfS Scope 3 GHG programme
-AO-00189,LCA-FMT-0011,ORG-0295,owner,Together for Sustainability
-AO-00190,LCA-FMT-0011,ORG-0282,operator/maintainer,TfS Scope 3 GHG programme
-AO-00191,LCA-QA-0005,ORG-0295,owner,Together for Sustainability
-AO-00192,LCA-QA-0005,ORG-0282,operator/maintainer,TfS Scope 3 GHG programme
-AO-00193,LCA-NET-0006,ORG-0246,owner,Plastic Footprint Network convened by EA – Earth Action
-AO-00194,LCA-NET-0006,ORG-0242,operator/maintainer,PFN secretariat and member/collaborator community
-AO-00195,LCA-MTH-0016,ORG-0245,owner,Plastic Footprint Network
-AO-00196,LCA-MTH-0016,ORG-0243,operator/maintainer,PFN technical community convened by EA – Earth Action
-AO-00197,LCA-MTH-0017,ORG-0173,owner,Intergovernmental Panel on Climate Change
-AO-00198,LCA-MTH-0017,ORG-0185,operator/maintainer,IPCC Working Group I assessment process
-AO-00199,LCA-SW-0006,ORG-0196,owner,Lavoisier open-source project developed at GYRO/UTFPR with IBICT support
-AO-00200,LCA-SW-0006,ORG-0197,operator/maintainer,Lavoisier project maintainers
-AO-00201,LCA-DB-0028,ORG-0096,owner,European Commission
-AO-00202,LCA-DB-0028,ORG-0098,operator/maintainer,European Commission Joint Research Centre and Directorate-General for Environment
-AO-00203,LCA-REP-0004,ORG-0083,owner,EPD International AB
-AO-00204,LCA-REP-0004,ORG-0179,operator/maintainer,International EPD System
-AO-00205,LCA-DB-0029,ORG-0045,owner,Circular Ecology
-AO-00206,LCA-DB-0029,ORG-0045,operator/maintainer,Circular Ecology
-AO-00207,LCA-DB-0030,ORG-0089,owner,ESU-services Ltd.
-AO-00208,LCA-DB-0030,ORG-0089,operator/maintainer,ESU-services Ltd.
-AO-00209,LCA-DB-0031,ORG-0192,owner,"Kanso, Inc. / Carbonfact"
-AO-00210,LCA-DB-0031,ORG-0030,operator/maintainer,Carbonfact science team
-AO-00211,LCA-DB-0032,ORG-0103,owner,"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)"
-AO-00212,LCA-DB-0032,ORG-0037,operator/maintainer,CEPE LCI project
-AO-00213,LCA-DB-0033,ORG-0319,owner,Watershed Technology
-AO-00214,LCA-DB-0033,ORG-0319,operator/maintainer,Watershed Technology
-AO-00215,LCA-DB-0034,ORG-0100,owner,European Commission-funded NEEDS project consortium
-AO-00216,LCA-DB-0034,ORG-0208,operator/maintainer,Legacy project data; openLCA conversion maintained historically by GreenDelta
-AO-00217,LCA-REP-0005,ORG-0280,owner,Textile Exchange
-AO-00218,LCA-REP-0005,ORG-0281,operator/maintainer,Textile Exchange in partnership with SCS Global Services
-AO-00219,LCA-SW-0015,ORG-0001,owner,2050 Materials
-AO-00220,LCA-SW-0015,ORG-0001,operator/maintainer,2050 Materials
-AO-00221,LCA-SW-0016,ORG-0050,owner,Climatiq
-AO-00222,LCA-SW-0016,ORG-0050,operator/maintainer,Climatiq
-AO-00223,LCA-SW-0017,ORG-0031,owner,Cascale
-AO-00224,LCA-SW-0017,ORG-0032,operator/maintainer,Cascale; exclusively delivered on Worldly
-AO-00225,LCA-SW-0018,ORG-0217,owner,Makersite GmbH
-AO-00226,LCA-SW-0018,ORG-0217,operator/maintainer,Makersite GmbH
-AO-00227,LCA-SW-0019,ORG-0068,owner,Eaternity
-AO-00228,LCA-SW-0019,ORG-0068,operator/maintainer,Eaternity
-AO-00229,LCA-SW-0020,ORG-0067,owner,EarthShift Global
-AO-00230,LCA-SW-0020,ORG-0067,operator/maintainer,EarthShift Global
-AO-00231,LCA-SW-0021,ORG-0067,owner,EarthShift Global
-AO-00232,LCA-SW-0021,ORG-0067,operator/maintainer,EarthShift Global
-AO-00233,LCA-SW-0022,ORG-0286,owner,The PIQET Consortium / Lifecycles and partners
-AO-00234,LCA-SW-0022,ORG-0244,operator/maintainer,PIQET service team
-AO-00235,LCA-SW-0023,ORG-0259,owner,Real-Time LCA
-AO-00236,LCA-SW-0023,ORG-0259,operator/maintainer,Real-Time LCA
-AO-00237,LCA-SW-0024,ORG-0315,owner,VoLCA project
-AO-00238,LCA-SW-0024,ORG-0314,operator/maintainer,VoLCA maintainers
-AO-00239,LCA-SW-0025,ORG-0147,owner,Hangzhou Qinglvlan Environmental Digital Technology
-AO-00240,LCA-SW-0025,ORG-0028,operator/maintainer,Capillar
-AO-00241,LCA-SW-0026,ORG-0194,owner,Kimel Tech SpA
-AO-00242,LCA-SW-0026,ORG-0078,operator/maintainer,EcoSemantic
-AO-00243,LCA-SW-0027,ORG-0201,owner,LCA CARE project consortium
-AO-00244,LCA-SW-0027,ORG-0090,operator/maintainer,EU project 101139959 consortium
-AO-00245,LCA-FMT-0012,ORG-0166,owner,Industrial Digital Twin Association
-AO-00246,LCA-FMT-0012,ORG-0158,operator/maintainer,IDTA office and admin-shell-io repository
-AO-00247,LCA-PLT-0004,ORG-0046,owner,CIRPASS-2 and partner initiatives
-AO-00248,LCA-PLT-0004,ORG-0313,operator/maintainer,Vocabulary Hub / Semantic Treehouse maintainers
-AO-00249,LCA-NOM-0008,ORG-0047,owner,CIRPASS-2 European project
-AO-00250,LCA-NOM-0008,ORG-0091,operator/maintainer,EUDPP ontology contributors via DPP Vocabulary Hub
-AO-00251,LCA-PLT-0005,ORG-0136,owner,Global Building Data Initiative under GLOBE
-AO-00252,LCA-PLT-0005,ORG-0126,operator/maintainer,GBDI consortium
-AO-00253,LCA-FMT-0013,ORG-0135,owner,Global Building Data Initiative
-AO-00254,LCA-FMT-0013,ORG-0127,operator/maintainer,GBDI technical community
-AO-00255,LCA-DB-0035,ORG-0014,owner,BATTERS
-AO-00256,LCA-DB-0035,ORG-0015,operator/maintainer,BATTERS / WELOOP experts
-AO-00257,LCA-DB-0036,ORG-0018,owner,BioEnergieDat project consortium
-AO-00258,LCA-DB-0036,ORG-0209,operator/maintainer,Legacy project portal; dataset owners include KIT and partners
-AO-00259,LCA-DB-0037,ORG-0276,owner,Swedish Life Cycle Center
-AO-00260,LCA-DB-0037,ORG-0039,operator/maintainer,"Chalmers University of Technology, Environmental Systems Analysis"
-AO-00261,LCA-DB-0038,ORG-0085,owner,ERASM
-AO-00262,LCA-DB-0038,ORG-0086,operator/maintainer,ERASM member-company collaboration
-AO-00263,LCA-DB-0039,ORG-0207,owner,LCIE Bureau Veritas
-AO-00264,LCA-DB-0039,ORG-0027,operator/maintainer,Bureau Veritas CODDE
-AO-00265,LCA-DB-0040,ORG-0275,owner,Sustainable Impact Metrics Foundation / Delft University of Technology lineage
-AO-00266,LCA-DB-0040,ORG-0074,operator/maintainer,eco-costs/value maintainers
-AO-00267,LCA-DB-0041,ORG-0043,owner,CIRAIG Sustainable Consumption Chair
-AO-00268,LCA-DB-0041,ORG-0040,operator/maintainer,CIRAIG / POLARIIS+ collaboration
-AO-00269,LCA-DB-0042,ORG-0285,owner,The Evah Institute / Ecquate Pty Ltd
-AO-00270,LCA-DB-0042,ORG-0108,operator/maintainer,Evah Associates
-AO-00271,LCA-DB-0043,ORG-0092,owner,EuGeos / Chris Foster
-AO-00272,LCA-DB-0043,ORG-0065,operator/maintainer,Distributed historically through openLCA Nexus
-AO-00273,LCA-NOM-0007,ORG-0191,owner,IUPAC and InChI Trust
-AO-00274,LCA-NOM-0007,ORG-0164,operator/maintainer,InChI Trust
-AO-00275,LCA-NOM-0009,ORG-0311,owner,US National Library of Medicine / National Center for Biotechnology Information
-AO-00276,LCA-NOM-0009,ORG-0256,operator/maintainer,PubChem
-AO-00277,LCA-NOM-0010,ORG-0056,owner,Daylight Chemical Information Systems (original specification); multiple later dialects
-AO-00278,LCA-NOM-0010,ORG-0057,operator/maintainer,Daylight for original specification; distributed implementer community
-AO-00279,LCA-SW-0028,ORG-0068,owner,Eaternity
-AO-00280,LCA-SW-0028,ORG-0069,operator/maintainer,Eaternity open-source team
-AO-00281,LCA-SW-0029,ORG-0306,owner,University of Sheffield and AMRC project team
-AO-00282,LCA-SW-0029,ORG-0007,operator/maintainer,Agent Net Zero team
-AO-00283,LCA-NET-0007,ORG-0049,owner,Climate Farm Demo consortium
-AO-00284,LCA-NET-0007,ORG-0155,operator/maintainer,Horizon Europe consortium
-AO-00285,LCA-REP-0006,ORG-0053,owner,Cornerstone Sustainability Data Initiative
-AO-00286,LCA-REP-0006,ORG-0087,operator/maintainer,"ERG, Stanford and Watershed-supported initiative"
-AO-00287,LCA-SW-0030,ORG-0316,owner,Walloon Agricultural Research Centre (CRA-W)
-AO-00288,LCA-SW-0030,ORG-0055,operator/maintainer,CRA-W
-AO-00289,LCA-DB-0044,ORG-0038,owner,Chalmers University of Technology-led DeDuCE team
-AO-00290,LCA-DB-0044,ORG-0060,operator/maintainer,DeDuCE research team and partners
-AO-00291,LCA-NET-0008,ORG-0062,owner,Départ de Sentier association
-AO-00292,LCA-NET-0008,ORG-0058,operator/maintainer,DdS board and staff
-AO-00293,LCA-PLT-0006,ORG-0061,owner,Départ de Sentier
-AO-00294,LCA-PLT-0006,ORG-0059,operator/maintainer,DdS platform and data engineering team
-AO-00295,LCA-DB-0045,ORG-0119,owner,FOODTURE Horizon Europe consortium
-AO-00296,LCA-DB-0045,ORG-0324,operator/maintainer,WP1 led by ADEME within the FOODTURE consortium
-AO-00297,LCA-NET-0009,ORG-0121,owner,Forum for Sustainability through Life Cycle Innovation e.V.
-AO-00298,LCA-NET-0009,ORG-0123,operator/maintainer,FSLCI secretariat and member community
-AO-00299,LCA-REP-0007,ORG-0177,owner,International CCU Assessment Harmonization Group
-AO-00300,LCA-REP-0007,ORG-0137,operator/maintainer,"Global CO2 Initiative, University of Michigan"
-AO-00301,LCA-SW-0031,ORG-0264,owner,RWTH Aachen University and collaborators
-AO-00302,LCA-SW-0031,ORG-0170,operator/maintainer,Institute of Technical Thermodynamics at RWTH Aachen University and collaborators
-AO-00303,LCA-MTH-0018,ORG-0122,owner,Framework authors
-AO-00304,LCA-MTH-0018,ORG-0266,operator/maintainer,Scientific publication and author community
-AO-00305,LCA-SW-0032,ORG-0140,owner,Green Gold Label Foundation
-AO-00306,LCA-SW-0032,ORG-0141,operator/maintainer,Green Gold Label Foundation with studio Gear Up
-AO-00307,LCA-NET-0010,ORG-0146,owner,GreenGrocer consortium
-AO-00308,LCA-NET-0010,ORG-0002,operator/maintainer,22-partner consortium
-AO-00309,LCA-MTH-0019,ORG-0173,owner,Intergovernmental Panel on Climate Change
-AO-00310,LCA-MTH-0019,ORG-0184,operator/maintainer,IPCC Task Force on National Greenhouse Gas Inventories
-AO-00311,LCA-NET-0011,ORG-0104,owner,European LIFE programme consortium
-AO-00312,LCA-NET-0011,ORG-0006,operator/maintainer,ADEME-led nine-partner consortium
-AO-00313,LCA-SW-0033,ORG-0211,owner,Leonardo Ferhati
-AO-00314,LCA-SW-0033,ORG-0165,operator/maintainer,Independent research initiative
-AO-00315,LCA-MTH-0020,ORG-0304,owner,University of Kassel authors / BBSR-funded project
-AO-00316,LCA-MTH-0020,ORG-0193,operator/maintainer,Kassel Institute for Sustainability data repository
-AO-00317,LCA-SW-0034,ORG-0218,owner,MATILDA research team
-AO-00318,LCA-SW-0034,ORG-0003,operator/maintainer,Academic author team
-AO-00319,LCA-NOM-0011,ORG-0234,owner,Ontology-pattern authors
-AO-00320,LCA-NOM-0011,ORG-0230,operator/maintainer,No current maintainer publicly confirmed
-AO-00321,LCA-REP-0008,ORG-0235,owner,Open Sustainable Technology community
-AO-00322,LCA-REP-0008,ORG-0255,operator/maintainer,protontypes/open-sustainable-technology maintainers and contributors
-AO-00323,LCA-NOM-0012,ORG-0168,owner,INRAE
-AO-00324,LCA-NOM-0012,ORG-0169,operator/maintainer,INRAE ontology team and Recherche Data Gouv/AgroPortal
-AO-00325,LCA-REP-0009,ORG-0252,owner,product impact team
-AO-00326,LCA-REP-0009,ORG-0253,operator/maintainer,productimpact.info
-AO-00327,LCA-DB-0046,ORG-0267,owner,"Shanghai HiQ Smart Data Co., Ltd."
-AO-00328,LCA-DB-0046,ORG-0153,operator/maintainer,HiQ Data
-AO-00329,LCA-SW-0035,ORG-0223,owner,Minviro Ltd
-AO-00330,LCA-SW-0035,ORG-0222,operator/maintainer,Minviro
-AO-00331,LCA-DB-0047,ORG-0223,owner,Minviro Ltd
-AO-00332,LCA-DB-0047,ORG-0222,operator/maintainer,Minviro
-AO-00333,LCA-SW-0036,ORG-0318,owner,"WAP Sustainability, LLC"
-AO-00334,LCA-SW-0036,ORG-0317,operator/maintainer,WAP Sustainability
-AO-00335,LCA-SW-0037,ORG-0318,owner,"WAP Sustainability, LLC"
-AO-00336,LCA-SW-0037,ORG-0317,operator/maintainer,WAP Sustainability
-AO-00337,LCA-DB-0048,ORG-0318,owner,"WAP Sustainability, LLC"
-AO-00338,LCA-DB-0048,ORG-0317,operator/maintainer,WAP Sustainability
-AO-00339,LCA-SW-0038,ORG-0187,owner,iPoint-systems gmbh / Assent group
-AO-00340,LCA-SW-0038,ORG-0186,operator/maintainer,iPoint
-AO-00341,LCA-REP-0010,ORG-0082,owner,EPD Australasia Ltd
-AO-00342,LCA-REP-0010,ORG-0081,operator/maintainer,EPD Australasia
-AO-00343,LCA-SW-0039,ORG-0011,owner,Athena Sustainable Materials Institute
-AO-00344,LCA-SW-0039,ORG-0011,operator/maintainer,Athena Sustainable Materials Institute
-AO-00345,LCA-SW-0040,ORG-0011,owner,Athena Sustainable Materials Institute
-AO-00346,LCA-SW-0040,ORG-0011,operator/maintainer,Athena Sustainable Materials Institute
-AO-00347,LCA-SW-0041,ORG-0011,owner,Athena Sustainable Materials Institute
-AO-00348,LCA-SW-0041,ORG-0011,operator/maintainer,Athena Sustainable Materials Institute
-AO-00349,LCA-DB-0049,ORG-0011,owner,Athena Sustainable Materials Institute
-AO-00350,LCA-DB-0049,ORG-0011,operator/maintainer,Athena Sustainable Materials Institute
-AO-00351,LCA-DB-0050,ORG-0095,owner,European Aluminium
-AO-00352,LCA-DB-0050,ORG-0095,operator/maintainer,European Aluminium
-AO-00353,LCA-SW-0042,ORG-0176,owner,International Aluminium Institute and European Aluminium
-AO-00354,LCA-SW-0042,ORG-0175,operator/maintainer,International Aluminium Institute / European Aluminium
-AO-00355,LCA-SW-0043,ORG-0288,owner,TianGong LCA / TIDAS open-source project
-AO-00356,LCA-SW-0043,ORG-0293,operator/maintainer,TIDAS Tools maintainers and public contributors
-AO-00357,LCA-DB-0051,ORG-0203,owner,LCA Society of Japan / LCA Japan Forum
-AO-00358,LCA-DB-0051,ORG-0202,operator/maintainer,LCA Japan Forum
-AO-00359,LCA-DB-0052,ORG-0220,owner,MexiLCA initiative
-AO-00360,LCA-DB-0052,ORG-0172,operator/maintainer,"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators"
-AO-00361,LCA-REP-0011,ORG-0157,owner,ICMQ S.p.A. Società Benefit / EPDItaly
-AO-00362,LCA-REP-0011,ORG-0084,operator/maintainer,EPDItaly
-AO-00363,LCA-QA-0006,ORG-0084,owner,EPDItaly
-AO-00364,LCA-QA-0006,ORG-0084,operator/maintainer,EPDItaly
-AO-00365,LCA-DB-0053,ORG-0283,owner,The European Steel Association (EUROFER)
-AO-00366,LCA-DB-0053,ORG-0094,operator/maintainer,EUROFER Stainless
-AO-00367,LCA-NET-0012,ORG-0260,owner,Red Iberoamericana de Ciclo de Vida
-AO-00368,LCA-NET-0012,ORG-0261,operator/maintainer,RICV board and member networks
-AO-00369,LCA-DB-0054,ORG-0171,owner,Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)
-AO-00370,LCA-DB-0054,ORG-0156,operator/maintainer,Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos
-AO-00371,LCA-DB-0055,ORG-0160,owner,IKE Environmental Technology / Sichuan University lineage
-AO-00372,LCA-DB-0055,ORG-0161,operator/maintainer,"IKE Environmental Technology Co., Ltd."
-AO-00373,LCA-DB-0056,ORG-0221,owner,"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute"
-AO-00374,LCA-DB-0056,ORG-0195,operator/maintainer,Korea Environmental Industry & Technology Institute (KEITI)
-AO-00375,LCA-DB-0057,ORG-0227,owner,National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners
-AO-00376,LCA-DB-0057,ORG-0279,operator/maintainer,"Technology and Informatics Institute for Sustainability (TIIS), NSTDA"
-AO-00377,LCA-DB-0058,ORG-0269,owner,SIRIM Berhad
-AO-00378,LCA-DB-0058,ORG-0270,operator/maintainer,SIRIM Energy & Environment Centre
-AO-00379,LCA-DB-0059,ORG-0241,owner,Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners
-AO-00380,LCA-DB-0059,ORG-0240,operator/maintainer,Peruvian Life Cycle Network (PELCAN)
-AO-00381,LCA-DB-0060,ORG-0124,owner,Fundación InnovaCiclos
-AO-00382,LCA-DB-0060,ORG-0125,operator/maintainer,Fundación InnovaCiclos / EcoEd
-AO-00383,LCA-DB-0061,ORG-0139,owner,Government of Quebec / CIRAIG
-AO-00384,LCA-DB-0061,ORG-0044,operator/maintainer,CIRAIG with ecoinvent
-AO-00385,LCA-DB-0062,ORG-0174,owner,International Aluminium Institute
-AO-00386,LCA-DB-0062,ORG-0174,operator/maintainer,International Aluminium Institute
-AO-00387,LCA-DB-0063,ORG-0229,owner,Nickel Institute
-AO-00388,LCA-DB-0063,ORG-0229,operator/maintainer,Nickel Institute
-AO-00389,LCA-DB-0064,ORG-0183,owner,International Zinc Association
-AO-00390,LCA-DB-0064,ORG-0183,operator/maintainer,International Zinc Association
-AO-00391,LCA-DB-0065,ORG-0102,owner,European Container Glass Federation (FEVE)
-AO-00392,LCA-DB-0065,ORG-0112,operator/maintainer,FEVE
-AO-00393,LCA-DB-0066,ORG-0093,owner,Eurobitume
-AO-00394,LCA-DB-0066,ORG-0093,operator/maintainer,Eurobitume
-AO-00395,LCA-DB-0067,ORG-0052,owner,Consortium for Research on Renewable Industrial Materials (CORRIM)
-AO-00396,LCA-DB-0067,ORG-0054,operator/maintainer,CORRIM and Federal LCA Commons
-AO-00397,LCA-DB-0068,ORG-0178,owner,International Copper Association
-AO-00398,LCA-DB-0068,ORG-0178,operator/maintainer,International Copper Association
-AO-00399,LCA-DB-0069,ORG-0180,owner,International Institute for Sustainability Analysis and Strategy (IINAS)
-AO-00400,LCA-DB-0069,ORG-0159,operator/maintainer,IINAS
-AO-00401,LCA-DB-0070,ORG-0143,owner,GreenDelta GmbH
-AO-00402,LCA-DB-0070,ORG-0143,operator/maintainer,GreenDelta GmbH
-AO-00403,LCA-DB-0071,ORG-0143,owner,GreenDelta GmbH
-AO-00404,LCA-DB-0071,ORG-0143,operator/maintainer,GreenDelta GmbH
-AO-00405,LCA-DB-0072,ORG-0143,owner,GreenDelta GmbH
-AO-00406,LCA-DB-0072,ORG-0143,operator/maintainer,GreenDelta GmbH
-AO-00407,LCA-DB-0073,ORG-0278,owner,Swiss Federal Offices
-AO-00408,LCA-DB-0073,ORG-0278,operator/maintainer,Swiss Federal Offices
-AO-00409,LCA-DB-0074,ORG-0048,owner,CLIC Innovation / ARVI research programme
-AO-00410,LCA-DB-0074,ORG-0048,operator/maintainer,CLIC Innovation / ARVI research programme
-AO-00411,LCA-DB-0075,ORG-0284,owner,The Evah Institute
-AO-00412,LCA-DB-0075,ORG-0284,operator/maintainer,The Evah Institute
-AO-00413,LCA-DB-0076,ORG-0144,owner,GreenDelta GmbH / TRIPLELINK
-AO-00414,LCA-DB-0076,ORG-0144,operator/maintainer,GreenDelta GmbH / TRIPLELINK
-AO-00415,LCA-DB-0077,ORG-0143,owner,GreenDelta GmbH
-AO-00416,LCA-DB-0077,ORG-0143,operator/maintainer,GreenDelta GmbH
-AO-00417,LCA-DB-0078,ORG-0251,owner,PRIMUS project / Plastics Recyclers Europe
-AO-00418,LCA-DB-0078,ORG-0251,operator/maintainer,PRIMUS project / Plastics Recyclers Europe
-AO-00419,LCA-DB-0079,ORG-0088,owner,ESU-services and contributing authors
-AO-00420,LCA-DB-0079,ORG-0088,operator/maintainer,ESU-services and contributing authors
-AO-00421,LCA-DB-0080,ORG-0120,owner,Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)
-AO-00422,LCA-DB-0080,ORG-0120,operator/maintainer,Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)
-AO-00423,LCA-MTH-0021,ORG-0148,owner,Helmholtz Centre for Environmental Research (UFZ)
-AO-00424,LCA-MTH-0021,ORG-0148,operator/maintainer,Helmholtz Centre for Environmental Research (UFZ)
-AO-00425,LCA-MTH-0022,ORG-0198,owner,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH
-AO-00426,LCA-MTH-0022,ORG-0198,operator/maintainer,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH
-AO-00427,LCA-MTH-0023,ORG-0143,owner,GreenDelta GmbH
-AO-00428,LCA-MTH-0023,ORG-0143,operator/maintainer,GreenDelta GmbH
+AO-00001,LCA-DB-0001,ORG-0098,owner,ecoinvent Association
+AO-00002,LCA-DB-0001,ORG-0098,operator/maintainer,ecoinvent Association
+AO-00003,LCA-FMT-0001,ORG-0098,owner,ecoinvent Association
+AO-00004,LCA-FMT-0001,ORG-0098,operator/maintainer,ecoinvent Association
+AO-00005,LCA-REP-0001,ORG-0173,owner,GreenDelta GmbH
+AO-00006,LCA-REP-0001,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00007,LCA-NET-0001,ORG-0245,owner,Life Cycle Initiative hosted at UNEP
+AO-00008,LCA-NET-0001,ORG-0243,operator/maintainer,Life Cycle Initiative / participating nodes
+AO-00009,LCA-NET-0002,ORG-0120,owner,European Commission Joint Research Centre
+AO-00010,LCA-NET-0002,ORG-0129,operator/maintainer,European Platform on Life Cycle Assessment / EC-JRC
+AO-00011,LCA-FMT-0002,ORG-0120,owner,European Commission Joint Research Centre
+AO-00012,LCA-FMT-0002,ORG-0089,operator/maintainer,EC-JRC / European Platform on LCA
+AO-00013,LCA-REP-0002,ORG-0352,owner,U.S. Federal LCA Commons agencies
+AO-00014,LCA-REP-0002,ORG-0367,operator/maintainer,USDA National Agricultural Library with collaborating federal agencies
+AO-00015,LCA-DB-0002,ORG-0350,owner,U.S. Department of Energy / National Laboratory of the Rockies
+AO-00016,LCA-DB-0002,ORG-0259,operator/maintainer,National Laboratory of the Rockies on Federal LCA Commons
+AO-00017,LCA-NOM-0001,ORG-0353,owner,U.S. Federal LCA Commons partners
+AO-00018,LCA-NOM-0001,ORG-0142,operator/maintainer,FLCAC administrators; development resources hosted publicly
+AO-00019,LCA-MTH-0001,ORG-0245,owner,Life Cycle Initiative hosted at UNEP
+AO-00020,LCA-MTH-0001,ORG-0247,operator/maintainer,Life Cycle Initiative with scientific partners
+AO-00021,LCA-STD-0001,ORG-0211,owner,International Organization for Standardization
+AO-00022,LCA-STD-0001,ORG-0218,operator/maintainer,ISO/TC 207/SC 5
+AO-00023,LCA-DB-0003,ORG-0250,owner,Mérieux NutriSciences | Blonk
+AO-00024,LCA-DB-0003,ORG-0250,operator/maintainer,Mérieux NutriSciences | Blonk
+AO-00025,LCA-DB-0004,ORG-0003,owner,ADEME
+AO-00026,LCA-DB-0004,ORG-0004,operator/maintainer,ADEME and programme partners
+AO-00027,LCA-DB-0005,ORG-0325,owner,Swiss Federal Office for the Environment (FOEN/BAFU)
+AO-00028,LCA-DB-0005,ORG-0143,operator/maintainer,FOEN/BAFU and commissioned technical partners
+AO-00029,LCA-DB-0006,ORG-0037,owner,Carbon Minds
+AO-00030,LCA-DB-0006,ORG-0037,operator/maintainer,Carbon Minds
+AO-00031,LCA-DB-0007,ORG-0134,owner,EXIOBASE consortium
+AO-00032,LCA-DB-0007,ORG-0135,operator/maintainer,EXIOBASE research consortium; current releases distributed on Zenodo
+AO-00033,LCA-DB-0008,ORG-0258,owner,National Institute of Advanced Industrial Science and Technology (AIST)
+AO-00034,LCA-DB-0008,ORG-0007,operator/maintainer,AIST-IDEA programme and AIST Solutions licensing service
+AO-00035,LCA-DB-0009,ORG-0100,owner,ENEA
+AO-00036,LCA-DB-0009,ORG-0101,operator/maintainer,ENEA; ARCADIA and successor MASE–ENEA programme
+AO-00037,LCA-DB-0010,ORG-0362,owner,US Environmental Protection Agency
+AO-00038,LCA-DB-0010,ORG-0365,operator/maintainer,US EPA research team
+AO-00039,LCA-STD-0002,ORG-0211,owner,International Organization for Standardization
+AO-00040,LCA-STD-0002,ORG-0218,operator/maintainer,ISO/TC 207/SC 5
+AO-00041,LCA-STD-0003,ORG-0211,owner,International Organization for Standardization
+AO-00042,LCA-STD-0003,ORG-0219,operator/maintainer,ISO/TC 207/SC 7
+AO-00043,LCA-MTH-0002,ORG-0086,owner,Dutch National Institute for Public Health and the Environment (RIVM) and method authors
+AO-00044,LCA-MTH-0002,ORG-0300,operator/maintainer,RIVM public distribution
+AO-00045,LCA-MTH-0003,ORG-0119,owner,European Commission
+AO-00046,LCA-MTH-0003,ORG-0083,operator/maintainer,Directorate-General for Environment and Joint Research Centre
+AO-00047,LCA-MTH-0004,ORG-0119,owner,European Commission
+AO-00048,LCA-MTH-0004,ORG-0084,operator/maintainer,Directorate-General for Research and Innovation and Joint Research Centre
+AO-00049,LCA-DB-0011,ORG-0317,owner,Sphera
+AO-00050,LCA-DB-0011,ORG-0317,operator/maintainer,Sphera
+AO-00051,LCA-DB-0012,ORG-0338,owner,TianGong community
+AO-00052,LCA-DB-0012,ORG-0339,operator/maintainer,TianGong LCA Data Working Group and platform community
+AO-00053,LCA-PLT-0001,ORG-0338,owner,TianGong community
+AO-00054,LCA-PLT-0001,ORG-0341,operator/maintainer,TianGong platform developers
+AO-00055,LCA-SYS-0001,ORG-0342,owner,TianGong project / Carbon Footprint Industry Alliance ecosystem
+AO-00056,LCA-SYS-0001,ORG-0343,operator/maintainer,TIDAS development community
+AO-00057,LCA-NOM-0002,ORG-0025,owner,BONSAI community
+AO-00058,LCA-NOM-0002,ORG-0027,operator/maintainer,BONSAI network/contributors
+AO-00059,LCA-NOM-0003,ORG-0290,owner,Project author/community repository
+AO-00060,LCA-NOM-0003,ORG-0344,operator/maintainer,tishchungoora/lca-ontology repository maintainer
+AO-00061,LCA-NOM-0004,ORG-0234,owner,LCA to BIM Workflow research project
+AO-00062,LCA-NOM-0004,ORG-0303,operator/maintainer,RWTH design-computation project contributors
+AO-00063,LCA-DB-0013,ORG-0003,owner,ADEME
+AO-00064,LCA-DB-0013,ORG-0003,operator/maintainer,ADEME
+AO-00065,LCA-NOM-0005,ORG-0144,owner,Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions
+AO-00066,LCA-NOM-0005,ORG-0137,operator/maintainer,FAO-coordinated expert and institutional community
+AO-00067,LCA-MTH-0005,ORG-0383,owner,WULCA working group / UNEP-SETAC Life Cycle Initiative community
+AO-00068,LCA-MTH-0005,ORG-0382,operator/maintainer,WULCA
+AO-00069,LCA-DB-0014,ORG-0016,owner,Australian Life Cycle Assessment Society (ALCAS)
+AO-00070,LCA-DB-0014,ORG-0015,operator/maintainer,AusLCI Database Committee and sector partners
+AO-00071,LCA-DB-0015,ORG-0160,owner,"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)"
+AO-00072,LCA-DB-0015,ORG-0021,operator/maintainer,BBSR and commissioned technical operators
+AO-00073,LCA-NET-0003,ORG-0090,owner,ECO Platform AISBL
+AO-00074,LCA-NET-0003,ORG-0092,operator/maintainer,ECO Platform members and secretariat
+AO-00075,LCA-REP-0003,ORG-0090,owner,ECO Platform AISBL
+AO-00076,LCA-REP-0003,ORG-0091,operator/maintainer,ECO Platform and connected EPD programme-operator nodes
+AO-00077,LCA-FMT-0003,ORG-0024,owner,BMWSB/BBSR and InData/ECO Platform technical community
+AO-00078,LCA-FMT-0003,ORG-0022,operator/maintainer,BBSR-linked technical maintainers and data-network implementers
+AO-00079,LCA-DB-0016,ORG-0120,owner,European Commission Joint Research Centre
+AO-00080,LCA-DB-0016,ORG-0128,operator/maintainer,European Platform on Life Cycle Assessment
+AO-00081,LCA-MTH-0006,ORG-0120,owner,European Commission Joint Research Centre
+AO-00082,LCA-MTH-0006,ORG-0130,operator/maintainer,European Platform on Life Cycle Assessment / JRC
+AO-00083,LCA-STD-0004,ORG-0124,owner,European Committee for Standardization (CEN)
+AO-00084,LCA-STD-0004,ORG-0047,operator/maintainer,CEN/TC 350 and national standards bodies
+AO-00085,LCA-FMT-0004,ORG-0172,owner,GreenDelta
+AO-00086,LCA-FMT-0004,ORG-0175,operator/maintainer,GreenDelta openLCA development team
+AO-00087,LCA-STD-0005,ORG-0212,owner,International Organization for Standardization (ISO)
+AO-00088,LCA-STD-0005,ORG-0217,operator/maintainer,ISO/TC 207/SC 3
+AO-00089,LCA-STD-0006,ORG-0212,owner,International Organization for Standardization (ISO)
+AO-00090,LCA-STD-0006,ORG-0218,operator/maintainer,ISO/TC 207/SC 5
+AO-00091,LCA-MTH-0007,ORG-0357,owner,United States Environmental Protection Agency
+AO-00092,LCA-MTH-0007,ORG-0364,operator/maintainer,US EPA research programme
+AO-00093,LCA-DB-0017,ORG-0169,owner,Global Feed LCA Institute
+AO-00094,LCA-DB-0017,ORG-0161,operator/maintainer,GFLI Secretariat and data-project partners
+AO-00095,LCA-MTH-0008,ORG-0169,owner,Global Feed LCA Institute
+AO-00096,LCA-MTH-0008,ORG-0162,operator/maintainer,GFLI technical and methodology groups
+AO-00097,LCA-PLT-0002,ORG-0360,owner,University of Oxford / HESTIA project
+AO-00098,LCA-PLT-0002,ORG-0181,operator/maintainer,HESTIA team and contributor community
+AO-00099,LCA-FMT-0005,ORG-0180,owner,HESTIA project / University of Oxford
+AO-00100,LCA-FMT-0005,ORG-0182,operator/maintainer,HESTIA technical team
+AO-00101,LCA-NOM-0006,ORG-0145,owner,FoodOn open inter-agency community
+AO-00102,LCA-NOM-0006,ORG-0146,operator/maintainer,FoodOntology contributors / OBO Foundry
+AO-00103,LCA-NET-0004,ORG-0376,owner,World Resources Institute and World Business Council for Sustainable Development
+AO-00104,LCA-NET-0004,ORG-0164,operator/maintainer,GHG Protocol secretariat and multi-stakeholder governance bodies
+AO-00105,LCA-MTH-0009,ORG-0376,owner,World Resources Institute and World Business Council for Sustainable Development
+AO-00106,LCA-MTH-0009,ORG-0163,operator/maintainer,GHG Protocol
+AO-00107,LCA-MTH-0010,ORG-0195,owner,IMPACT World+ scientific consortium
+AO-00108,LCA-MTH-0010,ORG-0194,operator/maintainer,IMPACT World+ method development team
+AO-00109,LCA-QA-0001,ORG-0098,owner,ecoinvent Association
+AO-00110,LCA-QA-0001,ORG-0098,operator/maintainer,ecoinvent Association
+AO-00111,LCA-FMT-0006,ORG-0097,owner,ecoinvent / former EcoSpold development community
+AO-00112,LCA-FMT-0006,ORG-0184,operator/maintainer,Historical format; no active maintenance identified
+AO-00113,LCA-DB-0018,ORG-0294,owner,Quantis
+AO-00114,LCA-DB-0018,ORG-0296,operator/maintainer,Quantis and WFLDB partners
+AO-00115,LCA-DB-0019,ORG-0257,owner,National Institute for Public Health and the Environment (RIVM)
+AO-00116,LCA-DB-0019,ORG-0301,operator/maintainer,RIVM; LCI update performed by Mérieux NutriSciences | Blonk
+AO-00117,LCA-DB-0020,ORG-0159,owner,"German Environment Agency (Umweltbundesamt, UBA)"
+AO-00118,LCA-DB-0020,ORG-0158,operator/maintainer,German Environment Agency
+AO-00119,LCA-DB-0021,ORG-0198,owner,INIES governance partners under French public convention
+AO-00120,LCA-DB-0021,ORG-0008,operator/maintainer,Alliance HQE-GBC and INIES governance bodies
+AO-00121,LCA-DB-0022,ORG-0283,owner,Plastics Europe
+AO-00122,LCA-DB-0022,ORG-0284,operator/maintainer,Plastics Europe and relevant sector groups
+AO-00123,LCA-DB-0023,ORG-0377,owner,World Steel Association
+AO-00124,LCA-DB-0023,ORG-0379,operator/maintainer,worldsteel
+AO-00125,LCA-FMT-0007,ORG-0269,owner,openEPD Forum / Building Transparency ecosystem
+AO-00126,LCA-FMT-0007,ORG-0268,operator/maintainer,openEPD contributors and reference implementers
+AO-00127,LCA-FMT-0008,ORG-0375,owner,World Business Council for Sustainable Development
+AO-00128,LCA-FMT-0008,ORG-0272,operator/maintainer,Partnership for Carbon Transparency (PACT)
+AO-00129,LCA-STD-0007,ORG-0211,owner,International Organization for Standardization
+AO-00130,LCA-STD-0007,ORG-0218,operator/maintainer,ISO/TC 207/SC 5
+AO-00131,LCA-MTH-0011,ORG-0241,owner,"Leiden University, Institute of Environmental Sciences (CML)"
+AO-00132,LCA-MTH-0011,ORG-0069,operator/maintainer,CML-IE; public resources are now largely archival
+AO-00133,LCA-MTH-0012,ORG-0355,owner,UNEP-hosted Life Cycle Initiative
+AO-00134,LCA-MTH-0012,ORG-0244,operator/maintainer,Life Cycle Initiative GLAM stewardship community
+AO-00135,LCA-QA-0002,ORG-0357,owner,United States Environmental Protection Agency
+AO-00136,LCA-QA-0002,ORG-0363,operator/maintainer,US EPA Office of Research and Development
+AO-00137,LCA-QA-0003,ORG-0119,owner,European Commission
+AO-00138,LCA-QA-0003,ORG-0122,operator/maintainer,European Commission Joint Research Centre and Environmental Footprint governance
+AO-00139,LCA-NET-0005,ORG-0356,owner,United Nations Environment Programme
+AO-00140,LCA-NET-0005,ORG-0246,operator/maintainer,Life Cycle Initiative secretariat and steering governance
+AO-00141,LCA-FMT-0009,ORG-0237,owner,LCAx open-source project / OCNI-DTU contributors
+AO-00142,LCA-FMT-0009,ORG-0236,operator/maintainer,LCAx contributors
+AO-00143,LCA-DB-0024,ORG-0054,owner,CIRAIG / project contributors
+AO-00144,LCA-DB-0024,ORG-0055,operator/maintainer,CIRAIG OpenIO-Canada contributors
+AO-00145,LCA-DB-0025,ORG-0172,owner,GreenDelta
+AO-00146,LCA-DB-0025,ORG-0172,operator/maintainer,GreenDelta
+AO-00147,LCA-DB-0026,ORG-0261,owner,New Earth / Social Hotspots Database provider
+AO-00148,LCA-DB-0026,ORG-0315,operator/maintainer,Social Hotspots Database team
+AO-00149,LCA-MTH-0013,ORG-0375,owner,World Business Council for Sustainable Development
+AO-00150,LCA-MTH-0013,ORG-0271,operator/maintainer,Partnership for Carbon Transparency
+AO-00151,LCA-PLT-0003,ORG-0028,owner,BONSAI not-for-profit association
+AO-00152,LCA-PLT-0003,ORG-0029,operator/maintainer,"BONSAI secretariat, board and contributor network"
+AO-00153,LCA-DB-0027,ORG-0028,owner,BONSAI not-for-profit association
+AO-00154,LCA-DB-0027,ORG-0026,operator/maintainer,BONSAI data contributors and projects
+AO-00155,LCA-MTH-0014,ORG-0044,owner,Catena-X Automotive Network e.V.
+AO-00156,LCA-MTH-0014,ORG-0045,operator/maintainer,Catena-X PCF working groups
+AO-00157,LCA-QA-0004,ORG-0044,owner,Catena-X Automotive Network e.V.
+AO-00158,LCA-QA-0004,ORG-0045,operator/maintainer,Catena-X PCF working groups
+AO-00159,LCA-FMT-0010,ORG-0044,owner,Catena-X Automotive Network e.V.
+AO-00160,LCA-FMT-0010,ORG-0046,operator/maintainer,Catena-X PCF/data-model working groups
+AO-00161,LCA-MTH-0015,ORG-0345,owner,Together for Sustainability
+AO-00162,LCA-MTH-0015,ORG-0333,operator/maintainer,TfS Scope 3 GHG programme
+AO-00163,LCA-FMT-0011,ORG-0345,owner,Together for Sustainability
+AO-00164,LCA-FMT-0011,ORG-0333,operator/maintainer,TfS Scope 3 GHG programme
+AO-00165,LCA-QA-0005,ORG-0345,owner,Together for Sustainability
+AO-00166,LCA-QA-0005,ORG-0333,operator/maintainer,TfS Scope 3 GHG programme
+AO-00167,LCA-NET-0006,ORG-0282,owner,Plastic Footprint Network convened by EA – Earth Action
+AO-00168,LCA-NET-0006,ORG-0276,operator/maintainer,PFN secretariat and member/collaborator community
+AO-00169,LCA-MTH-0016,ORG-0281,owner,Plastic Footprint Network
+AO-00170,LCA-MTH-0016,ORG-0277,operator/maintainer,PFN technical community convened by EA – Earth Action
+AO-00171,LCA-MTH-0017,ORG-0205,owner,Intergovernmental Panel on Climate Change
+AO-00172,LCA-MTH-0017,ORG-0215,operator/maintainer,IPCC Working Group I assessment process
+AO-00173,LCA-DB-0028,ORG-0119,owner,European Commission
+AO-00174,LCA-DB-0028,ORG-0121,operator/maintainer,European Commission Joint Research Centre and Directorate-General for Environment
+AO-00175,LCA-REP-0004,ORG-0104,owner,EPD International AB
+AO-00176,LCA-REP-0004,ORG-0209,operator/maintainer,International EPD System
+AO-00177,LCA-DB-0029,ORG-0058,owner,Circular Ecology
+AO-00178,LCA-DB-0029,ORG-0058,operator/maintainer,Circular Ecology
+AO-00179,LCA-DB-0030,ORG-0111,owner,ESU-services Ltd.
+AO-00180,LCA-DB-0030,ORG-0111,operator/maintainer,ESU-services Ltd.
+AO-00181,LCA-DB-0031,ORG-0223,owner,"Kanso, Inc. / Carbonfact"
+AO-00182,LCA-DB-0031,ORG-0039,operator/maintainer,Carbonfact science team
+AO-00183,LCA-DB-0032,ORG-0126,owner,"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)"
+AO-00184,LCA-DB-0032,ORG-0048,operator/maintainer,CEPE LCI project
+AO-00185,LCA-DB-0033,ORG-0373,owner,Watershed Technology
+AO-00186,LCA-DB-0033,ORG-0373,operator/maintainer,Watershed Technology
+AO-00187,LCA-DB-0034,ORG-0123,owner,European Commission-funded NEEDS project consortium
+AO-00188,LCA-DB-0034,ORG-0239,operator/maintainer,Legacy project data; openLCA conversion maintained historically by GreenDelta
+AO-00189,LCA-REP-0005,ORG-0331,owner,Textile Exchange
+AO-00190,LCA-REP-0005,ORG-0332,operator/maintainer,Textile Exchange in partnership with SCS Global Services
+AO-00191,LCA-FMT-0012,ORG-0197,owner,Industrial Digital Twin Association
+AO-00192,LCA-FMT-0012,ORG-0189,operator/maintainer,IDTA office and admin-shell-io repository
+AO-00193,LCA-PLT-0004,ORG-0060,owner,CIRPASS-2 and partner initiatives
+AO-00194,LCA-PLT-0004,ORG-0369,operator/maintainer,Vocabulary Hub / Semantic Treehouse maintainers
+AO-00195,LCA-NOM-0008,ORG-0061,owner,CIRPASS-2 European project
+AO-00196,LCA-NOM-0008,ORG-0114,operator/maintainer,EUDPP ontology contributors via DPP Vocabulary Hub
+AO-00197,LCA-PLT-0005,ORG-0166,owner,Global Building Data Initiative under GLOBE
+AO-00198,LCA-PLT-0005,ORG-0156,operator/maintainer,GBDI consortium
+AO-00199,LCA-FMT-0013,ORG-0165,owner,Global Building Data Initiative
+AO-00200,LCA-FMT-0013,ORG-0157,operator/maintainer,GBDI technical community
+AO-00201,LCA-DB-0035,ORG-0019,owner,BATTERS
+AO-00202,LCA-DB-0035,ORG-0020,operator/maintainer,BATTERS / WELOOP experts
+AO-00203,LCA-DB-0036,ORG-0023,owner,BioEnergieDat project consortium
+AO-00204,LCA-DB-0036,ORG-0240,operator/maintainer,Legacy project portal; dataset owners include KIT and partners
+AO-00205,LCA-DB-0037,ORG-0324,owner,Swedish Life Cycle Center
+AO-00206,LCA-DB-0037,ORG-0050,operator/maintainer,"Chalmers University of Technology, Environmental Systems Analysis"
+AO-00207,LCA-DB-0038,ORG-0106,owner,ERASM
+AO-00208,LCA-DB-0038,ORG-0107,operator/maintainer,ERASM member-company collaboration
+AO-00209,LCA-DB-0039,ORG-0238,owner,LCIE Bureau Veritas
+AO-00210,LCA-DB-0039,ORG-0032,operator/maintainer,Bureau Veritas CODDE
+AO-00211,LCA-DB-0040,ORG-0322,owner,Sustainable Impact Metrics Foundation / Delft University of Technology lineage
+AO-00212,LCA-DB-0040,ORG-0094,operator/maintainer,eco-costs/value maintainers
+AO-00213,LCA-DB-0041,ORG-0056,owner,CIRAIG Sustainable Consumption Chair
+AO-00214,LCA-DB-0041,ORG-0053,operator/maintainer,CIRAIG / POLARIIS+ collaboration
+AO-00215,LCA-DB-0042,ORG-0337,owner,The Evah Institute / Ecquate Pty Ltd
+AO-00216,LCA-DB-0042,ORG-0131,operator/maintainer,Evah Associates
+AO-00217,LCA-DB-0043,ORG-0115,owner,EuGeos / Chris Foster
+AO-00218,LCA-DB-0043,ORG-0085,operator/maintainer,Distributed historically through openLCA Nexus
+AO-00219,LCA-NOM-0007,ORG-0221,owner,IUPAC and InChI Trust
+AO-00220,LCA-NOM-0007,ORG-0196,operator/maintainer,InChI Trust
+AO-00221,LCA-NOM-0009,ORG-0366,owner,US National Library of Medicine / National Center for Biotechnology Information
+AO-00222,LCA-NOM-0009,ORG-0292,operator/maintainer,PubChem
+AO-00223,LCA-NOM-0010,ORG-0075,owner,Daylight Chemical Information Systems (original specification); multiple later dialects
+AO-00224,LCA-NOM-0010,ORG-0076,operator/maintainer,Daylight for original specification; distributed implementer community
+AO-00225,LCA-NET-0007,ORG-0064,owner,Climate Farm Demo consortium
+AO-00226,LCA-NET-0007,ORG-0185,operator/maintainer,Horizon Europe consortium
+AO-00227,LCA-REP-0006,ORG-0072,owner,Cornerstone Sustainability Data Initiative
+AO-00228,LCA-REP-0006,ORG-0108,operator/maintainer,"ERG, Stanford and Watershed-supported initiative"
+AO-00229,LCA-DB-0044,ORG-0049,owner,Chalmers University of Technology-led DeDuCE team
+AO-00230,LCA-DB-0044,ORG-0079,operator/maintainer,DeDuCE research team and partners
+AO-00231,LCA-NET-0008,ORG-0082,owner,Départ de Sentier association
+AO-00232,LCA-NET-0008,ORG-0077,operator/maintainer,DdS board and staff
+AO-00233,LCA-PLT-0006,ORG-0081,owner,Départ de Sentier
+AO-00234,LCA-PLT-0006,ORG-0078,operator/maintainer,DdS platform and data engineering team
+AO-00235,LCA-DB-0045,ORG-0147,owner,FOODTURE Horizon Europe consortium
+AO-00236,LCA-DB-0045,ORG-0381,operator/maintainer,WP1 led by ADEME within the FOODTURE consortium
+AO-00237,LCA-NET-0009,ORG-0149,owner,Forum for Sustainability through Life Cycle Innovation e.V.
+AO-00238,LCA-NET-0009,ORG-0152,operator/maintainer,FSLCI secretariat and member community
+AO-00239,LCA-REP-0007,ORG-0207,owner,International CCU Assessment Harmonization Group
+AO-00240,LCA-REP-0007,ORG-0168,operator/maintainer,"Global CO2 Initiative, University of Michigan"
+AO-00241,LCA-MTH-0018,ORG-0150,owner,Framework authors
+AO-00242,LCA-MTH-0018,ORG-0305,operator/maintainer,Scientific publication and author community
+AO-00243,LCA-NET-0010,ORG-0176,owner,GreenGrocer consortium
+AO-00244,LCA-NET-0010,ORG-0002,operator/maintainer,22-partner consortium
+AO-00245,LCA-MTH-0019,ORG-0205,owner,Intergovernmental Panel on Climate Change
+AO-00246,LCA-MTH-0019,ORG-0214,operator/maintainer,IPCC Task Force on National Greenhouse Gas Inventories
+AO-00247,LCA-NET-0011,ORG-0127,owner,European LIFE programme consortium
+AO-00248,LCA-NET-0011,ORG-0005,operator/maintainer,ADEME-led nine-partner consortium
+AO-00249,LCA-MTH-0020,ORG-0358,owner,University of Kassel authors / BBSR-funded project
+AO-00250,LCA-MTH-0020,ORG-0224,operator/maintainer,Kassel Institute for Sustainability data repository
+AO-00251,LCA-NOM-0011,ORG-0266,owner,Ontology-pattern authors
+AO-00252,LCA-NOM-0011,ORG-0263,operator/maintainer,No current maintainer publicly confirmed
+AO-00253,LCA-REP-0008,ORG-0267,owner,Open Sustainable Technology community
+AO-00254,LCA-REP-0008,ORG-0291,operator/maintainer,protontypes/open-sustainable-technology maintainers and contributors
+AO-00255,LCA-NOM-0012,ORG-0200,owner,INRAE
+AO-00256,LCA-NOM-0012,ORG-0201,operator/maintainer,INRAE ontology team and Recherche Data Gouv/AgroPortal
+AO-00257,LCA-REP-0009,ORG-0288,owner,product impact team
+AO-00258,LCA-REP-0009,ORG-0289,operator/maintainer,productimpact.info
+AO-00259,LCA-DB-0046,ORG-0307,owner,"Shanghai HiQ Smart Data Co., Ltd."
+AO-00260,LCA-DB-0046,ORG-0183,operator/maintainer,HiQ Data
+AO-00261,LCA-DB-0047,ORG-0255,owner,Minviro Ltd
+AO-00262,LCA-DB-0047,ORG-0254,operator/maintainer,Minviro
+AO-00263,LCA-DB-0048,ORG-0372,owner,"WAP Sustainability, LLC"
+AO-00264,LCA-DB-0048,ORG-0371,operator/maintainer,WAP Sustainability
+AO-00265,LCA-REP-0010,ORG-0103,owner,EPD Australasia Ltd
+AO-00266,LCA-REP-0010,ORG-0102,operator/maintainer,EPD Australasia
+AO-00267,LCA-DB-0049,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00268,LCA-DB-0049,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00269,LCA-DB-0050,ORG-0118,owner,European Aluminium
+AO-00270,LCA-DB-0050,ORG-0118,operator/maintainer,European Aluminium
+AO-00271,LCA-DB-0051,ORG-0233,owner,LCA Society of Japan / LCA Japan Forum
+AO-00272,LCA-DB-0051,ORG-0232,operator/maintainer,LCA Japan Forum
+AO-00273,LCA-DB-0052,ORG-0251,owner,MexiLCA initiative
+AO-00274,LCA-DB-0052,ORG-0204,operator/maintainer,"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators"
+AO-00275,LCA-REP-0011,ORG-0188,owner,ICMQ S.p.A. Società Benefit / EPDItaly
+AO-00276,LCA-REP-0011,ORG-0105,operator/maintainer,EPDItaly
+AO-00277,LCA-QA-0006,ORG-0105,owner,EPDItaly
+AO-00278,LCA-QA-0006,ORG-0105,operator/maintainer,EPDItaly
+AO-00279,LCA-DB-0053,ORG-0335,owner,The European Steel Association (EUROFER)
+AO-00280,LCA-DB-0053,ORG-0117,operator/maintainer,EUROFER Stainless
+AO-00281,LCA-NET-0012,ORG-0297,owner,Red Iberoamericana de Ciclo de Vida
+AO-00282,LCA-NET-0012,ORG-0298,operator/maintainer,RICV board and member networks
+AO-00283,LCA-DB-0054,ORG-0203,owner,Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)
+AO-00284,LCA-DB-0054,ORG-0187,operator/maintainer,Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos
+AO-00285,LCA-DB-0055,ORG-0192,owner,IKE Environmental Technology / Sichuan University lineage
+AO-00286,LCA-DB-0055,ORG-0193,operator/maintainer,"IKE Environmental Technology Co., Ltd."
+AO-00287,LCA-DB-0056,ORG-0253,owner,"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute"
+AO-00288,LCA-DB-0056,ORG-0229,operator/maintainer,Korea Environmental Industry & Technology Institute (KEITI)
+AO-00289,LCA-DB-0057,ORG-0260,owner,National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners
+AO-00290,LCA-DB-0057,ORG-0329,operator/maintainer,"Technology and Informatics Institute for Sustainability (TIIS), NSTDA"
+AO-00291,LCA-DB-0058,ORG-0310,owner,SIRIM Berhad
+AO-00292,LCA-DB-0058,ORG-0311,operator/maintainer,SIRIM Energy & Environment Centre
+AO-00293,LCA-DB-0059,ORG-0275,owner,Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners
+AO-00294,LCA-DB-0059,ORG-0274,operator/maintainer,Peruvian Life Cycle Network (PELCAN)
+AO-00295,LCA-DB-0060,ORG-0154,owner,Fundación InnovaCiclos
+AO-00296,LCA-DB-0060,ORG-0155,operator/maintainer,Fundación InnovaCiclos / EcoEd
+AO-00297,LCA-DB-0061,ORG-0170,owner,Government of Quebec / CIRAIG
+AO-00298,LCA-DB-0061,ORG-0057,operator/maintainer,CIRAIG with ecoinvent
+AO-00299,LCA-DB-0062,ORG-0206,owner,International Aluminium Institute
+AO-00300,LCA-DB-0062,ORG-0206,operator/maintainer,International Aluminium Institute
+AO-00301,LCA-DB-0063,ORG-0262,owner,Nickel Institute
+AO-00302,LCA-DB-0063,ORG-0262,operator/maintainer,Nickel Institute
+AO-00303,LCA-DB-0064,ORG-0213,owner,International Zinc Association
+AO-00304,LCA-DB-0064,ORG-0213,operator/maintainer,International Zinc Association
+AO-00305,LCA-DB-0065,ORG-0125,owner,European Container Glass Federation (FEVE)
+AO-00306,LCA-DB-0065,ORG-0140,operator/maintainer,FEVE
+AO-00307,LCA-DB-0066,ORG-0116,owner,Eurobitume
+AO-00308,LCA-DB-0066,ORG-0116,operator/maintainer,Eurobitume
+AO-00309,LCA-DB-0067,ORG-0071,owner,Consortium for Research on Renewable Industrial Materials (CORRIM)
+AO-00310,LCA-DB-0067,ORG-0073,operator/maintainer,CORRIM and Federal LCA Commons
+AO-00311,LCA-DB-0068,ORG-0208,owner,International Copper Association
+AO-00312,LCA-DB-0068,ORG-0208,operator/maintainer,International Copper Association
+AO-00313,LCA-DB-0069,ORG-0210,owner,International Institute for Sustainability Analysis and Strategy (IINAS)
+AO-00314,LCA-DB-0069,ORG-0190,operator/maintainer,IINAS
+AO-00315,LCA-DB-0070,ORG-0173,owner,GreenDelta GmbH
+AO-00316,LCA-DB-0070,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00317,LCA-DB-0071,ORG-0173,owner,GreenDelta GmbH
+AO-00318,LCA-DB-0071,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00319,LCA-DB-0072,ORG-0173,owner,GreenDelta GmbH
+AO-00320,LCA-DB-0072,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00321,LCA-DB-0073,ORG-0326,owner,Swiss Federal Offices
+AO-00322,LCA-DB-0073,ORG-0326,operator/maintainer,Swiss Federal Offices
+AO-00323,LCA-DB-0074,ORG-0063,owner,CLIC Innovation / ARVI research programme
+AO-00324,LCA-DB-0074,ORG-0063,operator/maintainer,CLIC Innovation / ARVI research programme
+AO-00325,LCA-DB-0075,ORG-0336,owner,The Evah Institute
+AO-00326,LCA-DB-0075,ORG-0336,operator/maintainer,The Evah Institute
+AO-00327,LCA-DB-0076,ORG-0174,owner,GreenDelta GmbH / TRIPLELINK
+AO-00328,LCA-DB-0076,ORG-0174,operator/maintainer,GreenDelta GmbH / TRIPLELINK
+AO-00329,LCA-DB-0077,ORG-0173,owner,GreenDelta GmbH
+AO-00330,LCA-DB-0077,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00331,LCA-DB-0078,ORG-0287,owner,PRIMUS project / Plastics Recyclers Europe
+AO-00332,LCA-DB-0078,ORG-0287,operator/maintainer,PRIMUS project / Plastics Recyclers Europe
+AO-00333,LCA-DB-0079,ORG-0110,owner,ESU-services and contributing authors
+AO-00334,LCA-DB-0079,ORG-0110,operator/maintainer,ESU-services and contributing authors
+AO-00335,LCA-DB-0080,ORG-0148,owner,Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)
+AO-00336,LCA-DB-0080,ORG-0148,operator/maintainer,Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)
+AO-00337,LCA-MTH-0021,ORG-0179,owner,Helmholtz Centre for Environmental Research (UFZ)
+AO-00338,LCA-MTH-0021,ORG-0179,operator/maintainer,Helmholtz Centre for Environmental Research (UFZ)
+AO-00339,LCA-MTH-0022,ORG-0230,owner,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH
+AO-00340,LCA-MTH-0022,ORG-0230,operator/maintainer,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH
+AO-00341,LCA-MTH-0023,ORG-0173,owner,GreenDelta GmbH
+AO-00342,LCA-MTH-0023,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00343,LCA-SW-0001,ORG-0286,developer,PRé Sustainability B.V.
+AO-00344,LCA-SW-0001,ORG-0308,operator/maintainer,SimaPro
+AO-00345,LCA-SW-0001,ORG-0265,owner,One Click LCA group
+AO-00346,LCA-SW-0002,ORG-0051,developer,Chris Mutel
+AO-00347,LCA-SW-0003,ORG-0173,developer,GreenDelta GmbH
+AO-00348,LCA-SW-0003,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00349,LCA-SW-0003,ORG-0173,owner,GreenDelta GmbH
+AO-00350,LCA-SW-0004,ORG-0265,developer,One Click LCA Oy Ltd
+AO-00351,LCA-SW-0004,ORG-0265,operator/maintainer,One Click LCA
+AO-00352,LCA-SW-0004,ORG-0265,owner,One Click LCA Ltd / One Click LCA group
+AO-00353,LCA-SW-0005,ORG-0318,developer,"Sphera Solutions, Inc."
+AO-00354,LCA-SW-0005,ORG-0318,operator/maintainer,Sphera
+AO-00355,LCA-SW-0005,ORG-0318,owner,Sphera
+AO-00356,LCA-SW-0006,ORG-0139,developer,Federal University of Technology – Paraná (UTFPR)
+AO-00357,LCA-SW-0007,ORG-0012,developer,Argonne National Laboratory
+AO-00358,LCA-SW-0007,ORG-0012,operator/maintainer,Argonne National Laboratory
+AO-00359,LCA-SW-0007,ORG-0349,owner,United States Department of Energy
+AO-00360,LCA-SW-0008,ORG-0359,developer,University of Oxford
+AO-00361,LCA-SW-0008,ORG-0359,owner,HESTIA project / University of Oxford
+AO-00362,LCA-SW-0009,ORG-0095,developer,Ecochain Technologies B.V.
+AO-00363,LCA-SW-0009,ORG-0095,operator/maintainer,Ecochain Technologies
+AO-00364,LCA-SW-0009,ORG-0095,owner,Ecochain Technologies
+AO-00365,LCA-SW-0010,ORG-0228,developer,Kleis Technology
+AO-00366,LCA-SW-0010,ORG-0228,operator/maintainer,LCA as Code team
+AO-00367,LCA-SW-0011,ORG-0052,developer,Christian Kongsgaard
+AO-00368,LCA-SW-0012,ORG-0351,developer,U.S. Environmental Protection Agency
+AO-00369,LCA-SW-0012,ORG-0138,operator/maintainer,FLCAC-admin repository contributors
+AO-00370,LCA-SW-0012,ORG-0351,owner,United States Environmental Protection Agency / Federal LCA Commons ecosystem
+AO-00371,LCA-SW-0013,ORG-0264,developer,Oliver Kusche Research & Consulting (OKWorx)
+AO-00372,LCA-SW-0013,ORG-0264,operator/maintainer,soda4LCA maintainers / OKWorx
+AO-00373,LCA-SW-0014,ORG-0273,developer,Paul Scherrer Institute
+AO-00374,LCA-SW-0014,ORG-0285,developer,Potsdam Institute for Climate Impact Research
+AO-00375,LCA-SW-0014,ORG-0273,operator/maintainer,premise contributors
+AO-00376,LCA-SW-0015,ORG-0001,developer,2050 Materials
+AO-00377,LCA-SW-0016,ORG-0068,developer,Climatiq GmbH
+AO-00378,LCA-SW-0017,ORG-0378,operator/maintainer,Cascale; exclusively delivered on Worldly
+AO-00379,LCA-SW-0017,ORG-0043,owner,Cascale
+AO-00380,LCA-SW-0018,ORG-0249,developer,Makersite GmbH
+AO-00381,LCA-SW-0018,ORG-0249,operator/maintainer,Makersite GmbH
+AO-00382,LCA-SW-0018,ORG-0249,owner,Makersite GmbH
+AO-00383,LCA-SW-0019,ORG-0088,developer,Eaternity
+AO-00384,LCA-SW-0019,ORG-0088,operator/maintainer,Eaternity
+AO-00385,LCA-SW-0020,ORG-0087,developer,EarthShift Global
+AO-00386,LCA-SW-0020,ORG-0087,operator/maintainer,EarthShift Global
+AO-00387,LCA-SW-0021,ORG-0087,developer,EarthShift Global
+AO-00388,LCA-SW-0021,ORG-0087,operator/maintainer,EarthShift Global
+AO-00389,LCA-SW-0022,ORG-0248,developer,Lifecycles
+AO-00390,LCA-SW-0022,ORG-0248,operator/maintainer,PIQET service team
+AO-00391,LCA-SW-0022,ORG-0279,owner,The PIQET Consortium / Lifecycles and partners
+AO-00392,LCA-SW-0025,ORG-0178,developer,"Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd."
+AO-00393,LCA-SW-0025,ORG-0178,owner,Hangzhou Qinglvlan Environmental Digital Technology
+AO-00394,LCA-SW-0026,ORG-0226,developer,Kimel Tech SpA
+AO-00395,LCA-SW-0026,ORG-0226,owner,Kimel Tech SpA
+AO-00396,LCA-SW-0027,ORG-0231,developer,LCA CARE project consortium
+AO-00397,LCA-SW-0027,ORG-0231,owner,LCA CARE project consortium
+AO-00398,LCA-SW-0028,ORG-0088,developer,Eaternity
+AO-00399,LCA-SW-0028,ORG-0088,operator/maintainer,Eaternity open-source team
+AO-00400,LCA-SW-0029,ORG-0006,developer,Advanced Manufacturing Research Centre (AMRC)
+AO-00401,LCA-SW-0029,ORG-0361,developer,University of Sheffield
+AO-00402,LCA-SW-0030,ORG-0370,developer,Walloon Agricultural Research Centre (CRA-W)
+AO-00403,LCA-SW-0030,ORG-0370,operator/maintainer,CRA-W
+AO-00404,LCA-SW-0031,ORG-0302,developer,RWTH Aachen University
+AO-00405,LCA-SW-0032,ORG-0320,developer,Studio Gear Up
+AO-00406,LCA-SW-0032,ORG-0171,operator/maintainer,Green Gold Label Foundation with studio Gear Up
+AO-00407,LCA-SW-0032,ORG-0171,owner,Green Gold Label Foundation
+AO-00408,LCA-SW-0033,ORG-0242,developer,Leonardo Ferhati
+AO-00409,LCA-SW-0033,ORG-0242,owner,Leonardo Ferhati
+AO-00410,LCA-SW-0035,ORG-0255,developer,Minviro Ltd
+AO-00411,LCA-SW-0035,ORG-0255,operator/maintainer,Minviro
+AO-00412,LCA-SW-0035,ORG-0255,owner,Minviro Ltd
+AO-00413,LCA-SW-0036,ORG-0372,developer,"WAP Sustainability, LLC"
+AO-00414,LCA-SW-0036,ORG-0372,operator/maintainer,WAP Sustainability
+AO-00415,LCA-SW-0036,ORG-0372,owner,"WAP Sustainability, LLC"
+AO-00416,LCA-SW-0037,ORG-0372,developer,"WAP Sustainability, LLC"
+AO-00417,LCA-SW-0037,ORG-0372,operator/maintainer,WAP Sustainability
+AO-00418,LCA-SW-0037,ORG-0372,owner,"WAP Sustainability, LLC"
+AO-00419,LCA-SW-0038,ORG-0216,developer,iPoint-systems GmbH
+AO-00420,LCA-SW-0038,ORG-0216,operator/maintainer,iPoint
+AO-00421,LCA-SW-0039,ORG-0014,developer,Athena Sustainable Materials Institute
+AO-00422,LCA-SW-0039,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00423,LCA-SW-0039,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00424,LCA-SW-0040,ORG-0014,developer,Athena Sustainable Materials Institute
+AO-00425,LCA-SW-0040,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00426,LCA-SW-0040,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00427,LCA-SW-0041,ORG-0014,developer,Athena Sustainable Materials Institute
+AO-00428,LCA-SW-0041,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00429,LCA-SW-0041,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00430,LCA-SW-0042,ORG-0118,developer,European Aluminium
+AO-00431,LCA-SW-0042,ORG-0206,developer,International Aluminium Institute
+AO-00432,LCA-SW-0042,ORG-0118,owner,International Aluminium Institute and European Aluminium
+AO-00433,LCA-SW-0042,ORG-0206,owner,International Aluminium Institute and European Aluminium
+AO-00434,LCA-SW-0043,ORG-0340,developer,"TianGong LCA research team, Tsinghua University"
+AO-00435,LCA-SW-0043,ORG-0340,operator/maintainer,TIDAS Tools maintainers and public contributors
+AO-00436,LCA-SW-0043,ORG-0348,owner,TianGong LCA / TIDAS open-source project
+AO-00437,LCA-SW-0044,ORG-0074,developer,Dassault Systèmes
+AO-00438,LCA-SW-0045,ORG-0136,developer,Altruistiq
+AO-00439,LCA-SW-0046,ORG-0013,developer,ASUENE
+AO-00440,LCA-SW-0047,ORG-0013,developer,ASUENE Inc.
+AO-00441,LCA-SW-0048,ORG-0327,developer,Taiwan Web Service Corporation
+AO-00442,LCA-SW-0049,ORG-0017,developer,Atma.io
+AO-00443,LCA-SW-0050,ORG-0018,developer,BACUTI
+AO-00444,LCA-SW-0051,ORG-0030,developer,"Booost, Inc."
+AO-00445,LCA-SW-0052,ORG-0034,developer,carbmee
+AO-00446,LCA-SW-0053,ORG-0035,developer,Carboledger
+AO-00447,LCA-SW-0054,ORG-0036,developer,Carbon Maps
+AO-00448,LCA-SW-0055,ORG-0042,developer,Carbon Trail
+AO-00449,LCA-SW-0056,ORG-0059,developer,CircularTree
+AO-00450,LCA-SW-0057,ORG-0038,developer,CarbonBright AI
+AO-00451,LCA-SW-0058,ORG-0323,developer,Sustech
+AO-00452,LCA-SW-0059,ORG-0319,developer,Startrust
+AO-00453,LCA-SW-0060,ORG-0065,developer,ClimateCamp
+AO-00454,LCA-SW-0061,ORG-0067,developer,ClimatePoint
+AO-00455,LCA-SW-0062,ORG-0252,developer,Microsoft
+AO-00456,LCA-SW-0063,ORG-0070,developer,CO2 AI
+AO-00457,LCA-SW-0064,ORG-0354,developer,Uhuru Corporation
+AO-00458,LCA-SW-0065,ORG-0080,developer,Delta Electronics
+AO-00459,LCA-SW-0066,ORG-0202,developer,"Institute for Information Industry, Digital Transformation Research Institute"
+AO-00460,LCA-SW-0067,ORG-0299,developer,Riskoa Ltd
+AO-00461,LCA-SW-0068,ORG-0109,developer,ESGpedia Pte Ltd
+AO-00462,LCA-SW-0069,ORG-0132,developer,Evalue8 Sustainability
+AO-00463,LCA-SW-0070,ORG-0141,developer,Fitsol
+AO-00464,LCA-SW-0071,ORG-0374,developer,WeCarbon Technology Ltd
+AO-00465,LCA-SW-0072,ORG-0153,developer,Fujitsu Limited
+AO-00466,LCA-SW-0073,ORG-0380,developer,Wormhole Technologies Inc.
+AO-00467,LCA-SW-0074,ORG-0177,developer,GreenStitch Technologies PVT LTD
+AO-00468,LCA-SW-0075,ORG-0186,developer,HowGood
+AO-00469,LCA-SW-0076,ORG-0249,developer,Makersite GmbH
+AO-00470,LCA-SW-0077,ORG-0256,developer,Muir AI
+AO-00471,LCA-SW-0079,ORG-0270,developer,Optel Group
+AO-00472,LCA-SW-0080,ORG-0280,developer,Planet FWD
+AO-00473,LCA-SW-0081,ORG-0304,developer,SAP
+AO-00474,LCA-SW-0082,ORG-0313,developer,Sluicebox
+AO-00475,LCA-SW-0083,ORG-0314,developer,Smart Tradzt
+AO-00476,LCA-SW-0085,ORG-0330,developer,Terrascope
+AO-00477,LCA-SW-0086,ORG-0062,developer,Cirrus Nexus
+AO-00478,LCA-SW-0087,ORG-0199,developer,InnoBlock Technology Ltd
+AO-00479,LCA-SW-0089,ORG-0385,developer,YuzeData
+AO-00480,LCA-SW-0091,ORG-0316,developer,Solid Forest
+AO-00481,LCA-SW-0092,ORG-0316,developer,Solid Forest
+AO-00482,LCA-SW-0093,ORG-0010,developer,Ansys
+AO-00483,LCA-SW-0094,ORG-0011,developer,aPriori
+AO-00484,LCA-SW-0095,ORG-0133,developer,EVEA
+AO-00485,LCA-SW-0096,ORG-0220,developer,ITeC
+AO-00486,LCA-SW-0097,ORG-0041,developer,Carbonstop
+AO-00487,LCA-SW-0098,ORG-0087,developer,EarthShift Global
+AO-00488,LCA-SW-0099,ORG-0191,developer,IKE Environmental Technology
+AO-00489,LCA-SW-0100,ORG-0093,developer,Eco-Bat
+AO-00490,LCA-SW-0101,ORG-0009,developer,Altermaker
+AO-00491,LCA-SW-0102,ORG-0346,developer,Trace One
+AO-00492,LCA-SW-0103,ORG-0347,developer,Trayak
+AO-00493,LCA-SW-0104,ORG-0099,developer,ECOSPEED
+AO-00494,LCA-SW-0105,ORG-0191,developer,IKE Environmental Technology
+AO-00495,LCA-SW-0106,ORG-0295,developer,Quantis and Kleis Technology
+AO-00496,LCA-SW-0107,ORG-0113,developer,eTool
+AO-00497,LCA-SW-0108,ORG-0096,developer,Ecodigit
+AO-00498,LCA-SW-0109,ORG-0112,developer,"ETH Zurich, Chair of Ecological Systems Design"
+AO-00499,LCA-SW-0110,ORG-0235,developer,LCA.no
+AO-00500,LCA-SW-0111,ORG-0278,developer,Pilario
+AO-00501,LCA-SW-0112,ORG-0334,developer,The Circulate Initiative
+AO-00502,LCA-SW-0113,ORG-0222,developer,IZUBA énergies
+AO-00503,LCA-SW-0114,ORG-0309,developer,sinum
+AO-00504,LCA-SW-0115,ORG-0304,developer,SAP
+AO-00505,LCA-SW-0116,ORG-0306,developer,Semantum
+AO-00506,LCA-SW-0117,ORG-0293,developer,PwC / Ecobilan
+AO-00507,LCA-SW-0118,ORG-0066,developer,ClimatePartner
+AO-00508,LCA-SW-0119,ORG-0167,developer,Global Climate Changer GmbH
+AO-00509,LCA-SW-0120,ORG-0227,developer,Kiwa
+AO-00510,LCA-SW-0121,ORG-0099,developer,ECOSPEED
+AO-00511,LCA-SW-0122,ORG-0368,developer,VERSO GmbH
+AO-00512,LCA-SW-0123,ORG-0321,developer,Substain
+AO-00513,LCA-SW-0124,ORG-0040,developer,CarbonSmart
+AO-00514,LCA-SW-0125,ORG-0384,developer,"Yantai Haiyi Software Co., Ltd."
+AO-00515,LCA-SW-0126,ORG-0151,developer,FRED GmbH
+AO-00516,LCA-SW-0127,ORG-0328,developer,Tanso Technologies GmbH
+AO-00517,LCA-SW-0128,ORG-0312,developer,SKZ — Das Kunststoff-Zentrum
+AO-00518,LCA-SW-0129,ORG-0031,developer,Building Transparency
+AO-00519,LCA-SW-0130,ORG-0225,developer,KieranTimberlake
+AO-00520,LCA-SW-0130,ORG-0033,operator/maintainer,C.Scale
+AO-00521,LCA-SW-0130,ORG-0033,owner,C.Scale

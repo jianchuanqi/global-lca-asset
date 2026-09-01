@@ -1,326 +1,385 @@
-{"organization_id":"ORG-0001","preferred_label":"2050 Materials","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0002","preferred_label":"22-partner consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0003","preferred_label":"Academic author team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0004","preferred_label":"ADEME","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0005","preferred_label":"ADEME and programme partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0006","preferred_label":"ADEME-led nine-partner consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0007","preferred_label":"Agent Net Zero team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0008","preferred_label":"AIST-IDEA programme and AIST Solutions licensing service","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0009","preferred_label":"Alliance HQE-GBC and INIES governance bodies","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0010","preferred_label":"Argonne National Laboratory","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0011","preferred_label":"Athena Sustainable Materials Institute","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0012","preferred_label":"AusLCI Database Committee and sector partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0013","preferred_label":"Australian Life Cycle Assessment Society (ALCAS)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0014","preferred_label":"BATTERS","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0015","preferred_label":"BATTERS / WELOOP experts","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0016","preferred_label":"BBSR and commissioned technical operators","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0017","preferred_label":"BBSR-linked technical maintainers and data-network implementers","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0018","preferred_label":"BioEnergieDat project consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0019","preferred_label":"BMWSB/BBSR and InData/ECO Platform technical community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0020","preferred_label":"BONSAI community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0021","preferred_label":"BONSAI data contributors and projects","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0022","preferred_label":"BONSAI network/contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0023","preferred_label":"BONSAI not-for-profit association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0024","preferred_label":"BONSAI secretariat, board and contributor network","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0025","preferred_label":"Brightway developer community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0026","preferred_label":"Brightway developers","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0027","preferred_label":"Bureau Veritas CODDE","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0028","preferred_label":"Capillar","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0029","preferred_label":"Carbon Minds","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0030","preferred_label":"Carbonfact science team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0031","preferred_label":"Cascale","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0032","preferred_label":"Cascale; exclusively delivered on Worldly","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0033","preferred_label":"Catena-X Automotive Network e.V.","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0034","preferred_label":"Catena-X PCF working groups","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0035","preferred_label":"Catena-X PCF/data-model working groups","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0036","preferred_label":"CEN/TC 350 and national standards bodies","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0037","preferred_label":"CEPE LCI project","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0038","preferred_label":"Chalmers University of Technology-led DeDuCE team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0039","preferred_label":"Chalmers University of Technology, Environmental Systems Analysis","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0040","preferred_label":"CIRAIG / POLARIIS+ collaboration","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0041","preferred_label":"CIRAIG / project contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0042","preferred_label":"CIRAIG OpenIO-Canada contributors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0043","preferred_label":"CIRAIG Sustainable Consumption Chair","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0044","preferred_label":"CIRAIG with ecoinvent","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0045","preferred_label":"Circular Ecology","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0046","preferred_label":"CIRPASS-2 and partner initiatives","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0047","preferred_label":"CIRPASS-2 European project","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0048","preferred_label":"CLIC Innovation / ARVI research programme","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0049","preferred_label":"Climate Farm Demo consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0050","preferred_label":"Climatiq","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0051","preferred_label":"CML-IE; public resources are now largely archival","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0052","preferred_label":"Consortium for Research on Renewable Industrial Materials (CORRIM)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0053","preferred_label":"Cornerstone Sustainability Data Initiative","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0054","preferred_label":"CORRIM and Federal LCA Commons","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0055","preferred_label":"CRA-W","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0056","preferred_label":"Daylight Chemical Information Systems (original specification); multiple later dialects","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0057","preferred_label":"Daylight for original specification; distributed implementer community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0058","preferred_label":"DdS board and staff","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0059","preferred_label":"DdS platform and data engineering team","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0060","preferred_label":"DeDuCE research team and partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0061","preferred_label":"Départ de Sentier","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0062","preferred_label":"Départ de Sentier association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0063","preferred_label":"Directorate-General for Environment and Joint Research Centre","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0064","preferred_label":"Directorate-General for Research and Innovation and Joint Research Centre","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0065","preferred_label":"Distributed historically through openLCA Nexus","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0066","preferred_label":"Dutch National Institute for Public Health and the Environment (RIVM) and method authors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0067","preferred_label":"EarthShift Global","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0068","preferred_label":"Eaternity","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0069","preferred_label":"Eaternity open-source team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0070","preferred_label":"EC-JRC / European Platform on LCA","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0071","preferred_label":"ECO Platform AISBL","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0072","preferred_label":"ECO Platform and connected EPD programme-operator nodes","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0073","preferred_label":"ECO Platform members and secretariat","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0074","preferred_label":"eco-costs/value maintainers","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0075","preferred_label":"Ecochain Technologies","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0076","preferred_label":"ecoinvent / former EcoSpold development community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0077","preferred_label":"ecoinvent Association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0078","preferred_label":"EcoSemantic","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0079","preferred_label":"ENEA","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0080","preferred_label":"ENEA; ARCADIA and successor MASE–ENEA programme","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0081","preferred_label":"EPD Australasia","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0082","preferred_label":"EPD Australasia Ltd","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0083","preferred_label":"EPD International AB","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0084","preferred_label":"EPDItaly","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0085","preferred_label":"ERASM","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0086","preferred_label":"ERASM member-company collaboration","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0087","preferred_label":"ERG, Stanford and Watershed-supported initiative","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0088","preferred_label":"ESU-services and contributing authors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0089","preferred_label":"ESU-services Ltd.","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0090","preferred_label":"EU project 101139959 consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0091","preferred_label":"EUDPP ontology contributors via DPP Vocabulary Hub","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0092","preferred_label":"EuGeos / Chris Foster","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0093","preferred_label":"Eurobitume","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0094","preferred_label":"EUROFER Stainless","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0095","preferred_label":"European Aluminium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0096","preferred_label":"European Commission","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0097","preferred_label":"European Commission Joint Research Centre","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0098","preferred_label":"European Commission Joint Research Centre and Directorate-General for Environment","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0099","preferred_label":"European Commission Joint Research Centre and Environmental Footprint governance","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0100","preferred_label":"European Commission-funded NEEDS project consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0101","preferred_label":"European Committee for Standardization (CEN)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0102","preferred_label":"European Container Glass Federation (FEVE)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0103","preferred_label":"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0104","preferred_label":"European LIFE programme consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0105","preferred_label":"European Platform on Life Cycle Assessment","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0106","preferred_label":"European Platform on Life Cycle Assessment / EC-JRC","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0107","preferred_label":"European Platform on Life Cycle Assessment / JRC","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0108","preferred_label":"Evah Associates","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0109","preferred_label":"EXIOBASE consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0110","preferred_label":"EXIOBASE research consortium; current releases distributed on Zenodo","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0111","preferred_label":"FAO-coordinated expert and institutional community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0112","preferred_label":"FEVE","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0113","preferred_label":"FLCAC administrators; development resources hosted publicly","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0114","preferred_label":"FLCAC-admin repository contributors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0115","preferred_label":"FOEN/BAFU and commissioned technical partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0116","preferred_label":"Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0117","preferred_label":"FoodOn open inter-agency community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0118","preferred_label":"FoodOntology contributors / OBO Foundry","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0119","preferred_label":"FOODTURE Horizon Europe consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0120","preferred_label":"Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0121","preferred_label":"Forum for Sustainability through Life Cycle Innovation e.V.","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0122","preferred_label":"Framework authors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0123","preferred_label":"FSLCI secretariat and member community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0124","preferred_label":"Fundación InnovaCiclos","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0125","preferred_label":"Fundación InnovaCiclos / EcoEd","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0126","preferred_label":"GBDI consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0127","preferred_label":"GBDI technical community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0128","preferred_label":"German Environment Agency","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0129","preferred_label":"German Environment Agency (Umweltbundesamt, UBA)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0130","preferred_label":"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0131","preferred_label":"GFLI Secretariat and data-project partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0132","preferred_label":"GFLI technical and methodology groups","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0133","preferred_label":"GHG Protocol","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0134","preferred_label":"GHG Protocol secretariat and multi-stakeholder governance bodies","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0135","preferred_label":"Global Building Data Initiative","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0136","preferred_label":"Global Building Data Initiative under GLOBE","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0137","preferred_label":"Global CO2 Initiative, University of Michigan","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0138","preferred_label":"Global Feed LCA Institute","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0139","preferred_label":"Government of Quebec / CIRAIG","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0140","preferred_label":"Green Gold Label Foundation","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0141","preferred_label":"Green Gold Label Foundation with studio Gear Up","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0142","preferred_label":"GreenDelta","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0143","preferred_label":"GreenDelta GmbH","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0144","preferred_label":"GreenDelta GmbH / TRIPLELINK","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0145","preferred_label":"GreenDelta openLCA development team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0146","preferred_label":"GreenGrocer consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0147","preferred_label":"Hangzhou Qinglvlan Environmental Digital Technology","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0148","preferred_label":"Helmholtz Centre for Environmental Research (UFZ)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0149","preferred_label":"HESTIA modelling team and contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0150","preferred_label":"HESTIA project / University of Oxford","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0151","preferred_label":"HESTIA team and contributor community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0152","preferred_label":"HESTIA technical team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0153","preferred_label":"HiQ Data","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0154","preferred_label":"Historical format; no active maintenance identified","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0155","preferred_label":"Horizon Europe consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0156","preferred_label":"Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0157","preferred_label":"ICMQ S.p.A. Società Benefit / EPDItaly","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0158","preferred_label":"IDTA office and admin-shell-io repository","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0159","preferred_label":"IINAS","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0160","preferred_label":"IKE Environmental Technology / Sichuan University lineage","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0161","preferred_label":"IKE Environmental Technology Co., Ltd.","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0162","preferred_label":"IMPACT World+ method development team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0163","preferred_label":"IMPACT World+ scientific consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0164","preferred_label":"InChI Trust","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0165","preferred_label":"Independent research initiative","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0166","preferred_label":"Industrial Digital Twin Association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0167","preferred_label":"INIES governance partners under French public convention","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0168","preferred_label":"INRAE","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0169","preferred_label":"INRAE ontology team and Recherche Data Gouv/AgroPortal","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0170","preferred_label":"Institute of Technical Thermodynamics at RWTH Aachen University and collaborators","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0171","preferred_label":"Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0172","preferred_label":"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0173","preferred_label":"Intergovernmental Panel on Climate Change","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0174","preferred_label":"International Aluminium Institute","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0175","preferred_label":"International Aluminium Institute / European Aluminium","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0176","preferred_label":"International Aluminium Institute and European Aluminium","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0177","preferred_label":"International CCU Assessment Harmonization Group","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0178","preferred_label":"International Copper Association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0179","preferred_label":"International EPD System","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0180","preferred_label":"International Institute for Sustainability Analysis and Strategy (IINAS)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0181","preferred_label":"International Organization for Standardization","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0182","preferred_label":"International Organization for Standardization (ISO)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0183","preferred_label":"International Zinc Association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0184","preferred_label":"IPCC Task Force on National Greenhouse Gas Inventories","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0185","preferred_label":"IPCC Working Group I assessment process","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0186","preferred_label":"iPoint","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0187","preferred_label":"iPoint-systems gmbh / Assent group","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0188","preferred_label":"ISO/TC 207/SC 3","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0189","preferred_label":"ISO/TC 207/SC 5","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0190","preferred_label":"ISO/TC 207/SC 7","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0191","preferred_label":"IUPAC and InChI Trust","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0192","preferred_label":"Kanso, Inc. / Carbonfact","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0193","preferred_label":"Kassel Institute for Sustainability data repository","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0194","preferred_label":"Kimel Tech SpA","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0195","preferred_label":"Korea Environmental Industry & Technology Institute (KEITI)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0196","preferred_label":"Lavoisier open-source project developed at GYRO/UTFPR with IBICT support","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0197","preferred_label":"Lavoisier project maintainers","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0198","preferred_label":"LC-IMPACT project; openLCA adaptation by GreenDelta GmbH","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0199","preferred_label":"LCA as Code project/provider","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0200","preferred_label":"LCA as Code team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0201","preferred_label":"LCA CARE project consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0202","preferred_label":"LCA Japan Forum","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0203","preferred_label":"LCA Society of Japan / LCA Japan Forum","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0204","preferred_label":"LCA to BIM Workflow research project","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0205","preferred_label":"LCAx contributors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0206","preferred_label":"LCAx open-source project / OCNI-DTU contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0207","preferred_label":"LCIE Bureau Veritas","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0208","preferred_label":"Legacy project data; openLCA conversion maintained historically by GreenDelta","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0209","preferred_label":"Legacy project portal; dataset owners include KIT and partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0210","preferred_label":"Leiden University, Institute of Environmental Sciences (CML)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0211","preferred_label":"Leonardo Ferhati","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0212","preferred_label":"Life Cycle Initiative / participating nodes","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0213","preferred_label":"Life Cycle Initiative GLAM stewardship community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0214","preferred_label":"Life Cycle Initiative hosted at UNEP","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0215","preferred_label":"Life Cycle Initiative secretariat and steering governance","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0216","preferred_label":"Life Cycle Initiative with scientific partners","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0217","preferred_label":"Makersite GmbH","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0218","preferred_label":"MATILDA research team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0219","preferred_label":"Mérieux NutriSciences | Blonk","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0220","preferred_label":"MexiLCA initiative","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0221","preferred_label":"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0222","preferred_label":"Minviro","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0223","preferred_label":"Minviro Ltd","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0224","preferred_label":"National Institute for Public Health and the Environment (RIVM)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0225","preferred_label":"National Institute of Advanced Industrial Science and Technology (AIST)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0226","preferred_label":"National Laboratory of the Rockies on Federal LCA Commons","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0227","preferred_label":"National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0228","preferred_label":"New Earth / Social Hotspots Database provider","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0229","preferred_label":"Nickel Institute","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0230","preferred_label":"No current maintainer publicly confirmed","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0231","preferred_label":"One Click LCA","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0232","preferred_label":"One Click LCA group","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0233","preferred_label":"One Click LCA Ltd / One Click LCA group","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0234","preferred_label":"Ontology-pattern authors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0235","preferred_label":"Open Sustainable Technology community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0236","preferred_label":"openEPD contributors and reference implementers","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0237","preferred_label":"openEPD Forum / Building Transparency ecosystem","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0238","preferred_label":"Partnership for Carbon Transparency","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0239","preferred_label":"Partnership for Carbon Transparency (PACT)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0240","preferred_label":"Peruvian Life Cycle Network (PELCAN)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0241","preferred_label":"Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0242","preferred_label":"PFN secretariat and member/collaborator community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0243","preferred_label":"PFN technical community convened by EA – Earth Action","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0244","preferred_label":"PIQET service team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0245","preferred_label":"Plastic Footprint Network","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0246","preferred_label":"Plastic Footprint Network convened by EA – Earth Action","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0247","preferred_label":"Plastics Europe","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0248","preferred_label":"Plastics Europe and relevant sector groups","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0249","preferred_label":"premise contributors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0250","preferred_label":"premise open-source project / polca contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0251","preferred_label":"PRIMUS project / Plastics Recyclers Europe","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0252","preferred_label":"product impact team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0253","preferred_label":"productimpact.info","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0254","preferred_label":"Project author/community repository","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0255","preferred_label":"protontypes/open-sustainable-technology maintainers and contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0256","preferred_label":"PubChem","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0257","preferred_label":"Quantis","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0258","preferred_label":"Quantis and WFLDB partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0259","preferred_label":"Real-Time LCA","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0260","preferred_label":"Red Iberoamericana de Ciclo de Vida","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0261","preferred_label":"RICV board and member networks","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0262","preferred_label":"RIVM public distribution","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0263","preferred_label":"RIVM; LCI update performed by Mérieux NutriSciences | Blonk","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0264","preferred_label":"RWTH Aachen University and collaborators","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0265","preferred_label":"RWTH design-computation project contributors","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0266","preferred_label":"Scientific publication and author community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0267","preferred_label":"Shanghai HiQ Smart Data Co., Ltd.","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0268","preferred_label":"SimaPro","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0269","preferred_label":"SIRIM Berhad","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0270","preferred_label":"SIRIM Energy & Environment Centre","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0271","preferred_label":"Social Hotspots Database team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0272","preferred_label":"soda4LCA maintainers / OKWorx","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0273","preferred_label":"soda4LCA open-source project","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0274","preferred_label":"Sphera","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0275","preferred_label":"Sustainable Impact Metrics Foundation / Delft University of Technology lineage","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0276","preferred_label":"Swedish Life Cycle Center","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0277","preferred_label":"Swiss Federal Office for the Environment (FOEN/BAFU)","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0278","preferred_label":"Swiss Federal Offices","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0279","preferred_label":"Technology and Informatics Institute for Sustainability (TIIS), NSTDA","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0280","preferred_label":"Textile Exchange","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0281","preferred_label":"Textile Exchange in partnership with SCS Global Services","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0282","preferred_label":"TfS Scope 3 GHG programme","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0283","preferred_label":"The European Steel Association (EUROFER)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0284","preferred_label":"The Evah Institute","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0285","preferred_label":"The Evah Institute / Ecquate Pty Ltd","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0286","preferred_label":"The PIQET Consortium / Lifecycles and partners","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0287","preferred_label":"TianGong community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0288","preferred_label":"TianGong LCA / TIDAS open-source project","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0289","preferred_label":"TianGong LCA Data Working Group and platform community","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0290","preferred_label":"TianGong platform developers","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0291","preferred_label":"TianGong project / Carbon Footprint Industry Alliance ecosystem","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0292","preferred_label":"TIDAS development community","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0293","preferred_label":"TIDAS Tools maintainers and public contributors","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0294","preferred_label":"tishchungoora/lca-ontology repository maintainer","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0295","preferred_label":"Together for Sustainability","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0296","preferred_label":"U.S. Department of Energy / National Laboratory of the Rockies","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0297","preferred_label":"U.S. Federal LCA Commons agencies","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0298","preferred_label":"U.S. Federal LCA Commons partners","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0299","preferred_label":"UNEP-hosted Life Cycle Initiative","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0300","preferred_label":"United Nations Environment Programme","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0301","preferred_label":"United States Department of Energy","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0302","preferred_label":"United States Environmental Protection Agency","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0303","preferred_label":"United States Environmental Protection Agency / Federal LCA Commons ecosystem","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0304","preferred_label":"University of Kassel authors / BBSR-funded project","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0305","preferred_label":"University of Oxford / HESTIA project","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0306","preferred_label":"University of Sheffield and AMRC project team","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0307","preferred_label":"US Environmental Protection Agency","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0308","preferred_label":"US EPA Office of Research and Development","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0309","preferred_label":"US EPA research programme","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0310","preferred_label":"US EPA research team","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0311","preferred_label":"US National Library of Medicine / National Center for Biotechnology Information","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0312","preferred_label":"USDA National Agricultural Library with collaborating federal agencies","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0313","preferred_label":"Vocabulary Hub / Semantic Treehouse maintainers","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0314","preferred_label":"VoLCA maintainers","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0315","preferred_label":"VoLCA project","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0316","preferred_label":"Walloon Agricultural Research Centre (CRA-W)","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0317","preferred_label":"WAP Sustainability","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0318","preferred_label":"WAP Sustainability, LLC","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0319","preferred_label":"Watershed Technology","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0320","preferred_label":"World Business Council for Sustainable Development","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0321","preferred_label":"World Resources Institute and World Business Council for Sustainable Development","normalization_status":"Composite label—review before splitting"}
-{"organization_id":"ORG-0322","preferred_label":"World Steel Association","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0323","preferred_label":"worldsteel","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0324","preferred_label":"WP1 led by ADEME within the FOODTURE consortium","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0325","preferred_label":"WULCA","normalization_status":"Exact public label"}
-{"organization_id":"ORG-0326","preferred_label":"WULCA working group / UNEP-SETAC Life Cycle Initiative community","normalization_status":"Composite label—review before splitting"}
+{"organization_id":"ORG-0001","preferred_label":"2050 Materials","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0002","preferred_label":"22-partner consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0003","preferred_label":"ADEME","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0004","preferred_label":"ADEME and programme partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0005","preferred_label":"ADEME-led nine-partner consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0006","preferred_label":"Advanced Manufacturing Research Centre (AMRC)","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0007","preferred_label":"AIST-IDEA programme and AIST Solutions licensing service","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0008","preferred_label":"Alliance HQE-GBC and INIES governance bodies","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0009","preferred_label":"Altermaker","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0010","preferred_label":"Ansys","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0011","preferred_label":"aPriori","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0012","preferred_label":"Argonne National Laboratory","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0013","preferred_label":"ASUENE Inc.","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0014","preferred_label":"Athena Sustainable Materials Institute","entity_type":"Nonprofit / industry organization","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0015","preferred_label":"AusLCI Database Committee and sector partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0016","preferred_label":"Australian Life Cycle Assessment Society (ALCAS)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0017","preferred_label":"Avery Dennison Corporation","entity_type":"Company","normalization_status":"Official site identifies atma.io as an Avery Dennison digital venture and trademark"}
+{"organization_id":"ORG-0018","preferred_label":"BACUTI","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0019","preferred_label":"BATTERS","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0020","preferred_label":"BATTERS / WELOOP experts","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0021","preferred_label":"BBSR and commissioned technical operators","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0022","preferred_label":"BBSR-linked technical maintainers and data-network implementers","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0023","preferred_label":"BioEnergieDat project consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0024","preferred_label":"BMWSB/BBSR and InData/ECO Platform technical community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0025","preferred_label":"BONSAI community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0026","preferred_label":"BONSAI data contributors and projects","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0027","preferred_label":"BONSAI network/contributors","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0028","preferred_label":"BONSAI not-for-profit association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0029","preferred_label":"BONSAI secretariat, board and contributor network","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0030","preferred_label":"Booost, Inc.","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0031","preferred_label":"Building Transparency","entity_type":"Nonprofit / industry organization","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0032","preferred_label":"Bureau Veritas CODDE","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0033","preferred_label":"C.Scale","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0034","preferred_label":"carbmee","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0035","preferred_label":"Carboledger Inc.","entity_type":"Company","normalization_status":"Legal entity resolved from official terms"}
+{"organization_id":"ORG-0036","preferred_label":"Carbon Maps SAS","entity_type":"Company","normalization_status":"Legal entity resolved from official terms"}
+{"organization_id":"ORG-0037","preferred_label":"Carbon Minds","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0038","preferred_label":"CarbonBright AI","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0039","preferred_label":"Carbonfact science team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0040","preferred_label":"CarbonSmart","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0041","preferred_label":"Carbonstop","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0042","preferred_label":"CarbonTrail Tech LLP","entity_type":"Company","normalization_status":"Legal entity resolved from official privacy notice"}
+{"organization_id":"ORG-0043","preferred_label":"Cascale","entity_type":"Nonprofit / industry organization","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0044","preferred_label":"Catena-X Automotive Network e.V.","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0045","preferred_label":"Catena-X PCF working groups","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0046","preferred_label":"Catena-X PCF/data-model working groups","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0047","preferred_label":"CEN/TC 350 and national standards bodies","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0048","preferred_label":"CEPE LCI project","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0049","preferred_label":"Chalmers University of Technology-led DeDuCE team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0050","preferred_label":"Chalmers University of Technology, Environmental Systems Analysis","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0051","preferred_label":"Chris Mutel","entity_type":"Individual","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0052","preferred_label":"Christian Kongsgaard","entity_type":"Individual","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0053","preferred_label":"CIRAIG / POLARIIS+ collaboration","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0054","preferred_label":"CIRAIG / project contributors","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0055","preferred_label":"CIRAIG OpenIO-Canada contributors","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0056","preferred_label":"CIRAIG Sustainable Consumption Chair","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0057","preferred_label":"CIRAIG with ecoinvent","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0058","preferred_label":"Circular Ecology","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0059","preferred_label":"CircularTree","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0060","preferred_label":"CIRPASS-2 and partner initiatives","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0061","preferred_label":"CIRPASS-2 European project","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0062","preferred_label":"Cirrus Nexus","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0063","preferred_label":"CLIC Innovation / ARVI research programme","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0064","preferred_label":"Climate Farm Demo consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0065","preferred_label":"ClimateCamp BV","entity_type":"Company","normalization_status":"Legal entity resolved from official privacy notice"}
+{"organization_id":"ORG-0066","preferred_label":"ClimatePartner","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0067","preferred_label":"ClimatePoint","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0068","preferred_label":"Climatiq GmbH","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0069","preferred_label":"CML-IE; public resources are now largely archival","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0070","preferred_label":"CO2 AI SAS","entity_type":"Company","normalization_status":"Legal entity resolved from official terms"}
+{"organization_id":"ORG-0071","preferred_label":"Consortium for Research on Renewable Industrial Materials (CORRIM)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0072","preferred_label":"Cornerstone Sustainability Data Initiative","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0073","preferred_label":"CORRIM and Federal LCA Commons","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0074","preferred_label":"Dassault Systèmes","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0075","preferred_label":"Daylight Chemical Information Systems (original specification); multiple later dialects","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0076","preferred_label":"Daylight for original specification; distributed implementer community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0077","preferred_label":"DdS board and staff","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0078","preferred_label":"DdS platform and data engineering team","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0079","preferred_label":"DeDuCE research team and partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0080","preferred_label":"Delta Electronics","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0081","preferred_label":"Départ de Sentier","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0082","preferred_label":"Départ de Sentier association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0083","preferred_label":"Directorate-General for Environment and Joint Research Centre","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0084","preferred_label":"Directorate-General for Research and Innovation and Joint Research Centre","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0085","preferred_label":"Distributed historically through openLCA Nexus","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0086","preferred_label":"Dutch National Institute for Public Health and the Environment (RIVM) and method authors","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0087","preferred_label":"EarthShift Global","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0088","preferred_label":"Eaternity","entity_type":"Nonprofit / industry organization","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0089","preferred_label":"EC-JRC / European Platform on LCA","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0090","preferred_label":"ECO Platform AISBL","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0091","preferred_label":"ECO Platform and connected EPD programme-operator nodes","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0092","preferred_label":"ECO Platform members and secretariat","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0093","preferred_label":"Eco-Bat","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0094","preferred_label":"eco-costs/value maintainers","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0095","preferred_label":"Ecochain Technologies B.V.","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0096","preferred_label":"Ecodigit","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0097","preferred_label":"ecoinvent / former EcoSpold development community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0098","preferred_label":"ecoinvent Association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0099","preferred_label":"ECOSPEED","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0100","preferred_label":"ENEA","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0101","preferred_label":"ENEA; ARCADIA and successor MASE–ENEA programme","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0102","preferred_label":"EPD Australasia","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0103","preferred_label":"EPD Australasia Ltd","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0104","preferred_label":"EPD International AB","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0105","preferred_label":"EPDItaly","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0106","preferred_label":"ERASM","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0107","preferred_label":"ERASM member-company collaboration","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0108","preferred_label":"ERG, Stanford and Watershed-supported initiative","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0109","preferred_label":"ESGpedia Pte Ltd","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0110","preferred_label":"ESU-services and contributing authors","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0111","preferred_label":"ESU-services Ltd.","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0112","preferred_label":"ETH Zurich, Chair of Ecological Systems Design","entity_type":"University / research institution","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0113","preferred_label":"eTool","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0114","preferred_label":"EUDPP ontology contributors via DPP Vocabulary Hub","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0115","preferred_label":"EuGeos / Chris Foster","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0116","preferred_label":"Eurobitume","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0117","preferred_label":"EUROFER Stainless","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0118","preferred_label":"European Aluminium","entity_type":"Nonprofit / industry organization","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0119","preferred_label":"European Commission","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0120","preferred_label":"European Commission Joint Research Centre","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0121","preferred_label":"European Commission Joint Research Centre and Directorate-General for Environment","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0122","preferred_label":"European Commission Joint Research Centre and Environmental Footprint governance","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0123","preferred_label":"European Commission-funded NEEDS project consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0124","preferred_label":"European Committee for Standardization (CEN)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0125","preferred_label":"European Container Glass Federation (FEVE)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0126","preferred_label":"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0127","preferred_label":"European LIFE programme consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0128","preferred_label":"European Platform on Life Cycle Assessment","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0129","preferred_label":"European Platform on Life Cycle Assessment / EC-JRC","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0130","preferred_label":"European Platform on Life Cycle Assessment / JRC","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0131","preferred_label":"Evah Associates","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0132","preferred_label":"Evalue8 Sustainability Pty Ltd","entity_type":"Company","normalization_status":"Legal entity resolved from official terms"}
+{"organization_id":"ORG-0133","preferred_label":"EVEA","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0134","preferred_label":"EXIOBASE consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0135","preferred_label":"EXIOBASE research consortium; current releases distributed on Zenodo","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0136","preferred_label":"Expanding Circle Ltd (trading as Altruistiq)","entity_type":"Company","normalization_status":"Legal entity resolved from official company information"}
+{"organization_id":"ORG-0137","preferred_label":"FAO-coordinated expert and institutional community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0138","preferred_label":"Federal LCA Commons","entity_type":"Public consortium / community","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0139","preferred_label":"Federal University of Technology – Paraná (UTFPR)","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0140","preferred_label":"FEVE","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0141","preferred_label":"Fitsol Limited","entity_type":"Company","normalization_status":"Legal entity resolved from official terms"}
+{"organization_id":"ORG-0142","preferred_label":"FLCAC administrators; development resources hosted publicly","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0143","preferred_label":"FOEN/BAFU and commissioned technical partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0144","preferred_label":"Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0145","preferred_label":"FoodOn open inter-agency community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0146","preferred_label":"FoodOntology contributors / OBO Foundry","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0147","preferred_label":"FOODTURE Horizon Europe consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0148","preferred_label":"Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0149","preferred_label":"Forum for Sustainability through Life Cycle Innovation e.V.","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0150","preferred_label":"Framework authors","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0151","preferred_label":"FRED GmbH","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0152","preferred_label":"FSLCI secretariat and member community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0153","preferred_label":"Fujitsu Limited","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0154","preferred_label":"Fundación InnovaCiclos","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0155","preferred_label":"Fundación InnovaCiclos / EcoEd","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0156","preferred_label":"GBDI consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0157","preferred_label":"GBDI technical community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0158","preferred_label":"German Environment Agency","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0159","preferred_label":"German Environment Agency (Umweltbundesamt, UBA)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0160","preferred_label":"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0161","preferred_label":"GFLI Secretariat and data-project partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0162","preferred_label":"GFLI technical and methodology groups","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0163","preferred_label":"GHG Protocol","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0164","preferred_label":"GHG Protocol secretariat and multi-stakeholder governance bodies","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0165","preferred_label":"Global Building Data Initiative","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0166","preferred_label":"Global Building Data Initiative under GLOBE","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0167","preferred_label":"Global Climate Changer GmbH","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0168","preferred_label":"Global CO2 Initiative, University of Michigan","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0169","preferred_label":"Global Feed LCA Institute","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0170","preferred_label":"Government of Quebec / CIRAIG","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0171","preferred_label":"Green Gold Label Foundation","entity_type":"Nonprofit / industry organization","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0172","preferred_label":"GreenDelta","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0173","preferred_label":"GreenDelta GmbH","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0174","preferred_label":"GreenDelta GmbH / TRIPLELINK","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0175","preferred_label":"GreenDelta openLCA development team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0176","preferred_label":"GreenGrocer consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0177","preferred_label":"GreenStitch Technologies PVT LTD","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0178","preferred_label":"Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd.","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0179","preferred_label":"Helmholtz Centre for Environmental Research (UFZ)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0180","preferred_label":"HESTIA project / University of Oxford","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0181","preferred_label":"HESTIA team and contributor community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0182","preferred_label":"HESTIA technical team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0183","preferred_label":"HiQ Data","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0184","preferred_label":"Historical format; no active maintenance identified","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0185","preferred_label":"Horizon Europe consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0186","preferred_label":"HowGood","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0187","preferred_label":"Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0188","preferred_label":"ICMQ S.p.A. Società Benefit / EPDItaly","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0189","preferred_label":"IDTA office and admin-shell-io repository","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0190","preferred_label":"IINAS","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0191","preferred_label":"IKE Environmental Technology","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0192","preferred_label":"IKE Environmental Technology / Sichuan University lineage","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0193","preferred_label":"IKE Environmental Technology Co., Ltd.","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0194","preferred_label":"IMPACT World+ method development team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0195","preferred_label":"IMPACT World+ scientific consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0196","preferred_label":"InChI Trust","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0197","preferred_label":"Industrial Digital Twin Association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0198","preferred_label":"INIES governance partners under French public convention","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0199","preferred_label":"InnoBlock Technology Ltd","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0200","preferred_label":"INRAE","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0201","preferred_label":"INRAE ontology team and Recherche Data Gouv/AgroPortal","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0202","preferred_label":"Institute for Information Industry, Digital Transformation Research Institute","entity_type":"University / research institution","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0203","preferred_label":"Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0204","preferred_label":"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0205","preferred_label":"Intergovernmental Panel on Climate Change","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0206","preferred_label":"International Aluminium Institute","entity_type":"Nonprofit / industry organization","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0207","preferred_label":"International CCU Assessment Harmonization Group","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0208","preferred_label":"International Copper Association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0209","preferred_label":"International EPD System","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0210","preferred_label":"International Institute for Sustainability Analysis and Strategy (IINAS)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0211","preferred_label":"International Organization for Standardization","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0212","preferred_label":"International Organization for Standardization (ISO)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0213","preferred_label":"International Zinc Association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0214","preferred_label":"IPCC Task Force on National Greenhouse Gas Inventories","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0215","preferred_label":"IPCC Working Group I assessment process","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0216","preferred_label":"iPoint-systems GmbH","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0217","preferred_label":"ISO/TC 207/SC 3","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0218","preferred_label":"ISO/TC 207/SC 5","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0219","preferred_label":"ISO/TC 207/SC 7","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0220","preferred_label":"ITeC","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0221","preferred_label":"IUPAC and InChI Trust","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0222","preferred_label":"IZUBA énergies","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0223","preferred_label":"Kanso, Inc. / Carbonfact","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0224","preferred_label":"Kassel Institute for Sustainability data repository","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0225","preferred_label":"KieranTimberlake","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0226","preferred_label":"Kimel Tech SpA","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0227","preferred_label":"Kiwa","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0228","preferred_label":"Kleis Technology","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0229","preferred_label":"Korea Environmental Industry & Technology Institute (KEITI)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0230","preferred_label":"LC-IMPACT project; openLCA adaptation by GreenDelta GmbH","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0231","preferred_label":"LCA CARE project consortium","entity_type":"Public consortium / community","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0232","preferred_label":"LCA Japan Forum","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0233","preferred_label":"LCA Society of Japan / LCA Japan Forum","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0234","preferred_label":"LCA to BIM Workflow research project","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0235","preferred_label":"LCA.no AS","entity_type":"Company","normalization_status":"Legal entity resolved from official privacy notice"}
+{"organization_id":"ORG-0236","preferred_label":"LCAx contributors","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0237","preferred_label":"LCAx open-source project / OCNI-DTU contributors","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0238","preferred_label":"LCIE Bureau Veritas","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0239","preferred_label":"Legacy project data; openLCA conversion maintained historically by GreenDelta","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0240","preferred_label":"Legacy project portal; dataset owners include KIT and partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0241","preferred_label":"Leiden University, Institute of Environmental Sciences (CML)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0242","preferred_label":"Leonardo Ferhati","entity_type":"Individual","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0243","preferred_label":"Life Cycle Initiative / participating nodes","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0244","preferred_label":"Life Cycle Initiative GLAM stewardship community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0245","preferred_label":"Life Cycle Initiative hosted at UNEP","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0246","preferred_label":"Life Cycle Initiative secretariat and steering governance","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0247","preferred_label":"Life Cycle Initiative with scientific partners","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0248","preferred_label":"Lifecycles","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0249","preferred_label":"Makersite GmbH","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0250","preferred_label":"Mérieux NutriSciences | Blonk","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0251","preferred_label":"MexiLCA initiative","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0252","preferred_label":"Microsoft","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0253","preferred_label":"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0254","preferred_label":"Minviro","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0255","preferred_label":"Minviro Ltd","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0256","preferred_label":"Muir AI","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0257","preferred_label":"National Institute for Public Health and the Environment (RIVM)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0258","preferred_label":"National Institute of Advanced Industrial Science and Technology (AIST)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0259","preferred_label":"National Laboratory of the Rockies on Federal LCA Commons","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0260","preferred_label":"National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0261","preferred_label":"New Earth / Social Hotspots Database provider","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0262","preferred_label":"Nickel Institute","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0263","preferred_label":"No current maintainer publicly confirmed","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0264","preferred_label":"Oliver Kusche Research & Consulting (OKWorx)","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0265","preferred_label":"One Click LCA Oy Ltd","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0266","preferred_label":"Ontology-pattern authors","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0267","preferred_label":"Open Sustainable Technology community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0268","preferred_label":"openEPD contributors and reference implementers","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0269","preferred_label":"openEPD Forum / Building Transparency ecosystem","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0270","preferred_label":"Optel Group","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0271","preferred_label":"Partnership for Carbon Transparency","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0272","preferred_label":"Partnership for Carbon Transparency (PACT)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0273","preferred_label":"Paul Scherrer Institute","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0274","preferred_label":"Peruvian Life Cycle Network (PELCAN)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0275","preferred_label":"Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0276","preferred_label":"PFN secretariat and member/collaborator community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0277","preferred_label":"PFN technical community convened by EA – Earth Action","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0278","preferred_label":"PILARIO SA","entity_type":"Company","normalization_status":"Legal entity resolved from official privacy notice"}
+{"organization_id":"ORG-0279","preferred_label":"PIQET Consortium","entity_type":"Public consortium / community","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0280","preferred_label":"PlanetFWD Inc.","entity_type":"Company","normalization_status":"Legal entity resolved from official privacy notice"}
+{"organization_id":"ORG-0281","preferred_label":"Plastic Footprint Network","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0282","preferred_label":"Plastic Footprint Network convened by EA – Earth Action","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0283","preferred_label":"Plastics Europe","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0284","preferred_label":"Plastics Europe and relevant sector groups","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0285","preferred_label":"Potsdam Institute for Climate Impact Research","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0286","preferred_label":"PRé Sustainability B.V.","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0287","preferred_label":"PRIMUS project / Plastics Recyclers Europe","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0288","preferred_label":"product impact team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0289","preferred_label":"productimpact.info","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0290","preferred_label":"Project author/community repository","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0291","preferred_label":"protontypes/open-sustainable-technology maintainers and contributors","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0292","preferred_label":"PubChem","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0293","preferred_label":"PwC / Ecobilan","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0294","preferred_label":"Quantis","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0295","preferred_label":"Quantis and Kleis Technology","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0296","preferred_label":"Quantis and WFLDB partners","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0297","preferred_label":"Red Iberoamericana de Ciclo de Vida","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0298","preferred_label":"RICV board and member networks","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0299","preferred_label":"Riskoa Ltd","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0300","preferred_label":"RIVM public distribution","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0301","preferred_label":"RIVM; LCI update performed by Mérieux NutriSciences | Blonk","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0302","preferred_label":"RWTH Aachen University","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0303","preferred_label":"RWTH design-computation project contributors","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0304","preferred_label":"SAP","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0305","preferred_label":"Scientific publication and author community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0306","preferred_label":"Semantum","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0307","preferred_label":"Shanghai HiQ Smart Data Co., Ltd.","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0308","preferred_label":"SimaPro B.V.","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0309","preferred_label":"sinum","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0310","preferred_label":"SIRIM Berhad","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0311","preferred_label":"SIRIM Energy & Environment Centre","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0312","preferred_label":"SKZ — Das Kunststoff-Zentrum","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0313","preferred_label":"Sluicebox, Inc.","entity_type":"Company","normalization_status":"Legal entity resolved from official privacy notice"}
+{"organization_id":"ORG-0314","preferred_label":"Smart Tradzt","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0315","preferred_label":"Social Hotspots Database team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0316","preferred_label":"Solid Forest","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0317","preferred_label":"Sphera","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0318","preferred_label":"Sphera Solutions, Inc.","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0319","preferred_label":"Startrust","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0320","preferred_label":"Studio Gear Up","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0321","preferred_label":"Substain","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0322","preferred_label":"Sustainable Impact Metrics Foundation / Delft University of Technology lineage","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0323","preferred_label":"Sustech","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0324","preferred_label":"Swedish Life Cycle Center","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0325","preferred_label":"Swiss Federal Office for the Environment (FOEN/BAFU)","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0326","preferred_label":"Swiss Federal Offices","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0327","preferred_label":"Taiwan Web Service Corporation","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0328","preferred_label":"Tanso Technologies GmbH","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0329","preferred_label":"Technology and Informatics Institute for Sustainability (TIIS), NSTDA","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0330","preferred_label":"Terrascope Pte. Ltd.","entity_type":"Company","normalization_status":"Legal entity resolved from official terms"}
+{"organization_id":"ORG-0331","preferred_label":"Textile Exchange","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0332","preferred_label":"Textile Exchange in partnership with SCS Global Services","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0333","preferred_label":"TfS Scope 3 GHG programme","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0334","preferred_label":"The Circulate Initiative","entity_type":"Nonprofit / industry organization","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0335","preferred_label":"The European Steel Association (EUROFER)","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0336","preferred_label":"The Evah Institute","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0337","preferred_label":"The Evah Institute / Ecquate Pty Ltd","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0338","preferred_label":"TianGong community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0339","preferred_label":"TianGong LCA Data Working Group and platform community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0340","preferred_label":"TianGong LCA research team, Tsinghua University","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0341","preferred_label":"TianGong platform developers","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0342","preferred_label":"TianGong project / Carbon Footprint Industry Alliance ecosystem","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0343","preferred_label":"TIDAS development community","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0344","preferred_label":"tishchungoora/lca-ontology repository maintainer","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0345","preferred_label":"Together for Sustainability","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0346","preferred_label":"Trace One","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0347","preferred_label":"Trayak","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0348","preferred_label":"Tsinghua University","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0349","preferred_label":"U.S. Department of Energy","entity_type":"Public body","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0350","preferred_label":"U.S. Department of Energy / National Laboratory of the Rockies","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0351","preferred_label":"U.S. Environmental Protection Agency","entity_type":"Public body","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0352","preferred_label":"U.S. Federal LCA Commons agencies","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0353","preferred_label":"U.S. Federal LCA Commons partners","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0354","preferred_label":"Uhuru Corporation","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0355","preferred_label":"UNEP-hosted Life Cycle Initiative","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0356","preferred_label":"United Nations Environment Programme","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0357","preferred_label":"United States Environmental Protection Agency","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0358","preferred_label":"University of Kassel authors / BBSR-funded project","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0359","preferred_label":"University of Oxford","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0360","preferred_label":"University of Oxford / HESTIA project","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0361","preferred_label":"University of Sheffield","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0362","preferred_label":"US Environmental Protection Agency","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0363","preferred_label":"US EPA Office of Research and Development","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0364","preferred_label":"US EPA research programme","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0365","preferred_label":"US EPA research team","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0366","preferred_label":"US National Library of Medicine / National Center for Biotechnology Information","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0367","preferred_label":"USDA National Agricultural Library with collaborating federal agencies","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0368","preferred_label":"VERSO GmbH","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0369","preferred_label":"Vocabulary Hub / Semantic Treehouse maintainers","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0370","preferred_label":"Walloon Agricultural Research Centre (CRA-W)","entity_type":"University / research institution","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0371","preferred_label":"WAP Sustainability","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0372","preferred_label":"WAP Sustainability, LLC","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0373","preferred_label":"Watershed Technology","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0374","preferred_label":"WeCarbon Technology Ltd","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0375","preferred_label":"World Business Council for Sustainable Development","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0376","preferred_label":"World Resources Institute and World Business Council for Sustainable Development","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0377","preferred_label":"World Steel Association","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0378","preferred_label":"Worldly","entity_type":"Company","normalization_status":"Actor and role resolved from reviewed public evidence"}
+{"organization_id":"ORG-0379","preferred_label":"worldsteel","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0380","preferred_label":"Wormhole Technologies Inc.","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0381","preferred_label":"WP1 led by ADEME within the FOODTURE consortium","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0382","preferred_label":"WULCA","entity_type":"Not typed in this review","normalization_status":"Exact public label"}
+{"organization_id":"ORG-0383","preferred_label":"WULCA working group / UNEP-SETAC Life Cycle Initiative community","entity_type":"Not typed in this review","normalization_status":"Composite public label—review before splitting"}
+{"organization_id":"ORG-0384","preferred_label":"Yantai Haiyi Software Co., Ltd.","entity_type":"Company","normalization_status":"Distinct public developer/provider label retained; legal entity suffix not independently normalized"}
+{"organization_id":"ORG-0385","preferred_label":"YuzeData Inc.","entity_type":"Company","normalization_status":"Company identity resolved from official company publication"}

@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "package_version": "2026-08-25.7",
-  "evidence_cutoff": "2026-08-25",
-  "checked_at": "2026-08-25T12:00:00.000Z",
+  "package_version": "2026-09-01.2",
+  "evidence_cutoff": "2026-09-01",
+  "checked_at": "2026-09-01T13:00:00.000Z",
   "checks": {
     "expected_table_counts": true,
     "stable_ids_unique": true,
@@ -10,12 +10,15 @@
     "public_privacy_boundary": true,
     "schema_profile_alignment_complete": true,
     "mapping_endpoint_alignment_complete": true,
-    "database_scope_version_audit_complete": true
+    "database_scope_version_audit_complete": true,
+    "software_market_review_complete": true,
+    "software_semantic_alignment_complete": true,
+    "software_actor_roles_evidence_linked": true
   },
   "errors": [],
   "warnings": [
     "mapping_artifacts: external source External",
-    "Organization names are derived from exact public owner/maintainer labels; composite labels require expert entity resolution.",
+    "Software actor edges are evidence-linked only. Missing owner, developer, or operator/maintainer roles remain missing, and unresolved public labels are retained in software_role_gaps.",
     "Schema/profile canonical labels merge only reviewed synonyms; each distribution retains its original public label and alignment method.",
     "Mapping endpoints are typed by the transformed or consuming object; software products, schemas, internal models, workflows and reference lists are not interchangeable."
   ]

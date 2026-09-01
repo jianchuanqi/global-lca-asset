@@ -1,6 +1,6 @@
 {
-  "package_version": "2026-08-25.7",
-  "generated_at": "2026-08-25T12:00:00.000Z",
+  "package_version": "2026-09-01.2",
+  "generated_at": "2026-09-01T13:00:00.000Z",
   "answerability": [
     {
       "question_id": "Q1",
@@ -37,8 +37,8 @@
       "question": "Who developed each database or software, in which country, and for which industries?",
       "current_answer_form": "Asset profile and organization links with separate owner, developer, geography, and sector fields",
       "readiness": "Answerable with caveat",
-      "evidence_basis": "Master Asset Inventory and normalized Database Scope records",
-      "main_gap": "Organization labels and country attributions still need entity normalization for some records",
+      "evidence_basis": "Master Asset Inventory, normalized Database Scope records, and evidence-linked Software Company Roles",
+      "main_gap": "Some non-software organization labels and some software actor roles still require public entity resolution",
       "completion_condition": "Retain provenance for owner, operator, developer country, data geography, and sector scope",
       "warning": "Developer country is not the same as geographic data coverage"
     },
@@ -61,6 +61,16 @@
       "main_gap": "Coverage is incomplete and several records need exact schema/reference-list versions or reproducible tests",
       "completion_condition": "Distinguish compatibility claims, implemented converters, alignments, test studies, and loss reports",
       "warning": "Compatibility, mapping, and lossless conversion are different claims"
+    },
+    {
+      "question_id": "Q7",
+      "question": "Which PCF/LCA software products exist, what can they do, and which organizations own, develop, or operate them?",
+      "current_answer_form": "A dated product register separating product type, aligned primary function, multi-valued capabilities, standard associations, and evidence-linked actor roles",
+      "readiness": "Answerable with caveat",
+      "evidence_basis": "Software Scope, Software Company Roles, Software Candidate Review, Master Asset Inventory, and public product or authoritative directory sources",
+      "main_gap": "No authoritative global software register exists and regional search coverage remains uneven",
+      "completion_condition": "Publish the inclusion rule, dated search streams, deduplication decisions, aligned function and capability labels, actor-role evidence, unresolved role gaps, and source URLs",
+      "warning": "WBCSD PACT association is interoperability evidence, not a software category, calculation claim, methodology verification, or quality rating"
     }
   ],
   "review_issues": [
@@ -100,9 +110,9 @@
       "issue_id": "ISS-0005",
       "priority": "Medium",
       "area": "Organizations",
-      "issue": "Owner and maintainer strings are not yet fully normalized to organization entities.",
-      "recommended_action": "Resolve composite labels and aliases while retaining the original public wording.",
-      "status": "Open"
+      "issue": "Software actor roles have been resolved to evidence-linked companies, institutions, public bodies, communities, or publicly credited individuals; some software gaps and non-software composite labels remain.",
+      "recommended_action": "Continue resolving the explicit software_role_gaps and non-software composite labels while retaining original public wording and evidence URLs.",
+      "status": "Partially resolved in 2026-09-01.2"
     },
     {
       "issue_id": "ISS-0006",
@@ -127,6 +137,22 @@
       "issue": "Public URLs, access terms, and current versions change over time.",
       "recommended_action": "Run periodic link, version, and licence checks and issue a new dated package.",
       "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0009",
+      "priority": "Medium",
+      "area": "Software market coverage",
+      "issue": "The PCF/LCA software register is a dated lower bound assembled from selected directories and multilingual public searches, not a closed global census.",
+      "recommended_action": "Repeat official-site searches in additional languages and recheck PACT, database-provider, EPD, and sector-tool directories in each release.",
+      "status": "Open"
+    },
+    {
+      "issue_id": "ISS-0010",
+      "priority": "High",
+      "area": "Software semantics",
+      "issue": "Earlier software classes mixed product forms, functions, capabilities, sectors, and discovery or standard associations.",
+      "recommended_action": "Keep product type, one aligned primary function, multi-valued capabilities, and standard/network associations in separate fields; retain source wording for audit.",
+      "status": "Resolved in 2026-09-01.2"
     }
   ],
   "data_dictionary": [
@@ -146,6 +172,13 @@
     {"concept": "Compatibility claim", "definition": "A statement that a tool can import, export, or otherwise use a format or package.", "counting_rule": "Record direction, versions, evidence, and claimed/tested status."},
     {"concept": "Evidence cutoff", "definition": "The latest date included in a versioned review package.", "counting_rule": "All counts and conclusions must display the cutoff."},
     {"concept": "Confidence level", "definition": "An assessment of public evidence strength for a reviewed asset record.", "counting_rule": "It does not rate the quality of the asset itself."},
-    {"concept": "Lead", "definition": "A questionnaire, stakeholder-list, or search result that may point to an asset but is not yet a verified asset record.", "counting_rule": "Leads are not included in verified asset counts until publicly substantiated and deduplicated."}
+    {"concept": "Lead", "definition": "A questionnaire, stakeholder-list, or search result that may point to an asset but is not yet a verified asset record.", "counting_rule": "Leads are not included in verified asset counts until publicly substantiated and deduplicated."},
+    {"concept": "PCF/LCA software product", "definition": "A named software product that publicly states it performs life cycle assessment, calculates product carbon footprints, or directly implements standardized PCF exchange.", "counting_rule": "Count one reviewed product family once; do not include a general corporate-only accounting platform, consultancy, or service listing without an explicit qualifying product function."},
+    {"concept": "Software product type", "definition": "How a reviewed PCF/LCA product is delivered or used, such as an application/platform, sector workflow, interoperability service, or API/library/model.", "counting_rule": "Assign one product type independently of its functions, sector, standards, and provider identity."},
+    {"concept": "Software primary function", "definition": "One aligned headline function for a PCF/LCA software product; LCA and PCF modelling are grouped as one modelling/calculation function.", "counting_rule": "Assign one controlled primary function and retain finer distinctions as multi-valued functional capabilities."},
+    {"concept": "Software functional capability", "definition": "An evidence-linked function a product can perform, using aligned labels while retaining source wording separately.", "counting_rule": "A product may have several capabilities; do not mix capabilities with product type, sector, or standard/network association."},
+    {"concept": "Standard or network association", "definition": "Evidence that a software product is listed by or states compatibility with a standard, network, or authoritative directory.", "counting_rule": "Treat WBCSD PACT association as interoperability evidence and provenance, not as a software category, calculation function, or quality rating."},
+    {"concept": "Software company role", "definition": "A public evidence-linked relationship between a software product and a company, institution, public body, community, or publicly credited individual acting as owner, developer, or operator/maintainer.", "counting_rule": "Create only roles supported by public evidence; never copy one role into another or use an unresolved product name as the actor. Missing roles remain absent and unresolved labels are retained in software_role_gaps."},
+    {"concept": "Software candidate review", "definition": "A listing encountered in a documented software discovery stream and assigned a promotion, existing-match, or exclusion decision.", "counting_rule": "Candidate appearances are not asset counts; deduplicate across directories before promotion and retain exclusions with a reason."}
   ]
 }

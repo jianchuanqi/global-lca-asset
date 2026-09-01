@@ -100,5 +100,47 @@
     "concept": "Lead",
     "definition": "A questionnaire, stakeholder-list, or search result that may point to an asset but is not yet a verified asset record.",
     "counting_rule": "Leads are not included in verified asset counts until publicly substantiated and deduplicated."
+  },
+  {
+    "dictionary_id": "DD-0018",
+    "concept": "PCF/LCA software product",
+    "definition": "A named software product that publicly states it performs life cycle assessment, calculates product carbon footprints, or directly implements standardized PCF exchange.",
+    "counting_rule": "Count one reviewed product family once; do not include a general corporate-only accounting platform, consultancy, or service listing without an explicit qualifying product function."
+  },
+  {
+    "dictionary_id": "DD-0019",
+    "concept": "Software product type",
+    "definition": "How a reviewed PCF/LCA product is delivered or used, such as an application/platform, sector workflow, interoperability service, or API/library/model.",
+    "counting_rule": "Assign one product type independently of its functions, sector, standards, and provider identity."
+  },
+  {
+    "dictionary_id": "DD-0020",
+    "concept": "Software primary function",
+    "definition": "One aligned headline function for a PCF/LCA software product; LCA and PCF modelling are grouped as one modelling/calculation function.",
+    "counting_rule": "Assign one controlled primary function and retain finer distinctions as multi-valued functional capabilities."
+  },
+  {
+    "dictionary_id": "DD-0021",
+    "concept": "Software functional capability",
+    "definition": "An evidence-linked function a product can perform, using aligned labels while retaining source wording separately.",
+    "counting_rule": "A product may have several capabilities; do not mix capabilities with product type, sector, or standard/network association."
+  },
+  {
+    "dictionary_id": "DD-0022",
+    "concept": "Standard or network association",
+    "definition": "Evidence that a software product is listed by or states compatibility with a standard, network, or authoritative directory.",
+    "counting_rule": "Treat WBCSD PACT association as interoperability evidence and provenance, not as a software category, calculation function, or quality rating."
+  },
+  {
+    "dictionary_id": "DD-0023",
+    "concept": "Software company role",
+    "definition": "A public evidence-linked relationship between a software product and a company, institution, public body, community, or publicly credited individual acting as owner, developer, or operator/maintainer.",
+    "counting_rule": "Create only roles supported by public evidence; never copy one role into another or use an unresolved product name as the actor. Missing roles remain absent and unresolved labels are retained in software_role_gaps."
+  },
+  {
+    "dictionary_id": "DD-0024",
+    "concept": "Software candidate review",
+    "definition": "A listing encountered in a documented software discovery stream and assigned a promotion, existing-match, or exclusion decision.",
+    "counting_rule": "Candidate appearances are not asset counts; deduplicate across directories before promotion and retain exclusions with a reason."
   }
 ]

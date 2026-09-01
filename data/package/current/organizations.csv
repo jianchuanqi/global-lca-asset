@@ -1,327 +1,386 @@
-organization_id,preferred_label,normalization_status
-ORG-0001,2050 Materials,Exact public label
-ORG-0002,22-partner consortium,Exact public label
-ORG-0003,Academic author team,Exact public label
-ORG-0004,ADEME,Exact public label
-ORG-0005,ADEME and programme partners,Composite label—review before splitting
-ORG-0006,ADEME-led nine-partner consortium,Exact public label
-ORG-0007,Agent Net Zero team,Exact public label
-ORG-0008,AIST-IDEA programme and AIST Solutions licensing service,Composite label—review before splitting
-ORG-0009,Alliance HQE-GBC and INIES governance bodies,Composite label—review before splitting
-ORG-0010,Argonne National Laboratory,Exact public label
-ORG-0011,Athena Sustainable Materials Institute,Exact public label
-ORG-0012,AusLCI Database Committee and sector partners,Composite label—review before splitting
-ORG-0013,Australian Life Cycle Assessment Society (ALCAS),Exact public label
-ORG-0014,BATTERS,Exact public label
-ORG-0015,BATTERS / WELOOP experts,Composite label—review before splitting
-ORG-0016,BBSR and commissioned technical operators,Composite label—review before splitting
-ORG-0017,BBSR-linked technical maintainers and data-network implementers,Composite label—review before splitting
-ORG-0018,BioEnergieDat project consortium,Exact public label
-ORG-0019,BMWSB/BBSR and InData/ECO Platform technical community,Composite label—review before splitting
-ORG-0020,BONSAI community,Exact public label
-ORG-0021,BONSAI data contributors and projects,Composite label—review before splitting
-ORG-0022,BONSAI network/contributors,Composite label—review before splitting
-ORG-0023,BONSAI not-for-profit association,Exact public label
-ORG-0024,"BONSAI secretariat, board and contributor network",Composite label—review before splitting
-ORG-0025,Brightway developer community,Exact public label
-ORG-0026,Brightway developers,Exact public label
-ORG-0027,Bureau Veritas CODDE,Exact public label
-ORG-0028,Capillar,Exact public label
-ORG-0029,Carbon Minds,Exact public label
-ORG-0030,Carbonfact science team,Exact public label
-ORG-0031,Cascale,Exact public label
-ORG-0032,Cascale; exclusively delivered on Worldly,Composite label—review before splitting
-ORG-0033,Catena-X Automotive Network e.V.,Exact public label
-ORG-0034,Catena-X PCF working groups,Exact public label
-ORG-0035,Catena-X PCF/data-model working groups,Composite label—review before splitting
-ORG-0036,CEN/TC 350 and national standards bodies,Composite label—review before splitting
-ORG-0037,CEPE LCI project,Exact public label
-ORG-0038,Chalmers University of Technology-led DeDuCE team,Exact public label
-ORG-0039,"Chalmers University of Technology, Environmental Systems Analysis",Exact public label
-ORG-0040,CIRAIG / POLARIIS+ collaboration,Composite label—review before splitting
-ORG-0041,CIRAIG / project contributors,Composite label—review before splitting
-ORG-0042,CIRAIG OpenIO-Canada contributors,Exact public label
-ORG-0043,CIRAIG Sustainable Consumption Chair,Exact public label
-ORG-0044,CIRAIG with ecoinvent,Exact public label
-ORG-0045,Circular Ecology,Exact public label
-ORG-0046,CIRPASS-2 and partner initiatives,Composite label—review before splitting
-ORG-0047,CIRPASS-2 European project,Exact public label
-ORG-0048,CLIC Innovation / ARVI research programme,Composite label—review before splitting
-ORG-0049,Climate Farm Demo consortium,Exact public label
-ORG-0050,Climatiq,Exact public label
-ORG-0051,CML-IE; public resources are now largely archival,Composite label—review before splitting
-ORG-0052,Consortium for Research on Renewable Industrial Materials (CORRIM),Exact public label
-ORG-0053,Cornerstone Sustainability Data Initiative,Exact public label
-ORG-0054,CORRIM and Federal LCA Commons,Composite label—review before splitting
-ORG-0055,CRA-W,Exact public label
-ORG-0056,Daylight Chemical Information Systems (original specification); multiple later dialects,Composite label—review before splitting
-ORG-0057,Daylight for original specification; distributed implementer community,Composite label—review before splitting
-ORG-0058,DdS board and staff,Composite label—review before splitting
-ORG-0059,DdS platform and data engineering team,Composite label—review before splitting
-ORG-0060,DeDuCE research team and partners,Composite label—review before splitting
-ORG-0061,Départ de Sentier,Exact public label
-ORG-0062,Départ de Sentier association,Exact public label
-ORG-0063,Directorate-General for Environment and Joint Research Centre,Composite label—review before splitting
-ORG-0064,Directorate-General for Research and Innovation and Joint Research Centre,Composite label—review before splitting
-ORG-0065,Distributed historically through openLCA Nexus,Exact public label
-ORG-0066,Dutch National Institute for Public Health and the Environment (RIVM) and method authors,Composite label—review before splitting
-ORG-0067,EarthShift Global,Exact public label
-ORG-0068,Eaternity,Exact public label
-ORG-0069,Eaternity open-source team,Exact public label
-ORG-0070,EC-JRC / European Platform on LCA,Composite label—review before splitting
-ORG-0071,ECO Platform AISBL,Exact public label
-ORG-0072,ECO Platform and connected EPD programme-operator nodes,Composite label—review before splitting
-ORG-0073,ECO Platform members and secretariat,Composite label—review before splitting
-ORG-0074,eco-costs/value maintainers,Composite label—review before splitting
-ORG-0075,Ecochain Technologies,Exact public label
-ORG-0076,ecoinvent / former EcoSpold development community,Composite label—review before splitting
-ORG-0077,ecoinvent Association,Exact public label
-ORG-0078,EcoSemantic,Exact public label
-ORG-0079,ENEA,Exact public label
-ORG-0080,ENEA; ARCADIA and successor MASE–ENEA programme,Composite label—review before splitting
-ORG-0081,EPD Australasia,Exact public label
-ORG-0082,EPD Australasia Ltd,Exact public label
-ORG-0083,EPD International AB,Exact public label
-ORG-0084,EPDItaly,Exact public label
-ORG-0085,ERASM,Exact public label
-ORG-0086,ERASM member-company collaboration,Exact public label
-ORG-0087,"ERG, Stanford and Watershed-supported initiative",Composite label—review before splitting
-ORG-0088,ESU-services and contributing authors,Composite label—review before splitting
-ORG-0089,ESU-services Ltd.,Exact public label
-ORG-0090,EU project 101139959 consortium,Exact public label
-ORG-0091,EUDPP ontology contributors via DPP Vocabulary Hub,Exact public label
-ORG-0092,EuGeos / Chris Foster,Composite label—review before splitting
-ORG-0093,Eurobitume,Exact public label
-ORG-0094,EUROFER Stainless,Exact public label
-ORG-0095,European Aluminium,Exact public label
-ORG-0096,European Commission,Exact public label
-ORG-0097,European Commission Joint Research Centre,Exact public label
-ORG-0098,European Commission Joint Research Centre and Directorate-General for Environment,Composite label—review before splitting
-ORG-0099,European Commission Joint Research Centre and Environmental Footprint governance,Composite label—review before splitting
-ORG-0100,European Commission-funded NEEDS project consortium,Exact public label
-ORG-0101,European Committee for Standardization (CEN),Exact public label
-ORG-0102,European Container Glass Federation (FEVE),Exact public label
-ORG-0103,"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)",Composite label—review before splitting
-ORG-0104,European LIFE programme consortium,Exact public label
-ORG-0105,European Platform on Life Cycle Assessment,Exact public label
-ORG-0106,European Platform on Life Cycle Assessment / EC-JRC,Composite label—review before splitting
-ORG-0107,European Platform on Life Cycle Assessment / JRC,Composite label—review before splitting
-ORG-0108,Evah Associates,Exact public label
-ORG-0109,EXIOBASE consortium,Exact public label
-ORG-0110,EXIOBASE research consortium; current releases distributed on Zenodo,Composite label—review before splitting
-ORG-0111,FAO-coordinated expert and institutional community,Composite label—review before splitting
-ORG-0112,FEVE,Exact public label
-ORG-0113,FLCAC administrators; development resources hosted publicly,Composite label—review before splitting
-ORG-0114,FLCAC-admin repository contributors,Exact public label
-ORG-0115,FOEN/BAFU and commissioned technical partners,Composite label—review before splitting
-ORG-0116,Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions,Composite label—review before splitting
-ORG-0117,FoodOn open inter-agency community,Exact public label
-ORG-0118,FoodOntology contributors / OBO Foundry,Composite label—review before splitting
-ORG-0119,FOODTURE Horizon Europe consortium,Exact public label
-ORG-0120,Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB),Composite label—review before splitting
-ORG-0121,Forum for Sustainability through Life Cycle Innovation e.V.,Exact public label
-ORG-0122,Framework authors,Exact public label
-ORG-0123,FSLCI secretariat and member community,Composite label—review before splitting
-ORG-0124,Fundación InnovaCiclos,Exact public label
-ORG-0125,Fundación InnovaCiclos / EcoEd,Composite label—review before splitting
-ORG-0126,GBDI consortium,Exact public label
-ORG-0127,GBDI technical community,Exact public label
-ORG-0128,German Environment Agency,Exact public label
-ORG-0129,"German Environment Agency (Umweltbundesamt, UBA)",Exact public label
-ORG-0130,"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)",Composite label—review before splitting
-ORG-0131,GFLI Secretariat and data-project partners,Composite label—review before splitting
-ORG-0132,GFLI technical and methodology groups,Composite label—review before splitting
-ORG-0133,GHG Protocol,Exact public label
-ORG-0134,GHG Protocol secretariat and multi-stakeholder governance bodies,Composite label—review before splitting
-ORG-0135,Global Building Data Initiative,Exact public label
-ORG-0136,Global Building Data Initiative under GLOBE,Exact public label
-ORG-0137,"Global CO2 Initiative, University of Michigan",Exact public label
-ORG-0138,Global Feed LCA Institute,Exact public label
-ORG-0139,Government of Quebec / CIRAIG,Composite label—review before splitting
-ORG-0140,Green Gold Label Foundation,Exact public label
-ORG-0141,Green Gold Label Foundation with studio Gear Up,Exact public label
-ORG-0142,GreenDelta,Exact public label
-ORG-0143,GreenDelta GmbH,Exact public label
-ORG-0144,GreenDelta GmbH / TRIPLELINK,Composite label—review before splitting
-ORG-0145,GreenDelta openLCA development team,Exact public label
-ORG-0146,GreenGrocer consortium,Exact public label
-ORG-0147,Hangzhou Qinglvlan Environmental Digital Technology,Exact public label
-ORG-0148,Helmholtz Centre for Environmental Research (UFZ),Exact public label
-ORG-0149,HESTIA modelling team and contributors,Composite label—review before splitting
-ORG-0150,HESTIA project / University of Oxford,Composite label—review before splitting
-ORG-0151,HESTIA team and contributor community,Composite label—review before splitting
-ORG-0152,HESTIA technical team,Exact public label
-ORG-0153,HiQ Data,Exact public label
-ORG-0154,Historical format; no active maintenance identified,Composite label—review before splitting
-ORG-0155,Horizon Europe consortium,Exact public label
-ORG-0156,Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos,Exact public label
-ORG-0157,ICMQ S.p.A. Società Benefit / EPDItaly,Composite label—review before splitting
-ORG-0158,IDTA office and admin-shell-io repository,Composite label—review before splitting
-ORG-0159,IINAS,Exact public label
-ORG-0160,IKE Environmental Technology / Sichuan University lineage,Composite label—review before splitting
-ORG-0161,"IKE Environmental Technology Co., Ltd.",Exact public label
-ORG-0162,IMPACT World+ method development team,Exact public label
-ORG-0163,IMPACT World+ scientific consortium,Exact public label
-ORG-0164,InChI Trust,Exact public label
-ORG-0165,Independent research initiative,Exact public label
-ORG-0166,Industrial Digital Twin Association,Exact public label
-ORG-0167,INIES governance partners under French public convention,Exact public label
-ORG-0168,INRAE,Exact public label
-ORG-0169,INRAE ontology team and Recherche Data Gouv/AgroPortal,Composite label—review before splitting
-ORG-0170,Institute of Technical Thermodynamics at RWTH Aachen University and collaborators,Composite label—review before splitting
-ORG-0171,Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI),Composite label—review before splitting
-ORG-0172,"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators",Composite label—review before splitting
-ORG-0173,Intergovernmental Panel on Climate Change,Exact public label
-ORG-0174,International Aluminium Institute,Exact public label
-ORG-0175,International Aluminium Institute / European Aluminium,Composite label—review before splitting
-ORG-0176,International Aluminium Institute and European Aluminium,Composite label—review before splitting
-ORG-0177,International CCU Assessment Harmonization Group,Exact public label
-ORG-0178,International Copper Association,Exact public label
-ORG-0179,International EPD System,Exact public label
-ORG-0180,International Institute for Sustainability Analysis and Strategy (IINAS),Composite label—review before splitting
-ORG-0181,International Organization for Standardization,Exact public label
-ORG-0182,International Organization for Standardization (ISO),Exact public label
-ORG-0183,International Zinc Association,Exact public label
-ORG-0184,IPCC Task Force on National Greenhouse Gas Inventories,Exact public label
-ORG-0185,IPCC Working Group I assessment process,Exact public label
-ORG-0186,iPoint,Exact public label
-ORG-0187,iPoint-systems gmbh / Assent group,Composite label—review before splitting
-ORG-0188,ISO/TC 207/SC 3,Composite label—review before splitting
-ORG-0189,ISO/TC 207/SC 5,Composite label—review before splitting
-ORG-0190,ISO/TC 207/SC 7,Composite label—review before splitting
-ORG-0191,IUPAC and InChI Trust,Composite label—review before splitting
-ORG-0192,"Kanso, Inc. / Carbonfact",Composite label—review before splitting
-ORG-0193,Kassel Institute for Sustainability data repository,Exact public label
-ORG-0194,Kimel Tech SpA,Exact public label
-ORG-0195,Korea Environmental Industry & Technology Institute (KEITI),Exact public label
-ORG-0196,Lavoisier open-source project developed at GYRO/UTFPR with IBICT support,Composite label—review before splitting
-ORG-0197,Lavoisier project maintainers,Exact public label
-ORG-0198,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH,Composite label—review before splitting
-ORG-0199,LCA as Code project/provider,Composite label—review before splitting
-ORG-0200,LCA as Code team,Exact public label
-ORG-0201,LCA CARE project consortium,Exact public label
-ORG-0202,LCA Japan Forum,Exact public label
-ORG-0203,LCA Society of Japan / LCA Japan Forum,Composite label—review before splitting
-ORG-0204,LCA to BIM Workflow research project,Exact public label
-ORG-0205,LCAx contributors,Exact public label
-ORG-0206,LCAx open-source project / OCNI-DTU contributors,Composite label—review before splitting
-ORG-0207,LCIE Bureau Veritas,Exact public label
-ORG-0208,Legacy project data; openLCA conversion maintained historically by GreenDelta,Composite label—review before splitting
-ORG-0209,Legacy project portal; dataset owners include KIT and partners,Composite label—review before splitting
-ORG-0210,"Leiden University, Institute of Environmental Sciences (CML)",Exact public label
-ORG-0211,Leonardo Ferhati,Exact public label
-ORG-0212,Life Cycle Initiative / participating nodes,Composite label—review before splitting
-ORG-0213,Life Cycle Initiative GLAM stewardship community,Exact public label
-ORG-0214,Life Cycle Initiative hosted at UNEP,Exact public label
-ORG-0215,Life Cycle Initiative secretariat and steering governance,Composite label—review before splitting
-ORG-0216,Life Cycle Initiative with scientific partners,Exact public label
-ORG-0217,Makersite GmbH,Exact public label
-ORG-0218,MATILDA research team,Exact public label
-ORG-0219,Mérieux NutriSciences | Blonk,Exact public label
-ORG-0220,MexiLCA initiative,Exact public label
-ORG-0221,"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute",Composite label—review before splitting
-ORG-0222,Minviro,Exact public label
-ORG-0223,Minviro Ltd,Exact public label
-ORG-0224,National Institute for Public Health and the Environment (RIVM),Composite label—review before splitting
-ORG-0225,National Institute of Advanced Industrial Science and Technology (AIST),Composite label—review before splitting
-ORG-0226,National Laboratory of the Rockies on Federal LCA Commons,Exact public label
-ORG-0227,National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners,Composite label—review before splitting
-ORG-0228,New Earth / Social Hotspots Database provider,Composite label—review before splitting
-ORG-0229,Nickel Institute,Exact public label
-ORG-0230,No current maintainer publicly confirmed,Exact public label
-ORG-0231,One Click LCA,Exact public label
-ORG-0232,One Click LCA group,Exact public label
-ORG-0233,One Click LCA Ltd / One Click LCA group,Composite label—review before splitting
-ORG-0234,Ontology-pattern authors,Exact public label
-ORG-0235,Open Sustainable Technology community,Exact public label
-ORG-0236,openEPD contributors and reference implementers,Composite label—review before splitting
-ORG-0237,openEPD Forum / Building Transparency ecosystem,Composite label—review before splitting
-ORG-0238,Partnership for Carbon Transparency,Exact public label
-ORG-0239,Partnership for Carbon Transparency (PACT),Exact public label
-ORG-0240,Peruvian Life Cycle Network (PELCAN),Exact public label
-ORG-0241,Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners,Composite label—review before splitting
-ORG-0242,PFN secretariat and member/collaborator community,Composite label—review before splitting
-ORG-0243,PFN technical community convened by EA – Earth Action,Exact public label
-ORG-0244,PIQET service team,Exact public label
-ORG-0245,Plastic Footprint Network,Exact public label
-ORG-0246,Plastic Footprint Network convened by EA – Earth Action,Exact public label
-ORG-0247,Plastics Europe,Exact public label
-ORG-0248,Plastics Europe and relevant sector groups,Composite label—review before splitting
-ORG-0249,premise contributors,Exact public label
-ORG-0250,premise open-source project / polca contributors,Composite label—review before splitting
-ORG-0251,PRIMUS project / Plastics Recyclers Europe,Composite label—review before splitting
-ORG-0252,product impact team,Exact public label
-ORG-0253,productimpact.info,Exact public label
-ORG-0254,Project author/community repository,Composite label—review before splitting
-ORG-0255,protontypes/open-sustainable-technology maintainers and contributors,Composite label—review before splitting
-ORG-0256,PubChem,Exact public label
-ORG-0257,Quantis,Exact public label
-ORG-0258,Quantis and WFLDB partners,Composite label—review before splitting
-ORG-0259,Real-Time LCA,Exact public label
-ORG-0260,Red Iberoamericana de Ciclo de Vida,Exact public label
-ORG-0261,RICV board and member networks,Composite label—review before splitting
-ORG-0262,RIVM public distribution,Exact public label
-ORG-0263,RIVM; LCI update performed by Mérieux NutriSciences | Blonk,Composite label—review before splitting
-ORG-0264,RWTH Aachen University and collaborators,Composite label—review before splitting
-ORG-0265,RWTH design-computation project contributors,Exact public label
-ORG-0266,Scientific publication and author community,Composite label—review before splitting
-ORG-0267,"Shanghai HiQ Smart Data Co., Ltd.",Exact public label
-ORG-0268,SimaPro,Exact public label
-ORG-0269,SIRIM Berhad,Exact public label
-ORG-0270,SIRIM Energy & Environment Centre,Exact public label
-ORG-0271,Social Hotspots Database team,Exact public label
-ORG-0272,soda4LCA maintainers / OKWorx,Composite label—review before splitting
-ORG-0273,soda4LCA open-source project,Exact public label
-ORG-0274,Sphera,Exact public label
-ORG-0275,Sustainable Impact Metrics Foundation / Delft University of Technology lineage,Composite label—review before splitting
-ORG-0276,Swedish Life Cycle Center,Exact public label
-ORG-0277,Swiss Federal Office for the Environment (FOEN/BAFU),Composite label—review before splitting
-ORG-0278,Swiss Federal Offices,Exact public label
-ORG-0279,"Technology and Informatics Institute for Sustainability (TIIS), NSTDA",Composite label—review before splitting
-ORG-0280,Textile Exchange,Exact public label
-ORG-0281,Textile Exchange in partnership with SCS Global Services,Exact public label
-ORG-0282,TfS Scope 3 GHG programme,Exact public label
-ORG-0283,The European Steel Association (EUROFER),Exact public label
-ORG-0284,The Evah Institute,Exact public label
-ORG-0285,The Evah Institute / Ecquate Pty Ltd,Composite label—review before splitting
-ORG-0286,The PIQET Consortium / Lifecycles and partners,Composite label—review before splitting
-ORG-0287,TianGong community,Exact public label
-ORG-0288,TianGong LCA / TIDAS open-source project,Composite label—review before splitting
-ORG-0289,TianGong LCA Data Working Group and platform community,Composite label—review before splitting
-ORG-0290,TianGong platform developers,Exact public label
-ORG-0291,TianGong project / Carbon Footprint Industry Alliance ecosystem,Composite label—review before splitting
-ORG-0292,TIDAS development community,Exact public label
-ORG-0293,TIDAS Tools maintainers and public contributors,Composite label—review before splitting
-ORG-0294,tishchungoora/lca-ontology repository maintainer,Composite label—review before splitting
-ORG-0295,Together for Sustainability,Exact public label
-ORG-0296,U.S. Department of Energy / National Laboratory of the Rockies,Composite label—review before splitting
-ORG-0297,U.S. Federal LCA Commons agencies,Exact public label
-ORG-0298,U.S. Federal LCA Commons partners,Exact public label
-ORG-0299,UNEP-hosted Life Cycle Initiative,Exact public label
-ORG-0300,United Nations Environment Programme,Exact public label
-ORG-0301,United States Department of Energy,Exact public label
-ORG-0302,United States Environmental Protection Agency,Exact public label
-ORG-0303,United States Environmental Protection Agency / Federal LCA Commons ecosystem,Composite label—review before splitting
-ORG-0304,University of Kassel authors / BBSR-funded project,Composite label—review before splitting
-ORG-0305,University of Oxford / HESTIA project,Composite label—review before splitting
-ORG-0306,University of Sheffield and AMRC project team,Composite label—review before splitting
-ORG-0307,US Environmental Protection Agency,Exact public label
-ORG-0308,US EPA Office of Research and Development,Composite label—review before splitting
-ORG-0309,US EPA research programme,Exact public label
-ORG-0310,US EPA research team,Exact public label
-ORG-0311,US National Library of Medicine / National Center for Biotechnology Information,Composite label—review before splitting
-ORG-0312,USDA National Agricultural Library with collaborating federal agencies,Exact public label
-ORG-0313,Vocabulary Hub / Semantic Treehouse maintainers,Composite label—review before splitting
-ORG-0314,VoLCA maintainers,Exact public label
-ORG-0315,VoLCA project,Exact public label
-ORG-0316,Walloon Agricultural Research Centre (CRA-W),Exact public label
-ORG-0317,WAP Sustainability,Exact public label
-ORG-0318,"WAP Sustainability, LLC",Exact public label
-ORG-0319,Watershed Technology,Exact public label
-ORG-0320,World Business Council for Sustainable Development,Exact public label
-ORG-0321,World Resources Institute and World Business Council for Sustainable Development,Composite label—review before splitting
-ORG-0322,World Steel Association,Exact public label
-ORG-0323,worldsteel,Exact public label
-ORG-0324,WP1 led by ADEME within the FOODTURE consortium,Exact public label
-ORG-0325,WULCA,Exact public label
-ORG-0326,WULCA working group / UNEP-SETAC Life Cycle Initiative community,Composite label—review before splitting
+organization_id,preferred_label,entity_type,normalization_status
+ORG-0001,2050 Materials,Company,Actor and role resolved from reviewed public evidence
+ORG-0002,22-partner consortium,Not typed in this review,Exact public label
+ORG-0003,ADEME,Not typed in this review,Exact public label
+ORG-0004,ADEME and programme partners,Not typed in this review,Composite public label—review before splitting
+ORG-0005,ADEME-led nine-partner consortium,Not typed in this review,Exact public label
+ORG-0006,Advanced Manufacturing Research Centre (AMRC),University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0007,AIST-IDEA programme and AIST Solutions licensing service,Not typed in this review,Composite public label—review before splitting
+ORG-0008,Alliance HQE-GBC and INIES governance bodies,Not typed in this review,Composite public label—review before splitting
+ORG-0009,Altermaker,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0010,Ansys,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0011,aPriori,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0012,Argonne National Laboratory,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0013,ASUENE Inc.,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0014,Athena Sustainable Materials Institute,Nonprofit / industry organization,Actor and role resolved from reviewed public evidence
+ORG-0015,AusLCI Database Committee and sector partners,Not typed in this review,Composite public label—review before splitting
+ORG-0016,Australian Life Cycle Assessment Society (ALCAS),Not typed in this review,Exact public label
+ORG-0017,Avery Dennison Corporation,Company,Official site identifies atma.io as an Avery Dennison digital venture and trademark
+ORG-0018,BACUTI,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0019,BATTERS,Not typed in this review,Exact public label
+ORG-0020,BATTERS / WELOOP experts,Not typed in this review,Composite public label—review before splitting
+ORG-0021,BBSR and commissioned technical operators,Not typed in this review,Composite public label—review before splitting
+ORG-0022,BBSR-linked technical maintainers and data-network implementers,Not typed in this review,Composite public label—review before splitting
+ORG-0023,BioEnergieDat project consortium,Not typed in this review,Exact public label
+ORG-0024,BMWSB/BBSR and InData/ECO Platform technical community,Not typed in this review,Composite public label—review before splitting
+ORG-0025,BONSAI community,Not typed in this review,Exact public label
+ORG-0026,BONSAI data contributors and projects,Not typed in this review,Composite public label—review before splitting
+ORG-0027,BONSAI network/contributors,Not typed in this review,Composite public label—review before splitting
+ORG-0028,BONSAI not-for-profit association,Not typed in this review,Exact public label
+ORG-0029,"BONSAI secretariat, board and contributor network",Not typed in this review,Composite public label—review before splitting
+ORG-0030,"Booost, Inc.",Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0031,Building Transparency,Nonprofit / industry organization,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0032,Bureau Veritas CODDE,Not typed in this review,Exact public label
+ORG-0033,C.Scale,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0034,carbmee,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0035,Carboledger Inc.,Company,Legal entity resolved from official terms
+ORG-0036,Carbon Maps SAS,Company,Legal entity resolved from official terms
+ORG-0037,Carbon Minds,Not typed in this review,Exact public label
+ORG-0038,CarbonBright AI,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0039,Carbonfact science team,Not typed in this review,Exact public label
+ORG-0040,CarbonSmart,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0041,Carbonstop,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0042,CarbonTrail Tech LLP,Company,Legal entity resolved from official privacy notice
+ORG-0043,Cascale,Nonprofit / industry organization,Actor and role resolved from reviewed public evidence
+ORG-0044,Catena-X Automotive Network e.V.,Not typed in this review,Exact public label
+ORG-0045,Catena-X PCF working groups,Not typed in this review,Exact public label
+ORG-0046,Catena-X PCF/data-model working groups,Not typed in this review,Composite public label—review before splitting
+ORG-0047,CEN/TC 350 and national standards bodies,Not typed in this review,Composite public label—review before splitting
+ORG-0048,CEPE LCI project,Not typed in this review,Exact public label
+ORG-0049,Chalmers University of Technology-led DeDuCE team,Not typed in this review,Exact public label
+ORG-0050,"Chalmers University of Technology, Environmental Systems Analysis",Not typed in this review,Exact public label
+ORG-0051,Chris Mutel,Individual,Actor and role resolved from reviewed public evidence
+ORG-0052,Christian Kongsgaard,Individual,Actor and role resolved from reviewed public evidence
+ORG-0053,CIRAIG / POLARIIS+ collaboration,Not typed in this review,Composite public label—review before splitting
+ORG-0054,CIRAIG / project contributors,Not typed in this review,Composite public label—review before splitting
+ORG-0055,CIRAIG OpenIO-Canada contributors,Not typed in this review,Exact public label
+ORG-0056,CIRAIG Sustainable Consumption Chair,Not typed in this review,Exact public label
+ORG-0057,CIRAIG with ecoinvent,Not typed in this review,Exact public label
+ORG-0058,Circular Ecology,Not typed in this review,Exact public label
+ORG-0059,CircularTree,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0060,CIRPASS-2 and partner initiatives,Not typed in this review,Composite public label—review before splitting
+ORG-0061,CIRPASS-2 European project,Not typed in this review,Exact public label
+ORG-0062,Cirrus Nexus,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0063,CLIC Innovation / ARVI research programme,Not typed in this review,Composite public label—review before splitting
+ORG-0064,Climate Farm Demo consortium,Not typed in this review,Exact public label
+ORG-0065,ClimateCamp BV,Company,Legal entity resolved from official privacy notice
+ORG-0066,ClimatePartner,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0067,ClimatePoint,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0068,Climatiq GmbH,Company,Actor and role resolved from reviewed public evidence
+ORG-0069,CML-IE; public resources are now largely archival,Not typed in this review,Composite public label—review before splitting
+ORG-0070,CO2 AI SAS,Company,Legal entity resolved from official terms
+ORG-0071,Consortium for Research on Renewable Industrial Materials (CORRIM),Not typed in this review,Exact public label
+ORG-0072,Cornerstone Sustainability Data Initiative,Not typed in this review,Exact public label
+ORG-0073,CORRIM and Federal LCA Commons,Not typed in this review,Composite public label—review before splitting
+ORG-0074,Dassault Systèmes,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0075,Daylight Chemical Information Systems (original specification); multiple later dialects,Not typed in this review,Composite public label—review before splitting
+ORG-0076,Daylight for original specification; distributed implementer community,Not typed in this review,Composite public label—review before splitting
+ORG-0077,DdS board and staff,Not typed in this review,Composite public label—review before splitting
+ORG-0078,DdS platform and data engineering team,Not typed in this review,Composite public label—review before splitting
+ORG-0079,DeDuCE research team and partners,Not typed in this review,Composite public label—review before splitting
+ORG-0080,Delta Electronics,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0081,Départ de Sentier,Not typed in this review,Exact public label
+ORG-0082,Départ de Sentier association,Not typed in this review,Exact public label
+ORG-0083,Directorate-General for Environment and Joint Research Centre,Not typed in this review,Composite public label—review before splitting
+ORG-0084,Directorate-General for Research and Innovation and Joint Research Centre,Not typed in this review,Composite public label—review before splitting
+ORG-0085,Distributed historically through openLCA Nexus,Not typed in this review,Exact public label
+ORG-0086,Dutch National Institute for Public Health and the Environment (RIVM) and method authors,Not typed in this review,Composite public label—review before splitting
+ORG-0087,EarthShift Global,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0088,Eaternity,Nonprofit / industry organization,Actor and role resolved from reviewed public evidence
+ORG-0089,EC-JRC / European Platform on LCA,Not typed in this review,Composite public label—review before splitting
+ORG-0090,ECO Platform AISBL,Not typed in this review,Exact public label
+ORG-0091,ECO Platform and connected EPD programme-operator nodes,Not typed in this review,Composite public label—review before splitting
+ORG-0092,ECO Platform members and secretariat,Not typed in this review,Composite public label—review before splitting
+ORG-0093,Eco-Bat,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0094,eco-costs/value maintainers,Not typed in this review,Composite public label—review before splitting
+ORG-0095,Ecochain Technologies B.V.,Company,Actor and role resolved from reviewed public evidence
+ORG-0096,Ecodigit,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0097,ecoinvent / former EcoSpold development community,Not typed in this review,Composite public label—review before splitting
+ORG-0098,ecoinvent Association,Not typed in this review,Exact public label
+ORG-0099,ECOSPEED,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0100,ENEA,Not typed in this review,Exact public label
+ORG-0101,ENEA; ARCADIA and successor MASE–ENEA programme,Not typed in this review,Composite public label—review before splitting
+ORG-0102,EPD Australasia,Not typed in this review,Exact public label
+ORG-0103,EPD Australasia Ltd,Not typed in this review,Exact public label
+ORG-0104,EPD International AB,Not typed in this review,Exact public label
+ORG-0105,EPDItaly,Not typed in this review,Exact public label
+ORG-0106,ERASM,Not typed in this review,Exact public label
+ORG-0107,ERASM member-company collaboration,Not typed in this review,Exact public label
+ORG-0108,"ERG, Stanford and Watershed-supported initiative",Not typed in this review,Composite public label—review before splitting
+ORG-0109,ESGpedia Pte Ltd,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0110,ESU-services and contributing authors,Not typed in this review,Composite public label—review before splitting
+ORG-0111,ESU-services Ltd.,Not typed in this review,Exact public label
+ORG-0112,"ETH Zurich, Chair of Ecological Systems Design",University / research institution,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0113,eTool,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0114,EUDPP ontology contributors via DPP Vocabulary Hub,Not typed in this review,Exact public label
+ORG-0115,EuGeos / Chris Foster,Not typed in this review,Composite public label—review before splitting
+ORG-0116,Eurobitume,Not typed in this review,Exact public label
+ORG-0117,EUROFER Stainless,Not typed in this review,Exact public label
+ORG-0118,European Aluminium,Nonprofit / industry organization,Actor and role resolved from reviewed public evidence
+ORG-0119,European Commission,Not typed in this review,Exact public label
+ORG-0120,European Commission Joint Research Centre,Not typed in this review,Exact public label
+ORG-0121,European Commission Joint Research Centre and Directorate-General for Environment,Not typed in this review,Composite public label—review before splitting
+ORG-0122,European Commission Joint Research Centre and Environmental Footprint governance,Not typed in this review,Composite public label—review before splitting
+ORG-0123,European Commission-funded NEEDS project consortium,Not typed in this review,Exact public label
+ORG-0124,European Committee for Standardization (CEN),Not typed in this review,Exact public label
+ORG-0125,European Container Glass Federation (FEVE),Not typed in this review,Exact public label
+ORG-0126,"European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)",Not typed in this review,Composite public label—review before splitting
+ORG-0127,European LIFE programme consortium,Not typed in this review,Exact public label
+ORG-0128,European Platform on Life Cycle Assessment,Not typed in this review,Exact public label
+ORG-0129,European Platform on Life Cycle Assessment / EC-JRC,Not typed in this review,Composite public label—review before splitting
+ORG-0130,European Platform on Life Cycle Assessment / JRC,Not typed in this review,Composite public label—review before splitting
+ORG-0131,Evah Associates,Not typed in this review,Exact public label
+ORG-0132,Evalue8 Sustainability Pty Ltd,Company,Legal entity resolved from official terms
+ORG-0133,EVEA,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0134,EXIOBASE consortium,Not typed in this review,Exact public label
+ORG-0135,EXIOBASE research consortium; current releases distributed on Zenodo,Not typed in this review,Composite public label—review before splitting
+ORG-0136,Expanding Circle Ltd (trading as Altruistiq),Company,Legal entity resolved from official company information
+ORG-0137,FAO-coordinated expert and institutional community,Not typed in this review,Composite public label—review before splitting
+ORG-0138,Federal LCA Commons,Public consortium / community,Actor and role resolved from reviewed public evidence
+ORG-0139,Federal University of Technology – Paraná (UTFPR),University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0140,FEVE,Not typed in this review,Exact public label
+ORG-0141,Fitsol Limited,Company,Legal entity resolved from official terms
+ORG-0142,FLCAC administrators; development resources hosted publicly,Not typed in this review,Composite public label—review before splitting
+ORG-0143,FOEN/BAFU and commissioned technical partners,Not typed in this review,Composite public label—review before splitting
+ORG-0144,Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions,Not typed in this review,Composite public label—review before splitting
+ORG-0145,FoodOn open inter-agency community,Not typed in this review,Exact public label
+ORG-0146,FoodOntology contributors / OBO Foundry,Not typed in this review,Composite public label—review before splitting
+ORG-0147,FOODTURE Horizon Europe consortium,Not typed in this review,Exact public label
+ORG-0148,Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB),Not typed in this review,Composite public label—review before splitting
+ORG-0149,Forum for Sustainability through Life Cycle Innovation e.V.,Not typed in this review,Exact public label
+ORG-0150,Framework authors,Not typed in this review,Exact public label
+ORG-0151,FRED GmbH,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0152,FSLCI secretariat and member community,Not typed in this review,Composite public label—review before splitting
+ORG-0153,Fujitsu Limited,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0154,Fundación InnovaCiclos,Not typed in this review,Exact public label
+ORG-0155,Fundación InnovaCiclos / EcoEd,Not typed in this review,Composite public label—review before splitting
+ORG-0156,GBDI consortium,Not typed in this review,Exact public label
+ORG-0157,GBDI technical community,Not typed in this review,Exact public label
+ORG-0158,German Environment Agency,Not typed in this review,Exact public label
+ORG-0159,"German Environment Agency (Umweltbundesamt, UBA)",Not typed in this review,Exact public label
+ORG-0160,"German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)",Not typed in this review,Composite public label—review before splitting
+ORG-0161,GFLI Secretariat and data-project partners,Not typed in this review,Composite public label—review before splitting
+ORG-0162,GFLI technical and methodology groups,Not typed in this review,Composite public label—review before splitting
+ORG-0163,GHG Protocol,Not typed in this review,Exact public label
+ORG-0164,GHG Protocol secretariat and multi-stakeholder governance bodies,Not typed in this review,Composite public label—review before splitting
+ORG-0165,Global Building Data Initiative,Not typed in this review,Exact public label
+ORG-0166,Global Building Data Initiative under GLOBE,Not typed in this review,Exact public label
+ORG-0167,Global Climate Changer GmbH,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0168,"Global CO2 Initiative, University of Michigan",Not typed in this review,Exact public label
+ORG-0169,Global Feed LCA Institute,Not typed in this review,Exact public label
+ORG-0170,Government of Quebec / CIRAIG,Not typed in this review,Composite public label—review before splitting
+ORG-0171,Green Gold Label Foundation,Nonprofit / industry organization,Actor and role resolved from reviewed public evidence
+ORG-0172,GreenDelta,Not typed in this review,Exact public label
+ORG-0173,GreenDelta GmbH,Company,Actor and role resolved from reviewed public evidence
+ORG-0174,GreenDelta GmbH / TRIPLELINK,Not typed in this review,Composite public label—review before splitting
+ORG-0175,GreenDelta openLCA development team,Not typed in this review,Exact public label
+ORG-0176,GreenGrocer consortium,Not typed in this review,Exact public label
+ORG-0177,GreenStitch Technologies PVT LTD,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0178,"Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd.",Company,Actor and role resolved from reviewed public evidence
+ORG-0179,Helmholtz Centre for Environmental Research (UFZ),Not typed in this review,Exact public label
+ORG-0180,HESTIA project / University of Oxford,Not typed in this review,Composite public label—review before splitting
+ORG-0181,HESTIA team and contributor community,Not typed in this review,Composite public label—review before splitting
+ORG-0182,HESTIA technical team,Not typed in this review,Exact public label
+ORG-0183,HiQ Data,Not typed in this review,Exact public label
+ORG-0184,Historical format; no active maintenance identified,Not typed in this review,Composite public label—review before splitting
+ORG-0185,Horizon Europe consortium,Not typed in this review,Exact public label
+ORG-0186,HowGood,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0187,Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos,Not typed in this review,Exact public label
+ORG-0188,ICMQ S.p.A. Società Benefit / EPDItaly,Not typed in this review,Composite public label—review before splitting
+ORG-0189,IDTA office and admin-shell-io repository,Not typed in this review,Composite public label—review before splitting
+ORG-0190,IINAS,Not typed in this review,Exact public label
+ORG-0191,IKE Environmental Technology,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0192,IKE Environmental Technology / Sichuan University lineage,Not typed in this review,Composite public label—review before splitting
+ORG-0193,"IKE Environmental Technology Co., Ltd.",Not typed in this review,Exact public label
+ORG-0194,IMPACT World+ method development team,Not typed in this review,Exact public label
+ORG-0195,IMPACT World+ scientific consortium,Not typed in this review,Exact public label
+ORG-0196,InChI Trust,Not typed in this review,Exact public label
+ORG-0197,Industrial Digital Twin Association,Not typed in this review,Exact public label
+ORG-0198,INIES governance partners under French public convention,Not typed in this review,Exact public label
+ORG-0199,InnoBlock Technology Ltd,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0200,INRAE,Not typed in this review,Exact public label
+ORG-0201,INRAE ontology team and Recherche Data Gouv/AgroPortal,Not typed in this review,Composite public label—review before splitting
+ORG-0202,"Institute for Information Industry, Digital Transformation Research Institute",University / research institution,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0203,Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI),Not typed in this review,Composite public label—review before splitting
+ORG-0204,"Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators",Not typed in this review,Composite public label—review before splitting
+ORG-0205,Intergovernmental Panel on Climate Change,Not typed in this review,Exact public label
+ORG-0206,International Aluminium Institute,Nonprofit / industry organization,Actor and role resolved from reviewed public evidence
+ORG-0207,International CCU Assessment Harmonization Group,Not typed in this review,Exact public label
+ORG-0208,International Copper Association,Not typed in this review,Exact public label
+ORG-0209,International EPD System,Not typed in this review,Exact public label
+ORG-0210,International Institute for Sustainability Analysis and Strategy (IINAS),Not typed in this review,Composite public label—review before splitting
+ORG-0211,International Organization for Standardization,Not typed in this review,Exact public label
+ORG-0212,International Organization for Standardization (ISO),Not typed in this review,Exact public label
+ORG-0213,International Zinc Association,Not typed in this review,Exact public label
+ORG-0214,IPCC Task Force on National Greenhouse Gas Inventories,Not typed in this review,Exact public label
+ORG-0215,IPCC Working Group I assessment process,Not typed in this review,Exact public label
+ORG-0216,iPoint-systems GmbH,Company,Actor and role resolved from reviewed public evidence
+ORG-0217,ISO/TC 207/SC 3,Not typed in this review,Composite public label—review before splitting
+ORG-0218,ISO/TC 207/SC 5,Not typed in this review,Composite public label—review before splitting
+ORG-0219,ISO/TC 207/SC 7,Not typed in this review,Composite public label—review before splitting
+ORG-0220,ITeC,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0221,IUPAC and InChI Trust,Not typed in this review,Composite public label—review before splitting
+ORG-0222,IZUBA énergies,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0223,"Kanso, Inc. / Carbonfact",Not typed in this review,Composite public label—review before splitting
+ORG-0224,Kassel Institute for Sustainability data repository,Not typed in this review,Exact public label
+ORG-0225,KieranTimberlake,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0226,Kimel Tech SpA,Company,Actor and role resolved from reviewed public evidence
+ORG-0227,Kiwa,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0228,Kleis Technology,Company,Actor and role resolved from reviewed public evidence
+ORG-0229,Korea Environmental Industry & Technology Institute (KEITI),Not typed in this review,Exact public label
+ORG-0230,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH,Not typed in this review,Composite public label—review before splitting
+ORG-0231,LCA CARE project consortium,Public consortium / community,Actor and role resolved from reviewed public evidence
+ORG-0232,LCA Japan Forum,Not typed in this review,Exact public label
+ORG-0233,LCA Society of Japan / LCA Japan Forum,Not typed in this review,Composite public label—review before splitting
+ORG-0234,LCA to BIM Workflow research project,Not typed in this review,Exact public label
+ORG-0235,LCA.no AS,Company,Legal entity resolved from official privacy notice
+ORG-0236,LCAx contributors,Not typed in this review,Exact public label
+ORG-0237,LCAx open-source project / OCNI-DTU contributors,Not typed in this review,Composite public label—review before splitting
+ORG-0238,LCIE Bureau Veritas,Not typed in this review,Exact public label
+ORG-0239,Legacy project data; openLCA conversion maintained historically by GreenDelta,Not typed in this review,Composite public label—review before splitting
+ORG-0240,Legacy project portal; dataset owners include KIT and partners,Not typed in this review,Composite public label—review before splitting
+ORG-0241,"Leiden University, Institute of Environmental Sciences (CML)",Not typed in this review,Exact public label
+ORG-0242,Leonardo Ferhati,Individual,Actor and role resolved from reviewed public evidence
+ORG-0243,Life Cycle Initiative / participating nodes,Not typed in this review,Composite public label—review before splitting
+ORG-0244,Life Cycle Initiative GLAM stewardship community,Not typed in this review,Exact public label
+ORG-0245,Life Cycle Initiative hosted at UNEP,Not typed in this review,Exact public label
+ORG-0246,Life Cycle Initiative secretariat and steering governance,Not typed in this review,Composite public label—review before splitting
+ORG-0247,Life Cycle Initiative with scientific partners,Not typed in this review,Exact public label
+ORG-0248,Lifecycles,Company,Actor and role resolved from reviewed public evidence
+ORG-0249,Makersite GmbH,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0250,Mérieux NutriSciences | Blonk,Not typed in this review,Exact public label
+ORG-0251,MexiLCA initiative,Not typed in this review,Exact public label
+ORG-0252,Microsoft,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0253,"Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute",Not typed in this review,Composite public label—review before splitting
+ORG-0254,Minviro,Not typed in this review,Exact public label
+ORG-0255,Minviro Ltd,Company,Actor and role resolved from reviewed public evidence
+ORG-0256,Muir AI,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0257,National Institute for Public Health and the Environment (RIVM),Not typed in this review,Composite public label—review before splitting
+ORG-0258,National Institute of Advanced Industrial Science and Technology (AIST),Not typed in this review,Composite public label—review before splitting
+ORG-0259,National Laboratory of the Rockies on Federal LCA Commons,Not typed in this review,Exact public label
+ORG-0260,National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners,Not typed in this review,Composite public label—review before splitting
+ORG-0261,New Earth / Social Hotspots Database provider,Not typed in this review,Composite public label—review before splitting
+ORG-0262,Nickel Institute,Not typed in this review,Exact public label
+ORG-0263,No current maintainer publicly confirmed,Not typed in this review,Exact public label
+ORG-0264,Oliver Kusche Research & Consulting (OKWorx),Company,Actor and role resolved from reviewed public evidence
+ORG-0265,One Click LCA Oy Ltd,Company,Actor and role resolved from reviewed public evidence
+ORG-0266,Ontology-pattern authors,Not typed in this review,Exact public label
+ORG-0267,Open Sustainable Technology community,Not typed in this review,Exact public label
+ORG-0268,openEPD contributors and reference implementers,Not typed in this review,Composite public label—review before splitting
+ORG-0269,openEPD Forum / Building Transparency ecosystem,Not typed in this review,Composite public label—review before splitting
+ORG-0270,Optel Group,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0271,Partnership for Carbon Transparency,Not typed in this review,Exact public label
+ORG-0272,Partnership for Carbon Transparency (PACT),Not typed in this review,Exact public label
+ORG-0273,Paul Scherrer Institute,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0274,Peruvian Life Cycle Network (PELCAN),Not typed in this review,Exact public label
+ORG-0275,Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners,Not typed in this review,Composite public label—review before splitting
+ORG-0276,PFN secretariat and member/collaborator community,Not typed in this review,Composite public label—review before splitting
+ORG-0277,PFN technical community convened by EA – Earth Action,Not typed in this review,Exact public label
+ORG-0278,PILARIO SA,Company,Legal entity resolved from official privacy notice
+ORG-0279,PIQET Consortium,Public consortium / community,Actor and role resolved from reviewed public evidence
+ORG-0280,PlanetFWD Inc.,Company,Legal entity resolved from official privacy notice
+ORG-0281,Plastic Footprint Network,Not typed in this review,Exact public label
+ORG-0282,Plastic Footprint Network convened by EA – Earth Action,Not typed in this review,Exact public label
+ORG-0283,Plastics Europe,Not typed in this review,Exact public label
+ORG-0284,Plastics Europe and relevant sector groups,Not typed in this review,Composite public label—review before splitting
+ORG-0285,Potsdam Institute for Climate Impact Research,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0286,PRé Sustainability B.V.,Company,Actor and role resolved from reviewed public evidence
+ORG-0287,PRIMUS project / Plastics Recyclers Europe,Not typed in this review,Composite public label—review before splitting
+ORG-0288,product impact team,Not typed in this review,Exact public label
+ORG-0289,productimpact.info,Not typed in this review,Exact public label
+ORG-0290,Project author/community repository,Not typed in this review,Composite public label—review before splitting
+ORG-0291,protontypes/open-sustainable-technology maintainers and contributors,Not typed in this review,Composite public label—review before splitting
+ORG-0292,PubChem,Not typed in this review,Exact public label
+ORG-0293,PwC / Ecobilan,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0294,Quantis,Not typed in this review,Exact public label
+ORG-0295,Quantis and Kleis Technology,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0296,Quantis and WFLDB partners,Not typed in this review,Composite public label—review before splitting
+ORG-0297,Red Iberoamericana de Ciclo de Vida,Not typed in this review,Exact public label
+ORG-0298,RICV board and member networks,Not typed in this review,Composite public label—review before splitting
+ORG-0299,Riskoa Ltd,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0300,RIVM public distribution,Not typed in this review,Exact public label
+ORG-0301,RIVM; LCI update performed by Mérieux NutriSciences | Blonk,Not typed in this review,Composite public label—review before splitting
+ORG-0302,RWTH Aachen University,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0303,RWTH design-computation project contributors,Not typed in this review,Exact public label
+ORG-0304,SAP,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0305,Scientific publication and author community,Not typed in this review,Composite public label—review before splitting
+ORG-0306,Semantum,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0307,"Shanghai HiQ Smart Data Co., Ltd.",Not typed in this review,Exact public label
+ORG-0308,SimaPro B.V.,Company,Actor and role resolved from reviewed public evidence
+ORG-0309,sinum,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0310,SIRIM Berhad,Not typed in this review,Exact public label
+ORG-0311,SIRIM Energy & Environment Centre,Not typed in this review,Exact public label
+ORG-0312,SKZ — Das Kunststoff-Zentrum,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0313,"Sluicebox, Inc.",Company,Legal entity resolved from official privacy notice
+ORG-0314,Smart Tradzt,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0315,Social Hotspots Database team,Not typed in this review,Exact public label
+ORG-0316,Solid Forest,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0317,Sphera,Not typed in this review,Exact public label
+ORG-0318,"Sphera Solutions, Inc.",Company,Actor and role resolved from reviewed public evidence
+ORG-0319,Startrust,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0320,Studio Gear Up,Company,Actor and role resolved from reviewed public evidence
+ORG-0321,Substain,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0322,Sustainable Impact Metrics Foundation / Delft University of Technology lineage,Not typed in this review,Composite public label—review before splitting
+ORG-0323,Sustech,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0324,Swedish Life Cycle Center,Not typed in this review,Exact public label
+ORG-0325,Swiss Federal Office for the Environment (FOEN/BAFU),Not typed in this review,Composite public label—review before splitting
+ORG-0326,Swiss Federal Offices,Not typed in this review,Exact public label
+ORG-0327,Taiwan Web Service Corporation,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0328,Tanso Technologies GmbH,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0329,"Technology and Informatics Institute for Sustainability (TIIS), NSTDA",Not typed in this review,Composite public label—review before splitting
+ORG-0330,Terrascope Pte. Ltd.,Company,Legal entity resolved from official terms
+ORG-0331,Textile Exchange,Not typed in this review,Exact public label
+ORG-0332,Textile Exchange in partnership with SCS Global Services,Not typed in this review,Exact public label
+ORG-0333,TfS Scope 3 GHG programme,Not typed in this review,Exact public label
+ORG-0334,The Circulate Initiative,Nonprofit / industry organization,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0335,The European Steel Association (EUROFER),Not typed in this review,Exact public label
+ORG-0336,The Evah Institute,Not typed in this review,Exact public label
+ORG-0337,The Evah Institute / Ecquate Pty Ltd,Not typed in this review,Composite public label—review before splitting
+ORG-0338,TianGong community,Not typed in this review,Exact public label
+ORG-0339,TianGong LCA Data Working Group and platform community,Not typed in this review,Composite public label—review before splitting
+ORG-0340,"TianGong LCA research team, Tsinghua University",University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0341,TianGong platform developers,Not typed in this review,Exact public label
+ORG-0342,TianGong project / Carbon Footprint Industry Alliance ecosystem,Not typed in this review,Composite public label—review before splitting
+ORG-0343,TIDAS development community,Not typed in this review,Exact public label
+ORG-0344,tishchungoora/lca-ontology repository maintainer,Not typed in this review,Composite public label—review before splitting
+ORG-0345,Together for Sustainability,Not typed in this review,Exact public label
+ORG-0346,Trace One,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0347,Trayak,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0348,Tsinghua University,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0349,U.S. Department of Energy,Public body,Actor and role resolved from reviewed public evidence
+ORG-0350,U.S. Department of Energy / National Laboratory of the Rockies,Not typed in this review,Composite public label—review before splitting
+ORG-0351,U.S. Environmental Protection Agency,Public body,Actor and role resolved from reviewed public evidence
+ORG-0352,U.S. Federal LCA Commons agencies,Not typed in this review,Exact public label
+ORG-0353,U.S. Federal LCA Commons partners,Not typed in this review,Exact public label
+ORG-0354,Uhuru Corporation,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0355,UNEP-hosted Life Cycle Initiative,Not typed in this review,Exact public label
+ORG-0356,United Nations Environment Programme,Not typed in this review,Exact public label
+ORG-0357,United States Environmental Protection Agency,Not typed in this review,Exact public label
+ORG-0358,University of Kassel authors / BBSR-funded project,Not typed in this review,Composite public label—review before splitting
+ORG-0359,University of Oxford,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0360,University of Oxford / HESTIA project,Not typed in this review,Composite public label—review before splitting
+ORG-0361,University of Sheffield,University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0362,US Environmental Protection Agency,Not typed in this review,Exact public label
+ORG-0363,US EPA Office of Research and Development,Not typed in this review,Composite public label—review before splitting
+ORG-0364,US EPA research programme,Not typed in this review,Exact public label
+ORG-0365,US EPA research team,Not typed in this review,Exact public label
+ORG-0366,US National Library of Medicine / National Center for Biotechnology Information,Not typed in this review,Composite public label—review before splitting
+ORG-0367,USDA National Agricultural Library with collaborating federal agencies,Not typed in this review,Exact public label
+ORG-0368,VERSO GmbH,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0369,Vocabulary Hub / Semantic Treehouse maintainers,Not typed in this review,Composite public label—review before splitting
+ORG-0370,Walloon Agricultural Research Centre (CRA-W),University / research institution,Actor and role resolved from reviewed public evidence
+ORG-0371,WAP Sustainability,Not typed in this review,Exact public label
+ORG-0372,"WAP Sustainability, LLC",Company,Actor and role resolved from reviewed public evidence
+ORG-0373,Watershed Technology,Not typed in this review,Exact public label
+ORG-0374,WeCarbon Technology Ltd,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0375,World Business Council for Sustainable Development,Not typed in this review,Exact public label
+ORG-0376,World Resources Institute and World Business Council for Sustainable Development,Not typed in this review,Composite public label—review before splitting
+ORG-0377,World Steel Association,Not typed in this review,Exact public label
+ORG-0378,Worldly,Company,Actor and role resolved from reviewed public evidence
+ORG-0379,worldsteel,Not typed in this review,Exact public label
+ORG-0380,Wormhole Technologies Inc.,Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0381,WP1 led by ADEME within the FOODTURE consortium,Not typed in this review,Exact public label
+ORG-0382,WULCA,Not typed in this review,Exact public label
+ORG-0383,WULCA working group / UNEP-SETAC Life Cycle Initiative community,Not typed in this review,Composite public label—review before splitting
+ORG-0384,"Yantai Haiyi Software Co., Ltd.",Company,Distinct public developer/provider label retained; legal entity suffix not independently normalized
+ORG-0385,YuzeData Inc.,Company,Company identity resolved from official company publication

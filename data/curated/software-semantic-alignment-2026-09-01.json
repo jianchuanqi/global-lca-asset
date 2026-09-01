@@ -1,0 +1,180 @@
+{
+  "review_id": "SOFTWARE-SEMANTIC-ALIGNMENT-2026-09-01",
+  "reviewed_at": "2026-09-01",
+  "source_review_id": "SOFTWARE-MARKET-REVIEW-2026-09-01",
+  "dimension_policy": {
+    "product_type": "How the product is delivered or used; this is not a functional claim.",
+    "primary_function": "One aligned headline function selected from the controlled vocabulary.",
+    "functional_capabilities": "Multiple evidence-linked functions may apply to one product; source wording is retained separately.",
+    "standard_association": "A standard, network, or directory association is provenance or interoperability evidence, not a product function or quality rating.",
+    "actor_role": "Owner, developer, and operator/maintainer are evidence-bearing relationships to a company, institution, public body, consortium/community, or publicly credited individual. Missing roles remain missing."
+  },
+  "primary_function_taxonomy": [
+    {
+      "function_id": "SF-01",
+      "label": "LCA/PCF modelling and calculation",
+      "definition": "Builds or evaluates life-cycle models, product carbon footprints, or other product-level life-cycle impacts. LCA and PCF are aligned here as one headline modelling/calculation function and remain distinguishable as capabilities."
+    },
+    {
+      "function_id": "SF-02",
+      "label": "PCF data exchange and interoperability",
+      "definition": "Exchanges structured product-carbon-footprint data or implements an interoperability specification without an independently evidenced calculation function."
+    },
+    {
+      "function_id": "SF-03",
+      "label": "EPD and environmental reporting workflow",
+      "definition": "Prepares, compares, validates, or publishes environmental declarations and related reports."
+    },
+    {
+      "function_id": "SF-04",
+      "label": "Eco-design and scenario assessment",
+      "definition": "Supports design comparison, hotspot analysis, reduction scenarios, or portfolio decisions using environmental results."
+    },
+    {
+      "function_id": "SF-05",
+      "label": "Data and systems integration",
+      "definition": "Provides APIs, connectors, data transformation, data access, or integration support for LCA/PCF workflows."
+    },
+    {
+      "function_id": "SF-06",
+      "label": "Supporting LCA/PCF model or workflow",
+      "definition": "Provides a calculation model, toolkit, or workflow component whose more specific headline function is not publicly confirmed."
+    }
+  ],
+  "capability_taxonomy": [
+    {
+      "capability_id": "SC-01",
+      "label": "Life cycle assessment modelling",
+      "aliases": ["LCA", "building LCA", "whole-building LCA", "packaging LCA", "screening LCA", "life-cycle approach", "life-cycle impact assessment", "environmental assessment", "environmental impact assessment", "multi-impact product assessment", "waste-system comparison"]
+    },
+    {
+      "capability_id": "SC-02",
+      "label": "Product carbon footprint calculation",
+      "aliases": ["PCF calculation", "product emissions estimation", "life-cycle emissions", "embodied-carbon calculation", "embodied-carbon analysis", "GHG calculation"]
+    },
+    {
+      "capability_id": "SC-03",
+      "label": "Corporate carbon accounting",
+      "aliases": ["CCF calculation"]
+    },
+    {
+      "capability_id": "SC-04",
+      "label": "PCF data exchange and interoperability",
+      "aliases": ["PCF exchange", "Data exchange / conversion"]
+    },
+    {
+      "capability_id": "SC-05",
+      "label": "EPD and environmental reporting",
+      "aliases": ["EPD workflow", "EPD preparation", "EPD comparison", "PCF reporting", "environmental documentation", "eco-labelling"]
+    },
+    {
+      "capability_id": "SC-06",
+      "label": "Eco-design and scenario analysis",
+      "aliases": ["eco-design", "packaging eco-design", "scenario analysis", "hotspot analysis", "reduction analysis", "portfolio calculation", "product portfolio management", "digital twin"]
+    },
+    {
+      "capability_id": "SC-07",
+      "label": "Supplier and product data management",
+      "aliases": ["supplier data collection", "supplier collaboration", "data collaboration", "supply-chain management", "traceability"]
+    },
+    {
+      "capability_id": "SC-08",
+      "label": "API and enterprise integration",
+      "aliases": ["API / connector", "API / developer tooling", "BOM / ERP integration", "enterprise integration", "ERP / API integration", "ERP / PLM integration", "Revit integration", "dynamic thermal simulation linkage"]
+    },
+    {
+      "capability_id": "SC-09",
+      "label": "Environmental data and calculation models",
+      "aliases": ["materials data", "regionalized LCI / LCIA", "Domain calculation model", "database modelling", "process modelling", "flowsheet modelling", "AI-assisted factor mapping"]
+    },
+    {
+      "capability_id": "SC-10",
+      "label": "Design and planning workflow",
+      "aliases": ["construction planning", "construction project analysis"]
+    },
+    {
+      "capability_id": "SC-11",
+      "label": "Supporting LCA/PCF workflow",
+      "aliases": ["Supporting LCA/PCF workflow"]
+    }
+  ],
+  "product_type_taxonomy": [
+    "Software application or platform",
+    "Sector-specific workflow application",
+    "Data exchange or interoperability service",
+    "API, library, or calculation model"
+  ],
+  "role_policy": {
+    "confirmed_role_rule": "Create a role edge only when the public evidence identifies an actor and the actor can be distinguished from the product.",
+    "missing_role_rule": "Do not copy developer into owner or operator/maintainer. Do not create three roles merely for table completeness.",
+    "same_name_rule": "When a directory uses the same label for product and developer, resolve it to a distinct legal or institutional actor from a public source; otherwise retain it as a role-resolution gap, not a confirmed actor edge.",
+    "composite_rule": "Represent each resolved actor separately; preserve the original composite label in original_public_label."
+  },
+  "provider_name_alignments": {
+    "Altruistiq": {"canonical_name": "Expanding Circle Ltd (trading as Altruistiq)", "entity_type": "Company", "resolution_status": "Legal entity resolved from official company information", "evidence_url": "https://www.altruistiq.com/contact/contact-us"},
+    "ASUENE": {"canonical_name": "ASUENE Inc.", "entity_type": "Company", "resolution_status": "Company identity resolved from official product evidence", "evidence_url": "https://asuene.com/lca/en"},
+    "Atma.io": {"canonical_name": "Avery Dennison Corporation", "entity_type": "Company", "resolution_status": "Official site identifies atma.io as an Avery Dennison digital venture and trademark", "evidence_url": "https://www.atma.io/about-us"},
+    "Carboledger": {"canonical_name": "Carboledger Inc.", "entity_type": "Company", "resolution_status": "Legal entity resolved from official terms", "evidence_url": "https://www.carboledger.com/terms-of-use"},
+    "Carbon Maps": {"canonical_name": "Carbon Maps SAS", "entity_type": "Company", "resolution_status": "Legal entity resolved from official terms", "evidence_url": "https://www.carbonmaps.io/terms-of-use"},
+    "Carbon Trail": {"canonical_name": "CarbonTrail Tech LLP", "entity_type": "Company", "resolution_status": "Legal entity resolved from official privacy notice", "evidence_url": "https://carbontrail.net/privacy-policy"},
+    "ClimateCamp": {"canonical_name": "ClimateCamp BV", "entity_type": "Company", "resolution_status": "Legal entity resolved from official privacy notice", "evidence_url": "https://www.climatecamp.io/legal/privacy-policy"},
+    "CO2 AI": {"canonical_name": "CO2 AI SAS", "entity_type": "Company", "resolution_status": "Legal entity resolved from official terms", "evidence_url": "https://co2ai.com/terms-of-use"},
+    "Evalue8 Sustainability": {"canonical_name": "Evalue8 Sustainability Pty Ltd", "entity_type": "Company", "resolution_status": "Legal entity resolved from official terms", "evidence_url": "https://evalue8.net/terms-and-conditions-privacy-policy/"},
+    "Fitsol": {"canonical_name": "Fitsol Limited", "entity_type": "Company", "resolution_status": "Legal entity resolved from official terms", "evidence_url": "https://www.fitsol.co.uk/terms-conditions"},
+    "LCA.no": {"canonical_name": "LCA.no AS", "entity_type": "Company", "resolution_status": "Legal entity resolved from official privacy notice", "evidence_url": "https://lca.no/personvernerklaering/"},
+    "One Click LCA": {"canonical_name": "One Click LCA Oy Ltd", "entity_type": "Company", "resolution_status": "Company identity normalized from official company information", "evidence_url": "https://oneclicklca.com/en-us/company/about-us"},
+    "Pilario": {"canonical_name": "PILARIO SA", "entity_type": "Company", "resolution_status": "Legal entity resolved from official privacy notice", "evidence_url": "https://www.pilario.com/privacy-policy"},
+    "Planet FWD": {"canonical_name": "PlanetFWD Inc.", "entity_type": "Company", "resolution_status": "Legal entity resolved from official privacy notice", "evidence_url": "https://www.planetfwd.com/privacy"},
+    "Sluicebox": {"canonical_name": "Sluicebox, Inc.", "entity_type": "Company", "resolution_status": "Legal entity resolved from official privacy notice", "evidence_url": "https://sluicebox.ai/privacy-policy"},
+    "Terrascope": {"canonical_name": "Terrascope Pte. Ltd.", "entity_type": "Company", "resolution_status": "Legal entity resolved from official terms", "evidence_url": "https://www.terrascope.com/terms-of-use"},
+    "YuzeData": {"canonical_name": "YuzeData Inc.", "entity_type": "Company", "resolution_status": "Company identity resolved from official company publication", "evidence_url": "https://www.yuzedata.com/blog/endava-yuzedata-partnership"}
+  },
+  "legacy_role_assertions": {
+    "LCA-SW-0001": [
+      {"role": "owner", "organization_name": "One Click LCA Oy Ltd", "entity_type": "Company", "evidence_url": "https://simapro.com/insights/simapro-and-pre-are-now-part-of-one-click-lca/"},
+      {"role": "developer", "organization_name": "PRé Sustainability B.V.", "entity_type": "Company", "evidence_url": "https://simapro.com/insights/simapro-and-pre-are-now-part-of-one-click-lca/"},
+      {"role": "operator/maintainer", "organization_name": "SimaPro B.V.", "entity_type": "Company", "evidence_url": "https://simapro.com/legal/"}
+    ],
+    "LCA-SW-0002": [
+      {"role": "developer", "organization_name": "Chris Mutel", "entity_type": "Individual", "evidence_url": "https://docs.brightway.dev/en/latest/content/other/credits.html"}
+    ],
+    "LCA-SW-0003": [{"role": "owner", "organization_name": "GreenDelta GmbH", "entity_type": "Company"}, {"role": "developer", "organization_name": "GreenDelta GmbH", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "GreenDelta GmbH", "entity_type": "Company"}],
+    "LCA-SW-0004": [{"role": "owner", "organization_name": "One Click LCA Oy Ltd", "entity_type": "Company"}, {"role": "developer", "organization_name": "One Click LCA Oy Ltd", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "One Click LCA Oy Ltd", "entity_type": "Company"}],
+    "LCA-SW-0005": [{"role": "owner", "organization_name": "Sphera Solutions, Inc.", "entity_type": "Company"}, {"role": "developer", "organization_name": "Sphera Solutions, Inc.", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Sphera Solutions, Inc.", "entity_type": "Company"}],
+    "LCA-SW-0006": [{"role": "developer", "organization_name": "Federal University of Technology – Paraná (UTFPR)", "entity_type": "University / research institution"}],
+    "LCA-SW-0007": [{"role": "owner", "organization_name": "U.S. Department of Energy", "entity_type": "Public body"}, {"role": "developer", "organization_name": "Argonne National Laboratory", "entity_type": "University / research institution"}, {"role": "operator/maintainer", "organization_name": "Argonne National Laboratory", "entity_type": "University / research institution"}],
+    "LCA-SW-0008": [{"role": "owner", "organization_name": "University of Oxford", "entity_type": "University / research institution"}, {"role": "developer", "organization_name": "University of Oxford", "entity_type": "University / research institution"}],
+    "LCA-SW-0009": [{"role": "owner", "organization_name": "Ecochain Technologies B.V.", "entity_type": "Company"}, {"role": "developer", "organization_name": "Ecochain Technologies B.V.", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Ecochain Technologies B.V.", "entity_type": "Company"}],
+    "LCA-SW-0010": [{"role": "developer", "organization_name": "Kleis Technology", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Kleis Technology", "entity_type": "Company"}],
+    "LCA-SW-0011": [{"role": "developer", "organization_name": "Christian Kongsgaard", "entity_type": "Individual", "evidence_url": "https://github.com/ocni-dtu/lcax"}],
+    "LCA-SW-0012": [{"role": "owner", "organization_name": "U.S. Environmental Protection Agency", "entity_type": "Public body"}, {"role": "developer", "organization_name": "U.S. Environmental Protection Agency", "entity_type": "Public body"}, {"role": "operator/maintainer", "organization_name": "Federal LCA Commons", "entity_type": "Public consortium / community"}],
+    "LCA-SW-0013": [{"role": "developer", "organization_name": "Oliver Kusche Research & Consulting (OKWorx)", "entity_type": "Company", "evidence_url": "https://soda4lca.io/"}, {"role": "operator/maintainer", "organization_name": "Oliver Kusche Research & Consulting (OKWorx)", "entity_type": "Company", "evidence_url": "https://soda4lca.io/"}],
+    "LCA-SW-0014": [{"role": "developer", "organization_name": "Paul Scherrer Institute", "entity_type": "University / research institution", "evidence_url": "https://github.com/polca/premise/blob/master/CITATION.cff"}, {"role": "developer", "organization_name": "Potsdam Institute for Climate Impact Research", "entity_type": "University / research institution", "evidence_url": "https://github.com/polca/premise/blob/master/CITATION.cff"}, {"role": "operator/maintainer", "organization_name": "Paul Scherrer Institute", "entity_type": "University / research institution", "evidence_url": "https://github.com/polca/premise"}],
+    "LCA-SW-0015": [{"role": "developer", "organization_name": "2050 Materials", "entity_type": "Company"}],
+    "LCA-SW-0016": [{"role": "developer", "organization_name": "Climatiq GmbH", "entity_type": "Company"}],
+    "LCA-SW-0017": [{"role": "owner", "organization_name": "Cascale", "entity_type": "Nonprofit / industry organization"}, {"role": "operator/maintainer", "organization_name": "Worldly", "entity_type": "Company"}],
+    "LCA-SW-0018": [{"role": "owner", "organization_name": "Makersite GmbH", "entity_type": "Company"}, {"role": "developer", "organization_name": "Makersite GmbH", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Makersite GmbH", "entity_type": "Company"}],
+    "LCA-SW-0019": [{"role": "developer", "organization_name": "Eaternity", "entity_type": "Nonprofit / industry organization"}, {"role": "operator/maintainer", "organization_name": "Eaternity", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0020": [{"role": "developer", "organization_name": "EarthShift Global", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "EarthShift Global", "entity_type": "Company"}],
+    "LCA-SW-0021": [{"role": "developer", "organization_name": "EarthShift Global", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "EarthShift Global", "entity_type": "Company"}],
+    "LCA-SW-0022": [{"role": "owner", "organization_name": "PIQET Consortium", "entity_type": "Public consortium / community"}, {"role": "developer", "organization_name": "Lifecycles", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Lifecycles", "entity_type": "Company"}],
+    "LCA-SW-0025": [{"role": "owner", "organization_name": "Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd.", "entity_type": "Company"}, {"role": "developer", "organization_name": "Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd.", "entity_type": "Company"}],
+    "LCA-SW-0026": [{"role": "owner", "organization_name": "Kimel Tech SpA", "entity_type": "Company"}, {"role": "developer", "organization_name": "Kimel Tech SpA", "entity_type": "Company"}],
+    "LCA-SW-0027": [{"role": "owner", "organization_name": "LCA CARE project consortium", "entity_type": "Public consortium / community"}, {"role": "developer", "organization_name": "LCA CARE project consortium", "entity_type": "Public consortium / community"}],
+    "LCA-SW-0028": [{"role": "developer", "organization_name": "Eaternity", "entity_type": "Nonprofit / industry organization"}, {"role": "operator/maintainer", "organization_name": "Eaternity", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0029": [{"role": "developer", "organization_name": "University of Sheffield", "entity_type": "University / research institution"}, {"role": "developer", "organization_name": "Advanced Manufacturing Research Centre (AMRC)", "entity_type": "University / research institution"}],
+    "LCA-SW-0030": [{"role": "developer", "organization_name": "Walloon Agricultural Research Centre (CRA-W)", "entity_type": "University / research institution"}, {"role": "operator/maintainer", "organization_name": "Walloon Agricultural Research Centre (CRA-W)", "entity_type": "University / research institution"}],
+    "LCA-SW-0031": [{"role": "developer", "organization_name": "RWTH Aachen University", "entity_type": "University / research institution"}],
+    "LCA-SW-0032": [{"role": "owner", "organization_name": "Green Gold Label Foundation", "entity_type": "Nonprofit / industry organization"}, {"role": "developer", "organization_name": "Studio Gear Up", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Green Gold Label Foundation", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0033": [{"role": "owner", "organization_name": "Leonardo Ferhati", "entity_type": "Individual"}, {"role": "developer", "organization_name": "Leonardo Ferhati", "entity_type": "Individual"}],
+    "LCA-SW-0035": [{"role": "owner", "organization_name": "Minviro Ltd", "entity_type": "Company"}, {"role": "developer", "organization_name": "Minviro Ltd", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "Minviro Ltd", "entity_type": "Company"}],
+    "LCA-SW-0036": [{"role": "owner", "organization_name": "WAP Sustainability, LLC", "entity_type": "Company"}, {"role": "developer", "organization_name": "WAP Sustainability, LLC", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "WAP Sustainability, LLC", "entity_type": "Company"}],
+    "LCA-SW-0037": [{"role": "owner", "organization_name": "WAP Sustainability, LLC", "entity_type": "Company"}, {"role": "developer", "organization_name": "WAP Sustainability, LLC", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "WAP Sustainability, LLC", "entity_type": "Company"}],
+    "LCA-SW-0038": [{"role": "developer", "organization_name": "iPoint-systems GmbH", "entity_type": "Company"}, {"role": "operator/maintainer", "organization_name": "iPoint-systems GmbH", "entity_type": "Company"}],
+    "LCA-SW-0039": [{"role": "owner", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "developer", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "operator/maintainer", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0040": [{"role": "owner", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "developer", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "operator/maintainer", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0041": [{"role": "owner", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "developer", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "operator/maintainer", "organization_name": "Athena Sustainable Materials Institute", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0042": [{"role": "owner", "organization_name": "International Aluminium Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "owner", "organization_name": "European Aluminium", "entity_type": "Nonprofit / industry organization"}, {"role": "developer", "organization_name": "International Aluminium Institute", "entity_type": "Nonprofit / industry organization"}, {"role": "developer", "organization_name": "European Aluminium", "entity_type": "Nonprofit / industry organization"}],
+    "LCA-SW-0043": [{"role": "owner", "organization_name": "Tsinghua University", "entity_type": "University / research institution"}, {"role": "developer", "organization_name": "TianGong LCA research team, Tsinghua University", "entity_type": "University / research institution"}, {"role": "operator/maintainer", "organization_name": "TianGong LCA research team, Tsinghua University", "entity_type": "University / research institution"}]
+  }
+}

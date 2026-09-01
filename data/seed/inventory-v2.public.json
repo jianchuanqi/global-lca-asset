@@ -2,8 +2,8 @@
   "metadata": {
     "title": "Global LCA Asset Inventory v2 — public graph source",
     "source_file": "2026-08-22_Global_LCA_Asset_Inventory_v2.xlsx",
-    "evidence_cutoff": "2026-08-25",
-    "generated_at": "2026-08-25T12:00:00.000Z",
+    "evidence_cutoff": "2026-09-01",
+    "generated_at": "2026-09-01T10:00:00.000Z",
     "privacy": "Public evidence only. Contact information, questionnaire/person mappings, and internal reviewer notes are excluded."
   },
   "tables": {

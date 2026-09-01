@@ -2,14 +2,38 @@ import { describe, expect, it } from 'vitest';
 import dataset from './data/dataset.json';
 
 describe('Global LCA Asset public evidence package', () => {
-  it('matches the reviewed baseline and six-question structure', () => {
+  it('matches the 2026-09-01 reviewed release and seven-question structure', () => {
     expect(dataset.meta.validationStatus).toBe('passed');
-    expect(dataset.assets).toHaveLength(214);
-    expect(dataset.evidence).toHaveLength(252);
-    expect(dataset.relations).toHaveLength(310);
+    expect(dataset.meta.packageVersion).toBe('2026-09-01.2');
+    expect(dataset.assets).toHaveLength(301);
+    expect(dataset.evidence).toHaveLength(339);
+    expect(dataset.relations).toHaveLength(397);
     expect(dataset.distributions).toHaveLength(170);
     expect(dataset.mappings).toHaveLength(25);
-    expect(dataset.answerability).toHaveLength(6);
+    expect(dataset.answerability).toHaveLength(7);
+  });
+
+  it('publishes semantically aligned PCF/LCA products and evidence-linked actor roles', () => {
+    expect(dataset.softwareScope).toHaveLength(130);
+    expect(dataset.softwareCompanyRoles).toHaveLength(179);
+    expect(dataset.softwareRoleGaps).toHaveLength(39);
+    expect(dataset.softwareCandidateReview).toHaveLength(104);
+    expect(dataset.softwareCandidateReview.filter((row) => row.review_status === 'Promoted as new asset')).toHaveLength(87);
+    expect(dataset.softwareCandidateReview.filter((row) => row.review_status === 'Matched existing asset')).toHaveLength(14);
+    expect(dataset.softwareCandidateReview.filter((row) => row.review_status === 'Excluded from verified software count')).toHaveLength(3);
+    expect(dataset.softwareScope.find((row) => row.asset_id === 'LCA-SW-0047')?.developer).toBe('ASUENE Inc.');
+    expect(dataset.softwareScope.find((row) => row.asset_id === 'LCA-SW-0047')?.primary_function).toBe('LCA/PCF modelling and calculation');
+    expect(dataset.softwareScope.find((row) => row.asset_id === 'LCA-SW-0047')?.standard_associations).toContain('WBCSD Partnership for Carbon Transparency');
+    expect(dataset.softwareScope.find((row) => row.asset_id === 'LCA-SW-0098')?.ecoinvent_directory_status).toContain('Listed');
+    expect(dataset.softwareScope.find((row) => row.asset_id === 'LCA-SW-0129')?.product_type).toBe('Sector-specific workflow application');
+    expect(dataset.softwareScope.every((row) => row.product_type && row.primary_function && row.functional_capabilities)).toBe(true);
+    expect(dataset.softwareCompanyRoles.every((row) => row.organization_name !== row.product_name && row.entity_type && row.evidence_url)).toBe(true);
+
+    const simaProRoles = dataset.softwareCompanyRoles.filter((row) => row.asset_id === 'LCA-SW-0001');
+    expect(simaProRoles.find((row) => row.role === 'owner')?.organization_name).toBe('One Click LCA Oy Ltd');
+    expect(simaProRoles.find((row) => row.role === 'developer')?.organization_name).toBe('PRé Sustainability B.V.');
+    expect(simaProRoles.find((row) => row.role === 'operator/maintainer')?.organization_name).toBe('SimaPro B.V.');
+    expect(dataset.softwareCompanyRoles.find((row) => row.asset_id === 'LCA-SW-0049')?.organization_name).toBe('Avery Dennison Corporation');
   });
 
   it('retains the two explicit database counting scopes', () => {

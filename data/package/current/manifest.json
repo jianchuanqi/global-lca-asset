@@ -1,14 +1,14 @@
 {
   "package_name": "Global LCA Asset public evidence package",
-  "package_version": "2026-08-25.7",
-  "evidence_cutoff": "2026-08-25",
-  "generated_at": "2026-08-25T12:00:00.000Z",
+  "package_version": "2026-09-01.2",
+  "evidence_cutoff": "2026-09-01",
+  "generated_at": "2026-09-01T13:00:00.000Z",
   "canonical_input": "data/seed/inventory-v2.public.json",
-  "canonical_input_sha256": "f5a89cc057b80b0cfea90678ec054bad03cb71b7d144e4ba395b73fcc115b330",
+  "canonical_input_sha256": "e25e296e83b24aa944edefe32932801e3c928c87fa3171ee60138063068588aa",
   "curated_inputs": [
     {
       "name": "data/curated/review-context.json",
-      "sha256": "61a6472f1ee1f929df4ffb8aff424860f9d1491350efe9a4f876eb99722aa777"
+      "sha256": "26f8a616437114db79c80e89150432568ec5861a77c4b414c0ab793c9bce1a01"
     },
     {
       "name": "data/curated/schema-profile-alignment.json",
@@ -25,72 +25,84 @@
     {
       "name": "data/curated/nexus-catalog-review-2026-08-25.json",
       "sha256": "492870e6bb1ae7a5ea0d65e7a9f5d35987110d8876e51ecb2ffa9cdc4f583a49"
+    },
+    {
+      "name": "data/curated/software-market-review-2026-09-01.json",
+      "sha256": "be402bbca70ab9ac1c9fbdf73c20fb055764b2bb4373a58768be3fa512704855"
+    },
+    {
+      "name": "data/curated/software-semantic-alignment-2026-09-01.json",
+      "sha256": "ef68d6d0080e4ae5873ffeeb4b040e9da5d66aaad27eb42fb08209b7c2542c06"
     }
   ],
   "privacy": "Public evidence only. Contact information, questionnaire/person mappings, and internal reviewer notes are excluded.",
   "validation_status": "passed",
   "table_counts": {
-    "assets": 214,
-    "evidence": 252,
+    "assets": 301,
+    "evidence": 339,
     "database_scope": 88,
     "releases": 310,
     "distributions": 170,
     "mapping_artifacts": 25,
-    "relations": 310,
-    "search_coverage": 18,
-    "answerability": 6,
-    "review_issues": 8,
-    "data_dictionary": 17,
+    "relations": 397,
+    "search_coverage": 23,
+    "answerability": 7,
+    "review_issues": 10,
+    "data_dictionary": 24,
+    "software_candidate_review": 104,
     "version_audit": 88,
     "schema_profile_alignment": 78,
     "mapping_endpoint_alignment": 26,
-    "organizations": 326,
-    "asset_organizations": 428
+    "software_role_gaps": 39,
+    "software_scope": 130,
+    "organizations": 385,
+    "software_company_roles": 179,
+    "asset_organizations": 521
   },
   "files": [
     {
       "name": "analysis_rules.md",
-      "sha256": "783440ecfd602d8fee1d5e4d871e0dd95c71d93ae3350d955d0df542d2c66c67"
+      "sha256": "5bc9c0f64e4909221ed0a4f5448bf3a92a9009c4bd150fe52acfa832c8d16b8a"
     },
     {
       "name": "answerability.csv",
-      "sha256": "7ef8db073b193bbd3d129fd59fca0a98ee9b29e639c052ed85088604c5e1b10e"
+      "sha256": "190d4c56ae402330873596f68f85dcf85728c55c5460915d88f5bf6da1d0a3ac"
     },
     {
       "name": "answerability.jsonl",
-      "sha256": "b46fc99a5f071a35b5b49abf1bc4c58f5ca7320db3489ff94a5d1b99c77e215a"
+      "sha256": "7c05a372b57534c8b4b190fa8b1fb45f7d7484e09a14a9dfe24c386cc6f105a0"
     },
     {
       "name": "asset_organizations.csv",
-      "sha256": "613569dfdf61c59b23f8843dd67dd2e7f0a9f05dabd45b897eda331afd0c364e"
+      "sha256": "d62b730278fc267550112cd878ca7e7f2424406b1d41482dc419d246a84aaa97"
     },
     {
       "name": "asset_organizations.jsonl",
-      "sha256": "9550ff00a62fb8c37ff1aa99d08624907a8e11061126792635e8a5d4e952abab"
+      "sha256": "e751c9142865814641e6855ad12be786fceafd22ea3ea71eefc932bc646bf976"
     },
     {
       "name": "assets.csv",
-      "sha256": "a220c33d59cfa0c2f7f77532e9642f626a70e00ce722d11fa5327ef4cb2b809c"
+      "sha256": "4a6897a86ab67c46ff2217d633a862760cfe023e7e023741d886ef3d2f93010f"
     },
     {
       "name": "assets.jsonl",
-      "sha256": "4abdb44fd7a5b169846c96abcfc0bd5377c48185bc63498fc9db1312da42490a"
+      "sha256": "d6a29d4af1e60a97ce60e6abd8b02aaefd06f904935c3b7f8381e80725303db4"
     },
     {
       "name": "controlled_vocabularies.json",
-      "sha256": "1ecf9769979afc9a34bae8a9a5853b1fa7acf098897a2b4828b6368a05a67d9a"
+      "sha256": "69d27b51d3ff26121b91326abeab2fc32fe6c6476e3b65a427fc9943f91ff924"
     },
     {
       "name": "data_dictionary.csv",
-      "sha256": "bdbbc5f2138481896a111b2476c64b643c3ffad5800b00f5c834e5d76a0f4513"
+      "sha256": "d732aca081f49596ec718d14336b242d54f406ccaf84d0b68bab5f3d1d101013"
     },
     {
       "name": "data_dictionary.json",
-      "sha256": "3b3a99470f03b42c96a2fd5891d61b3cdf0d0980bb0dfac56f29bc52eca391e3"
+      "sha256": "ca047ae881544f35df20587d8f6cc37250a717a6927de2ffac4684775aaaf552"
     },
     {
       "name": "data_dictionary.jsonl",
-      "sha256": "f6f3afdcd676649d498584a2cb7fbfcd11682938c270680b796d6112eafae76a"
+      "sha256": "db2e269d8893486f5389ce733faacc2c75d9455d9961b8ea580b3c0bf1eb8bc2"
     },
     {
       "name": "database_scope.csv",
@@ -110,15 +122,15 @@
     },
     {
       "name": "evidence.csv",
-      "sha256": "a51fde722173405e1e835ab78adb8ec9b0102329d4f334d853cccb7a3d6bc0b2"
+      "sha256": "e441acf6c71f5baee27b42ebf8bd23279a6794e6e7d83c88dc8357de75a8b41e"
     },
     {
       "name": "evidence.jsonl",
-      "sha256": "a9ce13821c321a8de164061df8a07356fe9b9eef3d57b824340616af2b1a6954"
+      "sha256": "7b2b9e41c0eaa4fb32a37b8f951194cc51dc7404aa24c40762060e704f7e21dd"
     },
     {
       "name": "global_lca_assets.sqlite",
-      "sha256": "83ff4d3c31e7dbd68cbe64b662c72878a76ad4cdae35af0b194209eccc3ead4f"
+      "sha256": "d50616d072ca6e1e470a8696cb6037606e9747b75b52ba4a37bbcf68e28f693c"
     },
     {
       "name": "mapping_artifacts.csv",
@@ -138,19 +150,19 @@
     },
     {
       "name": "organizations.csv",
-      "sha256": "91585ebb48c41b5a39d42e334ad6c2b499e7ec4586468478cf60d4107fff8987"
+      "sha256": "1d508a2915af617ce14d7dcac458bbbe27abd0756b572e128cbc43a1aafb1589"
     },
     {
       "name": "organizations.jsonl",
-      "sha256": "1bba2af1fd9fb5dd82b2d34fb4d1a68d34df3aec9a0a634a0e242be4a3ad7e4b"
+      "sha256": "aeb245fb791ec945993830ac768c2593a58cd4d5f41e999bcc2f2af35005f976"
     },
     {
       "name": "relations.csv",
-      "sha256": "9007c18cd70ac3287a1aaae3cf40005accd9b810d042bace3bf6e507f97cd3b6"
+      "sha256": "6d21453f815e33d22686831a72c314eb3654dea18f3e2d7424ada7420ad15d7d"
     },
     {
       "name": "relations.jsonl",
-      "sha256": "f18da0ff47381a23a9ac6f088c36450c89fcfcc424dd99b0f8308741071beb80"
+      "sha256": "0fe2ea42b06be4fcd9967abac2ba9963eac3fe2e957ee19e9a0df82a188dea6a"
     },
     {
       "name": "releases.csv",
@@ -162,11 +174,11 @@
     },
     {
       "name": "review_issues.csv",
-      "sha256": "644872c0b4641efa9bcbdd7b6f16d90974d25c6707a0e072f7f01ea4eb88c1a9"
+      "sha256": "6695a819e5313b448a423e3f40e8f27811f74c5e34362a23572f81c4de337f26"
     },
     {
       "name": "review_issues.jsonl",
-      "sha256": "b63a181c95f60c9399d59538fc03c2100a978282a86e0e934b8c969aa8030ce8"
+      "sha256": "1c963b874b02508cfd1cf067627b438bbdb086a5b99cd17012f7bfbe94173ab9"
     },
     {
       "name": "schema_profile_alignment.csv",
@@ -178,19 +190,51 @@
     },
     {
       "name": "search_coverage.csv",
-      "sha256": "7bb59d83bda908488e2463e26aa8dc7329485a4a587ffbb85fc609d8481ce27c"
+      "sha256": "3e5aea0d2bb5afe8107b2712cc9eb8eaba7a7eaa52a84b067f0dd49f0940a88f"
     },
     {
       "name": "search_coverage.jsonl",
-      "sha256": "b637b409e72fb9f8ccdc2b1e0b6e92e232e0326b87bd372e36af60dd3f8ffd87"
+      "sha256": "28773422a77e40590b0262ebe217257714028ae4a649371a3afcd439b496b1a6"
+    },
+    {
+      "name": "software_candidate_review.csv",
+      "sha256": "afe5dbff300684f39fcbbb160f53a50e1888b080c124defb3b70c09baabcb978"
+    },
+    {
+      "name": "software_candidate_review.jsonl",
+      "sha256": "246abe6c9c8edbee906d8e5929a61e33e29178439c5b69d3d2011da7b2019d14"
+    },
+    {
+      "name": "software_company_roles.csv",
+      "sha256": "f2c3d36d2e5b9a6b032cb3d5f199dac91d0e82a59a2c02a62be9baa87e17a6a9"
+    },
+    {
+      "name": "software_company_roles.jsonl",
+      "sha256": "de83497bd313bf4db9ea5758d140ed73042fb133c8d5158172140bf1708e04e6"
+    },
+    {
+      "name": "software_role_gaps.csv",
+      "sha256": "190e57bfef2b395547f2ea547eea5ad0132007ccb6ee0ab8c7eb6f148152ec64"
+    },
+    {
+      "name": "software_role_gaps.jsonl",
+      "sha256": "473fb586195cbc11a6825a162fcfa595a714be1cf2e7e46abd9c6f2d43af1298"
+    },
+    {
+      "name": "software_scope.csv",
+      "sha256": "c226daed083306d4dbec134431d9434c722a2cb72faa8f675299da42c1d3aeab"
+    },
+    {
+      "name": "software_scope.jsonl",
+      "sha256": "a51559d92f6762fe9a68b09cd31f844090fc4647a9f18a78eb818a730c0aa592"
     },
     {
       "name": "summary.json",
-      "sha256": "97e2b81c0271343861a1ffe928d566b177cd127feb576ef03659073d21b02e7f"
+      "sha256": "5388f8e2f8ea72e1c6acc4e539612945509abf5ac35d51be1d27e8b2745b9b75"
     },
     {
       "name": "validation_report.json",
-      "sha256": "c73c2ebe8548f46516948773348476f41fec0ccc13afec74e23992c4e420ce5a"
+      "sha256": "c2fad57040cc672c42008b1a646663247ba3c7f638278d22da67fa65f1308e11"
     },
     {
       "name": "version_audit.csv",

@@ -2,7 +2,7 @@ import { createContext, lazy, Suspense, useContext, useEffect, useMemo, useState
 import datasetUrl from './data/dataset.json?url';
 
 type Row = Record<string, string | number | null>;
-type Tab = 'overview' | 'databases' | 'access' | 'formats' | 'providers' | 'mappings' | 'network' | 'assets' | 'data';
+type Tab = 'overview' | 'databases' | 'access' | 'formats' | 'software' | 'providers' | 'mappings' | 'network' | 'assets' | 'data';
 
 const RelationshipGraph = lazy(() => import('./RelationshipGraph'));
 
@@ -16,6 +16,12 @@ export type Dataset = {
     database_access_classes: Array<{ label: string; count: number }>;
     schema_profile_classes: Array<{ label: string; count: number }>;
     schema_profiles: Array<{ label: string; count: number }>;
+    software_primary_functions: Array<{ label: string; count: number }>;
+    software_product_types: Array<{ label: string; count: number }>;
+    software_capabilities: Array<{ label: string; count: number }>;
+    software_actor_entity_types: Array<{ label: string; count: number }>;
+    software_market_scope_statuses: Array<{ label: string; count: number }>;
+    software_candidate_decisions: Array<{ label: string; count: number }>;
     field_information_gaps: Array<{ field: string; label: string; count: number; rate: number }>;
   };
   assets: Row[];
@@ -30,6 +36,12 @@ export type Dataset = {
   answerability: Row[];
   versionAudit: Row[];
   mappingEndpointAlignment: Row[];
+  softwareScope: Row[];
+  softwareCompanyRoles: Row[];
+  softwareRoleGaps: Row[];
+  softwareCandidateReview: Row[];
+  organizations: Row[];
+  assetOrganizations: Row[];
 };
 
 type DatasetFetcher = (input: RequestInfo | URL, init?: RequestInit) => Promise<Response>;
@@ -96,9 +108,10 @@ const tabs: Array<[Tab, string]> = [
   ['network', 'Explore'],
   ['databases', '1 · Databases'],
   ['access', '2 · Access'],
-  ['formats', '3 · Formats & software'],
-  ['providers', '4 · Providers & sectors'],
-  ['mappings', '5 · Mappings'],
+  ['formats', '3 · Formats'],
+  ['software', '4 · PCF/LCA software'],
+  ['providers', '5 · Providers & sectors'],
+  ['mappings', '6 · Mappings'],
   ['assets', 'All assets'],
   ['data', 'Download data'],
 ];
@@ -187,9 +200,10 @@ function Overview({ openTab }: { openTab: (tab: Tab) => void }) {
     { tab: 'databases', number: '01', title: 'Database landscape', description: 'Browse the core count and the extended data-bearing scope.', count: '80 core · 88 extended' },
     { tab: 'access', number: '02', title: 'Open and accessible data', description: 'Filter licences, fees, registration and canonical access routes.', count: '88 scoped records' },
     { tab: 'formats', number: '03', title: 'Formats and software', description: 'Trace distributions from database releases to schemas and software.', count: `${data.distributions.length} distributions` },
-    { tab: 'providers', number: '04', title: 'Providers and sector coverage', description: 'Search owners, maintainers, countries, geographies and industries.', count: `${data.assets.length} asset profiles` },
-    { tab: 'mappings', number: '05', title: 'Mappings and conversions', description: 'Inspect projects, version pairs, tests and known conversion losses.', count: `${data.mappings.length} mapping records` },
-    { tab: 'assets', number: '06', title: 'Cross-asset search', description: 'Search and compare normalized records across every asset category.', count: `${data.assets.length} asset families` },
+    { tab: 'software', number: '04', title: 'PCF/LCA software landscape', description: 'Compare product functions and the companies that own, develop or operate them.', count: `${data.softwareScope.length} reviewed products & tools` },
+    { tab: 'providers', number: '05', title: 'Providers and sector coverage', description: 'Search owners, maintainers, countries, geographies and industries.', count: `${data.assets.length} asset profiles` },
+    { tab: 'mappings', number: '06', title: 'Mappings and conversions', description: 'Inspect projects, version pairs, tests and known conversion losses.', count: `${data.mappings.length} mapping records` },
+    { tab: 'assets', number: '07', title: 'Cross-asset search', description: 'Search and compare normalized records across every asset category.', count: `${data.assets.length} asset families` },
   ];
   return (
     <div className="page-stack">
@@ -218,7 +232,7 @@ function Overview({ openTab }: { openTab: (tab: Tab) => void }) {
 
       <section className="metric-grid overview-metrics" aria-label="Inventory overview">
         <Metric value={o.verified_assets} label="asset families" note="all asset categories" />
-        <Metric value={data.summaries.asset_types.length} label="asset categories" note="databases, software, schemas and related systems" />
+        <Metric value={o.software_products} label="software products & tools" note={`${o.qualifying_software_products} qualifying market records`} />
         <Metric value={o.core_database_families} label="core database families" note="narrow working count" />
         <Metric value={o.extended_data_bearing_assets} label="extended data-bearing assets" note="including repositories and platforms" />
       </section>
@@ -390,6 +404,71 @@ function FormatsAndSoftware() {
   );
 }
 
+function SoftwareCompanyCell({ assetId }: { assetId: string }) {
+  const grouped = new Map<string, { entityType: string; roles: string[] }>();
+  for (const row of data.softwareCompanyRoles.filter((role) => role.asset_id === assetId)) {
+    const organization = text(row.organization_name, '');
+    if (!organization) continue;
+    if (!grouped.has(organization)) grouped.set(organization, { entityType: text(row.entity_type, ''), roles: [] });
+    grouped.get(organization)!.roles.push(text(row.role));
+  }
+  if (!grouped.size) return <span>No actor identity publicly resolved</span>;
+  return (
+    <div className="software-company-cell">
+      {[...grouped.entries()].map(([organization, details]) => <div key={`${organization}-${details.roles.join('-')}`}><strong>{organization}</strong><span>{details.roles.join(' · ')}{details.entityType ? ` · ${details.entityType}` : ''}</span></div>)}
+    </div>
+  );
+}
+
+function SoftwareExplorer() {
+  const [query, setQuery] = useState('');
+  const [primaryFunction, setPrimaryFunction] = useState('All primary functions');
+  const [capability, setCapability] = useState('All capabilities');
+  const [productType, setProductType] = useState('All product types');
+  const [visible, setVisible] = useState(50);
+  const primaryFunctions = data.summaries.software_primary_functions.map((row) => row.label);
+  const productTypes = data.summaries.software_product_types.map((row) => row.label);
+  const capabilities = data.summaries.software_capabilities.map((row) => row.label).sort();
+  const rows = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    return data.softwareScope.filter((row) => {
+      if (primaryFunction !== 'All primary functions' && row.primary_function !== primaryFunction) return false;
+      if (capability !== 'All capabilities' && !text(row.functional_capabilities, '').split(/\s*;\s*/g).includes(capability)) return false;
+      if (productType !== 'All product types' && row.product_type !== productType) return false;
+      const actorNames = data.softwareCompanyRoles.filter((role) => role.asset_id === row.asset_id).map((role) => text(role.organization_name, '')).join(' ');
+      return !needle || matches(row, needle, ['asset_id', 'product_name', 'product_type', 'primary_function', 'functional_capabilities', 'sector_scope', 'geographic_coverage', 'standard_associations', 'discovery_source']) || actorNames.toLowerCase().includes(needle);
+    });
+  }, [query, primaryFunction, capability, productType]);
+
+  return (
+    <div className="page-stack">
+      <SectionHeading eyebrow="Research view 04" title="PCF/LCA software products and their actors" note="Product type, primary function, capabilities, standard associations, and owner/developer/operator roles are separate evidence dimensions. The count is a dated lower bound, not a global market total." />
+      <section className="software-overview-row">
+        <div className="metric-grid software-metrics" aria-label="Software landscape overview">
+          <Metric value={data.summaries.overview.software_products} label="reviewed products & tools" note="including prior supporting assets" />
+          <Metric value={data.summaries.overview.qualifying_software_products} label="qualifying market records" note="LCA, PCF calculation or PCF exchange" />
+          <Metric value={data.summaries.overview.software_organizations} label="resolved actors" note="companies, institutions, public bodies, communities or credited individuals" />
+          <Metric value={data.softwareCompanyRoles.length} label="evidence-linked role assertions" note={`${data.softwareRoleGaps.length} unresolved public labels retained as gaps`} />
+        </div>
+        <div className="content-card chart-card software-method-row"><SectionHeading eyebrow="Primary function" title="Software products by primary function" /><BarList rows={data.summaries.software_primary_functions} compact /></div>
+      </section>
+
+      <section className="filter-panel software-filter-panel">
+        <label className="wide-filter"><span>Search products and companies</span><input value={query} onChange={(event) => { setQuery(event.target.value); setVisible(50); }} placeholder="Product, company, function, sector or geography…" /></label>
+        <label><span>Primary function</span><select value={primaryFunction} onChange={(event) => { setPrimaryFunction(event.target.value); setVisible(50); }}><option>All primary functions</option>{primaryFunctions.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label><span>Capability</span><select value={capability} onChange={(event) => { setCapability(event.target.value); setVisible(50); }}><option>All capabilities</option>{capabilities.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <label><span>Product type</span><select value={productType} onChange={(event) => { setProductType(event.target.value); setVisible(50); }}><option>All product types</option>{productTypes.map((value) => <option key={value}>{value}</option>)}</select></label>
+        <div className="filter-result"><strong>{rows.length}</strong><span>matching products</span></div>
+      </section>
+
+      <section className="content-card table-card software-table-card"><div className="responsive-table"><table><thead><tr><th>Product</th><th>Type, function and capabilities</th><th>Actors and roles</th><th>Sector / geography</th><th>Standard / directory evidence</th><th>Original sources</th></tr></thead><tbody>
+        {rows.slice(0, visible).map((row) => <tr key={text(row.software_record_id)}><td><strong>{text(row.product_name)}</strong><span>{text(row.asset_id)}</span><Pill tone={text(row.market_scope_status).startsWith('Qualifying') ? 'good' : 'neutral'}>{text(row.market_scope_status).startsWith('Qualifying') ? 'Qualifying market record' : 'Prior supporting asset'}</Pill></td><td><Pill>{text(row.product_type)}</Pill><strong>{text(row.primary_function)}</strong><span>{text(row.functional_capabilities)}</span></td><td><SoftwareCompanyCell assetId={text(row.asset_id)} />{Number(row.unresolved_role_label_count || 0) > 0 && <span>{text(row.unresolved_role_label_count)} unresolved public role label(s)</span>}</td><td>{text(row.sector_scope)}<span>{text(row.geographic_coverage)}</span></td><td><div className="software-source-tags">{row.standard_associations && <Pill>{text(row.standard_associations)}</Pill>}{row.ecoinvent_directory_status && <Pill>ecoinvent software directory</Pill>}</div><span>{text(row.discovery_source)}</span></td><td><SourceLinks values={[row.official_product_url, row.evidence_urls]} /></td></tr>)}
+      </tbody></table></div></section>
+      {visible < rows.length && <button className="load-more" onClick={() => setVisible((current) => current + 50)}>Show more software products</button>}
+    </div>
+  );
+}
+
 function ProvidersAndSectors() {
   const data = useDataset();
   const [query, setQuery] = useState('');
@@ -404,7 +483,7 @@ function ProvidersAndSectors() {
   }, [query, typeFilter, data.assets]);
   return (
     <div className="page-stack">
-      <SectionHeading eyebrow="Research view 04" title="Providers, countries and sector coverage" note="Owner, operator, developer country and geographic data coverage are different concepts and are shown separately where available." />
+      <SectionHeading eyebrow="Research view 05" title="Providers, countries and sector coverage" note="Owner, operator, developer country and geographic data coverage are different concepts and are shown separately where available." />
       <section className="filter-panel compact-filter-panel">
         <label className="wide-filter"><span>Search providers and coverage</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Asset, organization, country, geography or industry…" /></label>
         <label><span>Asset type</span><select value={typeFilter} onChange={(event) => setTypeFilter(event.target.value)}><option>All asset types</option>{types.map((value) => <option key={value}>{value}</option>)}</select></label>
@@ -426,7 +505,7 @@ function AssetDetail({ asset, onClose, onCompare }: { asset: Row; onClose: () =>
   const distributions = data.distributions.filter((row) => row.database_asset_id === id);
   const mappings = data.mappings.filter((row) => row.source_asset_id === id || row.target_asset_id === id);
   const fields: Array<[string, unknown]> = [
-    ['Alternative names / acronyms', asset.alternative_name_acronym], ['Owner', asset.owner], ['Operator / maintainer', asset.operator_maintainer], ['Geographic coverage', asset.geographic_coverage],
+    ['Alternative names / acronyms', asset.alternative_name_acronym], ['Owner', asset.owner], ['Developer', asset.developer], ['Operator / maintainer', asset.operator_maintainer], ['Geographic coverage', asset.geographic_coverage],
     ['Sector scope', asset.sector_product_process_coverage], ['Current version', asset.current_version], ['Release / update date', asset.release_update_date],
     ['Access model', asset.access_model], ['Licence / rights', asset.licence_or_usage_rights], ['Schema / data model', asset.data_model_or_schema],
     ['Exchange format', asset.exchange_format], ['API / machine-readable interface', asset.api_or_machine_readable_interface],
@@ -580,7 +659,7 @@ function MappingsAndConversions() {
   const tested = data.mappings.filter((row) => reportsTesting(row.claimed_tested)).length;
   return (
     <div className="page-stack">
-      <SectionHeading eyebrow="Research view 05" title="Mapping and conversion projects" note="Mappings are organized by typed endpoints—the schema, format, software importer, internal model, workflow or reference list actually connected by a project." />
+      <SectionHeading eyebrow="Research view 06" title="Mapping and conversion projects" note="Mappings are organized by typed endpoints—the schema, format, software importer, internal model, workflow or reference list actually connected by a project." />
       <section className="interop-primer">
         <div><strong>{data.mappings.length}</strong><span>mapping records</span></div>
         <div><strong>{tested}</strong><span>records reporting tests</span></div>
@@ -620,6 +699,7 @@ function DataPackage() {
     ['Manifest', 'manifest.json'], ['Validation report', 'validation_report.json'], ['Analysis rules', 'analysis_rules.md'],
     ['Assets · CSV', 'assets.csv'], ['Assets · JSONL', 'assets.jsonl'], ['Evidence · CSV', 'evidence.csv'],
     ['Relations · CSV', 'relations.csv'], ['Database scope · CSV', 'database_scope.csv'], ['Distributions · CSV', 'distributions.csv'],
+    ['Software scope · CSV', 'software_scope.csv'], ['Software actor roles · CSV', 'software_company_roles.csv'], ['Unresolved software roles · CSV', 'software_role_gaps.csv'], ['Software candidate review · CSV', 'software_candidate_review.csv'],
     ['Schema/profile alignment · CSV', 'schema_profile_alignment.csv'], ['Mapping endpoint alignment · CSV', 'mapping_endpoint_alignment.csv'],
     ['Mappings · CSV', 'mapping_artifacts.csv'], ['Version audit · CSV', 'version_audit.csv'], ['Complete SQLite package', 'global_lca_assets.sqlite'],
   ];
@@ -627,7 +707,7 @@ function DataPackage() {
     <div className="page-stack">
       <SectionHeading eyebrow="Dataset release" title="Download Global LCA Asset" note="CSV supports spreadsheet work, JSONL supports AI-assisted analysis, and SQLite supports exact relational queries." />
       <section className="package-hero">
-        <div><Pill tone="good">Validation {data.meta.validationStatus}</Pill><h3>Release {data.meta.packageVersion}</h3><p>Evidence cut-off {data.meta.cutoff}. Public information only. Personal names, email addresses and internal review mappings are excluded.</p></div>
+        <div><Pill tone="good">Validation {data.meta.validationStatus}</Pill><h3>Release {data.meta.packageVersion}</h3><p>Evidence cut-off {data.meta.cutoff}. Public information only. Private personal data, email addresses and internal review mappings are excluded; public professional attribution is retained only when a source explicitly supports a software role.</p></div>
         <div className="package-flow"><span>Public sources</span><b>→</b><span>Reviewed records</span><b>→</b><span>Versioned dataset</span></div>
       </section>
       <section className="download-grid">{downloads.map(([label, file]) => <a key={file} href={`/downloads/${file}`} download><span>{label}</span><strong>{file.endsWith('.sqlite') ? 'SQLite' : file.split('.').pop()?.toUpperCase()}</strong><b>↓</b></a>)}</section>
@@ -646,10 +726,14 @@ function DataPackage() {
 function DatasetApplication() {
   const data = useDataset();
   const [tab, setTab] = useState<Tab>('overview');
+  function openTab(nextTab: Tab) {
+    setTab(nextTab);
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }
   return (
     <main className="dataset-shell full-dataset">
       <header className="dataset-header sticky-header">
-        <button className="brand-button" onClick={() => setTab('overview')}>
+        <button className="brand-button" onClick={() => openTab('overview')}>
           <span className="brand-mark">LCA</span><span><small>UNEP · Global LCA Platform</small><strong>Global LCA Asset</strong></span>
         </button>
         <div className="header-utilities">
@@ -657,12 +741,13 @@ function DatasetApplication() {
           <div className="cutoff"><span className={`status-dot status-${data.meta.validationStatus}`} /><span className="cutoff-label">Evidence cut-off</span><span className="cutoff-separator">·</span><strong>{data.meta.cutoff}</strong></div>
         </div>
       </header>
-      <nav className="tab-nav" aria-label="Global LCA Asset dataset views">{tabs.map(([id, label]) => <button key={id} className={tab === id ? 'active' : ''} onClick={() => setTab(id)}>{label}</button>)}</nav>
+      <nav className="tab-nav" aria-label="Global LCA Asset dataset views">{tabs.map(([id, label]) => <button key={id} className={tab === id ? 'active' : ''} onClick={() => openTab(id)}>{label}</button>)}</nav>
       <div className="dataset-content">
-        {tab === 'overview' && <Overview openTab={setTab} />}
+        {tab === 'overview' && <Overview openTab={openTab} />}
         {tab === 'databases' && <DatabaseLandscape />}
         {tab === 'access' && <AccessExplorer />}
         {tab === 'formats' && <FormatsAndSoftware />}
+        {tab === 'software' && <SoftwareExplorer />}
         {tab === 'providers' && <ProvidersAndSectors />}
         {tab === 'mappings' && <MappingsAndConversions />}
         {tab === 'network' && <Suspense fallback={<div className="page-stack"><section className="content-card"><p className="eyebrow">Loading on demand</p><h2>Preparing the relationship graph…</h2></section></div>}><RelationshipGraph /></Suspense>}

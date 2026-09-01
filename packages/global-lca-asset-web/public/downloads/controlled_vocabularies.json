@@ -20,6 +20,7 @@
     "Current version and public distribution metadata verified; licensed database not accessed",
     "Current version, scope and public distribution metadata verified; licensed database not accessed",
     "Identity and legacy factor set verified; current maintenance/licence incomplete",
+    "Identity, provider role, and stated qualifying capability publicly verified; software not accessed or tested",
     "Identity, scope and documented 2017 conversion verified; current maintenance/licence incomplete",
     "Last public version and superseded status verified",
     "Legacy identity and supersession verified; archival details incomplete",
@@ -283,6 +284,7 @@
     "programme standards context",
     "provider-listed openLCA compatibility",
     "public Nexus catalog distribution",
+    "publicly listed software use of database",
     "quality guidance",
     "quality-governed publication workflow",
     "regional discovery and expert-validation context",
@@ -309,10 +311,12 @@
     "source-data dependency",
     "source/distribution",
     "standard compatibility",
+    "states implementation of method or standard",
     "stewardship and distribution",
     "stewardship and planned unification",
     "successor input comparison",
     "successor/benchmark",
+    "supports PCF exchange specification",
     "tool discovery and field-use context",
     "user interface and calculation engine",
     "validation/application profile",
@@ -349,6 +353,7 @@
     "Confirmed in public v0.2.0 repository",
     "Confirmed project basis",
     "Confirmed project plan",
+    "Confirmed public statement or directory listing",
     "Confirmed where applicable",
     "Current standards relationship",
     "Demonstrated, source-level details pending",
@@ -550,5 +555,51 @@
     "ecoSpold family",
     "openEPD",
     "openLCA family"
+  ],
+  "software_primary_function": [
+    "Data and systems integration",
+    "EPD and environmental reporting workflow",
+    "LCA/PCF modelling and calculation",
+    "PCF data exchange and interoperability"
+  ],
+  "software_product_type": [
+    "API, library, or calculation model",
+    "Data exchange or interoperability service",
+    "Sector-specific workflow application",
+    "Software application or platform"
+  ],
+  "software_capability": [
+    "API and enterprise integration",
+    "Corporate carbon accounting",
+    "Design and planning workflow",
+    "EPD and environmental reporting",
+    "Eco-design and scenario analysis",
+    "Environmental data and calculation models",
+    "Life cycle assessment modelling",
+    "PCF data exchange and interoperability",
+    "Product carbon footprint calculation",
+    "Supplier and product data management"
+  ],
+  "software_market_scope_status": [
+    "Existing broader LCA/PCF software, API, model, or workflow asset",
+    "Qualifying PCF/LCA product or interoperability solution"
+  ],
+  "software_company_role": [
+    "developer",
+    "operator/maintainer",
+    "owner"
+  ],
+  "software_actor_entity_type": [
+    "Company",
+    "Individual",
+    "Nonprofit / industry organization",
+    "Public body",
+    "Public consortium / community",
+    "University / research institution"
+  ],
+  "software_candidate_decision": [
+    "Excluded from verified software count",
+    "Matched existing asset",
+    "Promoted as new asset"
   ]
 }

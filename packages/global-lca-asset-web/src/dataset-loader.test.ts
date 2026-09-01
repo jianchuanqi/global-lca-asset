@@ -12,7 +12,7 @@ describe('runtime dataset loading', () => {
     const loaded = await loadDataset(fetcher);
 
     expect(loaded.meta.packageVersion).toBe(dataset.meta.packageVersion);
-    expect(loaded.assets).toHaveLength(214);
+    expect(loaded.assets).toHaveLength(301);
     expect(fetcher).toHaveBeenCalledOnce();
     expect(String(fetcher.mock.calls[0]?.[0])).toContain('dataset.json');
     expect(fetcher.mock.calls[0]?.[1]?.headers).toEqual({ Accept: 'application/json' });
