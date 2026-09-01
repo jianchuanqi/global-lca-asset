@@ -887,12 +887,23 @@ function publicUrls(...values) {
 }
 
 const graphAssetById = new Map(tables.assets.map((asset) => [asset.asset_id, asset]));
+const graphOrganizationById = new Map(tables.organizations.map((organization) => [organization.organization_id, organization]));
 const graphMappingById = new Map(tables.mapping_artifacts.map((mapping) => [mapping.mapping_artifact_id, mapping]));
 const graphDegree = new Map(tables.assets.map((asset) => [asset.asset_id, 0]));
+const graphOrganizationDegree = new Map(tables.organizations.map((organization) => [organization.organization_id, 0]));
 const graphRelations = tables.relations.filter((relation) => graphAssetById.has(relation.source_asset_id) || graphAssetById.has(relation.target_asset_id));
+const graphActorRelations = tables.asset_organizations.filter((relation) => graphAssetById.has(relation.asset_id) && graphOrganizationById.has(relation.organization_id));
+const graphSoftwareRoleByKey = new Map(tables.software_company_roles.map((role) => [
+  `${role.asset_id}\u0000${role.organization_id}\u0000${role.role}`,
+  role,
+]));
 for (const relation of graphRelations) {
   if (graphAssetById.has(relation.source_asset_id)) graphDegree.set(relation.source_asset_id, (graphDegree.get(relation.source_asset_id) ?? 0) + 1);
   if (graphAssetById.has(relation.target_asset_id)) graphDegree.set(relation.target_asset_id, (graphDegree.get(relation.target_asset_id) ?? 0) + 1);
+}
+for (const relation of graphActorRelations) {
+  graphDegree.set(relation.asset_id, (graphDegree.get(relation.asset_id) ?? 0) + 1);
+  graphOrganizationDegree.set(relation.organization_id, (graphOrganizationDegree.get(relation.organization_id) ?? 0) + 1);
 }
 
 function graphAssetNode(asset) {
@@ -907,6 +918,20 @@ function graphAssetNode(asset) {
     confidence: asset.confidence_level,
     official_url: asset.official_url,
     connection_count: graphDegree.get(asset.asset_id) ?? 0,
+    normalization_status: '',
+    expandable: true,
+  };
+}
+
+function graphOrganizationNode(organization) {
+  return {
+    id: organization.organization_id,
+    name: organization.preferred_label,
+    kind: 'organization',
+    asset_type: organization.entity_type || 'Organization',
+    owner: '', geography: '', sector: '', confidence: '', official_url: '',
+    connection_count: graphOrganizationDegree.get(organization.organization_id) ?? 0,
+    normalization_status: organization.normalization_status,
     expandable: true,
   };
 }
@@ -921,6 +946,7 @@ function graphExternalNode(name, relationshipId, side) {
     asset_type: 'External / unresolved reference',
     owner: '', geography: '', sector: '', confidence: '', official_url: '',
     connection_count: 0,
+    normalization_status: '',
     expandable: false,
   };
 }
@@ -955,19 +981,52 @@ function graphRelationship(relation, sourceNode, targetNode) {
   };
 }
 
+function graphActorRelationship(relation) {
+  const asset = graphAssetById.get(relation.asset_id);
+  const organization = graphOrganizationById.get(relation.organization_id);
+  const softwareRole = graphSoftwareRoleByKey.get(`${relation.asset_id}\u0000${relation.organization_id}\u0000${relation.relationship_type}`);
+  return {
+    id: `ACT-${relation.asset_organization_id}`,
+    source: relation.organization_id,
+    target: relation.asset_id,
+    relationship_type: relation.relationship_type,
+    status: softwareRole?.resolution_status || organization.normalization_status,
+    evidence: `${organization.preferred_label} is publicly identified as ${relation.relationship_type} for ${asset.official_name}.`,
+    constraints: softwareRole
+      ? 'The actor and role are limited to the reviewed public evidence; no additional role is inferred.'
+      : `The public actor label is preserved as published; entity typing is ${organization.entity_type}.`,
+    validation_question: 'Recheck the actor identity and role against the public source in the next evidence review.',
+    mapping_artifact_id: '',
+    source_urls: publicUrls(
+      softwareRole?.evidence_url,
+      asset.official_url, asset.primary_sources, asset.supporting_sources,
+    ),
+  };
+}
+
+const graphAssets = tables.assets.map(graphAssetNode).sort((a, b) => b.connection_count - a.connection_count || a.name.localeCompare(b.name));
+const graphOrganizations = tables.organizations.map(graphOrganizationNode).sort((a, b) => b.connection_count - a.connection_count || a.name.localeCompare(b.name));
+
 const graphIndex = {
   package_version: context.package_version,
   evidence_cutoff: seed.metadata.evidence_cutoff,
   asset_count: tables.assets.length,
-  relationship_count: tables.relations.length,
-  expandable_relationship_count: graphRelations.length,
-  loading_model: 'Search index first; one-hop asset neighborhoods fetched and merged on demand.',
-  assets: tables.assets.map(graphAssetNode).sort((a, b) => b.connection_count - a.connection_count || a.name.localeCompare(b.name)),
+  organization_count: tables.organizations.length,
+  node_count: tables.assets.length + tables.organizations.length,
+  relationship_count: graphRelations.length + graphActorRelations.length,
+  registered_asset_relationship_count: tables.relations.length,
+  asset_relationship_count: graphRelations.length,
+  actor_relationship_count: graphActorRelations.length,
+  expandable_relationship_count: graphRelations.length + graphActorRelations.length,
+  loading_model: 'Search index first; one-hop asset or organization neighborhoods fetched and merged on demand.',
+  assets: graphAssets,
+  organizations: graphOrganizations,
 };
 writeFileSync(join(graphDataDir, 'index.json'), JSON.stringify(graphIndex) + '\n');
 
 for (const asset of tables.assets) {
   const neighborhoodRelations = graphRelations.filter((relation) => relation.source_asset_id === asset.asset_id || relation.target_asset_id === asset.asset_id);
+  const actorRelations = graphActorRelations.filter((relation) => relation.asset_id === asset.asset_id);
   const nodes = new Map([[asset.asset_id, graphAssetNode(asset)]]);
   const relationships = neighborhoodRelations.map((relation) => {
     const sourceNode = graphEndpointNode(relation, 'source');
@@ -976,13 +1035,36 @@ for (const asset of tables.assets) {
     nodes.set(targetNode.id, targetNode);
     return graphRelationship(relation, sourceNode, targetNode);
   });
+  for (const relation of actorRelations) {
+    const organizationNode = graphOrganizationNode(graphOrganizationById.get(relation.organization_id));
+    nodes.set(organizationNode.id, organizationNode);
+    relationships.push(graphActorRelationship(relation));
+  }
   const neighborhood = {
     package_version: context.package_version,
+    center_node_id: asset.asset_id,
     center_asset_id: asset.asset_id,
     nodes: [...nodes.values()],
     relationships,
   };
   writeFileSync(join(graphDataDir, 'neighborhoods', `${asset.asset_id}.json`), JSON.stringify(neighborhood) + '\n');
+}
+
+for (const organization of tables.organizations) {
+  const actorRelations = graphActorRelations.filter((relation) => relation.organization_id === organization.organization_id);
+  const nodes = new Map([[organization.organization_id, graphOrganizationNode(organization)]]);
+  const relationships = actorRelations.map((relation) => {
+    const assetNode = graphAssetNode(graphAssetById.get(relation.asset_id));
+    nodes.set(assetNode.id, assetNode);
+    return graphActorRelationship(relation);
+  });
+  const neighborhood = {
+    package_version: context.package_version,
+    center_node_id: organization.organization_id,
+    nodes: [...nodes.values()],
+    relationships,
+  };
+  writeFileSync(join(graphDataDir, 'neighborhoods', `${organization.organization_id}.json`), JSON.stringify(neighborhood) + '\n');
 }
 
 const webDataset = {

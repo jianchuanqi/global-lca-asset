@@ -2,10 +2,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import cytoscape, { type Core, type ElementDefinition, type LayoutOptions } from 'cytoscape';
 import './relationship-graph.css';
 
-type GraphIndexAsset = {
+type GraphIndexNode = {
   id: string;
   name: string;
-  kind: 'asset';
+  kind: 'asset' | 'organization';
   asset_type: string;
   owner: string;
   geography: string;
@@ -13,10 +13,11 @@ type GraphIndexAsset = {
   confidence: string;
   official_url: string;
   connection_count: number;
+  normalization_status: string;
   expandable: true;
 };
 
-type GraphNode = GraphIndexAsset | (Omit<GraphIndexAsset, 'kind' | 'expandable'> & {
+type GraphNode = GraphIndexNode | (Omit<GraphIndexNode, 'kind' | 'expandable'> & {
   kind: 'external';
   expandable: false;
 });
@@ -38,15 +39,19 @@ type GraphIndex = {
   package_version: string;
   evidence_cutoff: string;
   asset_count: number;
+  organization_count?: number;
+  node_count?: number;
   relationship_count: number;
   expandable_relationship_count: number;
   loading_model: string;
-  assets: GraphIndexAsset[];
+  assets: GraphIndexNode[];
+  organizations?: GraphIndexNode[];
 };
 
 type Neighborhood = {
   package_version: string;
-  center_asset_id: string;
+  center_node_id?: string;
+  center_asset_id?: string;
   nodes: GraphNode[];
   relationships: GraphRelationship[];
 };
@@ -58,6 +63,7 @@ const graphBase = '/graph';
 
 function categoryFor(node: GraphNode) {
   if (node.kind === 'external') return 'external';
+  if (node.kind === 'organization') return 'organization';
   if (node.asset_type.startsWith('Database')) return 'database';
   if (node.asset_type.startsWith('Software')) return 'software';
   if (node.asset_type.startsWith('Data schema')) return 'schema';
@@ -110,6 +116,7 @@ const graphStyles: cytoscape.StylesheetJson = [
   { selector: 'node[category = "nomenclature"]', style: { 'background-color': '#d29b2c', shape: 'tag' } },
   { selector: 'node[category = "method"]', style: { 'background-color': '#4f806f', shape: 'round-tag' } },
   { selector: 'node[category = "quality"]', style: { 'background-color': '#bf5b63', shape: 'octagon' } },
+  { selector: 'node[category = "organization"]', style: { 'background-color': '#4f806f', shape: 'round-rectangle', width: 42, height: 30 } },
   { selector: 'node[category = "external"]', style: { 'background-color': '#9aaab3', shape: 'vee', width: 28, height: 28 } },
   { selector: 'node[center = "yes"]', style: { 'border-color': '#f7c948', 'border-width': 6, width: 48, height: 40, 'z-index': 20 } },
   {
@@ -176,29 +183,29 @@ export default function RelationshipGraph() {
     return () => { active = false; };
   }, []);
 
-  const loadNeighborhood = useCallback(async (assetId: string, reset = false) => {
-    if (!reset && loadedRef.current.has(assetId)) {
-      setSelection({ kind: 'node', id: assetId });
+  const loadNeighborhood = useCallback(async (nodeId: string, reset = false) => {
+    if (!reset && loadedRef.current.has(nodeId)) {
+      setSelection({ kind: 'node', id: nodeId });
       return;
     }
-    setLoadingId(assetId);
+    setLoadingId(nodeId);
     setError('');
     try {
-      const response = await fetch(`${graphBase}/neighborhoods/${encodeURIComponent(assetId)}.json`);
+      const response = await fetch(`${graphBase}/neighborhoods/${encodeURIComponent(nodeId)}.json`);
       if (!response.ok) throw new Error(`Neighborhood request failed (${response.status})`);
       const neighborhood = await response.json() as Neighborhood;
       if (reset) {
         setNodes(neighborhood.nodes);
         setRelationships(neighborhood.relationships);
-        loadedRef.current = new Set([assetId]);
+        loadedRef.current = new Set([nodeId]);
       } else {
         setNodes((current) => mergeById(current, neighborhood.nodes));
         setRelationships((current) => mergeById(current, neighborhood.relationships));
-        loadedRef.current.add(assetId);
+        loadedRef.current.add(nodeId);
       }
       setLoadedIds([...loadedRef.current]);
-      setCenterId(assetId);
-      setSelection({ kind: 'node', id: assetId });
+      setCenterId(neighborhood.center_node_id || neighborhood.center_asset_id || nodeId);
+      setSelection({ kind: 'node', id: nodeId });
     } catch (reason) {
       setError(reason instanceof Error ? reason.message : 'Unable to load this neighborhood.');
     } finally {
@@ -251,8 +258,9 @@ export default function RelationshipGraph() {
   const normalizedQuery = query.trim().toLocaleLowerCase();
   const results = useMemo(() => {
     if (!index) return [];
-    if (!normalizedQuery) return index.assets.filter((asset) => asset.connection_count > 0).slice(0, 10);
-    return index.assets.filter((asset) => `${asset.name} ${asset.id} ${asset.asset_type} ${asset.owner}`.toLocaleLowerCase().includes(normalizedQuery)).slice(0, 20);
+    const searchableNodes = [...index.assets, ...(index.organizations ?? [])];
+    if (!normalizedQuery) return searchableNodes.filter((node) => node.connection_count > 0).sort((a, b) => b.connection_count - a.connection_count).slice(0, 10);
+    return searchableNodes.filter((node) => `${node.name} ${node.id} ${node.asset_type} ${node.owner}`.toLocaleLowerCase().includes(normalizedQuery)).slice(0, 20);
   }, [index, normalizedQuery]);
   const selectedNode = selection?.kind === 'node' ? nodes.find((node) => node.id === selection.id) : undefined;
   const selectedRelationship = selection?.kind === 'relationship' ? relationships.find((relationship) => relationship.id === selection.id) : undefined;
@@ -267,25 +275,25 @@ export default function RelationshipGraph() {
       <div className="section-heading">
         <p className="eyebrow">Cross-cutting dataset view</p>
         <h2>Explore relationships</h2>
-        <p>Search the asset index, open one local neighborhood, then expand only the connections you need. No graph database or full-graph download is required.</p>
+        <p>Search assets or organizations, open one local neighborhood, then expand only the connections you need. Owner, developer and operator/maintainer roles are represented as directed relationships.</p>
       </div>
 
       <section className="graph-loading-model">
-        <div><strong>{index?.asset_count ?? '—'}</strong><span>searchable assets</span></div>
-        <div><strong>{index?.relationship_count ?? '—'}</strong><span>registered relationships</span></div>
-        <p><strong>Progressive loading:</strong> the browser first fetches an asset index, then requests a small one-hop JSON file for each asset you choose to expand.</p>
+        <div><strong>{index?.node_count ?? index?.asset_count ?? '—'}</strong><span>searchable nodes</span></div>
+        <div><strong>{index?.relationship_count ?? '—'}</strong><span>graph relationships</span></div>
+        <p><strong>Progressive loading:</strong> the browser first fetches a search index, then requests a small one-hop JSON file for each asset or organization you choose to expand.</p>
       </section>
 
       <section className="relationship-graph-shell">
         <aside className="graph-search-panel">
-          <label><span>Find an asset</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="ecoinvent, ILCD, openLCA…" /></label>
-          <p className="graph-result-label">{normalizedQuery ? `${results.length} search results` : 'Most connected assets'}</p>
+          <label><span>Find an asset or organization</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="ecoinvent, SimaPro, PRé…" /></label>
+          <p className="graph-result-label">{normalizedQuery ? `${results.length} search results` : 'Most connected nodes'}</p>
           <div className="graph-search-results">
             {results.map((asset) => <button key={asset.id} onClick={() => void loadNeighborhood(asset.id, true)} disabled={loadingId === asset.id}>
               <span><strong>{asset.name}</strong><small>{asset.asset_type}</small></span><b>{loadingId === asset.id ? 'Loading…' : `${asset.connection_count} links →`}</b>
             </button>)}
-            {!index && !error && <p className="graph-muted">Loading the asset search index…</p>}
-            {index && normalizedQuery && !results.length && <p className="graph-muted">No matching asset in this release.</p>}
+            {!index && !error && <p className="graph-muted">Loading the graph search index…</p>}
+            {index && normalizedQuery && !results.length && <p className="graph-muted">No matching asset or organization in this release.</p>}
           </div>
         </aside>
 
@@ -296,7 +304,7 @@ export default function RelationshipGraph() {
           </div>
           <div className="graph-canvas-wrap">
             <div className="relationship-graph-canvas" ref={containerRef} aria-label="Interactive Global LCA Asset relationship graph" />
-            {!nodes.length && <div className="graph-empty-state"><span>01</span><h3>Search and open an asset</h3><p>Only that asset and its immediate connections will be loaded.</p></div>}
+            {!nodes.length && <div className="graph-empty-state"><span>01</span><h3>Search and open a node</h3><p>Only that asset or organization and its immediate connections will be loaded.</p></div>}
           </div>
           {error && <p className="graph-error">{error}</p>}
         </div>
@@ -304,10 +312,10 @@ export default function RelationshipGraph() {
         <aside className="graph-detail-panel">
           {!selection && <div className="graph-detail-empty"><p className="eyebrow">Selected record</p><h3>Choose a node or relationship</h3><p>Details, interpretation cautions and public source links will appear here.</p></div>}
           {selectedNode && <div className="graph-detail-record">
-            <p className="eyebrow">{selectedNode.kind === 'asset' ? 'Asset' : 'External reference'}</p>
+            <p className="eyebrow">{selectedNode.kind === 'asset' ? 'Asset' : selectedNode.kind === 'organization' ? 'Organization' : 'External reference'}</p>
             <h3>{selectedNode.name}</h3>
             <span className="graph-record-id">{selectedNode.id}</span>
-            <dl><div><dt>Type</dt><dd>{selectedNode.asset_type}</dd></div><div><dt>Owner</dt><dd>{selectedNode.owner || 'Not publicly confirmed'}</dd></div><div><dt>Geography</dt><dd>{selectedNode.geography || 'Not publicly confirmed'}</dd></div><div><dt>Connections in register</dt><dd>{selectedNode.connection_count}</dd></div></dl>
+            <dl><div><dt>Type</dt><dd>{selectedNode.asset_type}</dd></div>{selectedNode.kind === 'organization' ? <div><dt>Identity status</dt><dd>{selectedNode.normalization_status || 'Exact public label'}</dd></div> : <><div><dt>Owner</dt><dd>{selectedNode.owner || 'Not publicly confirmed'}</dd></div><div><dt>Geography</dt><dd>{selectedNode.geography || 'Not publicly confirmed'}</dd></div></>}<div><dt>Connections in register</dt><dd>{selectedNode.connection_count}</dd></div></dl>
             {selectedNode.official_url && <a className="graph-official-link" href={selectedNode.official_url} target="_blank" rel="noreferrer">Open official source ↗</a>}
             {selectedNode.expandable && <button className="graph-expand-button" onClick={() => void loadNeighborhood(selectedNode.id)} disabled={loadedRef.current.has(selectedNode.id) || loadingId === selectedNode.id}>{loadedRef.current.has(selectedNode.id) ? 'Connections already loaded ✓' : loadingId === selectedNode.id ? 'Loading connections…' : `Expand ${selectedNode.connection_count} connections`}</button>}
           </div>}
@@ -315,7 +323,7 @@ export default function RelationshipGraph() {
             <p className="eyebrow">Relationship</p><h3>{selectedRelationship.relationship_type}</h3><span className="graph-record-id">{selectedRelationship.id}</span>
             <dl><div><dt>Status</dt><dd>{selectedRelationship.status}</dd></div><div><dt>Evidence statement</dt><dd>{selectedRelationship.evidence || 'Not publicly confirmed'}</dd></div><div><dt>Constraint</dt><dd>{selectedRelationship.constraints || 'Not publicly confirmed'}</dd></div><div><dt>Next validation question</dt><dd>{selectedRelationship.validation_question || 'Not publicly confirmed'}</dd></div></dl>
             <SourceLinks urls={selectedRelationship.source_urls} />
-            <p className="graph-caution">A documented relationship or compatibility claim is not evidence of a lossless conversion.</p>
+            <p className="graph-caution">{selectedRelationship.id.startsWith('ACT-') ? 'This edge records only the actor role supported by the cited public evidence; other roles are not inferred.' : 'A documented relationship or compatibility claim is not evidence of a lossless conversion.'}</p>
           </div>}
         </aside>
       </section>

@@ -4,7 +4,7 @@
 
 构建时，`src/data/dataset.json` 会作为带内容 hash 的独立 JSON asset 发布，页面启动后加载并校验它；数据不会被编译进主 JavaScript chunk。加载失败时页面会显示错误并允许重试。
 
-Relationship graph 是独立的跨问题视图，不依赖 Neo4j。页面先获取 `public/graph/index.json`，用户选择资产后才获取对应的 `public/graph/neighborhoods/<asset_id>.json`，展开相邻资产时继续按需合并新的局部网络。
+Relationship graph 是独立的跨问题视图，不依赖 Neo4j。页面先获取 `public/graph/index.json`，用户选择资产或机构后才获取对应的 `public/graph/neighborhoods/<node_id>.json`，展开相邻节点时继续按需合并新的局部网络。Owner、developer 与 operator/maintainer 均作为有证据来源的机构—资产关系呈现。
 
 ```bash
 pnpm data:build

@@ -405,6 +405,7 @@ function FormatsAndSoftware() {
 }
 
 function SoftwareCompanyCell({ assetId }: { assetId: string }) {
+  const data = useDataset();
   const grouped = new Map<string, { entityType: string; roles: string[] }>();
   for (const row of data.softwareCompanyRoles.filter((role) => role.asset_id === assetId)) {
     const organization = text(row.organization_name, '');
@@ -421,6 +422,7 @@ function SoftwareCompanyCell({ assetId }: { assetId: string }) {
 }
 
 function SoftwareExplorer() {
+  const data = useDataset();
   const [query, setQuery] = useState('');
   const [primaryFunction, setPrimaryFunction] = useState('All primary functions');
   const [capability, setCapability] = useState('All capabilities');
@@ -438,7 +440,7 @@ function SoftwareExplorer() {
       const actorNames = data.softwareCompanyRoles.filter((role) => role.asset_id === row.asset_id).map((role) => text(role.organization_name, '')).join(' ');
       return !needle || matches(row, needle, ['asset_id', 'product_name', 'product_type', 'primary_function', 'functional_capabilities', 'sector_scope', 'geographic_coverage', 'standard_associations', 'discovery_source']) || actorNames.toLowerCase().includes(needle);
     });
-  }, [query, primaryFunction, capability, productType]);
+  }, [query, primaryFunction, capability, productType, data.softwareScope, data.softwareCompanyRoles]);
 
   return (
     <div className="page-stack">

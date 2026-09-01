@@ -30,3 +30,6 @@ data/reports/*
 *.log
 *.dump
 *.backup
+
+.playwright-cli/
+output/
