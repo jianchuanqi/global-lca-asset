@@ -1,0 +1,5020 @@
+{
+  "reviewed_at": "2026-09-06",
+  "scope": "Named owners, operators and maintainers across all asset categories. Developer-only roles are outside this count.",
+  "methodology": [
+    "Locate the named institution, company or maintaining team, not the geographic coverage of the asset.",
+    "Group reviewed aliases under a stable provider identity; retain collective provider groups when the source does not split their roles.",
+    "Count each provider identity once per country or region, across all of its aliases and assets. Joint providers may appear in multiple locations.",
+    "Use Global community for an explicitly international community; use a regional label for a regional consortium or network.",
+    "Retained database-scope locations keep their earlier source review dates; newly checked institutional sources are dated 2026-09-06. Other asset and version claims are not re-reviewed by this update.",
+    "Maintenance-status placeholders are excluded. An unidentified institutional location remains unconfirmed."
+  ],
+  "records": [
+    {
+      "organization_label": "22-partner consortium",
+      "provider_name": "GreenGrocer consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://greengrocer-project.eu/project/about"
+      ],
+      "evidence_note": "European Horizon Europe project consortium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-306399b589ab",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ADEME",
+      "provider_name": "ADEME",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://doc.agribalyse.fr/documentation-en/agribalyse-data/data-access",
+        "https://doc.agribalyse.fr/documentation-en/data-use/webinars",
+        "https://presse.ademe.fr/files/plaquette_presentation_agribalyse.pdf",
+        "https://www.ademe.fr/lagence/notre-organisation/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-39d3cbd139fd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ADEME and programme partners",
+      "provider_name": "ADEME",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://doc.agribalyse.fr/documentation-en/agribalyse-data/data-access",
+        "https://doc.agribalyse.fr/documentation-en/data-use/webinars",
+        "https://presse.ademe.fr/files/plaquette_presentation_agribalyse.pdf",
+        "https://www.ademe.fr/lagence/notre-organisation/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-39d3cbd139fd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ADEME-led nine-partner consortium",
+      "provider_name": "ADEME",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://doc.agribalyse.fr/documentation-en/agribalyse-data/data-access",
+        "https://doc.agribalyse.fr/documentation-en/data-use/webinars",
+        "https://presse.ademe.fr/files/plaquette_presentation_agribalyse.pdf",
+        "https://www.ademe.fr/lagence/notre-organisation/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-39d3cbd139fd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "AIST-IDEA programme and AIST Solutions licensing service",
+      "provider_name": "AIST",
+      "countries": [
+        "Japan"
+      ],
+      "evidence_urls": [
+        "https://idea-lca.com/en/features/",
+        "https://www.aist.go.jp/aist_e/about_aist"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0008; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7d2722cb0fd9",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Alliance HQE-GBC and INIES governance bodies",
+      "provider_name": "INIES / Alliance HQE-GBC",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.inies.fr/en/accueil/",
+        "https://www.inies.fr/en/ressources-documentaires/how-to-consult-the-inies-database/",
+        "https://www.inies.fr/politique-de-confidentialite-2/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0021; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-cf3cccc18804",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Argonne National Laboratory",
+      "provider_name": "Argonne National Laboratory",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.anl.gov/contact/chicago-site-contact"
+      ],
+      "evidence_note": "Laboratory address in Lemont, Illinois, United States.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-1f67e4dceabf",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Athena Sustainable Materials Institute",
+      "provider_name": "Athena Sustainable Materials Institute",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://www.athenasmi.org/our-software-data/lca-databases/",
+        "https://www.athenasmi.org/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0049; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-6e5929226ff3",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "AusLCI Database Committee and sector partners",
+      "provider_name": "Australian Life Cycle Assessment Society (ALCAS)",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://www.auslci.com.au/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0014; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2bca6569c137",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Australian Life Cycle Assessment Society (ALCAS)",
+      "provider_name": "Australian Life Cycle Assessment Society (ALCAS)",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://www.auslci.com.au/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0014; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2bca6569c137",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BATTERS",
+      "provider_name": "BATTERS / WELOOP",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.batters.fr/en/battery-recycling-inventory/",
+        "https://www.weloop.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0035; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-a6c1cc65e540",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BATTERS / WELOOP experts",
+      "provider_name": "BATTERS / WELOOP",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.batters.fr/en/battery-recycling-inventory/",
+        "https://www.weloop.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0035; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-a6c1cc65e540",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BBSR and commissioned technical operators",
+      "provider_name": "BMWSB / BBSR",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.oekobaudat.de/service/downloads",
+        "https://www.oekobaudat.de/info/impressum.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0015; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-d5a3d377bdea",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BBSR-linked technical maintainers and data-network implementers",
+      "provider_name": "BMWSB / BBSR",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.oekobaudat.de/service/downloads",
+        "https://www.oekobaudat.de/info/impressum.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0015; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-d5a3d377bdea",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BioEnergieDat project consortium",
+      "provider_name": "BioEnergieDat / KIT",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.bioenergiedat.de/software.html",
+        "https://bioenergiedat.de/documents/10156/24192/anleitung-openLCA.pdf"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0036; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7ca803b6a570",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BMWSB/BBSR and InData/ECO Platform technical community",
+      "provider_name": "BMWSB / BBSR",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.oekobaudat.de/service/downloads",
+        "https://www.oekobaudat.de/info/impressum.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0015; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-d5a3d377bdea",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BONSAI community",
+      "provider_name": "BONSAI",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.bonsai.uno/foundation"
+      ],
+      "evidence_note": "Distributed volunteer network with independent projects and international contributors; classified as a global community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-a97f3d2daa6e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BONSAI data contributors and projects",
+      "provider_name": "BONSAI",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.bonsai.uno/foundation"
+      ],
+      "evidence_note": "Distributed volunteer network with independent projects and international contributors; classified as a global community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-a97f3d2daa6e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BONSAI network/contributors",
+      "provider_name": "BONSAI",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.bonsai.uno/foundation"
+      ],
+      "evidence_note": "Distributed volunteer network with independent projects and international contributors; classified as a global community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-a97f3d2daa6e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BONSAI not-for-profit association",
+      "provider_name": "BONSAI",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.bonsai.uno/foundation"
+      ],
+      "evidence_note": "Distributed volunteer network with independent projects and international contributors; classified as a global community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-a97f3d2daa6e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "BONSAI secretariat, board and contributor network",
+      "provider_name": "BONSAI",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.bonsai.uno/foundation"
+      ],
+      "evidence_note": "Distributed volunteer network with independent projects and international contributors; classified as a global community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-a97f3d2daa6e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Bureau Veritas CODDE",
+      "provider_name": "LCIE Bureau Veritas / CODDE",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://codde.fr/evenement/eime-nouvelle-base-codde-2026-04",
+        "https://codde.fr/en/contact-us/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0039; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-cbdfa365e74d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "C.Scale",
+      "provider_name": "C.Scale",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://docs.cscale.io/resources/terms-of-use"
+      ],
+      "evidence_note": "Terms identify Climate Scale Inc. as a Delaware public benefit corporation.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-938b7e7753d5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Carbon Minds",
+      "provider_name": "Carbon Minds",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.carbon-minds.com/products/data/carbon-footprint-and-lca-data/database-and-methodology-versions/",
+        "https://www.carbon-minds.com/site-notice/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0006; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-e5ef70a95668",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Carbonfact science team",
+      "provider_name": "Carbonfact",
+      "countries": [
+        "United States",
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.carbonfact.com/database",
+        "https://www.carbonfact.com/legal-notice"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0031; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-a86c58b2ba67",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Cascale",
+      "provider_name": "Cascale",
+      "countries": [
+        "United States",
+        "Netherlands",
+        "Hong Kong SAR, China"
+      ],
+      "evidence_urls": [
+        "https://cascale.org/contact-us/"
+      ],
+      "evidence_note": "Official contact page lists global offices in Amsterdam and Hong Kong and a US mailing address in Oakland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-692834b216be",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Catena-X Automotive Network e.V.",
+      "provider_name": "Catena-X Automotive Network e.V.",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://catena-x.net/imprint/"
+      ],
+      "evidence_note": "Association imprint lists Berlin, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-171a48f887e9",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Catena-X PCF working groups",
+      "provider_name": "Catena-X Automotive Network e.V.",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://catena-x.net/imprint/"
+      ],
+      "evidence_note": "Association imprint lists Berlin, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-171a48f887e9",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Catena-X PCF/data-model working groups",
+      "provider_name": "Catena-X Automotive Network e.V.",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://catena-x.net/imprint/"
+      ],
+      "evidence_note": "Association imprint lists Berlin, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-171a48f887e9",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CEN/TC 350 and national standards bodies",
+      "provider_name": "CEN",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.cencenelec.eu/management-centre/contact-us/"
+      ],
+      "evidence_note": "CEN-CENELEC Management Centre lists Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-7af36b51dd97",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CEPE LCI project",
+      "provider_name": "CEPE",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://cepe.org/sustainability/lci-project/",
+        "https://cepe.org/sustainability/how-to-access-the-database/",
+        "https://cepe.org/sustainability/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0032; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-43c4ff5d27e1",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Chalmers University of Technology-led DeDuCE team",
+      "provider_name": "Chalmers University of Technology",
+      "countries": [
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://cpmdatabase.cpm.chalmers.se/AboutDatabase.htm",
+        "https://www.lifecyclecenter.se/about-us/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0037; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-15b7f004206d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Chalmers University of Technology, Environmental Systems Analysis",
+      "provider_name": "Chalmers University of Technology",
+      "countries": [
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://cpmdatabase.cpm.chalmers.se/AboutDatabase.htm",
+        "https://www.lifecyclecenter.se/about-us/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0037; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-15b7f004206d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRAIG / POLARIIS+ collaboration",
+      "provider_name": "CIRAIG",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://ciraig.org/index.php/project/open-io-canada/",
+        "https://github.com/CIRAIG/OpenIO-Canada"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0024; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-92f100844f09",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRAIG / project contributors",
+      "provider_name": "CIRAIG",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://ciraig.org/index.php/project/open-io-canada/",
+        "https://github.com/CIRAIG/OpenIO-Canada"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0024; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-92f100844f09",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRAIG OpenIO-Canada contributors",
+      "provider_name": "CIRAIG",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://ciraig.org/index.php/project/open-io-canada/",
+        "https://github.com/CIRAIG/OpenIO-Canada"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0024; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-92f100844f09",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRAIG Sustainable Consumption Chair",
+      "provider_name": "CIRAIG",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://ciraig.org/index.php/project/open-io-canada/",
+        "https://github.com/CIRAIG/OpenIO-Canada"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0024; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-92f100844f09",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRAIG with ecoinvent",
+      "provider_name": "CIRAIG / ecoinvent",
+      "countries": [
+        "Canada",
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://ciraig.org/index.php/project/quebec-life-cycle-inventory-database/",
+        "https://www.environnement.gouv.qc.ca/infuseur/communique.asp?no=3037",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/",
+        "https://ecoinvent.org/mission-history/",
+        "https://support.ecoinvent.org/releases-overview",
+        "https://support.ecoinvent.org/data-formats-overview",
+        "https://support.ecoinvent.org/hubfs/Comms/2025%20v3.12%20Release/Introduction%20to%20ecoinvent%20v3.12.pdf",
+        "https://nexus.openlca.org/ws/files/35296"
+      ],
+      "evidence_note": "Named collaboration between CIRAIG in Canada and ecoinvent in Switzerland. Prior reviewed locations retained.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-647343057a51",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Circular Ecology",
+      "provider_name": "Circular Ecology",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://circularecology.com/embodied-carbon-footprint-database.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0029; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2a02687fb6e8",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRPASS-2 and partner initiatives",
+      "provider_name": "CIRPASS-2 / DPP Vocabulary Hub",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://cirpass2.eu/who-we-are/"
+      ],
+      "evidence_note": "The consortium comprises organizations across Europe and beyond; regional consortium location is retained without assigning a single headquarters.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01c182ccc01f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CIRPASS-2 European project",
+      "provider_name": "CIRPASS-2 / DPP Vocabulary Hub",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://cirpass2.eu/who-we-are/"
+      ],
+      "evidence_note": "The consortium comprises organizations across Europe and beyond; regional consortium location is retained without assigning a single headquarters.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01c182ccc01f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CLIC Innovation / ARVI research programme",
+      "provider_name": "CLIC Innovation / ARVI research programme",
+      "countries": [
+        "Finland"
+      ],
+      "evidence_urls": [
+        "https://nexus.openlca.org/ws/dataproviders/8351"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0074.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-29fbc8554ad0",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Climate Farm Demo consortium",
+      "provider_name": "Climate Farm Demo consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://climatefarmdemo.eu/about/"
+      ],
+      "evidence_note": "Pan-European consortium/network; regional classification, not data coverage.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-34e49703255b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CML-IE; public resources are now largely archival",
+      "provider_name": "Leiden University / CML",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.universiteitleiden.nl/wiskunde-en-natuurwetenschappen/milieuwetenschappen/afdeling-environmental-biology/contact"
+      ],
+      "evidence_note": "CML institutional address in Leiden, the Netherlands.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b1987aff2ac4",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Consortium for Research on Renewable Industrial Materials (CORRIM)",
+      "provider_name": "CORRIM",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://corrim.org/lcas-on-wood-products-library/",
+        "https://www.lcacommons.gov/lca-collaboration/CORRIM/Forestry_and_forest_products"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0067; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-4650c72b5677",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Cornerstone Sustainability Data Initiative",
+      "provider_name": "Cornerstone (ERG / Stanford / Watershed)",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://cornerstonedata.org/",
+        "https://www.erg.com/about",
+        "https://watershed.com/"
+      ],
+      "evidence_note": "Initiative operated by ERG, Stanford and Watershed; institutional homes in the United States.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5b58cd6202d5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "CORRIM and Federal LCA Commons",
+      "provider_name": "CORRIM",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://corrim.org/lcas-on-wood-products-library/",
+        "https://www.lcacommons.gov/lca-collaboration/CORRIM/Forestry_and_forest_products"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0067; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-4650c72b5677",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Daylight Chemical Information Systems (original specification); multiple later dialects",
+      "provider_name": "Daylight Chemical Information Systems",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.daylight.com/iframes/footer.html"
+      ],
+      "evidence_note": "Official site identifies Daylight headquarters in Laguna Niguel, California, USA. Later independent dialect implementers are not individually identified in this collective label.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-3d6476e7b202",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Daylight for original specification; distributed implementer community",
+      "provider_name": "Daylight Chemical Information Systems",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.daylight.com/iframes/footer.html"
+      ],
+      "evidence_note": "Official site identifies Daylight headquarters in Laguna Niguel, California, USA. Later independent dialect implementers are not individually identified in this collective label.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-3d6476e7b202",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "DdS board and staff",
+      "provider_name": "Départ de Sentier",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.d-d-s.ch/about/"
+      ],
+      "evidence_note": "Official site describes DdS as a Swiss non-profit association.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b0c95c671e2e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "DdS platform and data engineering team",
+      "provider_name": "Départ de Sentier",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.d-d-s.ch/about/"
+      ],
+      "evidence_note": "Official site describes DdS as a Swiss non-profit association.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b0c95c671e2e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "DeDuCE research team and partners",
+      "provider_name": "Chalmers University of Technology",
+      "countries": [
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://cpmdatabase.cpm.chalmers.se/AboutDatabase.htm",
+        "https://www.lifecyclecenter.se/about-us/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0037; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-15b7f004206d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Départ de Sentier",
+      "provider_name": "Départ de Sentier",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.d-d-s.ch/about/"
+      ],
+      "evidence_note": "Official site describes DdS as a Swiss non-profit association.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b0c95c671e2e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Départ de Sentier association",
+      "provider_name": "Départ de Sentier",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.d-d-s.ch/about/"
+      ],
+      "evidence_note": "Official site describes DdS as a Swiss non-profit association.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b0c95c671e2e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Directorate-General for Environment and Joint Research Centre",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Directorate-General for Research and Innovation and Joint Research Centre",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Distributed historically through openLCA Nexus",
+      "provider_name": "GreenDelta GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://psilca.net/",
+        "https://nexus.openlca.org/ws/dataproviders/9552"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0025; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-c45578c9c7fe",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Dutch National Institute for Public Health and the Environment (RIVM) and method authors",
+      "provider_name": "RIVM",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.rivm.nl/en/food-and-nutrition/sustainable-food/environmental-impact-of-food-products",
+        "https://www.rivm.nl/en/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0019; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f28b1fe39e0c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EarthShift Global",
+      "provider_name": "EarthShift Global",
+      "countries": [
+        "United States",
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://earthshiftglobal.com/contact"
+      ],
+      "evidence_note": "Official contact page identifies US and Canadian operations; both institutional locations retained.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c4d2db387768",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Eaternity",
+      "provider_name": "Eaternity",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://eaternity.org/contact/"
+      ],
+      "evidence_note": "Official contact page identifies headquarters in Zurich, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b2048819101a",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EC-JRC / European Platform on LCA",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ECO Platform AISBL",
+      "provider_name": "ECO Platform",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.eco-platform.org/files/download/Documents/2025/ECO%20Platform%20bylaws__version_2025-05__approved.pdf"
+      ],
+      "evidence_note": "ECO Platform is incorporated with a registered office in Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c5de4ed291fb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ECO Platform and connected EPD programme-operator nodes",
+      "provider_name": "ECO Platform",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.eco-platform.org/files/download/Documents/2025/ECO%20Platform%20bylaws__version_2025-05__approved.pdf"
+      ],
+      "evidence_note": "ECO Platform is incorporated with a registered office in Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c5de4ed291fb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ECO Platform members and secretariat",
+      "provider_name": "ECO Platform",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.eco-platform.org/files/download/Documents/2025/ECO%20Platform%20bylaws__version_2025-05__approved.pdf"
+      ],
+      "evidence_note": "ECO Platform is incorporated with a registered office in Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c5de4ed291fb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "eco-costs/value maintainers",
+      "provider_name": "Sustainable Impact Metrics Foundation",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.ecocostsvalue.com/data-tools-books/",
+        "https://www.ecocostsvalue.com/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0040; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-72fdf9683059",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Ecochain Technologies B.V.",
+      "provider_name": "Ecochain Technologies B.V.",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://ecochain.com/contact/"
+      ],
+      "evidence_note": "Head office in Amsterdam, the Netherlands.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-50d5079bff84",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ecoinvent / former EcoSpold development community",
+      "provider_name": "ecoinvent Association",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://ecoinvent.org/mission-history/",
+        "https://support.ecoinvent.org/releases-overview",
+        "https://support.ecoinvent.org/data-formats-overview",
+        "https://support.ecoinvent.org/hubfs/Comms/2025%20v3.12%20Release/Introduction%20to%20ecoinvent%20v3.12.pdf",
+        "https://nexus.openlca.org/ws/files/35296"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0001; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-21a162b37e57",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ecoinvent Association",
+      "provider_name": "ecoinvent Association",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://ecoinvent.org/mission-history/",
+        "https://support.ecoinvent.org/releases-overview",
+        "https://support.ecoinvent.org/data-formats-overview",
+        "https://support.ecoinvent.org/hubfs/Comms/2025%20v3.12%20Release/Introduction%20to%20ecoinvent%20v3.12.pdf",
+        "https://nexus.openlca.org/ws/files/35296"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0001; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-21a162b37e57",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ENEA",
+      "provider_name": "ENEA",
+      "countries": [
+        "Italy"
+      ],
+      "evidence_urls": [
+        "https://bancadatiitalianalca.enea.it/Node/index.xhtml?stock=BDILCA",
+        "https://www.arcadia.enea.it/la-banca-dati.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0009; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b1034636fecb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ENEA; ARCADIA and successor MASE–ENEA programme",
+      "provider_name": "ENEA",
+      "countries": [
+        "Italy"
+      ],
+      "evidence_urls": [
+        "https://bancadatiitalianalca.enea.it/Node/index.xhtml?stock=BDILCA",
+        "https://www.arcadia.enea.it/la-banca-dati.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0009; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b1034636fecb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EPD Australasia",
+      "provider_name": "EPD Australasia Ltd",
+      "countries": [
+        "New Zealand"
+      ],
+      "evidence_urls": [
+        "https://epd-australasia.com/epd-search/",
+        "https://epd-australasia.com/about-us/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f109470f288e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EPD Australasia Ltd",
+      "provider_name": "EPD Australasia Ltd",
+      "countries": [
+        "New Zealand"
+      ],
+      "evidence_urls": [
+        "https://epd-australasia.com/epd-search/",
+        "https://epd-australasia.com/about-us/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f109470f288e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EPD International AB",
+      "provider_name": "EPD International AB",
+      "countries": [
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://data.environdec.com/index.xhtml",
+        "https://www.environdec.com/resources/epd-resources-hub",
+        "https://www.environdec.com/service-agreement"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-dd96eec9107e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EPDItaly",
+      "provider_name": "ICMQ / EPDItaly",
+      "countries": [
+        "Italy"
+      ],
+      "evidence_urls": [
+        "https://www.epditaly.it/",
+        "https://www.epditaly.it/en/contatti/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0011; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7145653cd561",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ERASM",
+      "provider_name": "ERASM",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.erasm.org/wp-content/uploads/2017/08/170727-SLE-Summary-Paper-IJLCA-1.pdf",
+        "https://specialty-chemicals.eu/erasm/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0038; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-0018a12c1b0d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ERASM member-company collaboration",
+      "provider_name": "ERASM",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.erasm.org/wp-content/uploads/2017/08/170727-SLE-Summary-Paper-IJLCA-1.pdf",
+        "https://specialty-chemicals.eu/erasm/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0038; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-0018a12c1b0d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ERG, Stanford and Watershed-supported initiative",
+      "provider_name": "Cornerstone (ERG / Stanford / Watershed)",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://cornerstonedata.org/",
+        "https://www.erg.com/about",
+        "https://watershed.com/"
+      ],
+      "evidence_note": "Initiative operated by ERG, Stanford and Watershed; institutional homes in the United States.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5b58cd6202d5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ESU-services and contributing authors",
+      "provider_name": "ESU-services",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://esu-services.ch/data/fooddata/",
+        "https://nexus.openlca.org/ws/dataproviders/8904"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0030; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-3ac48ada0f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ESU-services Ltd.",
+      "provider_name": "ESU-services",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://esu-services.ch/data/fooddata/",
+        "https://nexus.openlca.org/ws/dataproviders/8904"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0030; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-3ac48ada0f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EUDPP ontology contributors via DPP Vocabulary Hub",
+      "provider_name": "CIRPASS-2 / DPP Vocabulary Hub",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://cirpass2.eu/who-we-are/"
+      ],
+      "evidence_note": "The consortium comprises organizations across Europe and beyond; regional consortium location is retained without assigning a single headquarters.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01c182ccc01f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EuGeos / Chris Foster",
+      "provider_name": "EuGeos / Chris Foster",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://nexus.openlca.org/ws/dataproviders/8251",
+        "https://www.openlca.org/wp-content/uploads/2022/02/documentation_EN15804-addon-in-openLCA_10022022.pdf"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0043.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-ce9a63219355",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Eurobitume",
+      "provider_name": "Eurobitume",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://eurobitume.eu/bitumen-life-cycle-assessment/"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0066.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8ff1700b82d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EUROFER Stainless",
+      "provider_name": "EUROFER",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.eurofer.eu/issues/eurofer-stainless-and-specialty-steel/life-cycle-inventory-lci-enquiries"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0053; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-042ffc8279b8",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Aluminium",
+      "provider_name": "European Aluminium",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://european-aluminium.eu/blog/environmental-profile-reports/"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0050.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-3fd92d9cfe3d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Commission",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Commission Joint Research Centre",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Commission Joint Research Centre and Directorate-General for Environment",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Commission Joint Research Centre and Environmental Footprint governance",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Commission-funded NEEDS project consortium",
+      "provider_name": "NEEDS consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://nexus.openlca.org/ws/files/9971",
+        "https://nexus.openlca.org/database/NEEDS",
+        "https://cordis.europa.eu/project/id/502687"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0034; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b358635dcf0d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Committee for Standardization (CEN)",
+      "provider_name": "CEN",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.cencenelec.eu/management-centre/contact-us/"
+      ],
+      "evidence_note": "CEN-CENELEC Management Centre lists Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-7af36b51dd97",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Container Glass Federation (FEVE)",
+      "provider_name": "FEVE",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://feve.org/glass-industry-positions/life-cycle-assessment/",
+        "https://feve.org/new-life-cycle-assessment-proves-industry-success-reducing-environmental-footprint/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0065; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-21f388457475",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Council of the Paint, Printing Ink and Artists' Colours Industry (CEPE)",
+      "provider_name": "CEPE",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://cepe.org/sustainability/lci-project/",
+        "https://cepe.org/sustainability/how-to-access-the-database/",
+        "https://cepe.org/sustainability/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0032; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-43c4ff5d27e1",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European LIFE programme consortium",
+      "provider_name": "ADEME / LIFE ECO FOOD CHOICE",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://doc.agribalyse.fr/documentation-en/agribalyse-data/data-access",
+        "https://doc.agribalyse.fr/documentation-en/data-use/webinars",
+        "https://presse.ademe.fr/files/plaquette_presentation_agribalyse.pdf",
+        "https://www.ademe.fr/lagence/notre-organisation/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-11bd7e8695f0",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Platform on Life Cycle Assessment",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Platform on Life Cycle Assessment / EC-JRC",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "European Platform on Life Cycle Assessment / JRC",
+      "provider_name": "European Commission / JRC",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://eplca.jrc.ec.europa.eu/LCDN/developerILCD.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0016; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1e09abc506d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Evah Associates",
+      "provider_name": "The Evah Institute",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://evah.institute/services",
+        "https://evah.institute/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0042; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-03ec7f83fcb6",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EXIOBASE consortium",
+      "provider_name": "EXIOBASE consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://zenodo.org/records/5589597",
+        "https://zenodo.org/records/20051562",
+        "https://github.com/EXIOBASE",
+        "https://exiobase.eu/terms-of-use/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0007; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1acb62fe17e7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "EXIOBASE research consortium; current releases distributed on Zenodo",
+      "provider_name": "EXIOBASE consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://zenodo.org/records/5589597",
+        "https://zenodo.org/records/20051562",
+        "https://github.com/EXIOBASE",
+        "https://exiobase.eu/terms-of-use/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0007; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1acb62fe17e7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FAO-coordinated expert and institutional community",
+      "provider_name": "FAO",
+      "countries": [
+        "Italy"
+      ],
+      "evidence_urls": [
+        "https://www.fao.org/contact-us/en/"
+      ],
+      "evidence_note": "FAO headquarters is in Rome, Italy.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-dbf99f2954da",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Federal LCA Commons",
+      "provider_name": "Federal LCA Commons / U.S. federal agencies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/"
+      ],
+      "evidence_note": "Reviewed source identifies a collaboration of U.S. federal agencies, rather than a worldwide provider.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01cf8e04b52b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FEVE",
+      "provider_name": "FEVE",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://feve.org/glass-industry-positions/life-cycle-assessment/",
+        "https://feve.org/new-life-cycle-assessment-proves-industry-success-reducing-environmental-footprint/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0065; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-21f388457475",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FLCAC administrators; development resources hosted publicly",
+      "provider_name": "Federal LCA Commons / U.S. federal agencies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/"
+      ],
+      "evidence_note": "Reviewed source identifies a collaboration of U.S. federal agencies, rather than a worldwide provider.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01cf8e04b52b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FOEN/BAFU and commissioned technical partners",
+      "provider_name": "Swiss Federal Office for the Environment (FOEN/BAFU)",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.bafu.admin.ch/en/studies-economy-and-consumption",
+        "https://nexus.openlca.org/ws/dataproviders/10465"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-b9b6cffe62cd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Food and Agriculture Organization of the United Nations (FAO) and contributing language institutions",
+      "provider_name": "FAO",
+      "countries": [
+        "Italy"
+      ],
+      "evidence_urls": [
+        "https://www.fao.org/contact-us/en/"
+      ],
+      "evidence_note": "FAO headquarters is in Rome, Italy.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-dbf99f2954da",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FoodOn open inter-agency community",
+      "provider_name": "FoodOn / OBO Foundry",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://foodon.org/"
+      ],
+      "evidence_note": "Open-source OBO Foundry consortium and international food-ontology community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b1b4a3d4a52f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FoodOntology contributors / OBO Foundry",
+      "provider_name": "FoodOn / OBO Foundry",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://foodon.org/"
+      ],
+      "evidence_note": "Open-source OBO Foundry consortium and international food-ontology community.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b1b4a3d4a52f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FOODTURE Horizon Europe consortium",
+      "provider_name": "FOODTURE consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://foodture-project.eu/work-packages/",
+        "https://foodture-project.eu/about/",
+        "https://foodture-project.eu/partners/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0045; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-ccefc40fd5d8",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)",
+      "provider_name": "Forest Research Institute Malaysia (FRIM) and Malaysian Timber Industry Board (MTIB)",
+      "countries": [
+        "Malaysia"
+      ],
+      "evidence_urls": [
+        "https://nexus.openlca.org/ws/dataproviders/10466"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0080.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-920d57d0a741",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Forum for Sustainability through Life Cycle Innovation e.V.",
+      "provider_name": "FSLCI",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://fslci.org/frequently-asked-questions/"
+      ],
+      "evidence_note": "FSLCI states it is based in Berlin, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b5ad9c99a67a",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Framework authors",
+      "provider_name": "Green Carbon Cycle authors / TUM Campus Straubing",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s11367-025-02469-0"
+      ],
+      "evidence_note": "Published affiliations identify both author groups at TUM Campus Straubing in Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-bd91e92c72c3",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "FSLCI secretariat and member community",
+      "provider_name": "FSLCI",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://fslci.org/frequently-asked-questions/"
+      ],
+      "evidence_note": "FSLCI states it is based in Berlin, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b5ad9c99a67a",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Fundación InnovaCiclos",
+      "provider_name": "Fundación InnovaCiclos / EcoEd",
+      "countries": [
+        "Chile"
+      ],
+      "evidence_urls": [
+        "https://ciclodata.cl/",
+        "https://ciclodata.cl/historia/",
+        "https://ciclodata.cl/terminos-de-uso/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0060; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1d74f4045938",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Fundación InnovaCiclos / EcoEd",
+      "provider_name": "Fundación InnovaCiclos / EcoEd",
+      "countries": [
+        "Chile"
+      ],
+      "evidence_urls": [
+        "https://ciclodata.cl/",
+        "https://ciclodata.cl/historia/",
+        "https://ciclodata.cl/terminos-de-uso/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0060; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1d74f4045938",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GBDI consortium",
+      "provider_name": "Global Building Data Initiative",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.gbdi.io/platform",
+        "https://www.gbdi.io/about"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-fb9b7fb02b1c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GBDI technical community",
+      "provider_name": "Global Building Data Initiative",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.gbdi.io/platform",
+        "https://www.gbdi.io/about"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-fb9b7fb02b1c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "German Environment Agency",
+      "provider_name": "German Environment Agency",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://data.probas.umweltbundesamt.de/",
+        "https://www.probas.umweltbundesamt.de/",
+        "https://www.umweltbundesamt.de/en/the-uba/uba-offices"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0020; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-26f9588561bf",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "German Environment Agency (Umweltbundesamt, UBA)",
+      "provider_name": "German Environment Agency",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://data.probas.umweltbundesamt.de/",
+        "https://www.probas.umweltbundesamt.de/",
+        "https://www.umweltbundesamt.de/en/the-uba/uba-offices"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0020; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-26f9588561bf",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "German Federal Ministry for Housing, Urban Development and Building (BMWSB) / Federal Institute for Research on Building, Urban Affairs and Spatial Development (BBSR)",
+      "provider_name": "BMWSB / BBSR",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.oekobaudat.de/service/downloads",
+        "https://www.oekobaudat.de/info/impressum.html"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0015; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-d5a3d377bdea",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GFLI Secretariat and data-project partners",
+      "provider_name": "Global Feed LCA Institute",
+      "countries": [
+        "United States",
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://globalfeedlca.org/the-gfli-database-update-version-3-0-is-here/",
+        "https://globalfeedlca.org/gfli-database/accessing-the-database/",
+        "https://globalfeedlca.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0017; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-83cb692a5d8e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GFLI technical and methodology groups",
+      "provider_name": "Global Feed LCA Institute",
+      "countries": [
+        "United States",
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://globalfeedlca.org/the-gfli-database-update-version-3-0-is-here/",
+        "https://globalfeedlca.org/gfli-database/accessing-the-database/",
+        "https://globalfeedlca.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0017; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-83cb692a5d8e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GHG Protocol",
+      "provider_name": "WRI / WBCSD (GHG Protocol)",
+      "countries": [
+        "United States",
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.wri.org/about/contact",
+        "https://docs.wbcsd.org/2019/01/How_to_Reach_WBCSD.pdf"
+      ],
+      "evidence_note": "Joint WRI / WBCSD programme; institutional homes in Washington, DC and Geneva.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b58c090b95cb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GHG Protocol secretariat and multi-stakeholder governance bodies",
+      "provider_name": "WRI / WBCSD (GHG Protocol)",
+      "countries": [
+        "United States",
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.wri.org/about/contact",
+        "https://docs.wbcsd.org/2019/01/How_to_Reach_WBCSD.pdf"
+      ],
+      "evidence_note": "Joint WRI / WBCSD programme; institutional homes in Washington, DC and Geneva.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b58c090b95cb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Global Building Data Initiative",
+      "provider_name": "Global Building Data Initiative",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.gbdi.io/platform",
+        "https://www.gbdi.io/about"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-fb9b7fb02b1c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Global Building Data Initiative under GLOBE",
+      "provider_name": "Global Building Data Initiative",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.gbdi.io/platform",
+        "https://www.gbdi.io/about"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-fb9b7fb02b1c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Global CO2 Initiative, University of Michigan",
+      "provider_name": "International CCU Assessment Harmonization Group / University of Michigan",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://assessccus.globalco2initiative.org/",
+        "https://assessccus.globalco2initiative.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0007; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2690dc80fe5d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Global Feed LCA Institute",
+      "provider_name": "Global Feed LCA Institute",
+      "countries": [
+        "United States",
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://globalfeedlca.org/the-gfli-database-update-version-3-0-is-here/",
+        "https://globalfeedlca.org/gfli-database/accessing-the-database/",
+        "https://globalfeedlca.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0017; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-83cb692a5d8e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Government of Quebec / CIRAIG",
+      "provider_name": "Government of Quebec / CIRAIG",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://ciraig.org/index.php/project/quebec-life-cycle-inventory-database/",
+        "https://www.environnement.gouv.qc.ca/infuseur/communique.asp?no=3037",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0061.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-c3e557f5ae52",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Green Gold Label Foundation",
+      "provider_name": "Green Gold Label Foundation",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://greengoldlabel.com/contact"
+      ],
+      "evidence_note": "Foundation contact address is in Rotterdam, the Netherlands.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b14a2d1c35f2",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GreenDelta",
+      "provider_name": "GreenDelta GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://psilca.net/",
+        "https://nexus.openlca.org/ws/dataproviders/9552"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0025; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-c45578c9c7fe",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GreenDelta GmbH",
+      "provider_name": "GreenDelta GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://psilca.net/",
+        "https://nexus.openlca.org/ws/dataproviders/9552"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0025; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-c45578c9c7fe",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GreenDelta GmbH / TRIPLELINK",
+      "provider_name": "GreenDelta GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://psilca.net/",
+        "https://nexus.openlca.org/ws/dataproviders/9552"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0025; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-c45578c9c7fe",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GreenDelta openLCA development team",
+      "provider_name": "GreenDelta GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://psilca.net/",
+        "https://nexus.openlca.org/ws/dataproviders/9552"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0025; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-c45578c9c7fe",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "GreenGrocer consortium",
+      "provider_name": "GreenGrocer consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://greengrocer-project.eu/project/about"
+      ],
+      "evidence_note": "European Horizon Europe project consortium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-306399b589ab",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd.",
+      "provider_name": "Hangzhou Qinglvlan Environmental Digital Technology",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.lcapillar.com/about/"
+      ],
+      "evidence_note": "Company identifies its registration and office in Hangzhou, China.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-a47bae7e376c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Helmholtz Centre for Environmental Research (UFZ)",
+      "provider_name": "Helmholtz Centre for Environmental Research (UFZ)",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.ufz.de/glues/"
+      ],
+      "evidence_note": "Institutional imprint in Leipzig, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-93928b76ff8e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "HESTIA project / University of Oxford",
+      "provider_name": "University of Oxford / HESTIA",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.hestia.earth/",
+        "https://www.hestia.earth/guide/guide-accessing-data/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2077bc9cdee5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "HESTIA team and contributor community",
+      "provider_name": "University of Oxford / HESTIA",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.hestia.earth/",
+        "https://www.hestia.earth/guide/guide-accessing-data/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2077bc9cdee5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "HESTIA technical team",
+      "provider_name": "University of Oxford / HESTIA",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.hestia.earth/",
+        "https://www.hestia.earth/guide/guide-accessing-data/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2077bc9cdee5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "HiQ Data",
+      "provider_name": "Shanghai HiQ Smart Data",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.hiq.earth/",
+        "https://www.hiqlcd.com/about"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0046; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-36a2326989bb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Historical format; no active maintenance identified",
+      "provider_name": "",
+      "countries": [],
+      "evidence_urls": [],
+      "evidence_note": "This is a maintenance-status placeholder, not an identified provider. Excluded from institution counts.",
+      "location_basis": "No named provider",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": false,
+      "provider_id": "",
+      "location_status": "No named provider"
+    },
+    {
+      "organization_label": "Horizon Europe consortium",
+      "provider_name": "Climate Farm Demo consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://climatefarmdemo.eu/about/"
+      ],
+      "evidence_note": "The source asset identifies this as the Climate Farm Demo European partnership.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-34e49703255b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Ibict — Coordenação de Tecnologias Aplicadas a Novos Produtos",
+      "provider_name": "Ibict",
+      "countries": [
+        "Brazil"
+      ],
+      "evidence_urls": [
+        "https://www.gov.br/ibict/pt-br/central-de-conteudos/noticias/2025/dezembro/cotea-ibict-apresenta-retrospectiva-2025-com-avancos-na-gestao-da-informacao-para-sustentabilidade-e-economia-circular",
+        "https://www.gov.br/ibict/pt-br/central-de-conteudos/noticias/2023/maio/sicv-brasil-amplia-sua-base-de-inventarios-do-ciclo-de-vida",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0054; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-948c47620600",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ICMQ S.p.A. Società Benefit / EPDItaly",
+      "provider_name": "ICMQ / EPDItaly",
+      "countries": [
+        "Italy"
+      ],
+      "evidence_urls": [
+        "https://www.epditaly.it/",
+        "https://www.epditaly.it/en/contatti/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0011; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7145653cd561",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IDTA office and admin-shell-io repository",
+      "provider_name": "Industrial Digital Twin Association",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://industrialdigitaltwin.org/en/imprint"
+      ],
+      "evidence_note": "IDTA imprint lists Frankfurt am Main, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-671fd9891304",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IINAS",
+      "provider_name": "IINAS",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://iinas.org/downloads/gemis-downloads/",
+        "https://iinas.org/en/work/gemis/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0069; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f6a76aeb4253",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IKE Environmental Technology / Sichuan University lineage",
+      "provider_name": "IKE Environmental Technology",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.ike-global.com/",
+        "https://v2.efootprint.net/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0055; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-41fb29fd1a77",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IKE Environmental Technology Co., Ltd.",
+      "provider_name": "IKE Environmental Technology",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.ike-global.com/",
+        "https://v2.efootprint.net/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0055; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-41fb29fd1a77",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IMPACT World+ method development team",
+      "provider_name": "IMPACT World+ (CIRAIG / DTU)",
+      "countries": [
+        "Canada",
+        "Denmark"
+      ],
+      "evidence_urls": [
+        "https://www.impactworldplus.org/team/"
+      ],
+      "evidence_note": "Official team identifies CIRAIG in Canada and DTU in Denmark as the participating organizations.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-2e2b952c9c54",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IMPACT World+ scientific consortium",
+      "provider_name": "IMPACT World+ (CIRAIG / DTU)",
+      "countries": [
+        "Canada",
+        "Denmark"
+      ],
+      "evidence_urls": [
+        "https://www.impactworldplus.org/team/"
+      ],
+      "evidence_note": "Official team identifies CIRAIG in Canada and DTU in Denmark as the participating organizations.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-2e2b952c9c54",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "InChI Trust",
+      "provider_name": "InChI Trust",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5005542/contact-information"
+      ],
+      "evidence_note": "UK charity register gives the institutional address in Cambridge, England.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-1c4cf152a41b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Industrial Digital Twin Association",
+      "provider_name": "Industrial Digital Twin Association",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://industrialdigitaltwin.org/en/imprint"
+      ],
+      "evidence_note": "IDTA imprint lists Frankfurt am Main, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-671fd9891304",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "INIES governance partners under French public convention",
+      "provider_name": "INIES / Alliance HQE-GBC",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.inies.fr/en/accueil/",
+        "https://www.inies.fr/en/ressources-documentaires/how-to-consult-the-inies-database/",
+        "https://www.inies.fr/politique-de-confidentialite-2/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0021; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-cf3cccc18804",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "INRAE",
+      "provider_name": "INRAE",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.inrae.fr/contact"
+      ],
+      "evidence_note": "Institute headquarters in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-ff5f58d646ec",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "INRAE ontology team and Recherche Data Gouv/AgroPortal",
+      "provider_name": "INRAE",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.inrae.fr/contact"
+      ],
+      "evidence_note": "Institute headquarters in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-ff5f58d646ec",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Instituto Brasileiro de Informação em Ciência e Tecnologia (Ibict/MCTI)",
+      "provider_name": "Ibict",
+      "countries": [
+        "Brazil"
+      ],
+      "evidence_urls": [
+        "https://www.gov.br/ibict/pt-br/central-de-conteudos/noticias/2025/dezembro/cotea-ibict-apresenta-retrospectiva-2025-com-avancos-na-gestao-da-informacao-para-sustentabilidade-e-economia-circular",
+        "https://www.gov.br/ibict/pt-br/central-de-conteudos/noticias/2023/maio/sicv-brasil-amplia-sua-base-de-inventarios-do-ciclo-de-vida",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0054; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-948c47620600",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Instituto de Ingeniería UNAM, Red Mexicana de Análisis de Ciclo de Vida and collaborators",
+      "provider_name": "MexiLCA / UNAM",
+      "countries": [
+        "Mexico"
+      ],
+      "evidence_urls": [
+        "https://ciclodevida.mx/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0052; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-0f6b0771bfc2",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Intergovernmental Panel on Climate Change",
+      "provider_name": "IPCC",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.ipcc.ch/about/contact/"
+      ],
+      "evidence_note": "IPCC Secretariat address is in Geneva, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f2714816692b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International Aluminium Institute",
+      "provider_name": "International Aluminium Institute",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://international-aluminium.org/resources/2019-life-cycle-inventory-lci-data-and-environmental-metrics/"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0062.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-865b44242053",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International CCU Assessment Harmonization Group",
+      "provider_name": "International CCU Assessment Harmonization Group / University of Michigan",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://assessccus.globalco2initiative.org/",
+        "https://assessccus.globalco2initiative.org/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0007; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2690dc80fe5d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International Copper Association",
+      "provider_name": "International Copper Association",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://copperalliance.org/wp-content/uploads/2021/08/ICA-EnvironmentalProfileHESD-201803-FINAL-LOWRES-1.pdf"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0068.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-279de0149af0",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International EPD System",
+      "provider_name": "EPD International AB",
+      "countries": [
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://data.environdec.com/index.xhtml",
+        "https://www.environdec.com/resources/epd-resources-hub",
+        "https://www.environdec.com/service-agreement"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-dd96eec9107e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International Institute for Sustainability Analysis and Strategy (IINAS)",
+      "provider_name": "IINAS",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://iinas.org/downloads/gemis-downloads/",
+        "https://iinas.org/en/work/gemis/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0069; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f6a76aeb4253",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International Organization for Standardization",
+      "provider_name": "ISO",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.iso.org/contact-iso.html"
+      ],
+      "evidence_note": "ISO Central Secretariat is in Vernier, Geneva, Switzerland; committees are grouped under ISO.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6dc87bf3ac76",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International Organization for Standardization (ISO)",
+      "provider_name": "ISO",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.iso.org/contact-iso.html"
+      ],
+      "evidence_note": "ISO Central Secretariat is in Vernier, Geneva, Switzerland; committees are grouped under ISO.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6dc87bf3ac76",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "International Zinc Association",
+      "provider_name": "International Zinc Association",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.zinc.org/life-cycle-assessment/"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0064.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-63cbfc59feb8",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IPCC Task Force on National Greenhouse Gas Inventories",
+      "provider_name": "IPCC Task Force / IGES Technical Support Unit",
+      "countries": [
+        "Japan"
+      ],
+      "evidence_urls": [
+        "https://www.ipcc-nggip.iges.or.jp/org/overview.html"
+      ],
+      "evidence_note": "Task Force Technical Support Unit is hosted by IGES in Japan; parent IPCC owner is recorded separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-03ab792a5562",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IPCC Working Group I assessment process",
+      "provider_name": "IPCC",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.ipcc.ch/about/contact/"
+      ],
+      "evidence_note": "IPCC Secretariat address is in Geneva, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f2714816692b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "iPoint-systems GmbH",
+      "provider_name": "iPoint-systems GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.ipoint-systems.com/de/kontakt/"
+      ],
+      "evidence_note": "Headquarters in Reutlingen, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-4f015352a517",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ISO/TC 207/SC 3",
+      "provider_name": "ISO",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.iso.org/contact-iso.html"
+      ],
+      "evidence_note": "ISO Central Secretariat is in Vernier, Geneva, Switzerland; committees are grouped under ISO.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6dc87bf3ac76",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ISO/TC 207/SC 5",
+      "provider_name": "ISO",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.iso.org/contact-iso.html"
+      ],
+      "evidence_note": "ISO Central Secretariat is in Vernier, Geneva, Switzerland; committees are grouped under ISO.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6dc87bf3ac76",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "ISO/TC 207/SC 7",
+      "provider_name": "ISO",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.iso.org/contact-iso.html"
+      ],
+      "evidence_note": "ISO Central Secretariat is in Vernier, Geneva, Switzerland; committees are grouped under ISO.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6dc87bf3ac76",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "IUPAC and InChI Trust",
+      "provider_name": "IUPAC / InChI Trust",
+      "countries": [
+        "United States",
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://iupac.org/contact/",
+        "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5005542/contact-information"
+      ],
+      "evidence_note": "Joint stewardship: IUPAC secretariat in North Carolina, USA, and InChI Trust institutional address in Cambridge, England.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b5504ff34aa7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Kanso, Inc. / Carbonfact",
+      "provider_name": "Carbonfact",
+      "countries": [
+        "United States",
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.carbonfact.com/database",
+        "https://www.carbonfact.com/legal-notice"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0031; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-a86c58b2ba67",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Kassel Institute for Sustainability data repository",
+      "provider_name": "University of Kassel",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://termine.uni-kassel.de/impressum?_locale=de"
+      ],
+      "evidence_note": "University address in Kassel, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-3db2b75e762f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Kimel Tech SpA",
+      "provider_name": "Kimel Tech SpA",
+      "countries": [
+        "Chile"
+      ],
+      "evidence_urls": [
+        "https://kimel.tech/"
+      ],
+      "evidence_note": "Company contact address lists Providencia, Santiago, Chile.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6c58fb8213fd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Kleis Technology",
+      "provider_name": "Kleis Technology",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://kleis.ch/team"
+      ],
+      "evidence_note": "Company describes its base in Lausanne, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-bb2c5c6d7b95",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Korea Environmental Industry & Technology Institute (KEITI)",
+      "provider_name": "Korea Environmental Industry & Technology Institute",
+      "countries": [
+        "Republic of Korea"
+      ],
+      "evidence_urls": [
+        "https://www.keiti.re.kr/site/keiti/02/10202100000002023101610.jsp"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0056; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-e4719c3c27fa",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LC-IMPACT project; openLCA adaptation by GreenDelta GmbH",
+      "provider_name": "LC-IMPACT / GreenDelta",
+      "countries": [
+        "Norway",
+        "Netherlands",
+        "Switzerland",
+        "Denmark",
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://lc-impact.eu/about.html",
+        "https://nexus.openlca.org/ws/dataproviders/10454"
+      ],
+      "evidence_note": "LC-IMPACT team institutions include NTNU, PRé / Radboud, ETH and DTU; named openLCA adaptation maintainer GreenDelta is in Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5767be39417b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCA CARE project consortium",
+      "provider_name": "LCA CARE consortium",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://lca-care.eu/lca-care-2/"
+      ],
+      "evidence_note": "European project partnership of education and training organizations.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6e378bd2defb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCA Japan Forum",
+      "provider_name": "LCA Society of Japan / LCA Japan Forum",
+      "countries": [
+        "Japan"
+      ],
+      "evidence_urls": [
+        "https://www.lca-forum.org/database/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0051; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-295d5c4d3d03",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCA Society of Japan / LCA Japan Forum",
+      "provider_name": "LCA Society of Japan / LCA Japan Forum",
+      "countries": [
+        "Japan"
+      ],
+      "evidence_urls": [
+        "https://www.lca-forum.org/database/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0051; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-295d5c4d3d03",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCA to BIM Workflow research project",
+      "provider_name": "RWTH Aachen / LCA to BIM",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://design-computation-rwth.github.io/lcabim-ontology/",
+        "https://www.ssc.rwth-aachen.de/index.php?menuID=10001"
+      ],
+      "evidence_note": "Repository identifies RWTH Aachen research group; university institutional address in Aachen, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6e91070e6013",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCAx contributors",
+      "provider_name": "LCAx / OCNI-DTU",
+      "countries": [
+        "Denmark"
+      ],
+      "evidence_urls": [
+        "https://github.com/ocni-dtu/lcax",
+        "https://www.dtu.dk/om-dtu/kontakt-og-besoeg"
+      ],
+      "evidence_note": "Repository is maintained under the OCNI-DTU organization; named institutional home DTU is in Denmark.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-0455c8681207",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCAx open-source project / OCNI-DTU contributors",
+      "provider_name": "LCAx / OCNI-DTU",
+      "countries": [
+        "Denmark"
+      ],
+      "evidence_urls": [
+        "https://github.com/ocni-dtu/lcax",
+        "https://www.dtu.dk/om-dtu/kontakt-og-besoeg"
+      ],
+      "evidence_note": "Repository is maintained under the OCNI-DTU organization; named institutional home DTU is in Denmark.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-0455c8681207",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "LCIE Bureau Veritas",
+      "provider_name": "LCIE Bureau Veritas / CODDE",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://codde.fr/evenement/eime-nouvelle-base-codde-2026-04",
+        "https://codde.fr/en/contact-us/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0039; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-cbdfa365e74d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Legacy project data; openLCA conversion maintained historically by GreenDelta",
+      "provider_name": "GreenDelta GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://psilca.net/",
+        "https://nexus.openlca.org/ws/dataproviders/9552"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0025; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-c45578c9c7fe",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Legacy project portal; dataset owners include KIT and partners",
+      "provider_name": "BioEnergieDat / KIT",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.bioenergiedat.de/software.html",
+        "https://bioenergiedat.de/documents/10156/24192/anleitung-openLCA.pdf"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0036; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7ca803b6a570",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Leiden University, Institute of Environmental Sciences (CML)",
+      "provider_name": "Leiden University / CML",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.universiteitleiden.nl/wiskunde-en-natuurwetenschappen/milieuwetenschappen/afdeling-environmental-biology/contact"
+      ],
+      "evidence_note": "CML institutional address in Leiden, the Netherlands.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b1987aff2ac4",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Leonardo Ferhati",
+      "provider_name": "Leonardo Ferhati",
+      "countries": [
+        "Denmark"
+      ],
+      "evidence_urls": [
+        "https://www.leonardoferhati.com/"
+      ],
+      "evidence_note": "Public professional profile lists Copenhagen, Denmark and DTU affiliation.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-17b44213fd94",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Life Cycle Initiative / participating nodes",
+      "provider_name": "Life Cycle Initiative",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/about/contact/"
+      ],
+      "evidence_note": "The Life Cycle Initiative secretariat lists its institutional address in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f3ffceca4c35",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Life Cycle Initiative GLAM stewardship community",
+      "provider_name": "Life Cycle Initiative",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/about/contact/"
+      ],
+      "evidence_note": "The Life Cycle Initiative secretariat lists its institutional address in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f3ffceca4c35",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Life Cycle Initiative hosted at UNEP",
+      "provider_name": "Life Cycle Initiative",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/about/contact/"
+      ],
+      "evidence_note": "The Life Cycle Initiative secretariat lists its institutional address in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f3ffceca4c35",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Life Cycle Initiative secretariat and steering governance",
+      "provider_name": "Life Cycle Initiative",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/about/contact/"
+      ],
+      "evidence_note": "The Life Cycle Initiative secretariat lists its institutional address in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f3ffceca4c35",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Life Cycle Initiative with scientific partners",
+      "provider_name": "Life Cycle Initiative",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/about/contact/"
+      ],
+      "evidence_note": "The Life Cycle Initiative secretariat lists its institutional address in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f3ffceca4c35",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Lifecycles",
+      "provider_name": "Lifecycles / PIQET",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycles.com.au/contact",
+        "https://piqet.com/"
+      ],
+      "evidence_note": "PIQET is operated by Lifecycles, whose company address is in Collingwood, Australia.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c38edcb32cf4",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Makersite GmbH",
+      "provider_name": "Makersite GmbH",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://makersite.io/impressum/"
+      ],
+      "evidence_note": "Company registered office and address in Stuttgart, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c33458683732",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Mérieux NutriSciences | Blonk",
+      "provider_name": "Mérieux NutriSciences | Blonk",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://blonksustainability.nl/tools-and-databases/agri-footprint",
+        "https://blonksustainability.nl/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0003; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-5ca5a65afaa7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "MexiLCA initiative",
+      "provider_name": "MexiLCA / UNAM",
+      "countries": [
+        "Mexico"
+      ],
+      "evidence_urls": [
+        "https://ciclodevida.mx/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0052; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-0f6b0771bfc2",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Ministry of Climate, Energy and Environment / Korea Environmental Industry & Technology Institute",
+      "provider_name": "Korea Environmental Industry & Technology Institute",
+      "countries": [
+        "Republic of Korea"
+      ],
+      "evidence_urls": [
+        "https://www.keiti.re.kr/site/keiti/02/10202100000002023101610.jsp"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0056; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-e4719c3c27fa",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Minviro",
+      "provider_name": "Minviro Ltd",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.minviro.com/xycle",
+        "https://www.minviro.com/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0047; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7333be250a02",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Minviro Ltd",
+      "provider_name": "Minviro Ltd",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.minviro.com/xycle",
+        "https://www.minviro.com/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0047; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7333be250a02",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "National Institute for Public Health and the Environment (RIVM)",
+      "provider_name": "RIVM",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.rivm.nl/en/food-and-nutrition/sustainable-food/environmental-impact-of-food-products",
+        "https://www.rivm.nl/en/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0019; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f28b1fe39e0c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "National Institute of Advanced Industrial Science and Technology (AIST)",
+      "provider_name": "AIST",
+      "countries": [
+        "Japan"
+      ],
+      "evidence_urls": [
+        "https://idea-lca.com/en/features/",
+        "https://www.aist.go.jp/aist_e/about_aist"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0008; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-7d2722cb0fd9",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "National Laboratory of the Rockies on Federal LCA Commons",
+      "provider_name": "U.S. Department of Energy / National Laboratory of the Rockies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets",
+        "https://www.lcacommons.gov/releases",
+        "https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/release_info/release-downloads.md"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-adae51128249",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "National Science and Technology Development Agency (NSTDA) / MTEC-TIIS and national partners",
+      "provider_name": "NSTDA / TIIS",
+      "countries": [
+        "Thailand"
+      ],
+      "evidence_urls": [
+        "https://www.nstda.or.th/en/news/news-years-2019/mtec-nstda-and-pollution-control-department-to-promote-green-public-procurement.html",
+        "https://www.nstda.or.th/home/knowledge_post/nstda-tiis/",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0057; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-eac959031183",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "New Earth / Social Hotspots Database provider",
+      "provider_name": "New Earth / Social Hotspots Database",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.socialhotspot.org/",
+        "https://nexus.openlca.org/ws/dataproviders/151"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0026; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-52b040949114",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Nickel Institute",
+      "provider_name": "Nickel Institute",
+      "countries": [
+        "Canada"
+      ],
+      "evidence_urls": [
+        "https://nickelinstitute.org/en/privacy-policy"
+      ],
+      "evidence_note": "Controller mailing address in Toronto, Canada; global association scope is not substituted for its institutional home.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-9e1a71edbbb1",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "No current maintainer publicly confirmed",
+      "provider_name": "",
+      "countries": [],
+      "evidence_urls": [],
+      "evidence_note": "This is a maintenance-status placeholder, not an identified provider. Excluded from institution counts.",
+      "location_basis": "No named provider",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": false,
+      "provider_id": "",
+      "location_status": "No named provider"
+    },
+    {
+      "organization_label": "Oliver Kusche Research & Consulting (OKWorx)",
+      "provider_name": "Oliver Kusche Research & Consulting",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://www.okworx.com/"
+      ],
+      "evidence_note": "Company office and imprint list Freiburg im Breisgau, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5fd9a0f953fd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "One Click LCA Oy Ltd",
+      "provider_name": "One Click LCA Oy Ltd",
+      "countries": [
+        "Finland"
+      ],
+      "evidence_urls": [
+        "https://oneclicklca.com/hubfs/Ebooks/Embodied-Carbon-Expert-Outlook_2024_231211-2-OneClickLCA-Final-2-1.pdf"
+      ],
+      "evidence_note": "Official company report identifies One Click LCA as Helsinki-based and founded in Finland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-4f71b75ffae0",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Ontology-pattern authors",
+      "provider_name": "Minimal LCA Ontology author team",
+      "countries": [
+        "United States",
+        "Denmark",
+        "Spain",
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://people.geog.ucsb.edu/~jano/LCA_pattern.pdf"
+      ],
+      "evidence_note": "Original paper first page lists author affiliations in USA, Denmark, Spain and Sweden. Historical author-team locations, not a claim of current employment.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-8be9d7ab2892",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Open Sustainable Technology community",
+      "provider_name": "Open Sustainable Technology",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://report.opensustain.tech/"
+      ],
+      "evidence_note": "Project credits contributors from around the world.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-9d2a1511dfd2",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "openEPD contributors and reference implementers",
+      "provider_name": "openEPD Forum",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.open-epd-forum.org/"
+      ],
+      "evidence_note": "Open forum for international LCA specialists, developers and regulators to collaborate on an open standard.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-cf4a175be7bb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "openEPD Forum / Building Transparency ecosystem",
+      "provider_name": "openEPD Forum",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://www.open-epd-forum.org/"
+      ],
+      "evidence_note": "Open forum for international LCA specialists, developers and regulators to collaborate on an open standard.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-cf4a175be7bb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Partnership for Carbon Transparency",
+      "provider_name": "WBCSD",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://docs.wbcsd.org/2019/01/How_to_Reach_WBCSD.pdf"
+      ],
+      "evidence_note": "WBCSD headquarters in Geneva; PACT is its programme.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-935b891257be",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Partnership for Carbon Transparency (PACT)",
+      "provider_name": "WBCSD",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://docs.wbcsd.org/2019/01/How_to_Reach_WBCSD.pdf"
+      ],
+      "evidence_note": "WBCSD headquarters in Geneva; PACT is its programme.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-935b891257be",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Paul Scherrer Institute",
+      "provider_name": "Paul Scherrer Institute",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.psi.ch/en/about/contacts"
+      ],
+      "evidence_note": "Institutional address in Villigen, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-7a8a11df7dc3",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Peruvian Life Cycle Network (PELCAN)",
+      "provider_name": "Peruvian Life Cycle Network / PUCP",
+      "countries": [
+        "Peru"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/peru-lca-database-launched/",
+        "https://perulca.com/",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0059; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-794022ef63d3",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Peruvian Life Cycle Network / Pontificia Universidad Católica del Perú and project partners",
+      "provider_name": "Peruvian Life Cycle Network / PUCP",
+      "countries": [
+        "Peru"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/peru-lca-database-launched/",
+        "https://perulca.com/",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0059; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-794022ef63d3",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "PFN secretariat and member/collaborator community",
+      "provider_name": "EA – Earth Action / Plastic Footprint Network",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.plasticfootprint.earth/about/",
+        "https://www.e-a.earth/"
+      ],
+      "evidence_note": "PFN is convened by EA – Earth Action, based in Lausanne, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-092f5e21b97d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "PFN technical community convened by EA – Earth Action",
+      "provider_name": "EA – Earth Action / Plastic Footprint Network",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.plasticfootprint.earth/about/",
+        "https://www.e-a.earth/"
+      ],
+      "evidence_note": "PFN is convened by EA – Earth Action, based in Lausanne, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-092f5e21b97d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "PIQET Consortium",
+      "provider_name": "Lifecycles / PIQET",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycles.com.au/contact",
+        "https://piqet.com/"
+      ],
+      "evidence_note": "PIQET is operated by Lifecycles, whose company address is in Collingwood, Australia.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-c38edcb32cf4",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Plastic Footprint Network",
+      "provider_name": "EA – Earth Action / Plastic Footprint Network",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.plasticfootprint.earth/about/",
+        "https://www.e-a.earth/"
+      ],
+      "evidence_note": "PFN is convened by EA – Earth Action, based in Lausanne, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-092f5e21b97d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Plastic Footprint Network convened by EA – Earth Action",
+      "provider_name": "EA – Earth Action / Plastic Footprint Network",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.plasticfootprint.earth/about/",
+        "https://www.e-a.earth/"
+      ],
+      "evidence_note": "PFN is convened by EA – Earth Action, based in Lausanne, Switzerland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-092f5e21b97d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Plastics Europe",
+      "provider_name": "Plastics Europe",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://plasticseurope.org/sustainability/circularity/life-cycle-thinking/eco-profiles-set/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0022; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-3d6cd12be65d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Plastics Europe and relevant sector groups",
+      "provider_name": "Plastics Europe",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://plasticseurope.org/sustainability/circularity/life-cycle-thinking/eco-profiles-set/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0022; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-3d6cd12be65d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "PRIMUS project / Plastics Recyclers Europe",
+      "provider_name": "PRIMUS project / Plastics Recyclers Europe",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://nexus.openlca.org/ws/dataproviders/10463"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0078.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-5cbe3061624f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "product impact team",
+      "provider_name": "productimpact.info",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://productimpact.info/",
+        "https://productimpact.info/case-study/rain-jacket",
+        "https://productimpact.info/terms-of-use.pdf"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0009; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-bcb8d6f64c72",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "productimpact.info",
+      "provider_name": "productimpact.info",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://productimpact.info/",
+        "https://productimpact.info/case-study/rain-jacket",
+        "https://productimpact.info/terms-of-use.pdf"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0009; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-bcb8d6f64c72",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Project author/community repository",
+      "provider_name": "LCA Ontology / Tish Chungoora",
+      "countries": [],
+      "evidence_urls": [
+        "https://github.com/tishchungoora/lca-ontology",
+        "https://github.com/tishchungoora"
+      ],
+      "evidence_note": "Repository and maintainer public profile do not identify an institutional country; no personal location inferred.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5b551f7bf0c2",
+      "location_status": "Unconfirmed"
+    },
+    {
+      "organization_label": "protontypes/open-sustainable-technology maintainers and contributors",
+      "provider_name": "Open Sustainable Technology",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://report.opensustain.tech/"
+      ],
+      "evidence_note": "Project credits contributors from around the world.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-9d2a1511dfd2",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "PubChem",
+      "provider_name": "U.S. National Library of Medicine / NCBI",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.ncbi.nlm.nih.gov/home/about/contact/"
+      ],
+      "evidence_note": "Institutional address in Bethesda, Maryland, USA.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5ff66ab8e87a",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Quantis",
+      "provider_name": "Quantis",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://quantis.com/services-solutions/consortium-building-and-management/wfldb/",
+        "https://quantis.com/about/locations/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0018; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-00cd353251d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Quantis and WFLDB partners",
+      "provider_name": "Quantis",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://quantis.com/services-solutions/consortium-building-and-management/wfldb/",
+        "https://quantis.com/about/locations/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0018; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-00cd353251d7",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Red Iberoamericana de Ciclo de Vida",
+      "provider_name": "Red Iberoamericana de Ciclo de Vida",
+      "countries": [
+        "Ibero-America"
+      ],
+      "evidence_urls": [
+        "https://rediberoamericanacv.net/about/"
+      ],
+      "evidence_note": "Regional network of Ibero-American national life-cycle networks; regional classification rather than a single corporate headquarters.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-134082cf8116",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "RICV board and member networks",
+      "provider_name": "Red Iberoamericana de Ciclo de Vida",
+      "countries": [
+        "Ibero-America"
+      ],
+      "evidence_urls": [
+        "https://rediberoamericanacv.net/about/"
+      ],
+      "evidence_note": "Regional network of Ibero-American national life-cycle networks; regional classification rather than a single corporate headquarters.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-134082cf8116",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "RIVM public distribution",
+      "provider_name": "RIVM",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.rivm.nl/en/food-and-nutrition/sustainable-food/environmental-impact-of-food-products",
+        "https://www.rivm.nl/en/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0019; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f28b1fe39e0c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "RIVM; LCI update performed by Mérieux NutriSciences | Blonk",
+      "provider_name": "RIVM",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.rivm.nl/en/food-and-nutrition/sustainable-food/environmental-impact-of-food-products",
+        "https://www.rivm.nl/en/contact"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0019; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-f28b1fe39e0c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "RWTH design-computation project contributors",
+      "provider_name": "RWTH Aachen / LCA to BIM",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://design-computation-rwth.github.io/lcabim-ontology/",
+        "https://www.ssc.rwth-aachen.de/index.php?menuID=10001"
+      ],
+      "evidence_note": "Repository identifies RWTH Aachen research group; university institutional address in Aachen, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-6e91070e6013",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Scientific publication and author community",
+      "provider_name": "Green Carbon Cycle authors / TUM Campus Straubing",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://link.springer.com/article/10.1007/s11367-025-02469-0"
+      ],
+      "evidence_note": "Published affiliations identify both author groups at TUM Campus Straubing in Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-bd91e92c72c3",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Shanghai HiQ Smart Data Co., Ltd.",
+      "provider_name": "Shanghai HiQ Smart Data",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.hiq.earth/",
+        "https://www.hiqlcd.com/about"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0046; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-36a2326989bb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "SimaPro B.V.",
+      "provider_name": "SimaPro B.V.",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://simapro.com/about-us/"
+      ],
+      "evidence_note": "SimaPro states it is based in Amersfoort, the Netherlands, while its parent One Click LCA is retained separately in Finland.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-74e5e8f09a39",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "SIRIM Berhad",
+      "provider_name": "SIRIM Berhad",
+      "countries": [
+        "Malaysia"
+      ],
+      "evidence_urls": [
+        "https://mylcid.sirim.my/",
+        "https://www.mosti.gov.my/berita/pengkalan-data-inventori-kitaran-hayat-kebangsaan-my-lcid-dibangunkan-bagi-menilai-kesan-kitaran-hayat-produk-dan-perkhidmatan/",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0058; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b7fda434ba8f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "SIRIM Energy & Environment Centre",
+      "provider_name": "SIRIM Berhad",
+      "countries": [
+        "Malaysia"
+      ],
+      "evidence_urls": [
+        "https://mylcid.sirim.my/",
+        "https://www.mosti.gov.my/berita/pengkalan-data-inventori-kitaran-hayat-kebangsaan-my-lcid-dibangunkan-bagi-menilai-kesan-kitaran-hayat-produk-dan-perkhidmatan/",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0058; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b7fda434ba8f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Social Hotspots Database team",
+      "provider_name": "New Earth / Social Hotspots Database",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.socialhotspot.org/",
+        "https://nexus.openlca.org/ws/dataproviders/151"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0026; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-52b040949114",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Sphera",
+      "provider_name": "Sphera",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://sphera.com/solutions/product-stewardship/life-cycle-assessment-software-and-data/managed-lca-content/",
+        "https://lcadatabase.sphera.com/",
+        "https://sphera.com/our-locations/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0011; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-e16b0fdc8539",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Sphera Solutions, Inc.",
+      "provider_name": "Sphera",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://sphera.com/solutions/product-stewardship/life-cycle-assessment-software-and-data/managed-lca-content/",
+        "https://lcadatabase.sphera.com/",
+        "https://sphera.com/our-locations/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0011; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-e16b0fdc8539",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Sustainable Impact Metrics Foundation / Delft University of Technology lineage",
+      "provider_name": "Sustainable Impact Metrics Foundation",
+      "countries": [
+        "Netherlands"
+      ],
+      "evidence_urls": [
+        "https://www.ecocostsvalue.com/data-tools-books/",
+        "https://www.ecocostsvalue.com/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0040; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-72fdf9683059",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Swedish Life Cycle Center",
+      "provider_name": "Swedish Life Cycle Center",
+      "countries": [
+        "Sweden"
+      ],
+      "evidence_urls": [
+        "https://cpmdatabase.cpm.chalmers.se/AboutDatabase.htm",
+        "https://www.lifecyclecenter.se/about-us/"
+      ],
+      "evidence_note": "Owner / steward location retained from the reviewed database-scope record LCA-DB-0037.",
+      "location_basis": "Reviewed owner / steward location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-d4adf8ca152c",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Swiss Federal Office for the Environment (FOEN/BAFU)",
+      "provider_name": "Swiss Federal Office for the Environment (FOEN/BAFU)",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.bafu.admin.ch/en/studies-economy-and-consumption",
+        "https://nexus.openlca.org/ws/dataproviders/10465"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-b9b6cffe62cd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Swiss Federal Offices",
+      "provider_name": "Swiss Federal Office for the Environment (FOEN/BAFU)",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.bafu.admin.ch/en/studies-economy-and-consumption",
+        "https://nexus.openlca.org/ws/dataproviders/10465"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-25",
+      "is_provider": true,
+      "provider_id": "PRV-b9b6cffe62cd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Technology and Informatics Institute for Sustainability (TIIS), NSTDA",
+      "provider_name": "NSTDA / TIIS",
+      "countries": [
+        "Thailand"
+      ],
+      "evidence_urls": [
+        "https://www.nstda.or.th/en/news/news-years-2019/mtec-nstda-and-pollution-control-department-to-promote-green-public-procurement.html",
+        "https://www.nstda.or.th/home/knowledge_post/nstda-tiis/",
+        "https://helpdesk.lifecycleinitiative.org/distribution/data-formats/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0057; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-eac959031183",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Textile Exchange",
+      "provider_name": "Textile Exchange",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://textileexchange.org/lci-library/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b864999a4b3b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Textile Exchange in partnership with SCS Global Services",
+      "provider_name": "Textile Exchange",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://textileexchange.org/lci-library/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-REP-0005; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-b864999a4b3b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TfS Scope 3 GHG programme",
+      "provider_name": "Together for Sustainability",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.tfs-initiative.com/contact-us"
+      ],
+      "evidence_note": "TfS lists its association address in Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-2d7f4839a05e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "The European Steel Association (EUROFER)",
+      "provider_name": "EUROFER",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.eurofer.eu/issues/eurofer-stainless-and-specialty-steel/life-cycle-inventory-lci-enquiries"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0053; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-042ffc8279b8",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "The Evah Institute",
+      "provider_name": "The Evah Institute",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://evah.institute/services",
+        "https://evah.institute/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0042; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-03ec7f83fcb6",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "The Evah Institute / Ecquate Pty Ltd",
+      "provider_name": "The Evah Institute",
+      "countries": [
+        "Australia"
+      ],
+      "evidence_urls": [
+        "https://evah.institute/services",
+        "https://evah.institute/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0042; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-03ec7f83fcb6",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TianGong community",
+      "provider_name": "TianGong",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-992482259f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TianGong LCA Data Working Group and platform community",
+      "provider_name": "TianGong",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-992482259f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TianGong LCA research team, Tsinghua University",
+      "provider_name": "TianGong",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-992482259f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TianGong platform developers",
+      "provider_name": "TianGong",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-992482259f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TianGong project / Carbon Footprint Industry Alliance ecosystem",
+      "provider_name": "TianGong",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-992482259f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "TIDAS development community",
+      "provider_name": "TianGong",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-992482259f96",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "tishchungoora/lca-ontology repository maintainer",
+      "provider_name": "LCA Ontology / Tish Chungoora",
+      "countries": [],
+      "evidence_urls": [
+        "https://github.com/tishchungoora/lca-ontology",
+        "https://github.com/tishchungoora"
+      ],
+      "evidence_note": "Repository and maintainer public profile do not identify an institutional country; no personal location inferred.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5b551f7bf0c2",
+      "location_status": "Unconfirmed"
+    },
+    {
+      "organization_label": "Together for Sustainability",
+      "provider_name": "Together for Sustainability",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.tfs-initiative.com/contact-us"
+      ],
+      "evidence_note": "TfS lists its association address in Brussels, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-2d7f4839a05e",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Tsinghua University",
+      "provider_name": "Tsinghua University",
+      "countries": [
+        "China"
+      ],
+      "evidence_urls": [
+        "https://www.tiangong.earth/data",
+        "https://lcdn.tiangong.earth/index.xhtml",
+        "https://www.tiangong.earth/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0012; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-88293fa677ea",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "U.S. Department of Energy",
+      "provider_name": "U.S. Department of Energy",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.energy.gov/cmei/rd-greet-life-cycle-assessment-model"
+      ],
+      "evidence_note": "Named owner is the United States Department of Energy; country follows institutional identity.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-15d47404a195",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "U.S. Department of Energy / National Laboratory of the Rockies",
+      "provider_name": "U.S. Department of Energy / National Laboratory of the Rockies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/lca-collaboration/National_Renewable_Energy_Laboratory/USLCI_Database_Public/datasets",
+        "https://www.lcacommons.gov/releases",
+        "https://github.com/FLCAC-admin/uslci-content/blob/dev/docs/release_info/release-downloads.md"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-adae51128249",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "U.S. Environmental Protection Agency",
+      "provider_name": "U.S. Environmental Protection Agency",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://github.com/USEPA/USEEIO",
+        "https://github.com/USEPA/useeior",
+        "https://github.com/USEPA/useeior/releases"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8a9f997a5609",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "U.S. Federal LCA Commons agencies",
+      "provider_name": "Federal LCA Commons / U.S. federal agencies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/"
+      ],
+      "evidence_note": "Reviewed source identifies a collaboration of U.S. federal agencies, rather than a worldwide provider.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01cf8e04b52b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "U.S. Federal LCA Commons partners",
+      "provider_name": "Federal LCA Commons / U.S. federal agencies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/"
+      ],
+      "evidence_note": "Reviewed source identifies a collaboration of U.S. federal agencies, rather than a worldwide provider.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01cf8e04b52b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "UNEP-hosted Life Cycle Initiative",
+      "provider_name": "Life Cycle Initiative",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://www.lifecycleinitiative.org/about/contact/"
+      ],
+      "evidence_note": "The Life Cycle Initiative secretariat lists its institutional address in Paris, France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f3ffceca4c35",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "United Nations Environment Programme",
+      "provider_name": "United Nations Environment Programme",
+      "countries": [
+        "Kenya"
+      ],
+      "evidence_urls": [
+        "https://www.unep.org/pt-br/quem-somos/contato"
+      ],
+      "evidence_note": "UNEP global headquarters is in Nairobi, Kenya; the Life Cycle Initiative secretariat is listed separately in France.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-9994683ed077",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "United States Environmental Protection Agency",
+      "provider_name": "U.S. Environmental Protection Agency",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://github.com/USEPA/USEEIO",
+        "https://github.com/USEPA/useeior",
+        "https://github.com/USEPA/useeior/releases"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8a9f997a5609",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "University of Kassel authors / BBSR-funded project",
+      "provider_name": "University of Kassel",
+      "countries": [
+        "Germany"
+      ],
+      "evidence_urls": [
+        "https://termine.uni-kassel.de/impressum?_locale=de"
+      ],
+      "evidence_note": "University address in Kassel, Germany.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-3db2b75e762f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "University of Oxford",
+      "provider_name": "University of Oxford / HESTIA",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.hestia.earth/",
+        "https://www.hestia.earth/guide/guide-accessing-data/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2077bc9cdee5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "University of Oxford / HESTIA project",
+      "provider_name": "University of Oxford / HESTIA",
+      "countries": [
+        "United Kingdom"
+      ],
+      "evidence_urls": [
+        "https://www.hestia.earth/",
+        "https://www.hestia.earth/guide/guide-accessing-data/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-PLT-0002; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-2077bc9cdee5",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "US Environmental Protection Agency",
+      "provider_name": "U.S. Environmental Protection Agency",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://github.com/USEPA/USEEIO",
+        "https://github.com/USEPA/useeior",
+        "https://github.com/USEPA/useeior/releases"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8a9f997a5609",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "US EPA Office of Research and Development",
+      "provider_name": "U.S. Environmental Protection Agency",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://github.com/USEPA/USEEIO",
+        "https://github.com/USEPA/useeior",
+        "https://github.com/USEPA/useeior/releases"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8a9f997a5609",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "US EPA research programme",
+      "provider_name": "U.S. Environmental Protection Agency",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://github.com/USEPA/USEEIO",
+        "https://github.com/USEPA/useeior",
+        "https://github.com/USEPA/useeior/releases"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8a9f997a5609",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "US EPA research team",
+      "provider_name": "U.S. Environmental Protection Agency",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://github.com/USEPA/USEEIO",
+        "https://github.com/USEPA/useeior",
+        "https://github.com/USEPA/useeior/releases"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0010; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-8a9f997a5609",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "US National Library of Medicine / National Center for Biotechnology Information",
+      "provider_name": "U.S. National Library of Medicine / NCBI",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.ncbi.nlm.nih.gov/home/about/contact/"
+      ],
+      "evidence_note": "Institutional address in Bethesda, Maryland, USA.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-5ff66ab8e87a",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "USDA National Agricultural Library with collaborating federal agencies",
+      "provider_name": "Federal LCA Commons / U.S. federal agencies",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.lcacommons.gov/"
+      ],
+      "evidence_note": "Reviewed source identifies a collaboration of U.S. federal agencies, rather than a worldwide provider.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01cf8e04b52b",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Vocabulary Hub / Semantic Treehouse maintainers",
+      "provider_name": "CIRPASS-2 / DPP Vocabulary Hub",
+      "countries": [
+        "Europe"
+      ],
+      "evidence_urls": [
+        "https://cirpass2.eu/who-we-are/"
+      ],
+      "evidence_note": "The consortium comprises organizations across Europe and beyond; regional consortium location is retained without assigning a single headquarters.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-01c182ccc01f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Walloon Agricultural Research Centre (CRA-W)",
+      "provider_name": "Walloon Agricultural Research Centre (CRA-W)",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://www.cra.wallonie.be/fr/batiments"
+      ],
+      "evidence_note": "Institutional buildings and laboratory addresses in Gembloux, Belgium.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-f8b81f00b968",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "WAP Sustainability",
+      "provider_name": "WAP Sustainability",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.openepddatabase.com/",
+        "https://wapsustainability.com/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0048; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-427abc0a5220",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "WAP Sustainability, LLC",
+      "provider_name": "WAP Sustainability",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://www.openepddatabase.com/",
+        "https://wapsustainability.com/contact/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0048; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-427abc0a5220",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Watershed Technology",
+      "provider_name": "Watershed",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://registry.opendata.aws/open-ceda/",
+        "https://openceda.org/",
+        "https://watershed.com/solutions/ceda"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0033; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-91191e3cc144",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "World Business Council for Sustainable Development",
+      "provider_name": "WBCSD",
+      "countries": [
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://docs.wbcsd.org/2019/01/How_to_Reach_WBCSD.pdf"
+      ],
+      "evidence_note": "WBCSD headquarters in Geneva; PACT is its programme.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-935b891257be",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "World Resources Institute and World Business Council for Sustainable Development",
+      "provider_name": "WRI / WBCSD (GHG Protocol)",
+      "countries": [
+        "United States",
+        "Switzerland"
+      ],
+      "evidence_urls": [
+        "https://www.wri.org/about/contact",
+        "https://docs.wbcsd.org/2019/01/How_to_Reach_WBCSD.pdf"
+      ],
+      "evidence_note": "Joint WRI / WBCSD programme; institutional homes in Washington, DC and Geneva.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-b58c090b95cb",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "World Steel Association",
+      "provider_name": "World Steel Association",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://worldsteel.org/wider-sustainability/life-cycle-thinking/life-cycle-inventory-data-and-eco-profiles/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0023; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1eedccc9cf0f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "Worldly",
+      "provider_name": "Worldly",
+      "countries": [
+        "United States"
+      ],
+      "evidence_urls": [
+        "https://worldly.io/privacy-policy/"
+      ],
+      "evidence_note": "Official privacy policy explicitly states Worldly is headquartered in the United States and gives a Concord, California address.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-179d89707b3a",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "worldsteel",
+      "provider_name": "World Steel Association",
+      "countries": [
+        "Belgium"
+      ],
+      "evidence_urls": [
+        "https://worldsteel.org/wider-sustainability/life-cycle-thinking/life-cycle-inventory-data-and-eco-profiles/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0023; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-1eedccc9cf0f",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "WP1 led by ADEME within the FOODTURE consortium",
+      "provider_name": "ADEME",
+      "countries": [
+        "France"
+      ],
+      "evidence_urls": [
+        "https://doc.agribalyse.fr/documentation-en/agribalyse-data/data-access",
+        "https://doc.agribalyse.fr/documentation-en/data-use/webinars",
+        "https://presse.ademe.fr/files/plaquette_presentation_agribalyse.pdf",
+        "https://www.ademe.fr/lagence/notre-organisation/"
+      ],
+      "evidence_note": "Same named institution / provider as reviewed location in LCA-DB-0004; role labels are retained separately.",
+      "location_basis": "Institution / company location",
+      "source_reviewed_at": "2026-08-22",
+      "is_provider": true,
+      "provider_id": "PRV-39d3cbd139fd",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "WULCA",
+      "provider_name": "WULCA",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://wulca-waterlca.org/team/"
+      ],
+      "evidence_note": "International scientific working group and consensus-building community, rather than a single-country company.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-06ce8bea579d",
+      "location_status": "Located"
+    },
+    {
+      "organization_label": "WULCA working group / UNEP-SETAC Life Cycle Initiative community",
+      "provider_name": "WULCA",
+      "countries": [
+        "Global community"
+      ],
+      "evidence_urls": [
+        "https://wulca-waterlca.org/team/"
+      ],
+      "evidence_note": "International scientific working group and consensus-building community, rather than a single-country company.",
+      "location_basis": "Global community",
+      "source_reviewed_at": "2026-09-06",
+      "is_provider": true,
+      "provider_id": "PRV-06ce8bea579d",
+      "location_status": "Located"
+    }
+  ]
+}

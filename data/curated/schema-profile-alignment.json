@@ -1,199 +1,411 @@
 {
-  "alignment_version": "2026-08-25.2",
+  "alignment_version": "2026-09-06.2",
   "field": "distributions.schema_profile",
-  "method": "Exact public labels are retained in schema_profile_original. Only labels judged to describe the same schema, package family, or software-native exchange family are merged in schema_profile. Compound and version-specific profiles remain distinct.",
+  "method": "Preserve exact public labels in schema_profile_original and aligned profiles in schema_profile. schema_profile_class contains named schema systems only, separated by semicolons for multi-system records. JSON, XML, CSV, spreadsheets, APIs, repositories and generic proprietary packages are representations or access routes, not systems. ILCD+EPD and the EF ILCD profile belong to ILCD. A modelling method, source database content or compatible tool alone does not establish the exchange system. Use System not specified when no named system is evidenced.",
   "groups": [
     {
       "canonical": "Not publicly confirmed",
-      "class": "Unconfirmed",
-      "aliases": ["Not publicly confirmed"]
+      "class": "System not specified",
+      "aliases": [
+        "Not publicly confirmed"
+      ]
     },
     {
       "canonical": "openLCA database package",
-      "class": "openLCA family",
-      "aliases": ["openLCA database package", "ZOLCA"]
+      "class": "openLCA",
+      "aliases": [
+        "openLCA database package",
+        "ZOLCA"
+      ]
     },
     {
       "canonical": "openLCA JSON-LD",
-      "class": "openLCA family",
-      "aliases": ["openLCA schema / JSON-LD", "openLCA/Federal LCA Commons data model"]
+      "class": "openLCA",
+      "aliases": [
+        "openLCA schema / JSON-LD",
+        "openLCA/Federal LCA Commons data model"
+      ]
     },
     {
       "canonical": "ILCD",
-      "class": "ILCD family",
-      "aliases": ["ILCD", "ILCD data model", "ILCD XML", "ILCD XML in ZIP", "ILCD XML in ZIP package"]
+      "class": "ILCD",
+      "aliases": [
+        "ILCD",
+        "ILCD data model",
+        "ILCD XML",
+        "ILCD XML in ZIP",
+        "ILCD XML in ZIP package"
+      ]
     },
     {
       "canonical": "ILCD / eILCD",
-      "class": "ILCD family",
-      "aliases": ["ILCD / eILCD-compatible XML", "ILCD / eILCD node package"]
+      "class": "ILCD",
+      "aliases": [
+        "ILCD / eILCD-compatible XML",
+        "ILCD / eILCD node package"
+      ]
     },
     {
       "canonical": "ILCD / soda4LCA package",
-      "class": "ILCD family",
-      "aliases": ["ILCD-style node/package", "soda4LCA / ILCD-style XML package"]
+      "class": "ILCD",
+      "aliases": [
+        "ILCD-style node/package",
+        "soda4LCA / ILCD-style XML package"
+      ]
     },
     {
       "canonical": "ecoSpold 1",
-      "class": "ecoSpold family",
-      "aliases": ["EcoSpold 1 XML", "EcoSpold v1 XML"]
+      "class": "ecoSpold",
+      "aliases": [
+        "EcoSpold 1 XML",
+        "EcoSpold v1 XML"
+      ]
     },
     {
       "canonical": "ecoSpold2",
-      "class": "ecoSpold family",
-      "aliases": ["ecoSpold2 XML", "ecoSpold2 data model", "ecoinvent / ecoSpold2 data model"]
+      "class": "ecoSpold",
+      "aliases": [
+        "ecoSpold2 XML",
+        "ecoSpold2 data model",
+        "ecoinvent / ecoSpold2 data model"
+      ]
     },
     {
       "canonical": "HESTIA JSON-LD",
       "class": "HESTIA",
-      "aliases": ["HESTIA API / JSON-LD", "JSON-LD / HESTIA schema"]
+      "aliases": [
+        "HESTIA API / JSON-LD",
+        "JSON-LD / HESTIA schema"
+      ]
     },
     {
       "canonical": "TIDAS JSON",
       "class": "TIDAS",
-      "aliases": ["TIDAS JSON / JSON Schema"]
+      "aliases": [
+        "TIDAS JSON / JSON Schema"
+      ]
     },
     {
       "canonical": "USEEIO API",
       "class": "USEEIO",
-      "aliases": ["USEEIO API representation"]
+      "aliases": [
+        "USEEIO API representation"
+      ]
     },
     {
       "canonical": "Brightway data package",
       "class": "Brightway",
-      "aliases": ["Brightway data package"]
+      "aliases": [
+        "Brightway data package"
+      ]
     },
     {
       "canonical": "openEPD",
       "class": "openEPD",
-      "aliases": ["openEPD"]
+      "aliases": [
+        "openEPD"
+      ]
     },
     {
       "canonical": "Athena embedded model",
       "class": "Athena",
-      "aliases": ["Athena proprietary embedded model"]
+      "aliases": [
+        "Athena proprietary embedded model"
+      ]
     },
     {
       "canonical": "CLCD native model",
       "class": "CLCD",
-      "aliases": ["CLCD native model; current public provider page does not state the schema revision"]
+      "aliases": [
+        "CLCD native model; current public provider page does not state the schema revision"
+      ]
     },
     {
       "canonical": "EIME database model",
       "class": "EIME",
-      "aliases": ["EIME proprietary database model"]
+      "aliases": [
+        "EIME proprietary database model"
+      ]
     },
     {
       "canonical": "INIES digital exchange",
       "class": "INIES",
-      "aliases": ["INIES predefined digital webservice; XML/CSV exchanges are documented"]
+      "aliases": [
+        "INIES predefined digital webservice; XML/CSV exchanges are documented"
+      ]
     },
     {
       "canonical": "LCADesign package",
       "class": "LCADesign",
-      "aliases": ["LCADesign-specific package"]
+      "aliases": [
+        "LCADesign-specific package"
+      ]
     },
     {
       "canonical": "IDEA member-portal model",
       "class": "IDEA",
-      "aliases": ["Member portal; linked JLCA–IDEA model"]
+      "aliases": [
+        "Member portal; linked JLCA–IDEA model"
+      ]
     },
     {
       "canonical": "GEMIS native model",
       "class": "GEMIS",
-      "aliases": ["Native GEMIS relational/process-chain model"]
+      "aliases": [
+        "Native GEMIS relational/process-chain model"
+      ]
     },
     {
       "canonical": "XYCLE internal model",
       "class": "XYCLE",
-      "aliases": ["XYCLE proprietary internal model"]
+      "aliases": [
+        "XYCLE proprietary internal model"
+      ]
     },
     {
       "canonical": "SPINE",
       "class": "SPINE",
-      "aliases": ["SPINE"]
+      "aliases": [
+        "SPINE"
+      ]
     },
     {
       "canonical": "IA98",
       "class": "IA98",
-      "aliases": ["IA98"]
+      "aliases": [
+        "IA98"
+      ]
     },
     {
       "canonical": "ILCD+EPD",
-      "class": "ILCD+EPD",
-      "aliases": ["ILCD+EPD XML"]
+      "class": "ILCD",
+      "aliases": [
+        "ILCD+EPD XML"
+      ]
     },
     {
       "canonical": "Environmental Footprint ILCD profile",
-      "class": "Environmental Footprint",
-      "aliases": ["ILCD XML in ZIP; EF profile"]
+      "class": "ILCD",
+      "aliases": [
+        "ILCD XML in ZIP; EF profile"
+      ]
     },
     {
       "canonical": "PEF inventory profile",
-      "class": "Environmental Footprint",
-      "aliases": ["PEF-methodology inventory; exact exchange schema not stated publicly"]
+      "class": "System not specified",
+      "aliases": [
+        "PEF-methodology inventory; exact exchange schema not stated publicly"
+      ]
     },
     {
       "canonical": "SimaPro library / exchange",
-      "class": "SimaPro family",
-      "aliases": ["SimaPro distribution", "SimaPro exchange", "SimaPro exchange output", "SimaPro library/exchange", "SimaPro proprietary library/exchange"]
+      "class": "SimaPro",
+      "aliases": [
+        "SimaPro distribution",
+        "SimaPro exchange",
+        "SimaPro exchange output",
+        "SimaPro library/exchange",
+        "SimaPro proprietary library/exchange"
+      ]
     },
     {
       "canonical": "Web application",
-      "class": "JSON / API / web",
-      "aliases": ["Provider web application", "Web application"]
+      "class": "System not specified",
+      "aliases": [
+        "Provider web application",
+        "Web application"
+      ]
     },
     {
       "canonical": "CSV + Excel workbook",
-      "class": "Tabular / matrix",
-      "aliases": ["CSV / XLSX", "XLS / CSV"]
+      "class": "System not specified",
+      "aliases": [
+        "CSV / XLSX",
+        "XLS / CSV"
+      ]
     },
     {
       "canonical": "Excel workbook (XLSX)",
-      "class": "Tabular / matrix",
-      "aliases": ["XLSX", "XLSX tabular workbook"]
+      "class": "System not specified",
+      "aliases": [
+        "XLSX",
+        "XLSX tabular workbook"
+      ]
     },
     {
       "canonical": "Tabular matrices (ZIP)",
-      "class": "Tabular / matrix",
-      "aliases": ["ZIP of tabular .txt matrices", "ZIP of tabular matrices"]
+      "class": "System not specified",
+      "aliases": [
+        "ZIP of tabular .txt matrices",
+        "ZIP of tabular matrices"
+      ]
     },
     {
       "canonical": "Sphera / GaBi proprietary model",
-      "class": "Sphera / GaBi family",
-      "aliases": ["GaBi proprietary database format", "Sphera/GaBi proprietary database model"]
+      "class": "Sphera / GaBi",
+      "aliases": [
+        "GaBi proprietary database format",
+        "Sphera/GaBi proprietary database model"
+      ]
+    },
+    {
+      "canonical": "ecoSpold2 and ILCD",
+      "class": "ecoSpold; ILCD",
+      "aliases": [
+        "ecoSpold2 and ILCD"
+      ]
+    },
+    {
+      "canonical": "SimaPro/GaBi proprietary libraries; some ecoinvent processes",
+      "class": "SimaPro; Sphera / GaBi",
+      "aliases": [
+        "SimaPro/GaBi proprietary libraries; some ecoinvent processes"
+      ]
+    },
+    {
+      "canonical": "Provider spreadsheet inventory and GaBi-based modelling; no public standard exchange schema stated",
+      "class": "System not specified",
+      "aliases": [
+        "Provider spreadsheet inventory and GaBi-based modelling; no public standard exchange schema stated"
+      ]
+    },
+    {
+      "canonical": "GaBi-modelled inventory; no public exchange schema stated",
+      "class": "System not specified",
+      "aliases": [
+        "GaBi-modelled inventory; no public exchange schema stated"
+      ]
     }
   ],
   "class_rules": [
-    {"class": "Unconfirmed", "pattern": "not publicly confirmed|not confirmed|not stated publicly|format on request"},
-    {"class": "ILCD family", "pattern": "ILCD|eILCD|soda4LCA"},
-    {"class": "ecoSpold family", "pattern": "ecoSpold|EcoSpold|ecoinvent"},
-    {"class": "openLCA family", "pattern": "openLCA|ZOLCA"},
-    {"class": "SimaPro / GaBi compound", "pattern": "SimaPro/GaBi"},
-    {"class": "SimaPro family", "pattern": "SimaPro"},
-    {"class": "Sphera / GaBi family", "pattern": "Sphera|GaBi"},
-    {"class": "Tabular / matrix", "pattern": "CSV|XLS|spreadsheet|Spreadsheet|tabular|tables"},
-    {"class": "HESTIA", "pattern": "HESTIA"},
-    {"class": "TIDAS", "pattern": "TIDAS"},
-    {"class": "USEEIO", "pattern": "USEEIO"},
-    {"class": "Brightway", "pattern": "Brightway"},
-    {"class": "openEPD", "pattern": "openEPD"},
-    {"class": "Athena", "pattern": "Athena"},
-    {"class": "CLCD", "pattern": "CLCD"},
-    {"class": "EIME", "pattern": "EIME"},
-    {"class": "INIES", "pattern": "INIES"},
-    {"class": "LCADesign", "pattern": "LCADesign"},
-    {"class": "IDEA", "pattern": "JLCA.?IDEA|IDEA"},
-    {"class": "GEMIS", "pattern": "GEMIS"},
-    {"class": "XYCLE", "pattern": "XYCLE"},
-    {"class": "SPINE", "pattern": "SPINE"},
-    {"class": "IA98", "pattern": "IA98"},
-    {"class": "ILCD+EPD", "pattern": "ILCD\\+EPD"},
-    {"class": "Environmental Footprint", "pattern": "Environmental Footprint|EF profile|PEF-methodology"},
-    {"class": "JSON / API / web", "pattern": "JSON|API|web application|webservice|Web records"},
-    {"class": "Document / repository package", "pattern": "PDF|Report|Zenodo"},
-    {"class": "Software-native / proprietary", "pattern": "proprietary|Native|native|specific|Host-database|embedded model"},
-    {"class": "Specialized exchange schema", "pattern": "specialized exchange schema"}
+    {
+      "class": "ILCD",
+      "pattern": "ILCD|eILCD|soda4LCA"
+    },
+    {
+      "class": "ecoSpold",
+      "pattern": "ecoSpold"
+    },
+    {
+      "class": "openLCA",
+      "pattern": "openLCA|ZOLCA"
+    },
+    {
+      "class": "SimaPro",
+      "pattern": "SimaPro"
+    },
+    {
+      "class": "Sphera / GaBi",
+      "pattern": "Sphera|GaBi"
+    },
+    {
+      "class": "HESTIA",
+      "pattern": "HESTIA"
+    },
+    {
+      "class": "TIDAS",
+      "pattern": "TIDAS"
+    },
+    {
+      "class": "USEEIO",
+      "pattern": "USEEIO"
+    },
+    {
+      "class": "Brightway",
+      "pattern": "Brightway"
+    },
+    {
+      "class": "openEPD",
+      "pattern": "openEPD"
+    },
+    {
+      "class": "Athena",
+      "pattern": "Athena"
+    },
+    {
+      "class": "CLCD",
+      "pattern": "CLCD"
+    },
+    {
+      "class": "EIME",
+      "pattern": "EIME"
+    },
+    {
+      "class": "INIES",
+      "pattern": "INIES"
+    },
+    {
+      "class": "LCADesign",
+      "pattern": "LCADesign"
+    },
+    {
+      "class": "IDEA",
+      "pattern": "JLCA.?IDEA|IDEA"
+    },
+    {
+      "class": "GEMIS",
+      "pattern": "GEMIS"
+    },
+    {
+      "class": "XYCLE",
+      "pattern": "XYCLE"
+    },
+    {
+      "class": "SPINE",
+      "pattern": "SPINE"
+    },
+    {
+      "class": "IA98",
+      "pattern": "IA98"
+    },
+    {
+      "class": "ILCD",
+      "pattern": "ILCD\\+EPD"
+    },
+    {
+      "class": "ILCD",
+      "pattern": "EF profile"
+    }
   ],
-  "default_class": "Other provider-specific format"
+  "default_class": "System not specified",
+  "systems": [
+    "System not specified",
+    "openLCA",
+    "ILCD",
+    "ecoSpold",
+    "HESTIA",
+    "TIDAS",
+    "USEEIO",
+    "Brightway",
+    "openEPD",
+    "Athena",
+    "CLCD",
+    "EIME",
+    "INIES",
+    "LCADesign",
+    "IDEA",
+    "GEMIS",
+    "XYCLE",
+    "SPINE",
+    "IA98",
+    "SimaPro",
+    "Sphera / GaBi"
+  ],
+  "format_asset_systems": {
+    "LCA-FMT-0001": "ecoSpold",
+    "LCA-FMT-0002": "ILCD",
+    "LCA-FMT-0003": "ILCD",
+    "LCA-FMT-0004": "openLCA",
+    "LCA-FMT-0005": "HESTIA",
+    "LCA-FMT-0006": "ecoSpold",
+    "LCA-FMT-0007": "openEPD",
+    "LCA-FMT-0008": "PACT",
+    "LCA-FMT-0009": "LCAx",
+    "LCA-FMT-0010": "Catena-X",
+    "LCA-FMT-0011": "TfS",
+    "LCA-FMT-0012": "IDTA / AAS",
+    "LCA-FMT-0013": "openBDF",
+    "LCA-SYS-0001": "TIDAS"
+  },
+  "format_counting_rule": "One registered format/schema Asset ID per catalogue row, grouped by named system. ecoSpold 1 and ecoSpold2 are distinct registered formats in the ecoSpold system; ILCD and ILCD+EPD are distinct schemas in ILCD. Releases, distributions and use by other assets do not add formats. This catalogue is independent of the distribution-profile alignment."
 }

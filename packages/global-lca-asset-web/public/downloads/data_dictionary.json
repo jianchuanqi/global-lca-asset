@@ -38,8 +38,8 @@
   {
     "dictionary_id": "DD-0007",
     "concept": "Aligned schema/profile",
-    "definition": "A reviewed canonical label and broader family assigned to equivalent public schema, profile, package, or software-native exchange labels.",
-    "counting_rule": "Merge only curated synonyms; preserve every source label in schema_profile_original and keep compound or version-specific profiles distinct."
+    "definition": "A reviewed profile label and named schema system assigned to public schema, profile, package, or software-native exchange labels.",
+    "counting_rule": "Merge only curated synonyms; retain original and version-specific profiles. schema_profile_class contains semicolon-separated named systems, never serialization formats or access routes. Count a multi-system distribution once per system; ILCD+EPD and EF ILCD profiles belong to ILCD."
   },
   {
     "dictionary_id": "DD-0008",
@@ -142,5 +142,11 @@
     "concept": "Software candidate review",
     "definition": "A listing encountered in a documented software discovery stream and assigned a promotion, existing-match, or exclusion decision.",
     "counting_rule": "Candidate appearances are not asset counts; deduplicate across directories before promotion and retain exclusions with a reason."
+  },
+  {
+    "dictionary_id": "DD-0025",
+    "concept": "Provider location",
+    "definition": "Institutional country or region of a named owner, operator or maintainer, with public source links and review dates in provider_locations.",
+    "counting_rule": "Count reviewed provider identities once per country/region across aliases and assets. Retain collective groups; exclude developer-only roles and maintenance-status placeholders. Explicit global communities have their own category. Data coverage is separate."
   }
 ]

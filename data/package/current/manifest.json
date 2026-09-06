@@ -1,18 +1,18 @@
 {
   "package_name": "Global LCA Asset public evidence package",
-  "package_version": "2026-09-01.2",
-  "evidence_cutoff": "2026-09-01",
-  "generated_at": "2026-09-01T13:00:00.000Z",
+  "package_version": "2026-09-06.3",
+  "evidence_cutoff": "2026-09-06",
+  "generated_at": "2026-09-06T05:02:56.097Z",
   "canonical_input": "data/seed/inventory-v2.public.json",
-  "canonical_input_sha256": "e25e296e83b24aa944edefe32932801e3c928c87fa3171ee60138063068588aa",
+  "canonical_input_sha256": "b22650dbf7737373257d6b78b313c035e25b9f51247e27f45bc71a8adbc0e369",
   "curated_inputs": [
     {
       "name": "data/curated/review-context.json",
-      "sha256": "26f8a616437114db79c80e89150432568ec5861a77c4b414c0ab793c9bce1a01"
+      "sha256": "218219b59be9dea1285005a72d80c9961053aadc66e09674f189172c6735e999"
     },
     {
       "name": "data/curated/schema-profile-alignment.json",
-      "sha256": "208266c527c02b917b72336994288a39cbfde05d10560f36e401e51d336346bd"
+      "sha256": "0dff06d9d72ffe1010d570c2cc4adeb8c290867d5de3a1e82394f12504568a52"
     },
     {
       "name": "data/curated/mapping-endpoint-alignment.json",
@@ -33,6 +33,10 @@
     {
       "name": "data/curated/software-semantic-alignment-2026-09-01.json",
       "sha256": "ef68d6d0080e4ae5873ffeeb4b040e9da5d66aaad27eb42fb08209b7c2542c06"
+    },
+    {
+      "name": "data/curated/provider-location-review-2026-09-06.json",
+      "sha256": "e82e578aaea4a863ca4f03d8caf5687c24d349c4ed697d8d1ad513caf10ec64c"
     }
   ],
   "privacy": "Public evidence only. Contact information, questionnaire/person mappings, and internal reviewer notes are excluded.",
@@ -48,21 +52,23 @@
     "search_coverage": 23,
     "answerability": 7,
     "review_issues": 10,
-    "data_dictionary": 24,
+    "data_dictionary": 25,
     "software_candidate_review": 104,
     "version_audit": 88,
     "schema_profile_alignment": 78,
+    "format_scope": 14,
     "mapping_endpoint_alignment": 26,
     "software_role_gaps": 39,
     "software_scope": 130,
     "organizations": 385,
     "software_company_roles": 179,
-    "asset_organizations": 521
+    "asset_organizations": 521,
+    "provider_locations": 298
   },
   "files": [
     {
       "name": "analysis_rules.md",
-      "sha256": "5bc9c0f64e4909221ed0a4f5448bf3a92a9009c4bd150fe52acfa832c8d16b8a"
+      "sha256": "dc9298d08c1b6747a9bf8135073e181703c123e3f14023c26a53765d889cce5a"
     },
     {
       "name": "answerability.csv",
@@ -90,19 +96,19 @@
     },
     {
       "name": "controlled_vocabularies.json",
-      "sha256": "69d27b51d3ff26121b91326abeab2fc32fe6c6476e3b65a427fc9943f91ff924"
+      "sha256": "605ea43e7a7f1a8384e3f6cd544fc4b3eeb4957c075a63c966586c842e9310b2"
     },
     {
       "name": "data_dictionary.csv",
-      "sha256": "d732aca081f49596ec718d14336b242d54f406ccaf84d0b68bab5f3d1d101013"
+      "sha256": "da3db7f1fa4c3c8206600f58e4c23e24723fd5ca70f7a46f4384caee7385afb7"
     },
     {
       "name": "data_dictionary.json",
-      "sha256": "ca047ae881544f35df20587d8f6cc37250a717a6927de2ffac4684775aaaf552"
+      "sha256": "6382f8e26102432178d9ea48fe18d6df6e0abbe487da096742f8ca92bae9ba13"
     },
     {
       "name": "data_dictionary.jsonl",
-      "sha256": "db2e269d8893486f5389ce733faacc2c75d9455d9961b8ea580b3c0bf1eb8bc2"
+      "sha256": "b2cf29a406dcc3bc8d1fedf2c56b8e2269e6f63a44c140c03bdafe907f6c43ac"
     },
     {
       "name": "database_scope.csv",
@@ -114,11 +120,11 @@
     },
     {
       "name": "distributions.csv",
-      "sha256": "4f3553c43f988f2abd4d82015062ac4cee1f219dd027418dd73048921a77bbb4"
+      "sha256": "f098faf7f9a9cee73e6566dd56bd7d9e686b5b49270a5fca7dabf82c157b6be0"
     },
     {
       "name": "distributions.jsonl",
-      "sha256": "e18c7487310f3871cb6a64bf1849e47d41c8c2d5ba29ae11c40588d62a290db4"
+      "sha256": "2a281c85042057db76add2f52b501ca4dd588788dbad962270de57dd57477cb9"
     },
     {
       "name": "evidence.csv",
@@ -129,8 +135,16 @@
       "sha256": "7b2b9e41c0eaa4fb32a37b8f951194cc51dc7404aa24c40762060e704f7e21dd"
     },
     {
+      "name": "format_scope.csv",
+      "sha256": "2ac61ca627601e01a63cdc3e5d3a104f38ab2f9a27faf958296a8e31933fbf9a"
+    },
+    {
+      "name": "format_scope.jsonl",
+      "sha256": "791234de31d17b1ddc7868b7e2d5f9171dee0511c0bbeafb134e3ed92934f4e4"
+    },
+    {
       "name": "global_lca_assets.sqlite",
-      "sha256": "d50616d072ca6e1e470a8696cb6037606e9747b75b52ba4a37bbcf68e28f693c"
+      "sha256": "5fdf4c953bd18212e93567410ba2689d82971fef26a438c246d5d00c0a8a8458"
     },
     {
       "name": "mapping_artifacts.csv",
@@ -155,6 +169,14 @@
     {
       "name": "organizations.jsonl",
       "sha256": "aeb245fb791ec945993830ac768c2593a58cd4d5f41e999bcc2f2af35005f976"
+    },
+    {
+      "name": "provider_locations.csv",
+      "sha256": "5bb6bb7657c4f7b580182644c8d39b75c153c4fd0d8246ee3515dcba9b5636cf"
+    },
+    {
+      "name": "provider_locations.jsonl",
+      "sha256": "ceaa91003f2d4159dc1777f0e22bb6bc5b134207a795383fa5ebebec7d870105"
     },
     {
       "name": "relations.csv",
@@ -182,11 +204,11 @@
     },
     {
       "name": "schema_profile_alignment.csv",
-      "sha256": "360f60e081b388289af9c02275b2b0b875eb0dc58469167cb597f432dffcabf4"
+      "sha256": "bc9d52245e9d55f886a1d470a2f000aefbbb68172f98183083de0a8463ec2d2a"
     },
     {
       "name": "schema_profile_alignment.jsonl",
-      "sha256": "a939418d62e977fe9e96385f8608395b7282c2a43159a9e33f40100312fa1a77"
+      "sha256": "150568004a178e8617e3352b5bc7eeea5fb3ea3482e98e9f4c371a63a73bdb73"
     },
     {
       "name": "search_coverage.csv",
@@ -230,11 +252,11 @@
     },
     {
       "name": "summary.json",
-      "sha256": "5388f8e2f8ea72e1c6acc4e539612945509abf5ac35d51be1d27e8b2745b9b75"
+      "sha256": "193eaa6cdfb1166c7f4ae97c284eb675d31e20d8c655189dbc8f96a5f50e7983"
     },
     {
       "name": "validation_report.json",
-      "sha256": "c2fad57040cc672c42008b1a646663247ba3c7f638278d22da67fa65f1308e11"
+      "sha256": "a657ef46548e00742be8143ca12b2f175b19a2ede7c8fd6dfcd4f44018c05249"
     },
     {
       "name": "version_audit.csv",

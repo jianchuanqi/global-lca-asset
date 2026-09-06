@@ -12,6 +12,6 @@ describe('feedback contribution links', () => {
     expect(markup).toContain(`href="${dataContributionGuideUrl}"`);
     expect(markup).toContain('Contribute data via GitHub PR');
     expect(markup).toContain('Send comment or feedback');
-    expect(markup).toContain('View Git project');
+    expect(markup).not.toContain('View Git project');
   });
 });

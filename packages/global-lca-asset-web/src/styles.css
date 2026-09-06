@@ -516,3 +516,38 @@ footer svg { width: 14px; height: 14px; }
   footer { align-items: flex-start; flex-direction: column; }
   footer > div:last-child { align-items: flex-start; }
 }
+
+/* Compact summaries keep research tables close to the page heading. */
+.compact-summary { padding: 22px 26px; }
+.compact-summary .section-heading { margin-bottom: 16px; }
+.compact-stat-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.compact-stat-grid > div { display: flex; align-items: center; gap: 10px; min-width: 0; min-height: 66px; padding: 12px; border: 1px solid var(--line); background: var(--paper); }
+.compact-stat-grid strong { color: var(--unep-deep-blue); font-size: 25px; line-height: 1; }
+.compact-stat-grid span { color: var(--ink); font-size: 11px; line-height: 1.35; overflow-wrap: anywhere; }
+.summary-note { color: var(--muted); font-size: 12px; line-height: 1.6; margin: 14px 0 0; }
+.summary-details { margin-top: 12px; }
+.summary-details summary, .access-details summary { cursor: pointer; color: var(--unep-deep-blue); font-size: 12px; font-weight: 600; }
+.summary-details .compact-stat-grid { margin-top: 12px; }
+.access-details { margin-top: 10px; }
+.access-details dl { margin: 10px 0 0; }
+.access-details dt { font-weight: 700; }
+.access-details dd { margin: 2px 0 10px; color: var(--muted); }
+.contributor-link { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 20px; }
+.contributor-link h3 { margin: 0; font-size: 16px; }
+.contributor-link p { color: var(--muted); font-size: 12px; line-height: 1.6; }
+.contributors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.contributor-card h3 { margin: 0 0 10px; font-size: 18px; }
+.contributor-card p { font-size: 12px; color: var(--muted); line-height: 1.5; }
+@media (max-width: 1100px) { .compact-stat-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (max-width: 850px) { .contributors-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .compact-stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contributors-grid { grid-template-columns: 1fr; }
+  .compact-summary { padding: 18px; }
+}
+
+.provider-location-evidence { margin-top: 8px; min-width: 180px; }
+.provider-location-evidence summary { color: var(--unep-deep-blue); cursor: pointer; font-size: 12px; }
+.provider-location-evidence > div { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.provider-location-evidence p { font-size: 12px; margin: 6px 0; }
+.provider-asset { padding: 10px 0; border-bottom: 1px solid var(--line); }

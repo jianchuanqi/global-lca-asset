@@ -4,9 +4,9 @@
 
 ## Source and integrity
 
-- Evidence cutoff: 2026-08-25
+- Package evidence cutoff: 2026-09-06 (provider-location review; other claims retain their dated evidence)
 - Source workbook SHA-256: `3f2388768b506d44fd6e50d5e3fa844cc5d45a5b41e043b9e422126903df7fe5`
-- Public JSON SHA-256: `f5a89cc057b80b0cfea90678ec054bad03cb71b7d144e4ba395b73fcc115b330`
+- Public JSON SHA-256: `b22650dbf7737373257d6b78b313c035e25b9f51247e27f45bc71a8adbc0e369`
 
 Included tables:
 
@@ -36,3 +36,5 @@ uv run global-lca build-snapshot \
 The canonical snapshot is generated and ignored by Git. Neo4j can import the public source directly with `global-lca import`; the same deterministic builder is used in both paths.
 
 For a future workbook release, create a new dated public JSON file with the same table envelope and field names, record both checksums here, run all data tests, and keep the previous seed for release comparison rather than silently overwriting its provenance.
+
+Provider locations are maintained in `data/curated/provider-location-review-2026-09-06.json`. The generated `provider_locations` table preserves the original organization labels, reviewed provider identities, country/region labels, source links and dates. It covers named owners, operators and maintainers across asset categories. Developer-only roles are outside this count. Reviewed aliases count once per location; collective provider groups remain explicit. Global communities and regional networks are classified separately. Maintenance-status placeholders are excluded, and unconfirmed institutional locations remain unresolved.

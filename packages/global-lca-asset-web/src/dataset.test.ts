@@ -2,9 +2,9 @@ import { describe, expect, it } from 'vitest';
 import dataset from './data/dataset.json';
 
 describe('Global LCA Asset public evidence package', () => {
-  it('matches the 2026-09-01 reviewed release and seven-question structure', () => {
+  it('matches the 2026-09-06 reviewed release and seven-question structure', () => {
     expect(dataset.meta.validationStatus).toBe('passed');
-    expect(dataset.meta.packageVersion).toBe('2026-09-01.2');
+    expect(dataset.meta.packageVersion).toBe('2026-09-06.3');
     expect(dataset.assets).toHaveLength(301);
     expect(dataset.evidence).toHaveLength(339);
     expect(dataset.relations).toHaveLength(397);
@@ -58,6 +58,38 @@ describe('Global LCA Asset public evidence package', () => {
     expect(dataset.distributions.every((row) => row.schema_profile_class && row.schema_profile_original)).toBe(true);
     expect(dataset.distributions.find((row) => row.schema_profile_original === 'TIDAS JSON / JSON Schema')?.schema_profile_class).toBe('TIDAS');
     expect(dataset.distributions.find((row) => row.schema_profile_original === 'HESTIA API / JSON-LD')?.schema_profile_class).toBe('HESTIA');
+  });
+
+  it('counts format definitions independently of distributions and keeps view row identities unique', () => {
+    const ids = dataset.assets.filter((row) => row.asset_type === 'Data schema / exchange format').map((row) => row.asset_id);
+    expect(dataset.formatScope.map((row) => row.asset_id)).toEqual(ids);
+    expect(dataset.formatScope).toHaveLength(14);
+    expect(dataset.summaries.format_systems).toHaveLength(12);
+    expect(dataset.summaries.format_systems.reduce((sum, row) => sum + row.count, 0)).toBe(14);
+    expect(dataset.summaries.format_systems.find((row) => row.label === 'openLCA')?.count).toBe(1);
+    expect(dataset.formatScope.find((row) => row.asset_id === 'LCA-FMT-0008')?.schema_system).toBe('PACT');
+    for (const row of dataset.summaries.format_systems) expect(row.count).toBe(dataset.formatScope.filter((format) => format.schema_system === row.label).length);
+    expect(new Set(dataset.databaseScope.map((row) => row.asset_id)).size).toBe(dataset.databaseScope.length);
+    expect(new Set(dataset.softwareScope.map((row) => row.asset_id)).size).toBe(dataset.softwareScope.length);
+    expect(new Set(dataset.mappings.map((row) => row.mapping_artifact_id)).size).toBe(dataset.mappings.length);
+  });
+
+  it('groups distributions by named systems independently of serialization and supports multiple systems', () => {
+    const system = (id: string) => dataset.distributions.find((row) => row.distribution_id === id)?.schema_profile_class;
+    expect(system('DST-0004')).toBe('openLCA');
+    expect(system('DST-0029')).toBe('TIDAS');
+    expect(system('DST-0104')).toBe('HESTIA');
+    expect(system('DST-0033')).toBe('ILCD');
+    expect(system('DST-0054')).toBe('ILCD');
+    expect(system('DST-0005')?.split('; ')).toEqual(['ecoSpold', 'ILCD']);
+    expect(system('DST-0045')?.split('; ')).toEqual(['SimaPro', 'Sphera / GaBi']);
+    // Generic files and use of GaBi for modelling do not identify an exchange system.
+    for (const id of ['DST-0002', 'DST-0006', 'DST-0017', 'DST-0121', 'DST-0124', 'DST-0127']) expect(system(id)).toBe('System not specified');
+    expect(dataset.summaries.schema_profile_classes.some((row) => /JSON|XML|Tabular|API|compound|family/.test(row.label))).toBe(false);
+    for (const summary of dataset.summaries.schema_profile_classes) {
+      expect(summary.count).toBe(dataset.distributions.filter((row) => row.schema_profile_class.split('; ').includes(summary.label)).length);
+    }
+    expect(dataset.summaries.schema_profile_classes.reduce((sum, row) => sum + row.count, 0)).toBe(172);
   });
 
   it('keeps software products and branded schemas as different mapping endpoints', () => {

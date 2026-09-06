@@ -8,7 +8,7 @@ The dataset is the shared foundation. The website, downloadable files, knowledge
 
 ## Current dataset
 
-Release `2026-09-01.2` has an evidence cut-off of 1 September 2026.
+Release `2026-09-06.3` has an evidence cut-off of 6 September 2026. This update reviews provider locations and makes Formats and Providers query their own catalogue entities; existing asset and version claims retain their original evidence dates.
 
 | Published object | Count |
 |---|---:|
@@ -256,3 +256,5 @@ docs/                             Architecture, data model, use, and maintenance
 - [Dataset website](packages/global-lca-asset-web/README.md)
 - [Vercel deployment](docs/vercel-deployment.md)
 - [Development and acceptance status](docs/development-plan.md)
+
+See [Counting units in the research views](docs/view-counting-units.md) for the object counted on each page and the distinction between formats, distributions, providers and linked assets.

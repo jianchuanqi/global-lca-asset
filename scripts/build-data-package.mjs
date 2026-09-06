@@ -13,6 +13,8 @@ const publicVersionReviewPath = join(projectRoot, 'data/curated/public-version-r
 const nexusCatalogReviewPath = join(projectRoot, 'data/curated/nexus-catalog-review-2026-08-25.json');
 const softwareMarketReviewPath = join(projectRoot, 'data/curated/software-market-review-2026-09-01.json');
 const softwareSemanticAlignmentPath = join(projectRoot, 'data/curated/software-semantic-alignment-2026-09-01.json');
+const providerLocationReviewPath = join(projectRoot, 'data/curated/provider-location-review-2026-09-06.json');
+const providerLocationReview = JSON.parse(readFileSync(providerLocationReviewPath, 'utf8'));
 const outputDir = join(projectRoot, 'data/package/current');
 const datasetDataPath = join(projectRoot, 'packages/global-lca-asset-web/src/data/dataset.json');
 const downloadDir = join(projectRoot, 'packages/global-lca-asset-web/public/downloads');
@@ -45,7 +47,7 @@ const idFields = {
   schema_profile_alignment: 'alignment_id', mapping_endpoint_alignment: 'endpoint_alignment_id',
   version_audit: 'version_audit_id', software_scope: 'software_record_id',
   software_company_roles: 'software_company_role_id', software_role_gaps: 'software_role_gap_id',
-  software_candidate_review: 'candidate_review_id',
+  software_candidate_review: 'candidate_review_id', provider_locations: 'provider_location_id', format_scope: 'asset_id',
 };
 
 function snakeCase(value) {
@@ -311,12 +313,12 @@ function alignSchemaProfile(rawValue) {
   const original = String(rawValue || 'Not publicly confirmed').trim();
   const aligned = schemaAliasMap.get(original);
   if (aligned) return { original, ...aligned, method: aligned.canonical === original ? 'Curated canonical label' : 'Curated synonym alignment' };
-  const classRule = schemaClassRules.find((rule) => rule.regex.test(original));
+  const systems = [...new Set(schemaClassRules.filter((rule) => rule.regex.test(original)).map((rule) => rule.class))];
   return {
     original,
     canonical: original,
-    class: classRule?.class ?? schemaProfileAlignment.default_class,
-    method: classRule ? 'Original label retained; curated class assigned' : 'Original distinct label retained',
+    class: systems.join('; ') || schemaProfileAlignment.default_class,
+    method: systems.length ? 'Original label retained; named schema systems assigned' : 'Original label retained; schema system not specified',
   };
 }
 
@@ -346,6 +348,28 @@ tables.schema_profile_alignment = [...rawSchemaProfileCounts.entries()]
   })
   .sort((a, b) => a.schema_profile.localeCompare(b.schema_profile) || a.schema_profile_original.localeCompare(b.schema_profile_original))
   .map((row, index) => ({ ...row, alignment_id: `SPA-${String(index + 1).padStart(4, '0')}` }));
+
+const formatAssets = tables.assets.filter((row) => row.asset_type === 'Data schema / exchange format');
+const formatSystemByAsset = schemaProfileAlignment.format_asset_systems;
+if (formatAssets.length !== Object.keys(formatSystemByAsset).length || formatAssets.some((row) => !formatSystemByAsset[row.asset_id])) {
+  throw new Error('Format catalogue: every registered format/schema must have exactly one reviewed system');
+}
+tables.format_scope = formatAssets.map((asset) => ({
+  asset_id: asset.asset_id,
+  official_name: asset.official_name,
+  alternative_name_acronym: asset.alternative_name_acronym,
+  schema_system: formatSystemByAsset[asset.asset_id],
+  short_description: asset.short_description,
+  current_version: asset.current_version,
+  maintenance_status: asset.maintenance_status,
+  exchange_format: asset.exchange_format,
+  data_model_or_schema: asset.data_model_or_schema,
+  licence_or_usage_rights: asset.licence_or_usage_rights,
+  operator_maintainer: asset.operator_maintainer,
+  official_url: asset.official_url,
+  primary_sources: asset.primary_sources,
+  supporting_sources: asset.supporting_sources,
+}));
 
 const mappingEndpointAliasMap = new Map();
 for (const group of mappingEndpointAlignment.groups) {
@@ -666,6 +690,38 @@ tables.asset_organizations = tables.asset_organizations.map((row, index) => ({
   ...row,
 }));
 
+// The location review links to exact public actor labels; aliases affect counting only.
+const providerActorIds = new Set(tables.asset_organizations
+  .filter((row) => ['owner', 'operator/maintainer'].includes(row.relationship_type))
+  .map((row) => row.organization_id));
+const reviewedProviderLabels = new Set();
+tables.provider_locations = providerLocationReview.records.map((row, index) => {
+  const organization = organizationId.get(row.organization_label);
+  if (!organization || !providerActorIds.has(organization)) throw new Error(`Provider location: unknown or out-of-scope actor ${row.organization_label}`);
+  if (reviewedProviderLabels.has(row.organization_label)) throw new Error(`Provider location: duplicate actor ${row.organization_label}`);
+  reviewedProviderLabels.add(row.organization_label);
+  if (!row.evidence_note || !row.source_reviewed_at || (row.is_provider && (!row.provider_id || !row.provider_name || !row.evidence_urls.length))) {
+    throw new Error(`Provider location: incomplete identity or evidence for ${row.organization_label}`);
+  }
+  if (row.countries.some((country) => !country.trim() || /unknown|not publicly confirmed/i.test(country))) throw new Error(`Provider location: invalid country for ${row.organization_label}`);
+  return {
+    provider_location_id: `PLOC-${String(index + 1).padStart(4, '0')}`,
+    organization_id: organization,
+    organization_label: row.organization_label,
+    provider_id: row.provider_id,
+    provider_name: row.provider_name,
+    is_provider: row.is_provider ? 'Yes' : 'No',
+    country_regions: row.countries.join('; '),
+    location_status: row.location_status,
+    location_basis: row.location_basis,
+    evidence_urls: row.evidence_urls.join(' ; '),
+    evidence_note: row.evidence_note,
+    source_reviewed_at: row.source_reviewed_at,
+    reviewed_at: providerLocationReview.reviewed_at,
+  };
+});
+if (reviewedProviderLabels.size !== providerActorIds.size) throw new Error('Provider locations: not every owner/operator/maintainer has a reviewed row');
+
 const requiredCounts = {
   assets: normalizeRows(seed.tables['Master Asset Inventory'] ?? []).length + acceptedSoftwareCandidates.length,
   evidence: normalizeRows(seed.tables['Source Evidence'] ?? []).length + acceptedSoftwareCandidates.length,
@@ -682,6 +738,8 @@ const requiredCounts = {
   mapping_endpoint_alignment: 26,
   software_scope: softwareAssets.length,
   software_candidate_review: allSoftwareCandidates.length,
+  provider_locations: providerActorIds.size,
+  format_scope: formatAssets.length,
 };
 
 const assetIds = new Set(tables.assets.map((row) => row.asset_id));
@@ -708,7 +766,7 @@ for (const row of tables.mapping_artifacts) {
 warnings.push('Software actor edges are evidence-linked only. Missing owner, developer, or operator/maintainer roles remain missing, and unresolved public labels are retained in software_role_gaps.');
 warnings.push('Schema/profile canonical labels merge only reviewed synonyms; each distribution retains its original public label and alignment method.');
 warnings.push('Mapping endpoints are typed by the transformed or consuming object; software products, schemas, internal models, workflows and reference lists are not interchangeable.');
-const schemaProfileAlignmentComplete = tables.distributions.every((row) => row.schema_profile_original && row.schema_profile && row.schema_profile_class);
+const schemaProfileAlignmentComplete = tables.distributions.every((row) => row.schema_profile_original && row.schema_profile && row.schema_profile_class && row.schema_profile_class.split(/\s*;\s*/).every((system) => schemaProfileAlignment.systems.includes(system)));
 if (!schemaProfileAlignmentComplete) errors.push('distributions: incomplete schema/profile alignment');
 const mappingEndpointAlignmentComplete = tables.mapping_artifacts.every((row) => row.source_endpoint && row.source_endpoint_kind && row.target_endpoint && row.target_endpoint_kind);
 if (!mappingEndpointAlignmentComplete) errors.push('mapping_artifacts: incomplete endpoint alignment');
@@ -742,6 +800,7 @@ const validation = {
     stable_ids_unique: errors.filter((value) => value.includes('duplicate')).length === 0,
     primary_asset_references_resolved: errors.filter((value) => value.includes('orphan')).length === 0,
     public_privacy_boundary: true,
+    provider_location_review_complete: reviewedProviderLabels.size === providerActorIds.size,
     schema_profile_alignment_complete: schemaProfileAlignmentComplete,
     mapping_endpoint_alignment_complete: mappingEndpointAlignmentComplete,
     database_scope_version_audit_complete: tables.version_audit.length === tables.database_scope.length,
@@ -811,8 +870,9 @@ const summary = {
   confidence_levels: groupCount(tables.assets, 'confidence_level'),
   relationship_statuses: groupCount(tables.relations, 'status'),
   database_access_classes: groupCount(tables.database_scope, 'open_data_status'),
-  schema_profile_classes: groupCount(tables.distributions, 'schema_profile_class'),
+  schema_profile_classes: multiValueCount(tables.distributions, 'schema_profile_class'),
   schema_profiles: groupCount(tables.distributions, 'schema_profile'),
+  format_systems: groupCount(tables.format_scope, 'schema_system'),
   software_primary_functions: groupCount(tables.software_scope, 'primary_function'),
   software_product_types: groupCount(tables.software_scope, 'product_type'),
   software_capabilities: multiValueCount(tables.software_scope, 'functional_capabilities'),
@@ -830,7 +890,7 @@ const vocabularyFields = {
   mapping_type: [tables.mapping_artifacts, 'mapping_type'], mapping_status: [tables.mapping_artifacts, 'status'],
   mapping_endpoint: [tables.mapping_artifacts.flatMap((row) => [{ value: row.source_endpoint }, { value: row.target_endpoint }]), 'value'],
   mapping_endpoint_kind: [tables.mapping_artifacts.flatMap((row) => [{ value: row.source_endpoint_kind }, { value: row.target_endpoint_kind }]), 'value'],
-  schema_profile: [tables.distributions, 'schema_profile'], schema_profile_class: [tables.distributions, 'schema_profile_class'],
+  schema_profile: [tables.distributions, 'schema_profile'], schema_profile_class: [tables.distributions.flatMap((row) => row.schema_profile_class.split(/\s*;\s*/).map((value) => ({ value }))), 'value'],
   software_primary_function: [tables.software_scope, 'primary_function'], software_product_type: [tables.software_scope, 'product_type'],
   software_capability: [tables.software_scope.flatMap((row) => String(row.functional_capabilities || '').split(/\s*;\s*/g).filter(Boolean).map((value) => ({ value }))), 'value'],
   software_market_scope_status: [tables.software_scope, 'market_scope_status'], software_company_role: [tables.software_company_roles, 'role'],
@@ -841,7 +901,7 @@ writeFileSync(join(outputDir, 'controlled_vocabularies.json'), JSON.stringify(vo
 writeFileSync(join(outputDir, 'data_dictionary.json'), JSON.stringify(tables.data_dictionary, null, 2) + '\n');
 writeFileSync(join(outputDir, 'validation_report.json'), JSON.stringify(validation, null, 2) + '\n');
 
-const analysisRules = `# Analysis rules\n\n- Treat all counts as dated, reproducible lower bounds based on public evidence available by ${seed.metadata.evidence_cutoff}.\n- The public seed plus documented curated review layers are canonical for this package. Questionnaire and stakeholder records are discovery leads, not the sample frame or verified asset count.\n- Use public information only. Do not register, log in, purchase data, or include email addresses, internal mappings, private personal data, or reviewer notes. A publicly credited professional individual may be retained only when the source explicitly attributes a software role.\n- State the database counting rule: ${coreDatabaseFamilies} core database families; ${extendedDataBearingAssets} extended data-bearing assets. The extended scope contains the core set plus repositories, platforms and libraries that bear or distribute LCA data but are not counted again as database families.\n- State the software counting rule: ${tables.software_scope.length} reviewed software, API, model, or workflow assets at the cutoff. Of these, ${tables.software_scope.filter((row) => row.market_scope_status.startsWith('Qualifying')).length} have a qualifying PCF/LCA product or interoperability listing in the reviewed market streams; the remainder are broader supporting assets retained from the prior inventory.\n- A PCF/LCA software product must publicly state LCA, PCF calculation, or direct standardized PCF exchange. Do not promote general corporate-only accounting, consultancy, or service listings without a qualifying product function.\n- Keep product type, primary function, multi-valued functional capabilities, and standard/network associations as separate dimensions. LCA and PCF modelling are aligned under the headline function “LCA/PCF modelling and calculation” while remaining distinguishable capabilities.\n- PACT means the WBCSD Partnership for Carbon Transparency. A PACT Network listing or compatibility statement is standard/interoperability evidence and discovery provenance, not a software category, quality rating, or proof of calculation capability.\n- Keep product, owner, developer, and operator/maintainer as separate entities and roles. Create actor-role edges only from public evidence; do not copy one role into another and do not use the product name as the actor.\n- Do not equate free access, public metadata, open data, open-source software, registration-free access, or redistribution rights.\n- Use distributions.schema_profile for aligned analysis and filtering; retain distributions.schema_profile_original whenever source wording or package detail matters. Branded schemas and provider-specific data models remain named classes.\n- Use mapping_artifacts.source_endpoint and target_endpoint for endpoint analysis; retain the original fields and distinguish schema, format, software importer, internal model, workflow and reference-list endpoints.\n- Do not equate a compatibility claim with an implemented mapping, a tested conversion, or a lossless round trip.\n- Treat release records as verified public milestones, not necessarily exhaustive patch histories; use version_audit to distinguish explicit updates, retained evidence-linked values and unresolved route checks.\n- Keep owner, operator, developer country, and geographic data coverage as separate concepts.\n- Cite evidence URLs and preserve unresolved questions when answering.\n`;
+const analysisRules = `# Analysis rules\n\n- Treat all counts as dated, reproducible lower bounds based on public evidence available by ${seed.metadata.evidence_cutoff}.\n- The public seed plus documented curated review layers are canonical for this package. Questionnaire and stakeholder records are discovery leads, not the sample frame or verified asset count.\n- Use public information only. Do not register, log in, purchase data, or include email addresses, internal mappings, private personal data, or reviewer notes. A publicly credited professional individual may be retained only when the source explicitly attributes a software role.\n- State the database counting rule: ${coreDatabaseFamilies} core database families; ${extendedDataBearingAssets} extended data-bearing assets. The extended scope contains the core set plus repositories, platforms and libraries that bear or distribute LCA data but are not counted again as database families.\n- State the software counting rule: ${tables.software_scope.length} reviewed software, API, model, or workflow assets at the cutoff. Of these, ${tables.software_scope.filter((row) => row.market_scope_status.startsWith('Qualifying')).length} have a qualifying PCF/LCA product or interoperability listing in the reviewed market streams; the remainder are broader supporting assets retained from the prior inventory.\n- A PCF/LCA software product must publicly state LCA, PCF calculation, or direct standardized PCF exchange. Do not promote general corporate-only accounting, consultancy, or service listings without a qualifying product function.\n- Keep product type, primary function, multi-valued functional capabilities, and standard/network associations as separate dimensions. LCA and PCF modelling are aligned under the headline function “LCA/PCF modelling and calculation” while remaining distinguishable capabilities.\n- PACT means the WBCSD Partnership for Carbon Transparency. A PACT Network listing or compatibility statement is standard/interoperability evidence and discovery provenance, not a software category, quality rating, or proof of calculation capability.\n- Keep product, owner, developer, and operator/maintainer as separate entities and roles. Create actor-role edges only from public evidence; do not copy one role into another and do not use the product name as the actor.\n- Do not equate free access, public metadata, open data, open-source software, registration-free access, or redistribution rights.\n- Use distributions.schema_profile for aligned analysis and filtering; retain distributions.schema_profile_original whenever source wording or package detail matters. The Formats catalogue counts format_scope Asset IDs, grouped by schema_system. Distribution counts describe usage/package evidence and never the number of formats. schema_profile_class groups distribution records by named schema systems only; split semicolon-separated systems and count each distribution once per system. JSON, XML, CSV and API are not system classes. ILCD+EPD and EF ILCD profiles group under ILCD; unspecified systems remain System not specified.\n- Use mapping_artifacts.source_endpoint and target_endpoint for endpoint analysis; retain the original fields and distinguish schema, format, software importer, internal model, workflow and reference-list endpoints.\n- Do not equate a compatibility claim with an implemented mapping, a tested conversion, or a lossless round trip.\n- Treat release records as verified public milestones, not necessarily exhaustive patch histories; use version_audit to distinguish explicit updates, retained evidence-linked values and unresolved route checks.\n- Keep owner, operator, developer country, and geographic data coverage as separate concepts.\n- Use provider_locations for institutional country/region counts of named owners, operators and maintainers across asset types. Group aliases by provider_id and count once per location; collective provider groups remain explicit. Exclude developer-only roles and non-provider placeholders. Explicit international communities use Global community.\n- The 2026-09-06 update reviews provider locations. Source review dates distinguish retained location evidence from newly checked institutional pages; other asset and version claims retain their original dates.\n- Cite evidence URLs and preserve unresolved questions when answering.\n`;
 writeFileSync(join(outputDir, 'analysis_rules.md'), analysisRules);
 
 const sqlitePath = join(outputDir, 'global_lca_assets.sqlite');
@@ -1096,6 +1156,7 @@ const webDataset = {
     database_access_classes: summary.database_access_classes,
     schema_profile_classes: summary.schema_profile_classes,
     schema_profiles: summary.schema_profiles,
+    format_systems: summary.format_systems,
     software_primary_functions: summary.software_primary_functions,
     software_product_types: summary.software_product_types,
     software_capabilities: summary.software_capabilities,
@@ -1118,6 +1179,8 @@ const webDataset = {
   softwareCandidateReview: tables.software_candidate_review,
   organizations: tables.organizations,
   assetOrganizations: tables.asset_organizations,
+  providerLocations: tables.provider_locations,
+  formatScope: tables.format_scope,
   databaseAccessScope: tables.database_scope,
   searchCoverage: tables.search_coverage,
   reviewIssues: tables.review_issues,
@@ -1134,7 +1197,7 @@ const manifest = {
   generated_at: context.generated_at,
   canonical_input: relative(projectRoot, seedPath),
   canonical_input_sha256: createHash('sha256').update(seedBytes).digest('hex'),
-  curated_inputs: [contextPath, schemaProfileAlignmentPath, mappingEndpointAlignmentPath, publicVersionReviewPath, nexusCatalogReviewPath, softwareMarketReviewPath, softwareSemanticAlignmentPath].map((path) => ({
+  curated_inputs: [contextPath, schemaProfileAlignmentPath, mappingEndpointAlignmentPath, publicVersionReviewPath, nexusCatalogReviewPath, softwareMarketReviewPath, softwareSemanticAlignmentPath, providerLocationReviewPath].map((path) => ({
     name: relative(projectRoot, path),
     sha256: createHash('sha256').update(readFileSync(path)).digest('hex'),
   })),

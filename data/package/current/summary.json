@@ -1,6 +1,6 @@
 {
-  "package_version": "2026-09-01.2",
-  "evidence_cutoff": "2026-09-01",
+  "package_version": "2026-09-06.3",
+  "evidence_cutoff": "2026-09-06",
   "counts": {
     "assets": 301,
     "evidence": 339,
@@ -12,16 +12,18 @@
     "search_coverage": 23,
     "answerability": 7,
     "review_issues": 10,
-    "data_dictionary": 24,
+    "data_dictionary": 25,
     "software_candidate_review": 104,
     "version_audit": 88,
     "schema_profile_alignment": 78,
+    "format_scope": 14,
     "mapping_endpoint_alignment": 26,
     "software_role_gaps": 39,
     "software_scope": 130,
     "organizations": 385,
     "software_company_roles": 179,
-    "asset_organizations": 521
+    "asset_organizations": 521,
+    "provider_locations": 298
   },
   "scope_counts": {
     "core_database_families": 80,
@@ -321,55 +323,35 @@
   ],
   "schema_profile_classes": [
     {
-      "label": "openLCA family",
+      "label": "openLCA",
       "count": 55
     },
     {
-      "label": "Tabular / matrix",
-      "count": 23
+      "label": "System not specified",
+      "count": 54
     },
     {
-      "label": "ILCD family",
-      "count": 18
+      "label": "ILCD",
+      "count": 20
     },
     {
-      "label": "Unconfirmed",
-      "count": 18
+      "label": "SimaPro",
+      "count": 15
     },
     {
-      "label": "SimaPro family",
-      "count": 14
-    },
-    {
-      "label": "ecoSpold family",
+      "label": "ecoSpold",
       "count": 7
-    },
-    {
-      "label": "Document / repository package",
-      "count": 4
-    },
-    {
-      "label": "JSON / API / web",
-      "count": 4
-    },
-    {
-      "label": "Sphera / GaBi family",
-      "count": 4
     },
     {
       "label": "Athena",
       "count": 3
     },
     {
-      "label": "Environmental Footprint",
-      "count": 2
+      "label": "Sphera / GaBi",
+      "count": 3
     },
     {
       "label": "HESTIA",
-      "count": 2
-    },
-    {
-      "label": "Software-native / proprietary",
       "count": 2
     },
     {
@@ -394,10 +376,6 @@
     },
     {
       "label": "IDEA",
-      "count": 1
-    },
-    {
-      "label": "ILCD+EPD",
       "count": 1
     },
     {
@@ -652,6 +630,56 @@
     },
     {
       "label": "Zenodo repository package; internal schema not confirmed",
+      "count": 1
+    }
+  ],
+  "format_systems": [
+    {
+      "label": "ecoSpold",
+      "count": 2
+    },
+    {
+      "label": "ILCD",
+      "count": 2
+    },
+    {
+      "label": "Catena-X",
+      "count": 1
+    },
+    {
+      "label": "HESTIA",
+      "count": 1
+    },
+    {
+      "label": "IDTA / AAS",
+      "count": 1
+    },
+    {
+      "label": "LCAx",
+      "count": 1
+    },
+    {
+      "label": "openBDF",
+      "count": 1
+    },
+    {
+      "label": "openEPD",
+      "count": 1
+    },
+    {
+      "label": "openLCA",
+      "count": 1
+    },
+    {
+      "label": "PACT",
+      "count": 1
+    },
+    {
+      "label": "TfS",
+      "count": 1
+    },
+    {
+      "label": "TIDAS",
       "count": 1
     }
   ],
