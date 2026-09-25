@@ -8,23 +8,23 @@ The dataset is the shared foundation. The website, downloadable files, knowledge
 
 ## Current dataset
 
-Release `2026-09-01.2` has an evidence cut-off of 1 September 2026.
+Release `2026-09-25.1` has an evidence cut-off of 25 September 2026.
 
 | Published object | Count |
 |---|---:|
-| Asset families | 301 |
-| Core database families | 80 |
-| Extended data-bearing assets | 88 |
+| Asset families | 302 |
+| Core database families | 81 |
+| Extended data-bearing assets | 89 |
 | PCF/LCA software products, APIs, models, and workflows | 130 |
 | Qualifying PCF/LCA market records | 97 |
 | Software candidate appearances reviewed | 104 |
 | Evidence-linked software actor-role assertions | 179 |
 | Unresolved software role labels retained for review | 39 |
-| Public evidence records | 339 |
-| Releases or milestones | 310 |
-| Distributions | 170 |
-| Mapping artifacts | 25 |
-| Relationship assertions | 397 |
+| Public evidence records | 341 |
+| Releases or milestones | 312 |
+| Distributions | 174 |
+| Mapping artifacts | 26 |
+| Relationship assertions | 401 |
 
 All counts are reproducible lower bounds under the published inclusion rules and evidence cut-off; they are not claims of a final worldwide total. The software market review distinguishes product type, aligned primary function, multi-valued capabilities, and standard/network associations. “PACT” refers to the WBCSD Partnership for Carbon Transparency and is retained as interoperability evidence, not as a software category or quality rating.
 

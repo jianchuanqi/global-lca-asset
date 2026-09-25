@@ -1,5 +1,5 @@
 endpoint_alignment_id,endpoint_original,mapping_endpoint,endpoint_kind,alignment_method,mapping_count
-MEA-0001,Brightway internal data model,Brightway internal data model,Software internal model,Curated canonical endpoint,2
+MEA-0001,Brightway internal data model,Brightway internal data model,Software internal model,Curated canonical endpoint,4
 MEA-0002,Catena-X PCF data model / CX-0136,Catena-X PCF data model (CX-0136),Data model / schema,Curated synonym alignment,1
 MEA-0003,ecoinvent 3.7; IDEA 2.3; EF 3.0 elementary-flow lists,ecoinvent 3.7 + IDEA 2.3 + EF 3.0 elementary-flow lists,Reference-list set,Curated synonym alignment,1
 MEA-0004,EcoSpold 1 XML,EcoSpold 1,Schema / exchange format,Curated synonym alignment,1

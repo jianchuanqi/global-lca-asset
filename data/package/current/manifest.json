@@ -1,14 +1,14 @@
 {
   "package_name": "Global LCA Asset public evidence package",
-  "package_version": "2026-09-01.2",
-  "evidence_cutoff": "2026-09-01",
-  "generated_at": "2026-09-01T13:00:00.000Z",
+  "package_version": "2026-09-25.1",
+  "evidence_cutoff": "2026-09-25",
+  "generated_at": "2026-09-25T09:00:00.000Z",
   "canonical_input": "data/seed/inventory-v2.public.json",
-  "canonical_input_sha256": "e25e296e83b24aa944edefe32932801e3c928c87fa3171ee60138063068588aa",
+  "canonical_input_sha256": "ec92deaf5899eddda67ec92c6d972a6872e2bdcfc689a9e30838d5b61365b38e",
   "curated_inputs": [
     {
       "name": "data/curated/review-context.json",
-      "sha256": "26f8a616437114db79c80e89150432568ec5861a77c4b414c0ab793c9bce1a01"
+      "sha256": "0c6366ff5b24bba1fb9890ce65e54e3e8d0eeb82641bc3693abd464b30d07ba8"
     },
     {
       "name": "data/curated/schema-profile-alignment.json",
@@ -38,31 +38,31 @@
   "privacy": "Public evidence only. Contact information, questionnaire/person mappings, and internal reviewer notes are excluded.",
   "validation_status": "passed",
   "table_counts": {
-    "assets": 301,
-    "evidence": 339,
-    "database_scope": 88,
-    "releases": 310,
-    "distributions": 170,
-    "mapping_artifacts": 25,
-    "relations": 397,
+    "assets": 302,
+    "evidence": 341,
+    "database_scope": 89,
+    "releases": 312,
+    "distributions": 174,
+    "mapping_artifacts": 26,
+    "relations": 401,
     "search_coverage": 23,
     "answerability": 7,
     "review_issues": 10,
     "data_dictionary": 24,
     "software_candidate_review": 104,
-    "version_audit": 88,
+    "version_audit": 89,
     "schema_profile_alignment": 78,
     "mapping_endpoint_alignment": 26,
     "software_role_gaps": 39,
     "software_scope": 130,
     "organizations": 385,
     "software_company_roles": 179,
-    "asset_organizations": 521
+    "asset_organizations": 523
   },
   "files": [
     {
       "name": "analysis_rules.md",
-      "sha256": "5bc9c0f64e4909221ed0a4f5448bf3a92a9009c4bd150fe52acfa832c8d16b8a"
+      "sha256": "84162abf031323f7fb129aa3238830cc0d4c3bc9fe066c64885ed01ac2d7ba41"
     },
     {
       "name": "answerability.csv",
@@ -74,23 +74,23 @@
     },
     {
       "name": "asset_organizations.csv",
-      "sha256": "d62b730278fc267550112cd878ca7e7f2424406b1d41482dc419d246a84aaa97"
+      "sha256": "f4e08c57e53411fdf531779f49f93ad4e9c36e4dceae4cf72891e8e25fc79289"
     },
     {
       "name": "asset_organizations.jsonl",
-      "sha256": "e751c9142865814641e6855ad12be786fceafd22ea3ea71eefc932bc646bf976"
+      "sha256": "bd15cd92a0191f8e70699b4b5e9b9e046a8463fa97c48c3104ffbbdf8c74a610"
     },
     {
       "name": "assets.csv",
-      "sha256": "4a6897a86ab67c46ff2217d633a862760cfe023e7e023741d886ef3d2f93010f"
+      "sha256": "5f40066a3fc93ae5dfc7896f1dd7db9e8b71676bea3bad079f90f39a4c6ba592"
     },
     {
       "name": "assets.jsonl",
-      "sha256": "d6a29d4af1e60a97ce60e6abd8b02aaefd06f904935c3b7f8381e80725303db4"
+      "sha256": "3dedd7f6d0aef22c4e79457fd8f8166ebf60c99062543dca464f3f7550b3dc55"
     },
     {
       "name": "controlled_vocabularies.json",
-      "sha256": "69d27b51d3ff26121b91326abeab2fc32fe6c6476e3b65a427fc9943f91ff924"
+      "sha256": "9155a74c9dfb9cccdc815f3b9f5b237b840d76d853904e92ba1faa3bb410b807"
     },
     {
       "name": "data_dictionary.csv",
@@ -106,47 +106,47 @@
     },
     {
       "name": "database_scope.csv",
-      "sha256": "a017922baa04805688d827da1b4749c6eb9c71a0d56d11e939dd82984a7eb0ad"
+      "sha256": "145f2cdddf202cdf69abd328b44a766fb02cfb320ecd10e0392159bd0e87baaa"
     },
     {
       "name": "database_scope.jsonl",
-      "sha256": "c875702d3e8901b3f02d613e2ed4bffcc2ae7a8ccc67b0d83a110570ec8f5ac5"
+      "sha256": "8cb357578f5f60ad1a24f84fcbba2a3f3a2015b9551534672fd165ea3922f1e9"
     },
     {
       "name": "distributions.csv",
-      "sha256": "4f3553c43f988f2abd4d82015062ac4cee1f219dd027418dd73048921a77bbb4"
+      "sha256": "e19ab4ddd253020e7160352f2e80518057a4601225e31ec26833f2ad6b50f13b"
     },
     {
       "name": "distributions.jsonl",
-      "sha256": "e18c7487310f3871cb6a64bf1849e47d41c8c2d5ba29ae11c40588d62a290db4"
+      "sha256": "b256281a16696d1ddd884d91c65a3304be84a1dc5795027454781c6cc2a7f3ce"
     },
     {
       "name": "evidence.csv",
-      "sha256": "e441acf6c71f5baee27b42ebf8bd23279a6794e6e7d83c88dc8357de75a8b41e"
+      "sha256": "7f35b0473d584b8c7e283d0d6c64159455d7491bd3d0c4451a1dc2d9a61ba4dc"
     },
     {
       "name": "evidence.jsonl",
-      "sha256": "7b2b9e41c0eaa4fb32a37b8f951194cc51dc7404aa24c40762060e704f7e21dd"
+      "sha256": "5fa93f32adbf4795855f06d0350867682e9a9ef32d2192ab8c897821df8311fa"
     },
     {
       "name": "global_lca_assets.sqlite",
-      "sha256": "d50616d072ca6e1e470a8696cb6037606e9747b75b52ba4a37bbcf68e28f693c"
+      "sha256": "5e945e940c780af4fa045c35e123f3893ef73d391b4819618ec36ab81c46af2a"
     },
     {
       "name": "mapping_artifacts.csv",
-      "sha256": "32b0b5a6a686942315980e91e898a9b6168eac157653b982d288af1dc7f09252"
+      "sha256": "b0cc5e86f78b5c9c6146fe510dd9df3167c578f310c39236bf39a6b4b7068e01"
     },
     {
       "name": "mapping_artifacts.jsonl",
-      "sha256": "d7d93205ebe556911679339b73610918cc818dd2a41700d5c2d3e39d48522f79"
+      "sha256": "0b5246411eb267f8f6872be4bff372281808fb5cab5559be3b79f3109e9353c2"
     },
     {
       "name": "mapping_endpoint_alignment.csv",
-      "sha256": "d305f1d014bd39e99577cf5e2f1fd279453c85d78701d82c3e9ccc1c74eb27bb"
+      "sha256": "b83a7320c13d195fca17b960b0cb2bdd177e747f6c341998c32547562365e64a"
     },
     {
       "name": "mapping_endpoint_alignment.jsonl",
-      "sha256": "e1b0e3cde44ecadc73dcaea64b2ff0d9a57d73cce0a411bf50ad6f2ce77bd021"
+      "sha256": "97033cd962bd172e920f7a1d072145f51e9a606081d98671bd96e1976c5c9848"
     },
     {
       "name": "organizations.csv",
@@ -158,19 +158,19 @@
     },
     {
       "name": "relations.csv",
-      "sha256": "6d21453f815e33d22686831a72c314eb3654dea18f3e2d7424ada7420ad15d7d"
+      "sha256": "8ef2840ef51bc67bb239bcd16c4526ae4d1333078ce741dd2d1da858dde76d54"
     },
     {
       "name": "relations.jsonl",
-      "sha256": "0fe2ea42b06be4fcd9967abac2ba9963eac3fe2e957ee19e9a0df82a188dea6a"
+      "sha256": "1599141af12a95d52c9b67e8b907dbae0537377c85c00c6d87aaae63574647bc"
     },
     {
       "name": "releases.csv",
-      "sha256": "7cf805ed7bf8789659cb3ee9798f21153dbaabf280ee60e3374018a2f2b837c4"
+      "sha256": "6f8e6f811a08103744f6310a28a2625fa375f7eb6f1eca3675094c56d65c795a"
     },
     {
       "name": "releases.jsonl",
-      "sha256": "3ecc8e4600378452bee829a83b4627d15f7b736dbd7ebbc0e48e83ae7b7e5b9d"
+      "sha256": "06a457ce31b0ef426229680c89afabd9a62d77c379eb6ad0156e0f3eb673cf75"
     },
     {
       "name": "review_issues.csv",
@@ -182,11 +182,11 @@
     },
     {
       "name": "schema_profile_alignment.csv",
-      "sha256": "360f60e081b388289af9c02275b2b0b875eb0dc58469167cb597f432dffcabf4"
+      "sha256": "65a23fd56d3d5a9e119af5107635b42b2fe6527b0dda44a4ecd96a3493c8a699"
     },
     {
       "name": "schema_profile_alignment.jsonl",
-      "sha256": "a939418d62e977fe9e96385f8608395b7282c2a43159a9e33f40100312fa1a77"
+      "sha256": "93b5efe6ca241e18048e4438cf0e623ef00564efc274f3bb7ed358d0be85e7c1"
     },
     {
       "name": "search_coverage.csv",
@@ -230,19 +230,19 @@
     },
     {
       "name": "summary.json",
-      "sha256": "5388f8e2f8ea72e1c6acc4e539612945509abf5ac35d51be1d27e8b2745b9b75"
+      "sha256": "2c0172bd19c901147377649eeca583894e8ed7fa5892aafd9e51adb211d5f98b"
     },
     {
       "name": "validation_report.json",
-      "sha256": "c2fad57040cc672c42008b1a646663247ba3c7f638278d22da67fa65f1308e11"
+      "sha256": "15c14cb829443d805a4b80673dd0cfa056ca508fe3f40b3db698172a3b31aa19"
     },
     {
       "name": "version_audit.csv",
-      "sha256": "8a7c7163c20acc2b1d994206ae6f3eddb55fac6df9cb6f17eded3eed0fea3f75"
+      "sha256": "0140efd9285803c78450c8fba5ff0fccb7a21ebf48c3d42cd64de9c067a4f13f"
     },
     {
       "name": "version_audit.jsonl",
-      "sha256": "b3d9bae50069eae0db96b65d56faffbfbad19e76e07c5861e6c0ec0173a41ee5"
+      "sha256": "64526d655678c26759f64a33a50d1ed41986d50279d4549c53c4bdc7a4b5093f"
     }
   ]
 }

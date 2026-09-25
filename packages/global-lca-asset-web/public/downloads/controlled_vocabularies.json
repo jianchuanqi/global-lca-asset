@@ -69,6 +69,7 @@
     "Public metadata verified; independent database query not completed",
     "Public metadata verified; licensed database not accessed",
     "Public metadata verified; no registration, login, purchase or restricted-content access used",
+    "Public metadata verified; no registration, login, purchase or restricted-content download was used",
     "Public metadata verified; restricted data not accessed",
     "Public metadata verified; software not accessed",
     "Public metadata verified; underlying data not accessed",
@@ -292,6 +293,7 @@
     "regional/sector complement",
     "related life-cycle pollution guidance",
     "related product-carbon-footprint standards",
+    "replaced background",
     "reporting/exchange implementation",
     "research support",
     "schema dependency",
@@ -308,6 +310,7 @@
     "software compatibility",
     "software distribution",
     "software implementation",
+    "source database for calculation platform",
     "source-data dependency",
     "source/distribution",
     "standard compatibility",
@@ -392,6 +395,7 @@
     "Request/membership-mediated"
   ],
   "mapping_type": [
+    "Activity-level background substitution (twin maps)",
     "Conceptual/schema compatibility",
     "Cross-ecosystem alignment programme",
     "Cross-initiative semantic alignment; field-level crosswalk not captured",

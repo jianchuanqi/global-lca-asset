@@ -17,16 +17,16 @@ const index = JSON.parse(readFileSync(join(graphDir, 'index.json'), 'utf8')) as 
 
 describe('progressively loaded relationship graph data', () => {
   it('publishes searchable asset and organization nodes with one neighborhood per node', () => {
-    expect(index.asset_count).toBe(301);
+    expect(index.asset_count).toBe(302);
     expect(index.organization_count).toBe(385);
-    expect(index.node_count).toBe(686);
-    expect(index.relationship_count).toBe(912);
-    expect(index.asset_relationship_count).toBe(391);
-    expect(index.actor_relationship_count).toBe(521);
-    expect(index.expandable_relationship_count).toBe(912);
-    expect(index.assets).toHaveLength(301);
+    expect(index.node_count).toBe(687);
+    expect(index.relationship_count).toBe(918);
+    expect(index.asset_relationship_count).toBe(395);
+    expect(index.actor_relationship_count).toBe(523);
+    expect(index.expandable_relationship_count).toBe(918);
+    expect(index.assets).toHaveLength(302);
     expect(index.organizations).toHaveLength(385);
-    expect(readdirSync(join(graphDir, 'neighborhoods')).filter((name) => name.endsWith('.json'))).toHaveLength(686);
+    expect(readdirSync(join(graphDir, 'neighborhoods')).filter((name) => name.endsWith('.json'))).toHaveLength(687);
   });
 
   it('keeps each neighborhood internally referentially complete', () => {

@@ -341,182 +341,184 @@ AO-00339,LCA-MTH-0022,ORG-0230,owner,LC-IMPACT project; openLCA adaptation by Gr
 AO-00340,LCA-MTH-0022,ORG-0230,operator/maintainer,LC-IMPACT project; openLCA adaptation by GreenDelta GmbH
 AO-00341,LCA-MTH-0023,ORG-0173,owner,GreenDelta GmbH
 AO-00342,LCA-MTH-0023,ORG-0173,operator/maintainer,GreenDelta GmbH
-AO-00343,LCA-SW-0001,ORG-0286,developer,PRé Sustainability B.V.
-AO-00344,LCA-SW-0001,ORG-0308,operator/maintainer,SimaPro
-AO-00345,LCA-SW-0001,ORG-0265,owner,One Click LCA group
-AO-00346,LCA-SW-0002,ORG-0051,developer,Chris Mutel
-AO-00347,LCA-SW-0003,ORG-0173,developer,GreenDelta GmbH
-AO-00348,LCA-SW-0003,ORG-0173,operator/maintainer,GreenDelta GmbH
-AO-00349,LCA-SW-0003,ORG-0173,owner,GreenDelta GmbH
-AO-00350,LCA-SW-0004,ORG-0265,developer,One Click LCA Oy Ltd
-AO-00351,LCA-SW-0004,ORG-0265,operator/maintainer,One Click LCA
-AO-00352,LCA-SW-0004,ORG-0265,owner,One Click LCA Ltd / One Click LCA group
-AO-00353,LCA-SW-0005,ORG-0318,developer,"Sphera Solutions, Inc."
-AO-00354,LCA-SW-0005,ORG-0318,operator/maintainer,Sphera
-AO-00355,LCA-SW-0005,ORG-0318,owner,Sphera
-AO-00356,LCA-SW-0006,ORG-0139,developer,Federal University of Technology – Paraná (UTFPR)
-AO-00357,LCA-SW-0007,ORG-0012,developer,Argonne National Laboratory
-AO-00358,LCA-SW-0007,ORG-0012,operator/maintainer,Argonne National Laboratory
-AO-00359,LCA-SW-0007,ORG-0349,owner,United States Department of Energy
-AO-00360,LCA-SW-0008,ORG-0359,developer,University of Oxford
-AO-00361,LCA-SW-0008,ORG-0359,owner,HESTIA project / University of Oxford
-AO-00362,LCA-SW-0009,ORG-0095,developer,Ecochain Technologies B.V.
-AO-00363,LCA-SW-0009,ORG-0095,operator/maintainer,Ecochain Technologies
-AO-00364,LCA-SW-0009,ORG-0095,owner,Ecochain Technologies
-AO-00365,LCA-SW-0010,ORG-0228,developer,Kleis Technology
-AO-00366,LCA-SW-0010,ORG-0228,operator/maintainer,LCA as Code team
-AO-00367,LCA-SW-0011,ORG-0052,developer,Christian Kongsgaard
-AO-00368,LCA-SW-0012,ORG-0351,developer,U.S. Environmental Protection Agency
-AO-00369,LCA-SW-0012,ORG-0138,operator/maintainer,FLCAC-admin repository contributors
-AO-00370,LCA-SW-0012,ORG-0351,owner,United States Environmental Protection Agency / Federal LCA Commons ecosystem
-AO-00371,LCA-SW-0013,ORG-0264,developer,Oliver Kusche Research & Consulting (OKWorx)
-AO-00372,LCA-SW-0013,ORG-0264,operator/maintainer,soda4LCA maintainers / OKWorx
-AO-00373,LCA-SW-0014,ORG-0273,developer,Paul Scherrer Institute
-AO-00374,LCA-SW-0014,ORG-0285,developer,Potsdam Institute for Climate Impact Research
-AO-00375,LCA-SW-0014,ORG-0273,operator/maintainer,premise contributors
-AO-00376,LCA-SW-0015,ORG-0001,developer,2050 Materials
-AO-00377,LCA-SW-0016,ORG-0068,developer,Climatiq GmbH
-AO-00378,LCA-SW-0017,ORG-0378,operator/maintainer,Cascale; exclusively delivered on Worldly
-AO-00379,LCA-SW-0017,ORG-0043,owner,Cascale
-AO-00380,LCA-SW-0018,ORG-0249,developer,Makersite GmbH
-AO-00381,LCA-SW-0018,ORG-0249,operator/maintainer,Makersite GmbH
-AO-00382,LCA-SW-0018,ORG-0249,owner,Makersite GmbH
-AO-00383,LCA-SW-0019,ORG-0088,developer,Eaternity
-AO-00384,LCA-SW-0019,ORG-0088,operator/maintainer,Eaternity
-AO-00385,LCA-SW-0020,ORG-0087,developer,EarthShift Global
-AO-00386,LCA-SW-0020,ORG-0087,operator/maintainer,EarthShift Global
-AO-00387,LCA-SW-0021,ORG-0087,developer,EarthShift Global
-AO-00388,LCA-SW-0021,ORG-0087,operator/maintainer,EarthShift Global
-AO-00389,LCA-SW-0022,ORG-0248,developer,Lifecycles
-AO-00390,LCA-SW-0022,ORG-0248,operator/maintainer,PIQET service team
-AO-00391,LCA-SW-0022,ORG-0279,owner,The PIQET Consortium / Lifecycles and partners
-AO-00392,LCA-SW-0025,ORG-0178,developer,"Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd."
-AO-00393,LCA-SW-0025,ORG-0178,owner,Hangzhou Qinglvlan Environmental Digital Technology
-AO-00394,LCA-SW-0026,ORG-0226,developer,Kimel Tech SpA
-AO-00395,LCA-SW-0026,ORG-0226,owner,Kimel Tech SpA
-AO-00396,LCA-SW-0027,ORG-0231,developer,LCA CARE project consortium
-AO-00397,LCA-SW-0027,ORG-0231,owner,LCA CARE project consortium
-AO-00398,LCA-SW-0028,ORG-0088,developer,Eaternity
-AO-00399,LCA-SW-0028,ORG-0088,operator/maintainer,Eaternity open-source team
-AO-00400,LCA-SW-0029,ORG-0006,developer,Advanced Manufacturing Research Centre (AMRC)
-AO-00401,LCA-SW-0029,ORG-0361,developer,University of Sheffield
-AO-00402,LCA-SW-0030,ORG-0370,developer,Walloon Agricultural Research Centre (CRA-W)
-AO-00403,LCA-SW-0030,ORG-0370,operator/maintainer,CRA-W
-AO-00404,LCA-SW-0031,ORG-0302,developer,RWTH Aachen University
-AO-00405,LCA-SW-0032,ORG-0320,developer,Studio Gear Up
-AO-00406,LCA-SW-0032,ORG-0171,operator/maintainer,Green Gold Label Foundation with studio Gear Up
-AO-00407,LCA-SW-0032,ORG-0171,owner,Green Gold Label Foundation
-AO-00408,LCA-SW-0033,ORG-0242,developer,Leonardo Ferhati
-AO-00409,LCA-SW-0033,ORG-0242,owner,Leonardo Ferhati
-AO-00410,LCA-SW-0035,ORG-0255,developer,Minviro Ltd
-AO-00411,LCA-SW-0035,ORG-0255,operator/maintainer,Minviro
-AO-00412,LCA-SW-0035,ORG-0255,owner,Minviro Ltd
-AO-00413,LCA-SW-0036,ORG-0372,developer,"WAP Sustainability, LLC"
-AO-00414,LCA-SW-0036,ORG-0372,operator/maintainer,WAP Sustainability
-AO-00415,LCA-SW-0036,ORG-0372,owner,"WAP Sustainability, LLC"
-AO-00416,LCA-SW-0037,ORG-0372,developer,"WAP Sustainability, LLC"
-AO-00417,LCA-SW-0037,ORG-0372,operator/maintainer,WAP Sustainability
-AO-00418,LCA-SW-0037,ORG-0372,owner,"WAP Sustainability, LLC"
-AO-00419,LCA-SW-0038,ORG-0216,developer,iPoint-systems GmbH
-AO-00420,LCA-SW-0038,ORG-0216,operator/maintainer,iPoint
-AO-00421,LCA-SW-0039,ORG-0014,developer,Athena Sustainable Materials Institute
-AO-00422,LCA-SW-0039,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
-AO-00423,LCA-SW-0039,ORG-0014,owner,Athena Sustainable Materials Institute
-AO-00424,LCA-SW-0040,ORG-0014,developer,Athena Sustainable Materials Institute
-AO-00425,LCA-SW-0040,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
-AO-00426,LCA-SW-0040,ORG-0014,owner,Athena Sustainable Materials Institute
-AO-00427,LCA-SW-0041,ORG-0014,developer,Athena Sustainable Materials Institute
-AO-00428,LCA-SW-0041,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
-AO-00429,LCA-SW-0041,ORG-0014,owner,Athena Sustainable Materials Institute
-AO-00430,LCA-SW-0042,ORG-0118,developer,European Aluminium
-AO-00431,LCA-SW-0042,ORG-0206,developer,International Aluminium Institute
-AO-00432,LCA-SW-0042,ORG-0118,owner,International Aluminium Institute and European Aluminium
-AO-00433,LCA-SW-0042,ORG-0206,owner,International Aluminium Institute and European Aluminium
-AO-00434,LCA-SW-0043,ORG-0340,developer,"TianGong LCA research team, Tsinghua University"
-AO-00435,LCA-SW-0043,ORG-0340,operator/maintainer,TIDAS Tools maintainers and public contributors
-AO-00436,LCA-SW-0043,ORG-0348,owner,TianGong LCA / TIDAS open-source project
-AO-00437,LCA-SW-0044,ORG-0074,developer,Dassault Systèmes
-AO-00438,LCA-SW-0045,ORG-0136,developer,Altruistiq
-AO-00439,LCA-SW-0046,ORG-0013,developer,ASUENE
-AO-00440,LCA-SW-0047,ORG-0013,developer,ASUENE Inc.
-AO-00441,LCA-SW-0048,ORG-0327,developer,Taiwan Web Service Corporation
-AO-00442,LCA-SW-0049,ORG-0017,developer,Atma.io
-AO-00443,LCA-SW-0050,ORG-0018,developer,BACUTI
-AO-00444,LCA-SW-0051,ORG-0030,developer,"Booost, Inc."
-AO-00445,LCA-SW-0052,ORG-0034,developer,carbmee
-AO-00446,LCA-SW-0053,ORG-0035,developer,Carboledger
-AO-00447,LCA-SW-0054,ORG-0036,developer,Carbon Maps
-AO-00448,LCA-SW-0055,ORG-0042,developer,Carbon Trail
-AO-00449,LCA-SW-0056,ORG-0059,developer,CircularTree
-AO-00450,LCA-SW-0057,ORG-0038,developer,CarbonBright AI
-AO-00451,LCA-SW-0058,ORG-0323,developer,Sustech
-AO-00452,LCA-SW-0059,ORG-0319,developer,Startrust
-AO-00453,LCA-SW-0060,ORG-0065,developer,ClimateCamp
-AO-00454,LCA-SW-0061,ORG-0067,developer,ClimatePoint
-AO-00455,LCA-SW-0062,ORG-0252,developer,Microsoft
-AO-00456,LCA-SW-0063,ORG-0070,developer,CO2 AI
-AO-00457,LCA-SW-0064,ORG-0354,developer,Uhuru Corporation
-AO-00458,LCA-SW-0065,ORG-0080,developer,Delta Electronics
-AO-00459,LCA-SW-0066,ORG-0202,developer,"Institute for Information Industry, Digital Transformation Research Institute"
-AO-00460,LCA-SW-0067,ORG-0299,developer,Riskoa Ltd
-AO-00461,LCA-SW-0068,ORG-0109,developer,ESGpedia Pte Ltd
-AO-00462,LCA-SW-0069,ORG-0132,developer,Evalue8 Sustainability
-AO-00463,LCA-SW-0070,ORG-0141,developer,Fitsol
-AO-00464,LCA-SW-0071,ORG-0374,developer,WeCarbon Technology Ltd
-AO-00465,LCA-SW-0072,ORG-0153,developer,Fujitsu Limited
-AO-00466,LCA-SW-0073,ORG-0380,developer,Wormhole Technologies Inc.
-AO-00467,LCA-SW-0074,ORG-0177,developer,GreenStitch Technologies PVT LTD
-AO-00468,LCA-SW-0075,ORG-0186,developer,HowGood
-AO-00469,LCA-SW-0076,ORG-0249,developer,Makersite GmbH
-AO-00470,LCA-SW-0077,ORG-0256,developer,Muir AI
-AO-00471,LCA-SW-0079,ORG-0270,developer,Optel Group
-AO-00472,LCA-SW-0080,ORG-0280,developer,Planet FWD
-AO-00473,LCA-SW-0081,ORG-0304,developer,SAP
-AO-00474,LCA-SW-0082,ORG-0313,developer,Sluicebox
-AO-00475,LCA-SW-0083,ORG-0314,developer,Smart Tradzt
-AO-00476,LCA-SW-0085,ORG-0330,developer,Terrascope
-AO-00477,LCA-SW-0086,ORG-0062,developer,Cirrus Nexus
-AO-00478,LCA-SW-0087,ORG-0199,developer,InnoBlock Technology Ltd
-AO-00479,LCA-SW-0089,ORG-0385,developer,YuzeData
-AO-00480,LCA-SW-0091,ORG-0316,developer,Solid Forest
-AO-00481,LCA-SW-0092,ORG-0316,developer,Solid Forest
-AO-00482,LCA-SW-0093,ORG-0010,developer,Ansys
-AO-00483,LCA-SW-0094,ORG-0011,developer,aPriori
-AO-00484,LCA-SW-0095,ORG-0133,developer,EVEA
-AO-00485,LCA-SW-0096,ORG-0220,developer,ITeC
-AO-00486,LCA-SW-0097,ORG-0041,developer,Carbonstop
-AO-00487,LCA-SW-0098,ORG-0087,developer,EarthShift Global
-AO-00488,LCA-SW-0099,ORG-0191,developer,IKE Environmental Technology
-AO-00489,LCA-SW-0100,ORG-0093,developer,Eco-Bat
-AO-00490,LCA-SW-0101,ORG-0009,developer,Altermaker
-AO-00491,LCA-SW-0102,ORG-0346,developer,Trace One
-AO-00492,LCA-SW-0103,ORG-0347,developer,Trayak
-AO-00493,LCA-SW-0104,ORG-0099,developer,ECOSPEED
-AO-00494,LCA-SW-0105,ORG-0191,developer,IKE Environmental Technology
-AO-00495,LCA-SW-0106,ORG-0295,developer,Quantis and Kleis Technology
-AO-00496,LCA-SW-0107,ORG-0113,developer,eTool
-AO-00497,LCA-SW-0108,ORG-0096,developer,Ecodigit
-AO-00498,LCA-SW-0109,ORG-0112,developer,"ETH Zurich, Chair of Ecological Systems Design"
-AO-00499,LCA-SW-0110,ORG-0235,developer,LCA.no
-AO-00500,LCA-SW-0111,ORG-0278,developer,Pilario
-AO-00501,LCA-SW-0112,ORG-0334,developer,The Circulate Initiative
-AO-00502,LCA-SW-0113,ORG-0222,developer,IZUBA énergies
-AO-00503,LCA-SW-0114,ORG-0309,developer,sinum
-AO-00504,LCA-SW-0115,ORG-0304,developer,SAP
-AO-00505,LCA-SW-0116,ORG-0306,developer,Semantum
-AO-00506,LCA-SW-0117,ORG-0293,developer,PwC / Ecobilan
-AO-00507,LCA-SW-0118,ORG-0066,developer,ClimatePartner
-AO-00508,LCA-SW-0119,ORG-0167,developer,Global Climate Changer GmbH
-AO-00509,LCA-SW-0120,ORG-0227,developer,Kiwa
-AO-00510,LCA-SW-0121,ORG-0099,developer,ECOSPEED
-AO-00511,LCA-SW-0122,ORG-0368,developer,VERSO GmbH
-AO-00512,LCA-SW-0123,ORG-0321,developer,Substain
-AO-00513,LCA-SW-0124,ORG-0040,developer,CarbonSmart
-AO-00514,LCA-SW-0125,ORG-0384,developer,"Yantai Haiyi Software Co., Ltd."
-AO-00515,LCA-SW-0126,ORG-0151,developer,FRED GmbH
-AO-00516,LCA-SW-0127,ORG-0328,developer,Tanso Technologies GmbH
-AO-00517,LCA-SW-0128,ORG-0312,developer,SKZ — Das Kunststoff-Zentrum
-AO-00518,LCA-SW-0129,ORG-0031,developer,Building Transparency
-AO-00519,LCA-SW-0130,ORG-0225,developer,KieranTimberlake
-AO-00520,LCA-SW-0130,ORG-0033,operator/maintainer,C.Scale
-AO-00521,LCA-SW-0130,ORG-0033,owner,C.Scale
+AO-00343,LCA-DB-0081,ORG-0088,owner,Eaternity
+AO-00344,LCA-DB-0081,ORG-0088,operator/maintainer,Eaternity
+AO-00345,LCA-SW-0001,ORG-0286,developer,PRé Sustainability B.V.
+AO-00346,LCA-SW-0001,ORG-0308,operator/maintainer,SimaPro
+AO-00347,LCA-SW-0001,ORG-0265,owner,One Click LCA group
+AO-00348,LCA-SW-0002,ORG-0051,developer,Chris Mutel
+AO-00349,LCA-SW-0003,ORG-0173,developer,GreenDelta GmbH
+AO-00350,LCA-SW-0003,ORG-0173,operator/maintainer,GreenDelta GmbH
+AO-00351,LCA-SW-0003,ORG-0173,owner,GreenDelta GmbH
+AO-00352,LCA-SW-0004,ORG-0265,developer,One Click LCA Oy Ltd
+AO-00353,LCA-SW-0004,ORG-0265,operator/maintainer,One Click LCA
+AO-00354,LCA-SW-0004,ORG-0265,owner,One Click LCA Ltd / One Click LCA group
+AO-00355,LCA-SW-0005,ORG-0318,developer,"Sphera Solutions, Inc."
+AO-00356,LCA-SW-0005,ORG-0318,operator/maintainer,Sphera
+AO-00357,LCA-SW-0005,ORG-0318,owner,Sphera
+AO-00358,LCA-SW-0006,ORG-0139,developer,Federal University of Technology – Paraná (UTFPR)
+AO-00359,LCA-SW-0007,ORG-0012,developer,Argonne National Laboratory
+AO-00360,LCA-SW-0007,ORG-0012,operator/maintainer,Argonne National Laboratory
+AO-00361,LCA-SW-0007,ORG-0349,owner,United States Department of Energy
+AO-00362,LCA-SW-0008,ORG-0359,developer,University of Oxford
+AO-00363,LCA-SW-0008,ORG-0359,owner,HESTIA project / University of Oxford
+AO-00364,LCA-SW-0009,ORG-0095,developer,Ecochain Technologies B.V.
+AO-00365,LCA-SW-0009,ORG-0095,operator/maintainer,Ecochain Technologies
+AO-00366,LCA-SW-0009,ORG-0095,owner,Ecochain Technologies
+AO-00367,LCA-SW-0010,ORG-0228,developer,Kleis Technology
+AO-00368,LCA-SW-0010,ORG-0228,operator/maintainer,LCA as Code team
+AO-00369,LCA-SW-0011,ORG-0052,developer,Christian Kongsgaard
+AO-00370,LCA-SW-0012,ORG-0351,developer,U.S. Environmental Protection Agency
+AO-00371,LCA-SW-0012,ORG-0138,operator/maintainer,FLCAC-admin repository contributors
+AO-00372,LCA-SW-0012,ORG-0351,owner,United States Environmental Protection Agency / Federal LCA Commons ecosystem
+AO-00373,LCA-SW-0013,ORG-0264,developer,Oliver Kusche Research & Consulting (OKWorx)
+AO-00374,LCA-SW-0013,ORG-0264,operator/maintainer,soda4LCA maintainers / OKWorx
+AO-00375,LCA-SW-0014,ORG-0273,developer,Paul Scherrer Institute
+AO-00376,LCA-SW-0014,ORG-0285,developer,Potsdam Institute for Climate Impact Research
+AO-00377,LCA-SW-0014,ORG-0273,operator/maintainer,premise contributors
+AO-00378,LCA-SW-0015,ORG-0001,developer,2050 Materials
+AO-00379,LCA-SW-0016,ORG-0068,developer,Climatiq GmbH
+AO-00380,LCA-SW-0017,ORG-0378,operator/maintainer,Cascale; exclusively delivered on Worldly
+AO-00381,LCA-SW-0017,ORG-0043,owner,Cascale
+AO-00382,LCA-SW-0018,ORG-0249,developer,Makersite GmbH
+AO-00383,LCA-SW-0018,ORG-0249,operator/maintainer,Makersite GmbH
+AO-00384,LCA-SW-0018,ORG-0249,owner,Makersite GmbH
+AO-00385,LCA-SW-0019,ORG-0088,developer,Eaternity
+AO-00386,LCA-SW-0019,ORG-0088,operator/maintainer,Eaternity
+AO-00387,LCA-SW-0020,ORG-0087,developer,EarthShift Global
+AO-00388,LCA-SW-0020,ORG-0087,operator/maintainer,EarthShift Global
+AO-00389,LCA-SW-0021,ORG-0087,developer,EarthShift Global
+AO-00390,LCA-SW-0021,ORG-0087,operator/maintainer,EarthShift Global
+AO-00391,LCA-SW-0022,ORG-0248,developer,Lifecycles
+AO-00392,LCA-SW-0022,ORG-0248,operator/maintainer,PIQET service team
+AO-00393,LCA-SW-0022,ORG-0279,owner,The PIQET Consortium / Lifecycles and partners
+AO-00394,LCA-SW-0025,ORG-0178,developer,"Hangzhou Qinglvlan Environmental Digital Technology Co., Ltd."
+AO-00395,LCA-SW-0025,ORG-0178,owner,Hangzhou Qinglvlan Environmental Digital Technology
+AO-00396,LCA-SW-0026,ORG-0226,developer,Kimel Tech SpA
+AO-00397,LCA-SW-0026,ORG-0226,owner,Kimel Tech SpA
+AO-00398,LCA-SW-0027,ORG-0231,developer,LCA CARE project consortium
+AO-00399,LCA-SW-0027,ORG-0231,owner,LCA CARE project consortium
+AO-00400,LCA-SW-0028,ORG-0088,developer,Eaternity
+AO-00401,LCA-SW-0028,ORG-0088,operator/maintainer,Eaternity open-source team
+AO-00402,LCA-SW-0029,ORG-0006,developer,Advanced Manufacturing Research Centre (AMRC)
+AO-00403,LCA-SW-0029,ORG-0361,developer,University of Sheffield
+AO-00404,LCA-SW-0030,ORG-0370,developer,Walloon Agricultural Research Centre (CRA-W)
+AO-00405,LCA-SW-0030,ORG-0370,operator/maintainer,CRA-W
+AO-00406,LCA-SW-0031,ORG-0302,developer,RWTH Aachen University
+AO-00407,LCA-SW-0032,ORG-0320,developer,Studio Gear Up
+AO-00408,LCA-SW-0032,ORG-0171,operator/maintainer,Green Gold Label Foundation with studio Gear Up
+AO-00409,LCA-SW-0032,ORG-0171,owner,Green Gold Label Foundation
+AO-00410,LCA-SW-0033,ORG-0242,developer,Leonardo Ferhati
+AO-00411,LCA-SW-0033,ORG-0242,owner,Leonardo Ferhati
+AO-00412,LCA-SW-0035,ORG-0255,developer,Minviro Ltd
+AO-00413,LCA-SW-0035,ORG-0255,operator/maintainer,Minviro
+AO-00414,LCA-SW-0035,ORG-0255,owner,Minviro Ltd
+AO-00415,LCA-SW-0036,ORG-0372,developer,"WAP Sustainability, LLC"
+AO-00416,LCA-SW-0036,ORG-0372,operator/maintainer,WAP Sustainability
+AO-00417,LCA-SW-0036,ORG-0372,owner,"WAP Sustainability, LLC"
+AO-00418,LCA-SW-0037,ORG-0372,developer,"WAP Sustainability, LLC"
+AO-00419,LCA-SW-0037,ORG-0372,operator/maintainer,WAP Sustainability
+AO-00420,LCA-SW-0037,ORG-0372,owner,"WAP Sustainability, LLC"
+AO-00421,LCA-SW-0038,ORG-0216,developer,iPoint-systems GmbH
+AO-00422,LCA-SW-0038,ORG-0216,operator/maintainer,iPoint
+AO-00423,LCA-SW-0039,ORG-0014,developer,Athena Sustainable Materials Institute
+AO-00424,LCA-SW-0039,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00425,LCA-SW-0039,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00426,LCA-SW-0040,ORG-0014,developer,Athena Sustainable Materials Institute
+AO-00427,LCA-SW-0040,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00428,LCA-SW-0040,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00429,LCA-SW-0041,ORG-0014,developer,Athena Sustainable Materials Institute
+AO-00430,LCA-SW-0041,ORG-0014,operator/maintainer,Athena Sustainable Materials Institute
+AO-00431,LCA-SW-0041,ORG-0014,owner,Athena Sustainable Materials Institute
+AO-00432,LCA-SW-0042,ORG-0118,developer,European Aluminium
+AO-00433,LCA-SW-0042,ORG-0206,developer,International Aluminium Institute
+AO-00434,LCA-SW-0042,ORG-0118,owner,International Aluminium Institute and European Aluminium
+AO-00435,LCA-SW-0042,ORG-0206,owner,International Aluminium Institute and European Aluminium
+AO-00436,LCA-SW-0043,ORG-0340,developer,"TianGong LCA research team, Tsinghua University"
+AO-00437,LCA-SW-0043,ORG-0340,operator/maintainer,TIDAS Tools maintainers and public contributors
+AO-00438,LCA-SW-0043,ORG-0348,owner,TianGong LCA / TIDAS open-source project
+AO-00439,LCA-SW-0044,ORG-0074,developer,Dassault Systèmes
+AO-00440,LCA-SW-0045,ORG-0136,developer,Altruistiq
+AO-00441,LCA-SW-0046,ORG-0013,developer,ASUENE
+AO-00442,LCA-SW-0047,ORG-0013,developer,ASUENE Inc.
+AO-00443,LCA-SW-0048,ORG-0327,developer,Taiwan Web Service Corporation
+AO-00444,LCA-SW-0049,ORG-0017,developer,Atma.io
+AO-00445,LCA-SW-0050,ORG-0018,developer,BACUTI
+AO-00446,LCA-SW-0051,ORG-0030,developer,"Booost, Inc."
+AO-00447,LCA-SW-0052,ORG-0034,developer,carbmee
+AO-00448,LCA-SW-0053,ORG-0035,developer,Carboledger
+AO-00449,LCA-SW-0054,ORG-0036,developer,Carbon Maps
+AO-00450,LCA-SW-0055,ORG-0042,developer,Carbon Trail
+AO-00451,LCA-SW-0056,ORG-0059,developer,CircularTree
+AO-00452,LCA-SW-0057,ORG-0038,developer,CarbonBright AI
+AO-00453,LCA-SW-0058,ORG-0323,developer,Sustech
+AO-00454,LCA-SW-0059,ORG-0319,developer,Startrust
+AO-00455,LCA-SW-0060,ORG-0065,developer,ClimateCamp
+AO-00456,LCA-SW-0061,ORG-0067,developer,ClimatePoint
+AO-00457,LCA-SW-0062,ORG-0252,developer,Microsoft
+AO-00458,LCA-SW-0063,ORG-0070,developer,CO2 AI
+AO-00459,LCA-SW-0064,ORG-0354,developer,Uhuru Corporation
+AO-00460,LCA-SW-0065,ORG-0080,developer,Delta Electronics
+AO-00461,LCA-SW-0066,ORG-0202,developer,"Institute for Information Industry, Digital Transformation Research Institute"
+AO-00462,LCA-SW-0067,ORG-0299,developer,Riskoa Ltd
+AO-00463,LCA-SW-0068,ORG-0109,developer,ESGpedia Pte Ltd
+AO-00464,LCA-SW-0069,ORG-0132,developer,Evalue8 Sustainability
+AO-00465,LCA-SW-0070,ORG-0141,developer,Fitsol
+AO-00466,LCA-SW-0071,ORG-0374,developer,WeCarbon Technology Ltd
+AO-00467,LCA-SW-0072,ORG-0153,developer,Fujitsu Limited
+AO-00468,LCA-SW-0073,ORG-0380,developer,Wormhole Technologies Inc.
+AO-00469,LCA-SW-0074,ORG-0177,developer,GreenStitch Technologies PVT LTD
+AO-00470,LCA-SW-0075,ORG-0186,developer,HowGood
+AO-00471,LCA-SW-0076,ORG-0249,developer,Makersite GmbH
+AO-00472,LCA-SW-0077,ORG-0256,developer,Muir AI
+AO-00473,LCA-SW-0079,ORG-0270,developer,Optel Group
+AO-00474,LCA-SW-0080,ORG-0280,developer,Planet FWD
+AO-00475,LCA-SW-0081,ORG-0304,developer,SAP
+AO-00476,LCA-SW-0082,ORG-0313,developer,Sluicebox
+AO-00477,LCA-SW-0083,ORG-0314,developer,Smart Tradzt
+AO-00478,LCA-SW-0085,ORG-0330,developer,Terrascope
+AO-00479,LCA-SW-0086,ORG-0062,developer,Cirrus Nexus
+AO-00480,LCA-SW-0087,ORG-0199,developer,InnoBlock Technology Ltd
+AO-00481,LCA-SW-0089,ORG-0385,developer,YuzeData
+AO-00482,LCA-SW-0091,ORG-0316,developer,Solid Forest
+AO-00483,LCA-SW-0092,ORG-0316,developer,Solid Forest
+AO-00484,LCA-SW-0093,ORG-0010,developer,Ansys
+AO-00485,LCA-SW-0094,ORG-0011,developer,aPriori
+AO-00486,LCA-SW-0095,ORG-0133,developer,EVEA
+AO-00487,LCA-SW-0096,ORG-0220,developer,ITeC
+AO-00488,LCA-SW-0097,ORG-0041,developer,Carbonstop
+AO-00489,LCA-SW-0098,ORG-0087,developer,EarthShift Global
+AO-00490,LCA-SW-0099,ORG-0191,developer,IKE Environmental Technology
+AO-00491,LCA-SW-0100,ORG-0093,developer,Eco-Bat
+AO-00492,LCA-SW-0101,ORG-0009,developer,Altermaker
+AO-00493,LCA-SW-0102,ORG-0346,developer,Trace One
+AO-00494,LCA-SW-0103,ORG-0347,developer,Trayak
+AO-00495,LCA-SW-0104,ORG-0099,developer,ECOSPEED
+AO-00496,LCA-SW-0105,ORG-0191,developer,IKE Environmental Technology
+AO-00497,LCA-SW-0106,ORG-0295,developer,Quantis and Kleis Technology
+AO-00498,LCA-SW-0107,ORG-0113,developer,eTool
+AO-00499,LCA-SW-0108,ORG-0096,developer,Ecodigit
+AO-00500,LCA-SW-0109,ORG-0112,developer,"ETH Zurich, Chair of Ecological Systems Design"
+AO-00501,LCA-SW-0110,ORG-0235,developer,LCA.no
+AO-00502,LCA-SW-0111,ORG-0278,developer,Pilario
+AO-00503,LCA-SW-0112,ORG-0334,developer,The Circulate Initiative
+AO-00504,LCA-SW-0113,ORG-0222,developer,IZUBA énergies
+AO-00505,LCA-SW-0114,ORG-0309,developer,sinum
+AO-00506,LCA-SW-0115,ORG-0304,developer,SAP
+AO-00507,LCA-SW-0116,ORG-0306,developer,Semantum
+AO-00508,LCA-SW-0117,ORG-0293,developer,PwC / Ecobilan
+AO-00509,LCA-SW-0118,ORG-0066,developer,ClimatePartner
+AO-00510,LCA-SW-0119,ORG-0167,developer,Global Climate Changer GmbH
+AO-00511,LCA-SW-0120,ORG-0227,developer,Kiwa
+AO-00512,LCA-SW-0121,ORG-0099,developer,ECOSPEED
+AO-00513,LCA-SW-0122,ORG-0368,developer,VERSO GmbH
+AO-00514,LCA-SW-0123,ORG-0321,developer,Substain
+AO-00515,LCA-SW-0124,ORG-0040,developer,CarbonSmart
+AO-00516,LCA-SW-0125,ORG-0384,developer,"Yantai Haiyi Software Co., Ltd."
+AO-00517,LCA-SW-0126,ORG-0151,developer,FRED GmbH
+AO-00518,LCA-SW-0127,ORG-0328,developer,Tanso Technologies GmbH
+AO-00519,LCA-SW-0128,ORG-0312,developer,SKZ — Das Kunststoff-Zentrum
+AO-00520,LCA-SW-0129,ORG-0031,developer,Building Transparency
+AO-00521,LCA-SW-0130,ORG-0225,developer,KieranTimberlake
+AO-00522,LCA-SW-0130,ORG-0033,operator/maintainer,C.Scale
+AO-00523,LCA-SW-0130,ORG-0033,owner,C.Scale

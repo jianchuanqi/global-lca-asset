@@ -1,9 +1,9 @@
 # Analysis rules
 
-- Treat all counts as dated, reproducible lower bounds based on public evidence available by 2026-09-01.
+- Treat all counts as dated, reproducible lower bounds based on public evidence available by 2026-09-25.
 - The public seed plus documented curated review layers are canonical for this package. Questionnaire and stakeholder records are discovery leads, not the sample frame or verified asset count.
 - Use public information only. Do not register, log in, purchase data, or include email addresses, internal mappings, private personal data, or reviewer notes. A publicly credited professional individual may be retained only when the source explicitly attributes a software role.
-- State the database counting rule: 80 core database families; 88 extended data-bearing assets. The extended scope contains the core set plus repositories, platforms and libraries that bear or distribute LCA data but are not counted again as database families.
+- State the database counting rule: 81 core database families; 89 extended data-bearing assets. The extended scope contains the core set plus repositories, platforms and libraries that bear or distribute LCA data but are not counted again as database families.
 - State the software counting rule: 130 reviewed software, API, model, or workflow assets at the cutoff. Of these, 97 have a qualifying PCF/LCA product or interoperability listing in the reviewed market streams; the remainder are broader supporting assets retained from the prior inventory.
 - A PCF/LCA software product must publicly state LCA, PCF calculation, or direct standardized PCF exchange. Do not promote general corporate-only accounting, consultancy, or service listings without a qualifying product function.
 - Keep product type, primary function, multi-valued functional capabilities, and standard/network associations as separate dimensions. LCA and PCF modelling are aligned under the headline function “LCA/PCF modelling and calculation” while remaining distinguishable capabilities.
