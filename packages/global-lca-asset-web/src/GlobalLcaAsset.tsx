@@ -197,8 +197,8 @@ function Overview({ openTab }: { openTab: (tab: Tab) => void }) {
   const data = useDataset();
   const o = data.summaries.overview;
   const queryEntrypoints: Array<{ tab: Tab; number: string; title: string; description: string; count: string }> = [
-    { tab: 'databases', number: '01', title: 'Database landscape', description: 'Browse the core count and the extended data-bearing scope.', count: '80 core · 88 extended' },
-    { tab: 'access', number: '02', title: 'Open and accessible data', description: 'Filter licences, fees, registration and canonical access routes.', count: '88 scoped records' },
+    { tab: 'databases', number: '01', title: 'Database landscape', description: 'Browse the core count and the extended data-bearing scope.', count: '81 core · 89 extended' },
+    { tab: 'access', number: '02', title: 'Open and accessible data', description: 'Filter licences, fees, registration and canonical access routes.', count: '89 scoped records' },
     { tab: 'formats', number: '03', title: 'Formats and software', description: 'Trace distributions from database releases to schemas and software.', count: `${data.distributions.length} distributions` },
     { tab: 'software', number: '04', title: 'PCF/LCA software landscape', description: 'Compare product functions and the companies that own, develop or operate them.', count: `${data.softwareScope.length} reviewed products & tools` },
     { tab: 'providers', number: '05', title: 'Providers and sector coverage', description: 'Search owners, maintainers, countries, geographies and industries.', count: `${data.assets.length} asset profiles` },
@@ -319,9 +319,9 @@ function DatabaseLandscape() {
     <div className="page-stack">
       <SectionHeading eyebrow="Research view 01" title="Database landscape" note="The core count and extended data-bearing scope use explicit, reproducible inclusion rules." />
       <section className="scope-summary">
-        <div><strong>80</strong><span>core database families</span><small>narrow working count</small></div>
-        <div><strong>88</strong><span>extended data-bearing assets</span><small>includes repositories and platforms</small></div>
-        <p><strong>Why two counts?</strong> The 80 core records answer the narrow database-family question. The 88-record extended scope contains those same 80 plus eight repositories, platforms and libraries that bear or distribute LCA data. Keeping both prevents a portal—or a Nexus package variant—from being counted as an additional database while preserving the full access ecosystem.</p>
+        <div><strong>81</strong><span>core database families</span><small>narrow working count</small></div>
+        <div><strong>89</strong><span>extended data-bearing assets</span><small>includes repositories and platforms</small></div>
+        <p><strong>Why two counts?</strong> The 81 core records answer the narrow database-family question. The 89-record extended scope contains those same 81 plus eight repositories, platforms and libraries that bear or distribute LCA data. Keeping both prevents a portal—or a Nexus package variant—from being counted as an additional database while preserving the full access ecosystem.</p>
       </section>
       <section className="filter-panel">
         <label className="wide-filter"><span>Search database records</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Name, owner, country, geography or sector…" /></label>
@@ -354,7 +354,7 @@ function AccessExplorer() {
     <div className="page-stack">
       <SectionHeading eyebrow="Research view 02" title="Access, licences and download routes" note="Free access, open data, public metadata, registration, fees and redistribution rights remain separate fields." />
       <section className="two-column weighted">
-        <article className="content-card chart-card"><SectionHeading eyebrow="88-item scope" title="Access classification" /><BarList rows={data.summaries.database_access_classes} /></article>
+        <article className="content-card chart-card"><SectionHeading eyebrow="89-item scope" title="Access classification" /><BarList rows={data.summaries.database_access_classes} /></article>
         <article className="content-card interpretation-card"><h3>Read access claims carefully</h3><p>A public web page does not make the underlying database open. Use the licence and redistribution fields before describing an asset as open data.</p></article>
       </section>
       <section className="filter-panel compact-filter-panel">

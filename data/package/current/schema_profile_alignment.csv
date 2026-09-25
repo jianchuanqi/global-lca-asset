@@ -1,8 +1,8 @@
 alignment_id,schema_profile_original,schema_profile,schema_profile_class,alignment_method,distribution_count
 SPA-0001,Athena proprietary embedded model,Athena embedded model,Athena,Curated synonym alignment,3
-SPA-0002,Brightway data package,Brightway data package,Brightway,Curated canonical label,1
+SPA-0002,Brightway data package,Brightway data package,Brightway,Curated canonical label,2
 SPA-0003,CLCD native model; current public provider page does not state the schema revision,CLCD native model,CLCD,Curated synonym alignment,1
-SPA-0004,CSV,CSV,Tabular / matrix,Original label retained; curated class assigned,5
+SPA-0004,CSV,CSV,Tabular / matrix,Original label retained; curated class assigned,6
 SPA-0005,CSV / XLSX,CSV + Excel workbook,Tabular / matrix,Curated synonym alignment,1
 SPA-0006,XLS / CSV,CSV + Excel workbook,Tabular / matrix,Curated synonym alignment,1
 SPA-0007,EcoSpold 1 XML,ecoSpold 1,ecoSpold family,Curated synonym alignment,1
@@ -24,7 +24,7 @@ SPA-0022,Host-database-specific,Host-database-specific,Software-native / proprie
 SPA-0023,IA98,IA98,IA98,Curated canonical label,1
 SPA-0024,Member portal; linked JLCA–IDEA model,IDEA member-portal model,IDEA,Curated synonym alignment,1
 SPA-0025,ILCD,ILCD,ILCD family,Curated canonical label,3
-SPA-0026,ILCD data model,ILCD,ILCD family,Curated synonym alignment,4
+SPA-0026,ILCD data model,ILCD,ILCD family,Curated synonym alignment,5
 SPA-0027,ILCD XML,ILCD,ILCD family,Curated synonym alignment,1
 SPA-0028,ILCD XML in ZIP,ILCD,ILCD family,Curated synonym alignment,1
 SPA-0029,ILCD XML in ZIP package,ILCD,ILCD family,Curated synonym alignment,1
@@ -42,7 +42,7 @@ SPA-0040,Not publicly confirmed,Not publicly confirmed,Unconfirmed,Curated canon
 SPA-0041,openEPD,openEPD,openEPD,Curated canonical label,1
 SPA-0042,openLCA database package,openLCA database package,openLCA family,Curated canonical label,46
 SPA-0043,ZOLCA,openLCA database package,openLCA family,Curated synonym alignment,1
-SPA-0044,openLCA JSON-LD,openLCA JSON-LD,openLCA family,Original label retained; curated class assigned,4
+SPA-0044,openLCA JSON-LD,openLCA JSON-LD,openLCA family,Original label retained; curated class assigned,5
 SPA-0045,openLCA schema / JSON-LD,openLCA JSON-LD,openLCA family,Curated synonym alignment,3
 SPA-0046,openLCA/Federal LCA Commons data model,openLCA JSON-LD,openLCA family,Curated synonym alignment,1
 SPA-0047,PDF,PDF,Document / repository package,Original label retained; curated class assigned,2

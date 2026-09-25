@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "package_version": "2026-09-01.2",
-  "evidence_cutoff": "2026-09-01",
-  "checked_at": "2026-09-01T13:00:00.000Z",
+  "package_version": "2026-09-25.1",
+  "evidence_cutoff": "2026-09-25",
+  "checked_at": "2026-09-25T09:00:00.000Z",
   "checks": {
     "expected_table_counts": true,
     "stable_ids_unique": true,

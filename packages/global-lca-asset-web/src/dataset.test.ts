@@ -2,14 +2,14 @@ import { describe, expect, it } from 'vitest';
 import dataset from './data/dataset.json';
 
 describe('Global LCA Asset public evidence package', () => {
-  it('matches the 2026-09-01 reviewed release and seven-question structure', () => {
+  it('matches the 2026-09-25 reviewed release and seven-question structure', () => {
     expect(dataset.meta.validationStatus).toBe('passed');
-    expect(dataset.meta.packageVersion).toBe('2026-09-01.2');
-    expect(dataset.assets).toHaveLength(301);
-    expect(dataset.evidence).toHaveLength(339);
-    expect(dataset.relations).toHaveLength(397);
-    expect(dataset.distributions).toHaveLength(170);
-    expect(dataset.mappings).toHaveLength(25);
+    expect(dataset.meta.packageVersion).toBe('2026-09-25.1');
+    expect(dataset.assets).toHaveLength(302);
+    expect(dataset.evidence).toHaveLength(341);
+    expect(dataset.relations).toHaveLength(401);
+    expect(dataset.distributions).toHaveLength(174);
+    expect(dataset.mappings).toHaveLength(26);
     expect(dataset.answerability).toHaveLength(7);
   });
 
@@ -37,8 +37,8 @@ describe('Global LCA Asset public evidence package', () => {
   });
 
   it('retains the two explicit database counting scopes', () => {
-    expect(dataset.summaries.overview.core_database_families).toBe(80);
-    expect(dataset.summaries.overview.extended_data_bearing_assets).toBe(88);
+    expect(dataset.summaries.overview.core_database_families).toBe(81);
+    expect(dataset.summaries.overview.extended_data_bearing_assets).toBe(89);
   });
 
   it('reconciles every public openLCA Nexus DATA catalog entry', () => {
@@ -82,7 +82,7 @@ describe('Global LCA Asset public evidence package', () => {
   });
 
   it('publishes a complete dated version audit for the database scope', () => {
-    expect(dataset.versionAudit).toHaveLength(88);
+    expect(dataset.versionAudit).toHaveLength(89);
     expect(dataset.versionAudit.find((row) => row.asset_id === 'LCA-DB-0005')?.reviewed_version).toBe('BAFU:2026 Version 1');
   });
 

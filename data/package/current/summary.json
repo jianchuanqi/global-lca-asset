@@ -1,31 +1,31 @@
 {
-  "package_version": "2026-09-01.2",
-  "evidence_cutoff": "2026-09-01",
+  "package_version": "2026-09-25.1",
+  "evidence_cutoff": "2026-09-25",
   "counts": {
-    "assets": 301,
-    "evidence": 339,
-    "database_scope": 88,
-    "releases": 310,
-    "distributions": 170,
-    "mapping_artifacts": 25,
-    "relations": 397,
+    "assets": 302,
+    "evidence": 341,
+    "database_scope": 89,
+    "releases": 312,
+    "distributions": 174,
+    "mapping_artifacts": 26,
+    "relations": 401,
     "search_coverage": 23,
     "answerability": 7,
     "review_issues": 10,
     "data_dictionary": 24,
     "software_candidate_review": 104,
-    "version_audit": 88,
+    "version_audit": 89,
     "schema_profile_alignment": 78,
     "mapping_endpoint_alignment": 26,
     "software_role_gaps": 39,
     "software_scope": 130,
     "organizations": 385,
     "software_company_roles": 179,
-    "asset_organizations": 521
+    "asset_organizations": 523
   },
   "scope_counts": {
-    "core_database_families": 80,
-    "extended_data_bearing_assets": 88
+    "core_database_families": 81,
+    "extended_data_bearing_assets": 89
   },
   "asset_types": [
     {
@@ -34,7 +34,7 @@
     },
     {
       "label": "Database / dataset",
-      "count": 79
+      "count": 80
     },
     {
       "label": "Method / guidance (incl. LCIA)",
@@ -60,7 +60,7 @@
   "confidence_levels": [
     {
       "label": "High",
-      "count": 256
+      "count": 257
     },
     {
       "label": "Medium",
@@ -78,7 +78,7 @@
   "relationship_statuses": [
     {
       "label": "Confirmed",
-      "count": 131
+      "count": 133
     },
     {
       "label": "Confirmed public statement or directory listing",
@@ -90,11 +90,11 @@
     },
     {
       "label": "Confirmed by provider",
-      "count": 22
+      "count": 23
     },
     {
       "label": "Provider-stated",
-      "count": 8
+      "count": 9
     },
     {
       "label": "Documented",
@@ -292,7 +292,7 @@
     },
     {
       "label": "Open licence confirmed for at least one official distribution",
-      "count": 9
+      "count": 10
     },
     {
       "label": "Commercial / restricted",
@@ -322,15 +322,15 @@
   "schema_profile_classes": [
     {
       "label": "openLCA family",
-      "count": 55
+      "count": 56
     },
     {
       "label": "Tabular / matrix",
-      "count": 23
+      "count": 24
     },
     {
       "label": "ILCD family",
-      "count": 18
+      "count": 19
     },
     {
       "label": "Unconfirmed",
@@ -361,6 +361,10 @@
       "count": 3
     },
     {
+      "label": "Brightway",
+      "count": 2
+    },
+    {
       "label": "Environmental Footprint",
       "count": 2
     },
@@ -371,10 +375,6 @@
     {
       "label": "Software-native / proprietary",
       "count": 2
-    },
-    {
-      "label": "Brightway",
-      "count": 1
     },
     {
       "label": "CLCD",
@@ -440,23 +440,23 @@
     },
     {
       "label": "ILCD",
-      "count": 10
+      "count": 11
     },
     {
       "label": "SimaPro library / exchange",
       "count": 10
     },
     {
+      "label": "openLCA JSON-LD",
+      "count": 9
+    },
+    {
       "label": "Excel workbook (XLSX)",
       "count": 8
     },
     {
-      "label": "openLCA JSON-LD",
-      "count": 8
-    },
-    {
       "label": "CSV",
-      "count": 5
+      "count": 6
     },
     {
       "label": "Athena embedded model",
@@ -477,6 +477,10 @@
     {
       "label": "Tabular matrices (ZIP)",
       "count": 3
+    },
+    {
+      "label": "Brightway data package",
+      "count": 2
     },
     {
       "label": "CSV + Excel workbook",
@@ -505,10 +509,6 @@
     {
       "label": "Web application",
       "count": 2
-    },
-    {
-      "label": "Brightway data package",
-      "count": 1
     },
     {
       "label": "CLCD native model",
@@ -787,50 +787,50 @@
     {
       "field": "review_procedure",
       "label": "Review procedure",
-      "count": 293,
-      "rate": 0.973
+      "count": 294,
+      "rate": 0.974
     },
     {
       "field": "nomenclature_classification",
       "label": "Nomenclature / classification",
       "count": 276,
-      "rate": 0.917
+      "rate": 0.914
     },
     {
       "field": "temporal_coverage",
       "label": "Temporal coverage",
       "count": 263,
-      "rate": 0.874
+      "rate": 0.871
     },
     {
       "field": "citation_mechanism",
       "label": "Citation mechanism",
-      "count": 212,
-      "rate": 0.704
+      "count": 213,
+      "rate": 0.705
     },
     {
       "field": "api_or_machine_readable_interface",
       "label": "API / machine-readable interface",
       "count": 173,
-      "rate": 0.575
+      "rate": 0.573
     },
     {
       "field": "data_model_or_schema",
       "label": "Schema / data model",
       "count": 156,
-      "rate": 0.518
+      "rate": 0.517
     },
     {
       "field": "exchange_format",
       "label": "Exchange format",
       "count": 109,
-      "rate": 0.362
+      "rate": 0.361
     },
     {
       "field": "licence_or_usage_rights",
       "label": "Licence / usage rights",
       "count": 108,
-      "rate": 0.359
+      "rate": 0.358
     }
   ]
 }

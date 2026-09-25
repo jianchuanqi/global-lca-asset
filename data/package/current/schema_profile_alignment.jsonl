@@ -1,7 +1,7 @@
 {"alignment_id":"SPA-0001","schema_profile_original":"Athena proprietary embedded model","schema_profile":"Athena embedded model","schema_profile_class":"Athena","alignment_method":"Curated synonym alignment","distribution_count":3}
-{"alignment_id":"SPA-0002","schema_profile_original":"Brightway data package","schema_profile":"Brightway data package","schema_profile_class":"Brightway","alignment_method":"Curated canonical label","distribution_count":1}
+{"alignment_id":"SPA-0002","schema_profile_original":"Brightway data package","schema_profile":"Brightway data package","schema_profile_class":"Brightway","alignment_method":"Curated canonical label","distribution_count":2}
 {"alignment_id":"SPA-0003","schema_profile_original":"CLCD native model; current public provider page does not state the schema revision","schema_profile":"CLCD native model","schema_profile_class":"CLCD","alignment_method":"Curated synonym alignment","distribution_count":1}
-{"alignment_id":"SPA-0004","schema_profile_original":"CSV","schema_profile":"CSV","schema_profile_class":"Tabular / matrix","alignment_method":"Original label retained; curated class assigned","distribution_count":5}
+{"alignment_id":"SPA-0004","schema_profile_original":"CSV","schema_profile":"CSV","schema_profile_class":"Tabular / matrix","alignment_method":"Original label retained; curated class assigned","distribution_count":6}
 {"alignment_id":"SPA-0005","schema_profile_original":"CSV / XLSX","schema_profile":"CSV + Excel workbook","schema_profile_class":"Tabular / matrix","alignment_method":"Curated synonym alignment","distribution_count":1}
 {"alignment_id":"SPA-0006","schema_profile_original":"XLS / CSV","schema_profile":"CSV + Excel workbook","schema_profile_class":"Tabular / matrix","alignment_method":"Curated synonym alignment","distribution_count":1}
 {"alignment_id":"SPA-0007","schema_profile_original":"EcoSpold 1 XML","schema_profile":"ecoSpold 1","schema_profile_class":"ecoSpold family","alignment_method":"Curated synonym alignment","distribution_count":1}
@@ -23,7 +23,7 @@
 {"alignment_id":"SPA-0023","schema_profile_original":"IA98","schema_profile":"IA98","schema_profile_class":"IA98","alignment_method":"Curated canonical label","distribution_count":1}
 {"alignment_id":"SPA-0024","schema_profile_original":"Member portal; linked JLCA–IDEA model","schema_profile":"IDEA member-portal model","schema_profile_class":"IDEA","alignment_method":"Curated synonym alignment","distribution_count":1}
 {"alignment_id":"SPA-0025","schema_profile_original":"ILCD","schema_profile":"ILCD","schema_profile_class":"ILCD family","alignment_method":"Curated canonical label","distribution_count":3}
-{"alignment_id":"SPA-0026","schema_profile_original":"ILCD data model","schema_profile":"ILCD","schema_profile_class":"ILCD family","alignment_method":"Curated synonym alignment","distribution_count":4}
+{"alignment_id":"SPA-0026","schema_profile_original":"ILCD data model","schema_profile":"ILCD","schema_profile_class":"ILCD family","alignment_method":"Curated synonym alignment","distribution_count":5}
 {"alignment_id":"SPA-0027","schema_profile_original":"ILCD XML","schema_profile":"ILCD","schema_profile_class":"ILCD family","alignment_method":"Curated synonym alignment","distribution_count":1}
 {"alignment_id":"SPA-0028","schema_profile_original":"ILCD XML in ZIP","schema_profile":"ILCD","schema_profile_class":"ILCD family","alignment_method":"Curated synonym alignment","distribution_count":1}
 {"alignment_id":"SPA-0029","schema_profile_original":"ILCD XML in ZIP package","schema_profile":"ILCD","schema_profile_class":"ILCD family","alignment_method":"Curated synonym alignment","distribution_count":1}
@@ -41,7 +41,7 @@
 {"alignment_id":"SPA-0041","schema_profile_original":"openEPD","schema_profile":"openEPD","schema_profile_class":"openEPD","alignment_method":"Curated canonical label","distribution_count":1}
 {"alignment_id":"SPA-0042","schema_profile_original":"openLCA database package","schema_profile":"openLCA database package","schema_profile_class":"openLCA family","alignment_method":"Curated canonical label","distribution_count":46}
 {"alignment_id":"SPA-0043","schema_profile_original":"ZOLCA","schema_profile":"openLCA database package","schema_profile_class":"openLCA family","alignment_method":"Curated synonym alignment","distribution_count":1}
-{"alignment_id":"SPA-0044","schema_profile_original":"openLCA JSON-LD","schema_profile":"openLCA JSON-LD","schema_profile_class":"openLCA family","alignment_method":"Original label retained; curated class assigned","distribution_count":4}
+{"alignment_id":"SPA-0044","schema_profile_original":"openLCA JSON-LD","schema_profile":"openLCA JSON-LD","schema_profile_class":"openLCA family","alignment_method":"Original label retained; curated class assigned","distribution_count":5}
 {"alignment_id":"SPA-0045","schema_profile_original":"openLCA schema / JSON-LD","schema_profile":"openLCA JSON-LD","schema_profile_class":"openLCA family","alignment_method":"Curated synonym alignment","distribution_count":3}
 {"alignment_id":"SPA-0046","schema_profile_original":"openLCA/Federal LCA Commons data model","schema_profile":"openLCA JSON-LD","schema_profile_class":"openLCA family","alignment_method":"Curated synonym alignment","distribution_count":1}
 {"alignment_id":"SPA-0047","schema_profile_original":"PDF","schema_profile":"PDF","schema_profile_class":"Document / repository package","alignment_method":"Original label retained; curated class assigned","distribution_count":2}
